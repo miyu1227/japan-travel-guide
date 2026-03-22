@@ -66,12 +66,12 @@ export default function Home() {
         <div className="max-w-sm mx-auto">
           {/* Character */}
           <div className="flex justify-center mb-4">
-            <div className="relative w-48 h-48">
+            <div className="relative w-72 h-72">
               <Image
-                src="/poyapiyo-flag.jpg"
+                src="/poyapiyo-flag.png"
                 alt="ぽやぴよ"
                 fill
-                className="object-contain drop-shadow-md mix-blend-multiply"
+                className="object-contain drop-shadow-lg"
                 priority
               />
             </div>
