@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Japan Travel Guide — Discover the Land of the Rising Sun",
-  description: "Your ultimate guide to traveling Japan. Explore top destinations, cuisine, transport, and accommodations.",
+  title: "日本旅遊指南 — 台灣・香港旅客專屬",
+  description: "台灣・香港旅客專屬的日本旅遊指南，涵蓋熱門景點、美食、交通與住宿資訊。",
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="zh-TW"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
