@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "日本旅遊指南 — 台灣・香港旅客專屬",
-  description: "台灣・香港旅客專屬的日本旅遊指南，涵蓋熱門景點、美食、交通與住宿資訊。",
+  title: "Japan Trip Picks 🇯🇵 — 不踩雷日本旅遊指南",
+  description: "台灣・香港旅客專屬！必吃・必買・必去的日本旅遊推薦，便利商店、拉麵、景點全收錄。",
 };
 
 export default function RootLayout({
