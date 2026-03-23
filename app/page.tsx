@@ -112,7 +112,7 @@ function AreaFilter({ catId, color }: { catId: string; color: string }) {
                 {item.image ? (
                   <>
                     <div className="relative w-full aspect-[16/9] bg-stone-100">
-                      <Image src={item.image} alt={item.name} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" />
+                      <Image src={item.image} alt={item.name} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" priority />
                     </div>
                     <div className="p-4">
                       <div className="flex items-start justify-between gap-2 mb-1">
