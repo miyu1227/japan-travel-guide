@@ -1,16 +1,20 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const categories = [
-  { id: "convenience", icon: "🏪", label: "Convenience Store", labelZh: "便利商店", color: "bg-yellow-100 text-yellow-700 border-yellow-300", activeColor: "bg-yellow-400 text-white border-yellow-400" },
-  { id: "ramen", icon: "🍜", label: "Ramen", labelZh: "拉麵", color: "bg-red-100 text-red-600 border-red-300", activeColor: "bg-red-400 text-white border-red-400" },
-  { id: "snacks", icon: "🍘", label: "Snacks", labelZh: "零食伴手禮", color: "bg-orange-100 text-orange-600 border-orange-300", activeColor: "bg-orange-400 text-white border-orange-400" },
-  { id: "cafe", icon: "☕", label: "Cafés", labelZh: "咖啡廳", color: "bg-pink-100 text-pink-600 border-pink-300", activeColor: "bg-pink-400 text-white border-pink-400" },
-  { id: "spot", icon: "📍", label: "Spots", labelZh: "景點", color: "bg-blue-100 text-blue-600 border-blue-300", activeColor: "bg-blue-400 text-white border-blue-400" },
+  { id: "convenience", icon: "🏪", label: "Convenience Store", labelZh: "便利商店", color: "bg-yellow-100 text-yellow-700 border-yellow-300", activeColor: "bg-yellow-400 text-white border-yellow-400", hasAreaFilter: false },
+  { id: "ramen", icon: "🍜", label: "Ramen", labelZh: "拉麵", color: "bg-red-100 text-red-600 border-red-300", activeColor: "bg-red-400 text-white border-red-400", hasAreaFilter: true },
+  { id: "snacks", icon: "🍘", label: "Snacks", labelZh: "零食伴手禮", color: "bg-orange-100 text-orange-600 border-orange-300", activeColor: "bg-orange-400 text-white border-orange-400", hasAreaFilter: false },
+  { id: "cafe", icon: "☕", label: "Cafés", labelZh: "咖啡廳", color: "bg-pink-100 text-pink-600 border-pink-300", activeColor: "bg-pink-400 text-white border-pink-400", hasAreaFilter: true },
+  { id: "spot", icon: "📍", label: "Spots", labelZh: "景點", color: "bg-blue-100 text-blue-600 border-blue-300", activeColor: "bg-blue-400 text-white border-blue-400", hasAreaFilter: true },
 ];
 
-const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string }[]> = {
+const areas = ["すべて", "東京", "大阪", "神戸", "北海道", "四国", "その他"];
+
+const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string; areas: string[] }[]> = {
   convenience: [],
   ramen: [
     {
@@ -20,6 +24,7 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       emoji: "🍜",
       href: "/ramen",
       image: "/ramen/tsujita-2.jpg",
+      areas: ["東京", "大阪"],
     },
   ],
   snacks: [],
@@ -32,6 +37,7 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       emoji: "📍",
       href: "/spot",
       image: "/spot/shinjuku-1.jpg",
+      areas: ["東京"],
     },
     {
       name: "箱根一日遊推薦｜從東京搭浪漫特快出發🚃",
@@ -40,13 +46,160 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       emoji: "♨️",
       href: "/hakone",
       image: "/hakone/shrine-1.jpg",
+      areas: ["その他"],
     },
   ],
 };
 
-export default function Home() {
-  const defaultCategory = "convenience";
+function AreaFilter({ catId, color }: { catId: string; color: string }) {
+  const [selected, setSelected] = useState("すべて");
+  const items = picks[catId];
+  const filtered = selected === "すべて"
+    ? items
+    : items.filter((item) => item.areas.includes(selected));
 
+  return (
+    <>
+      {/* Area tabs */}
+      <div className="flex gap-2 overflow-x-auto scrollbar-hide pb-2 mb-4">
+        {areas.map((area) => (
+          <button
+            key={area}
+            onClick={() => setSelected(area)}
+            className={`flex-shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border transition-all ${
+              selected === area
+                ? "bg-stone-700 text-white border-stone-700"
+                : "bg-white text-stone-500 border-stone-200 hover:border-stone-400"
+            }`}
+          >
+            {area}
+          </button>
+        ))}
+      </div>
+
+      {/* Cards */}
+      {filtered.length === 0 ? (
+        <div className="bg-white rounded-2xl border border-dashed border-stone-200 p-8 text-center text-stone-400">
+          <div className="text-3xl mb-2">🐣</div>
+          <p className="text-sm">近期更新中...</p>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {filtered.map((item) => {
+            const CardWrapper = item.href
+              ? ({ children }: { children: React.ReactNode }) => (
+                  <Link href={item.href!} className="block bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                    {children}
+                  </Link>
+                )
+              : ({ children }: { children: React.ReactNode }) => (
+                  <div className="bg-white rounded-2xl border border-stone-100 shadow-sm p-4 flex items-start gap-3">
+                    {children}
+                  </div>
+                );
+            return (
+              <CardWrapper key={item.name}>
+                {item.image ? (
+                  <>
+                    <div className="relative w-full aspect-[16/9] bg-stone-100">
+                      <Image src={item.image} alt={item.name} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" />
+                    </div>
+                    <div className="p-4">
+                      <div className="flex items-start justify-between gap-2 mb-1">
+                        <h3 className="font-bold text-stone-800 text-sm leading-tight">{item.name}</h3>
+                        <span className={`shrink-0 text-xs px-2 py-0.5 rounded-full border ${color}`}>
+                          {item.tag}
+                        </span>
+                      </div>
+                      <p className="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="text-3xl shrink-0">{item.emoji}</div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-start justify-between gap-2 mb-1">
+                        <h3 className="font-bold text-stone-800 text-sm leading-tight">{item.name}</h3>
+                        <span className={`shrink-0 text-xs px-2 py-0.5 rounded-full border ${color}`}>
+                          {item.tag}
+                        </span>
+                      </div>
+                      <p className="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
+                    </div>
+                  </>
+                )}
+              </CardWrapper>
+            );
+          })}
+        </div>
+      )}
+    </>
+  );
+}
+
+function StaticCards({ catId, color }: { catId: string; color: string }) {
+  const items = picks[catId];
+  if (items.length === 0) {
+    return (
+      <div className="bg-white rounded-2xl border border-dashed border-stone-200 p-8 text-center text-stone-400">
+        <div className="text-3xl mb-2">🐣</div>
+        <p className="text-sm">近期更新中...</p>
+      </div>
+    );
+  }
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      {items.map((item) => {
+        const CardWrapper = item.href
+          ? ({ children }: { children: React.ReactNode }) => (
+              <Link href={item.href!} className="block bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                {children}
+              </Link>
+            )
+          : ({ children }: { children: React.ReactNode }) => (
+              <div className="bg-white rounded-2xl border border-stone-100 shadow-sm p-4 flex items-start gap-3">
+                {children}
+              </div>
+            );
+        return (
+          <CardWrapper key={item.name}>
+            {item.image ? (
+              <>
+                <div className="relative w-full aspect-[16/9] bg-stone-100">
+                  <Image src={item.image} alt={item.name} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" priority />
+                </div>
+                <div className="p-4">
+                  <div className="flex items-start justify-between gap-2 mb-1">
+                    <h3 className="font-bold text-stone-800 text-sm leading-tight">{item.name}</h3>
+                    <span className={`shrink-0 text-xs px-2 py-0.5 rounded-full border ${color}`}>
+                      {item.tag}
+                    </span>
+                  </div>
+                  <p className="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="text-3xl shrink-0">{item.emoji}</div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-start justify-between gap-2 mb-1">
+                    <h3 className="font-bold text-stone-800 text-sm leading-tight">{item.name}</h3>
+                    <span className={`shrink-0 text-xs px-2 py-0.5 rounded-full border ${color}`}>
+                      {item.tag}
+                    </span>
+                  </div>
+                  <p className="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
+                </div>
+              </>
+            )}
+          </CardWrapper>
+        );
+      })}
+    </div>
+  );
+}
+
+export default function Home() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
 
@@ -67,7 +220,6 @@ export default function Home() {
       {/* Hero */}
       <section className="bg-gradient-to-b from-yellow-50 to-amber-50 pt-8 pb-6 px-4 text-center">
         <div className="max-w-sm mx-auto">
-          {/* Character */}
           <div className="flex justify-center mb-4">
             <div className="relative w-72 h-72">
               <Image
@@ -80,16 +232,12 @@ export default function Home() {
               />
             </div>
           </div>
-
-          {/* Site name */}
           <div className="mb-3">
             <h1 className="text-3xl font-black text-stone-800 tracking-tight leading-tight">
               Japan Trip Picks
               <span className="ml-2">🇯🇵</span>
             </h1>
           </div>
-
-          {/* Tagline */}
           <div className="bg-white rounded-2xl shadow-sm border border-yellow-200 px-5 py-4 mb-4">
             <p className="text-lg font-bold text-stone-800 mb-1">
               日本旅行、失敗しない。
@@ -100,8 +248,6 @@ export default function Home() {
               <span className="text-xs text-stone-400">必吃・必買・必去をまとめたガイド</span>
             </p>
           </div>
-
-          {/* Trust badges */}
           <div className="flex justify-center gap-2 flex-wrap text-xs">
             {["✅ 台灣人親測", "📸 IG打卡點", "💰 CP值爆表", "🗺️ 地圖連結"].map((badge) => (
               <span key={badge} className="bg-white border border-stone-200 text-stone-600 px-3 py-1 rounded-full">
@@ -134,7 +280,6 @@ export default function Home() {
       <main className="max-w-4xl mx-auto px-4 py-6 space-y-10">
         {categories.map((cat) => (
           <section key={cat.id} id={cat.id}>
-            {/* Section header */}
             <div className="flex items-center gap-3 mb-4">
               <div className={`w-12 h-12 rounded-2xl flex items-center justify-center text-2xl ${cat.color} border-2`}>
                 {cat.icon}
@@ -145,62 +290,10 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Cards */}
-            {picks[cat.id].length === 0 ? (
-              <div className="bg-white rounded-2xl border border-dashed border-stone-200 p-8 text-center text-stone-400">
-                <div className="text-3xl mb-2">🐣</div>
-                <p className="text-sm">近期更新中...</p>
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {picks[cat.id].map((item) => {
-                  const CardWrapper = item.href
-                    ? ({ children }: { children: React.ReactNode }) => (
-                        <Link href={item.href!} className="block bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-                          {children}
-                        </Link>
-                      )
-                    : ({ children }: { children: React.ReactNode }) => (
-                        <div className="bg-white rounded-2xl border border-stone-100 shadow-sm p-4 flex items-start gap-3">
-                          {children}
-                        </div>
-                      );
-                  return (
-                    <CardWrapper key={item.name}>
-                      {item.image ? (
-                        <>
-                          <div className="relative w-full aspect-[16/9] bg-stone-100">
-                            <Image src={item.image} alt={item.name} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" priority />
-                          </div>
-                          <div className="p-4">
-                            <div className="flex items-start justify-between gap-2 mb-1">
-                              <h3 className="font-bold text-stone-800 text-sm leading-tight">{item.name}</h3>
-                              <span className={`shrink-0 text-xs px-2 py-0.5 rounded-full border ${cat.color}`}>
-                                {item.tag}
-                              </span>
-                            </div>
-                            <p className="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
-                          </div>
-                        </>
-                      ) : (
-                        <>
-                          <div className="text-3xl shrink-0">{item.emoji}</div>
-                          <div className="flex-1 min-w-0">
-                            <div className="flex items-start justify-between gap-2 mb-1">
-                              <h3 className="font-bold text-stone-800 text-sm leading-tight">{item.name}</h3>
-                              <span className={`shrink-0 text-xs px-2 py-0.5 rounded-full border ${cat.color}`}>
-                                {item.tag}
-                              </span>
-                            </div>
-                            <p className="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
-                          </div>
-                        </>
-                      )}
-                    </CardWrapper>
-                  );
-                })}
-              </div>
-            )}
+            {cat.hasAreaFilter
+              ? <AreaFilter catId={cat.id} color={cat.color} />
+              : <StaticCards catId={cat.id} color={cat.color} />
+            }
           </section>
         ))}
 
