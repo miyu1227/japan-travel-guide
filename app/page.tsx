@@ -28,7 +28,17 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
     },
   ],
   snacks: [],
-  cafe: [],
+  cafe: [
+    {
+      name: "自由之丘咖啡店推薦｜東京必去咖啡散步地區☕",
+      desc: "貝果・義式冰淇淋・起司披薩，3間人氣店實際走訪",
+      tag: "東京",
+      emoji: "☕",
+      href: "/cafe",
+      image: "/cafe/gelato-1.jpg",
+      areas: ["東京"],
+    },
+  ],
   spot: [
     {
       name: "東京野餐推薦｜新宿御苑＆代代木公園悠閒散步🌿",
