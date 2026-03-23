@@ -33,6 +33,14 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       href: "/spot",
       image: "/spot/shinjuku-1.jpg",
     },
+    {
+      name: "箱根一日遊推薦｜從東京搭浪漫特快出發🚃",
+      desc: "美術館・足湯・神社・甜點，一天玩遍箱根精華",
+      tag: "箱根",
+      emoji: "♨️",
+      href: "/hakone",
+      image: "/hakone/shrine-1.jpg",
+    },
   ],
 };
 
@@ -66,6 +74,7 @@ export default function Home() {
                 src="/poyapiyo-flag.png"
                 alt="ぽやぴよ"
                 fill
+                sizes="288px"
                 className="object-contain drop-shadow-lg"
                 priority
               />
