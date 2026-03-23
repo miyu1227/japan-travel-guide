@@ -176,7 +176,7 @@ export default function HakonePage() {
                       fill
                       sizes={sec.images.length > 1 ? "50vw" : "100vw"}
                       className="object-cover"
-                      {...(i === 0 && sec.id === "yumoto" ? { priority: true } : {})}
+                      {...(i === 0 && (sec.id === "yumoto" || sec.id === "hatsuhana") ? { priority: true } : {})}
                     />
                   </div>
                 ))}
