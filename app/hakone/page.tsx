@@ -14,7 +14,7 @@ const sections = [
       "一下車就能感受到溫泉街的氛圍，讓人期待接下來的行程✨",
     ],
     tags: [],
-    tip: null,
+    url: null,
   },
   {
     id: "glass",
@@ -27,7 +27,7 @@ const sections = [
       "整個園區像歐洲庭園，陽光照在玻璃裝置上會閃閃發光，非常漂亮✨",
     ],
     tags: ["📸 很適合拍照", "💑 情侶・女生旅行推薦"],
-    tip: null,
+    url: "https://www.hakone-garasunomori.jp/",
   },
   {
     id: "dolce",
@@ -41,7 +41,7 @@ const sections = [
       "逛街途中吃一個很剛好✨",
     ],
     tags: ["🍦 必吃甜點", "📸 拍照打卡"],
-    tip: null,
+    url: "https://hakonestella.com/",
   },
   {
     id: "hatsuhana",
@@ -54,7 +54,7 @@ const sections = [
       "箱根很有名的蕎麥麵店，使用自然薯製作，口感很特別，清爽又好吃🍜",
     ],
     tags: ["🥢 午餐推薦", "🌿 清爽好吃"],
-    tip: null,
+    url: "https://hatsuhana.co.jp/",
   },
   {
     id: "kappa",
@@ -67,7 +67,7 @@ const sections = [
       "走一整天後泡腳真的很舒服♨️",
     ],
     tags: ["💰 價格便宜", "⏱️ 不用太多時間", "👣 日帰り也很適合"],
-    tip: null,
+    url: "https://www.kappa1059.co.jp/",
   },
   {
     id: "shrine",
@@ -81,7 +81,7 @@ const sections = [
       "非常有日本氛圍，是箱根必去景點✨",
     ],
     tags: ["⛩️ 必去景點", "🎌 日本氛圍滿點"],
-    tip: null,
+    url: "https://hakonejinja.or.jp/",
   },
 ];
 
@@ -203,11 +203,21 @@ export default function HakonePage() {
                 </div>
 
                 {sec.tags.length > 0 && (
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-3">
                     {sec.tags.map((tag) => (
                       <span key={tag} className="text-xs bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1 rounded-full">{tag}</span>
                     ))}
                   </div>
+                )}
+                {sec.url && (
+                  <a
+                    href={sec.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+                  >
+                    🔗 查看官方網站
+                  </a>
                 )}
               </div>
             </section>
