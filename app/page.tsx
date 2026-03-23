@@ -24,7 +24,16 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   snacks: [],
   cafe: [],
-  spot: [],
+  spot: [
+    {
+      name: "東京野餐推薦｜新宿御苑＆代代木公園悠閒散步🌿",
+      desc: "草地・拍照・放鬆，東京最受歡迎的兩大公園比較",
+      tag: "東京",
+      emoji: "📍",
+      href: "/spot",
+      image: "/spot/shinjuku-1.jpg",
+    },
+  ],
 };
 
 export default function Home() {
