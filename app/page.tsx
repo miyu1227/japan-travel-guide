@@ -320,8 +320,75 @@ export default function Home() {
         </div>
       </main>
 
+      {/* 掲載プランセクション */}
+      <section className="max-w-4xl mx-auto px-4 pb-10">
+        <div className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden">
+          {/* Header */}
+          <div className="bg-gradient-to-r from-stone-700 to-stone-900 px-6 py-4">
+            <p className="text-xs text-stone-300 uppercase tracking-widest mb-1">Business</p>
+            <h3 className="text-white font-black text-lg">📢 掲載・プロモーションのご案内</h3>
+            <p className="text-stone-300 text-xs mt-1">訪日外国人向けに、あなたのお店・スポットをPRしませんか？</p>
+          </div>
+
+          {/* Plans */}
+          <div className="grid sm:grid-cols-2 gap-4 p-5">
+            {/* Light Plan */}
+            <div className="border border-green-200 rounded-2xl p-4 bg-green-50">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="w-6 h-6 rounded-full bg-green-400 text-white text-xs flex items-center justify-center font-black">L</span>
+                <span className="font-black text-stone-800 text-sm">ライトプラン</span>
+                <span className="ml-auto font-black text-green-700 text-base">¥5,000</span>
+              </div>
+              <p className="text-xs text-stone-500 font-semibold mb-2">スポット掲載 — とりあえず載せたい方向け</p>
+              <ul className="text-xs text-stone-600 space-y-1">
+                <li>✔ 既存フォーマットに掲載</li>
+                <li>✔ 写真3〜5枚</li>
+                <li>✔ 基本情報（住所・営業時間など）</li>
+                <li>✔ 紹介文作成（日本語＋英語）</li>
+                <li>✔ 修正1回</li>
+              </ul>
+            </div>
+
+            {/* Standard Plan */}
+            <div className="border border-blue-200 rounded-2xl p-4 bg-blue-50">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="w-6 h-6 rounded-full bg-blue-400 text-white text-xs flex items-center justify-center font-black">S</span>
+                <span className="font-black text-stone-800 text-sm">スタンダードプラン</span>
+                <span className="ml-auto font-black text-blue-700 text-base">¥10,000</span>
+              </div>
+              <p className="text-xs text-stone-500 font-semibold mb-2">特集記事掲載 — しっかりPRしたい方向け</p>
+              <ul className="text-xs text-stone-600 space-y-1">
+                <li>✔ オリジナル記事1本作成</li>
+                <li>✔ 写真5〜10枚</li>
+                <li>✔ おすすめポイント・アクセス情報</li>
+                <li>✔ 英語対応あり</li>
+                <li>✔ 修正2回</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Option + Contact */}
+          <div className="px-5 pb-5 space-y-3">
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 text-xs text-stone-600">
+              ✨ <span className="font-semibold">オプション</span>：SNS紹介（Instagram等）<span className="text-yellow-700 font-bold ml-1">+¥3,000</span>
+            </div>
+            <div className="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-xs text-stone-600 space-y-1">
+              <p className="font-semibold text-stone-700">📩 お問い合わせ / Business Inquiries</p>
+              <p>掲載希望の方は店舗名・所在地・掲載希望内容を添えてご連絡ください。</p>
+              <a
+                href="mailto:poyapiyotonemuneko@gmail.com"
+                className="inline-block mt-1 text-blue-600 underline underline-offset-2 font-medium"
+              >
+                poyapiyotonemuneko@gmail.com
+              </a>
+              <p className="text-stone-400 text-[10px] pt-1">※掲載はサイト掲載期間中、永久掲載となります。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="bg-white border-t border-yellow-100 mt-8 py-6 px-4 text-center text-xs text-stone-400">
+      <footer className="bg-white border-t border-yellow-100 mt-2 py-6 px-4 text-center text-xs text-stone-400">
         <div className="flex justify-center items-center gap-2 mb-2">
           <span className="text-base">🐣</span>
           <span className="font-semibold text-stone-600">Japan Trip Picks</span>
