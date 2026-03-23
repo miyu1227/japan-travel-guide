@@ -54,7 +54,7 @@ export default function PromotionPage() {
                 <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 既存フォーマットに掲載</li>
                 <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 写真3〜5枚</li>
                 <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 基本情報（住所・アクセス・営業時間など）</li>
-                <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 紹介文作成（日本語＋英語）</li>
+                <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 紹介文作成（日本語＋繁体字）</li>
                 <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 修正1回</li>
               </ul>
             </div>
@@ -72,11 +72,10 @@ export default function PromotionPage() {
             <div className="px-5 py-4">
               <p className="text-xs text-stone-500 font-semibold mb-3">🔵 特集記事掲載 — しっかりPRしたい方向け</p>
               <ul className="space-y-2 text-sm text-stone-600">
-                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 1記事作成（オリジナル記事）</li>
+                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 1記事作成</li>
                 <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 写真5〜10枚</li>
-                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> おすすめポイント紹介</li>
-                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> アクセス情報・周辺情報</li>
-                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 英語対応あり</li>
+                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 基本情報（住所・アクセス・営業時間など）</li>
+                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 紹介文作成（日本語＋繁体字）</li>
                 <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 修正2回</li>
               </ul>
             </div>
