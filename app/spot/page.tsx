@@ -81,7 +81,7 @@ export default function SpotPicnicPage() {
           <div className="grid grid-cols-3 gap-0.5">
             {shinjukuPhotos.map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
-                <Image src={src} alt="新宿御苑" fill className="object-cover" />
+                <Image src={src} alt="新宿御苑" fill sizes="33vw" className="object-cover" />
               </div>
             ))}
           </div>
@@ -129,7 +129,7 @@ export default function SpotPicnicPage() {
           <div className="grid grid-cols-2 gap-0.5">
             {yoyogiPhotos.map((src, i) => (
               <div key={i} className="relative aspect-[4/3] bg-stone-100">
-                <Image src={src} alt="代々木公園" fill className="object-cover" />
+                <Image src={src} alt="代々木公園" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
           </div>
