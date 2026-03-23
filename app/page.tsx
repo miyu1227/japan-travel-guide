@@ -388,12 +388,43 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-yellow-100 mt-2 py-6 px-4 text-center text-xs text-stone-400">
+      <footer className="bg-white border-t border-yellow-100 mt-2 py-8 px-4 text-center text-xs text-stone-400">
         <div className="flex justify-center items-center gap-2 mb-2">
           <span className="text-base">🐣</span>
           <span className="font-semibold text-stone-600">Japan Trip Picks</span>
         </div>
         <p>台灣・香港旅客專屬日本旅遊指南</p>
+
+        {/* SNS Icons */}
+        <div className="flex justify-center items-center gap-4 mt-4 mb-3">
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/japantrippicks?igsh=aWlid2Z4M2tpengx&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 text-white hover:opacity-80 transition-opacity shadow-sm"
+            aria-label="Instagram"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          {/* Facebook */}
+          <a
+            href="https://www.facebook.com/profile.php?id=61579453230592&sk=directory_links"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 rounded-full flex items-center justify-center bg-[#1877F2] text-white hover:opacity-80 transition-opacity shadow-sm"
+            aria-label="Facebook"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+        </div>
+
         <p className="mt-1">© 2026 Japan Trip Picks</p>
       </footer>
     </div>
