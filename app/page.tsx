@@ -8,37 +8,12 @@ const categories = [
   { id: "spot", icon: "📍", label: "Spots", labelZh: "景點", color: "bg-blue-100 text-blue-600 border-blue-300", activeColor: "bg-blue-400 text-white border-blue-400" },
 ];
 
-const picks = {
-  convenience: [
-    { name: "7-11 北海道牛奶布丁", desc: "綿密濃郁，台灣買不到的限定口味", tag: "甜點", emoji: "🍮" },
-    { name: "Lawson 草莓大福", desc: "季節限定！外皮Q彈、草莓超新鮮", tag: "季節限定", emoji: "🍓" },
-    { name: "全家 鹽味雞", desc: "熱騰騰的鹽味雞，便利商店No.1熱食", tag: "熱食", emoji: "🍗" },
-    { name: "冰美式咖啡 185日圓", desc: "比台灣便宜又好喝，每天必買", tag: "飲料", emoji: "☕" },
-  ],
-  ramen: [
-    { name: "一蘭拉麵", desc: "博多豚骨代表，個人隔間享用，超沉浸", tag: "博多豚骨", emoji: "🍜" },
-    { name: "ichiran 道頓堀店", desc: "大阪必訪，深夜也大排長龍", tag: "大阪", emoji: "🌙" },
-    { name: "札幌味噌拉麵", desc: "北海道限定濃郁味噌湯頭，冬天暖胃首選", tag: "北海道", emoji: "❄️" },
-    { name: "喜多方拉麵", desc: "福島名物，淡麗醬油湯頭配寬捲麵", tag: "福島", emoji: "🏔️" },
-  ],
-  snacks: [
-    { name: "白色戀人", desc: "北海道必買伴手禮，奶香濃郁夾心餅乾", tag: "北海道", emoji: "🍪" },
-    { name: "東京香蕉", desc: "東京機場必掃貨，香蕉奶油口感超特別", tag: "東京", emoji: "🍌" },
-    { name: "薯條三兄弟", desc: "薄鹽馬鈴薯條，一打開停不下來", tag: "北海道", emoji: "🥔" },
-    { name: "抹茶生巧克力", desc: "ROYCE的抹茶生チョコ，入口即化", tag: "頂級", emoji: "🍫" },
-  ],
-  cafe: [
-    { name: "% Arabica 京都", desc: "世界最美咖啡廳之一，嵐山背景超夢幻", tag: "京都", emoji: "☕" },
-    { name: "Streamer Coffee", desc: "東京潮流咖啡廳，拿鐵藝術一流", tag: "東京", emoji: "🎨" },
-    { name: "星野集團 HOSHINOYA Café", desc: "日式高質感空間，抹茶拿鐵必點", tag: "高質感", emoji: "✨" },
-    { name: "Blue Bottle Coffee", desc: "日本本店質感更好，週末打卡必去", tag: "打卡", emoji: "📸" },
-  ],
-  spot: [
-    { name: "伏見稻荷大社", desc: "千本鳥居穿越感十足，清晨人少最美", tag: "京都", emoji: "⛩️" },
-    { name: "teamLab Borderless", desc: "沉浸式數位藝術，IG打卡聖地", tag: "東京", emoji: "🌊" },
-    { name: "道頓堀", desc: "大阪必訪夜景＆美食街，格力高招牌拍照", tag: "大阪", emoji: "🌃" },
-    { name: "箱根溫泉", desc: "東京近郊一日遊，泡湯＋富士山景色", tag: "神奈川", emoji: "♨️" },
-  ],
+const picks: Record<string, { name: string; desc: string; tag: string; emoji: string }[]> = {
+  convenience: [],
+  ramen: [],
+  snacks: [],
+  cafe: [],
+  spot: [],
 };
 
 export default function Home() {
@@ -142,25 +117,32 @@ export default function Home() {
             </div>
 
             {/* Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {picks[cat.id as keyof typeof picks].map((item, i) => (
-                <div
-                  key={item.name}
-                  className="bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow p-4 flex items-start gap-3"
-                >
-                  <div className="text-3xl shrink-0">{item.emoji}</div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-start justify-between gap-2 mb-1">
-                      <h3 className="font-bold text-stone-800 text-sm leading-tight">{item.name}</h3>
-                      <span className={`shrink-0 text-xs px-2 py-0.5 rounded-full border ${cat.color}`}>
-                        {item.tag}
-                      </span>
+            {picks[cat.id].length === 0 ? (
+              <div className="bg-white rounded-2xl border border-dashed border-stone-200 p-8 text-center text-stone-400">
+                <div className="text-3xl mb-2">🐣</div>
+                <p className="text-sm">近期更新中...</p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {picks[cat.id].map((item) => (
+                  <div
+                    key={item.name}
+                    className="bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow p-4 flex items-start gap-3"
+                  >
+                    <div className="text-3xl shrink-0">{item.emoji}</div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-start justify-between gap-2 mb-1">
+                        <h3 className="font-bold text-stone-800 text-sm leading-tight">{item.name}</h3>
+                        <span className={`shrink-0 text-xs px-2 py-0.5 rounded-full border ${cat.color}`}>
+                          {item.tag}
+                        </span>
+                      </div>
+                      <p className="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
                     </div>
-                    <p className="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
           </section>
         ))}
 
