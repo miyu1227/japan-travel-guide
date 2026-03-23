@@ -1,4 +1,6 @@
+import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const categories = [
   { id: "convenience", icon: "🏪", label: "Convenience Store", labelZh: "便利商店", color: "bg-yellow-100 text-yellow-700 border-yellow-300", activeColor: "bg-yellow-400 text-white border-yellow-400" },
@@ -8,9 +10,18 @@ const categories = [
   { id: "spot", icon: "📍", label: "Spots", labelZh: "景點", color: "bg-blue-100 text-blue-600 border-blue-300", activeColor: "bg-blue-400 text-white border-blue-400" },
 ];
 
-const picks: Record<string, { name: string; desc: string; tag: string; emoji: string }[]> = {
+const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string }[]> = {
   convenience: [],
-  ramen: [],
+  ramen: [
+    {
+      name: "日本拉麵推薦｜3間必吃拉麵（東京＋大阪）",
+      desc: "つじ田・和利道・町田商店，實際吃過的真實評價🍜",
+      tag: "東京・大阪",
+      emoji: "🍜",
+      href: "/ramen",
+      image: "/ramen/tsujita-2.jpg",
+    },
+  ],
   snacks: [],
   cafe: [],
   spot: [],
@@ -124,23 +135,52 @@ export default function Home() {
               </div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {picks[cat.id].map((item) => (
-                  <div
-                    key={item.name}
-                    className="bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow p-4 flex items-start gap-3"
-                  >
-                    <div className="text-3xl shrink-0">{item.emoji}</div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-start justify-between gap-2 mb-1">
-                        <h3 className="font-bold text-stone-800 text-sm leading-tight">{item.name}</h3>
-                        <span className={`shrink-0 text-xs px-2 py-0.5 rounded-full border ${cat.color}`}>
-                          {item.tag}
-                        </span>
-                      </div>
-                      <p className="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
+                {picks[cat.id].map((item) => {
+                  const CardWrapper = item.href
+                    ? ({ children }: { children: React.ReactNode }) => (
+                        <Link href={item.href!} className="block bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                          {children}
+                        </Link>
+                      )
+                    : ({ children }: { children: React.ReactNode }) => (
+                        <div className="bg-white rounded-2xl border border-stone-100 shadow-sm p-4 flex items-start gap-3">
+                          {children}
+                        </div>
+                      );
+                  return (
+                    <CardWrapper key={item.name}>
+                      {item.image ? (
+                        <>
+                          <div className="relative w-full aspect-[16/9] bg-stone-100">
+                            <Image src={item.image} alt={item.name} fill className="object-cover" />
+                          </div>
+                          <div className="p-4">
+                            <div className="flex items-start justify-between gap-2 mb-1">
+                              <h3 className="font-bold text-stone-800 text-sm leading-tight">{item.name}</h3>
+                              <span className={`shrink-0 text-xs px-2 py-0.5 rounded-full border ${cat.color}`}>
+                                {item.tag}
+                              </span>
+                            </div>
+                            <p className="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
+                          </div>
+                        </>
+                      ) : (
+                        <>
+                          <div className="text-3xl shrink-0">{item.emoji}</div>
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-start justify-between gap-2 mb-1">
+                              <h3 className="font-bold text-stone-800 text-sm leading-tight">{item.name}</h3>
+                              <span className={`shrink-0 text-xs px-2 py-0.5 rounded-full border ${cat.color}`}>
+                                {item.tag}
+                              </span>
+                            </div>
+                            <p className="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
+                          </div>
+                        </>
+                      )}
+                    </CardWrapper>
+                  );
+                })}
               </div>
             )}
           </section>
