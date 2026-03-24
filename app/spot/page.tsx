@@ -2,10 +2,50 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+const PAGE_URL = "https://www.japantrippicks.com/spot";
+const OG_IMAGE = "/spot/shinjuku-1.jpg";
+
 export const metadata: Metadata = {
   title: "東京野餐推薦｜新宿御苑・代代木公園完全指南【2025】",
   description:
     "東京野餐最推薦的兩個公園：新宿御苑和代代木公園。附交通方式、門票資訊、野餐食物推薦，以及最佳造訪季節。來東京旅遊想放鬆的人必看！",
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: "東京野餐推薦｜新宿御苑・代代木公園完全指南【2025】",
+    description: "東京野餐推薦2大公園：新宿御苑・代代木公園。附交通・門票・野餐食物推薦。",
+    url: PAGE_URL,
+    type: "article",
+    locale: "zh_TW",
+    siteName: "Japan Trip Picks",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "東京野餐推薦・新宿御苑" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "東京野餐推薦｜新宿御苑・代代木公園",
+    description: "東京最適合野餐的2個公園。附交通・門票・食物推薦！",
+    images: [OG_IMAGE],
+  },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: "東京野餐推薦｜新宿御苑・代代木公園完全指南【2025】",
+  description: "東京野餐推薦2大公園。附交通方式、門票資訊、野餐食物推薦。",
+  url: PAGE_URL,
+  inLanguage: "zh-TW",
+  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  image: `https://www.japantrippicks.com${OG_IMAGE}`,
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "首頁", item: "https://www.japantrippicks.com" },
+    { "@type": "ListItem", position: 2, name: "景點推薦", item: PAGE_URL },
+  ],
 };
 
 const shinjukuPhotos = [
@@ -35,6 +75,8 @@ const relatedLinks = [
 export default function SpotPicnicPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">

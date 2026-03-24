@@ -2,10 +2,50 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+const PAGE_URL = "https://www.japantrippicks.com/cafe";
+const OG_IMAGE = "/cafe/gelato-1.jpg";
+
 export const metadata: Metadata = {
   title: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南【2025】",
   description:
     "整理自由之丘3間人氣東京咖啡店，包含Q彈貝果、義式冰淇淋、現做起司披薩。街道安靜又可愛，非常適合散步、拍照和享受東京下午茶。來東京旅遊一定要安排半天來這裡！",
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南【2025】",
+    description: "自由之丘3間人氣東京咖啡店。貝果・義式冰淇淋・起司披薩。適合散步、拍照、東京下午茶。",
+    url: PAGE_URL,
+    type: "article",
+    locale: "zh_TW",
+    siteName: "Japan Trip Picks",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "自由之丘咖啡推薦" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "自由之丘咖啡推薦｜東京最值得去的咖啡店",
+    description: "貝果・義式冰淇淋・起司披薩。東京咖啡散步必去地區！",
+    images: [OG_IMAGE],
+  },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南【2025】",
+  description: "整理自由之丘3間人氣東京咖啡店。貝果・義式冰淇淋・起司披薩。",
+  url: PAGE_URL,
+  inLanguage: "zh-TW",
+  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  image: `https://www.japantrippicks.com${OG_IMAGE}`,
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "首頁", item: "https://www.japantrippicks.com" },
+    { "@type": "ListItem", position: 2, name: "咖啡廳推薦", item: PAGE_URL },
+  ],
 };
 
 const shops = [
@@ -77,6 +117,8 @@ const relatedLinks = [
 export default function JiyugaokaCafePage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">

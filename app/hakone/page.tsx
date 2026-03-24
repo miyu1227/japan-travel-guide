@@ -2,10 +2,50 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+const PAGE_URL = "https://www.japantrippicks.com/hakone";
+const OG_IMAGE = "/hakone/shrine-1.jpg";
+
 export const metadata: Metadata = {
   title: "箱根一日遊推薦｜從東京搭浪漫特快出發的完整攻略【2025】",
   description:
     "從東京搭浪漫特快只需1.5小時即可抵達箱根！整理玻璃美術館、箱根神社、足湯、蕎麥麵等5個必去景點，附交通方式、票價與實際行程安排，適合台灣香港旅客的箱根一日遊完整指南。",
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: "箱根一日遊推薦｜從東京搭浪漫特快出發的完整攻略【2025】",
+    description: "從東京搭浪漫特快1.5小時到箱根！玻璃美術館・神社・足湯・蕎麥麵5個必去景點完整攻略。",
+    url: PAGE_URL,
+    type: "article",
+    locale: "zh_TW",
+    siteName: "Japan Trip Picks",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "箱根神社・箱根一日遊" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "箱根一日遊推薦｜從東京搭浪漫特快出發",
+    description: "浪漫特快1.5小時到箱根！神社・美術館・足湯・蕎麥麵完整攻略。",
+    images: [OG_IMAGE],
+  },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: "箱根一日遊推薦｜從東京搭浪漫特快出發的完整攻略【2025】",
+  description: "從東京搭浪漫特快1.5小時到箱根。玻璃美術館・箱根神社・足湯・蕎麥麵5個必去景點。",
+  url: PAGE_URL,
+  inLanguage: "zh-TW",
+  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  image: `https://www.japantrippicks.com${OG_IMAGE}`,
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "首頁", item: "https://www.japantrippicks.com" },
+    { "@type": "ListItem", position: 2, name: "箱根一日遊", item: PAGE_URL },
+  ],
 };
 
 const spots = [
@@ -115,6 +155,8 @@ const relatedLinks = [
 export default function HakonePage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
