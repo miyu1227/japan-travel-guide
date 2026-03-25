@@ -35,6 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${BASE_URL}/shin-okubo`,
+      lastModified: new Date("2025-01-01"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${BASE_URL}/promotion`,
       lastModified: new Date("2025-01-01"),
       changeFrequency: "monthly",
