@@ -67,6 +67,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       image: "/hakone/shrine-1.jpg",
       areas: ["その他"],
     },
+    {
+      name: "北海道自由行必去景點10選｜札幌・小樽・富良野一次玩遍",
+      desc: "音樂盒堂・青池・薰衣草花田・迴轉壽司・成吉思汗，北海道精華全收錄",
+      tag: "北海道",
+      emoji: "🗾",
+      href: "/hokkaido",
+      image: "/hokkaido/farm-1.jpg",
+      areas: ["北海道"],
+    },
   ],
 };
 
