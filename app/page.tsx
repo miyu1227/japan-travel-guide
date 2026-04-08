@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const categories = [
   { id: "convenience", icon: "🏪", label: "Convenience Store", labelZh: "便利商店", color: "bg-yellow-100 text-yellow-700 border-yellow-300", activeColor: "bg-yellow-400 text-white border-yellow-400", hasAreaFilter: false },
-  { id: "ramen", icon: "🍜", label: "Ramen", labelZh: "拉麵", color: "bg-red-100 text-red-600 border-red-300", activeColor: "bg-red-400 text-white border-red-400", hasAreaFilter: true },
+  { id: "ramen", icon: "🍽️", label: "Gourmet", labelZh: "美食", color: "bg-red-100 text-red-600 border-red-300", activeColor: "bg-red-400 text-white border-red-400", hasAreaFilter: true },
   { id: "snacks", icon: "🍘", label: "Snacks", labelZh: "零食伴手禮", color: "bg-orange-100 text-orange-600 border-orange-300", activeColor: "bg-orange-400 text-white border-orange-400", hasAreaFilter: false },
   { id: "cafe", icon: "☕", label: "Cafés", labelZh: "咖啡廳", color: "bg-pink-100 text-pink-600 border-pink-300", activeColor: "bg-pink-400 text-white border-pink-400", hasAreaFilter: true },
   { id: "spot", icon: "📍", label: "Spots", labelZh: "景點", color: "bg-blue-100 text-blue-600 border-blue-300", activeColor: "bg-blue-400 text-white border-blue-400", hasAreaFilter: true },
