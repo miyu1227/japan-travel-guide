@@ -6,13 +6,13 @@ const PAGE_URL = "https://www.japantrippicks.com/ramen";
 const OG_IMAGE = "/ramen/tsujita-1.jpg";
 
 export const metadata: Metadata = {
-  title: "日本拉麵推薦｜東京・大阪必吃拉麵3選【實際吃過】",
+  title: "日本拉麵推薦｜東京・大阪必吃拉麵4選【實際吃過】",
   description:
-    "整理3間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店和利道、全國連鎖家系拉麵町田商店。來東京或大阪旅遊必吃！附地址・交通・推薦菜單。",
+    "整理4間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店和利道、全國連鎖家系拉麵町田商店、中目黒俺流鹽味拉麵。來東京或大阪旅遊必吃！附地址・交通・推薦菜單。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "日本拉麵推薦｜東京・大阪必吃拉麵3選【實際吃過】",
-    description: "整理3間實際吃過的日本拉麵推薦。大阪魚介つけ麺・東京排隊名店・全國連鎖家系拉麵。附地址・交通。",
+    title: "日本拉麵推薦｜東京・大阪必吃拉麵4選【實際吃過】",
+    description: "整理4間實際吃過的日本拉麵推薦。大阪魚介つけ麺・東京排隊名店・全國連鎖家系拉麵・中目黒鹽味拉麵。附地址・交通。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "日本拉麵推薦｜東京・大阪必吃拉麵3選",
-    description: "大阪魚介つけ麺・東京排隊名店・家系拉麵。實際吃過的3間推薦！",
+    title: "日本拉麵推薦｜東京・大阪必吃拉麵4選",
+    description: "大阪魚介つけ麺・東京排隊名店・家系拉麵・中目黒鹽味拉麵。實際吃過的4間推薦！",
     images: [OG_IMAGE],
   },
 };
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "日本拉麵推薦｜東京・大阪必吃拉麵3選【實際吃過】",
-  description: "整理3間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店、全國連鎖家系拉麵。",
+  headline: "日本拉麵推薦｜東京・大阪必吃拉麵4選【實際吃過】",
+  description: "整理4間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店、全國連鎖家系拉麵、中目黒俺流鹽味拉麵。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Organization", name: "Japan Trip Picks" },
@@ -103,6 +103,24 @@ const shops = [
     },
     tags: ["🐷 豚骨醬油", "🏪 全國連鎖", "👶 初次挑戰OK"],
   },
+  {
+    id: "oreryuu",
+    number: 4,
+    name: "俺流鹽味拉麵 中目黒店",
+    highlight: "配料自由搭配・清爽鹽味",
+    url: "https://oreryushio.co.jp/?page_id=129",
+    tag: "東京",
+    recommend: "鹽味拉麵（自由加配料）",
+    images: ["/ramen/oreryuu-1.jpg", "/ramen/oreryuu-2.jpg"],
+    intro: "位於中目黒的人氣鹽味拉麵店，湯頭清爽卻帶有深度，是不分客層都喜愛的一碗。氛圍輕鬆，一個人也很容易進去用餐。",
+    reason: "最大魅力是配料自由度超高！種類豐富，可以依自己喜好客製化，這次點的一碗加了滿滿的叉燒和半熟蛋，分量十足✨ 不會太油膩，無論午餐或晚餐都剛剛好。",
+    basicInfo: {
+      address: "東京都目黒区上目黒3-1-4",
+      access: "東急東横線・東京メトロ日比谷線「中目黒」駅 徒歩約2分",
+      price: "¥800〜¥1,200",
+    },
+    tags: ["🧂 清爽鹽味", "🥚 配料自由", "🚶 中目黒徒步2分"],
+  },
 ];
 
 const ramenTypes = [
@@ -145,7 +163,7 @@ export default function RamenArticle() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          日本拉麵推薦｜東京・大阪<br />必吃拉麵3選🍜
+          日本拉麵推薦｜東京・大阪<br />必吃拉麵4選🍜
         </h1>
         <p className="text-xs text-stone-400 mb-6">最後更新：2025年</p>
 
@@ -156,7 +174,7 @@ export default function RamenArticle() {
             來日本旅遊，<strong>日本拉麵</strong>絕對是必吃清單的第一名🍜 不同地區有不同風格，東京、大阪、福岡……每個地方的拉麵都有自己的個性。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次整理了3間我實際吃過的店，包含大阪的濃郁魚介つけ麺、東京的排隊名店，以及在日本各地都找得到的家系拉麵。每一間都有自己的魅力，請按照行程選擇！
+            這次整理了4間我實際吃過的店，包含大阪的濃郁魚介つけ麺、東京的排隊名店、在日本各地都找得到的家系拉麵，以及中目黒可自由搭配配料的鹽味拉麵。每一間都有自己的魅力，請按照行程選擇！
           </p>
         </section>
 
@@ -177,7 +195,7 @@ export default function RamenArticle() {
         </section>
 
         {/* H2: 推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">日本拉麵推薦・3間必吃</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">日本拉麵推薦・4間必吃</h2>
 
         {/* Shops */}
         <div className="space-y-8 mb-10">
@@ -264,7 +282,7 @@ export default function RamenArticle() {
         {/* ぽやぴよ總結 */}
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
-            這3間各有特色✨ 大阪的濃郁魚介つけ麺、東京的排隊名店、以及全國都找得到的家系拉麵——<br />
+            這4間各有特色✨ 大阪的濃郁魚介つけ麺、東京的排隊名店、全國都找得到的家系拉麵，加上中目黒可自由配料的鹽味拉麵——<br />
             來日本旅遊的話，一定要安排一餐專程去吃日本拉麵！
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
