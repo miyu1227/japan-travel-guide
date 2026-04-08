@@ -18,8 +18,8 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   convenience: [],
   ramen: [
     {
-      name: "日本拉麵推薦｜3間必吃拉麵（東京＋大阪）",
-      desc: "つじ田・和利道・町田商店，實際吃過的真實評價🍜",
+      name: "日本拉麵推薦｜4間必吃拉麵（東京＋大阪）",
+      desc: "つじ田・和利道・町田商店・俺流鹽味拉麵，實際吃過的真實評價🍜",
       tag: "東京・大阪",
       emoji: "🍜",
       href: "/ramen",
