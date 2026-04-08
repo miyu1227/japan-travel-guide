@@ -26,6 +26,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       image: "/ramen/tsujita-2.jpg",
       areas: ["東京", "大阪"],
     },
+    {
+      name: "新大久保美食推薦｜韓國料理・咖啡・甜點食べ歩き🇰🇷",
+      desc: "ナッコプセ鍋・韓系咖啡廳・ドバイ餅，實際走訪3間必去",
+      tag: "東京",
+      emoji: "🍲",
+      href: "/shin-okubo",
+      image: "/shin-okubo/sawee-1.jpg",
+      areas: ["東京"],
+    },
   ],
   snacks: [],
   cafe: [
@@ -47,15 +56,6 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       emoji: "📍",
       href: "/spot",
       image: "/spot/shinjuku-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "新大久保美食推薦｜韓國料理・咖啡・甜點食べ歩き🇰🇷",
-      desc: "ナッコプセ鍋・韓系咖啡廳・ドバイ餅，實際走訪3間必去",
-      tag: "東京",
-      emoji: "🍲",
-      href: "/shin-okubo",
-      image: "/shin-okubo/sawee-1.jpg",
       areas: ["東京"],
     },
     {
