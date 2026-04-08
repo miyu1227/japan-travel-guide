@@ -39,6 +39,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   snacks: [],
   cafe: [
     {
+      name: "夙川おすすめカフェ2選｜ガレットランチ＆本格コーヒー☕",
+      desc: "クレープリー・ルポ＆ゆげ焙煎所，兵庫・夙川の人気カフェ実際訪問レポート",
+      tag: "神戸",
+      emoji: "☕",
+      href: "/shukugawa",
+      image: "/shukugawa/crepe-1.jpg",
+      areas: ["神戸"],
+    },
+    {
       name: "自由之丘咖啡店推薦｜東京必去咖啡散步地區☕",
       desc: "貝果・義式冰淇淋・起司披薩，3間人氣店實際走訪",
       tag: "東京",
