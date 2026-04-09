@@ -155,7 +155,7 @@ function AreaFilter({ catId, color }: { catId: string; color: string }) {
           <p className="text-sm">近期更新中...</p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {filtered.map((item) => {
             const CardWrapper = item.href
               ? ({ children }: { children: React.ReactNode }) => (
@@ -219,7 +219,7 @@ function StaticCards({ catId, color }: { catId: string; color: string }) {
     );
   }
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {items.map((item) => {
         const CardWrapper = item.href
           ? ({ children }: { children: React.ReactNode }) => (
@@ -276,7 +276,7 @@ export default function Home() {
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
-        <div className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-xl">🐣</span>
             <span className="font-bold text-base text-stone-800">Japan Trip Picks</span>
@@ -292,14 +292,14 @@ export default function Home() {
       <section className="relative bg-gradient-to-b from-yellow-50 to-amber-50 pt-5 pb-6 px-4 overflow-hidden">
         {/* deco flowers */}
 
-        <div className="max-w-xl mx-auto relative">
-          <h1 className="text-2xl font-black text-stone-800 tracking-tight leading-tight mb-4 text-center">
+        <div className="max-w-6xl mx-auto relative">
+          <h1 className="text-2xl sm:text-3xl font-black text-stone-800 tracking-tight leading-tight mb-4 text-center">
             Japan Trip Picks
           </h1>
 
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center justify-center gap-4 sm:gap-8 mb-4">
             {/* Left: ぽやぴよ + 吹き出し（上に重ならず配置） */}
-            <div className="relative shrink-0 w-28 sm:w-36 flex flex-col items-center">
+            <div className="relative shrink-0 w-28 sm:w-40 flex flex-col items-center">
               {/* 吹き出し */}
               <div className="relative bg-white rounded-[20px] px-3 py-1.5 rotate-[-3deg] mb-1 self-start ml-1" style={{ boxShadow: "0 4px 14px rgba(180,140,60,0.15)" }}>
                 <p className="text-[10px] text-stone-700 leading-tight text-center whitespace-nowrap">
@@ -327,7 +327,7 @@ export default function Home() {
             </div>
 
             {/* Right: text card */}
-            <div className="flex-1 bg-white rounded-3xl px-4 py-3 text-left" style={{ boxShadow: "0 4px 16px rgba(180,140,60,0.1)" }}>
+            <div className="flex-1 sm:flex-none sm:w-[420px] bg-white rounded-3xl px-5 py-4 text-left" style={{ boxShadow: "0 4px 16px rgba(180,140,60,0.1)" }}>
               <p className="text-sm font-bold text-stone-800 mb-0.5">
                 日本旅行、失敗しない。
               </p>
@@ -352,7 +352,7 @@ export default function Home() {
 
       {/* Category Tabs */}
       <section className="sticky top-14 z-40 bg-white border-b border-yellow-100 shadow-sm">
-        <div className="max-w-4xl mx-auto px-4 py-3">
+        <div className="max-w-6xl mx-auto px-4 py-3">
           <div className="flex gap-2 overflow-x-auto scrollbar-hide pb-1">
             {categories.map((cat, i) => (
               <a
@@ -369,7 +369,7 @@ export default function Home() {
       </section>
 
       {/* Content Sections */}
-      <main className="max-w-4xl mx-auto px-4 py-6 space-y-10">
+      <main className="max-w-6xl mx-auto px-4 py-6 space-y-10">
         {categories.map((cat) => (
           <section key={cat.id} id={cat.id}>
             <div className="flex items-center gap-3 mb-4">
@@ -403,7 +403,7 @@ export default function Home() {
       </main>
 
       {/* About blurb */}
-      <section className="max-w-4xl mx-auto px-4 pb-6">
+      <section className="max-w-6xl mx-auto px-4 pb-6">
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 text-center">
           <h2 className="font-black text-stone-800 text-base mb-3">關於 Japan Trip Picks</h2>
           <p className="text-sm text-stone-600 leading-relaxed">
@@ -414,7 +414,7 @@ export default function Home() {
       </section>
 
       {/* 掲載プランセクション */}
-      <section className="max-w-4xl mx-auto px-4 pb-10">
+      <section className="max-w-6xl mx-auto px-4 pb-10">
         <Link href="/promotion" className="block group">
           <div className="bg-gradient-to-r from-stone-700 to-stone-900 rounded-3xl px-6 py-5 flex items-center justify-between hover:opacity-90 transition-opacity shadow-sm">
             <div>
