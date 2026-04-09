@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const categories = [
-  { id: "convenience", icon: "🏪", label: "Convenience Store", labelZh: "便利商店", color: "bg-yellow-100 text-yellow-700 border-yellow-300", activeColor: "bg-yellow-400 text-white border-yellow-400", hasAreaFilter: false },
   { id: "ramen", icon: "🍽️", label: "Gourmet", labelZh: "美食", color: "bg-red-100 text-red-600 border-red-300", activeColor: "bg-red-400 text-white border-red-400", hasAreaFilter: true },
   { id: "snacks", icon: "🍘", label: "Snacks", labelZh: "零食伴手禮", color: "bg-orange-100 text-orange-600 border-orange-300", activeColor: "bg-orange-400 text-white border-orange-400", hasAreaFilter: false },
   { id: "cafe", icon: "☕", label: "Cafés", labelZh: "咖啡廳", color: "bg-pink-100 text-pink-600 border-pink-300", activeColor: "bg-pink-400 text-white border-pink-400", hasAreaFilter: true },
@@ -15,7 +14,6 @@ const categories = [
 const areas = ["すべて", "東京", "大阪", "神戸", "北海道", "四国", "その他"];
 
 const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string; areas: string[] }[]> = {
-  convenience: [],
   ramen: [
     {
       name: "日本拉麵推薦｜4間必吃拉麵（東京＋大阪）",
@@ -58,6 +56,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
     },
   ],
   spot: [
+    {
+      name: "東京美術館推薦｜國立新美術館＆根津美術館2選🎨",
+      desc: "六本木現代建築・表參道日本庭園，2間必去美術館完整指南",
+      tag: "東京",
+      emoji: "🎨",
+      href: "/museum",
+      image: "/museum/nact-1.jpg",
+      areas: ["東京"],
+    },
     {
       name: "東京紅葉推薦｜神宮外苑銀杏並木の金黃大道🍁",
       desc: "約300公尺的金黃銀杏隧道，東京秋天最具代表性的景點",
