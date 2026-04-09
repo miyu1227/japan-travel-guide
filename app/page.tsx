@@ -350,21 +350,8 @@ export default function Home() {
           </h1>
 
           <div className="flex flex-col sm:flex-row items-center lg:justify-between gap-4 sm:gap-10 lg:gap-10 mb-5 justify-center">
-            {/* Left: 吹き出し + ぽやぴよ（PCでは横並び） */}
-            <div className="flex items-center gap-3 lg:gap-5 lg:pl-10">
-              {/* 吹き出し（左側） */}
-              <div className="relative bg-white rounded-[28px] px-5 py-3 rotate-[-3deg] shrink-0" style={{ boxShadow: "0 6px 18px rgba(180,140,60,0.16)" }}>
-                <p className="text-sm sm:text-base text-stone-700 leading-snug text-center whitespace-nowrap">
-                  <span className="mr-1">✨</span>第一次來日本？<br />
-                  <strong className="text-red-500">不踩雷美食</strong>在這裡！
-                </p>
-                {/* tail（右向き → ぽやぴよを指す） */}
-                <span className="absolute -right-1.5 top-1/2 -translate-y-1/2 w-3 h-3 bg-white rotate-45 rounded-[3px]"></span>
-                {/* deco dots */}
-                <span className="absolute -top-1.5 -left-1 w-2 h-2 rounded-full bg-yellow-300"></span>
-                <span className="absolute -top-2.5 left-6 w-1.5 h-1.5 rounded-full bg-pink-300"></span>
-                <span className="absolute -bottom-1 -left-1 w-1.5 h-1.5 rounded-full bg-yellow-200"></span>
-              </div>
+            {/* Left: ぽやぴよ + 吹き出し（PCでは横並び） */}
+            <div className="flex items-center gap-3 sm:gap-4 lg:gap-5 lg:pl-10">
               {/* ぽやぴよ */}
               <div className="relative shrink-0 w-32 sm:w-48 lg:w-56">
                 <div className="relative w-full aspect-square -rotate-[4deg]">
@@ -379,6 +366,19 @@ export default function Home() {
                 </div>
                 <span className="absolute left-1/2 -translate-x-1/2 -bottom-0.5 w-20 h-1.5 rounded-full bg-stone-300/30 blur-[2px]"></span>
               </div>
+              {/* 吹き出し（右側・気持ち上） */}
+              <div className="relative bg-white rounded-[26px] px-5 py-3 rotate-[-3deg] shrink-0 -mt-10 sm:-mt-14 lg:-mt-16" style={{ boxShadow: "0 6px 18px rgba(180,140,60,0.16)" }}>
+                <p className="text-sm sm:text-base text-stone-700 leading-snug text-center whitespace-nowrap">
+                  <span className="mr-0.5">✨</span>第一次來日本？<br />
+                  <strong className="text-red-500">不踩雷美食</strong>在這裡！
+                </p>
+                {/* tail（左向き → ぽやぴよを指す） */}
+                <span className="absolute -left-1 top-1/2 -translate-y-1/2 w-2.5 h-2.5 bg-white rotate-45 rounded-[3px]"></span>
+                {/* deco dots */}
+                <span className="absolute -top-1 -right-1 w-1.5 h-1.5 rounded-full bg-yellow-300"></span>
+                <span className="absolute -top-2 right-5 w-1 h-1 rounded-full bg-pink-300"></span>
+                <span className="absolute -bottom-0.5 -right-0.5 w-1 h-1 rounded-full bg-yellow-200"></span>
+              </div>
             </div>
 
             {/* Right: text card */}
@@ -388,19 +388,19 @@ export default function Home() {
               <span className="absolute -top-3 right-10 w-2 h-2 rounded-full bg-yellow-300"></span>
               <span className="absolute -top-1 right-16 w-1.5 h-1.5 rounded-full bg-pink-300"></span>
 
-              <p className="text-base sm:text-lg font-bold text-stone-800 mb-1 flex items-center gap-1.5">
-                <span>日本旅行、失敗しない。</span>
+              <p className="text-lg sm:text-xl font-bold text-stone-800 mb-1.5">
+                日本旅行、失敗しない。
               </p>
-              <p className="text-xs sm:text-sm text-red-500 font-semibold leading-relaxed">
+              <p className="text-sm sm:text-base text-red-500 font-semibold leading-relaxed">
                 🍜 日本旅遊必看！不踩雷美食＆景點推薦
               </p>
 
               <div className="mt-3 pt-3 border-t border-dashed border-yellow-200 space-y-2">
-                <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
                   <span className="mr-1">🇯🇵</span>
                   專為<strong className="text-stone-800">台灣與香港旅客</strong>打造的日本旅遊資訊網站，精選<span className="text-pink-500 font-semibold">咖啡廳</span>、<span className="text-red-500 font-semibold">美食</span>與<span className="text-blue-500 font-semibold">觀光景點</span>。
                 </p>
-                <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
                   <span className="mr-1">✨</span>
                   所有文章皆基於<strong className="text-stone-800">實際造訪與體驗</strong>撰寫🌿
                 </p>
