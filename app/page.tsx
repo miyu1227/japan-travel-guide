@@ -16,6 +16,15 @@ const areas = ["すべて", "東京", "大阪", "神戸", "北海道", "四国",
 const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string; areas: string[] }[]> = {
   ramen: [
     {
+      name: "神戶牛推薦｜ステーキハウスZEN 三宮店・A5鐵板燒名店🥩",
+      desc: "神戶必吃A5神戶牛鐵板燒名店，主廚現煎入口即化",
+      tag: "神戶",
+      emoji: "🥩",
+      href: "/steak-zen",
+      image: "/steak-zen/zen-1.jpg",
+      areas: ["神戸"],
+    },
+    {
       name: "日本拉麵推薦｜4間必吃拉麵（東京＋大阪）",
       desc: "つじ田・和利道・町田商店・俺流鹽味拉麵，實際吃過的真實評價🍜",
       tag: "東京・大阪",
