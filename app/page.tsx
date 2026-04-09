@@ -291,8 +291,6 @@ export default function Home() {
       {/* Hero */}
       <section className="relative bg-gradient-to-b from-yellow-50 to-amber-50 pt-5 pb-6 px-4 overflow-hidden">
         {/* deco flowers */}
-        <span className="absolute bottom-6 left-4 text-xl opacity-50 select-none">🌼</span>
-        <span className="absolute top-20 left-6 text-lg opacity-40 select-none">✨</span>
 
         <div className="max-w-xl mx-auto relative">
           <h1 className="text-2xl font-black text-stone-800 tracking-tight leading-tight mb-4 text-center">
