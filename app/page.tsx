@@ -344,50 +344,67 @@ export default function Home() {
       <section className="relative bg-gradient-to-b from-yellow-50 to-amber-50 pt-5 pb-6 px-4 overflow-hidden">
         {/* deco flowers */}
 
-        <div className="max-w-6xl mx-auto relative px-2">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-stone-800 tracking-tight leading-tight mb-5 text-center">
+        <div className="max-w-[1200px] mx-auto relative px-2 sm:px-6">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-stone-800 tracking-tight leading-tight mb-5 text-center lg:text-left lg:pl-4">
             Japan Trip Picks
           </h1>
 
-          <div className="flex items-center gap-4 sm:gap-10 lg:gap-16 mb-5 justify-center lg:justify-start lg:pl-8">
-            {/* Left: ぽやぴよ + 吹き出し */}
-            <div className="relative shrink-0 w-32 sm:w-48 lg:w-56 flex flex-col items-center">
-              {/* 吹き出し */}
-              <div className="relative bg-white rounded-[22px] px-4 py-2 rotate-[-3deg] mb-2 self-start ml-1" style={{ boxShadow: "0 4px 14px rgba(180,140,60,0.15)" }}>
-                <p className="text-[11px] sm:text-xs text-stone-700 leading-tight text-center whitespace-nowrap">
-                  <span className="mr-0.5">✨</span>第一次來日本？<br />
+          <div className="flex flex-col sm:flex-row items-center lg:justify-between gap-4 sm:gap-10 lg:gap-10 mb-5 justify-center">
+            {/* Left: 吹き出し + ぽやぴよ（PCでは横並び） */}
+            <div className="flex items-center gap-3 lg:gap-5 lg:pl-10">
+              {/* 吹き出し（左側） */}
+              <div className="relative bg-white rounded-[28px] px-5 py-3 rotate-[-3deg] shrink-0" style={{ boxShadow: "0 6px 18px rgba(180,140,60,0.16)" }}>
+                <p className="text-sm sm:text-base text-stone-700 leading-snug text-center whitespace-nowrap">
+                  <span className="mr-1">✨</span>第一次來日本？<br />
                   <strong className="text-red-500">不踩雷美食</strong>在這裡！
                 </p>
-                <span className="absolute left-7 -bottom-1 w-2.5 h-2.5 bg-white rotate-45 rounded-[3px]"></span>
-                <span className="absolute -top-1 -right-1 w-1.5 h-1.5 rounded-full bg-yellow-300"></span>
-                <span className="absolute -top-2 right-3 w-1 h-1 rounded-full bg-pink-300"></span>
+                {/* tail（右向き → ぽやぴよを指す） */}
+                <span className="absolute -right-1.5 top-1/2 -translate-y-1/2 w-3 h-3 bg-white rotate-45 rounded-[3px]"></span>
+                {/* deco dots */}
+                <span className="absolute -top-1.5 -left-1 w-2 h-2 rounded-full bg-yellow-300"></span>
+                <span className="absolute -top-2.5 left-6 w-1.5 h-1.5 rounded-full bg-pink-300"></span>
+                <span className="absolute -bottom-1 -left-1 w-1.5 h-1.5 rounded-full bg-yellow-200"></span>
               </div>
               {/* ぽやぴよ */}
-              <div className="relative w-full aspect-square -rotate-[4deg]">
-                <Image
-                  src="/poyapiyo-flag.png"
-                  alt="ぽやぴよ"
-                  fill
-                  sizes="(max-width: 640px) 128px, (max-width: 1024px) 192px, 224px"
-                  className="object-contain"
-                  priority
-                />
+              <div className="relative shrink-0 w-32 sm:w-48 lg:w-56">
+                <div className="relative w-full aspect-square -rotate-[4deg]">
+                  <Image
+                    src="/poyapiyo-flag.png"
+                    alt="ぽやぴよ"
+                    fill
+                    sizes="(max-width: 640px) 128px, (max-width: 1024px) 192px, 224px"
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+                <span className="absolute left-1/2 -translate-x-1/2 -bottom-0.5 w-20 h-1.5 rounded-full bg-stone-300/30 blur-[2px]"></span>
               </div>
-              <span className="absolute left-1/2 -translate-x-1/2 -bottom-0.5 w-20 h-1.5 rounded-full bg-stone-300/30 blur-[2px]"></span>
             </div>
 
             {/* Right: text card */}
-            <div className="flex-1 max-w-xl bg-white rounded-3xl px-6 py-5 text-left" style={{ boxShadow: "0 4px 16px rgba(180,140,60,0.1)" }}>
-              <p className="text-base sm:text-lg font-bold text-stone-800 mb-1">
-                日本旅行、失敗しない。
+            <div className="relative flex-1 w-full max-w-xl lg:max-w-[560px] bg-white rounded-[28px] px-6 py-5 text-left lg:mr-4 border border-yellow-100" style={{ boxShadow: "0 6px 20px rgba(180,140,60,0.12)" }}>
+              {/* deco */}
+              <span className="absolute -top-2 -right-2 text-xl select-none">🌸</span>
+              <span className="absolute -top-3 right-10 w-2 h-2 rounded-full bg-yellow-300"></span>
+              <span className="absolute -top-1 right-16 w-1.5 h-1.5 rounded-full bg-pink-300"></span>
+
+              <p className="text-base sm:text-lg font-bold text-stone-800 mb-1 flex items-center gap-1.5">
+                <span>日本旅行、失敗しない。</span>
               </p>
-              <p className="text-xs sm:text-sm text-stone-500 leading-relaxed">
-                日本旅遊必看！不踩雷美食＆景點推薦
+              <p className="text-xs sm:text-sm text-red-500 font-semibold leading-relaxed">
+                🍜 日本旅遊必看！不踩雷美食＆景點推薦
               </p>
-              <p className="text-xs sm:text-sm text-stone-500 leading-relaxed mt-3 pt-3 border-t border-stone-100">
-                專為<strong>台灣與香港旅客</strong>打造的日本旅遊資訊網站，精選咖啡廳、美食與觀光景點。<br className="hidden sm:inline" />
-                所有文章皆基於<strong>實際造訪與體驗</strong>撰寫🌿
-              </p>
+
+              <div className="mt-3 pt-3 border-t border-dashed border-yellow-200 space-y-2">
+                <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                  <span className="mr-1">🇯🇵</span>
+                  專為<strong className="text-stone-800">台灣與香港旅客</strong>打造的日本旅遊資訊網站，精選<span className="text-pink-500 font-semibold">咖啡廳</span>、<span className="text-red-500 font-semibold">美食</span>與<span className="text-blue-500 font-semibold">觀光景點</span>。
+                </p>
+                <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                  <span className="mr-1">✨</span>
+                  所有文章皆基於<strong className="text-stone-800">實際造訪與體驗</strong>撰寫🌿
+                </p>
+              </div>
             </div>
           </div>
 
