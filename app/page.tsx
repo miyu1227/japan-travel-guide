@@ -318,6 +318,27 @@ export default function Home() {
               所有文章皆基於<strong>實際造訪與體驗</strong>撰寫。
             </p>
           </div>
+          {/* ぽやぴよ吹き出し */}
+          <div className="flex items-end justify-center gap-3 mb-4">
+            <div className="relative w-16 h-16 shrink-0">
+              <Image
+                src="/poyapiyo-flag.png"
+                alt="ぽやぴよ"
+                fill
+                sizes="64px"
+                className="object-contain"
+              />
+            </div>
+            <div className="relative bg-white rounded-2xl px-4 py-2.5 text-left max-w-[220px]" style={{ boxShadow: "0 1px 6px rgba(180,140,60,0.08)" }}>
+              <p className="text-xs text-stone-700 leading-relaxed">
+                第一次來日本？<br />
+                <strong>不踩雷美食</strong>在這裡！
+              </p>
+              {/* tail */}
+              <span className="absolute -left-1 bottom-3 w-2.5 h-2.5 bg-white rotate-45"></span>
+            </div>
+          </div>
+
           <div className="flex justify-center gap-1.5 flex-wrap text-xs">
             {["✅ 台灣人親測", "📸 IG打卡點", "💰 CP值爆表", "🗺️ 地圖連結"].map((badge) => (
               <span key={badge} className="bg-white border border-stone-200 text-stone-600 px-2.5 py-0.5 rounded-full">
