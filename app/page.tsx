@@ -453,6 +453,7 @@ export default function Home() {
         </nav>
 
         <p className="mt-3">© 2026 Japan Trip Picks</p>
+        <p className="mt-2 text-stone-500">Japan Trip Picks 是專為台灣與香港旅客打造的日本旅遊資訊網站。</p>
       </footer>
     </div>
   );
