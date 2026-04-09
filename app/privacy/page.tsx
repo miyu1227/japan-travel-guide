@@ -31,6 +31,7 @@ export default function PrivacyPage() {
           <p>若您希望停用 Cookie，請透過瀏覽器設定進行調整，或參考 <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Google 廣告政策</a> 了解更多資訊。</p>
           <p>此外，本網站可能使用存取分析工具（例如 Google Analytics），以蒐集網站流量數據。這些資料亦透過 Cookie 收集，且不會識別個人身分。</p>
           <p>本網站致力於提供正確且最新的資訊，但不保證內容的完整性、正確性與安全性。對於因使用本網站資訊而造成的任何損失，本網站概不負責，敬請見諒。</p>
+          <p>本政策可能會因需要而進行更新，恕不另行通知。</p>
         </div>
       </article>
 

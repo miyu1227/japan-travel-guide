@@ -32,6 +32,7 @@ export default function ContactPage() {
               poyapiyotonemuneko@gmail.com
             </a>
           </p>
+          <p>我們通常會在2～3個工作天內回覆。</p>
           <p className="text-xs text-stone-400">※依內容不同，回覆可能需要一些時間，敬請見諒。</p>
         </div>
       </article>
