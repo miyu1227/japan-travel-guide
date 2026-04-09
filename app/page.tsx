@@ -300,8 +300,21 @@ export default function Home() {
           </h1>
 
           <div className="flex items-center gap-3 mb-4">
-            {/* Left: ぽやぴよ */}
-            <div className="relative shrink-0 w-28 sm:w-36">
+            {/* Left: ぽやぴよ + 吹き出し（上に重ならず配置） */}
+            <div className="relative shrink-0 w-28 sm:w-36 flex flex-col items-center">
+              {/* 吹き出し */}
+              <div className="relative bg-white rounded-[20px] px-3 py-1.5 rotate-[-3deg] mb-1 self-start ml-1" style={{ boxShadow: "0 4px 14px rgba(180,140,60,0.15)" }}>
+                <p className="text-[10px] text-stone-700 leading-tight text-center whitespace-nowrap">
+                  <span className="mr-0.5">✨</span>第一次來日本？<br />
+                  <strong className="text-red-500">不踩雷美食</strong>在這裡！
+                </p>
+                {/* tail（下向き） */}
+                <span className="absolute left-6 -bottom-1 w-2.5 h-2.5 bg-white rotate-45 rounded-[3px]"></span>
+                {/* deco dots */}
+                <span className="absolute -top-1 -right-1 w-1.5 h-1.5 rounded-full bg-yellow-300"></span>
+                <span className="absolute -top-2 right-3 w-1 h-1 rounded-full bg-pink-300"></span>
+              </div>
+              {/* ぽやぴよ */}
               <div className="relative w-full aspect-square -rotate-[4deg]">
                 <Image
                   src="/poyapiyo-flag.png"
