@@ -433,7 +433,15 @@ export default function Home() {
           </a>
         </div>
 
-        <p className="mt-1">© 2026 Japan Trip Picks</p>
+        <nav className="flex justify-center items-center gap-2 mt-3 text-xs">
+          <Link href="/privacy" className="text-stone-500 hover:text-stone-800 underline">隱私權政策</Link>
+          <span className="text-stone-300">|</span>
+          <Link href="/contact" className="text-stone-500 hover:text-stone-800 underline">聯絡我們</Link>
+          <span className="text-stone-300">|</span>
+          <Link href="/about" className="text-stone-500 hover:text-stone-800 underline">關於我們</Link>
+        </nav>
+
+        <p className="mt-3">© 2026 Japan Trip Picks</p>
       </footer>
     </div>
   );
