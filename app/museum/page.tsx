@@ -261,7 +261,6 @@ export default function MuseumPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">逛美術館小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
-            <li>✅ 兩間美術館都會休館，出發前一定要查官網確認</li>
             <li>✅ 根津美術館需事先預約，國立新美術館特展也建議先買票</li>
             <li>✅ 平日上午人少，能安靜地欣賞作品與拍照📸</li>
             <li>✅ 兩間距離不遠，可以安排同一天順遊（六本木→表參道）</li>

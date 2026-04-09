@@ -46,6 +46,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   snacks: [],
   cafe: [
     {
+      name: "神戶咖啡推薦｜フロインドリーブ＆異人館咖啡2選☕",
+      desc: "教堂改建咖啡廳・北野異人館洋館咖啡，神戶必去2間人氣店",
+      tag: "神戶",
+      emoji: "☕",
+      href: "/kobe-cafe",
+      image: "/kobe-cafe/freundlieb-1.jpg",
+      areas: ["神戸"],
+    },
+    {
       name: "夙川おすすめカフェ2選｜ガレットランチ＆本格コーヒー☕",
       desc: "クレープリー・ルポ＆ゆげ焙煎所，兵庫・夙川の人気カフェ実際訪問レポート",
       tag: "神戸",
