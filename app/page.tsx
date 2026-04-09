@@ -210,12 +210,22 @@ function AreaFilter({ catId, color }: { catId: string; color: string }) {
           })}
         </div>
         {hasMore && (
-          <div className="flex justify-center mt-5">
+          <div className="flex justify-center mt-6">
             <button
               onClick={() => setExpanded(!expanded)}
-              className="text-xs font-semibold text-stone-600 bg-white border border-stone-200 hover:border-stone-400 rounded-full px-5 py-2 shadow-sm transition-all"
+              className="group text-sm font-bold text-stone-700 bg-white border-2 border-yellow-300 hover:border-yellow-400 hover:bg-yellow-50 rounded-full px-7 py-3 shadow-md hover:shadow-lg transition-all flex items-center gap-2"
             >
-              {expanded ? "收起 ▲" : `查看更多 (${filtered.length - INITIAL_VISIBLE}) ▼`}
+              {expanded ? (
+                <>
+                  <span>收起</span>
+                  <span className="text-stone-400 group-hover:-translate-y-0.5 transition-transform">▲</span>
+                </>
+              ) : (
+                <>
+                  <span>🐥 還有 {filtered.length - INITIAL_VISIBLE} 篇文章</span>
+                  <span className="text-yellow-500 group-hover:translate-y-0.5 transition-transform">▼</span>
+                </>
+              )}
             </button>
           </div>
         )}
@@ -289,12 +299,22 @@ function StaticCards({ catId, color }: { catId: string; color: string }) {
       })}
     </div>
     {hasMore && (
-      <div className="flex justify-center mt-5">
+      <div className="flex justify-center mt-6">
         <button
           onClick={() => setExpanded(!expanded)}
-          className="text-xs font-semibold text-stone-600 bg-white border border-stone-200 hover:border-stone-400 rounded-full px-5 py-2 shadow-sm transition-all"
+          className="group text-sm font-bold text-stone-700 bg-white border-2 border-yellow-300 hover:border-yellow-400 hover:bg-yellow-50 rounded-full px-7 py-3 shadow-md hover:shadow-lg transition-all flex items-center gap-2"
         >
-          {expanded ? "收起 ▲" : `查看更多 (${items.length - INITIAL_VISIBLE}) ▼`}
+          {expanded ? (
+            <>
+              <span>收起</span>
+              <span className="text-stone-400 group-hover:-translate-y-0.5 transition-transform">▲</span>
+            </>
+          ) : (
+            <>
+              <span>🐥 還有 {items.length - INITIAL_VISIBLE} 篇文章</span>
+              <span className="text-yellow-500 group-hover:translate-y-0.5 transition-transform">▼</span>
+            </>
+          )}
         </button>
       </div>
     )}
