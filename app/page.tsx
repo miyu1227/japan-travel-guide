@@ -289,47 +289,38 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-yellow-50 to-amber-50 pt-8 pb-6 px-4 text-center">
-        <div className="max-w-sm mx-auto">
-          <div className="flex justify-center mb-4">
-            <div className="relative w-72 h-72">
+      <section className="bg-gradient-to-b from-yellow-50 to-amber-50 pt-5 pb-5 px-4 text-center">
+        <div className="max-w-md mx-auto">
+          <div className="flex justify-center mb-2">
+            <div className="relative w-56 h-56">
               <Image
                 src="/poyapiyo-flag.png"
                 alt="ぽやぴよ"
                 fill
-                sizes="288px"
+                sizes="224px"
                 className="object-contain drop-shadow-lg"
                 priority
               />
             </div>
           </div>
-          <div className="mb-3">
-            <h1 className="text-3xl font-black text-stone-800 tracking-tight leading-tight">
-              Japan Trip Picks
-              <span className="ml-2">🇯🇵</span>
-            </h1>
-          </div>
-          <div className="bg-white rounded-2xl shadow-sm border border-yellow-200 px-5 py-4 mb-4">
-            <p className="text-lg font-bold text-stone-800 mb-1">
+          <h1 className="text-2xl font-black text-stone-800 tracking-tight leading-tight mb-3">
+            Japan Trip Picks
+          </h1>
+          <div className="bg-white rounded-2xl shadow-sm border border-yellow-200 px-5 py-3 mb-3 text-left sm:text-center">
+            <p className="text-base font-bold text-stone-800 mb-0.5 text-center">
               日本旅行、失敗しない。
             </p>
-            <p className="text-sm text-stone-500 leading-relaxed">
+            <p className="text-xs text-stone-500 leading-relaxed text-center">
               日本旅遊必看！不踩雷美食＆景點推薦
-              <br />
-              <span className="text-xs text-stone-400">必吃・必買・必去をまとめたガイド</span>
             </p>
-            <p className="text-xs text-stone-500 leading-relaxed mt-3 pt-3 border-t border-stone-100">
-              Japan Trip Picks 是專為台灣與香港旅客打造的日本旅遊資訊網站。<br />
-              我們精選日本各地的咖啡廳、美食與觀光景點。
-            </p>
-            <p className="text-xs text-stone-500 leading-relaxed mt-2">
-              所有文章皆基於實際造訪與體驗撰寫，<br />
-              精選值得推薦的日本景點與美食。
+            <p className="text-xs text-stone-500 leading-snug mt-2 pt-2 border-t border-stone-100">
+              Japan Trip Picks 是專為<strong>台灣與香港旅客</strong>打造的日本旅遊資訊網站，精選咖啡廳、美食與觀光景點。<br />
+              所有文章皆基於<strong>實際造訪與體驗</strong>撰寫。
             </p>
           </div>
-          <div className="flex justify-center gap-2 flex-wrap text-xs">
+          <div className="flex justify-center gap-1.5 flex-wrap text-xs">
             {["✅ 台灣人親測", "📸 IG打卡點", "💰 CP值爆表", "🗺️ 地圖連結"].map((badge) => (
-              <span key={badge} className="bg-white border border-stone-200 text-stone-600 px-3 py-1 rounded-full">
+              <span key={badge} className="bg-white border border-stone-200 text-stone-600 px-2.5 py-0.5 rounded-full">
                 {badge}
               </span>
             ))}
