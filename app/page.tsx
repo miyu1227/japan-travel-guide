@@ -59,6 +59,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "東京紅葉推薦｜神宮外苑銀杏並木の金黃大道🍁",
+      desc: "約300公尺的金黃銀杏隧道，東京秋天最具代表性的景點",
+      tag: "東京",
+      emoji: "🍁",
+      href: "/koyo",
+      image: "/koyo/gaien-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "東京野餐推薦｜新宿御苑＆代代木公園悠閒散步🌿",
       desc: "草地・拍照・放鬆，東京最受歡迎的兩大公園比較",
       tag: "東京",
