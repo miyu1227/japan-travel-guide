@@ -37,6 +37,7 @@ export default function AboutPage() {
           <div>
             <p className="text-xs font-bold text-stone-500 mb-1">網站內容</p>
             <p>本網站以介紹日本旅遊資訊為主，涵蓋咖啡廳、美食與觀光景點，致力於以簡單易懂的方式向海外旅客（特別是台灣與香港用戶）傳遞日本的魅力。</p>
+            <p className="mt-2">本網站的資訊皆基於實際造訪與體驗整理而成。</p>
           </div>
           <div>
             <p className="text-xs font-bold text-stone-500 mb-1">聯絡方式</p>
