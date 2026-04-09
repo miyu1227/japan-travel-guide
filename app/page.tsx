@@ -289,53 +289,43 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-yellow-50 to-amber-50 pt-5 pb-5 px-4 text-center">
-        <div className="max-w-md mx-auto">
-          <div className="flex justify-center mb-2">
-            <div className="relative w-56 h-56">
-              <Image
-                src="/poyapiyo-flag.png"
-                alt="ぽやぴよ"
-                fill
-                sizes="224px"
-                className="object-contain drop-shadow-lg"
-                priority
-              />
-            </div>
-          </div>
-          <h1 className="text-2xl font-black text-stone-800 tracking-tight leading-tight mb-3">
+      <section className="relative bg-gradient-to-b from-yellow-50 to-amber-50 pt-5 pb-6 px-4 overflow-hidden">
+        {/* deco flowers */}
+        <span className="absolute bottom-6 left-4 text-xl opacity-50 select-none">🌼</span>
+        <span className="absolute top-20 left-6 text-lg opacity-40 select-none">✨</span>
+
+        <div className="max-w-xl mx-auto relative">
+          <h1 className="text-2xl font-black text-stone-800 tracking-tight leading-tight mb-4 text-center">
             Japan Trip Picks
           </h1>
-          <div className="bg-white rounded-2xl shadow-sm border border-yellow-200 px-5 py-3 mb-3 text-left sm:text-center">
-            <p className="text-base font-bold text-stone-800 mb-0.5 text-center">
-              日本旅行、失敗しない。
-            </p>
-            <p className="text-xs text-stone-500 leading-relaxed text-center">
-              日本旅遊必看！不踩雷美食＆景點推薦
-            </p>
-            <p className="text-xs text-stone-500 leading-snug mt-2 pt-2 border-t border-stone-100">
-              Japan Trip Picks 是專為<strong>台灣與香港旅客</strong>打造的日本旅遊資訊網站，精選咖啡廳、美食與觀光景點。<br />
-              所有文章皆基於<strong>實際造訪與體驗</strong>撰寫。
-            </p>
-          </div>
-          {/* ぽやぴよ吹き出し */}
-          <div className="flex items-end justify-center gap-3 mb-4">
-            <div className="relative w-16 h-16 shrink-0">
-              <Image
-                src="/poyapiyo-flag.png"
-                alt="ぽやぴよ"
-                fill
-                sizes="64px"
-                className="object-contain"
-              />
+
+          <div className="flex items-center gap-3 mb-4">
+            {/* Left: ぽやぴよ */}
+            <div className="relative shrink-0 w-28 sm:w-36">
+              <div className="relative w-full aspect-square -rotate-[4deg]">
+                <Image
+                  src="/poyapiyo-flag.png"
+                  alt="ぽやぴよ"
+                  fill
+                  sizes="(max-width: 640px) 112px, 144px"
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              <span className="absolute left-1/2 -translate-x-1/2 -bottom-0.5 w-16 h-1.5 rounded-full bg-stone-300/30 blur-[2px]"></span>
             </div>
-            <div className="relative bg-white rounded-2xl px-4 py-2.5 text-left max-w-[220px]" style={{ boxShadow: "0 1px 6px rgba(180,140,60,0.08)" }}>
-              <p className="text-xs text-stone-700 leading-relaxed">
-                第一次來日本？<br />
-                <strong>不踩雷美食</strong>在這裡！
+
+            {/* Right: text card */}
+            <div className="flex-1 bg-white rounded-3xl px-4 py-3 text-left" style={{ boxShadow: "0 4px 16px rgba(180,140,60,0.1)" }}>
+              <p className="text-sm font-bold text-stone-800 mb-0.5">
+                日本旅行、失敗しない。
               </p>
-              {/* tail */}
-              <span className="absolute -left-1 bottom-3 w-2.5 h-2.5 bg-white rotate-45"></span>
+              <p className="text-[11px] text-stone-500 leading-relaxed">
+                日本旅遊必看！不踩雷美食＆景點推薦
+              </p>
+              <p className="text-[11px] text-stone-500 leading-snug mt-2 pt-2 border-t border-stone-100">
+                專為<strong>台灣與香港旅客</strong>打造的日本旅遊資訊網站，精選咖啡廳、美食與觀光景點。所有文章皆基於<strong>實際造訪與體驗</strong>撰寫🌿
+              </p>
             </div>
           </div>
 
