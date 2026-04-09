@@ -122,12 +122,17 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
 };
 
+const INITIAL_VISIBLE = 3;
+
 function AreaFilter({ catId, color }: { catId: string; color: string }) {
   const [selected, setSelected] = useState("すべて");
+  const [expanded, setExpanded] = useState(false);
   const items = picks[catId];
   const filtered = selected === "すべて"
     ? items
     : items.filter((item) => item.areas.includes(selected));
+  const visible = expanded ? filtered : filtered.slice(0, INITIAL_VISIBLE);
+  const hasMore = filtered.length > INITIAL_VISIBLE;
 
   return (
     <>
@@ -155,8 +160,9 @@ function AreaFilter({ catId, color }: { catId: string; color: string }) {
           <p className="text-sm">近期更新中...</p>
         </div>
       ) : (
+        <div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filtered.map((item) => {
+          {visible.map((item) => {
             const CardWrapper = item.href
               ? ({ children }: { children: React.ReactNode }) => (
                   <Link href={item.href!} className="block bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
@@ -203,13 +209,27 @@ function AreaFilter({ catId, color }: { catId: string; color: string }) {
             );
           })}
         </div>
+        {hasMore && (
+          <div className="flex justify-center mt-5">
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="text-xs font-semibold text-stone-600 bg-white border border-stone-200 hover:border-stone-400 rounded-full px-5 py-2 shadow-sm transition-all"
+            >
+              {expanded ? "收起 ▲" : `查看更多 (${filtered.length - INITIAL_VISIBLE}) ▼`}
+            </button>
+          </div>
+        )}
+        </div>
       )}
     </>
   );
 }
 
 function StaticCards({ catId, color }: { catId: string; color: string }) {
+  const [expanded, setExpanded] = useState(false);
   const items = picks[catId];
+  const visible = expanded ? items : items.slice(0, INITIAL_VISIBLE);
+  const hasMore = items.length > INITIAL_VISIBLE;
   if (items.length === 0) {
     return (
       <div className="bg-white rounded-2xl border border-dashed border-stone-200 p-8 text-center text-stone-400">
@@ -219,8 +239,9 @@ function StaticCards({ catId, color }: { catId: string; color: string }) {
     );
   }
   return (
+    <div>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      {items.map((item) => {
+      {visible.map((item) => {
         const CardWrapper = item.href
           ? ({ children }: { children: React.ReactNode }) => (
               <Link href={item.href!} className="block bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
@@ -266,6 +287,17 @@ function StaticCards({ catId, color }: { catId: string; color: string }) {
           </CardWrapper>
         );
       })}
+    </div>
+    {hasMore && (
+      <div className="flex justify-center mt-5">
+        <button
+          onClick={() => setExpanded(!expanded)}
+          className="text-xs font-semibold text-stone-600 bg-white border border-stone-200 hover:border-stone-400 rounded-full px-5 py-2 shadow-sm transition-all"
+        >
+          {expanded ? "收起 ▲" : `查看更多 (${items.length - INITIAL_VISIBLE}) ▼`}
+        </button>
+      </div>
+    )}
     </div>
   );
 }
