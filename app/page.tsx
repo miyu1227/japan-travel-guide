@@ -381,6 +381,17 @@ export default function Home() {
         </div>
       </main>
 
+      {/* About blurb */}
+      <section className="max-w-4xl mx-auto px-4 pb-6">
+        <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 text-center">
+          <h2 className="font-black text-stone-800 text-base mb-3">關於 Japan Trip Picks</h2>
+          <p className="text-sm text-stone-600 leading-relaxed">
+            Japan Trip Picks 是一個介紹日本旅遊、美食與咖啡廳的資訊網站。<br />
+            我們以實際造訪的體驗為基礎，精選值得推薦的景點，提供給台灣與香港旅客參考。
+          </p>
+        </div>
+      </section>
+
       {/* 掲載プランセクション */}
       <section className="max-w-4xl mx-auto px-4 pb-10">
         <Link href="/promotion" className="block group">
