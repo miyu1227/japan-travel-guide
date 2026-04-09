@@ -318,6 +318,14 @@ export default function Home() {
               <br />
               <span className="text-xs text-stone-400">必吃・必買・必去をまとめたガイド</span>
             </p>
+            <p className="text-xs text-stone-500 leading-relaxed mt-3 pt-3 border-t border-stone-100">
+              Japan Trip Picks 是專為台灣與香港旅客打造的日本旅遊資訊網站。<br />
+              我們精選日本各地的咖啡廳、美食與觀光景點。
+            </p>
+            <p className="text-xs text-stone-500 leading-relaxed mt-2">
+              所有文章皆基於實際造訪與體驗撰寫，<br />
+              精選值得推薦的日本景點與美食。
+            </p>
           </div>
           <div className="flex justify-center gap-2 flex-wrap text-xs">
             {["✅ 台灣人親測", "📸 IG打卡點", "💰 CP值爆表", "🗺️ 地圖連結"].map((badge) => (
