@@ -46,6 +46,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   snacks: [],
   cafe: [
     {
+      name: "下北澤咖啡推薦｜TOKYO VEGAN BAKES＆La Piña☕",
+      desc: "純素烘焙・手工起司蛋糕，下北澤必去2間人氣咖啡廳",
+      tag: "東京",
+      emoji: "☕",
+      href: "/shimokitazawa-cafe",
+      image: "/shimokitazawa-cafe/vegan-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "神戶咖啡推薦｜フロインドリーブ＆異人館咖啡2選☕",
       desc: "教堂改建咖啡廳・北野異人館洋館咖啡，神戶必去2間人氣店",
       tag: "神戶",
