@@ -16,6 +16,15 @@ const areas = ["すべて", "東京", "大阪", "神戸", "北海道", "四国",
 const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string; areas: string[] }[]> = {
   ramen: [
     {
+      name: "二子玉川美食推薦3選｜中華・甜點・韓國料理🍽️",
+      desc: "蒸籠中華・蘋果派・韓式屋台，東京近郊散步美食",
+      tag: "東京",
+      emoji: "🍽️",
+      href: "/futakotamagawa",
+      image: "/futakotamagawa/steaman-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "神戶牛推薦｜ステーキハウスZEN 三宮店・A5鐵板燒名店🥩",
       desc: "神戶必吃A5神戶牛鐵板燒名店，主廚現煎入口即化",
       tag: "神戶",
