@@ -83,9 +83,9 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       areas: ["神戸"],
     },
     {
-      name: "夙川おすすめカフェ2選｜ガレットランチ＆本格コーヒー☕",
-      desc: "クレープリー・ルポ＆ゆげ焙煎所，兵庫・夙川の人気カフェ実際訪問レポート",
-      tag: "神戸",
+      name: "夙川咖啡廳推薦2選｜法式可麗餅＆精品咖啡☕",
+      desc: "クレープリー・ルポ＆ゆげ焙煎所，關西必去咖啡廳",
+      tag: "神戶",
       emoji: "☕",
       href: "/shukugawa",
       image: "/shukugawa/crepe-1.jpg",
