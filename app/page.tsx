@@ -103,6 +103,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "上野動物園推薦｜東京必去親子景點・大熊貓🐼",
+      desc: "日本最古老的動物園，門票¥600，大熊貓・親子旅行推薦",
+      tag: "東京",
+      emoji: "🐼",
+      href: "/ueno-zoo",
+      image: "/ueno-zoo/zoo-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "東京美術館推薦｜國立新美術館＆根津美術館2選🎨",
       desc: "六本木現代建築・表參道日本庭園，2間必去美術館完整指南",
       tag: "東京",
