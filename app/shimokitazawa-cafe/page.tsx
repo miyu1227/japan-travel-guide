@@ -6,13 +6,13 @@ const PAGE_URL = "https://www.japantrippicks.com/shimokitazawa-cafe";
 const OG_IMAGE = "/shimokitazawa-cafe/vegan-1.jpg";
 
 export const metadata: Metadata = {
-  title: "下北澤咖啡推薦｜TOKYO VEGAN BAKES・La Piña・Pati coffee 3選【實際造訪】",
+  title: "下北澤咖啡廳推薦3選｜東京必去人氣美食＆甜點【實際造訪】",
   description:
-    "下北澤必去的人氣咖啡廳推薦：純素烘焙「TOKYO VEGAN BAKES」、手工起司蛋糕「La Piña」、自家焙煎＆自家製派「Pati coffee&plants」。附交通方式・推薦菜單・價格。台灣・香港旅客必看！",
+    "下北澤咖啡廳推薦3選！純素烘焙・手工起司蛋糕・自家焙煎咖啡＆派，東京下北澤必去的人氣咖啡廳美食完整介紹。附交通方式・推薦菜單・價格。台灣・香港旅客必看！",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "下北澤咖啡推薦｜TOKYO VEGAN BAKES・La Piña・Pati coffee 3選",
-    description: "下北澤必去咖啡廳：純素烘焙・手工起司蛋糕・自家焙煎咖啡＆派。附交通・菜單・推薦。",
+    title: "下北澤咖啡廳推薦3選｜東京必去人氣美食＆甜點",
+    description: "下北澤咖啡廳推薦3選！純素烘焙・起司蛋糕・自家焙煎咖啡，東京人氣美食完整指南。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "下北澤咖啡推薦｜TOKYO VEGAN BAKES・La Piña・Pati coffee",
-    description: "下北澤必去3間人氣咖啡廳！純素烘焙・起司蛋糕・自家焙煎咖啡。",
+    title: "下北澤咖啡廳推薦3選｜東京必去人氣美食＆甜點",
+    description: "下北澤必去3間人氣咖啡廳推薦！純素烘焙・起司蛋糕・自家焙煎咖啡。",
     images: [OG_IMAGE],
   },
 };
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "下北澤咖啡推薦｜TOKYO VEGAN BAKES・La Piña・Pati coffee 3選【實際造訪】",
-  description: "下北澤必去咖啡廳：純素烘焙TOKYO VEGAN BAKES、手工起司蛋糕La Piña、自家焙煎Pati coffee&plants。",
+  headline: "下北澤咖啡廳推薦3選｜東京必去人氣美食＆甜點【實際造訪】",
+  description: "下北澤咖啡廳推薦3選！東京必去的人氣咖啡廳美食＆甜點完整介紹。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Organization", name: "Japan Trip Picks" },
@@ -89,7 +89,7 @@ export default function ShimokitazawaCafePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          下北澤咖啡推薦｜VEGAN BAKES<br />・La Piña・Pati coffee☕
+          下北澤咖啡廳推薦3選｜<br />東京必去人氣美食＆甜點☕
         </h1>
         <p className="text-xs text-stone-400 mb-6">最後更新：2026年</p>
 
