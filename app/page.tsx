@@ -43,7 +43,17 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       areas: ["東京"],
     },
   ],
-  snacks: [],
+  snacks: [
+    {
+      name: "東京伴手禮推薦｜高級手工餅乾・必買甜點🍪",
+      desc: "奧地利認證大師的手工餅乾禮盒，需預約的超人氣伴手禮",
+      tag: "東京",
+      emoji: "🍪",
+      href: "/tokyo-cookies",
+      image: "/tokyo-cookies/kayanuma-1.jpg",
+      areas: ["東京"],
+    },
+  ],
   cafe: [
     {
       name: "下北澤咖啡廳推薦3選｜東京必去人氣美食＆甜點☕",
