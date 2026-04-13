@@ -6,13 +6,13 @@ const PAGE_URL = "https://www.japantrippicks.com/shimokitazawa-cafe";
 const OG_IMAGE = "/shimokitazawa-cafe/vegan-1.jpg";
 
 export const metadata: Metadata = {
-  title: "下北澤咖啡推薦｜TOKYO VEGAN BAKES＆La Piña 2選【實際造訪】",
+  title: "下北澤咖啡推薦｜TOKYO VEGAN BAKES・La Piña・Pati coffee 3選【實際造訪】",
   description:
-    "下北澤必去的人氣咖啡廳推薦：100%純素烘焙「TOKYO VEGAN BAKES」與手工起司蛋糕專門店「La Piña」。每間都有獨特魅力，附交通方式・推薦菜單・價格。台灣・香港旅客必看！",
+    "下北澤必去的人氣咖啡廳推薦：純素烘焙「TOKYO VEGAN BAKES」、手工起司蛋糕「La Piña」、自家焙煎＆自家製派「Pati coffee&plants」。附交通方式・推薦菜單・價格。台灣・香港旅客必看！",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "下北澤咖啡推薦｜TOKYO VEGAN BAKES＆La Piña 2選",
-    description: "下北澤必去咖啡廳：純素烘焙・手工起司蛋糕。附交通・菜單・推薦。",
+    title: "下北澤咖啡推薦｜TOKYO VEGAN BAKES・La Piña・Pati coffee 3選",
+    description: "下北澤必去咖啡廳：純素烘焙・手工起司蛋糕・自家焙煎咖啡＆派。附交通・菜單・推薦。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "下北澤咖啡推薦｜TOKYO VEGAN BAKES＆La Piña",
-    description: "下北澤必去2間人氣咖啡廳！純素烘焙＆手工起司蛋糕。",
+    title: "下北澤咖啡推薦｜TOKYO VEGAN BAKES・La Piña・Pati coffee",
+    description: "下北澤必去3間人氣咖啡廳！純素烘焙・起司蛋糕・自家焙煎咖啡。",
     images: [OG_IMAGE],
   },
 };
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "下北澤咖啡推薦｜TOKYO VEGAN BAKES＆La Piña 2選【實際造訪】",
-  description: "下北澤必去咖啡廳：純素烘焙TOKYO VEGAN BAKES、手工起司蛋糕La Piña。",
+  headline: "下北澤咖啡推薦｜TOKYO VEGAN BAKES・La Piña・Pati coffee 3選【實際造訪】",
+  description: "下北澤必去咖啡廳：純素烘焙TOKYO VEGAN BAKES、手工起司蛋糕La Piña、自家焙煎Pati coffee&plants。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Organization", name: "Japan Trip Picks" },
@@ -55,6 +55,7 @@ const veganPhotos = [
   "/shimokitazawa-cafe/vegan-4.jpg",
 ];
 const lapinaPhotos = ["/shimokitazawa-cafe/lapina-1.jpg"];
+const patiPhotos = ["/shimokitazawa-cafe/pati-1.jpg", "/shimokitazawa-cafe/pati-2.jpg", "/shimokitazawa-cafe/pati-3.jpg"];
 
 const relatedLinks = [
   { href: "/kobe-cafe", label: "☕ 神戶咖啡推薦｜フロインドリーブ＆異人館咖啡", desc: "教堂改建咖啡廳・北野異人館洋館咖啡" },
@@ -88,7 +89,7 @@ export default function ShimokitazawaCafePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          下北澤咖啡推薦｜TOKYO VEGAN<br />BAKES＆La Piña☕
+          下北澤咖啡推薦｜VEGAN BAKES<br />・La Piña・Pati coffee☕
         </h1>
         <p className="text-xs text-stone-400 mb-6">最後更新：2026年</p>
 
@@ -99,7 +100,7 @@ export default function ShimokitazawaCafePage() {
             下北澤是東京最受歡迎的文青散步區之一，除了古著和劇場，近年也聚集了許多風格獨特的<strong>咖啡廳</strong>☕ 街道巷弄裡藏著各種特色小店，非常適合邊走邊逛。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的兩間店，一間是100%純素的烘焙專門店<strong>「TOKYO VEGAN BAKES」</strong>，另一間是手工起司蛋糕專門店<strong>「La Piña」</strong>——風格完全不同，但都是下北澤必訪的人氣店✨
+            這次推薦的三間店：100%純素烘焙<strong>「TOKYO VEGAN BAKES」</strong>、手工起司蛋糕<strong>「La Piña」</strong>，以及綠意滿滿的自家焙煎咖啡<strong>「Pati coffee&plants」</strong>——風格各異，都是下北澤必訪的人氣店✨
           </p>
         </section>
 
@@ -121,11 +122,18 @@ export default function ShimokitazawaCafePage() {
                 <p className="text-xs text-stone-500 leading-relaxed">溫馨小店、壁畫裝飾、內用外帶皆可</p>
               </div>
             </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">Pati coffee&plants → 自家焙煎咖啡・自家製派</p>
+                <p className="text-xs text-stone-500 leading-relaxed">綠意滿滿的半戶外空間、可帶寵物</p>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">下北澤咖啡推薦・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">下北澤咖啡推薦・3選</h2>
 
         {/* Spot 1: TOKYO VEGAN BAKES */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -260,6 +268,72 @@ export default function ShimokitazawaCafePage() {
           </div>
         </section>
 
+        {/* Spot 3: Pati coffee&plants */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+          <div className="grid grid-cols-3 gap-0.5">
+            {patiPhotos.map((src, i) => (
+              <div key={i} className="relative aspect-square bg-stone-100">
+                <Image
+                  src={src}
+                  alt="Pati coffee&plants - 下北澤咖啡推薦"
+                  fill
+                  sizes="33vw"
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-pink-500 text-white flex items-center justify-center text-sm font-black shrink-0">3</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">Pati coffee&plants</h3>
+                <span className="text-xs text-stone-400">自家焙煎咖啡＆自家製派</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              位於池之上・下北澤之間的<strong>綠意滿滿的咖啡廳</strong>🌿 結合自家焙煎咖啡、手工派與植物販售，店內像是走進溫室花園般的半戶外空間。咖啡從生豆到烘焙都自己來，派和司康也全部每天現做。
+            </p>
+
+            <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                被綠色植物包圍的空間讓人超放鬆，很適合散步途中來休息☕ 招牌的<strong>肉派</strong>（¥630）鹹香酥脆，搭配拿鐵是絕配。<strong>司康</strong>種類也很豐富，巧克力和伯爵茶無花果口味都很推薦！而且可以帶毛小孩入店🐶
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🌿 綠意空間", "🥧 自家製派", "☕ 自家焙煎", "🐶 寵物友善"].map((t) => (
+                <span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600">📍 東京都世田谷區代澤4-34-13 Daizawa Club 101</p>
+              <p className="text-xs text-stone-600">🚃 京王井之頭線「池ノ上」駅 徒歩約10分／「下北澤」駅 徒歩約12分</p>
+              <p className="text-xs text-stone-600">⏰ 8:00〜18:00（週二公休）</p>
+              <p className="text-xs text-stone-600">💴 派 ¥480〜¥630／飲品 ¥550〜¥700</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">早上8點就開門，很適合當作下北澤散步行程的第一站</p>
+            </div>
+
+            <a
+              href="https://www.instagram.com/pati_coffee.plants/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+            >
+              🔗 Instagram
+            </a>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">下北澤咖啡散步小建議</h2>
@@ -275,8 +349,8 @@ export default function ShimokitazawaCafePage() {
         {/* ぽやぴよ */}
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
-            一間是健康又美味的純素烘焙，一間是濃郁手工起司蛋糕——兩間完全不同風格的甜點店✨<br />
-            來下北澤散步的話，一定要安排到咖啡行程裡！
+            純素烘焙、手工起司蛋糕、綠意咖啡——三間風格完全不同的店✨<br />
+            來下北澤散步的話，一定要安排咖啡行程！
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
             <div className="text-3xl shrink-0">🐥</div>
