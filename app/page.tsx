@@ -112,6 +112,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "上高地＆奧飛騨旅行推薦4選｜日本阿爾卑斯絕景🏔️",
+      desc: "河童橋・平湯大瀑布・新穂高纜車・奧飛騨溫泉飯店，自然療癒之旅",
+      tag: "その他",
+      emoji: "🏔️",
+      href: "/kamikochi",
+      image: "/kamikochi/cover.jpg",
+      areas: ["その他"],
+    },
+    {
       name: "東京鐵塔推薦｜東京必去地標・夜景景點🗼",
       desc: "333公尺東京象徵！主展望台＆頂層展望台夜景超震撼",
       tag: "東京",
