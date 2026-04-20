@@ -93,10 +93,10 @@ export default function KamikochiPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">想遠離東京喧囂？到日本阿爾卑斯山看絕景吧</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            <strong>上高地</strong>位於長野縣，海拔1,500公尺的高原度假勝地，被譽為<strong>「日本阿爾卑斯山」</strong>的入口🏔️ 鄰接岐阜縣的<strong>奧飛騨溫泉鄉</strong>，是日本最受歡迎的自然景觀＆溫泉旅遊地之一。
+            <strong>上高地</strong>位於長野縣，海拔1,500公尺的高原度假勝地，被譽為<strong>「日本阿爾卑斯山」</strong>的入口🏔️ 是日本<strong>「特別名勝」＆「特別天然紀念物」</strong>雙重指定的珍貴自然景觀，每年吸引約120萬遊客造訪。鄰接岐阜縣的<strong>奧飛騨溫泉鄉</strong>，是日本最受歡迎的自然景觀＆溫泉旅遊地之一。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的4個必去景點：<strong>河童橋</strong>的絕景、<strong>平湯大瀑布</strong>的震撼、<strong>新穂高纜車</strong>的2000公尺展望，以及<strong>奧飛騨花園飯店燒岳</strong>的夢幻溫泉✨ 安排2〜3天的行程剛剛好！
+            這次推薦的4個必去景點：<strong>河童橋</strong>的絕景、<strong>平湯大瀑布</strong>的震撼、<strong>新穂高纜車</strong>的2000公尺展望，以及<strong>奧飛騨花園飯店燒岳</strong>的夢幻溫泉✨ 本篇同時整理了<strong>散策路線</strong>和<strong>四季景色</strong>，安排2〜3天的行程剛剛好！
           </p>
         </section>
 
@@ -341,6 +341,45 @@ export default function KamikochiPage() {
             <a href="https://www.kamikochi.or.jp/learn/spots/1319/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
               🔗 官方資訊
             </a>
+          </div>
+        </section>
+
+        {/* 散策ルート */}
+        <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">🥾 上高地推薦散策路線</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-4">
+            上高地擁有完善的木製步道，從河童橋出發可以選擇不同長度的路線散步。以下是最受歡迎的3條路線：
+          </p>
+          <div className="space-y-3">
+            <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3">
+              <p className="text-sm font-bold text-stone-700 mb-1">① 大正池路線（初級・約80分）</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                從河童橋出發，沿著梓川邊欣賞<strong>燒岳</strong>美景，經過<strong>Weston碑</strong>、田代濕原抵達<strong>大正池</strong>。約4公里・單程80分・往返約3小時。是上高地最經典的路線🌲
+              </p>
+            </div>
+            <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3">
+              <p className="text-sm font-bold text-stone-700 mb-1">② 明神池路線（初級・約60分）</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                從河童橋往右岸走，人相對較少，可以悠閒散步🌿 春天可看到杜鵑花，終點<strong>明神池</strong>是上高地最神秘優美的景點之一。約3公里・單程60分。
+              </p>
+            </div>
+            <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3">
+              <p className="text-sm font-bold text-stone-700 mb-1">③ 奧上高地路線（中級・約2小時〜）</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                從明神繼續往徳澤、横尾前進的進階路線。雖然平坦但距離長達6.5公里，需要<strong>雨具＆登山鞋</strong>。是觀察野鳥的最佳路線🦅
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ベストシーズン */}
+        <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">🌸 上高地四季景色</h2>
+          <div className="space-y-2 text-sm text-stone-600">
+            <p><strong>🌱 春（4月下旬〜6月）</strong>：開山祭（4/27）後萬物復甦，山頂殘雪與新綠的對比超美。4月下旬到黃金週是第一波熱門期。</p>
+            <p><strong>☀️ 夏（7〜8月）</strong>：比松本市區低5〜10°C，是日本人的<strong>避暑聖地</strong>。7月中旬〜暑假期間人最多。</p>
+            <p><strong>🍁 秋（9月下旬〜10月）</strong>：紅葉季節！10月上旬〜中旬是最佳時期，黃金色的落葉松林超夢幻。</p>
+            <p><strong>❄️ 冬（11/16〜4/16）</strong>：全面封山，無法進入。</p>
           </div>
         </section>
 
