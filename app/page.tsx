@@ -65,6 +65,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   cafe: [
     {
+      name: "代官山咖啡廳推薦2選｜東京必去義式烘焙＆高級甜點☕",
+      desc: "米蘭義式烘焙PRINCI＆星級甜點DOLCE TACUBO，代官山必去人氣店",
+      tag: "東京",
+      emoji: "☕",
+      href: "/daikanyama-cafe",
+      image: "/daikanyama-cafe/princi-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "中目黑咖啡廳推薦｜星巴克臻選東京烘焙工坊・隈研吾建築☕",
       desc: "全世界6間之一的星巴克臻選！隈研吾設計・目黑川賞櫻聖地",
       tag: "東京",
