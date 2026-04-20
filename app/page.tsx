@@ -65,6 +65,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   cafe: [
     {
+      name: "中目黑咖啡廳推薦｜星巴克臻選東京烘焙工坊・隈研吾建築☕",
+      desc: "全世界6間之一的星巴克臻選！隈研吾設計・目黑川賞櫻聖地",
+      tag: "東京",
+      emoji: "☕",
+      href: "/nakameguro-cafe",
+      image: "/nakameguro-cafe/starbucks-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "下北澤咖啡廳推薦3選｜東京必去人氣美食＆甜點☕",
       desc: "純素烘焙・起司蛋糕・自家焙煎咖啡，下北澤必去人氣咖啡廳",
       tag: "東京",
