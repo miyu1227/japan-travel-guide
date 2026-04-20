@@ -112,6 +112,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "東京鐵塔推薦｜東京必去地標・夜景景點🗼",
+      desc: "333公尺東京象徵！主展望台＆頂層展望台夜景超震撼",
+      tag: "東京",
+      emoji: "🗼",
+      href: "/tokyo-tower",
+      image: "/tokyo-tower/tower-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "上野動物園推薦｜東京必去親子景點・大熊貓🐼",
       desc: "日本最古老的動物園，門票¥600，大熊貓・親子旅行推薦",
       tag: "東京",
