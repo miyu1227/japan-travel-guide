@@ -6,13 +6,13 @@ const PAGE_URL = "https://www.japantrippicks.com/shimokitazawa-cafe";
 const OG_IMAGE = "/shimokitazawa-cafe/vegan-1.jpg";
 
 export const metadata: Metadata = {
-  title: "下北澤咖啡廳推薦3選｜東京必去人氣美食＆甜點【實際造訪】",
+  title: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點【實際造訪】",
   description:
-    "下北澤咖啡廳推薦3選！純素烘焙・手工起司蛋糕・自家焙煎咖啡＆派，東京下北澤必去的人氣咖啡廳美食完整介紹。附交通方式・推薦菜單・價格。台灣・香港旅客必看！",
+    "下北澤咖啡廳推薦4選！純素烘焙・手工起司蛋糕・自家焙煎咖啡＆派、新文化複合設施BONUS TRACK，東京下北澤必去的人氣咖啡廳美食完整介紹。附交通方式・推薦菜單・價格。台灣・香港旅客必看！",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "下北澤咖啡廳推薦3選｜東京必去人氣美食＆甜點",
-    description: "下北澤咖啡廳推薦3選！純素烘焙・起司蛋糕・自家焙煎咖啡，東京人氣美食完整指南。",
+    title: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點",
+    description: "下北澤咖啡廳推薦4選！純素烘焙・起司蛋糕・自家焙煎咖啡，東京人氣美食完整指南。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "下北澤咖啡廳推薦3選｜東京必去人氣美食＆甜點",
+    title: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點",
     description: "下北澤必去3間人氣咖啡廳推薦！純素烘焙・起司蛋糕・自家焙煎咖啡。",
     images: [OG_IMAGE],
   },
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "下北澤咖啡廳推薦3選｜東京必去人氣美食＆甜點【實際造訪】",
-  description: "下北澤咖啡廳推薦3選！東京必去的人氣咖啡廳美食＆甜點完整介紹。",
+  headline: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點【實際造訪】",
+  description: "下北澤咖啡廳推薦4選！東京必去的人氣咖啡廳美食＆甜點完整介紹。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Organization", name: "Japan Trip Picks" },
@@ -56,6 +56,7 @@ const veganPhotos = [
 ];
 const lapinaPhotos = ["/shimokitazawa-cafe/lapina-1.jpg"];
 const patiPhotos = ["/shimokitazawa-cafe/pati-1.jpg", "/shimokitazawa-cafe/pati-2.jpg", "/shimokitazawa-cafe/pati-3.jpg"];
+const bonustrackPhotos = ["/shimokitazawa-cafe/bonustrack-1.jpg", "/shimokitazawa-cafe/bonustrack-2.jpg", "/shimokitazawa-cafe/bonustrack-3.jpg"];
 
 const relatedLinks = [
   { href: "/kobe-cafe", label: "☕ 神戶咖啡推薦｜フロインドリーブ＆異人館咖啡", desc: "教堂改建咖啡廳・北野異人館洋館咖啡" },
@@ -89,7 +90,7 @@ export default function ShimokitazawaCafePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          下北澤咖啡廳推薦3選｜<br />東京必去人氣美食＆甜點☕
+          下北澤咖啡廳推薦4選｜<br />東京必去人氣美食＆甜點☕
         </h1>
         <p className="text-xs text-stone-400 mb-6">最後更新：2026年</p>
 
@@ -100,7 +101,7 @@ export default function ShimokitazawaCafePage() {
             下北澤是東京最受歡迎的文青散步區之一，除了古著和劇場，近年也聚集了許多風格獨特的<strong>咖啡廳</strong>☕ 街道巷弄裡藏著各種特色小店，非常適合邊走邊逛。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的三間店：100%純素烘焙<strong>「TOKYO VEGAN BAKES」</strong>、手工起司蛋糕<strong>「La Piña」</strong>，以及綠意滿滿的自家焙煎咖啡<strong>「Pati coffee&plants」</strong>——風格各異，都是下北澤必訪的人氣店✨
+            這次推薦4間店：100%純素烘焙<strong>「TOKYO VEGAN BAKES」</strong>、手工起司蛋糕<strong>「La Piña」</strong>、綠意滿滿的自家焙煎咖啡<strong>「Pati coffee&plants」</strong>，以及下北澤最新人氣文化複合設施<strong>「BONUS TRACK」</strong>——風格各異，都是下北澤必訪的人氣店✨
           </p>
         </section>
 
@@ -127,6 +128,13 @@ export default function ShimokitazawaCafePage() {
               <div>
                 <p className="text-sm font-bold text-stone-700">Pati coffee&plants → 自家焙煎咖啡・自家製派</p>
                 <p className="text-xs text-stone-500 leading-relaxed">綠意滿滿的半戶外空間、可帶寵物</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">BONUS TRACK → 文化複合設施・15間特色店</p>
+                <p className="text-xs text-stone-500 leading-relaxed">咖啡・書店・發酵食、下北澤散步必去新地標</p>
               </div>
             </div>
           </div>
@@ -334,6 +342,72 @@ export default function ShimokitazawaCafePage() {
           </div>
         </section>
 
+        {/* Spot 4: BONUS TRACK */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+          <div className="grid grid-cols-3 gap-0.5">
+            {bonustrackPhotos.map((src, i) => (
+              <div key={i} className="relative aspect-square bg-stone-100">
+                <Image
+                  src={src}
+                  alt="BONUS TRACK - 下北澤咖啡廳推薦"
+                  fill
+                  sizes="33vw"
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-pink-500 text-white flex items-center justify-center text-sm font-black shrink-0">4</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">BONUS TRACK</h3>
+                <span className="text-xs text-stone-400">下北澤新文化複合設施</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              2020年開幕的下北澤新文化複合設施，由小田急電鐵打造🏛️ 集結了<strong>15間特色獨立店舖</strong>，包含咖啡、麵包、發酵食品、書店、唱片行、二手店等。中央有開闊的廣場，定期舉辦市集和文化活動，是下北澤最具話題性的散步新地標。
+            </p>
+
+            <div className="bg-purple-50 border border-purple-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-purple-700 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                整個園區散步＋逛店至少能消耗1〜2小時，<strong>每一間都很有個性</strong>✨ 必逛店舖包括發酵食品專門「発酵デパートメント」、藝術書店「日記屋月日」、咖哩名店「カレーの店・八月（はちがつ）」🍛 中央廣場的氛圍很歐洲，邊吃外帶邊散步超舒服！
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🏛️ 15間特色店舖", "📚 獨立書店", "🍛 美食複合", "🎪 假日市集", "🌿 中央廣場"].map((t) => (
+                <span key={t} className="text-xs bg-purple-50 text-purple-700 border border-purple-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600">📍 東京都世田谷區代田2-36-12〜15</p>
+              <p className="text-xs text-stone-600">🚃 小田急線「世田谷代田」駅 徒歩約1分／「下北澤」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600">⏰ 各店舖營業時間不同（多數11:00〜20:00）</p>
+              <p className="text-xs text-stone-600">💴 因店而異</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">假日常有市集活動，建議查看官方Instagram確認當天活動</p>
+            </div>
+
+            <a
+              href="https://bonus-track.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+            >
+              🔗 官方網站
+            </a>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">下北澤咖啡散步小建議</h2>
@@ -349,8 +423,8 @@ export default function ShimokitazawaCafePage() {
         {/* ぽやぴよ */}
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
-            純素烘焙、手工起司蛋糕、綠意咖啡——三間風格完全不同的店✨<br />
-            來下北澤散步的話，一定要安排咖啡行程！
+            純素烘焙、手工起司蛋糕、綠意咖啡、文化複合設施——四間風格完全不同的店✨<br />
+            來下北澤散步的話，一定要安排一整天慢慢逛！
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
             <div className="text-3xl shrink-0">🐥</div>
