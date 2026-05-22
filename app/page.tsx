@@ -139,6 +139,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "宇都宮觀光推薦3選｜栃木必去竹林・餃子・神社🎋",
+      desc: "夢幻竹林・餃子巡禮・能量神社，東京近郊一日遊隱藏寶地",
+      tag: "栃木",
+      emoji: "🎋",
+      href: "/utsunomiya",
+      image: "/utsunomiya/wakayama-1.jpg",
+      areas: ["その他"],
+    },
+    {
       name: "昭和紀念公園推薦｜東京立川散步必去・四季絕景🌿",
       desc: "東京最大級的國營公園！春櫻・夏向日葵・秋紅葉・冬燈光秀",
       tag: "東京",
