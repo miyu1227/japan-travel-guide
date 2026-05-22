@@ -130,6 +130,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "昭和紀念公園推薦｜東京立川散步必去・四季絕景🌿",
+      desc: "東京最大級的國營公園！春櫻・夏向日葵・秋紅葉・冬燈光秀",
+      tag: "東京",
+      emoji: "🌿",
+      href: "/showa-kinen-park",
+      image: "/showa-kinen-park/park-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "上高地＆奧飛騨旅行推薦4選｜日本阿爾卑斯絕景🏔️",
       desc: "河童橋・平湯大瀑布・新穂高纜車・奧飛騨溫泉飯店，自然療癒之旅",
       tag: "その他",
