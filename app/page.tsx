@@ -65,6 +65,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   cafe: [
     {
+      name: "伊勢原義式冰淇淋推薦｜石田牧場めぐり・神奈川人氣甜點🍦",
+      desc: "牧場直送鮮牛奶！神奈川伊勢原必吃ジェラート，CP值超高的隱藏名店",
+      tag: "神奈川",
+      emoji: "🍦",
+      href: "/isehara-gelato",
+      image: "/isehara-gelato/meguri-1.jpg",
+      areas: ["その他"],
+    },
+    {
       name: "代官山咖啡廳推薦2選｜東京必去義式烘焙＆高級甜點☕",
       desc: "米蘭義式烘焙PRINCI＆星級甜點DOLCE TACUBO，代官山必去人氣店",
       tag: "東京",
