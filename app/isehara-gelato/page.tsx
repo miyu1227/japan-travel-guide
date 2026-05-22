@@ -132,7 +132,7 @@ export default function IseharaGelatoPage() {
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                <strong>從牧場到杯子只要幾步路</strong>的超新鮮ジェラート，這種體驗在城市裡絕對吃不到！招牌的<strong>「ミルク（牛乳）」</strong>口味，能完整品嚐到牛奶的甘甜與濃郁🥛 還有用當地水果做的季節限定口味、抹茶、巧克力等。一份2球只要¥500左右，CP值爆表💰
+                <strong>從牧場到杯子只要幾步路</strong>的超新鮮ジェラート，這種體驗在城市裡絕對吃不到！招牌的<strong>「ミルク（牛乳）」</strong>口味，能完整品嚐到牛奶的甘甜與濃郁🥛 還有用當地水果做的季節限定口味、抹茶、巧克力等。迷你¥360、單球¥450起就能品嚐，CP值爆表💰
               </p>
             </div>
 
@@ -158,7 +158,7 @@ export default function IseharaGelatoPage() {
               <p className="text-xs text-stone-600">📍 神奈川縣伊勢原市小稻葉2330</p>
               <p className="text-xs text-stone-600">🚃 小田急線「伊勢原」駅搭計程車約15分／開車約20分</p>
               <p className="text-xs text-stone-600">⏰ 11:00〜17:00（週一・週二公休／冬季變動）</p>
-              <p className="text-xs text-stone-600">💴 單球 ¥350／雙球 ¥500／三球 ¥650</p>
+              <p className="text-xs text-stone-600">💴 迷你 ¥360／單球 ¥450／雙球 ¥630／三球 ¥750</p>
               <p className="text-xs text-stone-600">🅿️ 免費停車場有</p>
             </div>
 
