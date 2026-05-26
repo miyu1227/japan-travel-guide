@@ -211,8 +211,8 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       areas: ["東京"],
     },
     {
-      name: "東京野餐推薦｜新宿御苑＆代代木公園悠閒散步🌿",
-      desc: "草地・拍照・放鬆，東京最受歡迎的兩大公園比較",
+      name: "東京野餐推薦3選｜新宿御苑・代代木・日比谷公園🌿",
+      desc: "草地・拍照・放鬆，東京最受歡迎3大野餐公園完整指南",
       tag: "東京",
       emoji: "📍",
       href: "/spot",

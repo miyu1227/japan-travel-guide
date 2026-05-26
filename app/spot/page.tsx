@@ -6,13 +6,13 @@ const PAGE_URL = "https://www.japantrippicks.com/spot";
 const OG_IMAGE = "/spot/shinjuku-1.jpg";
 
 export const metadata: Metadata = {
-  title: "東京野餐推薦｜新宿御苑・代代木公園完全指南【2025】",
+  title: "東京野餐推薦3選｜新宿御苑・代代木公園・日比谷公園完全指南【2026】",
   description:
-    "東京野餐最推薦的兩個公園：新宿御苑和代代木公園。附交通方式、門票資訊、野餐食物推薦，以及最佳造訪季節。來東京旅遊想放鬆的人必看！",
+    "東京野餐最推薦的3大公園：新宿御苑、代代木公園、日比谷公園。附交通方式、門票資訊、外帶美食推薦（東京中城日比谷麵包店・咖啡店），以及最佳造訪季節。台灣・香港旅客來東京旅遊想放鬆的人必看！",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "東京野餐推薦｜新宿御苑・代代木公園完全指南【2025】",
-    description: "東京野餐推薦2大公園：新宿御苑・代代木公園。附交通・門票・野餐食物推薦。",
+    title: "東京野餐推薦3選｜新宿御苑・代代木・日比谷公園完全指南【2026】",
+    description: "東京野餐推薦3大公園：新宿御苑・代代木公園・日比谷公園。附交通・門票・外帶美食推薦。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "東京野餐推薦｜新宿御苑・代代木公園",
-    description: "東京最適合野餐的2個公園。附交通・門票・食物推薦！",
+    title: "東京野餐推薦3選｜新宿御苑・代代木・日比谷公園",
+    description: "東京最適合野餐的3個公園。附交通・門票・外帶美食推薦！",
     images: [OG_IMAGE],
   },
 };
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "東京野餐推薦｜新宿御苑・代代木公園完全指南【2025】",
-  description: "東京野餐推薦2大公園。附交通方式、門票資訊、野餐食物推薦。",
+  headline: "東京野餐推薦3選｜新宿御苑・代代木公園・日比谷公園完全指南【2026】",
+  description: "東京野餐推薦3大公園。附交通方式、門票資訊、外帶美食推薦。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Organization", name: "Japan Trip Picks" },
@@ -57,6 +57,19 @@ const shinjukuPhotos = [
 const yoyogiPhotos = [
   "/spot/yoyogi-1.jpg",
   "/spot/yoyogi-2.jpg",
+];
+
+const hibiyaPhotos = [
+  "/spot/hibiya-1.jpg",
+  "/spot/hibiya-2.jpg",
+  "/spot/hibiya-3.jpg",
+  "/spot/hibiya-4.jpg",
+];
+
+const hibiyaTakeoutPhotos = [
+  "/spot/hibiya-5.jpg",
+  "/spot/hibiya-6.jpg",
+  "/spot/hibiya-7.jpg",
 ];
 
 const picnicFood = [
@@ -100,9 +113,9 @@ export default function SpotPicnicPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          東京野餐推薦｜新宿御苑＆<br />代代木公園悠閒散步🌿
+          東京野餐推薦3選｜新宿御苑・<br />代代木・日比谷公園🌿
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2025年</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026年</p>
 
         {/* Why picnic in Tokyo */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -111,10 +124,10 @@ export default function SpotPicnicPage() {
             來東京旅遊，不只是逛街吃美食——其實<strong>東京野餐</strong>也是非常受歡迎的行程🌿 日本人很愛在公園鋪墊子、帶便當、慢慢放鬆。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            這次分享兩個東京最受歡迎的野餐公園：<strong>新宿御苑</strong>和<strong>代代木公園</strong>。兩個公園氣氛完全不同，可以依照旅行風格選擇✨
+            這次分享3個東京最受歡迎的野餐公園：<strong>新宿御苑</strong>、<strong>代代木公園</strong>和<strong>日比谷公園</strong>。3個公園氣氛完全不同，可以依照旅行風格選擇✨
           </p>
           <div className="flex flex-col gap-1.5">
-            {["新宿御苑 → 安靜優雅・拍照首選", "代代木公園 → 自由輕鬆・生活感十足"].map((item) => (
+            {["新宿御苑 → 安靜優雅・拍照首選", "代代木公園 → 自由輕鬆・生活感十足", "日比谷公園 → 都心綠洲・外帶美食天堂"].map((item) => (
               <div key={item} className="flex items-center gap-2 text-sm text-stone-700">
                 <span className="w-5 h-5 rounded-full bg-green-100 text-green-600 text-xs flex items-center justify-center shrink-0">✔</span>
                 <span className="font-medium">{item}</span>
@@ -124,7 +137,7 @@ export default function SpotPicnicPage() {
         </section>
 
         {/* H2: 公園推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京野餐公園推薦・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">東京野餐公園推薦・3選</h2>
 
         {/* Spot 1: 新宿御苑 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -243,6 +256,107 @@ export default function SpotPicnicPage() {
               className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
               🔗 官方網站
             </a>
+          </div>
+        </section>
+
+        {/* Spot 3: 日比谷公園 */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+          <div className="grid grid-cols-2 gap-0.5">
+            {hibiyaPhotos.map((src, i) => (
+              <div key={i} className="relative aspect-square bg-stone-100">
+                <Image src={src} alt="日比谷公園 - 東京野餐推薦" fill sizes="50vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-green-500 text-white flex items-center justify-center text-sm font-black shrink-0">3</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">日比谷公園</h3>
+                <span className="text-xs text-stone-400">Hibiya Park</span>
+              </div>
+            </div>
+
+            {/* 介紹 */}
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              位於東京站・銀座旁邊的<strong>都心綠洲</strong>🌿 日本最早的西洋式公園，1903年開園至今超過120年的歷史。被高樓大廈包圍，卻有著歐式噴水池、玫瑰花壇、寬廣草地——是商務區內難得的療癒空間。
+            </p>
+
+            {/* 推薦理由 */}
+            <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-amber-700 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                逛完銀座或東京中城日比谷之後，最適合來這裡野餐放鬆🥪 公園旁就是<strong>東京中城日比谷</strong>，裡面有超人氣麵包店和咖啡店，可以買好外帶來公園享用，是<strong>「都心野餐」</strong>的最佳組合！
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🏙️ 都心綠洲", "🌹 歐式花壇", "🥖 外帶美食天堂", "🆓 免費入場"].map((t) => (
+                <span key={t} className="text-xs bg-amber-50 text-amber-700 border border-amber-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            {/* 基本資訊 */}
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600">📍 東京都千代田区日比谷公園1</p>
+              <p className="text-xs text-stone-600">🚃 地下鉄「日比谷」「霞ヶ関」「内幸町」駅 徒歩約2分</p>
+              <p className="text-xs text-stone-600">⏰ 24小時開放</p>
+              <p className="text-xs text-stone-600">💴 入場免費</p>
+            </div>
+
+            <a href="https://www.tokyo-park.or.jp/park/hibiya/index.html" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2 mb-5">
+              🔗 官方網站
+            </a>
+
+            {/* おすすめテイクアウト */}
+            <div className="mt-5 pt-5 border-t border-stone-100">
+              <h4 className="text-sm font-black text-stone-800 mb-1">🥡 推薦外帶美食（東京中城日比谷）</h4>
+              <p className="text-xs text-stone-500 mb-3">買好直接走到公園，10秒就到野餐區🌿</p>
+
+              <div className="grid grid-cols-3 gap-1 mb-4">
+                {hibiyaTakeoutPhotos.map((src, i) => (
+                  <div key={i} className="relative aspect-square bg-stone-100 rounded-xl overflow-hidden">
+                    <Image src={src} alt="日比谷公園 外帶美食" fill sizes="33vw" className="object-cover" />
+                  </div>
+                ))}
+              </div>
+
+              {/* JEAN FRANÇOIS */}
+              <div className="bg-amber-50 border border-amber-100 rounded-2xl px-4 py-3 mb-3">
+                <div className="flex items-center gap-2 mb-1.5">
+                  <span className="text-lg">🥐</span>
+                  <p className="text-sm font-black text-stone-800">JEAN FRANÇOIS 東京中城日比谷店</p>
+                </div>
+                <p className="text-xs text-stone-600 leading-relaxed mb-2">
+                  巴黎風人氣麵包店！可頌、法棍、三明治都很受歡迎，是日比谷野餐的<strong>首選麵包店</strong>🥖
+                </p>
+                <a href="https://bread-jeanfrancois.com/1308/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
+                  🔗 店舖資訊
+                </a>
+              </div>
+
+              {/* 日比谷焙煎珈琲 */}
+              <div className="bg-amber-50 border border-amber-100 rounded-2xl px-4 py-3 mb-3">
+                <div className="flex items-center gap-2 mb-1.5">
+                  <span className="text-lg">☕</span>
+                  <p className="text-sm font-black text-stone-800">日比谷焙煎珈琲</p>
+                </div>
+                <p className="text-xs text-stone-600 leading-relaxed mb-2">
+                  自家烘焙的<strong>專業精品咖啡店</strong>。買杯香醇咖啡配麵包，在公園草地上享受悠閒午後☕
+                </p>
+                <a href="https://www.hibiya.tokyo-midtown.com/jp/restaurants/80610/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
+                  🔗 店舖資訊
+                </a>
+              </div>
+
+              <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 flex items-start gap-2">
+                <span className="text-sm shrink-0">💡</span>
+                <p className="text-xs text-stone-600">兩家店都位於東京中城日比谷內，買好走到日比谷公園只要1〜2分鐘</p>
+              </div>
+            </div>
           </div>
         </section>
 
