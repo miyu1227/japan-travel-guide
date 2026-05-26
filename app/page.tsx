@@ -83,6 +83,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   cafe: [
     {
+      name: "代代木上原咖啡廳推薦｜BOLT・寵物友善人氣店☕",
+      desc: "代代木上原必去！可帶狗的時尚咖啡空間，手沖咖啡＆自家烘焙甜點",
+      tag: "東京",
+      emoji: "☕",
+      href: "/bolt-uehara",
+      image: "/bolt-uehara/bolt-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "伊勢原義式冰淇淋推薦｜石田牧場めぐり・神奈川人氣甜點🍦",
       desc: "牧場直送鮮牛奶！神奈川伊勢原必吃ジェラート，CP值超高的隱藏名店",
       tag: "神奈川",
