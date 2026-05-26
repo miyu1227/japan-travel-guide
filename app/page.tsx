@@ -16,6 +16,15 @@ const areas = ["すべて", "東京", "大阪", "神戸", "北海道", "四国",
 const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string; areas: string[] }[]> = {
   ramen: [
     {
+      name: "宇都宮餃子推薦2選｜兩大名店みんみん＆正嗣 對決🥟",
+      desc: "1958年創業兩大巨頭！煎餃・水餃・炸餃CP值超高，餃子之都必吃",
+      tag: "栃木",
+      emoji: "🥟",
+      href: "/utsunomiya-gyoza",
+      image: "/utsunomiya-gyoza/minmin-1.jpg",
+      areas: ["その他"],
+    },
+    {
       name: "銀座美食推薦｜THE APOLLO・希臘料理人氣餐廳🍽️",
       desc: "銀座必吃話題餐廳！地中海風味分享盤＆招牌烤起司料理",
       tag: "東京",
