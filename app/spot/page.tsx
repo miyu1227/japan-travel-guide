@@ -62,11 +62,11 @@ const yoyogiPhotos = [
 const hibiyaPhotos = [
   "/spot/hibiya-1.jpg",
   "/spot/hibiya-2.jpg",
-  "/spot/hibiya-3.jpg",
-  "/spot/hibiya-4.jpg",
 ];
 
 const hibiyaTakeoutPhotos = [
+  "/spot/hibiya-3.jpg",
+  "/spot/hibiya-4.jpg",
   "/spot/hibiya-5.jpg",
   "/spot/hibiya-6.jpg",
   "/spot/hibiya-7.jpg",
@@ -316,12 +316,15 @@ export default function SpotPicnicPage() {
               <h4 className="text-sm font-black text-stone-800 mb-1">🥡 推薦外帶美食（東京中城日比谷）</h4>
               <p className="text-xs text-stone-500 mb-3">買好直接走到公園，10秒就到野餐區🌿</p>
 
-              <div className="grid grid-cols-3 gap-1 mb-4">
-                {hibiyaTakeoutPhotos.map((src, i) => (
-                  <div key={i} className="relative aspect-square bg-stone-100 rounded-xl overflow-hidden">
-                    <Image src={src} alt="日比谷公園 外帶美食" fill sizes="33vw" className="object-cover" />
-                  </div>
-                ))}
+              <div className="grid grid-cols-2 gap-1 mb-4">
+                {hibiyaTakeoutPhotos.map((src, i) => {
+                  const isLast = i === hibiyaTakeoutPhotos.length - 1;
+                  return (
+                    <div key={i} className={`relative bg-stone-100 rounded-xl overflow-hidden ${isLast ? "col-span-2 aspect-[16/9]" : "aspect-square"}`}>
+                      <Image src={src} alt="日比谷公園 外帶美食" fill sizes={isLast ? "100vw" : "50vw"} className="object-cover" />
+                    </div>
+                  );
+                })}
               </div>
 
               {/* JEAN FRANÇOIS */}
