@@ -148,6 +148,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "香川觀光推薦5選｜烏龍麵縣美食・水族館・金刀比羅宮🍜",
+      desc: "讚岐烏龍麵名店＆四國水族館＆金刀比羅宮，烏龍麵縣完整指南",
+      tag: "香川",
+      emoji: "🍜",
+      href: "/kagawa",
+      image: "/kagawa/yamagoe-1.jpg",
+      areas: ["四国"],
+    },
+    {
       name: "彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓🏯",
       desc: "日本國寶彥根城＋人氣吉祥物彥根貓＋江戶城下町散步",
       tag: "滋賀",
