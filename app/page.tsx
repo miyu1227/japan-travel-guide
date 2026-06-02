@@ -16,6 +16,15 @@ const areas = ["すべて", "東京", "大阪", "神戸", "北海道", "四国",
 const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string; areas: string[] }[]> = {
   ramen: [
     {
+      name: "大阪美食推薦2選｜鐵板燒名店＆人氣居酒屋🍻",
+      desc: "鉄板屋な。＆酒場ビリー，大阪在地人氣的精緻晚餐＆夜遊居酒屋",
+      tag: "大阪",
+      emoji: "🍻",
+      href: "/osaka-gourmet",
+      image: "/osaka-gourmet/teppan-1.jpg",
+      areas: ["大阪"],
+    },
+    {
       name: "銀座美食推薦｜THE APOLLO・希臘料理人氣餐廳🍽️",
       desc: "銀座必吃話題餐廳！地中海風味分享盤＆招牌烤起司料理",
       tag: "東京",
