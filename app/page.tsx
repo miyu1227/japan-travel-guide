@@ -166,6 +166,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "高知觀光推薦3選｜四國必去仁淀藍秘境・鰹魚タタキ・ひろめ市場🌊",
+      desc: "夢幻仁淀藍秘境＆鰹魚炙烤體驗＆ひろめ市場美食，四國高知一日遊",
+      tag: "高知",
+      emoji: "🌊",
+      href: "/kochi",
+      image: "/kochi/nikobuchi-1.jpg",
+      areas: ["四国"],
+    },
+    {
       name: "香川觀光推薦5選｜烏龍麵縣美食・水族館・金刀比羅宮🍜",
       desc: "讚岐烏龍麵名店＆四國水族館＆金刀比羅宮，烏龍麵縣完整指南",
       tag: "香川",
