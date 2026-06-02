@@ -25,6 +25,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       areas: ["大阪"],
     },
     {
+      name: "宇都宮餃子推薦2選｜兩大名店みんみん＆正嗣 對決🥟",
+      desc: "1958年創業兩大巨頭！煎餃・水餃・炸餃CP值超高，餃子之都必吃",
+      tag: "栃木",
+      emoji: "🥟",
+      href: "/utsunomiya-gyoza",
+      image: "/utsunomiya-gyoza/minmin-1.jpg",
+      areas: ["その他"],
+    },
+    {
       name: "銀座美食推薦｜THE APOLLO・希臘料理人氣餐廳🍽️",
       desc: "銀座必吃話題餐廳！地中海風味分享盤＆招牌烤起司料理",
       tag: "東京",
@@ -82,6 +91,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
     },
   ],
   cafe: [
+    {
+      name: "代代木上原咖啡廳推薦｜BOLT・寵物友善人氣店☕",
+      desc: "代代木上原必去！可帶狗的時尚咖啡空間，手沖咖啡＆自家烘焙甜點",
+      tag: "東京",
+      emoji: "☕",
+      href: "/bolt-uehara",
+      image: "/bolt-uehara/bolt-1.jpg",
+      areas: ["東京"],
+    },
     {
       name: "伊勢原義式冰淇淋推薦｜石田牧場めぐり・神奈川人氣甜點🍦",
       desc: "牧場直送鮮牛奶！神奈川伊勢原必吃ジェラート，CP值超高的隱藏名店",
@@ -229,8 +247,8 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       areas: ["東京"],
     },
     {
-      name: "東京野餐推薦｜新宿御苑＆代代木公園悠閒散步🌿",
-      desc: "草地・拍照・放鬆，東京最受歡迎的兩大公園比較",
+      name: "東京野餐推薦3選｜新宿御苑・代代木・日比谷公園🌿",
+      desc: "草地・拍照・放鬆，東京最受歡迎3大野餐公園完整指南",
       tag: "東京",
       emoji: "📍",
       href: "/spot",
