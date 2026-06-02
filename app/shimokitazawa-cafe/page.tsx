@@ -61,7 +61,7 @@ const bonustrackPhotos = ["/shimokitazawa-cafe/bonustrack-1.jpg", "/shimokitazaw
 const relatedLinks = [
   { href: "/kobe-cafe", label: "☕ 神戶咖啡推薦｜フロインドリーブ＆異人館咖啡", desc: "教堂改建咖啡廳・北野異人館洋館咖啡" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩" },
-  { href: "/ramen", label: "🍜 日本拉麵推薦｜東京・大阪必吃拉麵4選", desc: "濃厚魚介系つけ麺から家系まで" },
+  { href: "/ramen", label: "🍜 日本拉麵推薦｜東京・大阪必吃拉麵5選", desc: "濃厚魚介系つけ麺から家系まで" },
 ];
 
 export default function ShimokitazawaCafePage() {

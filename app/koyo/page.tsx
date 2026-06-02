@@ -52,7 +52,7 @@ const gaienPhotos = ["/koyo/gaien-1.jpg", "/koyo/gaien-2.jpg", "/koyo/gaien-3.jp
 
 const relatedLinks = [
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "悠閒散步的人氣公園完全指南" },
-  { href: "/ramen", label: "🍜 日本拉麵推薦｜東京・大阪必吃拉麵4選", desc: "濃厚魚介系つけ麺から家系まで" },
+  { href: "/ramen", label: "🍜 日本拉麵推薦｜東京・大阪必吃拉麵5選", desc: "濃厚魚介系つけ麺から家系まで" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩3間人氣店" },
 ];
 

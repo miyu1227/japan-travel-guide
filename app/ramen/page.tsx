@@ -6,13 +6,13 @@ const PAGE_URL = "https://www.japantrippicks.com/ramen";
 const OG_IMAGE = "/ramen/tsujita-1.jpg";
 
 export const metadata: Metadata = {
-  title: "日本拉麵推薦｜東京・大阪必吃拉麵4選【實際吃過】",
+  title: "日本拉麵推薦｜東京・大阪必吃拉麵5選【實際吃過】",
   description:
-    "整理4間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店和利道、全國連鎖家系拉麵町田商店、中目黒俺流鹽味拉麵。來東京或大阪旅遊必吃！附地址・交通・推薦菜單。",
+    "整理5間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店和利道、全國連鎖家系拉麵町田商店、中目黒俺流鹽味拉麵、六本木AFURI柚子鹽拉麵。來東京或大阪旅遊必吃！附地址・交通・推薦菜單。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "日本拉麵推薦｜東京・大阪必吃拉麵4選【實際吃過】",
-    description: "整理4間實際吃過的日本拉麵推薦。大阪魚介つけ麺・東京排隊名店・全國連鎖家系拉麵・中目黒鹽味拉麵。附地址・交通。",
+    title: "日本拉麵推薦｜東京・大阪必吃拉麵5選【實際吃過】",
+    description: "整理5間實際吃過的日本拉麵推薦。大阪魚介つけ麺・東京排隊名店・全國連鎖家系拉麵・中目黒鹽味拉麵・六本木AFURI柚子鹽。附地址・交通。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "日本拉麵推薦｜東京・大阪必吃拉麵4選",
-    description: "大阪魚介つけ麺・東京排隊名店・家系拉麵・中目黒鹽味拉麵。實際吃過的4間推薦！",
+    title: "日本拉麵推薦｜東京・大阪必吃拉麵5選",
+    description: "大阪魚介つけ麺・東京排隊名店・家系拉麵・中目黒鹽味・六本木柚子鹽。實際吃過的5間推薦！",
     images: [OG_IMAGE],
   },
 };
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "日本拉麵推薦｜東京・大阪必吃拉麵4選【實際吃過】",
-  description: "整理4間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店、全國連鎖家系拉麵、中目黒俺流鹽味拉麵。",
+  headline: "日本拉麵推薦｜東京・大阪必吃拉麵5選【實際吃過】",
+  description: "整理5間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店、全國連鎖家系拉麵、中目黒俺流鹽味拉麵、六本木AFURI柚子鹽拉麵。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Organization", name: "Japan Trip Picks" },
@@ -121,6 +121,24 @@ const shops = [
     },
     tags: ["🧂 清爽鹽味", "🥚 配料自由", "🚶 中目黒徒步2分"],
   },
+  {
+    id: "afuri",
+    number: 5,
+    name: "AFURI 六本木",
+    highlight: "柚子鹽拉麵・東京話題名店",
+    url: "https://www.hotpepper.jp/strJ001118169/",
+    tag: "東京",
+    recommend: "柚子鹽拉麵",
+    images: ["/ramen/afuri-1.jpg"],
+    intro: "東京最具話題的柚子鹽拉麵名店「AFURI」的六本木店。位於六本木Hills內，是觀光客也方便造訪的人氣店。湯頭以雞骨、煮干、柚子調製，清澈卻香氣豐富。",
+    reason: "招牌的「柚子鹽拉麵」是日本拉麵的革命性存在！柚子的清香完美襯托雞骨高湯的鮮甜🍋 麵條細而Q彈，搭配低溫慢煮的雞肉叉燒，每一口都很驚艷。海外旅客也容易接受的口味，是東京拉麵入門的首選。",
+    basicInfo: {
+      address: "東京都港區六本木6-10-1 六本木Hills METRO HAT B2F",
+      access: "東京メトロ日比谷線「六本木」駅 徒歩約3分",
+      price: "¥1,200〜¥1,600",
+    },
+    tags: ["🍋 柚子鹽", "🐔 雞骨清湯", "🏬 六本木Hills內"],
+  },
 ];
 
 const ramenTypes = [
@@ -163,7 +181,7 @@ export default function RamenArticle() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          日本拉麵推薦｜東京・大阪<br />必吃拉麵4選🍜
+          日本拉麵推薦｜東京・大阪<br />必吃拉麵5選🍜
         </h1>
         <p className="text-xs text-stone-400 mb-6">最後更新：2025年</p>
 
@@ -174,7 +192,7 @@ export default function RamenArticle() {
             來日本旅遊，<strong>日本拉麵</strong>絕對是必吃清單的第一名🍜 不同地區有不同風格，東京、大阪、福岡……每個地方的拉麵都有自己的個性。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次整理了4間我實際吃過的店，包含大阪的濃郁魚介つけ麺、東京的排隊名店、在日本各地都找得到的家系拉麵，以及中目黒可自由搭配配料的鹽味拉麵。每一間都有自己的魅力，請按照行程選擇！
+            這次整理了5間我實際吃過的店，包含大阪的濃郁魚介つけ麺、東京的排隊名店、在日本各地都找得到的家系拉麵、中目黒可自由搭配配料的鹽味拉麵，以及六本木AFURI的柚子鹽清湯拉麵。每一間都有自己的魅力，請按照行程選擇！
           </p>
         </section>
 
@@ -195,7 +213,7 @@ export default function RamenArticle() {
         </section>
 
         {/* H2: 推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">日本拉麵推薦・4間必吃</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">日本拉麵推薦・5間必吃</h2>
 
         {/* Shops */}
         <div className="space-y-8 mb-10">

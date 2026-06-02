@@ -53,7 +53,7 @@ const masashiPhotos = ["/utsunomiya-gyoza/masashi-1.jpg", "/utsunomiya-gyoza/mas
 
 const relatedLinks = [
   { href: "/utsunomiya", label: "🎋 宇都宮觀光推薦3選｜栃木必去竹林・餃子・神社", desc: "若山農場竹林・餃子通・二荒山神社" },
-  { href: "/ramen", label: "🍜 日本拉麵推薦｜4間必吃拉麵（東京＋大阪）", desc: "つじ田・和利道・町田商店・俺流鹽味拉麵" },
+  { href: "/ramen", label: "🍜 日本拉麵推薦｜5間必吃拉麵（東京＋大阪）", desc: "つじ田・和利道・町田商店・俺流鹽味拉麵" },
   { href: "/shin-okubo", label: "🇰🇷 新大久保美食推薦｜韓國料理・咖啡・甜點", desc: "ナッコプセ鍋・韓系咖啡廳・ドバイ餅" },
 ];
 

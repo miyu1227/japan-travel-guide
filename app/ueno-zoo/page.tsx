@@ -53,7 +53,7 @@ const zooPhotos = ["/ueno-zoo/zoo-1.jpg", "/ueno-zoo/zoo-2.jpg", "/ueno-zoo/zoo-
 const relatedLinks = [
   { href: "/museum", label: "🎨 東京美術館推薦｜國立新美術館＆根津美術館", desc: "現代建築・日本庭園" },
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "悠閒散步的人氣公園完全指南" },
-  { href: "/ramen", label: "🍜 日本拉麵推薦｜東京・大阪必吃拉麵4選", desc: "濃厚魚介系つけ麺から家系まで" },
+  { href: "/ramen", label: "🍜 日本拉麵推薦｜東京・大阪必吃拉麵5選", desc: "濃厚魚介系つけ麺から家系まで" },
 ];
 
 export default function UenoZooPage() {
