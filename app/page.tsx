@@ -157,6 +157,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓🏯",
+      desc: "日本國寶彥根城＋人氣吉祥物彥根貓＋江戶城下町散步",
+      tag: "滋賀",
+      emoji: "🏯",
+      href: "/hikone",
+      image: "/hikone/castle-1.png",
+      areas: ["その他"],
+    },
+    {
       name: "宇都宮觀光推薦3選｜栃木必去竹林・餃子・神社🎋",
       desc: "夢幻竹林・餃子巡禮・能量神社，東京近郊一日遊隱藏寶地",
       tag: "栃木",
