@@ -16,6 +16,15 @@ const areas = ["すべて", "東京", "大阪", "神戸", "北海道", "四国",
 const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string; areas: string[] }[]> = {
   ramen: [
     {
+      name: "大阪美食推薦2選｜鐵板燒名店＆人氣居酒屋🍻",
+      desc: "鉄板屋な。＆酒場ビリー，大阪在地人氣的精緻晚餐＆夜遊居酒屋",
+      tag: "大阪",
+      emoji: "🍻",
+      href: "/osaka-gourmet",
+      image: "/osaka-gourmet/teppan-1.jpg",
+      areas: ["大阪"],
+    },
+    {
       name: "宇都宮餃子推薦2選｜兩大名店みんみん＆正嗣 對決🥟",
       desc: "1958年創業兩大巨頭！煎餃・水餃・炸餃CP值超高，餃子之都必吃",
       tag: "栃木",
