@@ -175,6 +175,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "京都伊根町觀光推薦｜舟屋村絕景・咖啡＆住宿🏘️",
+      desc: "日本最美村落「伊根舟屋」！INE CAFE咖啡＆仁風荘住宿完整指南",
+      tag: "京都",
+      emoji: "🏘️",
+      href: "/ine",
+      image: "/ine/town-1.jpg",
+      areas: ["その他"],
+    },
+    {
       name: "高知觀光推薦3選｜四國必去仁淀藍秘境・鰹魚タタキ・ひろめ市場🌊",
       desc: "夢幻仁淀藍秘境＆鰹魚炙烤體驗＆ひろめ市場美食，四國高知一日遊",
       tag: "高知",
