@@ -175,6 +175,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "六甲山健行推薦｜神戶登山＆有馬溫泉一日遊🏔️♨️",
+      desc: "登山＋纜車＋有馬溫泉＋人氣ジェラート，關西自然＆溫泉完美行程",
+      tag: "神戶",
+      emoji: "🏔️",
+      href: "/rokko-arima",
+      image: "/rokko-arima/rokko-1.jpg",
+      areas: ["神戸"],
+    },
+    {
       name: "京都伊根町觀光推薦｜舟屋村絕景・咖啡＆住宿🏘️",
       desc: "日本最美村落「伊根舟屋」！INE CAFE咖啡＆仁風荘住宿完整指南",
       tag: "京都",
