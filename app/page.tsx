@@ -11,7 +11,7 @@ const categories = [
   { id: "spot", icon: "📍", label: "Spots", labelZh: "景點", color: "bg-blue-100 text-blue-600 border-blue-300", activeColor: "bg-blue-400 text-white border-blue-400", hasAreaFilter: true },
 ];
 
-const areas = ["すべて", "東京", "大阪", "神戸", "北海道", "四国", "その他"];
+const areas = ["すべて", "東京", "大阪", "兵庫", "北海道", "四国", "その他"];
 
 const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string; areas: string[] }[]> = {
   ramen: [
@@ -22,7 +22,7 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       emoji: "🍃",
       href: "/sanda-soba",
       image: "/sanda-soba/soba1-1.jpg",
-      areas: ["神戸"],
+      areas: ["兵庫"],
     },
     {
       name: "大阪美食推薦2選｜鐵板燒名店＆人氣居酒屋🍻",
@@ -63,11 +63,11 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
     {
       name: "神戶牛推薦｜ステーキハウスZEN 三宮店・A5鐵板燒名店🥩",
       desc: "神戶必吃A5神戶牛鐵板燒名店，主廚現煎入口即化",
-      tag: "神戶",
+      tag: "兵庫",
       emoji: "🥩",
       href: "/steak-zen",
       image: "/steak-zen/zen-1.jpg",
-      areas: ["神戸"],
+      areas: ["兵庫"],
     },
     {
       name: "日本拉麵推薦｜5間必吃拉麵（東京＋大阪）",
@@ -157,20 +157,20 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
     {
       name: "神戶咖啡推薦｜フロインドリーブ＆異人館咖啡2選☕",
       desc: "教堂改建咖啡廳・北野異人館洋館咖啡，神戶必去2間人氣店",
-      tag: "神戶",
+      tag: "兵庫",
       emoji: "☕",
       href: "/kobe-cafe",
       image: "/kobe-cafe/freundlieb-1.jpg",
-      areas: ["神戸"],
+      areas: ["兵庫"],
     },
     {
       name: "夙川咖啡廳推薦2選｜法式可麗餅＆精品咖啡☕",
       desc: "クレープリー・ルポ＆ゆげ焙煎所，關西必去咖啡廳",
-      tag: "神戶",
+      tag: "兵庫",
       emoji: "☕",
       href: "/shukugawa",
       image: "/shukugawa/crepe-1.jpg",
-      areas: ["神戸"],
+      areas: ["兵庫"],
     },
     {
       name: "自由之丘咖啡店推薦｜東京必去咖啡散步地區☕",
@@ -186,11 +186,11 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
     {
       name: "六甲山健行推薦｜神戶登山＆有馬溫泉一日遊🏔️♨️",
       desc: "登山＋纜車＋有馬溫泉＋人氣ジェラート，關西自然＆溫泉完美行程",
-      tag: "神戶",
+      tag: "兵庫",
       emoji: "🏔️",
       href: "/rokko-arima",
       image: "/rokko-arima/rokko-1.jpg",
-      areas: ["神戸"],
+      areas: ["兵庫"],
     },
     {
       name: "京都伊根町觀光推薦｜舟屋村絕景・咖啡＆住宿🏘️",
