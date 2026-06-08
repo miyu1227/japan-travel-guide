@@ -81,6 +81,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   snacks: [
     {
+      name: "Mister Donut期間限定｜超人氣もっちゅりん甜甜圈🍩",
+      desc: "波堤×布丁的革命性組合！每天排隊售完的日本限定話題甜點",
+      tag: "日本",
+      emoji: "🍩",
+      href: "/mister-donut",
+      image: "/mister-donut/motchurin-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "東京伴手禮推薦｜高級手工餅乾・必買甜點🍪",
       desc: "奧地利認證大師的手工餅乾禮盒，需預約的超人氣伴手禮",
       tag: "東京",
