@@ -16,6 +16,15 @@ const areas = ["すべて", "東京", "大阪", "神戸", "北海道", "四国",
 const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string; areas: string[] }[]> = {
   ramen: [
     {
+      name: "兵庫三田蕎麥麵推薦｜蕎麦いち・關西手打蕎麥名店🍃",
+      desc: "神戶近郊隱藏名店！嚴選國產蕎麥粉的職人手打蕎麥",
+      tag: "兵庫",
+      emoji: "🍃",
+      href: "/sanda-soba",
+      image: "/sanda-soba/soba1-1.jpg",
+      areas: ["神戸"],
+    },
+    {
       name: "大阪美食推薦2選｜鐵板燒名店＆人氣居酒屋🍻",
       desc: "鉄板屋な。＆酒場ビリー，大阪在地人氣的精緻晚餐＆夜遊居酒屋",
       tag: "大阪",
