@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-subway-ticket";
@@ -95,6 +96,48 @@ export default function TokyoSubwayTicketPage() {
           <p className="text-sm text-stone-600 leading-relaxed">
             如果你打算用<strong>地鐵</strong>串聯<strong>新宿、銀座、淺草、上野、表參道、澀谷、六本木、築地、東京站</strong>等東京主要景點，那麼<strong>「Tokyo Subway Ticket」</strong>就是一張很值得了解的票券。
           </p>
+        </section>
+
+        {/* チケット案内バナー（序盤） */}
+        <section className="mb-8">
+          <div className="relative bg-gradient-to-br from-amber-50 via-white to-yellow-50 border border-amber-200/80 rounded-3xl p-5 shadow-sm">
+            <div className="flex items-center justify-between mb-3">
+              <span className="inline-block text-[10px] font-bold text-amber-700 bg-amber-100 px-2.5 py-1 rounded-full tracking-wide">
+                🎫 Travel Tips
+              </span>
+              <span className="text-[10px] text-stone-400">交通票券</span>
+            </div>
+
+            <div className="flex items-start gap-3 mb-4">
+              <div className="relative w-16 h-16 shrink-0 rounded-2xl overflow-hidden bg-yellow-50 border border-yellow-200">
+                <Image
+                  src="/poyapiyo-flag.png"
+                  alt="ぽやぴよ"
+                  fill
+                  sizes="64px"
+                  className="object-contain p-1"
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-base font-black text-stone-800 leading-tight mb-1">
+                  Tokyo Subway Ticket 想直接看票券資訊？
+                </h3>
+                <p className="text-xs text-stone-600 leading-relaxed">
+                  本篇整理了使用方式與行程建議。若想先了解價格、購買方式與當前票券方案，可以從下方連結至 Klook 頁面查看最新資訊。
+                </p>
+              </div>
+            </div>
+
+            <a
+              href={KLOOK_URL}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 rounded-full py-3 shadow-sm hover:shadow transition-all"
+            >
+              🎫 在 Klook 查看 Tokyo Subway Ticket →
+            </a>
+            <p className="text-[10px] text-stone-400 mt-2 text-center">※ 內含聯盟行銷連結。讀者不會因此支付額外費用。</p>
+          </div>
         </section>
 
         {/* 什麼是 */}
