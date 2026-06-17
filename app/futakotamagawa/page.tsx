@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/futakotamagawa";
 const OG_IMAGE = "/futakotamagawa/steaman-1.jpg";
@@ -95,6 +96,8 @@ export default function FutakotamagawaPage() {
             這次推薦3間實際造訪過的人氣店：時尚蒸籠中華<strong>「STEAMAN」</strong>、蘋果派專門店<strong>「GRANNY SMITH」</strong>，以及韓國屋台風<strong>「ぶたこたまがわ」</strong>✨
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
