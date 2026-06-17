@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/ramen";
 const OG_IMAGE = "/ramen/tsujita-1.jpg";
@@ -196,6 +197,8 @@ export default function RamenArticle() {
             這次整理了5間我實際吃過的店，包含大阪的濃郁魚介つけ麺、東京的排隊名店、在日本各地都找得到的家系拉麵、中目黒可自由搭配配料的鹽味拉麵，以及六本木AFURI的柚子鹽清湯拉麵。每一間都有自己的魅力，請按照行程選擇！
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* H2: 拉麵種類 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">

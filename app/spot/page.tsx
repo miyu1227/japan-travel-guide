@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/spot";
 const OG_IMAGE = "/spot/shinjuku-1.jpg";
@@ -136,6 +137,8 @@ export default function SpotPicnicPage() {
             ))}
           </div>
         </section>
+
+        <PrepBannerCompact />
 
         {/* H2: 公園推薦 */}
         <h2 className="text-lg font-black text-stone-800 mb-4">東京野餐公園推薦・3選</h2>

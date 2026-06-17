@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/ine";
 const OG_IMAGE = "/ine/town-1.jpg";
@@ -99,6 +100,8 @@ export default function InePage() {
             因為交通較不便，反而保留了純樸的漁村風情，被譽為<strong>「京都的小威尼斯」</strong>🚤 這次推薦伊根町觀光的<strong>3個要素</strong>——舟屋村絕景＋舟屋咖啡<strong>「INE CAFE」</strong>＋當地住宿<strong>「仁風荘」</strong>，安排一日遊或慢遊兩日都很棒✨
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* H2 */}
         <h2 className="text-lg font-black text-stone-800 mb-4">伊根町觀光推薦・3要素</h2>

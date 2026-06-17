@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/utsunomiya-gyoza";
 const OG_IMAGE = "/utsunomiya-gyoza/minmin-1.jpg";
@@ -98,6 +99,8 @@ export default function UtsunomiyaGyozaPage() {
             這兩間店都<strong>創業於1958年</strong>，相差不到幾個月，被當地人稱為<strong>「宇都宮餃子的兩大支柱」</strong>✨ 一份只要¥270〜¥330，CP值超高！這次完整介紹兩間本店，讓你一次了解該怎麼選、怎麼吃。
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">

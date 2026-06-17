@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/nakameguro-cafe";
 const OG_IMAGE = "/nakameguro-cafe/starbucks-1.jpg";
@@ -102,6 +103,8 @@ export default function NakameguroCafePage() {
             這次推薦的是中目黑的超級地標<strong>「STARBUCKS RESERVE ROASTERY TOKYO」</strong>——全世界只有6間的星巴克臻選烘焙工坊之一，由日本建築大師<strong>隈研吾</strong>操刀設計，是每個來東京旅遊的人都必訪的咖啡聖地✨
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* Spot */}
         <h2 className="text-lg font-black text-stone-800 mb-4">中目黑咖啡廳推薦（持續更新中）</h2>

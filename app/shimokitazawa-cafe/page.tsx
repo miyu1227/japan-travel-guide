@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/shimokitazawa-cafe";
 const OG_IMAGE = "/shimokitazawa-cafe/vegan-1.jpg";
@@ -105,6 +106,8 @@ export default function ShimokitazawaCafePage() {
             這次推薦4間店：100%純素烘焙<strong>「TOKYO VEGAN BAKES」</strong>、手工起司蛋糕<strong>「La Piña」</strong>、綠意滿滿的自家焙煎咖啡<strong>「Pati coffee&plants」</strong>，以及下北澤最新人氣文化複合設施<strong>「BONUS TRACK」</strong>——風格各異，都是下北澤必訪的人氣店✨
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">

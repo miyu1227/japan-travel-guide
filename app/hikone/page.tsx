@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/hikone";
 const OG_IMAGE = "/hikone/castle-1.png";
@@ -98,6 +99,8 @@ export default function HikonePage() {
             彥根城最大的魅力——除了壯麗的城堡建築之外，當然就是超人氣吉祥物<strong>「彥根貓（ひこにゃん）」</strong>🐱 每天會在城內固定時間出沒，可以近距離合照！周邊城下町還有許多布丁店、彥根貓造型饅頭等美食，是親子・情侶旅遊的絕佳行程✨
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* H2 */}
         <h2 className="text-lg font-black text-stone-800 mb-4">滋賀彥根觀光推薦</h2>

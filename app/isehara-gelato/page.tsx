@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/isehara-gelato";
 const OG_IMAGE = "/isehara-gelato/meguri-1.jpg";
@@ -97,6 +98,8 @@ export default function IseharaGelatoPage() {
             這次推薦的<strong>「石田牧場のジェラート屋 めぐり」</strong>是當地人氣No.1的<strong>義式冰淇淋專門店</strong>🍦 直接設在牧場旁邊，使用每天現擠的<strong>新鮮牛奶</strong>製作的ジェラート，濃郁香醇、CP值超高。是來神奈川旅遊絕對不能錯過的隱藏甜點名店✨
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* Shop */}
         <h2 className="text-lg font-black text-stone-800 mb-4">神奈川ジェラート推薦（持續更新中）</h2>

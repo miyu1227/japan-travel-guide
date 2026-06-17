@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/kochi";
 const OG_IMAGE = "/kochi/nikobuchi-1.jpg";
@@ -99,6 +100,8 @@ export default function KochiPage() {
             除了自然絕景，高知也是<strong>「鰹魚之鄉」</strong>，<strong>鰹魚タタキ（炙烤鰹魚生魚片）</strong>是當地必吃名物🐟 這次推薦的3個必去景點：仁淀川的秘境<strong>「にこ淵」</strong>、可以親手體驗的<strong>「タタキ道場」</strong>，以及高知美食天堂<strong>「ひろめ市場」</strong>✨
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">

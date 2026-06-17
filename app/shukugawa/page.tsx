@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/shukugawa";
 const OG_IMAGE = "/shukugawa/crepe-1.jpg";
@@ -128,6 +129,8 @@ export default function ShukugawaPage() {
             這次推薦兩間實際造訪過、最值得去的<strong>夙川咖啡廳</strong>——正宗法式可麗餅<strong>「クレープリー・ルポ」</strong>和精品自家焙煎<strong>「ゆげ焙煎所」</strong>。來關西旅遊時，不妨安排一個悠閒的咖啡散步行程✨
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">

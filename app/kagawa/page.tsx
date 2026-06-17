@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/kagawa";
 const OG_IMAGE = "/kagawa/yamagoe-1.jpg";
@@ -101,6 +102,8 @@ export default function KagawaPage() {
             這次推薦的5個必去景點：人氣烏龍麵名店<strong>「山越うどん」「山下うどん」</strong>、超人氣<strong>「四國水族館」</strong>、四國最大能量景點<strong>「金刀比羅宮」</strong>，以及高松名宿<strong>「御宿敷島館」</strong>✨ 一日〜兩日遊行程剛剛好！
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">

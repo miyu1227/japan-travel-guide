@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/sanda-soba";
 const OG_IMAGE = "/sanda-soba/soba1-1.jpg";
@@ -97,6 +98,8 @@ export default function SandaSobaPage() {
             這次推薦的<strong>「蕎麦いち」</strong>是三田當地最具代表性的手打蕎麥麵名店🍜 使用<strong>嚴選國產蕎麥粉</strong>，從製粉到打麵都堅持職人手工，是來關西旅遊絕對能讓你刮目相看的隱藏寶藏✨
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* Shop */}
         <h2 className="text-lg font-black text-stone-800 mb-4">兵庫三田美食推薦</h2>

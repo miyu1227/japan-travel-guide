@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/hakone";
 const OG_IMAGE = "/hakone/shrine-1.jpg";
@@ -195,6 +196,8 @@ export default function HakonePage() {
             這次分享我實際走過的完整行程👇 一天就能玩到美術館、足湯、神社、蕎麥麵，充實又不趕。
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* 浪漫特快 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">

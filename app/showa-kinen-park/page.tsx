@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/showa-kinen-park";
 const OG_IMAGE = "/showa-kinen-park/park-1.jpg";
@@ -102,6 +103,8 @@ export default function ShowaKinenParkPage() {
             園內擁有大草坪、日本庭園、兒童森林、自行車道、湖泊與各種花田。<strong>春天的櫻花</strong>、<strong>夏天的向日葵</strong>、<strong>秋天的銀杏與紅葉</strong>、<strong>冬天的燈光秀</strong>——每個季節都有獨特的絕景，是東京近郊散步、野餐、親子旅遊的最佳選擇✨
           </p>
         </section>
+
+        <PrepBannerCompact />
 
         {/* Spot */}
         <h2 className="text-lg font-black text-stone-800 mb-4">東京散步景點推薦</h2>
