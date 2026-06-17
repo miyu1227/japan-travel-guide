@@ -327,7 +327,7 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       tag: "交通票券",
       emoji: "🚇",
       href: "/tokyo-subway-ticket",
-      image: "/poyapiyo-flag.png",
+      image: "/tokyo-subway-ticket/cover.png",
       areas: ["東京"],
     },
   ],

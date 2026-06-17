@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-subway-ticket";
-const OG_IMAGE = "/poyapiyo-flag.png";
+const OG_IMAGE = "/tokyo-subway-ticket/cover.png";
 
 const KLOOK_URL =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1307238&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F1552-subway-ticket-tokyo%2F%3Fspm%3DSearchResult.SearchResult_LIST%26clickId%3Dacb5dc654e";
