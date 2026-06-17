@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import PrepBanner from "../components/PrepBanner";
 
 const PAGE_URL = "https://www.japantrippicks.com/kamikochi";
 const OG_IMAGE = "/kamikochi/cover.jpg";
@@ -410,6 +411,8 @@ export default function KamikochiPage() {
             </div>
           </div>
         </div>
+
+        <PrepBanner />
 
         {/* 延伸閱讀 */}
         <section>

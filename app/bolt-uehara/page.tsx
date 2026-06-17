@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/bolt-uehara";
 const OG_IMAGE = "/bolt-uehara/bolt-1.jpg";
@@ -99,8 +98,6 @@ export default function BoltUeharaPage() {
           </p>
         </section>
 
-        <PrepBannerCompact />
-
         {/* Shop */}
         <h2 className="text-lg font-black text-stone-800 mb-4">代代木上原咖啡廳推薦</h2>
 
@@ -193,7 +190,6 @@ export default function BoltUeharaPage() {
         </div>
 
         <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-cookies";
 const OG_IMAGE = "/tokyo-cookies/kayanuma-1.jpg";
@@ -96,8 +95,6 @@ export default function TokyoCookiesPage() {
             這次推薦的是位於赤坂的老字號甜點名店<strong>「ツッカベッカライ カヤヌマ」</strong>——由奧地利國家認證甜點大師手工製作，需要<strong>預約才能買到</strong>的超人氣餅乾禮盒✨ 不論送禮或自用，都是最有品味的選擇。
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* Shop */}
         <h2 className="text-lg font-black text-stone-800 mb-4">東京伴手禮推薦（持續更新中）</h2>
@@ -209,7 +206,6 @@ export default function TokyoCookiesPage() {
         </div>
 
         <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

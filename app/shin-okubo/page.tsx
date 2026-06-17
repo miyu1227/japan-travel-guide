@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/shin-okubo";
 const OG_IMAGE = "/shin-okubo/sawee-1.jpg";
@@ -163,8 +162,6 @@ export default function ShinOkuboPage() {
           </p>
         </section>
 
-        <PrepBannerCompact />
-
         {/* H2 */}
         <h2 className="text-lg font-black text-stone-800 mb-4">新大久保美食推薦・3間必去</h2>
 
@@ -275,7 +272,6 @@ export default function ShinOkuboPage() {
         </div>
 
         <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

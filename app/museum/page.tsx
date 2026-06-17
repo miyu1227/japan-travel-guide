@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/museum";
 const OG_IMAGE = "/museum/nact-1.jpg";
@@ -101,8 +100,6 @@ export default function MuseumPage() {
             這次推薦兩間實際造訪過、最值得去的美術館：六本木的<strong>國立新美術館</strong>和表參道的<strong>根津美術館</strong>。一間是現代建築代表，一間有夢幻日本庭園——氛圍完全不同，可以依照行程選擇✨
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
@@ -288,7 +285,6 @@ export default function MuseumPage() {
         </div>
 
         <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/ueno-zoo";
 const OG_IMAGE = "/ueno-zoo/zoo-1.jpg";
@@ -98,8 +97,6 @@ export default function UenoZooPage() {
             園內有超人氣的<strong>大熊貓</strong>、亞洲象、蘇門答臘虎、小熊貓等豐富的動物展示。門票只要<strong>¥600</strong>，小學生以下免費，CP值超高✨ 不論是親子旅行、情侶約會還是朋友出遊都非常適合。
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* Spot */}
         <h2 className="text-lg font-black text-stone-800 mb-4">東京動物園推薦（持續更新中）</h2>
@@ -209,7 +206,6 @@ export default function UenoZooPage() {
         </div>
 
         <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

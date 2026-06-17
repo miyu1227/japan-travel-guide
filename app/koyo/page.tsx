@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/koyo";
 const OG_IMAGE = "/koyo/gaien-1.jpg";
@@ -100,8 +99,6 @@ export default function KoyoPage() {
             從青山通往聖德紀念繪畫館延伸，約300公尺長的銀杏隧道鋪滿金黃落葉，整條路像是被染成金色一樣✨ 是很多電影、廣告都會取景的場所。
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* H2 */}
         <h2 className="text-lg font-black text-stone-800 mb-4">東京紅葉景點・1選（持續更新中）</h2>
@@ -212,7 +209,6 @@ export default function KoyoPage() {
         </div>
 
         <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

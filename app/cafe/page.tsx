@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/cafe";
 const OG_IMAGE = "/cafe/gelato-1.jpg";
@@ -162,8 +161,6 @@ export default function JiyugaokaCafePage() {
           </p>
         </section>
 
-        <PrepBannerCompact />
-
         {/* H2: 自由之丘咖啡推薦 */}
         <h2 className="text-lg font-black text-stone-800 mb-4">自由之丘咖啡推薦・3間必去</h2>
 
@@ -283,7 +280,6 @@ export default function JiyugaokaCafePage() {
         </div>
 
         <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

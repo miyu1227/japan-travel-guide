@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/mister-donut";
 const OG_IMAGE = "/mister-donut/motchurin-1.jpg";
@@ -96,8 +95,6 @@ export default function MisterDonutPage() {
             因為太受歡迎，全國門市每天都<strong>排隊到售完</strong>，許多客人開店前就在等。從台灣・香港來日本旅遊，絕對不能錯過這個只有日本才吃得到的限定美味✨
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* Shop */}
         <h2 className="text-lg font-black text-stone-800 mb-4">日本期間限定甜點推薦</h2>
@@ -199,7 +196,6 @@ export default function MisterDonutPage() {
         </div>
 
         <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

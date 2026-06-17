@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-tower";
 const OG_IMAGE = "/tokyo-tower/tower-1.jpg";
@@ -104,8 +103,6 @@ export default function TokyoTowerPage() {
             白天可以登上展望台欣賞<strong>東京360度全景</strong>，夜晚則被絢麗的<strong>燈光點亮</strong>，是東京最浪漫的夜景景點之一✨ 不論是情侶約會、家庭旅遊還是IG打卡，都是來東京絕對不能錯過的景點。
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* Spot */}
         <h2 className="text-lg font-black text-stone-800 mb-4">東京地標景點推薦</h2>
@@ -215,7 +212,6 @@ export default function TokyoTowerPage() {
         </div>
 
         <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

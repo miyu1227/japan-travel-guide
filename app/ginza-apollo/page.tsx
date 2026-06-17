@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/ginza-apollo";
 const OG_IMAGE = "/ginza-apollo/apollo-1.jpg";
@@ -98,8 +97,6 @@ export default function GinzaApolloPage() {
             這次推薦的<strong>「THE APOLLO」</strong>是來自<strong>澳洲雪梨的人氣希臘料理餐廳</strong>，2016年春天進駐銀座🇬🇷 位於銀座Nouvo大樓11樓的時尚空間，提供地中海風味的<strong>分享盤式料理</strong>，是銀座最具話題的多人聚餐勝地✨
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* Shop */}
         <h2 className="text-lg font-black text-stone-800 mb-4">銀座美食推薦（持續更新中）</h2>
@@ -221,7 +218,6 @@ export default function GinzaApolloPage() {
         </div>
 
         <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

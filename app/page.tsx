@@ -322,6 +322,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   prep: [
     {
+      name: "日本自由行 eSIM 使用指南｜抵達日本就能上網的事前準備📱",
+      desc: "eSIM 使用方式＆與實體 SIM／租借 Wi-Fi 比較。出發前先安心搞定上網",
+      tag: "上網準備",
+      emoji: "📱",
+      href: "/japan-esim",
+      image: "/poyapiyo-flag.png",
+      areas: ["東京"],
+    },
+    {
       name: "東京地鐵24/48/72小時乘車券｜Tokyo Subway Ticket購買與使用方式🚇",
       desc: "東京自由行交通指南！地下鐵周遊券完整解說，附行程範例與選購建議",
       tag: "交通票券",

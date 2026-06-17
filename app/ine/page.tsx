@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import PrepBanner from "../components/PrepBanner";
 
 const PAGE_URL = "https://www.japantrippicks.com/ine";
 const OG_IMAGE = "/ine/town-1.jpg";
@@ -232,6 +233,8 @@ export default function InePage() {
             </div>
           </div>
         </div>
+
+        <PrepBanner />
 
         {/* 延伸閱讀 */}
         <section>
