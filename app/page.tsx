@@ -184,6 +184,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "東京地鐵24/48/72小時乘車券｜Tokyo Subway Ticket購買與使用方式🚇",
+      desc: "東京自由行交通指南！地下鐵周遊券完整解說，附行程範例與選購建議",
+      tag: "東京",
+      emoji: "🚇",
+      href: "/tokyo-subway-ticket",
+      image: "/poyapiyo-flag.png",
+      areas: ["東京"],
+    },
+    {
       name: "六甲山健行推薦｜神戶登山＆有馬溫泉一日遊🏔️♨️",
       desc: "登山＋纜車＋有馬溫泉＋人氣ジェラート，關西自然＆溫泉完美行程",
       tag: "兵庫",
