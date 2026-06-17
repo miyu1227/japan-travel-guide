@@ -38,7 +38,7 @@ export default function PrepBanner() {
 
         {/* ボタン */}
         <Link
-          href="/#prep"
+          href="/tokyo-subway-ticket"
           className="mt-4 block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 rounded-full py-3 shadow-sm hover:shadow transition-all"
         >
           🎒 前往出發前準備清單 →

@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function PrepBannerCompact() {
   return (
     <Link
-      href="/#prep"
+      href="/tokyo-subway-ticket"
       className="block bg-gradient-to-br from-white to-amber-50 border border-amber-200/70 rounded-2xl px-4 py-3 mb-8 shadow-sm hover:shadow-md hover:border-amber-300 transition-all"
     >
       <div className="flex items-center gap-3">
