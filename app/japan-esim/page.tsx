@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const PAGE_URL = "https://www.japantrippicks.com/japan-esim";
-const OG_IMAGE = "/poyapiyo-flag.png";
+const OG_IMAGE = "/japan-esim/cover.png";
 
 const KLOOK_URL =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1307234&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F109393-japan-esim-high-speed-internet-qr-code-voucher%2F%3Fspm%3DSearchResult.SearchResult_LIST%26clickId%3D10419203c5";

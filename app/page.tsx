@@ -327,7 +327,7 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       tag: "上網準備",
       emoji: "📱",
       href: "/japan-esim",
-      image: "/poyapiyo-flag.png",
+      image: "/japan-esim/cover.png",
       areas: ["東京"],
     },
     {
