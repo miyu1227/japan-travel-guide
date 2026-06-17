@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import PrepBanner from "../components/PrepBanner";
 
 const PAGE_URL = "https://www.japantrippicks.com/kochi";
 const OG_IMAGE = "/kochi/nikobuchi-1.jpg";
@@ -252,6 +253,9 @@ export default function KochiPage() {
             </div>
           </div>
         </div>
+
+        <PrepBanner />
+
 
         {/* 延伸閱讀 */}
         <section>

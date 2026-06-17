@@ -9,6 +9,7 @@ const categories = [
   { id: "snacks", icon: "🍘", label: "Snacks", labelZh: "零食伴手禮", color: "bg-orange-100 text-orange-600 border-orange-300", activeColor: "bg-orange-400 text-white border-orange-400", hasAreaFilter: false },
   { id: "cafe", icon: "☕", label: "Cafés", labelZh: "咖啡廳", color: "bg-pink-100 text-pink-600 border-pink-300", activeColor: "bg-pink-400 text-white border-pink-400", hasAreaFilter: true },
   { id: "spot", icon: "📍", label: "Spots", labelZh: "景點", color: "bg-blue-100 text-blue-600 border-blue-300", activeColor: "bg-blue-400 text-white border-blue-400", hasAreaFilter: true },
+  { id: "prep", icon: "🎒", label: "Travel Prep", labelZh: "出發前準備", color: "bg-yellow-100 text-yellow-700 border-yellow-300", activeColor: "bg-yellow-400 text-white border-yellow-400", hasAreaFilter: false },
 ];
 
 const areas = ["すべて", "東京", "大阪", "兵庫", "北海道", "四国", "その他"];
@@ -184,15 +185,6 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
-      name: "東京地鐵24/48/72小時乘車券｜Tokyo Subway Ticket購買與使用方式🚇",
-      desc: "東京自由行交通指南！地下鐵周遊券完整解說，附行程範例與選購建議",
-      tag: "東京",
-      emoji: "🚇",
-      href: "/tokyo-subway-ticket",
-      image: "/poyapiyo-flag.png",
-      areas: ["東京"],
-    },
-    {
       name: "六甲山健行推薦｜神戶登山＆有馬溫泉一日遊🏔️♨️",
       desc: "登山＋纜車＋有馬溫泉＋人氣ジェラート，關西自然＆溫泉完美行程",
       tag: "兵庫",
@@ -326,6 +318,17 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       href: "/hokkaido",
       image: "/hokkaido/farm-1.jpg",
       areas: ["北海道"],
+    },
+  ],
+  prep: [
+    {
+      name: "東京地鐵24/48/72小時乘車券｜Tokyo Subway Ticket購買與使用方式🚇",
+      desc: "東京自由行交通指南！地下鐵周遊券完整解說，附行程範例與選購建議",
+      tag: "交通票券",
+      emoji: "🚇",
+      href: "/tokyo-subway-ticket",
+      image: "/poyapiyo-flag.png",
+      areas: ["東京"],
     },
   ],
 };

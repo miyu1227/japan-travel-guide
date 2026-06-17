@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import PrepBanner from "../components/PrepBanner";
 
 const PAGE_URL = "https://www.japantrippicks.com/museum";
 const OG_IMAGE = "/museum/nact-1.jpg";
@@ -282,6 +283,9 @@ export default function MuseumPage() {
             </div>
           </div>
         </div>
+
+        <PrepBanner />
+
 
         {/* 延伸閱讀 */}
         <section>

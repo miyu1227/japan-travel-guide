@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import PrepBanner from "../components/PrepBanner";
 
 const PAGE_URL = "https://www.japantrippicks.com/showa-kinen-park";
 const OG_IMAGE = "/showa-kinen-park/park-1.jpg";
@@ -211,6 +212,9 @@ export default function ShowaKinenParkPage() {
             </div>
           </div>
         </div>
+
+        <PrepBanner />
+
 
         {/* 延伸閱讀 */}
         <section>

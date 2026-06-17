@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import PrepBanner from "../components/PrepBanner";
 
 const PAGE_URL = "https://www.japantrippicks.com/utsunomiya-gyoza";
 const OG_IMAGE = "/utsunomiya-gyoza/minmin-1.jpg";
@@ -258,6 +259,9 @@ export default function UtsunomiyaGyozaPage() {
             </div>
           </div>
         </div>
+
+        <PrepBanner />
+
 
         {/* 延伸閱讀 */}
         <section>

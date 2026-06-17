@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import PrepBanner from "../components/PrepBanner";
 
 const PAGE_URL = "https://www.japantrippicks.com/shimokitazawa-cafe";
 const OG_IMAGE = "/shimokitazawa-cafe/vegan-1.jpg";
@@ -434,6 +435,9 @@ export default function ShimokitazawaCafePage() {
             </div>
           </div>
         </div>
+
+        <PrepBanner />
+
 
         {/* 延伸閱讀 */}
         <section>

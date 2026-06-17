@@ -47,6 +47,12 @@ export default function AboutPage() {
               </a>
             </p>
           </div>
+          <div className="border-t border-stone-100 pt-4">
+            <p className="text-xs font-bold text-stone-500 mb-1">聯盟行銷揭露</p>
+            <p className="text-xs text-stone-500 leading-relaxed">
+              本網站部分連結包含聯盟行銷連結。若您透過連結預訂或購買，我們可能會獲得佣金，讀者不會因此支付額外費用。感謝您的支持，我們會繼續分享有用的日本旅遊資訊。
+            </p>
+          </div>
         </div>
       </article>
 
