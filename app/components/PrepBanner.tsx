@@ -43,10 +43,10 @@ export default function PrepBanner() {
 
         {/* CTA */}
         <Link
-          href="/#prep"
+          href="/japan-esim"
           className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 hover:from-pink-500 hover:via-rose-500 hover:to-orange-500 rounded-full py-3 shadow-md hover:shadow-lg transition-all"
         >
-          🎒 查看出發前準備 →
+          📱 查看日本 eSIM 使用指南 →
         </Link>
         <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 部分內容含聯盟行銷連結，若透過連結預訂，我們可能會獲得佣金。</p>
       </div>
