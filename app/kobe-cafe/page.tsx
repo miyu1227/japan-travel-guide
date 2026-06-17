@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/kobe-cafe";
 const OG_IMAGE = "/kobe-cafe/freundlieb-1.jpg";
@@ -101,8 +99,6 @@ export default function KobeCafePage() {
             這次推薦的是兩間實際造訪過、最有特色的<strong>神戶咖啡廳</strong>——一間是由教堂改建的歷史名店<strong>「フロインドリーブ 生田店」</strong>，另一間是位於北野異人館街、洋館氛圍滿點的<strong>「パンとエスプレッソと異人館」</strong>。
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
@@ -287,9 +283,6 @@ export default function KobeCafePage() {
             </div>
           </div>
         </div>
-
-        <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

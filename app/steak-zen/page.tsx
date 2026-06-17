@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/steak-zen";
 const OG_IMAGE = "/steak-zen/zen-1.jpg";
@@ -107,8 +105,6 @@ export default function SteakZenPage() {
             這次推薦的是位於三宮的人氣鐵板燒名店<strong>「ステーキハウスZEN 三宮店」</strong>。由主廚在你眼前現場煎烤，從聲音到香氣都是一場饗宴✨ 是台灣・香港旅客造訪神戶時CP值很高的神戶牛體驗。
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* Spot: ZEN */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
@@ -229,9 +225,6 @@ export default function SteakZenPage() {
             </div>
           </div>
         </div>
-
-        <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

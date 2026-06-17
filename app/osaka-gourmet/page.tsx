@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/osaka-gourmet";
 const OG_IMAGE = "/osaka-gourmet/teppan-1.jpg";
@@ -99,8 +97,6 @@ export default function OsakaGourmetPage() {
             這次推薦的2間店都是<strong>大阪在地人氣餐廳</strong>——福島區的<strong>「鉄板屋な。」</strong>提供精緻鐵板燒，梅田周邊的<strong>「酒場ビリー」</strong>則是話題居酒屋。離梅田很近、交通方便，是想體驗道地大阪夜美食的最佳選擇✨
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
@@ -263,9 +259,6 @@ export default function OsakaGourmetPage() {
             </div>
           </div>
         </div>
-
-        <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

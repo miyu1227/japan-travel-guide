@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/hokkaido";
 const OG_IMAGE = "/hokkaido/farm-1.jpg";
@@ -272,8 +270,6 @@ export default function HokkaidoPage() {
                 </a>
               </div>
             </section>
-
-            <PrepBannerCompact />
           ))}
         </div>
 
@@ -334,9 +330,6 @@ export default function HokkaidoPage() {
             ))}
           </div>
         </div>
-
-        <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <div className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

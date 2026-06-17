@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/shukugawa";
 const OG_IMAGE = "/shukugawa/crepe-1.jpg";
@@ -130,8 +128,6 @@ export default function ShukugawaPage() {
           </p>
         </section>
 
-        <PrepBannerCompact />
-
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
@@ -244,9 +240,6 @@ export default function ShukugawaPage() {
             </div>
           </div>
         </div>
-
-        <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

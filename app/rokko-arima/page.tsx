@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/rokko-arima";
 const OG_IMAGE = "/rokko-arima/rokko-1.jpg";
@@ -100,8 +98,6 @@ export default function RokkoArimaPage() {
             這次推薦的<strong>「登山＋溫泉＋甜點」完美一日遊</strong>——御影出發登六甲山頂、纜車下到有馬溫泉、最後品嚐人氣<strong>「arima gelateria Stagione」</strong>義式冰淇淋🍦 是關西旅遊中能同時感受自然、文化、美食的最棒行程✨
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
@@ -248,9 +244,6 @@ export default function RokkoArimaPage() {
             </div>
           </div>
         </div>
-
-        <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

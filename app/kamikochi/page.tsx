@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/kamikochi";
 const OG_IMAGE = "/kamikochi/cover.jpg";
@@ -101,8 +99,6 @@ export default function KamikochiPage() {
             這次推薦的4個必去景點：<strong>河童橋</strong>的絕景、<strong>平湯大瀑布</strong>的震撼、<strong>新穂高纜車</strong>的2000公尺展望，以及<strong>奧飛騨花園飯店燒岳</strong>的夢幻溫泉✨ 本篇同時整理了<strong>散策路線</strong>和<strong>四季景色</strong>，安排2〜3天的行程剛剛好！
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
@@ -414,9 +410,6 @@ export default function KamikochiPage() {
             </div>
           </div>
         </div>
-
-        <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>

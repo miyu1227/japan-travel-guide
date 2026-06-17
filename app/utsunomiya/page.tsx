@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import PrepBanner from "../components/PrepBanner";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/utsunomiya";
 const OG_IMAGE = "/utsunomiya/wakayama-1.jpg";
@@ -100,8 +98,6 @@ export default function UtsunomiyaPage() {
             這次推薦的3個必去景點：<strong>若山農場</strong>的夢幻竹林（為日劇、廣告取景地）、<strong>宇都宮餃子通</strong>的餃子巡禮，以及宇都宮地標<strong>二荒山神社</strong>✨ 一天行程剛剛好！
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
@@ -316,9 +312,6 @@ export default function UtsunomiyaPage() {
             </div>
           </div>
         </div>
-
-        <PrepBanner />
-
 
         {/* 延伸閱讀 */}
         <section>
