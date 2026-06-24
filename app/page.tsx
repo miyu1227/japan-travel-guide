@@ -360,7 +360,7 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
 };
 
-const INITIAL_VISIBLE = 3;
+const INITIAL_VISIBLE = 5;
 
 function AreaFilter({ catId, color }: { catId: string; color: string }) {
   const [selected, setSelected] = useState("すべて");
