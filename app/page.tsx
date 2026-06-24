@@ -322,6 +322,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   prep: [
     {
+      name: "羽田機場到東京市區交通攻略｜京急、單軌電車、巴士、計程車怎麼選？✈️",
+      desc: "羽田機場到東京市區交通完整指南！京急・單軌電車・機場巴士・計程車・行李配送・前泊比較",
+      tag: "機場交通",
+      emoji: "✈️",
+      href: "/haneda-airport-access",
+      image: "/haneda-airport-access/cover.png",
+      areas: ["東京"],
+    },
+    {
       name: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR、行李配送怎麼選？🚄",
       desc: "成田機場到東京市區交通完整指南！Skyliner・NEX・機場巴士・包車・行李配送・前泊比較",
       tag: "機場交通",
