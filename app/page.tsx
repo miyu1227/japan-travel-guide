@@ -399,7 +399,7 @@ function AreaFilter({ catId, color }: { catId: string; color: string }) {
         </div>
       ) : (
         <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
           {visible.map((item) => {
             const CardWrapper = item.href
               ? ({ children }: { children: React.ReactNode }) => (
@@ -488,7 +488,7 @@ function StaticCards({ catId, color }: { catId: string; color: string }) {
   }
   return (
     <div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
       {visible.map((item) => {
         const CardWrapper = item.href
           ? ({ children }: { children: React.ReactNode }) => (
