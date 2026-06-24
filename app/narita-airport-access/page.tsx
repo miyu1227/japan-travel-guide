@@ -101,51 +101,6 @@ export default function NaritaAirportAccessPage() {
           </p>
         </section>
 
-        {/* 序盤バナー */}
-        <section className="mb-8">
-          <a
-            href="#compare"
-            className="block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
-          >
-            {/* 装飾 */}
-            <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">🌸</span>
-            <span className="absolute bottom-4 left-4 text-base opacity-40 select-none">✨</span>
-
-            <div className="relative flex items-center justify-between mb-3">
-              <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">
-                ✈️ Travel Tips
-              </span>
-              <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">機場交通</span>
-            </div>
-
-            <div className="relative flex items-center gap-3 mb-4">
-              <div className="relative w-20 h-20 shrink-0">
-                <div className="absolute inset-0 bg-white/70 backdrop-blur rounded-2xl border-2 border-white shadow-sm"></div>
-                <Image
-                  src="/poyapiyo-flag.png"
-                  alt="ぽやぴよ"
-                  fill
-                  sizes="80px"
-                  className="object-contain p-1 relative -rotate-[4deg]"
-                />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="text-base font-black text-stone-800 leading-tight mb-1">
-                  成田機場到東京市區，先選好交通方式！
-                </h3>
-                <p className="text-xs text-stone-700 leading-relaxed">
-                  Skyliner、機場巴士、JR、包車各有適合的人。第一次來東京，可以先比較住宿地點、行李量與抵達時間，再選擇最適合的交通方式。
-                </p>
-              </div>
-            </div>
-
-            <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
-              🚄 查看成田機場交通攻略 →
-            </div>
-            <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 部分內容含聯盟行銷連結，讀者不會因此支付額外費用。</p>
-          </a>
-        </section>
-
         {/* 出發前確認 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">成田機場到東京市區前，先確認這些</h2>
