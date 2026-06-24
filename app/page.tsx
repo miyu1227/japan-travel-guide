@@ -322,6 +322,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   prep: [
     {
+      name: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR、行李配送怎麼選？🚄",
+      desc: "成田機場到東京市區交通完整指南！Skyliner・NEX・機場巴士・包車・行李配送・前泊比較",
+      tag: "機場交通",
+      emoji: "🚄",
+      href: "/narita-airport-access",
+      image: "/narita-airport-access/cover.png",
+      areas: ["東京"],
+    },
+    {
       name: "日本自由行 eSIM 使用指南｜抵達日本就能上網的事前準備📱",
       desc: "eSIM 使用方式＆與實體 SIM／租借 Wi-Fi 比較。出發前先安心搞定上網",
       tag: "上網準備",
