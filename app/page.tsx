@@ -185,6 +185,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "東京晴空塔攻略｜門票預約、交通方式、夜景與拍照景點整理🌃",
+      desc: "Tokyo Skytree展望台・夜景・玻璃地板＆東京ソラマチ周邊整理",
+      tag: "東京",
+      emoji: "🌃",
+      href: "/skytree",
+      image: "/skytree/cover.png",
+      areas: ["東京"],
+    },
+    {
       name: "六甲山健行推薦｜神戶登山＆有馬溫泉一日遊🏔️♨️",
       desc: "登山＋纜車＋有馬溫泉＋人氣ジェラート，關西自然＆溫泉完美行程",
       tag: "兵庫",
