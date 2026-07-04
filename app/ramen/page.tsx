@@ -8,13 +8,13 @@ const PAGE_URL = "https://www.japantrippicks.com/ramen";
 const OG_IMAGE = "/ramen/tsujita-1.jpg";
 
 export const metadata: Metadata = {
-  title: "日本拉麵推薦｜東京・大阪必吃拉麵5選【實際吃過】",
+  title: "日本拉麵推薦｜東京・大阪必吃拉麵6選【實際吃過】",
   description:
-    "整理5間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店和利道、全國連鎖家系拉麵町田商店、中目黒俺流鹽味拉麵、六本木AFURI柚子鹽拉麵。來東京或大阪旅遊必吃！附地址・交通・推薦菜單。",
+    "整理6間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店和利道、全國連鎖家系拉麵町田商店、中目黒俺流鹽味拉麵、台場神仙金澤濃厚豚骨、六本木AFURI柚子鹽拉麵。來東京或大阪旅遊必吃！附地址・交通・推薦菜單。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "日本拉麵推薦｜東京・大阪必吃拉麵5選【實際吃過】",
-    description: "整理5間實際吃過的日本拉麵推薦。大阪魚介つけ麺・東京排隊名店・全國連鎖家系拉麵・中目黒鹽味拉麵・六本木AFURI柚子鹽。附地址・交通。",
+    title: "日本拉麵推薦｜東京・大阪必吃拉麵6選【實際吃過】",
+    description: "整理5間實際吃過的日本拉麵推薦。大阪魚介つけ麺・東京排隊名店・家系拉麵・中目黒鹽味・台場神仙豚骨・六本木AFURI柚子鹽。附地址・交通。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "日本拉麵推薦｜東京・大阪必吃拉麵5選",
-    description: "大阪魚介つけ麺・東京排隊名店・家系拉麵・中目黒鹽味・六本木柚子鹽。實際吃過的5間推薦！",
+    title: "日本拉麵推薦｜東京・大阪必吃拉麵6選",
+    description: "大阪魚介つけ麺・東京排隊名店・家系拉麵・中目黒鹽味・台場豚骨・六本木柚子鹽。實際吃過的6間推薦！",
     images: [OG_IMAGE],
   },
 };
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "日本拉麵推薦｜東京・大阪必吃拉麵5選【實際吃過】",
-  description: "整理5間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店、全國連鎖家系拉麵、中目黒俺流鹽味拉麵、六本木AFURI柚子鹽拉麵。",
+  headline: "日本拉麵推薦｜東京・大阪必吃拉麵6選【實際吃過】",
+  description: "整理6間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店、全國連鎖家系拉麵、中目黒俺流鹽味拉麵、台場神仙金澤濃厚豚骨、六本木AFURI柚子鹽拉麵。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Organization", name: "Japan Trip Picks" },
@@ -124,8 +124,32 @@ const shops = [
     tags: ["🧂 清爽鹽味", "🥚 配料自由", "🚶 中目黒徒步2分"],
   },
   {
-    id: "afuri",
+    id: "shinsen",
     number: 5,
+    name: "金澤濃厚豚骨拉麵 神仙 台場店",
+    highlight: "金澤發祥・濃厚豚骨醬油",
+    url: "https://tabelog.com/tokyo/A1313/A131306/13206967/",
+    tag: "東京",
+    recommend: "特製王道豚骨醬油拉麵",
+    images: [
+      "/ramen/shinsen/shinsen-5.jpg",
+      "/ramen/shinsen/shinsen-2.jpg",
+      "/ramen/shinsen/shinsen-1.jpg",
+      "/ramen/shinsen/shinsen-3.jpg",
+      "/ramen/shinsen/shinsen-4.jpg",
+    ],
+    intro: "位於台場AQUA CiTY 5樓「東京拉麵國技館 舞」內的人氣店，本店在金澤，以濃厚豚骨醬油系拉麵聞名。這次點了王道豚骨醬油拉麵＋叉燒飯＋葱花煎餃，湯頭濃郁但不會膩，搭配半熟糖心蛋和厚切叉燒非常滿足。",
+    reason: "台場逛街逛累了直接進來一碗超補血🍜 湯頭表面浮著豚骨油、但入口意外地圓潤好喝，麵條偏粗有嚼勁。叉燒飯上的葱和海苔香氣十足，跟拉麵是絕配。台場觀光行程中吃飯很方便，帶行李入店也OK。",
+    basicInfo: {
+      address: "東京都港區台場1-7-1 AQUA CiTY ODAIBA 5F 東京拉麵國技館 舞",
+      access: "百合海鷗線「台場」駅 徒歩約1分／臨海線「東京Teleport」駅 徒歩約6分",
+      price: "¥1,200〜¥1,800",
+    },
+    tags: ["🐷 濃厚豚骨醬油", "🏬 台場AQUA CiTY內", "🍥 金澤發祥"],
+  },
+  {
+    id: "afuri",
+    number: 6,
     name: "AFURI 六本木",
     highlight: "柚子鹽拉麵・東京話題名店",
     url: "https://www.hotpepper.jp/strJ001118169/",
@@ -183,7 +207,7 @@ export default function RamenArticle() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          日本拉麵推薦｜東京・大阪<br />必吃拉麵5選🍜
+          日本拉麵推薦｜東京・大阪<br />必吃拉麵6選🍜
         </h1>
         <p className="text-xs text-stone-400 mb-6">最後更新：2025年</p>
 
@@ -194,7 +218,7 @@ export default function RamenArticle() {
             來日本旅遊，<strong>日本拉麵</strong>絕對是必吃清單的第一名🍜 不同地區有不同風格，東京、大阪、福岡……每個地方的拉麵都有自己的個性。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次整理了5間我實際吃過的店，包含大阪的濃郁魚介つけ麺、東京的排隊名店、在日本各地都找得到的家系拉麵、中目黒可自由搭配配料的鹽味拉麵，以及六本木AFURI的柚子鹽清湯拉麵。每一間都有自己的魅力，請按照行程選擇！
+            這次整理了6間我實際吃過的店，包含大阪的濃郁魚介つけ麺、東京的排隊名店、在日本各地都找得到的家系拉麵、中目黒可自由搭配配料的鹽味拉麵、台場「神仙」金澤濃厚豚骨醬油，以及六本木AFURI的柚子鹽清湯拉麵。每一間都有自己的魅力，請按照行程選擇！
           </p>
         </section>
 
@@ -304,7 +328,7 @@ export default function RamenArticle() {
         {/* ぽやぴよ總結 */}
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
-            這4間各有特色✨ 大阪的濃郁魚介つけ麺、東京的排隊名店、全國都找得到的家系拉麵，加上中目黒可自由配料的鹽味拉麵——<br />
+            這6間各有特色✨ 大阪的濃郁魚介つけ麺、東京的排隊名店、全國家系拉麵、中目黒可自由配料的鹽味拉麵、台場神仙金澤濃厚豚骨，還有六本木AFURI的柚子鹽清湯——<br />
             來日本旅遊的話，一定要安排一餐專程去吃日本拉麵！
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
