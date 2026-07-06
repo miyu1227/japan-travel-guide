@@ -185,6 +185,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "東京迪士尼周邊玩法｜不進園也能玩！度假區線一日券＆イクスピアリ美食🎢",
+      desc: "Disney Resort Line一日券・可愛車廂＆CAFÉ AUX BACCHANALES法式咖啡廳",
+      tag: "東京",
+      emoji: "🎢",
+      href: "/tokyo-disney-around",
+      image: "/tokyo-disney-around/cover.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "東京晴空塔攻略｜門票預約、交通方式、夜景與拍照景點整理🌃",
       desc: "Tokyo Skytree展望台・夜景・玻璃地板＆東京ソラマチ周邊整理",
       tag: "東京",
