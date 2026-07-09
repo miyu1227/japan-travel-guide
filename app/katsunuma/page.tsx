@@ -114,13 +114,13 @@ export default function KatsunumaPage() {
         </section>
 
         {/* 到着 station photo */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
-          <div className="relative aspect-[3/2] bg-stone-100">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 max-w-sm mx-auto">
+          <div className="relative aspect-[4/3] bg-stone-100">
             <Image
               src="/katsunuma/station-1.jpg"
               alt="抵達勝沼ぶどう郷駅 - 山梨勝沼一日遊"
               fill
-              sizes="(max-width: 672px) 100vw, 672px"
+              sizes="(max-width: 384px) 100vw, 384px"
               className="object-cover"
               priority
             />
