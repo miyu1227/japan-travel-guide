@@ -185,6 +185,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "山梨勝沼一日遊｜葡萄鄉美食＆シャトー・メルシャン酒莊之旅🍇",
+      desc: "東京近郊葡萄酒故鄉！車站旁「銀月食堂」在地食堂＆Château Mercian酒莊品酒導覽體驗",
+      tag: "山梨",
+      emoji: "🍇",
+      href: "/katsunuma",
+      image: "/katsunuma/cover.jpg",
+      areas: ["その他"],
+    },
+    {
       name: "東京迪士尼周邊玩法｜不進園也能玩！度假區線一日券＆イクスピアリ美食🎢",
       desc: "Disney Resort Line一日券・可愛車廂＆CAFÉ AUX BACCHANALES法式咖啡廳",
       tag: "東京",
