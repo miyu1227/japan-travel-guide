@@ -7,13 +7,13 @@ const PAGE_URL = "https://www.japantrippicks.com/katsunuma";
 const OG_IMAGE = "/katsunuma/cover.jpg";
 
 export const metadata: Metadata = {
-  title: "山梨勝沼一日遊｜葡萄鄉美食＆シャトー・メルシャン酒莊之旅🍇【實際造訪】",
+  title: "山梨勝沼一泊二日｜葡萄鄉美食・シャトー・メルシャン酒莊・石和溫泉住宿・採桃體驗🍇🍑【實際造訪】",
   description:
-    "東京近郊小旅行！搭中央線到「勝沼ぶどう郷」，走進日本葡萄酒的故鄉山梨勝沼。在地食堂「銀月食堂」的煮干支那麵＆生薑燒定食，以及シャトー・メルシャン酒莊的品酒導覽（Discovery Tour）完整體驗。附交通・營業時間・預約資訊，台灣・香港旅客必看！",
+    "東京近郊小旅行！搭中央線到「勝沼ぶどう郷」，走進日本葡萄酒的故鄉山梨勝沼。在地食堂「銀月食堂」・シャトー・メルシャン酒莊品酒導覽・石和溫泉「銘庭の宿 ホテル甲子園」・あすなろ園採桃體驗・桔梗信玄餅工場・里の駅いちのみや鳥もつ煮完整記錄。附交通・營業時間・預約資訊。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "山梨勝沼一日遊｜葡萄鄉美食＆シャトー・メルシャン酒莊之旅",
-    description: "東京近郊！勝沼ぶどう郷葡萄鄉一日遊。在地食堂「銀月食堂」＆シャトー・メルシャン酒莊品酒導覽完整指南。",
+    title: "山梨勝沼一泊二日｜葡萄鄉美食＆シャトー・メルシャン酒莊＆石和溫泉住宿＆採桃體驗",
+    description: "東京近郊！勝沼葡萄鄉一泊二日。銀月食堂・Château Mercian・石和溫泉ホテル甲子園・採桃・信玄餅・鳥もつ煮完整指南。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -62,6 +62,33 @@ const mercianPhotos = [
   "/katsunuma/mercian-3.jpg",
   "/katsunuma/mercian-4.jpg",
 ];
+const koushienHotelPhotos = [
+  "/katsunuma/koushien/koushien-1.jpg",
+  "/katsunuma/koushien/koushien-2.jpg",
+  "/katsunuma/koushien/koushien-3.jpg",
+  "/katsunuma/koushien/koushien-4.jpg",
+  "/katsunuma/koushien/koushien-5.jpg",
+];
+const koushienMealPhotos = [
+  "/katsunuma/koushien/koushien-meal-1.jpg",
+  "/katsunuma/koushien/koushien-meal-2.jpg",
+  "/katsunuma/koushien/koushien-meal-3.jpg",
+];
+const asunaroPhotos = [
+  "/katsunuma/asunaro/asunaro-1.jpg",
+  "/katsunuma/asunaro/asunaro-2.jpg",
+  "/katsunuma/asunaro/asunaro-3.jpg",
+];
+const shingenPhotos = [
+  "/katsunuma/shingen/shingen-1.jpg",
+  "/katsunuma/shingen/shingen-2.jpg",
+];
+const ichinomiyaPhotos = [
+  "/katsunuma/ichinomiya/ichinomiya-1.jpg",
+  "/katsunuma/ichinomiya/ichinomiya-2.jpg",
+  "/katsunuma/ichinomiya/ichinomiya-3.jpg",
+  "/katsunuma/ichinomiya/ichinomiya-4.jpg",
+];
 
 const relatedLinks = [
   { href: "/kamikochi", label: "🏔️ 上高地＆奧飛騨旅行推薦4選", desc: "日本阿爾卑斯絕景・河童橋・溫泉療癒之旅" },
@@ -97,18 +124,18 @@ export default function KatsunumaPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          山梨勝沼一日遊｜葡萄鄉美食＆<br />シャトー・メルシャン酒莊之旅🍇
+          山梨勝沼＆石和溫泉一泊二日｜<br />葡萄鄉美食・酒莊・採桃🍇🍑
         </h1>
         <p className="text-xs text-stone-400 mb-6">最後更新：2026年</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">從東京出發！葡萄酒故鄉「勝沼」小旅行</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">從東京出發！葡萄酒故鄉「勝沼」＆石和溫泉一泊二日</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            從新宿搭中央線特急約1個多小時，就能抵達山梨縣的<strong>「勝沼ぶどう郷」</strong>車站🍇 這裡是<strong>日本葡萄酒的發源地</strong>，四周被葡萄園與酒莊環繞，是東京近郊很適合安排一日小旅行的地方。
+            從新宿搭中央線特急約1個多小時，就能抵達山梨縣的<strong>「勝沼ぶどう郷」</strong>車站🍇 這裡是<strong>日本葡萄酒的發源地</strong>，四周被葡萄園與酒莊環繞，是東京近郊很適合安排一泊二日小旅行的地方。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次從「勝沼ぶどう郷」駅出發，造訪了車站旁的在地食堂<strong>「銀月食堂」</strong>，以及日本代表性酒莊<strong>「シャトー・メルシャン（Château Mercian）」</strong>，還參加了酒莊的品酒導覽行程。以下是實際造訪的完整紀錄✨
+            這次從「勝沼ぶどう郷」駅出發，造訪了車站旁的在地食堂<strong>「銀月食堂」</strong>、日本代表性酒莊<strong>「シャトー・メルシャン」</strong>，並住進<strong>石和溫泉「銘庭の宿 ホテル甲子園」</strong>享受溫泉＆桑拿🧖 隔天到<strong>「あすなろ園」</strong>採桃🍑、順路去<strong>「桔梗信玄餅工場」</strong>買伴手禮，最後在<strong>「里の駅 いちのみや」</strong>吃山梨B級美食鳥もつ煮＆葡萄汁。以下是實際造訪的完整紀錄✨
           </p>
         </section>
 
@@ -133,27 +160,27 @@ export default function KatsunumaPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">一泊二日行程快速看</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-green-400 font-black text-sm shrink-0">▸</span>
               <div>
-                <p className="text-sm font-bold text-stone-700">銀月食堂 → 車站旁在地食堂</p>
-                <p className="text-xs text-stone-500 leading-relaxed">走出車站徒步1分・煮干支那麵＆生薑燒定食・山梨名物ほうとう</p>
+                <p className="text-sm font-bold text-stone-700">Day 1｜銀月食堂 → シャトー・メルシャン → 石和溫泉ホテル甲子園</p>
+                <p className="text-xs text-stone-500 leading-relaxed">車站在地食堂→酒莊品酒導覽→溫泉旅館・桑拿・會席料理過夜</p>
               </div>
             </div>
             <div className="flex gap-3">
               <span className="text-green-400 font-black text-sm shrink-0">▸</span>
               <div>
-                <p className="text-sm font-bold text-stone-700">シャトー・メルシャン → 日本代表酒莊</p>
-                <p className="text-xs text-stone-500 leading-relaxed">品酒導覽（Discovery Tour）・百年酒窖・葡萄園散步・4款日本葡萄酒試飲</p>
+                <p className="text-sm font-bold text-stone-700">Day 2｜あすなろ園採桃 → 桔梗信玄餅工場 → 里の駅いちのみや</p>
+                <p className="text-xs text-stone-500 leading-relaxed">桃狩り體驗🍑→山梨代表伴手禮信玄餅→鳥もつ煮＆葡萄汁</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">勝沼一日遊・造訪紀錄</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">勝沼＆石和一泊二日・造訪紀錄</h2>
 
         {/* Spot 1: 銀月食堂 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -279,6 +306,258 @@ export default function KatsunumaPage() {
             >
               🔗 官方網站
             </a>
+          </div>
+        </section>
+
+        {/* Spot 3: 銘庭の宿 ホテル甲子園 */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
+          <div className="grid grid-cols-3 gap-0.5">
+            {koushienHotelPhotos.slice(0, 3).map((src, i) => (
+              <div key={i} className="relative aspect-square bg-stone-100">
+                <Image src={src} alt="銘庭の宿 ホテル甲子園 - 石和溫泉住宿" fill sizes="33vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 gap-0.5">
+            {koushienHotelPhotos.slice(3, 5).map((src, i) => (
+              <div key={i} className="relative aspect-[3/2] bg-stone-100">
+                <Image src={src} alt="ホテル甲子園 - 桑拿・室內" fill sizes="50vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-3 gap-0.5">
+            {koushienMealPhotos.map((src, i) => (
+              <div key={i} className="relative aspect-square bg-stone-100">
+                <Image src={src} alt="ホテル甲子園 - 會席料理晚餐" fill sizes="33vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-green-500 text-white flex items-center justify-center text-sm font-black shrink-0">3</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">銘庭の宿 ホテル甲子園</h3>
+                <span className="text-xs text-stone-400">Hotel Koushien（石和溫泉）</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              位在<strong>石和溫泉</strong>的老字號溫泉旅館，以日式庭園、露天風呂與豐盛的<strong>山梨山幸會席料理</strong>為特色🍶 這次入住剛好還能體驗到旅館內的<strong>桑拿（サウナ）</strong>，泡完溫泉再進桑拿，整個人放鬆到骨頭裡🧖‍♀️
+            </p>
+
+            <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                酒莊行程結束後直接住進石和溫泉，Day 1 從<strong>用餐→品酒→泡湯→會席晚餐→再泡一次</strong>的節奏超舒服✨ 晚餐是山梨在地食材做成的<strong>會席料理</strong>，一道道端上來的儀式感，配一杯甲州葡萄酒剛剛好🍷 對想遠離都市喧囂的訪日旅客特別推薦。
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["♨️ 石和溫泉", "🧖 桑拿完備", "🍶 會席料理", "🌿 日式庭園"].map((t) => (
+                <span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600">📍 山梨県笛吹市石和町松本394</p>
+              <p className="text-xs text-stone-600">🚃 JR中央線「石和溫泉」駅 徒歩約10分／提供接駁</p>
+              <p className="text-xs text-stone-600">⏰ Check-in 15:00／Check-out 10:00</p>
+              <p className="text-xs text-stone-600">💴 一泊二食：官網確認</p>
+            </div>
+
+            <a
+              href="https://www.hotel-koushien.jp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+            >
+              🔗 官方網站
+            </a>
+          </div>
+        </section>
+
+        {/* Spot 4: あすなろ園 */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
+          <div className="grid grid-cols-3 gap-0.5">
+            {asunaroPhotos.map((src, i) => (
+              <div key={i} className="relative aspect-square bg-stone-100">
+                <Image src={src} alt="あすなろ園 - 山梨採桃體驗" fill sizes="33vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-green-500 text-white flex items-center justify-center text-sm font-black shrink-0">4</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">あすなろ園（採桃體驗）</h3>
+                <span className="text-xs text-stone-400">Asunaro-en Peach Picking</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              山梨是全日本<strong>桃子產量第一</strong>的縣，Day 2 就選了在地果園<strong>「あすなろ園」</strong>體驗<strong>桃狩り（採桃）</strong>🍑 果園中一整片粉紅色的桃樹超級好拍📸 可以邊採邊當場切來吃，剛採下的桃子多汁又香甜。
+            </p>
+
+            <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                訪日旅客也能參加的體驗型行程，一價含<strong>吃到飽＋伴手禮</strong>，帶2顆自己挑的桃子回家🍑 果園主人親切、還會教你怎麼分辨熟成度。<strong>桃子產季集中在7〜8月</strong>，其他季節則有葡萄・水梨等其他水果狩り，出發前務必先上官網確認。
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🍑 桃狩り", "🌸 一整片桃園", "📸 拍照必備", "📅 產季7〜8月"].map((t) => (
+                <span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600">📍 山梨県笛吹市一宮町坪井1622-1</p>
+              <p className="text-xs text-stone-600">🚃 JR中央線「石和溫泉」駅 車程約15分</p>
+              <p className="text-xs text-stone-600">⏰ 產季期間 9:00〜17:00左右（詳情官網確認）</p>
+              <p className="text-xs text-stone-600">💴 桃狩り 官網公告價／建議事先預約</p>
+            </div>
+
+            <a
+              href="https://asunaroen.com/peach/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+            >
+              🔗 官方網站
+            </a>
+          </div>
+        </section>
+
+        {/* Spot 5: 桔梗信玄餅工場 */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
+          <div className="grid grid-cols-2 gap-0.5">
+            {shingenPhotos.map((src, i) => (
+              <div key={i} className="relative aspect-[4/3] bg-stone-100">
+                <Image src={src} alt="桔梗信玄餅 - 山梨伴手禮" fill sizes="50vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-green-500 text-white flex items-center justify-center text-sm font-black shrink-0">5</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">桔梗信玄餅 工場テーマパーク</h3>
+                <span className="text-xs text-stone-400">Kikyō Shingen Mochi Factory Theme Park</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              山梨最具代表性的伴手禮就是<strong>「桔梗信玄餅」</strong>——三塊軟糯的求肥麻糬撒上黃豆粉、淋上黑蜜的和菓子。這個<strong>工場テーマパーク</strong>是製造工廠開放參觀的主題園區，可以看製作過程、逛周邊商品，還有出名的<strong>「詰め放題（塞好塞滿）」</strong>優惠🎁
+            </p>
+
+            <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                山梨最有名的和菓子伴手禮之一，包裝可愛、常溫可保存數日，很適合帶回台灣・香港送人🎁 工場內也有咖啡廳可以吃到<strong>信玄餅霜淇淋</strong>＆<strong>信玄餅風味甜點</strong>，逛累了剛好休息。回程前先來這裡採買最有效率。
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🎁 山梨伴手禮", "🏭 工場參觀OK", "🍡 常溫保存", "☕ 附設咖啡廳"].map((t) => (
+                <span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600">📍 山梨県笛吹市一宮町坪井1928</p>
+              <p className="text-xs text-stone-600">🚃 中央自動車道「一宮御坂IC」約5分／JR「石和溫泉」駅車程約20分</p>
+              <p className="text-xs text-stone-600">⏰ 賣店 9:00〜17:00左右（詳情官網確認）</p>
+              <p className="text-xs text-stone-600">💴 信玄餅 單顆銅板價</p>
+            </div>
+
+            <a
+              href="https://themepark.kikyouya.co.jp/info/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+            >
+              🔗 官方網站
+            </a>
+          </div>
+        </section>
+
+        {/* Spot 6: 里の駅 いちのみや */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+          <div className="grid grid-cols-2 gap-0.5">
+            {ichinomiyaPhotos.map((src, i) => (
+              <div key={i} className="relative aspect-square bg-stone-100">
+                <Image src={src} alt="里の駅 いちのみや - 鳥もつ煮＆葡萄汁" fill sizes="50vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-green-500 text-white flex items-center justify-center text-sm font-black shrink-0">6</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">里の駅 いちのみや</h3>
+                <span className="text-xs text-stone-400">Sato-no-eki Ichinomiya</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              一宮町的道の駅風格農產直銷所，兼具<strong>物產館＆和食餐廳</strong>。這次在和食區點了山梨B級美食代表<strong>「甲州鳥もつ煮」</strong>（雞內臟砂糖醬油燒煮）＆<strong>葡萄產地才有的濃郁ぶどうジュース</strong>🍇 果汁真的濃到有點像果昔！
+            </p>
+
+            <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                在地農產直銷所才有的價位與新鮮度✨ 訪日旅客也能低門檻嘗到<strong>山梨B級美食「鳥もつ煮」</strong>（B-1グランプリ優勝的甲州名物），再配一杯剛榨的葡萄汁，就是一頓完美的午餐。物產館還可以買到當地水果、酒類、伴手禮，適合回程順路採買。
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🍗 鳥もつ煮", "🍇 濃郁葡萄汁", "🛍️ 農產直銷", "🍱 和食コーナー"].map((t) => (
+                <span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600">📍 山梨県笛吹市一宮町本都塚110</p>
+              <p className="text-xs text-stone-600">🚃 中央自動車道「一宮御坂IC」約3分</p>
+              <p className="text-xs text-stone-600">⏰ 物產館9:00〜18:00／和食コーナー 詳情官網確認</p>
+              <p className="text-xs text-stone-600">💴 鳥もつ煮＋葡萄汁 銅板價</p>
+            </div>
+
+            <a
+              href="https://satonoeki.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+            >
+              🔗 官方網站
+            </a>
+          </div>
+        </section>
+
+        {/* 帰路：石和溫泉駅 */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+          <div className="relative aspect-[21/9] bg-stone-100">
+            <Image
+              src="/katsunuma/isawa-station.jpg"
+              alt="石和溫泉駅 - 山梨勝沼一泊二日回程"
+              fill
+              sizes="(max-width: 672px) 100vw, 672px"
+              className="object-cover"
+            />
+          </div>
+          <div className="p-4">
+            <p className="text-sm text-stone-600 leading-relaxed">
+              🚃 最後從<strong>「石和溫泉」駅</strong>搭中央線回東京，結束一泊二日的山梨小旅行。從葡萄酒＆會席料理、桑拿溫泉，到採桃＆伴手禮採買，兩天下來收穫滿滿✨
+            </p>
           </div>
         </section>
 

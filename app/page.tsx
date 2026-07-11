@@ -185,8 +185,8 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
-      name: "山梨勝沼一日遊｜葡萄鄉美食＆シャトー・メルシャン酒莊之旅🍇",
-      desc: "東京近郊葡萄酒故鄉！車站旁「銀月食堂」在地食堂＆Château Mercian酒莊品酒導覽體驗",
+      name: "山梨勝沼＆石和溫泉一泊二日｜葡萄鄉美食・酒莊・採桃🍇🍑",
+      desc: "東京近郊葡萄酒故鄉！銀月食堂・Château Mercian酒莊・石和溫泉ホテル甲子園・あすなろ園採桃・信玄餅・鳥もつ煮",
       tag: "山梨",
       emoji: "🍇",
       href: "/katsunuma",
