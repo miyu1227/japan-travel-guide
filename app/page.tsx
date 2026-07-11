@@ -185,6 +185,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "東京繡球花景點推薦2選｜台場シンボルプロムナード＆文京白山神社紫陽花🌸",
+      desc: "6月限定！免費入場的東京都心紫陽花景點・台場散步道＆白山神社文京あじさいまつり",
+      tag: "東京",
+      emoji: "🌸",
+      href: "/ajisai",
+      image: "/ajisai/cover.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "山梨勝沼＆石和溫泉一泊二日｜葡萄鄉美食・酒莊・採桃🍇🍑",
       desc: "東京近郊葡萄酒故鄉！銀月食堂・Château Mercian酒莊・石和溫泉ホテル甲子園・あすなろ園採桃・信玄餅・鳥もつ煮",
       tag: "山梨",
