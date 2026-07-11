@@ -56,6 +56,8 @@ const photos = [
   "/tokyo-tower/tower-3.jpg",
   "/tokyo-tower/tower-4.jpg",
   "/tokyo-tower/tower-5.jpg",
+  "/tokyo-tower/tower-6.jpg",
+  "/tokyo-tower/tower-7.jpg",
 ];
 
 const relatedLinks = [
