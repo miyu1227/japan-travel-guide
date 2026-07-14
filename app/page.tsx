@@ -194,6 +194,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "東京畫畫體驗推薦｜Artbar Tokyo・喝酒作畫的大人藝術體驗🎨",
+      desc: "一邊喝紅酒一邊畫畫的Paint & Sip體驗！初學者也OK・手ぶら參加，原宿・代官山分店",
+      tag: "東京",
+      emoji: "🎨",
+      href: "/artbar-tokyo",
+      image: "/artbar-tokyo/artbar-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "東京繡球花景點推薦2選｜台場シンボルプロムナード＆文京白山神社紫陽花🌸",
       desc: "6月限定！免費入場的東京都心紫陽花景點・台場散步道＆白山神社文京あじさいまつり",
       tag: "東京",
