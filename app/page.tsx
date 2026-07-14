@@ -194,6 +194,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "神戶布引香草園推薦｜纜車空中散步・花海與夜景🌿",
+      desc: "搭纜車登上400m山頂！四季花海・古堡建築・神戶港夜景，從新神戶駅直達",
+      tag: "兵庫",
+      emoji: "🌿",
+      href: "/kobe-herb-garden",
+      image: "/kobe-herb-garden/cover.jpg",
+      areas: ["兵庫"],
+    },
+    {
       name: "和歌山白浜景點推薦4選｜熊貓・海邊露營・海景咖啡・海鮮BBQ🐼🌊",
       desc: "冒險大世界看熊貓・志原海岸豪華露營・かげろう海景咖啡・とれとれ市場海鮮BBQ，關西度假必去",
       tag: "和歌山",
