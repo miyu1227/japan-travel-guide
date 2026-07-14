@@ -165,8 +165,8 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       areas: ["東京"],
     },
     {
-      name: "神戶咖啡推薦｜フロインドリーブ＆異人館咖啡2選☕",
-      desc: "教堂改建咖啡廳・北野異人館洋館咖啡，神戶必去2間人氣店",
+      name: "神戶咖啡推薦3選｜教堂咖啡・異人館咖啡＆熊熊麵包吃到飽☕",
+      desc: "教堂改建咖啡廳・北野異人館洋館咖啡・くまポチ邸熊熊麵包吃到飽，神戶必去3間人氣店",
       tag: "兵庫",
       emoji: "☕",
       href: "/kobe-cafe",

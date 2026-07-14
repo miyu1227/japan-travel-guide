@@ -7,13 +7,13 @@ const PAGE_URL = "https://www.japantrippicks.com/kobe-cafe";
 const OG_IMAGE = "/kobe-cafe/freundlieb-1.jpg";
 
 export const metadata: Metadata = {
-  title: "神戶咖啡推薦｜フロインドリーブ＆パンとエスプレッソと異人館2選【實際造訪】",
+  title: "神戶咖啡推薦3選｜フロインドリーブ＆異人館＆くまポチ邸【實際造訪】",
   description:
-    "神戶旅遊必去的人氣咖啡廳推薦：教堂改建的「フロインドリーブ 生田店」與北野異人館的「パンとエスプレッソと異人館」。氛圍・建築・甜點完整介紹，附交通方式・推薦菜單。台灣・香港旅客必看！",
+    "神戶旅遊必去的人氣咖啡廳推薦：教堂改建的「フロインドリーブ 生田店」、北野異人館的「パンとエスプレッソと異人館」，以及熊熊主題麵包吃到飽「ケーニヒスクローネ くまポチ邸」。氛圍・建築・甜點完整介紹，附交通方式・推薦菜單。台灣・香港旅客必看！",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "神戶咖啡推薦｜フロインドリーブ＆パンとエスプレッソと異人館",
-    description: "教堂咖啡廳・北野異人館咖啡。神戶必去2間人氣咖啡廳。附交通・菜單・推薦時段。",
+    title: "神戶咖啡推薦3選｜フロインドリーブ＆異人館＆くまポチ邸",
+    description: "教堂咖啡廳・北野異人館咖啡・熊熊主題麵包吃到飽。神戶必去3間人氣咖啡廳。附交通・菜單・推薦時段。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "神戶咖啡推薦｜フロインドリーブ＆異人館咖啡",
-    description: "教堂咖啡廳・北野異人館咖啡，神戶必去2間人氣咖啡廳！",
+    title: "神戶咖啡推薦3選｜フロインドリーブ＆異人館＆くまポチ邸",
+    description: "教堂咖啡廳・北野異人館咖啡・熊熊麵包吃到飽，神戶必去3間人氣咖啡廳！",
     images: [OG_IMAGE],
   },
 };
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "神戶咖啡推薦｜フロインドリーブ＆パンとエスプレッソと異人館2選【實際造訪】",
-  description: "神戶必去咖啡廳：教堂改建的フロインドリーブ生田店、北野異人館的パンとエスプレッソと異人館。",
+  headline: "神戶咖啡推薦3選｜フロインドリーブ＆異人館＆くまポチ邸【實際造訪】",
+  description: "神戶必去咖啡廳：教堂改建的フロインドリーブ生田店、北野異人館的パンとエスプレッソと異人館、熊熊主題麵包吃到飽的ケーニヒスクローネ くまポチ邸。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Organization", name: "Japan Trip Picks" },
@@ -51,6 +51,7 @@ const breadcrumbJsonLd = {
 
 const freundliebPhotos = ["/kobe-cafe/freundlieb-1.jpg", "/kobe-cafe/freundlieb-2.jpg", "/kobe-cafe/freundlieb-3.jpg"];
 const panePhotos = ["/kobe-cafe/pane-1.jpg", "/kobe-cafe/pane-2.jpg", "/kobe-cafe/pane-3.jpg"];
+const kumapochiPhotos = ["/kobe-cafe/kumapochi-1.jpg", "/kobe-cafe/kumapochi-2.jpg"];
 
 const relatedLinks = [
   { href: "/shukugawa", label: "☕ 夙川おすすめカフェ2選｜兵庫・神戸", desc: "ガレットランチ＆本格コーヒー" },
@@ -86,7 +87,7 @@ export default function KobeCafePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          神戶咖啡推薦｜フロインドリーブ＆<br />パンとエスプレッソと異人館☕
+          神戶咖啡推薦3選｜教堂咖啡・<br />異人館咖啡＆熊熊麵包吃到飽☕
         </h1>
         <p className="text-xs text-stone-400 mb-6">最後更新：2026年</p>
 
@@ -97,7 +98,7 @@ export default function KobeCafePage() {
             神戶從明治時代就深受西洋文化影響，是日本最早接觸咖啡與西式點心的地區之一☕ 整座城市充滿異國風情，街角隨處都能遇見有故事的咖啡廳。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的是兩間實際造訪過、最有特色的<strong>神戶咖啡廳</strong>——一間是由教堂改建的歷史名店<strong>「フロインドリーブ 生田店」</strong>，另一間是位於北野異人館街、洋館氛圍滿點的<strong>「パンとエスプレッソと異人館」</strong>。
+            這次推薦的是三間實際造訪過、最有特色的<strong>神戶咖啡廳</strong>——由教堂改建的歷史名店<strong>「フロインドリーブ 生田店」</strong>、位於北野異人館街、洋館氛圍滿點的<strong>「パンとエスプレッソと異人館」</strong>，以及超人氣熊熊主題、麵包吃到飽的<strong>「ケーニヒスクローネ くまポチ邸」</strong>。
           </p>
         </section>
 
@@ -119,11 +120,18 @@ export default function KobeCafePage() {
                 <p className="text-xs text-stone-500 leading-relaxed">北野異人館街、人氣麵包店「パンとエスプレッソと」的神戶店</p>
               </div>
             </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">ケーニヒスクローネ くまポチ邸 → 熊熊主題・麵包吃到飽</p>
+                <p className="text-xs text-stone-500 leading-relaxed">神戶老牌洋菓子的療癒熊熊咖啡，20多種現烤麵包吃到飽</p>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">神戶咖啡推薦・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">神戶咖啡推薦・3選</h2>
 
         {/* Spot 1: フロインドリーブ */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -193,7 +201,7 @@ export default function KobeCafePage() {
         </section>
 
         {/* Spot 2: パンとエスプレッソと異人館 */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
           <div className="grid grid-cols-3 gap-0.5">
             {panePhotos.map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
@@ -258,12 +266,79 @@ export default function KobeCafePage() {
           </div>
         </section>
 
+        {/* Spot 3: ケーニヒスクローネ くまポチ邸 */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+          <div className="grid grid-cols-2 gap-0.5">
+            {kumapochiPhotos.map((src, i) => (
+              <div key={i} className="relative aspect-square bg-stone-100">
+                <Image
+                  src={src}
+                  alt="ケーニヒスクローネ くまポチ邸 - 神戶咖啡推薦"
+                  fill
+                  sizes="50vw"
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-pink-500 text-white flex items-center justify-center text-sm font-black shrink-0">3</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">ケーニヒスクローネ くまポチ邸</h3>
+                <span className="text-xs text-stone-400">Konigs Krone Kumapochi-tei</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              神戶老牌洋菓子品牌<strong>「ケーニヒスクローネ」</strong>經營的熊熊主題咖啡廳🐻 招牌吉祥物「くまポチ」到處都是，整間店超級療癒好拍。最大的賣點是點主餐就能享用<strong>每天現烤、常時20種以上的麵包吃到飽</strong>，還附迷你甜點，是神戶超人氣的排隊名店。
+            </p>
+
+            <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                麵包吃到飽＋迷你甜點＋飯後霜淇淋，CP值超高又好拍🥐🍦 招牌菜「蛋與麻糬的燉牛肉」很有特色，先著50名還能吃到限定的招牌點心「クローネ」。位在飯店內、可眺望神戶市街，混雜時最長可待3小時，很適合逛街逛累來吃頓豐盛的早午餐。
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🐻 熊熊主題", "🥐 麵包吃到飽", "🍦 飯後霜淇淋", "📸 IG拍照熱點", "🏨 飯店內眺望"].map((t) => (
+                <span key={t} className="text-xs bg-pink-50 text-pink-700 border border-pink-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600">📍 兵庫縣神戶市中央區三宮町2-3-10（ホテルケーニヒスクローネ神戸内）</p>
+              <p className="text-xs text-stone-600">🚉 各線「三宮」駅 徒歩約7分／JR「元町」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600">⏰ 依官網為準（麵包吃到飽・霜淇淋兌換至15:00左右）</p>
+              <p className="text-xs text-stone-600">💴 主餐約¥2,310〜（含麵包吃到飽・迷你甜點）</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">超人氣店，平日開店前就會排隊，建議<strong>提早前往</strong>；部分麵包售完為止</p>
+            </div>
+
+            <a
+              href="https://konigs-krone.co.jp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+            >
+              🔗 官方網站
+            </a>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">神戶咖啡散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
-            <li>✅ 兩間都是人氣店，建議<strong>平日上午</strong>造訪比較不用排隊</li>
+            <li>✅ 三間都是人氣店，建議<strong>平日上午</strong>造訪比較不用排隊</li>
             <li>✅ 三宮→生田神社→フロインドリーブ→北野異人館街，路線剛剛好可以串成散步行程</li>
+            <li>✅ くまポチ邸的麵包吃到飽建議空腹前往，開店前就會排隊要有心理準備🥐</li>
             <li>✅ 神戶是個小巧的城市，幾乎所有景點都能用走的串起來👟</li>
             <li>✅ フロインドリーブ的德式餅乾很適合當伴手禮帶回家🍪</li>
             <li>✅ 出發前查詢營業時間與公休日，避免白跑一趟</li>
@@ -273,8 +348,8 @@ export default function KobeCafePage() {
         {/* ぽやぴよ */}
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
-            一間是夢幻教堂咖啡廳，一間是洋館裡的麵包店——兩間風格不同但都讓人難忘✨<br />
-            來神戶旅遊，請務必把這兩間排進咖啡散步行程！
+            夢幻教堂咖啡廳、洋館裡的麵包店，再加上療癒的熊熊麵包吃到飽——三間風格不同但都讓人難忘✨<br />
+            來神戶旅遊，請務必把這三間排進咖啡散步行程！
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
             <div className="text-3xl shrink-0">🐥</div>
