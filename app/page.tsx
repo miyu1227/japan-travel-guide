@@ -111,6 +111,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   cafe: [
     {
+      name: "澀谷咖啡廳推薦｜RECOCO レココ・黑膠唱片試聽咖啡🎵",
+      desc: "澀谷必去！可親手試聽黑膠唱片的音樂體驗咖啡，約300張唱片聽到飽",
+      tag: "東京",
+      emoji: "🎵",
+      href: "/shibuya-cafe",
+      image: "/shibuya-cafe/recoco-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "代代木上原咖啡廳推薦｜BOLT・寵物友善人氣店☕",
       desc: "代代木上原必去！可帶狗的時尚咖啡空間，手沖咖啡＆自家烘焙甜點",
       tag: "東京",
