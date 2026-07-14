@@ -194,6 +194,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "和歌山白浜景點推薦4選｜熊貓・海邊露營・海景咖啡・海鮮BBQ🐼🌊",
+      desc: "冒險大世界看熊貓・志原海岸豪華露營・かげろう海景咖啡・とれとれ市場海鮮BBQ，關西度假必去",
+      tag: "和歌山",
+      emoji: "🐼",
+      href: "/shirahama",
+      image: "/shirahama/cover.jpg",
+      areas: ["その他"],
+    },
+    {
       name: "東京畫畫體驗推薦｜Artbar Tokyo・喝酒作畫的大人藝術體驗🎨",
       desc: "一邊喝紅酒一邊畫畫的Paint & Sip體驗！初學者也OK・手ぶら參加，原宿・代官山分店",
       tag: "東京",
