@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 
+const KLOOK_CLEMENT_INN =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339930&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Fhotels%2Fdetail%2F691887-jr-clement-inn-kochi%2F%3Fcheck_in%3D2026-08-16%26check_out%3D2026-08-17%26room_num%3D1%26adult_num%3D1%26child_num%3D0";
+
 const PAGE_URL = "https://www.japantrippicks.com/kochi";
 const OG_IMAGE = "/kochi/nikobuchi-1.jpg";
 
@@ -253,6 +256,62 @@ export default function KochiPage() {
             </div>
           </div>
         </div>
+
+        {/* Klook JR Clement Inn 高知バナー */}
+        <section className="mb-8">
+          <a
+            href={KLOOK_CLEMENT_INN}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
+          >
+            <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">🏨</span>
+            <span className="absolute bottom-4 left-4 text-base opacity-40 select-none">✨</span>
+
+            <div className="relative flex items-center justify-between mb-3">
+              <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">
+                🎫 Travel Tips
+              </span>
+              <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">高知車站直結飯店</span>
+            </div>
+
+            <div className="relative flex items-center gap-3 mb-4">
+              <div className="relative w-20 h-20 shrink-0">
+                <div className="absolute inset-0 bg-white/70 backdrop-blur rounded-2xl border-2 border-white shadow-sm"></div>
+                <Image
+                  src="/poyapiyo-flag.png"
+                  alt="ぽやぴよ"
+                  fill
+                  sizes="80px"
+                  className="object-contain p-1 relative -rotate-[4deg]"
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-base font-black text-stone-800 leading-tight mb-1">
+                  高知住哪裡？車站直結最方便
+                </h3>
+                <p className="text-xs text-stone-700 leading-relaxed">
+                  高知觀光交通不便，推薦住在<strong>JR高知駅直結的「JR Clement Inn 高知」</strong>🏨 到仁淀藍・ひろめ市場都很順路，出發前先看看價格與空房。
+                </p>
+              </div>
+            </div>
+
+            <div className="relative w-full aspect-[1200/628] rounded-2xl overflow-hidden mb-3 border border-white/60 shadow-sm">
+              <Image
+                src="/kochi/klook-clement.png"
+                alt="JR Clement Inn 高知 Klook"
+                fill
+                sizes="(max-width: 672px) 100vw, 672px"
+                className="object-cover"
+              />
+            </div>
+
+            <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
+              🏨 查看 JR Clement Inn 高知 →
+            </div>
+            <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
+          </a>
+        </section>
 
         <PrepBanner />
 
