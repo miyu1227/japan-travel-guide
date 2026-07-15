@@ -3,6 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 
+const KLOOK_AQUARIUM =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339931&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F74358-shikoku-aquarium";
+const KLOOK_SHIKISHIMA =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339934&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Fhotels%2Fdetail%2F422726-onyado-shikishimakan%2F%3Fcheck_in%3D2026-08-17%26check_out%3D2026-08-18%26room_num%3D1%26adult_num%3D1%26child_num%3D0";
+const KLOOK_KAGAWA_PASS =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339933&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F156814-have-fun-in-kagawa-pass-1-week-free-pass";
+
 const PAGE_URL = "https://www.japantrippicks.com/kagawa";
 const OG_IMAGE = "/kagawa/yamagoe-1.jpg";
 
@@ -178,6 +185,36 @@ export default function KagawaPage() {
               <p className="text-xs text-stone-600">💴 大人 ¥2,400／中・高校生 ¥1,700／小學生 ¥1,000</p>
             </div>
             <a href="https://shikoku-aquarium.jp/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">🔗 官方網站</a>
+
+            {/* Klook 四國水族館バナー */}
+            <a
+              href={KLOOK_AQUARIUM}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="mt-5 block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
+            >
+              <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">🐬</span>
+              <div className="relative flex items-center justify-between mb-3">
+                <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">
+                  🎫 Travel Tips
+                </span>
+                <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">水族館門票線上購買</span>
+              </div>
+              <div className="relative flex items-center gap-3 mb-4">
+                <div className="relative w-20 h-20 shrink-0">
+                  <div className="absolute inset-0 bg-white/70 backdrop-blur rounded-2xl border-2 border-white shadow-sm"></div>
+                  <Image src="/poyapiyo-flag.png" alt="ぽやぴよ" fill sizes="80px" className="object-contain p-1 relative -rotate-[4deg]" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-base font-black text-stone-800 leading-tight mb-1">想先買好四國水族館門票？</h3>
+                  <p className="text-xs text-stone-700 leading-relaxed">現場售票日常會排隊，事先線上購買可以直接入場，時間安排更順暢🐬</p>
+                </div>
+              </div>
+              <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
+                🎫 查看四國水族館門票 →
+              </div>
+              <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
+            </a>
           </div>
         </section>
 
@@ -240,6 +277,36 @@ export default function KagawaPage() {
               <p className="text-xs text-stone-600">🛏️ 全室和洋折衷風格</p>
             </div>
             <a href="https://dormy-hotels.com/resort/hotels/shikishimakan/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">🔗 官方網站</a>
+
+            {/* Klook 御宿敷島館バナー */}
+            <a
+              href={KLOOK_SHIKISHIMA}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="mt-5 block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
+            >
+              <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">♨️</span>
+              <div className="relative flex items-center justify-between mb-3">
+                <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">
+                  🎫 Travel Tips
+                </span>
+                <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">琴平溫泉旅館・空房查詢</span>
+              </div>
+              <div className="relative flex items-center gap-3 mb-4">
+                <div className="relative w-20 h-20 shrink-0">
+                  <div className="absolute inset-0 bg-white/70 backdrop-blur rounded-2xl border-2 border-white shadow-sm"></div>
+                  <Image src="/poyapiyo-flag.png" alt="ぽやぴよ" fill sizes="80px" className="object-contain p-1 relative -rotate-[4deg]" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-base font-black text-stone-800 leading-tight mb-1">御宿 敷島館・空房查詢</h3>
+                  <p className="text-xs text-stone-700 leading-relaxed">金刀比羅宮徒歩圈的溫泉旅館。出發前先看看價格與空房，方便安排香川兩日遊行程♨️</p>
+                </div>
+              </div>
+              <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
+                🏨 查看 御宿 敷島館 →
+              </div>
+              <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
+            </a>
           </div>
         </section>
 
@@ -305,6 +372,62 @@ export default function KagawaPage() {
             </div>
           </div>
         </div>
+
+        {/* Klook 香川周遊パスバナー */}
+        <section className="mb-8">
+          <a
+            href={KLOOK_KAGAWA_PASS}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
+          >
+            <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">🎫</span>
+            <span className="absolute bottom-4 left-4 text-base opacity-40 select-none">✨</span>
+
+            <div className="relative flex items-center justify-between mb-3">
+              <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">
+                🎫 Travel Tips
+              </span>
+              <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">香川1週間周遊券</span>
+            </div>
+
+            <div className="relative flex items-center gap-3 mb-4">
+              <div className="relative w-20 h-20 shrink-0">
+                <div className="absolute inset-0 bg-white/70 backdrop-blur rounded-2xl border-2 border-white shadow-sm"></div>
+                <Image
+                  src="/poyapiyo-flag.png"
+                  alt="ぽやぴよ"
+                  fill
+                  sizes="80px"
+                  className="object-contain p-1 relative -rotate-[4deg]"
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-base font-black text-stone-800 leading-tight mb-1">
+                  想省交通費玩遍香川？
+                </h3>
+                <p className="text-xs text-stone-700 leading-relaxed">
+                  <strong>「Have Fun in Kagawa Pass」</strong>是能玩遍香川的1週間周遊券，交通＋景點一次搞定。行程排2〜3天以上很划算🎫
+                </p>
+              </div>
+            </div>
+
+            <div className="relative w-full aspect-[1200/628] rounded-2xl overflow-hidden mb-3 border border-white/60 shadow-sm">
+              <Image
+                src="/kagawa/klook-pass.png"
+                alt="香川周遊券 Klook"
+                fill
+                sizes="(max-width: 672px) 100vw, 672px"
+                className="object-cover"
+              />
+            </div>
+
+            <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
+              🎫 查看 Have Fun in Kagawa Pass →
+            </div>
+            <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
+          </a>
+        </section>
 
         <PrepBanner />
 
