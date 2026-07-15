@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 
+const KLOOK_KAMENOI_HIKONE =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339986&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Fhotels%2Fdetail%2F416852-kamenoi-hotel-hikone%2F%3Fcheck_in%3D2026-08-17%26check_out%3D2026-08-18%26room_num%3D1%26adult_num%3D1%26child_num%3D0";
+
 const PAGE_URL = "https://www.japantrippicks.com/hikone";
 const OG_IMAGE = "/hikone/castle-1.png";
 
@@ -247,6 +250,38 @@ export default function HikonePage() {
             </div>
           </div>
         </div>
+
+        {/* Klook 亀の井ホテル彦根バナー */}
+        <section className="mb-8">
+          <a
+            href={KLOOK_KAMENOI_HIKONE}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
+          >
+            <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">🏨</span>
+            <div className="relative flex items-center justify-between mb-3">
+              <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">
+                🎫 Travel Tips
+              </span>
+              <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">彥根住宿・空房查詢</span>
+            </div>
+            <div className="relative flex items-center gap-3 mb-4">
+              <div className="relative w-20 h-20 shrink-0">
+                <div className="absolute inset-0 bg-white/70 backdrop-blur rounded-2xl border-2 border-white shadow-sm"></div>
+                <Image src="/poyapiyo-flag.png" alt="ぽやぴよ" fill sizes="80px" className="object-contain p-1 relative -rotate-[4deg]" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-base font-black text-stone-800 leading-tight mb-1">彥根住哪裡？</h3>
+                <p className="text-xs text-stone-700 leading-relaxed">推薦以琵琶湖景色聞名的<strong>「亀の井ホテル 彦根」</strong>🏨 出發前先看看價格與空房，方便安排滋賀彥根一泊二日的行程。</p>
+              </div>
+            </div>
+            <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
+              🏨 查看 亀の井ホテル 彦根 →
+            </div>
+            <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
+          </a>
+        </section>
 
         <PrepBanner />
 
