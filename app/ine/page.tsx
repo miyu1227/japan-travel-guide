@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 
+const KLOOK_INE_TOUR =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339927&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F150458-amanohashidate-iegan-day-trip-iegan-boat-house-iegan-bay-cruise-aman";
+
 const PAGE_URL = "https://www.japantrippicks.com/ine";
 const OG_IMAGE = "/ine/town-1.jpg";
 
@@ -135,6 +138,60 @@ export default function InePage() {
               <p className="text-xs text-stone-600">🚲 電動腳踏車租借 ¥1,000〜／日</p>
             </div>
             <a href="https://www.ine-kankou.jp/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">🔗 官方觀光網站</a>
+
+            {/* Klook 天橋立＆伊根舟屋一日遊バナー */}
+            <a
+              href={KLOOK_INE_TOUR}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="mt-5 block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
+            >
+              <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">🚤</span>
+              <span className="absolute bottom-4 left-4 text-base opacity-40 select-none">✨</span>
+
+              <div className="relative flex items-center justify-between mb-3">
+                <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">
+                  🎫 Travel Tips
+                </span>
+                <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">天橋立＆伊根舟屋一日遊</span>
+              </div>
+
+              <div className="relative flex items-center gap-3 mb-4">
+                <div className="relative w-20 h-20 shrink-0">
+                  <div className="absolute inset-0 bg-white/70 backdrop-blur rounded-2xl border-2 border-white shadow-sm"></div>
+                  <Image
+                    src="/poyapiyo-flag.png"
+                    alt="ぽやぴよ"
+                    fill
+                    sizes="80px"
+                    className="object-contain p-1 relative -rotate-[4deg]"
+                  />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-base font-black text-stone-800 leading-tight mb-1">
+                    想輕鬆去伊根舟屋＋天橋立？
+                  </h3>
+                  <p className="text-xs text-stone-700 leading-relaxed">
+                    伊根町交通不便，自己排電車＋巴士很花時間。有<strong>天橋立＋伊根舟屋＋伊根灣遊覽船</strong>的一日遊行程，不用自己算車班，適合行程有限的旅客🚤
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative w-full aspect-[1200/628] rounded-2xl overflow-hidden mb-3 border border-white/60 shadow-sm">
+                <Image
+                  src="/ine/klook-ine.png"
+                  alt="天橋立＆伊根舟屋一日遊 Klook 行程"
+                  fill
+                  sizes="(max-width: 672px) 100vw, 672px"
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
+                🎫 查看天橋立＆伊根舟屋一日遊 →
+              </div>
+              <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
+            </a>
           </div>
         </section>
 
