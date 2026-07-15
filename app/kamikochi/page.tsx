@@ -3,6 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 
+const KLOOK_SHINHOTAKA =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339988&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F106936-alpine-splendor-shinhotaka-ropeway-kamikochi-join-day-bus-tour-takayama";
+const KLOOK_KAMIKOCHI_TOUR =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339989&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F117256-kamikochi-walking-tour-from-nagoya";
+
 const PAGE_URL = "https://www.japantrippicks.com/kamikochi";
 const OG_IMAGE = "/kamikochi/cover.jpg";
 
@@ -286,6 +291,36 @@ export default function KamikochiPage() {
             <a href="https://shinhotaka-ropeway.jp/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
               🔗 官方網站
             </a>
+
+            {/* Klook 新穂高纜車+上高地 高山出發 */}
+            <a
+              href={KLOOK_SHINHOTAKA}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="mt-5 block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
+            >
+              <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">🚡</span>
+              <div className="relative flex items-center justify-between mb-3">
+                <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">
+                  🎫 Travel Tips
+                </span>
+                <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">高山出發一日遊</span>
+              </div>
+              <div className="relative flex items-center gap-3 mb-4">
+                <div className="relative w-20 h-20 shrink-0">
+                  <div className="absolute inset-0 bg-white/70 backdrop-blur rounded-2xl border-2 border-white shadow-sm"></div>
+                  <Image src="/poyapiyo-flag.png" alt="ぽやぴよ" fill sizes="80px" className="object-contain p-1 relative -rotate-[4deg]" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-base font-black text-stone-800 leading-tight mb-1">想輕鬆搭新穂高纜車？</h3>
+                  <p className="text-xs text-stone-700 leading-relaxed">從<strong>高山出發</strong>的一日巴士行程包含<strong>新穂高纜車＋上高地</strong>，不用自己排巴士路線＆時刻，適合行程有限的旅客🚡</p>
+                </div>
+              </div>
+              <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
+                🎫 查看 新穂高纜車＋上高地一日遊 →
+              </div>
+              <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
+            </a>
           </div>
         </section>
 
@@ -341,6 +376,36 @@ export default function KamikochiPage() {
 
             <a href="https://www.kamikochi.or.jp/learn/spots/1319/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
               🔗 官方資訊
+            </a>
+
+            {/* Klook 上高地 名古屋出發 */}
+            <a
+              href={KLOOK_KAMIKOCHI_TOUR}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="mt-5 block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
+            >
+              <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">🌉</span>
+              <div className="relative flex items-center justify-between mb-3">
+                <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">
+                  🎫 Travel Tips
+                </span>
+                <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">名古屋出發一日遊</span>
+              </div>
+              <div className="relative flex items-center gap-3 mb-4">
+                <div className="relative w-20 h-20 shrink-0">
+                  <div className="absolute inset-0 bg-white/70 backdrop-blur rounded-2xl border-2 border-white shadow-sm"></div>
+                  <Image src="/poyapiyo-flag.png" alt="ぽやぴよ" fill sizes="80px" className="object-contain p-1 relative -rotate-[4deg]" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-base font-black text-stone-800 leading-tight mb-1">想從名古屋直達上高地？</h3>
+                  <p className="text-xs text-stone-700 leading-relaxed">從<strong>名古屋出發</strong>的<strong>上高地散策一日遊</strong>，包含往返巴士＋河童橋散步時間，不用自駕也能輕鬆造訪🌉</p>
+                </div>
+              </div>
+              <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
+                🎫 查看 名古屋出發上高地一日遊 →
+              </div>
+              <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
             </a>
           </div>
         </section>
