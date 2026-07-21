@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import SiteFooter from "./components/SiteFooter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -80,6 +81,14 @@ const websiteJsonLd = {
   url: "https://www.japantrippicks.com",
   description: "台灣・香港旅客專屬的日本旅遊指南",
   inLanguage: "zh-TW",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://www.japantrippicks.com/?q={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
   publisher: {
     "@type": "Organization",
     name: "Japan Trip Picks",
@@ -126,7 +135,10 @@ export default function RootLayout({
     dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
   />
 </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <div className="flex-1">{children}</div>
+        <SiteFooter />
+      </body>
     </html>
   );
 }

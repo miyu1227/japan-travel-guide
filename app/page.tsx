@@ -728,6 +728,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Popular Keywords */}
+      <section className="max-w-7xl mx-auto px-4 pt-4 pb-2">
+        <div className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-4">
+          <p className="text-xs font-black text-stone-600 mb-2 flex items-center gap-1">
+            <span>🔍</span> 熱門搜尋・快速找到你想去的地方
+          </p>
+          <div className="flex flex-wrap gap-1.5">
+            {[
+              { href: "/tokyo-tower", label: "東京鐵塔" },
+              { href: "/skytree", label: "東京晴空塔" },
+              { href: "/tokyo-disney-around", label: "東京迪士尼" },
+              { href: "/ramen", label: "拉麵" },
+              { href: "/ajisai", label: "紫陽花" },
+              { href: "/hakone", label: "箱根" },
+              { href: "/hokkaido", label: "北海道" },
+              { href: "/kamikochi", label: "上高地" },
+              { href: "/kobe-cafe", label: "神戶咖啡" },
+              { href: "/shukugawa", label: "夙川" },
+              { href: "/steak-zen", label: "神戶牛" },
+              { href: "/kagawa", label: "香川烏龍麵" },
+              { href: "/kochi", label: "高知" },
+              { href: "/shirahama", label: "和歌山白浜" },
+              { href: "/ine", label: "京都伊根" },
+              { href: "/katsunuma", label: "山梨勝沼" },
+              { href: "/nakameguro-cafe", label: "中目黑星巴克" },
+              { href: "/shimokitazawa-cafe", label: "下北澤咖啡" },
+              { href: "/rokko-arima", label: "有馬溫泉" },
+              { href: "/japan-esim", label: "日本eSIM" },
+              { href: "/tokyo-subway-ticket", label: "東京地鐵券" },
+              { href: "/narita-airport-access", label: "成田機場" },
+              { href: "/haneda-airport-access", label: "羽田機場" },
+              { href: "/utsunomiya-gyoza", label: "宇都宮餃子" },
+            ].map((k) => (
+              <Link
+                key={k.href}
+                href={k.href}
+                className="text-xs bg-amber-50 hover:bg-amber-100 text-stone-700 border border-yellow-200 px-3 py-1 rounded-full transition-colors"
+              >
+                {k.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Category Tabs */}
       <section className="sticky top-14 z-40 bg-white border-b border-yellow-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-3">
