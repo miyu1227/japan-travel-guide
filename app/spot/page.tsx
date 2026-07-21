@@ -37,8 +37,10 @@ const articleJsonLd = {
   description: "東京野餐推薦3大公園。附交通方式、門票資訊、外帶美食推薦。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
-  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  datePublished: "2026-07-01T00:00:00+09:00",
+  dateModified: "2026-07-21T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -118,7 +120,7 @@ export default function SpotPicnicPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           東京野餐推薦3選｜新宿御苑・<br />代代木・日比谷公園🌿
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026年</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
 
         {/* Why picnic in Tokyo */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

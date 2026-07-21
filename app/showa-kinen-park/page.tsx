@@ -37,8 +37,10 @@ const articleJsonLd = {
   description: "東京立川「昭和紀念公園」完整指南。日本最大級的國營公園・四季絕景。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
-  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  datePublished: "2026-07-01T00:00:00+09:00",
+  dateModified: "2026-07-21T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -92,7 +94,7 @@ export default function ShowaKinenParkPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           昭和紀念公園推薦｜東京立川<br />散步必去・四季絕景🌿
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026年</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

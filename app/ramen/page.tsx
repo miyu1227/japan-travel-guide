@@ -37,8 +37,10 @@ const articleJsonLd = {
   description: "整理6間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店、全國連鎖家系拉麵、中目黒俺流鹽味拉麵、台場神仙金澤濃厚豚骨、六本木AFURI柚子鹽拉麵。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
-  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  datePublished: "2026-07-01T00:00:00+09:00",
+  dateModified: "2026-07-21T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -210,7 +212,7 @@ export default function RamenArticle() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           日本拉麵推薦｜東京・大阪<br />必吃拉麵6選🍜
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2025年</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
 
         {/* Why ramen */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

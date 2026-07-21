@@ -37,8 +37,10 @@ const articleJsonLd = {
   description: "日本Mister Donut期間限定新商品「もっちゅりん」完整介紹。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
-  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  datePublished: "2026-07-01T00:00:00+09:00",
+  dateModified: "2026-07-21T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -85,7 +87,7 @@ export default function MisterDonutPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           Mister Donut期間限定｜<br />超人氣もっちゅりん甜甜圈🍩
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026年</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

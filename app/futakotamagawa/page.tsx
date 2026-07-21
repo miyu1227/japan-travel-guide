@@ -37,8 +37,10 @@ const articleJsonLd = {
   description: "二子玉川美食推薦3選：蒸籠中華STEAMAN、蘋果派GRANNY SMITH、韓式屋台ぶたこたまがわ。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
-  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  datePublished: "2026-07-01T00:00:00+09:00",
+  dateModified: "2026-07-21T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -85,7 +87,7 @@ export default function FutakotamagawaPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           二子玉川美食推薦3選｜<br />東京必吃中華・甜點・韓國料理🍽️
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026年</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

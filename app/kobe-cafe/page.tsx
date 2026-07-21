@@ -36,8 +36,10 @@ const articleJsonLd = {
   description: "神戶必去咖啡廳：教堂改建的フロインドリーブ生田店、北野異人館的パンとエスプレッソと異人館、熊熊主題麵包吃到飽的ケーニヒスクローネ くまポチ邸。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
-  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  datePublished: "2026-07-01T00:00:00+09:00",
+  dateModified: "2026-07-21T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -90,7 +92,7 @@ export default function KobeCafePage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           神戶咖啡推薦3選｜教堂咖啡・<br />異人館咖啡＆熊熊麵包吃到飽☕
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026年</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

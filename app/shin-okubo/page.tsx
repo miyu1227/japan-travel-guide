@@ -37,8 +37,10 @@ const articleJsonLd = {
   description: "新大久保で実際に食べ歩いた3店舗を紹介。ナッコプセ鍋・韓国カフェ・ドバイ餅スイーツ。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
-  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  datePublished: "2026-07-01T00:00:00+09:00",
+  dateModified: "2026-07-21T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -148,7 +150,7 @@ export default function ShinOkuboPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           新大久保美食推薦｜<br />韓國料理・咖啡・甜點食べ歩き完全指南🍲
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2025年</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

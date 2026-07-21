@@ -37,8 +37,10 @@ const articleJsonLd = {
   description: "整理自由之丘3間人氣東京咖啡店。貝果・義式冰淇淋・起司披薩。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
-  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  datePublished: "2026-07-01T00:00:00+09:00",
+  dateModified: "2026-07-21T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -147,7 +149,7 @@ export default function JiyugaokaCafePage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           自由之丘咖啡推薦｜<br />東京最值得去的咖啡店指南☕
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2025年</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
 
         {/* Why Jiyugaoka */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

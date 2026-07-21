@@ -37,8 +37,10 @@ const articleJsonLd = {
   description: "東京紅葉季必去景點「神宮外苑銀杏並木」。金黃銀杏大道・交通・觀賞期完整指南。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
-  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  datePublished: "2026-07-01T00:00:00+09:00",
+  dateModified: "2026-07-21T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -89,7 +91,7 @@ export default function KoyoPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           東京紅葉推薦｜神宮外苑<br />銀杏並木の金黃大道🍁
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026年</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

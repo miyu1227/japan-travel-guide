@@ -37,8 +37,10 @@ const articleJsonLd = {
   description: "6月東京限定景色！紫陽花（あじさい）景點：台場シンボルプロムナード公園、文京區白山神社「文京あじさいまつり」。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
-  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  datePublished: "2026-07-01T00:00:00+09:00",
+  dateModified: "2026-07-21T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -138,7 +140,7 @@ export default function AjisaiPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           東京繡球花景點推薦2選｜<br />台場＆文京白山神社紫陽花🌸
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026年</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
 
         {/* Cover */}
         <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-sm mb-6 bg-stone-100">

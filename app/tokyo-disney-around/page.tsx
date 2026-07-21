@@ -40,8 +40,10 @@ const articleJsonLd = {
   description: "迪士尼度假區線（Disney Resort Line）一日券・可愛車廂與イクスピアリ人氣咖啡廳CAFÉ AUX BACCHANALES。舞浜站周邊半日遊指南。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
-  author: { "@type": "Organization", name: "Japan Trip Picks" },
+  author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
+  datePublished: "2026-07-01T00:00:00+09:00",
+  dateModified: "2026-07-21T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -143,7 +145,7 @@ export default function TokyoDisneyAroundPage() {
           東京迪士尼周邊玩法｜<br />不進園也能玩！🎢
         </h1>
         <p className="text-sm text-stone-500 mb-2">度假區線一日券＆イクスピアリ美食巡禮</p>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2025年</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
 
         {/* Cover */}
         <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-sm mb-6 bg-stone-100">
