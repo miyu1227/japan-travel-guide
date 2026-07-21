@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 
+const KLOOK_HAKONE_GLASS =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1347315&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F132015-hakone-open-air-museum-pola-museum-of-art-one-day-tour-from-tokyo";
+
 const PAGE_URL = "https://www.japantrippicks.com/hakone";
 const OG_IMAGE = "/hakone/shrine-1.jpg";
 
@@ -270,6 +273,37 @@ export default function HakonePage() {
                   className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
                   🔗 官方網站
                 </a>
+
+                {spot.number === 1 && (
+                  <a
+                    href={KLOOK_HAKONE_GLASS}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="mt-5 block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
+                  >
+                    <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">🎨</span>
+                    <div className="relative flex items-center justify-between mb-3">
+                      <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">
+                        🎫 Travel Tips
+                      </span>
+                      <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">東京出發箱根美術館一日遊</span>
+                    </div>
+                    <div className="relative flex items-center gap-3 mb-4">
+                      <div className="relative w-20 h-20 shrink-0">
+                        <div className="absolute inset-0 bg-white/70 backdrop-blur rounded-2xl border-2 border-white shadow-sm"></div>
+                        <Image src="/poyapiyo-flag.png" alt="ぽやぴよ" fill sizes="80px" className="object-contain p-1 relative -rotate-[4deg]" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-base font-black text-stone-800 leading-tight mb-1">想輕鬆玩箱根美術館？</h3>
+                        <p className="text-xs text-stone-700 leading-relaxed">從<strong>東京出發</strong>的一日巴士行程，可以一次逛<strong>雕刻の森美術館＋POLA美術館</strong>，不用自己排箱根登山バス，適合行程有限的旅客🎨</p>
+                      </div>
+                    </div>
+                    <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
+                      🎫 查看 東京出發箱根美術館一日遊 →
+                    </div>
+                    <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
+                  </a>
+                )}
               </div>
             </section>
           ))}
