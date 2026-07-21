@@ -3,6 +3,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PrepBanner from "../components/PrepBanner";
 
+const KLOOK_AOI =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1347320&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F150522-shirogane-blue-pond-shikisai-no-oka-farm-tomita-one-day-tour";
+const KLOOK_FARM =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1347324&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F4160-sapporo-flower-farm-blue-pond-tour-hokkaido";
+const KLOOK_LUGGAGE =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1347329&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F130400-luggage-delivery-service-between-sapporo-hotels-and-new-chitose-airport-hokkaido";
+
 const PAGE_URL = "https://www.japantrippicks.com/hokkaido";
 const OG_IMAGE = "/hokkaido/farm-1.jpg";
 
@@ -269,6 +276,64 @@ export default function HokkaidoPage() {
                   className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
                   🔗 {spot.urlLabel}
                 </a>
+
+                {spot.id === "aoi" && (
+                  <a
+                    href={KLOOK_AOI}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="mt-5 block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
+                  >
+                    <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">💙</span>
+                    <div className="relative flex items-center justify-between mb-3">
+                      <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">🎫 Travel Tips</span>
+                      <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">札幌出發一日遊</span>
+                    </div>
+                    <div className="relative flex items-center gap-3 mb-4">
+                      <div className="relative w-20 h-20 shrink-0">
+                        <div className="absolute inset-0 bg-white/70 backdrop-blur rounded-2xl border-2 border-white shadow-sm"></div>
+                        <Image src="/poyapiyo-flag.png" alt="ぽやぴよ" fill sizes="80px" className="object-contain p-1 relative -rotate-[4deg]" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-base font-black text-stone-800 leading-tight mb-1">想輕鬆去青池？</h3>
+                        <p className="text-xs text-stone-700 leading-relaxed">從<strong>札幌出發</strong>的一日巴士行程，可以一次逛<strong>白金青池＋四季彩之丘＋富田農場</strong>，不用自駕也能玩美瑛＆富良野💙</p>
+                      </div>
+                    </div>
+                    <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
+                      🎫 查看 青池＆美瑛富良野一日遊 →
+                    </div>
+                    <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
+                  </a>
+                )}
+
+                {spot.id === "farm" && (
+                  <a
+                    href={KLOOK_FARM}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="mt-5 block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
+                  >
+                    <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">💜</span>
+                    <div className="relative flex items-center justify-between mb-3">
+                      <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">🎫 Travel Tips</span>
+                      <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">札幌出發薰衣草花田行程</span>
+                    </div>
+                    <div className="relative flex items-center gap-3 mb-4">
+                      <div className="relative w-20 h-20 shrink-0">
+                        <div className="absolute inset-0 bg-white/70 backdrop-blur rounded-2xl border-2 border-white shadow-sm"></div>
+                        <Image src="/poyapiyo-flag.png" alt="ぽやぴよ" fill sizes="80px" className="object-contain p-1 relative -rotate-[4deg]" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-base font-black text-stone-800 leading-tight mb-1">想輕鬆玩富田農場？</h3>
+                        <p className="text-xs text-stone-700 leading-relaxed">從<strong>札幌出發</strong>的<strong>富田農場＋青池</strong>一日行程，包含交通＋景點，適合7月薰衣草季來北海道的旅客💜</p>
+                      </div>
+                    </div>
+                    <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
+                      🎫 查看 富田農場＋青池一日遊 →
+                    </div>
+                    <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
+                  </a>
+                )}
               </div>
             </section>
           ))}
@@ -331,6 +396,64 @@ export default function HokkaidoPage() {
             ))}
           </div>
         </div>
+
+        {/* 新千歳空港 & Klook Luggage */}
+        <section className="mb-8">
+          <div className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-4">
+            <h2 className="text-base font-black text-stone-800 mb-3 flex items-center gap-2">
+              <span className="text-2xl">✈️</span> 新千歳空港・北海道的門戶
+            </h2>
+            <p className="text-sm text-stone-600 leading-relaxed mb-2">
+              <strong>新千歳空港（New Chitose Airport / CTS）</strong>是北海道最大的機場，也是台灣・香港旅客往返北海道的主要門戶🛫 從空港到<strong>札幌駅</strong>搭JR快速AIRPORT只要約37分鐘，非常方便。
+            </p>
+            <p className="text-sm text-stone-600 leading-relaxed">
+              機場內有<strong>大丸松坂屋・Royce巧克力工廠・Steamboy等美食街</strong>，還有<strong>哆啦A夢主題樂園、Hello Kitty Happy Flight</strong>等景點🎁 建議提早2〜3小時到機場，最後採買一波伴手禮再回國！
+            </p>
+          </div>
+
+          <a
+            href={KLOOK_LUGGAGE}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
+          >
+            <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">🧳</span>
+            <span className="absolute bottom-4 left-4 text-base opacity-40 select-none">✨</span>
+
+            <div className="relative flex items-center justify-between mb-3">
+              <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">🎫 Travel Tips</span>
+              <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">札幌⇄新千歳空港 行李配送</span>
+            </div>
+
+            <div className="relative flex items-center gap-3 mb-4">
+              <div className="relative w-20 h-20 shrink-0">
+                <div className="absolute inset-0 bg-white/70 backdrop-blur rounded-2xl border-2 border-white shadow-sm"></div>
+                <Image src="/poyapiyo-flag.png" alt="ぽやぴよ" fill sizes="80px" className="object-contain p-1 relative -rotate-[4deg]" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-base font-black text-stone-800 leading-tight mb-1">最後一天行李好重？</h3>
+                <p className="text-xs text-stone-700 leading-relaxed">
+                  <strong>札幌市內飯店⇄新千歳空港</strong>的行李配送服務🧳 早上寄出，晚上就能在機場取件，最後一天可以輕鬆逛小樽或札幌市區！
+                </p>
+              </div>
+            </div>
+
+            <div className="relative w-full aspect-[1200/628] rounded-2xl overflow-hidden mb-3 border border-white/60 shadow-sm">
+              <Image
+                src="/hokkaido/klook-luggage.png"
+                alt="札幌⇄新千歳空港 行李配送 Klook"
+                fill
+                sizes="(max-width: 672px) 100vw, 672px"
+                className="object-cover"
+              />
+            </div>
+
+            <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
+              🎫 查看 札幌⇄新千歳空港 行李配送 →
+            </div>
+            <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
+          </a>
+        </section>
 
         <PrepBanner />
 
