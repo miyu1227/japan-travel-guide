@@ -191,6 +191,104 @@ export default function KoyoPage() {
           </div>
         </section>
 
+        {/* 銀杏並木的歷史・背景 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">神宮外苑銀杏並木的歷史</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-2">
+            神宮外苑銀杏並木誕生於<strong>1923年（大正12年）</strong>，是為了配合1926年完成的「聖德紀念繪畫館」而規劃的參道🌳 這146棵銀杏樹的樹苗，其實是從<strong>新宿御苑</strong>培育的種子開始，由日本近代造園之父<strong>折下吉延</strong>親自設計，依照「越靠近繪畫館越矮」的視覺原理排列——這也是為什麼從青山通入口看過去，銀杏隧道會呈現完美的透視感📐
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed">
+            並木道全長約<strong>300公尺</strong>，樹高最高約28公尺、最低約17公尺，是日本最具代表性的都市景觀之一。2018年被東京都指定為<strong>「東京都的景觀重要樹林」</strong>，並被港區列為文化財保護對象。
+          </p>
+        </section>
+
+        {/* 順路推薦：附近景點 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">順路推薦：附近景點</h2>
+          <div className="space-y-3">
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">明治神宮外苑（徒歩0分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">聖德紀念繪畫館・日本最大規模的西洋畫壁畫收藏。銀杏並木的終點就是繪畫館本身。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">表參道（徒歩約10分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">東京最時尚的街道之一，秋天連結賞銀杏＋購物＆美食超順路。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">青山靈園（徒歩約8分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">春天是東京隱藏版賞櫻名所，秋天也有紅葉。與外苑銀杏形成鮮明對比。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">明治神宮（電車約5分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">從青山一丁目搭銀座線到原宿轉JR或步行到明治神宮，都心中的森林參拜路線也很有秋意。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 東京其他賞紅葉地點 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">東京其他人氣賞紅葉地點</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-3">
+            如果時間允許，除了神宮外苑銀杏並木，東京其實還有很多值得一去的紅葉名所：
+          </p>
+          <div className="space-y-2 text-sm text-stone-600">
+            <p>🍁 <strong>六義園</strong>（駒込・11月下旬〜12月上旬）— 江戶時代大名庭園的紅葉夜間點燈超夢幻</p>
+            <p>🍁 <strong>昭和記念公園</strong>（立川・11月上旬〜下旬）— 東京最大級的紅葉隧道，本站也有詳細介紹</p>
+            <p>🍁 <strong>高尾山</strong>（八王子・11月中旬〜下旬）— 東京近郊登山＋賞楓一次體驗</p>
+            <p>🍁 <strong>新宿御苑</strong>（新宿・11月中旬〜12月上旬）— 免費入場的都心紅葉聖地</p>
+            <p>🍁 <strong>小石川後樂園</strong>（水道橋・11月下旬〜12月上旬）— 江戶回遊式庭園代表</p>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 最佳造訪時間是幾點？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                拍照優先的話推薦<strong>早上7:00〜9:00</strong>或<strong>平日下午</strong>，人潮相對少。銀杏並木的順光是從南邊（青山通側），下午3點左右光線最柔和適合拍照。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 紅葉的最佳觀賞期會變動嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                會。神宮外苑銀杏並木通常<strong>11月中旬開始轉黃、11月下旬〜12月上旬達到高峰</strong>，但每年因氣候而有1〜2週的差異。出發前建議在「日本紅葉情報」「ウェザーニュース紅葉見頃」等網站確認。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 銀杏會臭嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                銀杏果實掉落時會有特殊氣味，但神宮外苑並木的樹全部都是<strong>雄樹</strong>，不會結果，所以基本上沒有這個問題✨ 可以安心賞景拍照。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 附近有停車場嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                銀杏祭期間人潮爆多、車位很難找。強烈推薦搭乘<strong>東京メトロ</strong>：銀座線「外苑前」駅、大江戶線「国立競技場」駅、副都心線「北参道」駅任何一個都能徒歩到達。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 下雨天還值得去嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                下雨時銀杏葉會被打落，反而形成一整片<strong>金黃色地毯</strong>，別有一番風味🍂 而且人潮較少、拍照更容易。撐傘＆穿好防水鞋即可。
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">賞銀杏小建議</h2>
