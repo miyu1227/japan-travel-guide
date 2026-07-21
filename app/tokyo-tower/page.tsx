@@ -192,6 +192,89 @@ export default function TokyoTowerPage() {
           </div>
         </section>
 
+        {/* 歷史・背景 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">東京鐵塔的歷史與背景</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-2">
+            東京鐵塔於<strong>1958年12月23日</strong>完工，設計者是「塔博士」<strong>內藤多仲</strong>。高度<strong>332.9公尺</strong>，比法國艾菲爾鐵塔（324m）還高，完工當時是世界最高的自立式鐵塔🗼 建造目的是為了統一東京圈的電視電波塔，最上部曾裝設NHK＆民營電視台的天線。
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed">
+            2012年東京晴空塔完工後，電波塔的主要功能移交過去，但東京鐵塔仍作為<strong>備用電波塔＆觀光地標</strong>持續運營。塔身的橘白色是為了符合航空法規（每7年重新塗裝一次），總共使用約<strong>2萬8000公升</strong>的油漆。2013年被指定為<strong>登錄有形文化財</strong>。
+          </p>
+        </section>
+
+        {/* 順路推薦：附近景點 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">順路推薦：東京鐵塔附近景點</h2>
+          <div className="space-y-3">
+            <div className="flex gap-3">
+              <span className="text-red-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">增上寺（徒歩約2分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">德川家康祈願・德川將軍家廟所。以東京鐵塔為背景的三解脫門構圖是IG熱門拍照點。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-red-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">芝公園（徒歩約5分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">日本最古老的公園之一。從公園仰望東京鐵塔的角度超經典，春天賞櫻聖地。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-red-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">六本木Hills（電車約5分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">Roppongi Hills森大廈展望台可以從對面拍到東京鐵塔全景。夜景推薦。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-red-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">Azabudai Hills（徒歩約10分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">2023年開業的新地標，可以從辦公樓層免費眺望東京鐵塔。teamLab Borderless也在這裡。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京鐵塔 vs 東京晴空塔，該選哪個？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                東京鐵塔<strong>復古氛圍＆浪漫氣氛</strong>強，位在都心便於周邊行程串連；東京晴空塔<strong>高度更高（634m）＆展望更廣</strong>，但位置在墨田區。喜歡經典氛圍＆想拍地標本身選東京鐵塔，追求高度與新設施選晴空塔。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ Main Deck 和 Top Deck Tour 差在哪？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                <strong>Main Deck（150m）</strong>可自由參觀＆隨時入場，¥1,500。<strong>Top Deck Tour（250m）</strong>需事先預約時段、含導覽＋一杯飲品，¥3,300（網路）／¥3,500（現場）。想看更高更遠、有充裕時間的話推薦 Top Deck Tour。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 幾點去最好？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                最推薦<strong>日落前1小時到達</strong>——可以一次看到白天景色、黃昏、以及夜景轉換的三段風景。網站可查各月份的日落時間，冬天16:30左右、夏天19:00左右。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 天氣不好還值得去嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                晴朗時可以看到富士山、天氣不佳時能見度會下降。但雨天有<strong>「雨天限定的雲海景色」</strong>，夜晚燈光穿透雨霧也別有一番風味。強風時Top Deck可能會停止營運，建議事先查詢官網。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 有中文語音導覽嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                Top Deck Tour 提供<strong>13種語言</strong>的語音導覽，包含<strong>繁體中文與簡體中文</strong>。入場時可以拿導覽器材，跟著語音認識展望台看到的東京景色。
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">逛東京鐵塔小建議</h2>

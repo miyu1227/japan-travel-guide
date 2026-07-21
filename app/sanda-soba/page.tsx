@@ -183,6 +183,59 @@ export default function SandaSobaPage() {
           </div>
         </section>
 
+        {/* 蕎麥麵文化 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">關於日本蕎麥麵（そば）</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-2">
+            蕎麥麵是日本代表性的傳統麵食，江戶時代起就是庶民的日常美食🍃 依據蕎麥粉比例分為：<strong>「二八そば」（蕎麥粉8：麵粉2）</strong>是最常見比例、<strong>「十割そば」（100%蕎麥粉）</strong>是最高級也最難製作、<strong>「更科そば」</strong>則使用精製的白色蕎麥芯製作。
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed">
+            兵庫三田地區以<strong>清冽的水質＆山區氣候</strong>適合蕎麥栽培，江戶時代起就是關西的蕎麥產地之一。搭配三田產的<strong>山葵、蔥、天婦羅</strong>是最經典的吃法。日本人吃蕎麥麵時「刻意發出啜麵聲」是禮儀的一部分——代表「好吃」「感謝廚師」的意思。
+          </p>
+        </section>
+
+        {/* 三田地區介紹 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">關於三田（Sanda）</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-2">
+            三田市位於<strong>兵庫縣中部</strong>，離神戶市中心約30分鐘車程🌾 這裡以<strong>「三田牛」「三田米」「三田蕎麥」</strong>等優質農產聞名，也是關西人熟悉的<strong>神戶近郊小旅行目的地</strong>。
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed">
+            周邊還有<strong>有馬富士公園、KOBE三田Premium Outlets（アウトレット）</strong>等景點，可以規劃半天到一天的行程。搭電車從神戶三宮到三田約35分。
+          </p>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 冷そば還是溫そば選哪個？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                <strong>ざるそば（冷そば）</strong>是最能品嚐蕎麥本身風味的吃法，蕎麥的香氣與Q彈麵條最佳呈現。<strong>かけそば（溫湯そば）</strong>則是冬天的暖胃選擇。第一次吃推薦「<strong>ざるそば</strong>」。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 吃蕎麥麵有什麼禮儀？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                (1) 「啜麵發出聲音」是好禮，代表美味。 (2) 吃完後<strong>「そば湯（そば湯汁）」</strong>倒入沾醬容器裡當湯喝，是傳統作法。 (3) 沾醬<strong>只沾麵條前半段</strong>，感受麵條本身風味。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 蕎麥麵對麩質過敏者友善嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                <strong>十割そば（100%蕎麥粉）</strong>不含小麥麩質。但一般<strong>二八そば</strong>含20%小麥。有麩質不耐請確認店家的比例，並注意<strong>蕎麥本身可能引起過敏</strong>。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 從神戶要怎麼去？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                從<strong>神戶三宮</strong>搭JR神戶線→尼崎轉福知山線約35分到「三田」駅。或者從<strong>大阪梅田</strong>搭JR福知山線約50分。租車自駕約1小時，方便串連其他景點。
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">三田蕎麥麵旅行小建議</h2>

@@ -184,6 +184,61 @@ export default function TokyoCookiesPage() {
           </div>
         </section>
 
+        {/* 東京伴手禮文化 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">關於日本的「手土產」文化</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-2">
+            在日本，帶回<strong>「手土產（てみやげ／お土産）」</strong>是重要的社交禮儀🎁 從商務拜訪到探親、旅行歸來送同事，都會挑選有地方特色＆包裝精美的甜點。因此日本的手工餅乾、和菓子、洋菓子文化發達，各地都有代表性的伴手禮品牌。
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed">
+            東京作為日本首都，匯集了全國各地的伴手禮，也孕育出<strong>「銀座木村家」「銀座千疋屋」「toraya」</strong>等百年老店，以及新一代設計感十足的品牌。挑選時可以優先考慮：<strong>常溫可保存＆包裝精美＆單獨包裝</strong>——這三點是好伴手禮的關鍵。
+          </p>
+        </section>
+
+        {/* 其他東京伴手禮推薦 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">其他東京人氣伴手禮</h2>
+          <div className="space-y-2 text-sm text-stone-600">
+            <p>🍯 <strong>東京香蕉（東京ばな奈）</strong> — 東京車站限定，最經典的東京伴手禮</p>
+            <p>🍪 <strong>NEW YORK PERFECT CHEESE</strong> — 東京車站高人氣起司餅乾</p>
+            <p>🎂 <strong>PRESS BUTTER SAND</strong> — 焦糖奶油夾心餅，包裝時尚</p>
+            <p>🍰 <strong>Pierre Marcolini 生chocolat</strong> — 比利時巧克力大師，銀座本店</p>
+            <p>🥮 <strong>ヨックモック（YOKU MOKO）</strong> — 蛋捲餅乾世界知名，藍色鐵盒經典</p>
+            <p>🍡 <strong>とらや（Toraya）</strong> — 500年歷史和菓子老舖，最中＆羊羹是招牌</p>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 保存期限多久？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                手工餅乾類通常<strong>常溫可保存2〜4週</strong>。冬天可以稍長，夏天請避免高溫。開封後建議<strong>7〜10天內</strong>吃完口感最佳。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 帶回台灣・香港會壞嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                只要是<strong>密封包裝的常溫食品</strong>基本上沒問題。飛機行李託運或手提都可以。避開<strong>生鮮＆奶油含量高</strong>的商品（如生chocolat）。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京車站有哪些伴手禮店？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                東京車站的<strong>「Gransta（グランスタ）」＆「東京銘品館」</strong>集中販售東京代表伴手禮，回程前來一次採買最有效率。營業時間8:00〜22:00。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 預算大概多少？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                單盒<strong>¥1,000〜¥3,000</strong>是常見範圍。高級品牌如Pierre Marcolini可達¥5,000以上。多人分享建議選<strong>小包裝＋多顆入</strong>的款式，方便分送。
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">買伴手禮小建議</h2>

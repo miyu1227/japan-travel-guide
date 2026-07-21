@@ -188,6 +188,83 @@ export default function ShibuyaCafePage() {
           </div>
         </section>
 
+        {/* 澀谷地區 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">關於澀谷（Shibuya）</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-2">
+            澀谷是東京最具代表性的年輕文化＆潮流發信地🚶‍♀️ 車站前的<strong>「澀谷スクランブル交差点」（澀谷十字路口）</strong>是世界最繁忙的路口之一，一次紅綠燈可以有3000人同時穿越，是東京的觀光地標。
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed">
+            近年澀谷經歷大規模再開發，<strong>「澀谷スクランブルスクエア」「澀谷Hikarie」「MIYASHITA PARK」</strong>等新設施陸續開幕，也帶起了<strong>音樂＆黑膠唱片文化</strong>——澀谷從80年代起就是日本唱片行聚集地，宇多田光、椎名林檎等音樂人都從澀谷發跡。
+          </p>
+        </section>
+
+        {/* 順路推薦 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">順路推薦：澀谷附近景點</h2>
+          <div className="space-y-3">
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">澀谷スクランブル交差点（徒歩0分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">澀谷代表地標。從星巴克TSUTAYA店2樓或SHIBUYA SKY展望台俯瞰最壯觀。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">SHIBUYA SKY（徒歩約5分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">澀谷スクランブルスクエア屋上展望台，360度俯瞰東京。夕陽＆夜景絕景。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">明治神宮＆代代木公園（電車1站）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">澀谷喧鬧之後想沉靜，可以到隔壁的原宿逛明治神宮的森林。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">下北澤（電車約5分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">從澀谷搭京王井の頭線一路直達下北澤，喜歡音樂＆二手唱片文化可以延伸。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 澀谷咖啡廳需要預約嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                大多不接受預約，先到先得。體驗型咖啡廳（黑膠試聽等）建議<strong>平日下午</strong>比較空。假日下午常需排隊。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 澀谷駅怎麼走最不迷路？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                澀谷駅結構複雜，出口眾多。目的地在<strong>スクランブル交差点方向</strong>就找<strong>「ハチ公口」</strong>出口最好認（忠犬八公像在門口）。手機開Google Maps＆看指標最保險。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 澀谷什麼時段人最多？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                週五・週六<strong>晚上7〜11點</strong>是澀谷夜生活高峰，人潮爆炸。想拍到少人スクランブル交差点推薦<strong>清晨6〜8點</strong>或<strong>平日午前</strong>。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 交通最方便的路線？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                澀谷駅是<strong>JR山手線・埼京線・湘南新宿線＋東京メトロ副都心線・銀座線・半藏門線＋京王井の頭線＋東急東橫線・田園都市線</strong>共9條路線的巨型轉乘站，來自哪都很方便。
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">澀谷咖啡廳造訪小建議</h2>

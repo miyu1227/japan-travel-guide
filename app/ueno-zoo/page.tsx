@@ -184,6 +184,117 @@ export default function UenoZooPage() {
           </div>
         </section>
 
+        {/* 歷史 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">上野動物園的歷史</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-2">
+            上野動物園（正式名稱：<strong>東京都恩賜上野動物園</strong>）於<strong>1882年3月20日</strong>開園，是<strong>日本最古老的動物園</strong>🐘 佔地約14.3公頃，飼育約<strong>350種、3000隻</strong>動物，是日本最具代表性的動物園之一。
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed">
+            園區分為<strong>東園＆西園</strong>，兩園之間有<strong>「東園～西園架空索道（東京都営）」</strong>連結（目前運休中）。1972年中日建交紀念，中國贈送第一對大熊貓「康康＆蘭蘭」，從此上野動物園＝大熊貓的印象深植人心🐼 現在的<strong>公主櫻濱＆桃鈴</strong>是2021年出生的雙胞胎。
+          </p>
+        </section>
+
+        {/* 熊貓觀覽情報 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">大熊貓觀覽的秘訣</h2>
+          <div className="space-y-3">
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">早上開園時最有機會看到熊貓活動</p>
+                <p className="text-xs text-stone-500 leading-relaxed">熊貓在早上10點前較活躍，中午常常在午睡。想看熊貓吃竹子的話開園（9:30）就入場最有機會。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">假日需要「觀覽整理券」</p>
+                <p className="text-xs text-stone-500 leading-relaxed">週六日＆連休期間，熊貓館入場需要事先領取或線上抽選整理券。出發前必看官網最新資訊。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">分為「熊貓森林」＆「熊貓館」兩區</p>
+                <p className="text-xs text-stone-500 leading-relaxed">「熊貓森林」是2020年新開放的區域，環境更自然。兩區的熊貓不同隻，記得都要看。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 順路推薦 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">順路推薦：上野動物園附近景點</h2>
+          <div className="space-y-3">
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">上野公園（動物園就在公園內）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">春天賞櫻聖地、有東京國立博物館、國立西洋美術館等文化設施。散步很療癒。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">阿美橫丁（徒歩約5分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">上野代表的商店街，海鮮丼、章魚燒、伴手禮應有盡有。逛完動物園過來吃午餐超順路。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">東京國立博物館（徒歩約5分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">日本最古老＆規模最大的博物館，收藏11萬件文物包含國寶級展品。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">淺草（電車約8分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">從上野搭銀座線只要幾站就到淺草寺・仲見世通，行程串連很順。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要多久才能逛完？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                想看重點動物約<strong>2〜3小時</strong>，慢慢逛全區約<strong>半天（4〜5小時）</strong>。有小朋友的話建議預留半天以上。園區廣，記得穿好走的鞋。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 門票能現場買嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                可以，但假日、櫻花季、熊貓熱潮期會排隊。<strong>網路購票（東京都立公園網站）</strong>可以省去排隊時間。門票大人¥600，中學生¥200，65歲以上¥300，小學生以下免費——超佛心！
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 一定能看到大熊貓嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                熊貓館有<strong>健檢日、換場整備日</strong>會臨時休館，或熊貓身體狀況不佳時暫停展出。出發前一定要看官網「本日的動物」頁面確認。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 帶小朋友需要注意什麼？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                可租借嬰兒車（¥300/日）、園內有多個育兒室＆餵奶處。夏天特別要注意<strong>防曬＆水分補給</strong>，東園東邊有兒童動物園可以近距離接觸小動物。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 雨天可以去嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                可以，室內展示館包含<strong>兩棲爬蟲類館、鳥館</strong>都能避雨。動物在雨天反而較活躍，人潮也少，是拍照的好時機📸
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">逛動物園小建議</h2>

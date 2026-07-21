@@ -182,6 +182,83 @@ export default function IseharaGelatoPage() {
           </div>
         </section>
 
+        {/* 伊勢原地區背景 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">關於伊勢原（Isehara）</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-2">
+            伊勢原市位於<strong>神奈川縣中央部</strong>，是東京近郊人氣的自然＆美食小旅行目的地🌾 從新宿搭小田急線約1小時就能抵達，交通方便卻能享受被丹澤山脈環抱的田園風光。
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed">
+            伊勢原以<strong>「大山信仰」</strong>——江戶時代最盛行的登山參拜文化聞名，也有優質的<strong>酪農業</strong>，因此當地產鮮乳與義式冰淇淋（gelato）非常有名。加上農場、果園豐富，是<strong>採草莓、採葡萄</strong>等體驗行程的熱門地區。
+          </p>
+        </section>
+
+        {/* 順路推薦 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">順路推薦：伊勢原附近景點</h2>
+          <div className="space-y-3">
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">大山阿夫利神社（開車約30分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">2200年歷史的名神社，可搭纜車＆登山參拜。秋天紅葉超美，是伊勢原的代表景點。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">大山豆腐街道（大山參道）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">大山名物「大山豆腐料理」老舖林立，搭配鮮乳gelato完美一日行程。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">箱根（電車約30分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">從伊勢原搭小田急線到箱根方向串連，可安排箱根一日遊。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">江之島＆鎌倉（電車約1小時）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">搭小田急線也可以到江之島＆鎌倉方向。神奈川一日遊行程串連很方便。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 從新宿要怎麼去？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                從<strong>新宿駅</strong>搭小田急線（急行或快速急行）約1小時到「伊勢原」駅。單程約¥700。<strong>浪漫特快「Romancecar」</strong>約50分，比較快但需要指定席票。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 什麼季節去最好？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                <strong>春（3〜5月）</strong>大山桜、<strong>夏（6〜8月）</strong>gelato最美味、<strong>秋（10〜11月）</strong>紅葉季、<strong>冬（12〜2月）</strong>草莓採收。全年都有魅力，看你偏好什麼。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 適合一日遊嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                非常適合🎒 <strong>推薦行程</strong>：早上新宿出發→上午到伊勢原逛牧場gelato→中午大山豆腐料理→下午大山阿夫利神社參拜→傍晚回東京。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要租車嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                伊勢原駅有<strong>公車</strong>可到各景點，不強制需要租車。但如果想深入牧場、農場多處遊覽，租車會更彈性。伊勢原駅有Times Car等租車服務。
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">伊勢原旅行小建議</h2>

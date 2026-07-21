@@ -203,6 +203,82 @@ export default function SteakZenPage() {
           </p>
         </section>
 
+        {/* 神戶牛 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">關於神戶牛（Kobe Beef）</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-2">
+            神戶牛是<strong>「兵庫縣產但馬牛」</strong>中，經過嚴格認證的最高等級和牛🥩 與松阪牛、近江牛並稱<strong>「日本三大和牛」</strong>，2010年被英國米其林指南評為世界頂級牛肉，享譽國際。
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed">
+            要被稱為「神戶牛」必須達到以下嚴苛條件：<strong>①兵庫縣內飼養的但馬牛未經產雌牛或去勢公牛、②肉質等級4以上、③BMS（脂肪交雜度）6以上、④枝肉重量499.9kg以下</strong>。年間認證量僅約4,000〜5,000頭，稀有度極高。頂級神戶牛的<strong>「霜降紋路」</strong>細膩如大理石，入口即化的口感是最大特色。
+          </p>
+        </section>
+
+        {/* 神戶牛料理方式 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">神戶牛的3種料理方式</h2>
+          <div className="space-y-3">
+            <div className="flex gap-3">
+              <span className="text-red-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">鐵板燒（Teppanyaki）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">主廚在客人面前現煎，享受表演感＆最高等級的火候控制。是神戶牛最經典的享用方式，客單價¥15,000〜。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-red-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">壽喜燒（Sukiyaki）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">薄切神戶牛蘸醬燒煮，加上蛋液更能凸顯脂肪的甘甜。傳統日式吃法，家庭氛圍。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-red-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">燒肉（Yakiniku）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">自己烤，可以享受不同部位（レバー、上ロース、ハラミ等）的差異。CP值相對親民，¥6,000〜。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 神戶牛跟松阪牛差在哪？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                都是最高等級和牛，但飼育地區不同：<strong>神戶牛</strong>是兵庫縣但馬地區、<strong>松阪牛</strong>是三重縣松阪地區。神戶牛脂肪細膩、香氣清爽；松阪牛脂肪更豐富、風味更濃郁。兩者都是世界頂級。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 為什麼一定要預約？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                神戶牛專門店多數是<strong>店主親自服務＆座位有限（10〜20席）</strong>。假日一週前就常客滿。特別鐵板燒需要預留主廚烹調時間。建議<strong>2週前預約</strong>最保險。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 客單價大約多少？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                <strong>鐵板燒晚餐 ¥15,000〜¥30,000／人</strong>、<strong>午餐套餐 ¥8,000〜¥15,000</strong>是常見價位。想體驗神戶牛又控制預算，<strong>午餐時段</strong>是最佳選擇。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 神戶牛可以帶回台灣・香港嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                原則上<strong>生鮮牛肉入境是被限制的</strong>（台灣禁止、香港限量）。想帶伴手禮的話，可以買<strong>神戶牛咖哩包、牛肉乾、神戶牛餅乾</strong>等常溫加工品。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 素食者可以陪同嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                多數店家會準備<strong>蔬菜料理＆海鮮</strong>作為替代方案。預約時提前告知，主廚可以彈性調整套餐。
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">吃神戶牛小建議</h2>

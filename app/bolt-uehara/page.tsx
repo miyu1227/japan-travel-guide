@@ -168,6 +168,70 @@ export default function BoltUeharaPage() {
           </div>
         </section>
 
+        {/* 代代木上原地區介紹 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">關於代代木上原（Yoyogi-Uehara）</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-2">
+            代代木上原位於<strong>澀谷區</strong>西側，是東京都心少有的<strong>綠意豐富＆步調悠閒</strong>的高級住宅區🌿 從新宿搭東京メトロ千代田線約6分、澀谷約8分，交通便利卻不喧鬧，深受日本文青、藝人、外國僑民喜愛。
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed">
+            這裡沒有澀谷・原宿那種年輕流行感，也不像青山・表參道那麼刻意設計，反而以<strong>「大人が本当に住みたい街」（大人真正想住的街）</strong>的口碑聞名——藏著許多獨立咖啡廳、精品麵包店、精品選物店，適合喜歡緩慢生活的旅客散步一整個下午。
+          </p>
+        </section>
+
+        {/* 順路推薦 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">順路推薦：代代木上原附近</h2>
+          <div className="space-y-3">
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">東京Camii（土耳其清真寺／徒歩約5分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">日本最大的清真寺，建築超美，可以免費參觀（女性需頭巾）。是代代木上原的隱藏景點。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">代代木八幡宮（電車1站）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">東京稀有的都心森林神社，可拍到「東京鐵塔＋鳥居」的絕景構圖。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">下北澤（電車約5分）</p>
+                <p className="text-xs text-stone-500 leading-relaxed">從代代木上原搭小田急線1站到下北澤。喜歡文青氛圍的話兩個地區可以合併安排。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 沒有預約可以直接進去嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                獨立咖啡廳大多不接受預約，先到先得。假日的午餐時段常需排隊，推薦<strong>平日下午or週末早上</strong>比較容易入店。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 有Wi-Fi嗎？可以工作嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                代代木上原的咖啡廳文化偏「享受咖啡」，不是筆電工作型。有些店禁止長時間佔位，短時間拍照＆放鬆最合適。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 交通最方便的路線？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                最方便是<strong>東京メトロ千代田線「代々木上原」駅</strong>。JR新宿駅→搭千代田線約6分。<strong>小田急線</strong>也有代代木上原停靠。
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">代代木上原旅遊小建議</h2>

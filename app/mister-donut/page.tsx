@@ -174,6 +174,82 @@ export default function MisterDonutPage() {
           </div>
         </section>
 
+        {/* Mister Donut 品牌背景 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">關於 Mister Donut（ミスド）</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-2">
+            Mister Donut（ミスタードーナツ／ミスド）是<strong>日本最大的甜甜圈連鎖店</strong>🍩 起源於1955年的美國，1970年由日本Duskin引進，目前在日本已有超過<strong>950家分店</strong>。招牌商品「<strong>Pon de Ring（ポン・デ・リング）</strong>」是2003年推出的Q彈波堤造型甜甜圈，是ミスド的代表商品。
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed">
+            ミスド的季節限定商品變化豐富，經常與<strong>森半・GODIVA・祇園辻利・銀座木村家</strong>等品牌聯名，是日本人非常熟悉的甜點日常。這次介紹的「もっちゅりん」是Pon de Ring加上布丁醬的話題新品🍮
+          </p>
+        </section>
+
+        {/* もっちゅりん 詳細 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">もっちゅりん（Mocchurin）詳細</h2>
+          <div className="space-y-3">
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">口感特色</p>
+                <p className="text-xs text-stone-500 leading-relaxed">外層是Pon de Ring特有的<strong>Q彈連珠麻糬狀</strong>，內裡注入濃郁的<strong>卡士達布丁醬</strong>，一口下去有麻糬＋布丁的雙重口感。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">口味種類</p>
+                <p className="text-xs text-stone-500 leading-relaxed">卡士達布丁、抹茶布丁、焦糖布丁等季節限定口味交替推出。看官網最新資訊確認當前販售款式。</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">價格參考</p>
+                <p className="text-xs text-stone-500 leading-relaxed">單顆<strong>¥237左右（含稅）</strong>，內用有時稍貴。可搭配ミスド套餐折扣。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ もっちゅりん是常態商品嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                目前是<strong>期間限定＋話題商品</strong>，售完為止。想吃務必盡早去，都心店常常上午就售完。ミスド經常會再度推出人氣款式，關注官網＆Twitter最新情報。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 哪間店比較容易買到？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                <strong>郊外店＆非車站型分店</strong>比都心大車站店更好買。東京都心的話推薦上野・池袋郊外店，關西則推薦大阪郊外店。避開澀谷・新宿等激戰區。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 可以外帶多久？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                甜甜圈類<strong>當天內</strong>食用最美味，冷藏保存約1〜2天但布丁餡口感會變化。飯店冰箱冰過再吃反而別有一番風味，但建議當天吃完。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要事先預約嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                部分分店可電話預約，但外國旅客要用日文較困難。實際上「早鳥策略」＝<strong>開店時間就到店</strong>最實際。或者一次買8顆以上有BOX包裝折扣。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 附近哪裡可以買到？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                ミスド的分店查詢：<a href="https://misterdonut.jp/shop/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">官方分店檢索</a>。日本各都道府縣都有分店，特別是東京・大阪・京都・名古屋等大都市集中。
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">購買小建議</h2>
