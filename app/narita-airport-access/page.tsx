@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import AuthorCard from "../components/AuthorCard";
 
 const PAGE_URL = "https://www.japantrippicks.com/narita-airport-access";
 const OG_IMAGE = "/narita-airport-access/cover.png";
@@ -430,6 +431,7 @@ export default function NaritaAirportAccessPage() {
           </p>
         </section>
 
+        <AuthorCard />
         <PrepBanner />
 
         {/* ぽやぴよ */}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import AuthorCard from "../components/AuthorCard";
 
 const PAGE_URL = "https://www.japantrippicks.com/osaka-gourmet";
 const OG_IMAGE = "/osaka-gourmet/teppan-1.jpg";
@@ -261,6 +262,7 @@ export default function OsakaGourmetPage() {
           </div>
         </div>
 
+        <AuthorCard />
         <PrepBanner />
 
         {/* 延伸閱讀 */}

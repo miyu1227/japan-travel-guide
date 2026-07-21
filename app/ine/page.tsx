@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import AuthorCard from "../components/AuthorCard";
 
 const KLOOK_INE_TOUR =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339927&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F150458-amanohashidate-iegan-day-trip-iegan-boat-house-iegan-bay-cruise-aman";
@@ -291,6 +292,7 @@ export default function InePage() {
           </div>
         </div>
 
+        <AuthorCard />
         <PrepBanner />
 
         {/* 延伸閱讀 */}

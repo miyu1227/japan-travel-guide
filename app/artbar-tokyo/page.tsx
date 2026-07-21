@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import AuthorCard from "../components/AuthorCard";
 
 const PAGE_URL = "https://www.japantrippicks.com/artbar-tokyo";
 const OG_IMAGE = "/artbar-tokyo/artbar-1.jpg";
@@ -208,6 +209,7 @@ export default function ArtbarTokyoPage() {
           </div>
         </div>
 
+        <AuthorCard />
         <PrepBanner />
 
         {/* 延伸閱讀 */}

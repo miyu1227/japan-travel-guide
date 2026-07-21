@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import AuthorCard from "../components/AuthorCard";
 
 const PAGE_URL = "https://www.japantrippicks.com/haneda-airport-access";
 const OG_IMAGE = "/haneda-airport-access/cover.png";
@@ -421,6 +422,7 @@ export default function HanedaAirportAccessPage() {
           </p>
         </section>
 
+        <AuthorCard />
         <PrepBanner />
 
         {/* ぽやぴよ */}

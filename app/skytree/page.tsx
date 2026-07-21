@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import AuthorCard from "../components/AuthorCard";
 
 const PAGE_URL = "https://www.japantrippicks.com/skytree";
 const OG_IMAGE = "/skytree/cover.png";
@@ -362,6 +363,7 @@ export default function SkytreePage() {
           </p>
         </section>
 
+        <AuthorCard />
         <PrepBanner />
 
         {/* ぽやぴよ */}

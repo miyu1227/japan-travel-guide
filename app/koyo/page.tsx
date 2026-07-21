@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/koyo";
@@ -211,6 +212,7 @@ export default function KoyoPage() {
           </div>
         </div>
 
+        <AuthorCard />
         <PrepBanner />
 
         {/* 延伸閱讀 */}

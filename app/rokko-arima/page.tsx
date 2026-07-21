@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import AuthorCard from "../components/AuthorCard";
 
 const KLOOK_ROKKO_NIGHT =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339868&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F88299-mtrokko-night-view-day-tour-kobe-osaka";
@@ -305,6 +306,7 @@ export default function RokkoArimaPage() {
           </a>
         </section>
 
+        <AuthorCard />
         <PrepBanner />
 
         {/* 延伸閱讀 */}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import AuthorCard from "../components/AuthorCard";
 
 const PAGE_URL = "https://www.japantrippicks.com/shibuya-cafe";
 const OG_IMAGE = "/shibuya-cafe/recoco-1.jpg";
@@ -212,6 +213,7 @@ export default function ShibuyaCafePage() {
           </div>
         </div>
 
+        <AuthorCard />
         <PrepBanner />
 
         {/* 延伸閱讀 */}

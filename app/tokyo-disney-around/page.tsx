@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
+import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const KLOOK_SHUTTLE =
@@ -329,6 +330,7 @@ export default function TokyoDisneyAroundPage() {
           </div>
         </section>
 
+        <AuthorCard />
         <PrepBanner />
 
         {/* Back */}
