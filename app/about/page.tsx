@@ -15,7 +15,7 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "ぽやぴよ",
-  description: "東京在住日本人ブロガー。Japan Trip Picks運營者。實際造訪過所有介紹景點的第一手日本旅遊資訊。",
+  description: "東京在住的日本人部落客。Japan Trip Picks 網站營運者。介紹自己實際造訪過的日本景點・美食・咖啡廳，用第一視角分享給台灣・香港旅客。",
   url: PAGE_URL,
   jobTitle: "旅遊部落客・網站營運者",
   worksFor: {
