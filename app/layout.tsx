@@ -81,14 +81,6 @@ const websiteJsonLd = {
   url: "https://www.japantrippicks.com",
   description: "台灣・香港旅客專屬的日本旅遊指南",
   inLanguage: "zh-TW",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: "https://www.japantrippicks.com/?q={search_term_string}",
-    },
-    "query-input": "required name=search_term_string",
-  },
   publisher: {
     "@type": "Organization",
     name: "Japan Trip Picks",
