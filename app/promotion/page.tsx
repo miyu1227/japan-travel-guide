@@ -1,4 +1,31 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+const PAGE_URL = "https://www.japantrippicks.com/promotion";
+const OG_IMAGE = "/poyapiyo-flag.png";
+
+export const metadata: Metadata = {
+  title: "掲載・プロモーションのご案内｜訪日台湾・香港旅行者向けPR",
+  description:
+    "訪日外国人（台湾・香港）向け旅行ガイドサイト Japan Trip Picks への店舗・スポット掲載プランのご案内。ライトプラン¥5,000／スタンダードプラン¥10,000、日本語＋繁体字での紹介文作成つき・永久掲載。SNS紹介オプションもご用意しています。",
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: "掲載・プロモーションのご案内｜Japan Trip Picks",
+    description:
+      "台湾・香港の訪日旅行者に向けて、あなたのお店・スポットをPRしませんか？掲載プラン・料金・お問い合わせ方法のご案内。",
+    url: PAGE_URL,
+    type: "website",
+    locale: "ja_JP",
+    siteName: "Japan Trip Picks",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Japan Trip Picks 掲載・プロモーションのご案内" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "掲載・プロモーションのご案内｜Japan Trip Picks",
+    description: "台湾・香港の訪日旅行者向けにお店・スポットをPR。掲載プランと料金のご案内。",
+    images: [OG_IMAGE],
+  },
+};
 
 export default function PromotionPage() {
   return (
