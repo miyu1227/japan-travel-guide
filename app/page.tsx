@@ -120,6 +120,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   cafe: [
     {
+      name: "清澄白河咖啡廳推薦2選｜B² ＆ iki Roastery・東京咖啡聖地☕",
+      desc: "麵包工廠×咖啡烘焙廠的 B²，隅田川旁倉庫改建的 iki，兩間都早上開門",
+      tag: "東京",
+      emoji: "☕",
+      href: "/kiyosumi-cafe",
+      image: "/kiyosumi-cafe/iki-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "池尻大橋咖啡廳推薦｜UN LIVRE・澀谷一站的法式甜點名店🍓",
       desc: "澀谷搭車一站直達！當季水果蛋糕＆夏季限定刨冰，寵物友善露台座位",
       tag: "東京",
@@ -773,6 +782,7 @@ export default function Home() {
               { href: "/nakameguro-cafe", label: "中目黑星巴克" },
               { href: "/ikejiri-cafe", label: "池尻大橋咖啡" },
               { href: "/shibuya-yakiniku", label: "澀谷燒肉" },
+              { href: "/kiyosumi-cafe", label: "清澄白河咖啡" },
               { href: "/shimokitazawa-cafe", label: "下北澤咖啡" },
               { href: "/rokko-arima", label: "有馬溫泉" },
               { href: "/japan-esim", label: "日本eSIM" },

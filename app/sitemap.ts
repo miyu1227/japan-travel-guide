@@ -19,6 +19,7 @@ const ARTICLE_ROUTES: { slug: string; priority?: number }[] = [
   { slug: "tokyo-cookies", priority: 0.8 },
   // Cafés
   { slug: "cafe", priority: 0.9 },
+  { slug: "kiyosumi-cafe", priority: 0.8 },
   { slug: "ikejiri-cafe", priority: 0.8 },
   { slug: "shibuya-cafe", priority: 0.8 },
   { slug: "bolt-uehara", priority: 0.8 },
