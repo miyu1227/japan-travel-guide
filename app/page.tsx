@@ -17,6 +17,15 @@ const areas = ["すべて", "東京", "大阪", "兵庫", "北海道", "四国",
 const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string; areas: string[] }[]> = {
   ramen: [
     {
+      name: "澀谷燒肉推薦｜ホルモン千葉・京都發跡的內臟燒肉名店🥩",
+      desc: "獨創斜面鐵板收集肉汁！店員全程代烤，收尾炒烏龍麵必吃",
+      tag: "東京",
+      emoji: "🥩",
+      href: "/shibuya-yakiniku",
+      image: "/shibuya-yakiniku/chiba-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "兵庫三田蕎麥麵推薦｜蕎麦いち・關西手打蕎麥名店🍃",
       desc: "神戶近郊隱藏名店！嚴選國產蕎麥粉的職人手打蕎麥",
       tag: "兵庫",
@@ -763,6 +772,7 @@ export default function Home() {
               { href: "/katsunuma", label: "山梨勝沼" },
               { href: "/nakameguro-cafe", label: "中目黑星巴克" },
               { href: "/ikejiri-cafe", label: "池尻大橋咖啡" },
+              { href: "/shibuya-yakiniku", label: "澀谷燒肉" },
               { href: "/shimokitazawa-cafe", label: "下北澤咖啡" },
               { href: "/rokko-arima", label: "有馬溫泉" },
               { href: "/japan-esim", label: "日本eSIM" },
