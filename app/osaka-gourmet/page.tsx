@@ -56,7 +56,7 @@ const teppanPhotos = ["/osaka-gourmet/teppan-1.jpg", "/osaka-gourmet/teppan-2.jp
 const billiePhotos = ["/osaka-gourmet/billie-1.jpg", "/osaka-gourmet/billie-2.jpg", "/osaka-gourmet/billie-3.jpg", "/osaka-gourmet/billie-4.jpg"];
 
 const relatedLinks = [
-  { href: "/ramen", label: "🍜 日本拉麵推薦｜東京・大阪必吃拉麵5選", desc: "濃厚魚介系つけ麺から家系まで" },
+  { href: "/kansai-ramen", label: "🍜 關西拉麵推薦｜大阪必吃濃厚魚介沾麵", desc: "肥後橋つじ田・加檸檬與黑七味變化風味" },
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "A5鐵板燒名店・主廚現煎" },
   { href: "/ginza-apollo", label: "🍽️ 銀座美食推薦｜THE APOLLO 希臘料理", desc: "東京話題餐廳・地中海風味分享盤" },
 ];

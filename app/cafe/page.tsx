@@ -114,7 +114,7 @@ const shops = [
 ];
 
 const relatedLinks = [
-  { href: "/ramen", label: "🍜 東京・大阪拉麵推薦｜5間必吃拉麵", desc: "濃厚魚介系つけ麺から家系まで" },
+  { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "悠閒散步的人氣公園完全指南" },
   { href: "/hakone", label: "🚃 箱根一日遊推薦｜從東京搭浪漫特快出發", desc: "美術館・足湯・神社的完美行程" },
 ];

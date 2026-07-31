@@ -6,26 +6,26 @@ import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/ramen";
-const OG_IMAGE = "/ramen/tsujita-1.jpg";
+const OG_IMAGE = "/ramen/washo-1.jpg";
 
 export const metadata: Metadata = {
-  title: "日本拉麵推薦｜東京・大阪必吃拉麵6選【實際吃過】",
+  title: "東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系【實際吃過】",
   description:
-    "整理6間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店和利道、全國連鎖家系拉麵町田商店、中目黒俺流鹽味拉麵、台場神仙金澤濃厚豚骨、六本木AFURI柚子鹽拉麵。來東京或大阪旅遊必吃！附地址・交通・推薦菜單。",
+    "東京拉麵推薦！整理6間實際吃過的東京必吃拉麵：三軒茶屋無招牌名店「めん和正」、目黑排隊店和利道、中目黑俺流鹽味、台場神仙金澤濃厚豚骨、六本木AFURI柚子鹽、全國連鎖家系町田商店。附地址・交通・價格・推薦菜單。台灣・香港旅客東京自由行必收藏🍜",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "日本拉麵推薦｜東京・大阪必吃拉麵6選【實際吃過】",
-    description: "整理5間實際吃過的日本拉麵推薦。大阪魚介つけ麺・東京排隊名店・家系拉麵・中目黒鹽味・台場神仙豚骨・六本木AFURI柚子鹽。附地址・交通。",
+    title: "東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系",
+    description: "三軒茶屋無招牌名店・目黑排隊店・中目黑鹽味・台場豚骨・六本木柚子鹽・家系拉麵。實際吃過的東京拉麵6選！",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
     siteName: "Japan Trip Picks",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "日本拉麵推薦" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "東京拉麵推薦・めん和正的中華麵" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "日本拉麵推薦｜東京・大阪必吃拉麵6選",
-    description: "大阪魚介つけ麺・東京排隊名店・家系拉麵・中目黒鹽味・台場豚骨・六本木柚子鹽。實際吃過的6間推薦！",
+    title: "東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系",
+    description: "三軒茶屋無招牌名店・目黑排隊店・台場豚骨・六本木柚子鹽。實際吃過的東京拉麵6選🍜",
     images: [OG_IMAGE],
   },
 };
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "日本拉麵推薦｜東京・大阪必吃拉麵6選【實際吃過】",
-  description: "整理6間實際吃過的日本拉麵推薦，包含大阪濃厚魚介つけ麺、東京排隊名店、全國連鎖家系拉麵、中目黒俺流鹽味拉麵、台場神仙金澤濃厚豚骨、六本木AFURI柚子鹽拉麵。",
+  headline: "東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系【實際吃過】",
+  description: "整理6間實際吃過的東京拉麵推薦，包含三軒茶屋めん和正、目黑和利道、中目黑俺流鹽味、台場神仙、六本木AFURI柚子鹽、家系町田商店。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-07-31T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -49,28 +49,30 @@ const breadcrumbJsonLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "首頁", item: "https://www.japantrippicks.com" },
-    { "@type": "ListItem", position: 2, name: "拉麵推薦", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "東京拉麵推薦", item: PAGE_URL },
   ],
 };
 
 const shops = [
   {
-    id: "tsujita",
+    id: "washo",
     number: 1,
-    name: "つじ田 肥後橋店",
-    highlight: "濃厚魚介系つけ麺",
-    url: "https://tsukemen-tsujita.com/shop/?id=0010030",
-    tag: "大阪",
-    recommend: "つけ麺",
-    images: ["/ramen/tsujita-2.jpg", "/ramen/tsujita-1.jpg"],
-    intro: "大阪肥後橋人氣名店，以濃厚魚介系つけ麺聞名。湯頭濃郁帶有魚介香氣，麵條偏粗，口感很有嚼勁。",
-    reason: "吃到一半加上檸檬或黑七味，味道會有不同變化，非常有特色✨ 很適合喜歡濃郁湯頭的旅客，是大阪拉麵中少見的高品質つけ麺。",
+    name: "めん 和正（Men Washo）",
+    highlight: "三軒茶屋・無招牌的煮干魚介名店",
+    url: "https://tabelog.com/tokyo/A1317/A131706/13050021/",
+    tag: "東京",
+    recommend: "中華麵（中華麺）／沾麵（つけ麺）",
+    images: ["/ramen/washo-1.jpg", "/ramen/washo-2.jpg"],
+    intro:
+      "位在三軒茶屋、開在246大馬路旁卻幾乎沒有招牌的隱藏名店。店主出身自東京煮干系的傳奇名店「永福町大勝軒」，湯頭以煮干（小魚乾）與柴魚熬成，香氣濃烈、帶著微微的稠度，卻是無添加化學調味料的做法。菜單只有「中華麵」與「沾麵」兩種，連白飯類都沒有，是一間把全部力氣都放在麵上的店。",
+    reason:
+      "門口只掛著一塊小小的木牌，第一次去100%會走過頭😅 但推開拉門後端出來的那碗，是東京少見的正統煮干系——湯色偏深卻不死鹹，捲曲的粗麵吸滿魚介香，配上厚實的煮豬叉燒與大量筍乾，滿足度極高🔥 麵量可以用<strong>0.5玉為單位加價增量</strong>，食量大的人也不怕。座位只有10席、僅收現金，是很有「東京在地拉麵店」感覺的一間。",
     basicInfo: {
-      address: "大阪市西区江戸堀1-9-26",
-      access: "地下鉄四つ橋線「肥後橋」駅 徒歩約3分",
-      price: "¥1,000〜¥1,500",
+      address: "東京都世田谷區太子堂2-6-2",
+      access: "東急田園都市線・世田谷線「三軒茶屋」駅 徒歩約7分（沿國道246號往澀谷方向）",
+      price: "¥900〜¥1,200（僅收現金）",
     },
-    tags: ["🐟 魚介系", "🍋 可加檸檬", "⭐ 大阪必吃"],
+    tags: ["🐟 煮干魚介系", "🏮 永福町大勝軒系", "🈚 無招牌隱藏店", "💵 僅收現金"],
   },
   {
     id: "warido",
@@ -84,51 +86,33 @@ const shops = [
     intro: "東京人氣極高的排隊拉麵店，以濃厚魚介系湯頭聞名。味道偏重但非常香濃，令人印象深刻。",
     reason: "很多人專程來吃，常常需要排隊，但真的很值得🔥 如果你來東京旅遊想吃拉麵，這間是非常推薦的選擇之一。建議平日早點去避開人潮。",
     basicInfo: {
-      address: "東京都目黒区目黒周辺",
-      access: "JR・東急「目黒」駅 徒歩約10分",
+      address: "東京都目黑區目黑周邊",
+      access: "JR・東急「目黑」駅 徒歩約10分",
       price: "¥1,100〜¥1,600",
     },
     tags: ["🔥 排隊名店", "🐟 濃厚魚介", "⭐ 東京必吃"],
   },
   {
-    id: "machida",
-    number: 3,
-    name: "町田商店",
-    highlight: "家系拉麵・全國連鎖",
-    url: "https://www.machidashoten.com/menu",
-    tag: "全國",
-    recommend: "豚骨醬油拉麵",
-    images: ["/ramen/machida.jpg"],
-    intro: "日本超有名的連鎖家系拉麵，特色是濃厚豚骨醬油湯頭，搭配海苔和白飯完美絕配！",
-    reason: "可以選擇麵硬度、湯頭濃度、油量，自由度很高，非常適合第一次體驗日本拉麵的旅客👍 日本各地都有分店，隨時都能去。",
-    basicInfo: {
-      address: "日本各地（全國連鎖）",
-      access: "各地都有，可用Google Map搜尋最近分店",
-      price: "¥800〜¥1,200",
-    },
-    tags: ["🐷 豚骨醬油", "🏪 全國連鎖", "👶 初次挑戰OK"],
-  },
-  {
     id: "oreryuu",
-    number: 4,
-    name: "俺流鹽味拉麵 中目黒店",
+    number: 3,
+    name: "俺流鹽味拉麵 中目黑店",
     highlight: "配料自由搭配・清爽鹽味",
     url: "https://oreryushio.co.jp/?page_id=129",
     tag: "東京",
     recommend: "鹽味拉麵（自由加配料）",
     images: ["/ramen/oreryuu-1.jpg", "/ramen/oreryuu-2.jpg"],
-    intro: "位於中目黒的人氣鹽味拉麵店，湯頭清爽卻帶有深度，是不分客層都喜愛的一碗。氛圍輕鬆，一個人也很容易進去用餐。",
+    intro: "位於中目黑的人氣鹽味拉麵店，湯頭清爽卻帶有深度，是不分客層都喜愛的一碗。氛圍輕鬆，一個人也很容易進去用餐。",
     reason: "最大魅力是配料自由度超高！種類豐富，可以依自己喜好客製化，這次點的一碗加了滿滿的叉燒和半熟蛋，分量十足✨ 不會太油膩，無論午餐或晚餐都剛剛好。",
     basicInfo: {
-      address: "東京都目黒区上目黒3-1-4",
-      access: "東急東横線・東京メトロ日比谷線「中目黒」駅 徒歩約2分",
+      address: "東京都目黑區上目黑3-1-4",
+      access: "東急東橫線・東京地下鐵日比谷線「中目黑」駅 徒歩約2分",
       price: "¥800〜¥1,200",
     },
-    tags: ["🧂 清爽鹽味", "🥚 配料自由", "🚶 中目黒徒步2分"],
+    tags: ["🧂 清爽鹽味", "🥚 配料自由", "🚶 中目黑徒步2分"],
   },
   {
     id: "shinsen",
-    number: 5,
+    number: 4,
     name: "金澤濃厚豚骨拉麵 神仙 台場店",
     highlight: "金澤發祥・濃厚豚骨醬油",
     url: "https://tabelog.com/tokyo/A1313/A131306/13206967/",
@@ -152,7 +136,7 @@ const shops = [
   },
   {
     id: "afuri",
-    number: 6,
+    number: 5,
     name: "AFURI 六本木",
     highlight: "柚子鹽拉麵・東京話題名店",
     url: "https://www.hotpepper.jp/strJ001118169/",
@@ -163,23 +147,42 @@ const shops = [
     reason: "招牌的「柚子鹽拉麵」是日本拉麵的革命性存在！柚子的清香完美襯托雞骨高湯的鮮甜🍋 麵條細而Q彈，搭配低溫慢煮的雞肉叉燒，每一口都很驚艷。海外旅客也容易接受的口味，是東京拉麵入門的首選。",
     basicInfo: {
       address: "東京都港區六本木6-10-1 六本木Hills METRO HAT B2F",
-      access: "東京メトロ日比谷線「六本木」駅 徒歩約3分",
+      access: "東京地下鐵日比谷線「六本木」駅 徒歩約3分",
       price: "¥1,200〜¥1,600",
     },
     tags: ["🍋 柚子鹽", "🐔 雞骨清湯", "🏬 六本木Hills內"],
   },
+  {
+    id: "machida",
+    number: 6,
+    name: "町田商店",
+    highlight: "家系拉麵・全國連鎖",
+    url: "https://www.machidashoten.com/menu",
+    tag: "全國",
+    recommend: "豚骨醬油拉麵",
+    images: ["/ramen/machida.jpg"],
+    intro: "日本超有名的連鎖家系拉麵，特色是濃厚豚骨醬油湯頭，搭配海苔和白飯完美絕配！東京各地都有分店，臨時想吃拉麵時最方便。",
+    reason: "可以選擇麵硬度、湯頭濃度、油量，自由度很高，非常適合第一次體驗日本拉麵的旅客👍 日本各地都有分店，隨時都能去。",
+    basicInfo: {
+      address: "東京都內多間分店（全國連鎖）",
+      access: "各地都有，可用Google Map搜尋最近分店",
+      price: "¥800〜¥1,200",
+    },
+    tags: ["🐷 豚骨醬油", "🏪 全國連鎖", "👶 初次挑戰OK"],
+  },
 ];
 
 const ramenTypes = [
-  { name: "つけ麺", desc: "麵和湯分開，把麵沾著濃湯吃。湯頭通常很濃郁，非常有特色。" },
+  { name: "つけ麺（沾麵）", desc: "麵和湯分開，把麵沾著濃湯吃。湯頭通常很濃郁，非常有特色。" },
   { name: "家系拉麵", desc: "發源自橫濱的濃厚豚骨醬油系拉麵，配料通常有海苔、菠菜、叉燒。" },
-  { name: "魚介系", desc: "使用魚貝類熬製的湯底，帶有海鮮香氣，味道深厚。" },
+  { name: "煮干・魚介系", desc: "使用小魚乾與柴魚等魚貝類熬製的湯底，帶有濃厚海鮮香氣，是東京拉麵的代表流派之一。" },
+  { name: "柚子鹽", desc: "以雞骨清湯搭配柚子皮香氣的清爽系拉麵，口味清淡，海外旅客接受度很高。" },
 ];
 
 const relatedLinks = [
-  { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩3間人氣店" },
-  { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "悠閒散步的人氣公園完全指南" },
-  { href: "/hakone", label: "🚃 箱根一日遊推薦｜從東京搭浪漫特快出發", desc: "美術館・足湯・神社的完美行程" },
+  { href: "/kansai-ramen", label: "🍜 關西拉麵推薦｜大阪必吃濃厚魚介沾麵", desc: "大阪肥後橋つじ田・關西拉麵完全指南" },
+  { href: "/shibuya-yakiniku", label: "🥩 澀谷燒肉推薦｜ホルモン千葉・內臟燒肉名店", desc: "京都發跡・店員全程代烤" },
+  { href: "/shin-okubo", label: "🍲 新大久保美食推薦｜韓國料理・咖啡・甜點", desc: "ナッコプセ鍋・韓系咖啡廳・杜拜巧克力" },
 ];
 
 export default function RamenArticle() {
@@ -195,7 +198,7 @@ export default function RamenArticle() {
             ← 返回
           </Link>
           <span className="text-stone-300">|</span>
-          <span className="text-sm font-semibold text-stone-700 truncate">拉麵推薦</span>
+          <span className="text-sm font-semibold text-stone-700 truncate">東京拉麵推薦</span>
         </div>
       </header>
 
@@ -204,32 +207,37 @@ export default function RamenArticle() {
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
           <span className="bg-red-100 text-red-600 border border-red-300 text-xs font-semibold px-3 py-1 rounded-full">🍜 拉麵</span>
-          <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 東京・大阪</span>
+          <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 東京</span>
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">✅ 實際吃過</span>
         </div>
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          日本拉麵推薦｜東京・大阪<br />必吃拉麵6選🍜
+          東京拉麵推薦6選｜必吃排隊<br />名店・柚子鹽・家系拉麵🍜
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-31</p>
 
         {/* Why ramen */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">來日本一定要吃拉麵！</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">來東京一定要吃拉麵！</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            來日本旅遊，<strong>日本拉麵</strong>絕對是必吃清單的第一名🍜 不同地區有不同風格，東京、大阪、福岡……每個地方的拉麵都有自己的個性。
+            <strong>東京</strong>是全世界拉麵店密度最高的城市，光是市區就有<strong>數千間</strong>拉麵店，而且流派非常多元——醬油、鹽味、豚骨、煮干、沾麵⋯⋯每一間都有自己的個性🍜
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次整理了6間我實際吃過的店，包含大阪的濃郁魚介つけ麺、東京的排隊名店、在日本各地都找得到的家系拉麵、中目黒可自由搭配配料的鹽味拉麵、台場「神仙」金澤濃厚豚骨醬油，以及六本木AFURI的柚子鹽清湯拉麵。每一間都有自己的魅力，請按照行程選擇！
+            這篇整理了<strong>6間我實際吃過的東京拉麵</strong>：三軒茶屋幾乎沒有招牌的煮干名店「めん和正」、目黑的排隊名店和利道、中目黑可以自由加配料的鹽味拉麵、台場「神仙」的金澤濃厚豚骨醬油、六本木AFURI的柚子鹽清湯，以及全國到處都有的家系連鎖町田商店。從硬派老饕店到觀光客友善店都有，請依行程選擇！
           </p>
+          <div className="mt-3 bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
+            <p className="text-xs text-stone-600">
+              🚄 找關西的拉麵嗎？請看 <Link href="/kansai-ramen" className="text-blue-600 underline underline-offset-2 font-semibold">關西拉麵推薦｜大阪必吃濃厚魚介沾麵</Link>
+            </p>
+          </div>
         </section>
 
         <PrepBannerCompact />
 
         {/* H2: 拉麵種類 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">拉麵種類簡單說明</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">東京拉麵種類簡單說明</h2>
           <div className="space-y-3">
             {ramenTypes.map((type) => (
               <div key={type.name} className="flex gap-3">
@@ -244,7 +252,7 @@ export default function RamenArticle() {
         </section>
 
         {/* H2: 推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">日本拉麵推薦・5間必吃</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">東京拉麵推薦・6間必吃</h2>
 
         {/* Shops */}
         <div className="space-y-8 mb-10">
@@ -256,7 +264,7 @@ export default function RamenArticle() {
                   <div key={i} className="relative aspect-[4/3] bg-stone-100">
                     <Image
                       src={src}
-                      alt={`${shop.name} - 日本拉麵推薦`}
+                      alt={`${shop.name} - 東京拉麵推薦`}
                       fill
                       sizes={shop.images.length > 1 ? "50vw" : "100vw"}
                       className="object-cover"
@@ -284,7 +292,7 @@ export default function RamenArticle() {
                 {/* 推薦理由 */}
                 <div className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 mb-3">
                   <p className="text-xs font-bold text-red-500 mb-1">✨ 推薦給旅客的理由</p>
-                  <p className="text-sm text-stone-600 leading-relaxed">{shop.reason}</p>
+                  <p className="text-sm text-stone-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: shop.reason }} />
                 </div>
 
                 {/* Tags */}
@@ -300,6 +308,9 @@ export default function RamenArticle() {
                   <p className="text-xs text-stone-600">📍 {shop.basicInfo.address}</p>
                   <p className="text-xs text-stone-600">🚃 {shop.basicInfo.access}</p>
                   <p className="text-xs text-stone-600">💴 {shop.basicInfo.price}</p>
+                  {shop.id === "washo" && (
+                    <p className="text-xs text-stone-600">⏰ 11:30〜14:30／18:30〜22:00（週一公休）</p>
+                  )}
                   <p className="text-xs text-red-600 font-semibold">💡 推薦：{shop.recommend}</p>
                 </div>
 
@@ -318,27 +329,28 @@ export default function RamenArticle() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">旅遊小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">東京吃拉麵小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
-            <li>✅ 熱門店通常需要排隊，建議平日早點去</li>
-            <li>✅ つけ麺可以選麵量（並・中・大），通常同價</li>
-            <li>✅ 家系拉麵可以選麵硬度・湯頭濃淡・油量</li>
-            <li>✅ 吃完可以加湯（割りスープ），味道會變溫和</li>
-            <li>✅ 不少店只收現金，建議帶日幣備用</li>
+            <li>✅ 熱門店通常需要排隊，建議<strong>平日、開店後不久</strong>前往</li>
+            <li>✅ 很多店是<strong>食券機（售票機）先買餐券</strong>，也有像和正一樣後付現金的店</li>
+            <li>✅ つけ麺可以選麵量（並・中・大），通常同價或加價很少</li>
+            <li>✅ 家系拉麵可以選麵硬度・湯頭濃淡・油量，不確定就說「普通」</li>
+            <li>✅ 吃完沾麵可以加湯（割りスープ），把濃湯稀釋成清湯喝完</li>
+            <li>✅ 老店不少<strong>只收現金</strong>，建議隨身帶日幣紙鈔</li>
           </ul>
         </section>
 
         {/* ぽやぴよ總結 */}
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
-            這6間各有特色✨ 大阪的濃郁魚介つけ麺、東京的排隊名店、全國家系拉麵、中目黒可自由配料的鹽味拉麵、台場神仙金澤濃厚豚骨，還有六本木AFURI的柚子鹽清湯——<br />
-            來日本旅遊的話，一定要安排一餐專程去吃日本拉麵！
+            這6間各有特色✨ 三軒茶屋的硬派煮干、目黑的排隊名店、中目黑的自由配料鹽味、台場的濃厚豚骨、六本木的柚子鹽清湯，還有隨處可見的家系拉麵——<br />
+            來東京旅遊，一定要安排一餐專程去吃拉麵！
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
             <div className="text-3xl shrink-0">🐥</div>
             <div>
               <p className="text-sm font-semibold text-stone-700 mb-0.5">ぽやぴよ的話</p>
-              <p className="text-sm text-stone-600">「日本拉麵真的每一間都有自己的個性，吃完一碗還想再來一碗🍜」</p>
+              <p className="text-sm text-stone-600">「東京的拉麵真的每一間都有自己的個性，吃完一碗還想再來一碗🍜」</p>
             </div>
           </div>
         </div>

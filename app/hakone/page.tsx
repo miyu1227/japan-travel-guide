@@ -154,7 +154,7 @@ const itinerary = [
 ];
 
 const relatedLinks = [
-  { href: "/ramen", label: "🍜 日本拉麵推薦｜東京・大阪必吃拉麵3選", desc: "魚介つけ麺・家系拉麵・排隊名店" },
+  { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑・代代木公園", desc: "悠閒散步的人氣公園完全指南" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京最值得去的咖啡店", desc: "貝果・義式冰淇淋・起司披薩3間人氣店" },
 ];

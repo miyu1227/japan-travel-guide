@@ -62,7 +62,7 @@ const photos = [
 ];
 
 const relatedLinks = [
-  { href: "/ramen", label: "🍜 日本拉麵推薦｜東京・大阪必吃拉麵5選", desc: "濃厚魚介系つけ麺から家系まで" },
+  { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/shukugawa", label: "☕ 夙川おすすめカフェ2選｜兵庫・神戸", desc: "ガレットランチ＆本格コーヒー" },
   { href: "/museum", label: "🎨 東京美術館推薦｜國立新美術館＆根津美術館", desc: "現代建築・日本庭園" },
 ];

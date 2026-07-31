@@ -5,7 +5,8 @@ const linkGroups: { title: string; icon: string; links: { href: string; label: s
     title: "美食・拉麵",
     icon: "🍜",
     links: [
-      { href: "/ramen", label: "日本拉麵推薦" },
+      { href: "/ramen", label: "東京拉麵推薦" },
+      { href: "/kansai-ramen", label: "關西拉麵推薦" },
       { href: "/osaka-gourmet", label: "大阪美食" },
       { href: "/sanda-soba", label: "三田蕎麥麵" },
       { href: "/ginza-apollo", label: "銀座THE APOLLO" },

@@ -472,7 +472,7 @@ export default function HokkaidoPage() {
               🌿 東京野餐推薦｜新宿御苑・代代木公園
             </Link>
             <Link href="/ramen" className="flex items-center gap-2 text-sm text-blue-600 hover:underline">
-              🍜 日本拉麵推薦｜東京・大阪必吃3選
+              🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系
             </Link>
           </div>
         </div>

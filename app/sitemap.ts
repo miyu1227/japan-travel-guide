@@ -6,6 +6,7 @@ const LAST_UPDATED = new Date("2026-07-21");
 const ARTICLE_ROUTES: { slug: string; priority?: number }[] = [
   // Gourmet
   { slug: "ramen", priority: 0.9 },
+  { slug: "kansai-ramen", priority: 0.85 },
   { slug: "shibuya-yakiniku", priority: 0.8 },
   { slug: "osaka-gourmet", priority: 0.8 },
   { slug: "sanda-soba", priority: 0.8 },
