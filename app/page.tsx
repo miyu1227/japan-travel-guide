@@ -111,6 +111,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   cafe: [
     {
+      name: "池尻大橋咖啡廳推薦｜UN LIVRE・澀谷一站的法式甜點名店🍓",
+      desc: "澀谷搭車一站直達！當季水果蛋糕＆夏季限定刨冰，寵物友善露台座位",
+      tag: "東京",
+      emoji: "🍓",
+      href: "/ikejiri-cafe",
+      image: "/ikejiri-cafe/unlivre-1.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "澀谷咖啡廳推薦｜RECOCO レココ・黑膠唱片試聽咖啡🎵",
       desc: "澀谷必去！可親手試聽黑膠唱片的音樂體驗咖啡，約300張唱片聽到飽",
       tag: "東京",
@@ -753,6 +762,7 @@ export default function Home() {
               { href: "/ine", label: "京都伊根" },
               { href: "/katsunuma", label: "山梨勝沼" },
               { href: "/nakameguro-cafe", label: "中目黑星巴克" },
+              { href: "/ikejiri-cafe", label: "池尻大橋咖啡" },
               { href: "/shimokitazawa-cafe", label: "下北澤咖啡" },
               { href: "/rokko-arima", label: "有馬溫泉" },
               { href: "/japan-esim", label: "日本eSIM" },
