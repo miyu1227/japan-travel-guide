@@ -7,6 +7,9 @@ import AuthorCard from "../components/AuthorCard";
 const PAGE_URL = "https://www.japantrippicks.com/conrad-osaka";
 const OG_IMAGE = "/conrad-osaka/atmos-1.jpg";
 
+const KLOOK_CONRAD_STAY =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1381759&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Fhotels%2Fdetail%2F282449-conrad-osaka%2F%3Fcheck_in%3D2026-09-08%26check_out%3D2026-09-09%26room_num%3D1%26adult_num%3D1%26child_num%3D0";
+
 export const metadata: Metadata = {
   title: "大阪飯店自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet",
   description:
@@ -326,6 +329,55 @@ export default function ConradOsakaPage() {
             </div>
           </div>
         </div>
+
+        {/* Klook 住宿バナー */}
+        <section className="mb-8">
+          <a
+            href={KLOOK_CONRAD_STAY}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-3xl p-5 shadow-md overflow-hidden hover:shadow-lg transition-all"
+          >
+            <span className="absolute top-3 right-3 text-2xl opacity-50 select-none">🏨</span>
+
+            <div className="relative flex items-center justify-between mb-3">
+              <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">
+                🛏️ Travel Tips
+              </span>
+              <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">大阪・中之島住宿</span>
+            </div>
+
+            <div className="relative mx-auto max-w-[300px] rounded-2xl overflow-hidden border-2 border-white shadow-sm mb-3">
+              <Image
+                src="/conrad-osaka/klook-hotel.png"
+                alt="康萊德大阪（Conrad Osaka）與中之島街景"
+                width={300}
+                height={250}
+                sizes="300px"
+                className="w-full h-auto"
+              />
+            </div>
+
+            <h3 className="relative text-base font-black text-stone-800 leading-tight mb-1">
+              想乾脆就住在康萊德大阪？
+            </h3>
+            <p className="relative text-xs text-stone-700 leading-relaxed mb-4">
+              這篇介紹的 Atmos 就在飯店的40樓，住宿的話早餐也在同一個空間吃。想連住宿一起安排的人，可以先看看房型與空房狀況——房價會依日期與季節變動很大，實際金額請以訂房頁面為準。
+            </p>
+
+            <div className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full py-3 shadow-md">
+              🏨 在 Klook 查看康萊德大阪住宿 →
+            </div>
+            <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
+          </a>
+        </section>
+
+        {/* アフィリエイト表記 */}
+        <section className="bg-stone-50 border border-stone-200 rounded-2xl p-4 mb-10">
+          <p className="text-xs text-stone-500 leading-relaxed">
+            📎 本網站部分連結包含聯盟行銷連結。若您透過連結預訂或購買，我們可能會獲得佣金，讀者不會因此支付額外費用。感謝您的支持，我們會繼續分享有用的日本旅遊資訊。
+          </p>
+        </section>
 
         <AuthorCard />
         <PrepBanner />
