@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/kansai-ramen";
 const OG_IMAGE = "/kansai-ramen/tsujita-2.jpg";
@@ -147,8 +146,6 @@ export default function KansaiRamenArticle() {
             </p>
           </div>
         </section>
-
-        <PrepBannerCompact />
 
         {/* 關西拉麵流派 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
