@@ -15,12 +15,12 @@ const KLOOK_MONDAY =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314614&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Fhotels%2Fdetail%2F281392-hotel-monday-haneda-airport%2F%3Fcheck_in%3D2026-07-26%26check_out%3D2026-07-27%26room_num%3D1%26adult_num%3D1%26child_num%3D0";
 
 export const metadata: Metadata = {
-  title: "羽田機場到東京市區交通攻略｜京急、單軌電車、巴士、計程車怎麼選？",
+  title: "羽田機場到東京市區交通攻略｜京急、單軌電車怎麼選",
   description:
-    "羽田機場到東京市區的交通方式整理！京急線、東京單軌電車、機場巴士、計程車・包車比較，加上行李配送與羽田機場前泊選項。初次東京自由行也能輕鬆選擇最適合的方式。",
+    "羽田機場到東京市區只要30〜45分。京急線、東京單軌電車、機場巴士、計程車・包車的差別與適合的人一次看懂，另外整理行李很多時的配送服務、深夜與清晨班機的羽田住宿選項，以及住品川・新宿・淺草時分別該搭哪一種。第一次來也不會選錯。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "羽田機場到東京市區交通攻略｜京急、單軌電車、巴士、計程車怎麼選？",
+    title: "羽田機場到東京市區交通攻略｜京急、單軌電車怎麼選",
     description: "羽田機場到東京交通方式比較。京急・單軌電車・機場巴士・計程車・包車・行李配送・前泊完整介紹。",
     url: PAGE_URL,
     type: "article",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "羽田機場到東京市區交通攻略｜京急、單軌電車、巴士、計程車怎麼選？",
+    title: "羽田機場到東京市區交通攻略｜京急、單軌電車怎麼選",
     description: "羽田機場到東京市區交通完整指南！京急・單軌・機場巴士・計程車比較✈️",
     images: [OG_IMAGE],
   },
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "羽田機場到東京市區交通攻略｜京急、單軌電車、巴士、計程車怎麼選？",
+  headline: "羽田機場到東京市區交通攻略｜京急、單軌電車怎麼選",
   description: "羽田機場到東京市區交通方式比較。京急線、東京單軌電車、機場巴士、計程車、包車、行李配送與羽田機場前泊整理。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-12T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -93,7 +93,7 @@ export default function HanedaAirportAccessPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           羽田機場到東京市區交通攻略｜<br />京急、單軌電車、巴士、計程車怎麼選？✈️
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -102,7 +102,7 @@ export default function HanedaAirportAccessPage() {
             交通方式有<strong>京急線、東京單軌電車、機場巴士、計程車</strong>等多種選擇。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            本篇整理各交通方式的特色，加上<strong>行李配送服務</strong>與<strong>羽田機場前泊</strong>選項，讓第一次來東京自由行也能輕鬆選擇。
+            這篇寫給<strong>第一次從羽田入境、想快點到飯店放行李</strong>的台灣・香港旅人。<strong>你會知道</strong>：京急線與單軌電車差在哪、住品川・新宿・淺草該搭哪一種、行李很多時怎麼辦，還有<strong>紅眼班機與清晨起飛</strong>時的羽田住宿選項。
           </p>
         </section>
 
@@ -407,6 +407,39 @@ export default function HanedaAirportAccessPage() {
             <p>🐥 <strong>家族同行、行李多</strong> → 機場巴士或計程車</p>
             <p>🐥 <strong>想下飛機就觀光</strong> → 搭配行李配送服務</p>
             <p>🐥 <strong>清早班機・深夜抵達</strong> → 羽田機場周邊或航廈內前泊</p>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">羽田機場交通 常見問題</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 京急線和單軌電車，到底要搭哪一個？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                看你的飯店靠哪一邊。<strong>京急線</strong>接的是品川，之後轉 JR 山手線很方便，往<strong>淺草、橫濱</strong>方向也有直通車；<strong>單軌電車</strong>接的是濱松町，適合往<strong>東京站、新橋</strong>一帶。兩邊所要時間差不多，用「哪一站轉車比較少」來選就好。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 深夜抵達羽田，還有電車可以搭嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                羽田的末班電車時間比想像中早，<strong>深夜抵達時常常已經沒有車</strong>。這種時候的選項是深夜巴士、計程車，或是乾脆在<strong>機場航廈內或周邊住一晚</strong>。凌晨的計程車會加成，人數少的話前泊反而比較划算。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 從羽田可以直接去東京迪士尼嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                有直達舞浜地區的機場巴士，拖行李時最輕鬆。舞浜周邊不進園也很好玩，可以參考
+                <Link href="/tokyo-disney-around" className="text-blue-600 underline underline-offset-2">東京迪士尼周邊玩法</Link>。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 進市區後還需要買地鐵周遊券嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                如果接下來幾天主要靠地下鐵移動，
+                <Link href="/tokyo-subway-ticket" className="text-blue-600 underline underline-offset-2">Tokyo Subway Ticket</Link> 通常划得來；但它<strong>不能搭 JR 與京急、單軌電車</strong>，機場往返這段還是要另外付。行程偏 JR 山手線的人就不用勉強買。
+              </p>
+            </div>
           </div>
         </section>
 

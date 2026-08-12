@@ -13,12 +13,12 @@ const KLOOK_9H =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314574&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Fhotels%2Fdetail%2F587377-9h-nine-hours-narita-airport%2F%3Fcheck_in%3D2026-07-24%26check_out%3D2026-07-25%26room_num%3D1%26adult_num%3D1%26child_num%3D0";
 
 export const metadata: Metadata = {
-  title: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR、行李配送怎麼選？",
+  title: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR怎麼選",
   description:
-    "成田機場到東京市區的交通方式整理！Skyliner、Narita Express、機場巴士、JR普通電車、包車比較，加上行李配送與成田機場前泊選項。初次東京自由行也能輕鬆選擇最適合的方式。",
+    "成田機場到東京市區怎麼走最順？Skyliner、Narita Express、機場巴士、JR普通電車、包車的所要時間與適合的人一次比較，另外整理行李配送、深夜抵達的前泊選項，以及上野・新宿・池袋等飯店區域該搭哪一種。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR、行李配送怎麼選？",
+    title: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR怎麼選",
     description: "成田機場到東京交通方式比較。Skyliner・NEX・機場巴士・JR・包車・行李配送・前泊完整介紹。",
     url: PAGE_URL,
     type: "article",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR、行李配送怎麼選？",
+    title: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR怎麼選",
     description: "成田機場到東京市區交通完整指南！Skyliner・NEX・機場巴士・包車比較🚄",
     images: [OG_IMAGE],
   },
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR、行李配送怎麼選？",
+  headline: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR怎麼選",
   description: "成田機場到東京市區交通方式比較。Skyliner、Narita Express、機場巴士、JR、包車、行李配送與成田機場前泊整理。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-12T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -60,7 +60,7 @@ const breadcrumbJsonLd = {
 const relatedLinks = [
   { href: "/japan-esim", label: "📱 日本自由行 eSIM 使用指南", desc: "抵達日本就能上網的事前準備" },
   { href: "/tokyo-subway-ticket", label: "🚇 東京地鐵24/48/72小時乘車券｜Tokyo Subway Ticket", desc: "東京自由行交通指南・地下鐵周遊券完整解說" },
-  { href: "/tokyo-tower", label: "🗼 東京鐵塔推薦｜東京必去地標・夜景景點", desc: "333公尺東京象徵・主展望台＆頂層展望台夜景" },
+  { href: "/haneda-airport-access", label: "✈️ 羽田機場到東京市區交通攻略", desc: "回程或轉羽田進出時，先看這篇比較京急與單軌" },
 ];
 
 export default function NaritaAirportAccessPage() {
@@ -91,7 +91,7 @@ export default function NaritaAirportAccessPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           成田機場到東京市區交通攻略｜<br />Skyliner、巴士、JR、行李配送怎麼選？🚄
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -100,7 +100,7 @@ export default function NaritaAirportAccessPage() {
             成田機場離東京中心約60〜80公里，交通方式有很多種，每一種都有適合的人。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            本篇整理<strong>Skyliner、Narita Express、機場巴士、JR普通電車、包車</strong>等交通方式，加上<strong>行李配送服務</strong>與<strong>成田機場前泊</strong>選項，讓第一次東京自由行也能安心選擇。
+            這篇寫給<strong>第一次從成田入境、還沒決定要搭什麼</strong>的台灣・香港旅人。<strong>你會知道</strong>：Skyliner、Narita Express、機場巴士、JR普通電車、包車各自的所要時間與適合的人，飯店在上野・新宿・池袋・東京站時該選哪一種，還有<strong>行李很多</strong>與<strong>深夜／清晨班機</strong>時的解法（行李配送、成田前泊）。
           </p>
         </section>
 
@@ -416,6 +416,45 @@ export default function NaritaAirportAccessPage() {
             <p>🐥 <strong>行李超多、家庭旅遊</strong> → 機場巴士或包車</p>
             <p>🐥 <strong>想下飛機就觀光</strong> → 考慮搭配行李配送服務</p>
             <p>🐥 <strong>清早班機・深夜抵達</strong> → 成田機場前泊</p>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">成田機場交通 常見問題</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ Skyliner 需要事先訂位嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                Skyliner 是<strong>全車對號座</strong>，需要先取得座位。可以在機場的售票櫃檯或售票機當場買，網路預訂也可以。平常時段當天買通常沒問題，不過<strong>連假與過年期間</strong>比較容易客滿，行程固定的話先訂會比較安心。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 深夜才到成田，還有車進市區嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                班機延誤或紅眼班機抵達時，<strong>電車可能已經沒有末班車</strong>，深夜巴士的班次也很有限。這種情況下，比較實際的做法是<strong>在成田機場周邊前泊一晚</strong>，隔天早上再輕鬆進市區。詳細請看上面「⑦ 成田機場前泊」的部分。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 可以從成田直接殺去東京迪士尼嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                可以，機場巴士有直接開往舞浜地區飯店的路線，不用拖著行李換車。想先了解舞浜周邊怎麼玩，可以參考
+                <Link href="/tokyo-disney-around" className="text-blue-600 underline underline-offset-2">東京迪士尼周邊玩法</Link>。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 有 Suica／PASMO 就不用買其他票券了嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                機場到市區這一段用 IC 卡就能搭（Skyliner 等對號座另外需要特急券）。<strong>進市區之後</strong>如果每天都會搭好幾趟地下鐵，再看看
+                <Link href="/tokyo-subway-ticket" className="text-blue-600 underline underline-offset-2">Tokyo Subway Ticket</Link> 划不划算。要注意它只能搭東京メトロ與都營地下鐵，<strong>JR 山手線不能用</strong>。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 行李配送當天就會送到飯店嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                要看<strong>寄件時間與飯店位置</strong>，並不是每一件都能當天送達，有些情況會是隔天。想下飛機直接去觀光的話，建議把<strong>當晚要用的東西（換洗衣物、藥品、充電線）先拿出來</strong>隨身帶著，其餘再交給配送。
+              </p>
+            </div>
           </div>
         </section>
 

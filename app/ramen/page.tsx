@@ -40,7 +40,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-31T00:00:00+09:00",
+  dateModified: "2026-08-12T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -215,7 +215,7 @@ export default function RamenArticle() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           東京拉麵推薦6選｜必吃排隊<br />名店・柚子鹽・家系拉麵🍜
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-31</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
 
         {/* Why ramen */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -225,6 +225,9 @@ export default function RamenArticle() {
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
             這篇整理了<strong>6間我實際吃過的東京拉麵</strong>：三軒茶屋幾乎沒有招牌的煮干名店「めん和正」、目黑的排隊名店和利道、中目黑可以自由加配料的鹽味拉麵、台場「神仙」的金澤濃厚豚骨醬油、六本木AFURI的柚子鹽清湯，以及全國到處都有的家系連鎖町田商店。從硬派老饕店到觀光客友善店都有，請依行程選擇！
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed mt-2">
+            這篇寫給<strong>不知道該挑哪一碗、又怕踩雷</strong>的台灣・香港旅人。<strong>你會知道</strong>：東京拉麵有哪些流派、6間店各自的位置與價格帶、食券機怎麼買、排隊時間怎麼抓，以及一個人去會不會尷尬。
           </p>
           <div className="mt-3 bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
             <p className="text-xs text-stone-600">
@@ -338,6 +341,44 @@ export default function RamenArticle() {
             <li>✅ 吃完沾麵可以加湯（割りスープ），把濃湯稀釋成清湯喝完</li>
             <li>✅ 老店不少<strong>只收現金</strong>，建議隨身帶日幣紙鈔</li>
           </ul>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">東京吃拉麵 常見問題</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 排隊名店大概要等多久？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                看時段差很多。<strong>12:00〜13:30 的午餐尖峰</strong>是最慘的，人氣店排上30分鐘以上很常見。想省時間就抓<strong>開店後不久或下午2點以後</strong>，通常可以直接進去。拉麵店的翻桌很快，隊伍看起來長也不代表要等很久。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 不會日文也點得到嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                多數店是<strong>食券機（售票機）先買餐券</strong>，機器上大多有照片，有些也有中文或英文切換，指著按就可以。真的看不懂時，按最上排左邊那格通常就是招牌拉麵——這是日本拉麵店不成文的排法。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 可以刷卡或用行動支付嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                新一點的店與連鎖店多半可以，但<strong>老店只收現金的情況還是不少</strong>。食券機有些也只吃紙鈔硬幣。建議身上留一點日幣現金，會比較不會卡住。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 一個人去會不會很奇怪？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                完全不會，<strong>拉麵店本來就是一個人吃的地方</strong>，吧台座位就是為此設計的。反而是三、四個人一起去比較難併桌。吃完就走是常態，不用擔心要待多久才禮貌。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 這幾間可以排在同一天嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                中目黑與六本木都在東京メトロ日比谷線上，串在同一天很順；三軒茶屋與台場則要另外換車。如果當天會搭好幾趟地下鐵，可以順便看看
+                <Link href="/tokyo-subway-ticket" className="text-blue-600 underline underline-offset-2">Tokyo Subway Ticket 划不划算</Link>。
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* ぽやぴよ總結 */}

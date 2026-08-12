@@ -8,9 +8,9 @@ const PAGE_URL = "https://www.japantrippicks.com/osaka-gourmet";
 const OG_IMAGE = "/osaka-gourmet/teppan-1.jpg";
 
 export const metadata: Metadata = {
-  title: "大阪美食推薦2選｜鐵板燒名店＆人氣居酒屋【實際造訪】",
+  title: "大阪美食推薦｜梅田在地人氣鐵板燒與居酒屋【實際造訪】",
   description:
-    "大阪必吃美食推薦2選！福島區人氣鐵板燒「鉄板屋な。」與梅田周邊話題居酒屋「酒場ビリー」。大阪在地人氣餐廳完整介紹，附交通方式・推薦菜單・價格。台灣・香港旅客必看！",
+    "不想只吃道頓堀的觀光美食？這篇介紹梅田・福島一帶的在地人氣店：精緻鐵板燒「鉄板屋な。」與話題居酒屋「酒場ビリー」。附交通方式、預算帶、要不要事先訂位、幾點去比較好進，以及怎麼把兩間排進同一個晚上。第一次到大阪也不會踩雷。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "大阪美食推薦2選｜鐵板燒名店＆人氣居酒屋",
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "大阪美食推薦2選｜鐵板燒名店＆人氣居酒屋【實際造訪】",
+  headline: "大阪美食推薦｜梅田在地人氣鐵板燒與居酒屋【實際造訪】",
   description: "大阪必吃美食推薦：鉄板屋な。、酒場ビリー。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-12T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -89,7 +89,7 @@ export default function OsakaGourmetPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           大阪美食推薦2選｜鐵板燒<br />名店＆人氣居酒屋🍻
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -98,7 +98,7 @@ export default function OsakaGourmetPage() {
             大阪是日本知名的<strong>「美食之都」</strong>🏙️ 除了道頓堀的章魚燒、大阪燒、串炸這些觀光美食之外，當地人也有許多<strong>隱藏版居酒屋＆名店</strong>，是台灣・香港旅客最容易錯過的寶藏。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的2間店都是<strong>大阪在地人氣餐廳</strong>——福島區的<strong>「鉄板屋な。」</strong>提供精緻鐵板燒，梅田周邊的<strong>「酒場ビリー」</strong>則是話題居酒屋。離梅田很近、交通方便，是想體驗道地大阪夜美食的最佳選擇✨
+            這篇寫給<strong>已經吃過道頓堀、想找在地一點的店</strong>的台灣・香港旅人。<strong>你會知道</strong>：兩間店的位置與預算帶、要不要事先訂位、幾點去比較好進，以及怎麼把它們排進同一晚。福島區的<strong>「鉄板屋な。」</strong>提供精緻鐵板燒，梅田周邊的<strong>「酒場ビリー」</strong>則是話題居酒屋，兩間都離梅田很近✨
           </p>
         </section>
 
@@ -247,6 +247,38 @@ export default function OsakaGourmetPage() {
             <li>✅ 大阪美食「邊吃邊喝」是文化，建議多人前往分享更多料理🍻</li>
             <li>✅ 周邊還有道頓堀、心齋橋可順遊購物</li>
           </ul>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">大阪美食 常見問題</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要事先訂位嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                鐵板燒這類座位少的店<strong>建議先訂</strong>，臨時走進去常常會被婉拒。居酒屋則多半可以直接進去，但週五、週六的晚上7點前後最擠，想輕鬆一點就避開這個時段。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 不會日文點餐會不會很辛苦？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                居酒屋現在很多都有平板點餐或圖片菜單，指著點就可以。真的沒有菜單時，<strong>「おすすめ（推薦菜）」</strong>這句很好用。大阪的店家普遍很習慣招呼外國客人，不用太緊張。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 居酒屋的「お通し」是什麼？要付錢嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                坐下後會先送上一小碟前菜，這是<strong>お通し</strong>，等同於座位費，帳單上會另外計算。這是日本居酒屋的常見做法，不是被多收錢，看到帳單時不用嚇一跳。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 這兩間可以排在同一晚嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                可以，兩間都在梅田・福島一帶，走路或搭一站電車就到。<strong>先吃鐵板燒、再去居酒屋續攤</strong>是很順的順序。想再多吃一輪的話，
+                <Link href="/kansai-ramen" className="text-blue-600 underline underline-offset-2">關西拉麵推薦</Link>裡的肥後橋也在同一個方向。
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* ぽやぴよ */}

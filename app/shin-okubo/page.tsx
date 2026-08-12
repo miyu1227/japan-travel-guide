@@ -9,13 +9,13 @@ const PAGE_URL = "https://www.japantrippicks.com/shin-okubo";
 const OG_IMAGE = "/shin-okubo/sawee-1.jpg";
 
 export const metadata: Metadata = {
-  title: "新大久保グルメおすすめ｜韓国料理・カフェ・スイーツ食べ歩き完全ガイド【2025】",
+  title: "新大久保美食推薦｜東京韓國街必吃散步指南",
   description:
-    "新大久保で実際に食べ歩いた3店舗を紹介。ナッコプセ鍋のサウィ食堂・韓国カフェSHINCHON CAFE・ドバイ餅MUJIGEまで。初めての新大久保グルメ完全ガイド。",
+    "新大久保是東京最有韓國氛圍的街區。實際走訪整理3間必吃：章魚蝦內臟鍋「サウィ食堂」、韓系咖啡廳SHINCHON CAFE、話題杜拜麻糬MUJIGE。附新宿出發交通、價格、逛街順序與避開人潮的時段，第一次去也不會迷路。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "新大久保グルメおすすめ｜韓国料理・カフェ・スイーツ食べ歩き完全ガイド【2025】",
-    description: "新大久保で実際に食べ歩いた3店舗。ナッコプセ鍋・韓国カフェ・ドバイ餅スイーツ。初めての新大久保グルメ完全ガイド。",
+    title: "新大久保美食推薦｜東京韓國街必吃散步指南",
+    description: "東京最有韓國氛圍的街區。實際走訪3間必吃：章魚蝦內臟鍋・韓系咖啡廳・話題杜拜麻糬。附交通與逛街順序。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "新大久保グルメおすすめ｜韓国料理・カフェ・スイーツ食べ歩き",
-    description: "ナッコプセ鍋・韓国カフェ・ドバイ餅。新大久保食べ歩き完全ガイド！",
+    title: "新大久保美食推薦｜東京韓國街必吃散步指南",
+    description: "章魚蝦內臟鍋・韓系咖啡廳・話題杜拜麻糬。東京韓國街散步指南🇰🇷",
     images: [OG_IMAGE],
   },
 };
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "新大久保グルメおすすめ｜韓国料理・カフェ・スイーツ食べ歩き完全ガイド【2025】",
-  description: "新大久保で実際に食べ歩いた3店舗を紹介。ナッコプセ鍋・韓国カフェ・ドバイ餅スイーツ。",
+  headline: "新大久保美食推薦｜東京韓國街必吃散步指南",
+  description: "實際走訪新大久保3間店：章魚蝦內臟鍋、韓系咖啡廳、話題杜拜麻糬。附交通與逛街順序。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-12T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -84,7 +84,7 @@ const shops = [
     urlLabel: "Instagram",
     images: ["/shin-okubo/shinchon-1.jpg", "/shin-okubo/shinchon-2.jpg", "/shin-okubo/shinchon-3.jpg"],
     intro: "充滿韓國氛圍的人氣咖啡廳，外觀設計可愛，拍照打卡效果超好📸 不管是內用還是外帶都很適合，是新大久保逛街中途休息的人氣選擇。",
-    reason: "韓系設計感很強，非常適合喜歡拍照的旅客。晚上的氣氛燈光特別美，很適合情侶或女生旅遊。飲料可以外帶邊逛邊喝，是新大久保食べ歩きの定番コース✨",
+    reason: "韓系設計感很強，非常適合喜歡拍照的旅客。晚上的氣氛燈光特別美，很適合情侶或女生旅遊。飲料可以外帶邊逛邊喝，是新大久保散步途中的經典中繼站✨",
     basicInfo: {
       address: "東京都新宿区百人町付近",
       access: "JR山手線「新大久保」駅 徒歩約5分",
@@ -116,8 +116,8 @@ const shops = [
 
 const relatedLinks = [
   { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
-  { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京咖啡散步", desc: "貝果・義式冰淇淋・起司披薩3間人氣店" },
-  { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "悠閒散步的人氣公園完全指南" },
+  { href: "/shibuya-yakiniku", label: "🥩 澀谷燒肉推薦｜肉 ホルモン千葉", desc: "同樣是山手線沿線，想再吃一頓肉的話" },
+  { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "從新大久保搭一站就到，散步收尾剛好" },
 ];
 
 export default function ShinOkuboPage() {
@@ -150,19 +150,19 @@ export default function ShinOkuboPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           新大久保美食推薦｜<br />韓國料理・咖啡・甜點食べ歩き完全指南🍲
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">為什麼要去新大久保？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            新大久保是東京最有韓國感的街區，走幾步就能看到韓國料理店、可愛咖啡廳和各種韓系甜點🇰🇷
+            這篇寫給<strong>第一次去新大久保、只有半天空檔</strong>的台灣・香港旅人。新大久保是東京最有韓國感的街區，從新宿搭JR只要一站，走幾步就能看到韓國料理店、可愛咖啡廳和各種韓系甜點🇰🇷
           </p>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             這次實際走訪，整理了3間特別推薦的店——從熱騰騰的鍋物到打卡咖啡廳、再到人氣甜點，<strong>一個下午就能全部逛完</strong>！
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            初次來新大久保的人，照這篇的順序走就對了👇
+            <strong>這篇會告訴你</strong>：3間實際吃過的店與價格帶、從新宿・澀谷・池袋怎麼去、什麼時段人最少，還有把鍋物→咖啡→甜點串起來的散步順序👇
           </p>
         </section>
 
@@ -248,7 +248,10 @@ export default function ShinOkuboPage() {
             <p>🚃 <strong>從新宿出發</strong>：JR山手線 約2分鐘（一站）</p>
             <p>🚃 <strong>從澀谷出發</strong>：JR山手線 約15分鐘</p>
             <p>🚃 <strong>從池袋出發</strong>：JR山手線 約10分鐘</p>
-            <p className="text-xs text-stone-400 mt-2">※ 新大久保駅出口から大久保通り沿いに歩くと主要な店が集まっています</p>
+            <p className="text-xs text-stone-400 mt-2">※ 從新大久保站出口沿著「大久保通り」走，主要的店幾乎都集中在這條路上</p>
+            <p className="text-xs text-stone-500 mt-2">
+              新大久保只靠JR山手線就能到，如果同一天還要去淺草、上野等地下鐵沿線，可以先看看 <Link href="/tokyo-subway-ticket" className="text-blue-600 underline underline-offset-2">東京地鐵乘車券的使用範圍</Link>再決定要不要買。
+            </p>
           </div>
         </section>
 
@@ -261,6 +264,38 @@ export default function ShinOkuboPage() {
             <li>✅ 附近有很多韓國食品超市，買伴手禮也很方便</li>
             <li>✅ 來日本前先準備網路，方便用 Google Map 找店 📱</li>
           </ul>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">新大久保 常見問題</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要事先訂位嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                這3間都是走進去排隊的類型，基本上不需要訂位。不過週末的用餐時間（12:00〜14:00、18:00之後）鍋物店常常要等，想省時間的話<strong>避開週末、或是11點多就先去吃</strong>會順很多。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 半天真的逛得完嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                可以。主要的店都集中在大久保通り沿線，<strong>店與店之間走路都在5分鐘內</strong>。照「鍋物午餐→咖啡廳休息→外帶甜點」的順序走，大約3〜4小時就很充實了。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 不太能吃辣也可以去嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                ナッコプセ鍋的辣度屬於中辣，實際吃起來是「夠味但不會痛」的程度。真的怕辣的話，可以先點<strong>飲料或白飯一起吃</strong>，或是把重點放在咖啡廳與甜點這兩間。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 逛完新大久保，附近還可以去哪裡？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                新宿只有一站，走回新宿方向可以接<Link href="/spot" className="text-blue-600 underline underline-offset-2">新宿御苑散步</Link>；想再吃一輪的話，
+                <Link href="/ramen" className="text-blue-600 underline underline-offset-2">東京拉麵推薦</Link>裡也有幾間在山手線沿線，安排在同一天不會太趕。
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* 總結 */}

@@ -9,12 +9,12 @@ const KLOOK_URL =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1307238&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F1552-subway-ticket-tokyo%2F%3Fspm%3DSearchResult.SearchResult_LIST%26clickId%3Dacb5dc654e";
 
 export const metadata: Metadata = {
-  title: "東京地鐵24/48/72小時乘車券｜Tokyo Subway Ticket購買與使用方式",
+  title: "東京地鐵券攻略｜Tokyo Subway Ticket 24/48/72小時怎麼選",
   description:
-    "第一次東京自由行不知道交通怎麼安排？Tokyo Subway Ticket是專為外國旅客設計的地下鐵周遊券，可不限次數搭乘東京メトロ＆都營地下鐵。本文整理24/48/72小時票券差別、使用範圍與行程建議，幫助你輕鬆規劃東京之旅。",
+    "Tokyo Subway Ticket 是專為外國旅客設計的地下鐵周遊券，可不限次數搭乘東京メトロ與都營地下鐵。本文整理24/48/72小時該選哪一種、哪裡買、計時方式，以及「不能搭JR山手線」等常見誤會，並附上什麼行程買了才划算的判斷方式。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "東京地鐵24/48/72小時乘車券｜Tokyo Subway Ticket購買與使用方式",
+    title: "東京地鐵券攻略｜Tokyo Subway Ticket 24/48/72小時怎麼選",
     description: "Tokyo Subway Ticket 24/48/72小時票券完整解說。東京メトロ＆都營地下鐵不限次搭乘。",
     url: PAGE_URL,
     type: "article",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "東京地鐵24/48/72小時乘車券｜Tokyo Subway Ticket購買與使用方式",
+    title: "東京地鐵券攻略｜Tokyo Subway Ticket 24/48/72小時怎麼選",
     description: "東京自由行必看！地下鐵周遊券完整解說🚇",
     images: [OG_IMAGE],
   },
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "東京地鐵24/48/72小時乘車券｜Tokyo Subway Ticket購買與使用方式",
+  headline: "東京地鐵券攻略｜Tokyo Subway Ticket 24/48/72小時怎麼選",
   description: "Tokyo Subway Ticket完整指南。24/48/72小時票券差別、使用範圍與行程建議。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-12T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -56,7 +56,7 @@ const breadcrumbJsonLd = {
 const relatedLinks = [
   { href: "/tokyo-tower", label: "🗼 東京鐵塔推薦｜東京必去地標・夜景景點", desc: "333公尺東京象徵・主展望台＆頂層展望台夜景" },
   { href: "/koyo", label: "🍁 東京紅葉推薦｜神宮外苑銀杏並木", desc: "金黃銀杏大道・東京秋天必去景點" },
-  { href: "/showa-kinen-park", label: "🌿 昭和紀念公園推薦｜東京立川散步必去", desc: "東京最大級的國營公園！四季絕景" },
+  { href: "/skytree", label: "🌃 東京晴空塔攻略｜門票、交通與夜景", desc: "押上站在都營淺草線與半藏門線上，這張票剛好能用" },
 ];
 
 export default function TokyoSubwayTicketPage() {
@@ -87,7 +87,7 @@ export default function TokyoSubwayTicketPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           東京地鐵24/48/72小時乘車券｜<br />Tokyo Subway Ticket購買與使用方式🚇
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -95,8 +95,11 @@ export default function TokyoSubwayTicketPage() {
             第一次來東京旅遊，最讓人緊張的就是<strong>「地鐵到底要怎麼搭」</strong>🚇<br />
             東京的地鐵路線多到讓人眼花，又分成<strong>「東京メトロ」</strong>和<strong>「都營地下鐵」</strong>兩家公司，初次造訪的旅客常常會擔心車費怎麼算。
           </p>
-          <p className="text-sm text-stone-600 leading-relaxed">
+          <p className="text-sm text-stone-600 leading-relaxed mb-3">
             如果你打算用<strong>地鐵</strong>串聯<strong>新宿、銀座、淺草、上野、表參道、澀谷、六本木、築地、東京站</strong>等東京主要景點，那麼<strong>「Tokyo Subway Ticket」</strong>就是一張很值得了解的票券。
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed">
+            這篇寫給<strong>第一次到東京、還在猶豫要不要買周遊券</strong>的台灣・香港旅人。<strong>你會知道</strong>：24／48／72小時該選哪一種、哪裡買得到、時間怎麼計算，還有最多人搞錯的<strong>「哪些路線不能用」</strong>，以及什麼樣的行程買了才真的划算。
           </p>
         </section>
 
@@ -295,6 +298,45 @@ export default function TokyoSubwayTicketPage() {
           <p className="text-sm text-stone-600 leading-relaxed mt-4">
             相反地，如果你的行程大量使用<strong>JR山手線</strong>（如池袋・原宿・澀谷・品川・東京一圈），或者主要安排<strong>近郊景點（橫濱・鎌倉・箱根・日光）</strong>，可能需要另外搭配 JR、私鐵或其他交通票券。
           </p>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">Tokyo Subway Ticket 常見問題</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 可以搭 JR 山手線嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                <strong>不行</strong>。這是最多人搞錯的一點。這張票只能搭<strong>東京メトロ與都營地下鐵</strong>，JR（包含山手線）、京王、小田急、東急等私鐵都不在範圍內。行程如果大量繞山手線，買了反而用不太到。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 24小時是「當天到隔天同一個時間」嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                是的，計時方式是<strong>從第一次通過閘門開始算</strong>，不是以日期切換。所以下午2點開始用的24小時票，可以用到隔天下午2點——<strong>下午開始用反而比較不浪費</strong>。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 一張票兩個人可以輪流用嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                不行，這張票是<strong>一人一張</strong>，同行者要各自準備。小朋友則有兒童票的設定。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 從機場到市區的那一段也能用嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                不能。Skyliner、Narita Express、京急線、單軌電車都不在範圍內，機場往返要另外付。機場那段怎麼走，可以看
+                <Link href="/narita-airport-access" className="text-blue-600 underline underline-offset-2">成田機場交通攻略</Link>與
+                <Link href="/haneda-airport-access" className="text-blue-600 underline underline-offset-2">羽田機場交通攻略</Link>。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 到日本才買來得及嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                這張票是<strong>給持短期停留簽證等外國旅客的專用票券</strong>，購買時通常需要出示護照，抵達日本後在機場或指定窗口購買也是常見做法。若想省下現場排隊時間，也可以出發前先在網路上訂好。實際的販售地點與條件可能調整，出發前再確認一次比較保險。
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* 出發前再次確認 */}

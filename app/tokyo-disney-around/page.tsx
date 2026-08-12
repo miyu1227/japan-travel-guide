@@ -12,12 +12,12 @@ const PAGE_URL = "https://www.japantrippicks.com/tokyo-disney-around";
 const OG_IMAGE = "/tokyo-disney-around/cover.jpg";
 
 export const metadata: Metadata = {
-  title: "東京迪士尼周邊玩法｜不進園也能玩！度假區線一日券＆イクスピアリ美食",
+  title: "東京迪士尼周邊玩法｜不進園也能玩的舞浜半日遊",
   description:
-    "不進園也能玩東京迪士尼！迪士尼度假區線（Disney Resort Line）一日券搭乘攻略、可愛車廂與景色BGM體驗，加上イクスピアリ人氣法式咖啡廳CAFÉ AUX BACCHANALES推薦。舞浜站周邊半日遊指南。",
+    "沒買到門票、只剩半天、或遇到雨天？舞浜站周邊不進園也玩得起來。迪士尼度假區線一日券的搭乘方式與米奇車廂、イクスピアリ的法式咖啡廳與Disney Store，加上從東京市區怎麼來、半日行程怎麼排，一次整理。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "東京迪士尼周邊玩法｜不進園也能玩！度假區線一日券＆イクスピアリ美食",
+    title: "東京迪士尼周邊玩法｜不進園也能玩的舞浜半日遊",
     description: "迪士尼度假區線一日券＆イクスピアリ人氣咖啡廳完整指南。舞浜站周邊不進園也能玩的半日行程。",
     url: PAGE_URL,
     type: "article",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "東京迪士尼周邊玩法｜不進園也能玩！度假區線一日券＆イクスピアリ美食",
+    title: "東京迪士尼周邊玩法｜不進園也能玩的舞浜半日遊",
     description: "迪士尼度假區線＆イクスピアリ美食，不進園也能玩的舞浜半日遊✨",
     images: [OG_IMAGE],
   },
@@ -36,14 +36,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "東京迪士尼周邊玩法｜不進園也能玩！度假區線一日券＆イクスピアリ美食",
+  headline: "東京迪士尼周邊玩法｜不進園也能玩的舞浜半日遊",
   description: "迪士尼度假區線（Disney Resort Line）一日券・可愛車廂與イクスピアリ人氣咖啡廳CAFÉ AUX BACCHANALES。舞浜站周邊半日遊指南。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-12T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -145,7 +145,7 @@ export default function TokyoDisneyAroundPage() {
           東京迪士尼周邊玩法｜<br />不進園也能玩！🎢
         </h1>
         <p className="text-sm text-stone-500 mb-2">度假區線一日券＆イクスピアリ美食巡禮</p>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
 
         {/* Cover */}
         <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-sm mb-6 bg-stone-100">
@@ -166,7 +166,7 @@ export default function TokyoDisneyAroundPage() {
             雖然來東京大家都想衝<strong>東京迪士尼樂園</strong>或<strong>迪士尼海洋</strong>，但門票越來越貴、人潮也不少。這篇整理的是<strong>「不進園」也能享受迪士尼氛圍的玩法</strong>——舞浜站周邊其實有一整片度假區可以散步，用半天的預算就能玩得很滿足✨
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次介紹兩個實際去過的點：<strong>迪士尼度假區線一日券</strong>可以無限次搭乘環狀電車繞行度假區，加上位在舞浜站旁購物中心<strong>イクスピアリ</strong>的法式咖啡廳<strong>CAFÉ AUX BACCHANALES</strong>，是雨天備案、行程剩半天、或帶小朋友放電的最強組合🎢☕
+            這篇寫給<strong>沒搶到門票、行程只剩半天，或遇到雨天想找備案</strong>的台灣・香港旅人。<strong>你會知道</strong>：不進園可以玩到什麼、度假區線一日券怎麼買與值不值得、從東京市區怎麼過來，還有半天的時間該怎麼排。這次介紹兩個實際去過的點：<strong>迪士尼度假區線一日券</strong>可以無限次搭乘環狀電車繞行度假區，加上位在舞浜站旁購物中心<strong>イクスピアリ</strong>的法式咖啡廳<strong>CAFÉ AUX BACCHANALES</strong>🎢☕
           </p>
         </section>
 
@@ -261,6 +261,39 @@ export default function TokyoDisneyAroundPage() {
             <li>✅ イクスピアリ內有Disney Store，不進園也能買迪士尼商品</li>
             <li>✅ 雨天或行程剩半天時最推薦的舞浜備案</li>
           </ul>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">舞浜周邊 常見問題</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 不進園真的玩得起來嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                如果你要的是遊樂設施，那還是得進園；但如果想要的是<strong>氛圍、拍照與買周邊</strong>，舞浜周邊就很夠。度假區線的米奇車窗、飯店群的外觀、イクスピアリ 裡的 Disney Store，都不需要門票。<strong>半天</strong>是最剛好的長度。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 度假區線一日券值得買嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                看你會搭幾趟。<strong>只搭一、兩趟的話用 IC 卡就好</strong>；如果打算繞圈欣賞景色、中途下車逛飯店再回來，一日券就會比較划算，也不用每次掏卡。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 從東京市區怎麼過來？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                舞浜站在 <strong>JR 京葉線</strong>上，從東京站搭過來大約15分鐘左右。要注意<strong>地鐵周遊券不能搭 JR</strong>，這段要另外付；如果是剛下飛機直接過來，機場巴士有到舞浜地區飯店的路線，可以參考
+                <Link href="/narita-airport-access" className="text-blue-600 underline underline-offset-2">成田</Link>與
+                <Link href="/haneda-airport-access" className="text-blue-600 underline underline-offset-2">羽田</Link>的交通攻略。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 下雨天來會不會很掃興？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                這個行程本來就<strong>很適合雨天</strong>。度假區線是有屋頂的電車，イクスピアリ 是室內購物中心，幾乎不用淋到雨。反而是原本要進園的人遇到下雨時，把行程換成這樣會舒服很多。
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Klook Shuttleバナー */}

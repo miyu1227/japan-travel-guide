@@ -11,12 +11,12 @@ const PAGE_URL = "https://www.japantrippicks.com/hakone";
 const OG_IMAGE = "/hakone/shrine-1.jpg";
 
 export const metadata: Metadata = {
-  title: "箱根一日遊推薦｜從東京搭浪漫特快出發的完整攻略【2025】",
+  title: "箱根一日遊推薦｜從東京出發的浪漫特快完整攻略",
   description:
-    "從東京搭浪漫特快只需1.5小時即可抵達箱根！整理玻璃美術館、箱根神社、足湯、蕎麥麵等5個必去景點，附交通方式、票價與實際行程安排，適合台灣香港旅客的箱根一日遊完整指南。",
+    "從新宿搭浪漫特快約1.5小時就能到箱根。這篇是實際走過的一日行程：玻璃美術館、箱根神社湖上鳥居、足湯、自然薯蕎麥麵共5個景點，附交通方式與所需時間、浪漫特快要不要先訂位、箱根周遊券該不該買，以及一天到底玩不玩得完的判斷。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "箱根一日遊推薦｜從東京搭浪漫特快出發的完整攻略【2025】",
+    title: "箱根一日遊推薦｜從東京出發的浪漫特快完整攻略",
     description: "從東京搭浪漫特快1.5小時到箱根！玻璃美術館・神社・足湯・蕎麥麵5個必去景點完整攻略。",
     url: PAGE_URL,
     type: "article",
@@ -35,14 +35,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "箱根一日遊推薦｜從東京搭浪漫特快出發的完整攻略【2025】",
+  headline: "箱根一日遊推薦｜從東京出發的浪漫特快完整攻略",
   description: "從東京搭浪漫特快1.5小時到箱根。玻璃美術館・箱根神社・足湯・蕎麥麵5個必去景點。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-12T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -156,7 +156,7 @@ const itinerary = [
 const relatedLinks = [
   { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑・代代木公園", desc: "悠閒散步的人氣公園完全指南" },
-  { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京最值得去的咖啡店", desc: "貝果・義式冰淇淋・起司披薩3間人氣店" },
+  { href: "/rokko-arima", label: "♨️ 六甲・有馬溫泉｜纜車夜景與日本三古湯", desc: "同樣是從大都市當天來回的溫泉行程" },
 ];
 
 export default function HakonePage() {
@@ -189,7 +189,7 @@ export default function HakonePage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           箱根一日遊推薦｜從東京搭<br />浪漫特快出發的完整攻略🚃
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
 
         {/* Why Hakone */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-6">
@@ -198,7 +198,7 @@ export default function HakonePage() {
             想從東京出發輕鬆玩一天，<strong>箱根一日遊</strong>是最多人推薦的選擇✨ 從新宿搭浪漫特快只需約1.5小時，抵達後就能感受到截然不同的溫泉鄉氛圍。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次分享我實際走過的完整行程👇 一天就能玩到美術館、足湯、神社、蕎麥麵，充實又不趕。
+            這篇寫給<strong>行程排在東京、想抽一天去近郊</strong>的台灣・香港旅人。<strong>你會知道</strong>：浪漫特快怎麼搭與要不要先訂位、一天玩得完哪幾個點、山上移動大概要抓多少時間，還有雨天與冬天要注意什麼。以下是我實際走過的完整行程👇
           </p>
         </section>
 
@@ -338,6 +338,37 @@ export default function HakonePage() {
           </ul>
         </section>
 
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">箱根一日遊 常見問題</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 一天真的玩得完嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                玩得完，但<strong>景點要挑</strong>。箱根的移動要一直換車（登山電車、纜車、巴士），光是移動就會吃掉不少時間。像這篇一樣鎖定<strong>4〜5個點</strong>剛剛好，想再加蘆之湖遊船或大涌谷的話，就要有一個行程得放掉的心理準備。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 浪漫特快一定要先訂位嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                浪漫特快是<strong>全車指定席</strong>，沒有座位就搭不了，<strong>週末與連假很容易客滿</strong>，建議先訂。如果訂不到也不用慌——搭小田急的普通・急行電車一樣到得了箱根湯本，只是要換車、時間會多一些。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要買箱根周遊券（箱根フリーパス）嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                要看你會不會用到山上的交通。周遊券涵蓋<strong>登山電車、纜車、空中纜車、海賊觀光船與部分巴士</strong>，如果打算跑大涌谷、蘆之湖那一圈，通常會比一段一段買划算；但如果像這篇一樣以<strong>箱根湯本周邊＋幾個定點</strong>為主，其實不一定用得到。要注意<strong>浪漫特快的特急券是另外計費</strong>的。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 下雨天去箱根還值得嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                美術館、餐廳、足湯這類行程雨天完全不受影響，反而人比較少。要注意的是<strong>山上的纜車遇到強風或天候不佳可能停駛</strong>，湖上的展望也會被雲霧擋住，這種日子就把重點放在室內景點會比較不失望。
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* eSIM CTA */}
         <section className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl border border-blue-200 p-6 mb-8">
           <div className="flex items-start gap-3 mb-3">
@@ -350,9 +381,13 @@ export default function HakonePage() {
               </p>
             </div>
           </div>
-          <div className="bg-white rounded-2xl border border-blue-200 px-4 py-3 text-center">
-            <p className="text-xs text-stone-400">👉 eSIM 連結即將放上</p>
-          </div>
+          <Link
+            href="/japan-esim"
+            className="block bg-white rounded-2xl border border-blue-200 hover:border-blue-400 transition-colors px-4 py-3 text-center"
+          >
+            <p className="text-sm font-bold text-stone-700">👉 日本自由行 eSIM 使用指南</p>
+            <p className="text-xs text-stone-500 mt-0.5">出發前先確認手機支不支援、什麼時候啟用</p>
+          </Link>
         </section>
 
         {/* ぽやぴよ */}

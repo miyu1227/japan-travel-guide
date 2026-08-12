@@ -11,7 +11,7 @@ const KLOOK_URL =
 export const metadata: Metadata = {
   title: "日本自由行 eSIM 使用指南｜抵達日本就能上網的事前準備",
   description:
-    "第一次日本自由行不知道怎麼準備網路？本篇整理 eSIM 的使用方式、與實體 SIM／租借 Wi-Fi 的差別、適合的旅人類型與購買前注意事項，幫你出發前先安心搞定上網需求。",
+    "第一次日本自由行不知道網路怎麼準備？本篇整理 eSIM 的設定流程、與實體 SIM／租借 Wi-Fi 的差別、iPhone 與 Android 的支援確認方式，以及「什麼時候啟用才不會浪費天數」等購買前注意事項，出發前先把上網搞定。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "日本自由行 eSIM 使用指南｜抵達日本就能上網的事前準備",
@@ -40,7 +40,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-12T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -87,7 +87,7 @@ export default function JapanEsimPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           日本自由行 eSIM 使用指南｜<br />抵達日本就能上網的事前準備📱
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -96,7 +96,7 @@ export default function JapanEsimPage() {
             地圖、翻譯、查餐廳、查電車——下飛機那一刻就會用到。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次整理近年越來越受歡迎的<strong>「eSIM」</strong>使用方式，並比較實體 SIM 與租借 Wi-Fi 的差別，幫你出發前先安心搞定上網需求。
+            這篇寫給<strong>第一次日本自由行、還沒決定網路怎麼辦</strong>的台灣・香港旅人。<strong>你會知道</strong>：eSIM 和實體 SIM、租借 Wi-Fi 差在哪、自己的手機支不支援、什麼時候啟用才不會白白浪費天數，還有多人同行時該怎麼選。
           </p>
         </section>
 
@@ -353,6 +353,46 @@ export default function JapanEsimPage() {
             <li>⚠️ 想用一台機分享給多人 → 也可考慮租借 Wi-Fi</li>
             <li>⚠️ 最新的<strong>價格、容量、覆蓋區域與條款</strong>請以 Klook 商品頁面為準</li>
           </ul>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">日本 eSIM 常見問題</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 怎麼知道我的手機能不能用 eSIM？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                近幾年的 iPhone 與多數中高階 Android 都有支援，但<strong>部分地區版本或較舊的機種不支援</strong>。最保險的做法是在手機設定裡找找看有沒有「加入 eSIM／行動方案」這個選項，出發前先確認過再購買。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 要提前幾天買？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                因為是線上開通，通常不需要太早買。不過<strong>安裝設定建議在出發前、還有 Wi-Fi 的環境下先做完</strong>，落地後只要把它切成主要方案就能用，會比在機場現場摸索輕鬆很多。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 到日本才設定來得及嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                機場多半有免費 Wi-Fi，理論上落地再設定也可以，但如果 Wi-Fi 不穩就會卡住。<strong>安裝在出發前、啟用在抵達後</strong>是最不容易出錯的順序。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 一個人一張，那家庭旅遊怎麼辦？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                eSIM 基本上是<strong>一支手機一組</strong>，全家都要上網的話每支手機都要各自準備。如果是三、四個人一起行動、又不介意共用一台機器，租借 Wi-Fi 分享器反而可能比較單純。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 有網路之後，交通票券也要先準備嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                網路搞定之後，下一個要決定的通常是交通。行程集中在東京都心的話可以看
+                <Link href="/tokyo-subway-ticket" className="text-blue-600 underline underline-offset-2">Tokyo Subway Ticket 怎麼選</Link>，
+                機場到市區那段則可以參考<Link href="/narita-airport-access" className="text-blue-600 underline underline-offset-2">成田</Link>與
+                <Link href="/haneda-airport-access" className="text-blue-600 underline underline-offset-2">羽田</Link>的交通攻略。
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* まとめ */}

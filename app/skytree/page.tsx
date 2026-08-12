@@ -13,7 +13,7 @@ const KLOOK_SKYTREE =
 export const metadata: Metadata = {
   title: "東京晴空塔攻略｜門票預約、交通方式、夜景與拍照景點整理",
   description:
-    "東京晴空塔（Tokyo Skytree）完整指南！展望台票券、押上站交通、夜景拍照景點、玻璃地板與東京ソラマチ周邊整理。第一次東京自由行也能輕鬆規劃。",
+    "東京晴空塔（Tokyo Skytree）完整指南！天望デッキ與天望回廊的差別、押上站與淺草出發的交通、門票要不要先預約、白天／傍晚／夜景哪個時段最好，加上玻璃地板拍照點與東京ソラマチ周邊。第一次東京自由行也能輕鬆規劃。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "東京晴空塔攻略｜門票預約、交通方式、夜景與拍照景點整理",
@@ -42,7 +42,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-12T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -89,7 +89,7 @@ export default function SkytreePage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           東京晴空塔攻略｜門票預約、<br />交通方式、夜景與拍照景點整理🌃
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -98,7 +98,7 @@ export default function SkytreePage() {
             從展望台往下看，整個東京街景一覽無遺，<strong>夜晚的燈光特別迷人</strong>。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            本篇整理<strong>門票、交通、看點、玻璃地板拍照、周邊景點</strong>等資訊，加上實際造訪的感想，幫第一次東京自由行的人也能輕鬆規劃。
+            這篇寫給<strong>第一次到東京、想把晴空塔排進行程</strong>的台灣・香港旅人。<strong>你會知道</strong>：兩個展望樓層差在哪、從淺草與押上怎麼去、門票要不要先預約、白天／傍晚／夜景該選哪個時段，還有玻璃地板拍照點與 ソラマチ 周邊怎麼串。全部附上實際造訪的感想。
           </p>
         </section>
 
@@ -185,6 +185,22 @@ export default function SkytreePage() {
               如果喜歡夜景，<strong>傍晚到晚上這個時間帶很適合</strong>——剛上去時還能看到夕陽，等30分鐘後就能看到完全的夜景，一次體驗「白晝→夕陽→夜景」三種畫面🌅 玻璃地板附近可以感受到<strong>高度感</strong>，但怕高的人可以先做好心理準備喔。
             </p>
           </div>
+        </section>
+
+        {/* アクセス */}
+        <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">交通方式：押上站、東京晴空塔站</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-3">
+            東京晴空塔最近的車站有2個，從任一個都能直接連通至 ソラマチ 與晴空塔入口：
+          </p>
+          <ul className="space-y-2 text-sm text-stone-600">
+            <li>🚇 <strong>東武晴空塔線「とうきょうスカイツリー」駅</strong> 徒步約1分</li>
+            <li>🚇 <strong>都營淺草線・東京メトロ半藏門線・京成押上線「押上（スカイツリー前）」駅</strong> 徒步約3分</li>
+          </ul>
+          <p className="text-sm text-stone-600 leading-relaxed mt-3">
+            從<strong>淺草站</strong>搭東武晴空塔線只要1站，<strong>銀座／日本橋方面</strong>可搭都營淺草線直達押上駅。押上站是都營淺草線與東京メトロ半藏門線的車站，如果當天還要跑淺草、銀座、日本橋一帶，可以先看
+            <Link href="/tokyo-subway-ticket" className="text-blue-600 underline underline-offset-2">東京地鐵乘車券怎麼選</Link>，再決定要不要買周遊券。
+          </p>
         </section>
 
         {/* 時間帯比較 */}
@@ -290,21 +306,6 @@ export default function SkytreePage() {
           <p className="text-[10px] text-stone-400 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。價格與方案可能不定期更新，請以 Klook 商品頁面為準。</p>
         </section>
 
-        {/* アクセス */}
-        <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">交通方式：押上站、東京晴空塔站</h2>
-          <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            東京晴空塔最近的車站有2個，從任一個都能直接連通至 ソラマチ 與晴空塔入口：
-          </p>
-          <ul className="space-y-2 text-sm text-stone-600">
-            <li>🚇 <strong>東武晴空塔線「とうきょうスカイツリー」駅</strong> 徒步約1分</li>
-            <li>🚇 <strong>都營淺草線・東京メトロ半藏門線・京成押上線「押上（スカイツリー前）」駅</strong> 徒步約3分</li>
-          </ul>
-          <p className="text-sm text-stone-600 leading-relaxed mt-3">
-            從<strong>淺草站</strong>搭東武晴空塔線只要1站，<strong>銀座／日本橋方面</strong>可搭都營淺草線直達押上駅。
-          </p>
-        </section>
-
         {/* 周辺 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">周邊景點：東京ソラマチ、淺草、隅田川</h2>
@@ -351,6 +352,44 @@ export default function SkytreePage() {
             <li>✅ <strong>展望台拍照</strong>時，玻璃可能會反光，建議貼近窗戶拍攝</li>
             <li>✅ <strong>營業時間、票價</strong>可能變更，出發前以官方／Klook 頁面確認</li>
           </ul>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">東京晴空塔 常見問題</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 門票一定要事先預約嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                不一定，現場也買得到。但<strong>假日、連假與傍晚的人氣時段</strong>常常需要排隊，行程排得比較緊的人建議先在網路上確認方案與時段。實際的票種與價格請以官方或票券頁面為準。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 天望デッキ和天望回廊，要買到哪一層？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                <strong>天望デッキ（350m）</strong>就是一般說的展望台，玻璃地板也在這一層，只買到這裡已經很有看頭。<strong>天望回廊（450m）</strong>是額外加購的螺旋走道，特色是能一路繞著塔身走、視野更開闊。時間或預算有限的話，先買天望デッキ就好。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 晴空塔和東京鐵塔只能挑一個，該選哪個？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                想<strong>看得最高最遠</strong>、順便逛 ソラマチ 和淺草的話選晴空塔；想拍<strong>紅白色的經典地標本身</strong>、走復古浪漫路線的話選<Link href="/tokyo-tower" className="text-blue-600 underline underline-offset-2">東京鐵塔</Link>。兩座的所在位置差滿遠的，同一天硬要跑兩個會有點趕。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 陰天或下雨還值得上去嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                能見度確實會下降，看不到遠方的富士山方向。不過<strong>夜晚的市區燈光在雨天依然看得到</strong>，而且塔下的東京ソラマチ完全不受天氣影響，雨天當成室內行程也不會浪費半天。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 剛下飛機的那天可以直接來嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                可以，尤其是走<strong>京成押上線</strong>的話，從成田方向可以不用換太多次車就到押上站。時間怎麼抓可以參考
+                <Link href="/narita-airport-access" className="text-blue-600 underline underline-offset-2">成田機場到東京市區交通攻略</Link>。只是拖著行李上展望台不太方便，建議先寄放或送到飯店再過來。
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* まとめ */}
