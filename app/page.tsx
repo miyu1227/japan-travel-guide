@@ -35,6 +35,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       areas: ["兵庫"],
     },
     {
+      name: "大阪飯店自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet🥂",
+      desc: "地上200公尺的義式自助餐，挑高落地窗與水晶藝術裝置超好拍",
+      tag: "大阪",
+      emoji: "🥂",
+      href: "/conrad-osaka",
+      image: "/conrad-osaka/atmos-1.jpg",
+      areas: ["大阪"],
+    },
+    {
       name: "大阪美食推薦2選｜鐵板燒名店＆人氣居酒屋🍻",
       desc: "鉄板屋な。＆酒場ビリー，大阪在地人氣的精緻晚餐＆夜遊居酒屋",
       tag: "大阪",

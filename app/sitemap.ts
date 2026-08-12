@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 const BASE_URL = "https://www.japantrippicks.com";
-const LAST_UPDATED = new Date("2026-07-21");
+const LAST_UPDATED = new Date("2026-08-12");
 
 const ARTICLE_ROUTES: { slug: string; priority?: number }[] = [
   // Gourmet
@@ -9,6 +9,7 @@ const ARTICLE_ROUTES: { slug: string; priority?: number }[] = [
   { slug: "kansai-ramen", priority: 0.85 },
   { slug: "shibuya-yakiniku", priority: 0.8 },
   { slug: "osaka-gourmet", priority: 0.8 },
+  { slug: "conrad-osaka", priority: 0.85 },
   { slug: "sanda-soba", priority: 0.8 },
   { slug: "ginza-apollo", priority: 0.8 },
   { slug: "futakotamagawa", priority: 0.8 },
