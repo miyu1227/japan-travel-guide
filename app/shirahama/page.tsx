@@ -11,7 +11,7 @@ const PAGE_URL = "https://www.japantrippicks.com/shirahama";
 const OG_IMAGE = "/shirahama/cover.jpg";
 
 export const metadata: Metadata = {
-  title: "和歌山白浜景點推薦4選｜熊貓樂園・海邊露營・海景咖啡・海鮮BBQ【實際造訪】｜Japan Trip Picks",
+  title: "和歌山白浜景點推薦4選｜熊貓樂園・海邊露營・海景咖啡・海鮮BBQ【實際造訪】",
   description:
     "和歌山白浜必去景點推薦：可近距離看熊貓的「Adventure World冒險大世界」、國立公園海岸的「In the Outdoor白浜志原海岸」豪華露營、海景名店「Kagerou Café」、超新鮮「とれとれ市場」海鮮BBQ。附交通・料金・營業時間。台灣・香港旅客關西自由行必看！",
   alternates: { canonical: PAGE_URL },

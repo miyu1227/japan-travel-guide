@@ -8,7 +8,7 @@ const PAGE_URL = "https://www.japantrippicks.com/artbar-tokyo";
 const OG_IMAGE = "/artbar-tokyo/artbar-1.jpg";
 
 export const metadata: Metadata = {
-  title: "東京畫畫體驗推薦｜Artbar Tokyo・喝酒作畫的大人藝術體驗【原宿・代官山】｜Japan Trip Picks",
+  title: "東京畫畫體驗推薦｜Artbar Tokyo・喝酒作畫的大人藝術體驗【原宿・代官山】",
   description:
     "東京必去體驗景點「Artbar Tokyo」完整介紹！一邊喝紅酒一邊畫畫的Paint & Sip藝術體驗，臨摹梵谷・莫內名畫，初學者也OK、手ぶら參加。原宿・代官山・銀座・橫濱多間分店，附交通・料金・預約方式。台灣・香港旅客必看！",
   alternates: { canonical: PAGE_URL },

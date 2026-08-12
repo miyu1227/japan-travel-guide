@@ -11,7 +11,7 @@ const PAGE_URL = "https://www.japantrippicks.com/kobe-herb-garden";
 const OG_IMAGE = "/kobe-herb-garden/cover.jpg";
 
 export const metadata: Metadata = {
-  title: "神戶布引香草園推薦｜纜車空中散步・花海與夜景【實際造訪】｜Japan Trip Picks",
+  title: "神戶布引香草園推薦｜纜車空中散步・花海與夜景【實際造訪】",
   description:
     "神戶必去景點「神戶布引香草園」完整介紹！搭纜車登上標高400m山頂，四季花海・薰衣草・古堡風建築・神戶港夜景一次擁有。從新神戶駅直達，附交通・纜車料金・營業時間。台灣・香港旅客關西自由行必看！",
   alternates: { canonical: PAGE_URL },

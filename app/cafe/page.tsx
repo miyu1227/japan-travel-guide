@@ -9,12 +9,12 @@ const PAGE_URL = "https://www.japantrippicks.com/cafe";
 const OG_IMAGE = "/cafe/gelato-1.jpg";
 
 export const metadata: Metadata = {
-  title: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南【2025】",
+  title: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南",
   description:
     "整理自由之丘3間人氣東京咖啡店，包含Q彈貝果、義式冰淇淋、現做起司披薩。街道安靜又可愛，非常適合散步、拍照和享受東京下午茶。來東京旅遊一定要安排半天來這裡！",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南【2025】",
+    title: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南",
     description: "自由之丘3間人氣東京咖啡店。貝果・義式冰淇淋・起司披薩。適合散步、拍照、東京下午茶。",
     url: PAGE_URL,
     type: "article",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南【2025】",
+  headline: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南",
   description: "整理自由之丘3間人氣東京咖啡店。貝果・義式冰淇淋・起司披薩。",
   url: PAGE_URL,
   inLanguage: "zh-TW",

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "不想只吃道頓堀的觀光美食？這篇介紹梅田・福島一帶的在地人氣店：精緻鐵板燒「鉄板屋な。」與話題居酒屋「酒場ビリー」。附交通方式、預算帶、要不要事先訂位、幾點去比較好進，以及怎麼把兩間排進同一個晚上。第一次到大阪也不會踩雷。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "大阪美食推薦2選｜鐵板燒名店＆人氣居酒屋",
+    title: "大阪美食推薦｜梅田在地人氣鐵板燒與居酒屋",
     description: "大阪必吃！鐵板屋な。＆酒場ビリー，在地人氣餐廳。附交通・菜單・推薦。",
     url: PAGE_URL,
     type: "article",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "大阪美食推薦2選｜鐵板燒名店＆人氣居酒屋",
+    title: "大阪美食推薦｜梅田在地人氣鐵板燒與居酒屋",
     description: "大阪必吃！福島區鐵板燒＆梅田話題居酒屋🍻",
     images: [OG_IMAGE],
   },

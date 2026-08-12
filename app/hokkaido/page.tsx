@@ -15,12 +15,12 @@ const PAGE_URL = "https://www.japantrippicks.com/hokkaido";
 const OG_IMAGE = "/hokkaido/farm-1.jpg";
 
 export const metadata: Metadata = {
-  title: "北海道自由行必去景點10選｜札幌・小樽・富良野完整攻略【2025】",
+  title: "北海道自由行必去景點10選｜札幌・小樽・富良野完整攻略",
   description:
     "北海道自由行完整指南！小樽音樂盒堂、美瑛青池、富良野薰衣草花田、札幌迴轉壽司、成吉思汗烤肉…台灣香港旅客最推薦的10個景點＋美食＋3天行程一次整理。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "北海道自由行必去景點10選｜札幌・小樽・富良野完整攻略【2025】",
+    title: "北海道自由行必去景點10選｜札幌・小樽・富良野完整攻略",
     description: "小樽・美瑛・富良野・札幌の必去景點＋美食＋3天行程。台灣香港旅客的北海道完整自由行指南。",
     url: PAGE_URL,
     type: "article",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "北海道自由行必去景點10選｜札幌・小樽・富良野完整攻略【2025】",
+  headline: "北海道自由行必去景點10選｜札幌・小樽・富良野完整攻略",
   description: "小樽・美瑛・富良野・札幌の必去景點＋美食＋3天行程。台灣香港旅客的北海道完整自由行指南。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
