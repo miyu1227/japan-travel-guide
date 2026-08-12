@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
-import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const PAGE_URL = "https://www.japantrippicks.com/conrad-osaka";
 const OG_IMAGE = "/conrad-osaka/atmos-1.jpg";
@@ -111,8 +110,6 @@ export default function ConradOsakaPage() {
             這篇寫給<strong>想在大阪安排一頓紀念日、或想找室內備案</strong>的台灣・香港旅人。<strong>你會知道</strong>：空間長什麼樣、自助餐大概吃得到什麼、早餐／午餐／甜點／晚餐時段怎麼選、從肥後橋站怎麼走，還有要不要訂位與穿著上的注意。
           </p>
         </section>
-
-        <PrepBannerCompact />
 
         {/* 餐廳卡片 */}
         <h2 className="text-lg font-black text-stone-800 mb-4">康萊德大阪 Atmos Italian Dining</h2>

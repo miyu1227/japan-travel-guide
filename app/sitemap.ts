@@ -10,6 +10,7 @@ const ARTICLE_ROUTES: { slug: string; priority?: number }[] = [
   { slug: "shibuya-yakiniku", priority: 0.8 },
   { slug: "osaka-gourmet", priority: 0.8 },
   { slug: "conrad-osaka", priority: 0.85 },
+  { slug: "nishinomiya-gardens", priority: 0.8 },
   { slug: "sanda-soba", priority: 0.8 },
   { slug: "ginza-apollo", priority: 0.8 },
   { slug: "futakotamagawa", priority: 0.8 },

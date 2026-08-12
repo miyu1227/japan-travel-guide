@@ -35,6 +35,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       areas: ["兵庫"],
     },
     {
+      name: "阪急西宮花園美食｜TOOTH TOOTH 蕎麥薄餅與甜點咖啡🍽️",
+      desc: "西宮北口徒步3分！神戶甜點品牌的現煎蕎麥薄餅與季節水果可麗餅",
+      tag: "兵庫",
+      emoji: "🍽️",
+      href: "/nishinomiya-gardens",
+      image: "/nishinomiya-gardens/tooth-1.jpg",
+      areas: ["兵庫"],
+    },
+    {
       name: "大阪飯店自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet🥂",
       desc: "地上200公尺的義式自助餐，挑高落地窗與水晶藝術裝置超好拍",
       tag: "大阪",
