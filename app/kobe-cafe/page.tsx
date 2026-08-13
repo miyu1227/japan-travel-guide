@@ -5,26 +5,26 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 
 const PAGE_URL = "https://www.japantrippicks.com/kobe-cafe";
-const OG_IMAGE = "/kobe-cafe/freundlieb-1.jpg";
+const OG_IMAGE = "/kobe-cafe/caffarel-3.jpg";
 
 export const metadata: Metadata = {
-  title: "神戶咖啡推薦3選｜フロインドリーブ＆異人館＆くまポチ邸【實際造訪】",
+  title: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店【實際造訪】",
   description:
-    "神戶旅遊必去的人氣咖啡廳推薦：教堂改建的「フロインドリーブ 生田店」、北野異人館的「パンとエスプレッソと異人館」，以及熊熊主題麵包吃到飽「ケーニヒスクローネ くまポチ邸」。氛圍・建築・甜點完整介紹，附交通方式・推薦菜單。台灣・香港旅客必看！",
+    "神戶必去的4間人氣咖啡廳：教堂改建的「フロインドリーブ 生田店」、北野異人館的「パンとエスプレッソと異人館」、熊熊主題麵包吃到飽「ケーニヒスクローネ くまポチ邸」，以及義大利巧克力老店「Caffarel 神戶北野本店」。附交通方式、營業時間、推薦菜單與散步路線。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "神戶咖啡推薦3選｜フロインドリーブ＆異人館＆くまポチ邸",
-    description: "教堂咖啡廳・北野異人館咖啡・熊熊主題麵包吃到飽。神戶必去3間人氣咖啡廳。附交通・菜單・推薦時段。",
+    title: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店",
+    description: "教堂咖啡廳・北野異人館咖啡・熊熊麵包吃到飽・義大利巧克力老店。神戶必去4間人氣咖啡廳。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
     siteName: "Japan Trip Picks",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "神戶咖啡推薦・フロインドリーブ生田店" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "神戶咖啡推薦・Caffarel 神戶北野本店的甜點盤" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "神戶咖啡推薦3選｜フロインドリーブ＆異人館＆くまポチ邸",
-    description: "教堂咖啡廳・北野異人館咖啡・熊熊麵包吃到飽，神戶必去3間人氣咖啡廳！",
+    title: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店",
+    description: "教堂咖啡廳・異人館咖啡・熊熊麵包吃到飽・義大利巧克力老店☕",
     images: [OG_IMAGE],
   },
 };
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "神戶咖啡推薦3選｜フロインドリーブ＆異人館＆くまポチ邸【實際造訪】",
-  description: "神戶必去咖啡廳：教堂改建的フロインドリーブ生田店、北野異人館的パンとエスプレッソと異人館、熊熊主題麵包吃到飽的ケーニヒスクローネ くまポチ邸。",
+  headline: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店【實際造訪】",
+  description: "神戶必去咖啡廳：教堂改建的フロインドリーブ生田店、北野異人館的パンとエスプレッソと異人館、熊熊主題麵包吃到飽的ケーニヒスクローネ くまポチ邸，以及義大利巧克力老店Caffarel 神戶北野本店。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-13T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -55,6 +55,7 @@ const breadcrumbJsonLd = {
 const freundliebPhotos = ["/kobe-cafe/freundlieb-1.jpg", "/kobe-cafe/freundlieb-2.jpg", "/kobe-cafe/freundlieb-3.jpg"];
 const panePhotos = ["/kobe-cafe/pane-1.jpg", "/kobe-cafe/pane-2.jpg", "/kobe-cafe/pane-3.jpg"];
 const kumapochiPhotos = ["/kobe-cafe/kumapochi-1.jpg", "/kobe-cafe/kumapochi-2.jpg"];
+const caffarelPhotos = ["/kobe-cafe/caffarel-1.jpg", "/kobe-cafe/caffarel-2.jpg", "/kobe-cafe/caffarel-3.jpg"];
 
 const relatedLinks = [
   { href: "/shukugawa", label: "☕ 夙川おすすめカフェ2選｜兵庫・神戸", desc: "ガレットランチ＆本格コーヒー" },
@@ -90,9 +91,9 @@ export default function KobeCafePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          神戶咖啡推薦3選｜教堂咖啡・<br />異人館咖啡＆熊熊麵包吃到飽☕
+          神戶咖啡推薦4選｜教堂咖啡・異人館<br />熊熊麵包吃到飽＆巧克力老店☕
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-13</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -100,8 +101,11 @@ export default function KobeCafePage() {
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             神戶從明治時代就深受西洋文化影響，是日本最早接觸咖啡與西式點心的地區之一☕ 整座城市充滿異國風情，街角隨處都能遇見有故事的咖啡廳。
           </p>
+          <p className="text-sm text-stone-600 leading-relaxed mb-2">
+            這次推薦的是四間實際造訪過、最有特色的<strong>神戶咖啡廳</strong>——由教堂改建的歷史名店<strong>「フロインドリーブ 生田店」</strong>、位於北野異人館街、洋館氛圍滿點的<strong>「パンとエスプレッソと異人館」</strong>、超人氣熊熊主題、麵包吃到飽的<strong>「ケーニヒスクローネ くまポチ邸」</strong>，以及來自義大利杜林的巧克力老店<strong>「Caffarel 神戶北野本店」</strong>。
+          </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的是三間實際造訪過、最有特色的<strong>神戶咖啡廳</strong>——由教堂改建的歷史名店<strong>「フロインドリーブ 生田店」</strong>、位於北野異人館街、洋館氛圍滿點的<strong>「パンとエスプレッソと異人館」</strong>，以及超人氣熊熊主題、麵包吃到飽的<strong>「ケーニヒスクローネ くまポチ邸」</strong>。
+            這篇寫給<strong>安排神戶半日〜一日散步、想挑一間坐下來休息</strong>的台灣・香港旅人。<strong>你會知道</strong>：四間各自的特色與價格帶、公休日與容易排隊的時段、從三宮・元町怎麼走，還有怎麼把它們串成一條散步路線。
           </p>
         </section>
 
@@ -130,11 +134,18 @@ export default function KobeCafePage() {
                 <p className="text-xs text-stone-500 leading-relaxed">神戶老牌洋菓子的療癒熊熊咖啡，20多種現烤麵包吃到飽</p>
               </div>
             </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">Caffarel 神戶北野本店 → 義大利巧克力・甜點咖啡</p>
+                <p className="text-xs text-stone-500 leading-relaxed">杜林老牌巧克力品牌的日本唯一咖啡空間，貓咪巧克力超好買</p>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">神戶咖啡推薦・3選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">神戶咖啡推薦・4選</h2>
 
         {/* Spot 1: フロインドリーブ */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -335,15 +346,82 @@ export default function KobeCafePage() {
           </div>
         </section>
 
+        {/* Spot 4: Caffarel 神戶北野本店 */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+          <div className="grid grid-cols-3 gap-0.5">
+            {caffarelPhotos.map((src, i) => (
+              <div key={i} className="relative aspect-square bg-stone-100">
+                <Image
+                  src={src}
+                  alt="Caffarel 神戶北野本店 - 神戶咖啡推薦"
+                  fill
+                  sizes="33vw"
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-pink-500 text-white flex items-center justify-center text-sm font-black shrink-0">4</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">Caffarel 神戶北野本店</h3>
+                <span className="text-xs text-stone-400">カファレル 神戸北野本店</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              來自<strong>義大利杜林（Torino）</strong>、1826年創業的巧克力老牌<strong>Caffarel</strong>。招牌是以榛果製作的<strong>「ジャンドゥーヤ」巧克力</strong>，而神戶北野本店最特別的地方是——這裡是<strong>日本國內的Caffarel直營店中，唯一設有咖啡座的店</strong>🍫 店在托爾街（トアロード）上，藍色遮陽棚就是地標。
+            </p>
+
+            <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                點一份<strong>「お皿盛りドルチェ」（附飲料）</strong>就能一次吃到蛋糕、義式冰淇淋與當季水果，盤子上還有拉糖裝飾，端上來的瞬間就想拍照📸 想喝點特別的，可以試試杜林名產<strong>「Bicerin」</strong>——巧克力、濃縮咖啡與牛奶分成三層的熱飲。<strong>貓咪造型的巧克力</strong>做得超可愛，當伴手禮送人幾乎不會失手🐱
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🍫 義大利杜林老牌", "☕ 日本唯一咖啡座", "🐱 貓咪造型巧克力", "🎁 伴手禮好買", "🪑 座位少"].map((t) => (
+                <span key={t} className="text-xs bg-pink-50 text-pink-700 border border-pink-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600">📍 兵庫縣神戶市中央區山本通3-7-29 神戸トアロードビル1F</p>
+              <p className="text-xs text-stone-600">🚉 地下鐵西神・山手線「三宮」駅 徒歩約8分／JR・阪神「元町」駅 徒歩約12分</p>
+              <p className="text-xs text-stone-600">⏰ 11:00〜18:00（L.O. 17:00）／週二公休</p>
+              <p className="text-xs text-stone-600">💴 甜點盤約¥1,700〜、飲品約¥900〜（價格以店頭菜單為準）</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">咖啡座只有<strong>桌位5席＋吧台3席</strong>，人多時要等；一個人來反而很好坐</p>
+            </div>
+
+            <a
+              href="https://www.caffarel.co.jp/view/page/kobe-kitano"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+            >
+              🔗 官方網站
+            </a>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">神戶咖啡散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
-            <li>✅ 三間都是人氣店，建議<strong>平日上午</strong>造訪比較不用排隊</li>
-            <li>✅ 三宮→生田神社→フロインドリーブ→北野異人館街，路線剛剛好可以串成散步行程</li>
+            <li>✅ 四間都是人氣店，建議<strong>平日上午</strong>造訪比較不用排隊</li>
+            <li>✅ 三宮→生田神社→フロインドリーブ→托爾街的Caffarel→北野異人館街，路線剛剛好可以串成散步行程</li>
             <li>✅ くまポチ邸的麵包吃到飽建議空腹前往，開店前就會排隊要有心理準備🥐</li>
             <li>✅ 神戶是個小巧的城市，幾乎所有景點都能用走的串起來👟</li>
             <li>✅ フロインドリーブ的德式餅乾很適合當伴手禮帶回家🍪</li>
+            <li>✅ Caffarel<strong>週二公休</strong>、フロインドリーブ<strong>週三公休</strong>，安排行程時要注意</li>
             <li>✅ 出發前查詢營業時間與公休日，避免白跑一趟</li>
           </ul>
         </section>
@@ -351,8 +429,8 @@ export default function KobeCafePage() {
         {/* ぽやぴよ */}
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
-            夢幻教堂咖啡廳、洋館裡的麵包店，再加上療癒的熊熊麵包吃到飽——三間風格不同但都讓人難忘✨<br />
-            來神戶旅遊，請務必把這三間排進咖啡散步行程！
+            夢幻教堂咖啡廳、洋館裡的麵包店、療癒的熊熊麵包吃到飽，再加上義大利巧克力老店的甜點盤——四間風格完全不同，但都讓人難忘✨<br />
+            來神戶旅遊，請務必挑一兩間排進咖啡散步行程！
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
             <div className="text-3xl shrink-0">🐥</div>
