@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// Klook eSIM（報酬率が最も高いカテゴリ）への直リンク。
+// 内部記事を経由せず1ホップで予約ページへ飛ばす。
+const KLOOK_ESIM_URL =
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1307234&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F109393-japan-esim-high-speed-internet-qr-code-voucher";
+
 export default function PrepBanner() {
   return (
     <section className="my-8">
@@ -41,12 +46,20 @@ export default function PrepBanner() {
           </div>
         </div>
 
-        {/* CTA */}
-        <Link
-          href="/japan-esim"
+        {/* CTA：予約直リンクを主、解説記事を副に */}
+        <a
+          href={KLOOK_ESIM_URL}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
           className="relative block w-full text-center text-sm font-bold text-white bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 hover:from-pink-500 hover:via-rose-500 hover:to-orange-500 rounded-full py-3 shadow-md hover:shadow-lg transition-all"
         >
-          📱 查看日本 eSIM 使用指南 →
+          📱 在 Klook 預訂日本 eSIM →
+        </a>
+        <Link
+          href="/japan-esim"
+          className="relative block w-full text-center text-xs font-bold text-pink-700 bg-white/80 backdrop-blur border border-pink-200 rounded-full py-2 mt-2 hover:bg-white transition-all"
+        >
+          先看 eSIM 使用指南（怎麼選、怎麼開通）
         </Link>
         <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 部分內容含聯盟行銷連結，若透過連結預訂，我們可能會獲得佣金。</p>
       </div>

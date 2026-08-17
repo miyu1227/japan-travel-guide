@@ -5,11 +5,11 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 
 const KLOOK_AOI =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1347320&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F150522-shirogane-blue-pond-shikisai-no-oka-farm-tomita-one-day-tour";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1347320&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F150522-shirogane-blue-pond-shikisai-no-oka-farm-tomita-one-day-tour";
 const KLOOK_FARM =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1347324&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F4160-sapporo-flower-farm-blue-pond-tour-hokkaido";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1347324&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F4160-sapporo-flower-farm-blue-pond-tour-hokkaido";
 const KLOOK_LUGGAGE =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1347329&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F130400-luggage-delivery-service-between-sapporo-hotels-and-new-chitose-airport-hokkaido";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1347329&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F130400-luggage-delivery-service-between-sapporo-hotels-and-new-chitose-airport-hokkaido";
 
 const PAGE_URL = "https://www.japantrippicks.com/hokkaido";
 const OG_IMAGE = "/hokkaido/farm-1.jpg";

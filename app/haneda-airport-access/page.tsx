@@ -8,11 +8,11 @@ const PAGE_URL = "https://www.japantrippicks.com/haneda-airport-access";
 const OG_IMAGE = "/haneda-airport-access/cover.png";
 
 const KLOOK_LUGGAGE =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314608&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F27664-hotel-luggage-delivery-service-tokyo-hotels-airport";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314608&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F27664-hotel-luggage-delivery-service-tokyo-hotels-airport";
 const KLOOK_ROYAL_PARK =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314612&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Fhotels%2Fdetail%2F492661-the-royal-park-hotel-tokyo-haneda-airport-terminal-3%2F%3Fcheck_in%3D2026-07-23%26check_out%3D2026-07-24%26room_num%3D1%26adult_num%3D1%26child_num%3D0";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314612&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F492661-the-royal-park-hotel-tokyo-haneda-airport-terminal-3%2F";
 const KLOOK_MONDAY =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314614&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Fhotels%2Fdetail%2F281392-hotel-monday-haneda-airport%2F%3Fcheck_in%3D2026-07-26%26check_out%3D2026-07-27%26room_num%3D1%26adult_num%3D1%26child_num%3D0";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314614&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F281392-hotel-monday-haneda-airport%2F";
 
 export const metadata: Metadata = {
   title: "羽田機場到東京市區交通攻略｜京急、單軌電車怎麼選",

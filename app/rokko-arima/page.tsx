@@ -5,7 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 
 const KLOOK_ROKKO_NIGHT =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339868&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F88299-mtrokko-night-view-day-tour-kobe-osaka";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339868&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F88299-mtrokko-night-view-day-tour-kobe-osaka";
 
 const PAGE_URL = "https://www.japantrippicks.com/rokko-arima";
 const OG_IMAGE = "/rokko-arima/rokko-1.jpg";

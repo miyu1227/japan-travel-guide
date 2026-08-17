@@ -5,7 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 
 const KLOOK_TORETORE =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339829&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F153493-conan-themed-niche-wakayama-one-day-tour-takashi-station-toretore";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339829&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F153493-conan-themed-niche-wakayama-one-day-tour-takashi-station-toretore";
 
 const PAGE_URL = "https://www.japantrippicks.com/shirahama";
 const OG_IMAGE = "/shirahama/cover.jpg";

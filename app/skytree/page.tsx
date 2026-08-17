@@ -8,7 +8,7 @@ const PAGE_URL = "https://www.japantrippicks.com/skytree";
 const OG_IMAGE = "/skytree/cover.png";
 
 const KLOOK_SKYTREE =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1320694&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F41352-tokyo-skytree";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1320694&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F41352-tokyo-skytree";
 
 export const metadata: Metadata = {
   title: "東京晴空塔攻略｜門票預約、交通方式、夜景與拍照景點整理",

@@ -8,7 +8,7 @@ const PAGE_URL = "https://www.japantrippicks.com/conrad-osaka";
 const OG_IMAGE = "/conrad-osaka/atmos-1.jpg";
 
 const KLOOK_CONRAD_STAY =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1381759&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Fhotels%2Fdetail%2F282449-conrad-osaka%2F%3Fcheck_in%3D2026-09-08%26check_out%3D2026-09-09%26room_num%3D1%26adult_num%3D1%26child_num%3D0";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1381759&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F282449-conrad-osaka%2F";
 
 export const metadata: Metadata = {
   title: "大阪飯店自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet",

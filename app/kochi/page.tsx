@@ -5,7 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 
 const KLOOK_CLEMENT_INN =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339930&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Fhotels%2Fdetail%2F691887-jr-clement-inn-kochi%2F%3Fcheck_in%3D2026-08-16%26check_out%3D2026-08-17%26room_num%3D1%26adult_num%3D1%26child_num%3D0";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339930&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F691887-jr-clement-inn-kochi%2F";
 
 const PAGE_URL = "https://www.japantrippicks.com/kochi";
 const OG_IMAGE = "/kochi/nikobuchi-1.jpg";

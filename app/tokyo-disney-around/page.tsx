@@ -6,7 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 
 const KLOOK_SHUTTLE =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339860&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F127556-tokyo-disneyland-disneysea-shared-transfer-city";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339860&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F127556-tokyo-disneyland-disneysea-shared-transfer-city";
 
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-disney-around";
 const OG_IMAGE = "/tokyo-disney-around/cover.jpg";

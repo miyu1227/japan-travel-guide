@@ -5,11 +5,11 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 
 const KLOOK_AQUARIUM =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339931&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F74358-shikoku-aquarium";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339931&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F74358-shikoku-aquarium";
 const KLOOK_SHIKISHIMA =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339934&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Fhotels%2Fdetail%2F422726-onyado-shikishimakan%2F%3Fcheck_in%3D2026-08-17%26check_out%3D2026-08-18%26room_num%3D1%26adult_num%3D1%26child_num%3D0";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339934&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F422726-onyado-shikishimakan%2F";
 const KLOOK_KAGAWA_PASS =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339933&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F156814-have-fun-in-kagawa-pass-1-week-free-pass";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339933&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F156814-have-fun-in-kagawa-pass-1-week-free-pass";
 
 const PAGE_URL = "https://www.japantrippicks.com/kagawa";
 const OG_IMAGE = "/kagawa/yamagoe-1.jpg";

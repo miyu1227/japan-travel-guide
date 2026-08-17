@@ -6,7 +6,7 @@ const PAGE_URL = "https://www.japantrippicks.com/tokyo-subway-ticket";
 const OG_IMAGE = "/tokyo-subway-ticket/cover.png";
 
 const KLOOK_URL =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1307238&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F1552-subway-ticket-tokyo%2F%3Fspm%3DSearchResult.SearchResult_LIST%26clickId%3Dacb5dc654e";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1307238&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F1552-subway-ticket-tokyo%2F";
 
 export const metadata: Metadata = {
   title: "東京地鐵券攻略｜Tokyo Subway Ticket 24/48/72小時怎麼選",

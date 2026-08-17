@@ -8,9 +8,9 @@ const PAGE_URL = "https://www.japantrippicks.com/narita-airport-access";
 const OG_IMAGE = "/narita-airport-access/cover.png";
 
 const KLOOK_LUGGAGE =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314572&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Factivity%2F27664-hotel-luggage-delivery-service-tokyo-hotels-airport";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314572&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F27664-hotel-luggage-delivery-service-tokyo-hotels-airport";
 const KLOOK_9H =
-  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314574&k_site=https%3A%2F%2Fwww.klook.com%2Fja%2Fhotels%2Fdetail%2F587377-9h-nine-hours-narita-airport%2F%3Fcheck_in%3D2026-07-24%26check_out%3D2026-07-25%26room_num%3D1%26adult_num%3D1%26child_num%3D0";
+  "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314574&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F587377-9h-nine-hours-narita-airport%2F";
 
 export const metadata: Metadata = {
   title: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR怎麼選",
