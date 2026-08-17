@@ -7,7 +7,7 @@ const OG_IMAGE = "/poyapiyo-flag.png";
 export const metadata: Metadata = {
   title: "掲載・プロモーションのご案内｜訪日台湾・香港旅行者向けPR",
   description:
-    "訪日外国人（台湾・香港）向け旅行ガイドサイト Japan Trip Picks への店舗・スポット掲載のご案内。¥10,000で貴店専用の記事を1本作成し、日本語＋繁体字での紹介文つきで永久掲載します。SNS紹介オプションもご用意しています。",
+    "訪日外国人（台湾・香港）向け旅行ガイドサイト Japan Trip Picks への店舗・スポット掲載のご案内。貴店専用の記事を1本作成し、日本語＋繁体字での紹介文つきで永久掲載します。料金はお見積りいたしますので、お気軽にお問い合わせください。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "掲載・プロモーションのご案内｜Japan Trip Picks",
@@ -72,7 +72,7 @@ export default function PromotionPage() {
                 <span className="font-black text-white text-base block">貴店専用ページ</span>
                 <span className="text-white/90 text-xs">記事を1本まるごと作成します</span>
               </div>
-              <span className="text-white font-black text-2xl">¥10,000</span>
+              <span className="text-white font-black text-lg">お見積り</span>
             </div>
             <div className="px-5 py-4">
               <p className="text-xs text-stone-500 font-semibold mb-3">🌸 1店舗ごとに独立したページをお作りします</p>
@@ -85,6 +85,10 @@ export default function PromotionPage() {
                 <li className="flex items-center gap-2"><span className="text-rose-400 font-bold">✔</span> 修正2回</li>
                 <li className="flex items-center gap-2"><span className="text-rose-400 font-bold">✔</span> 永久掲載（月額費用・更新料なし）</li>
               </ul>
+              <p className="text-xs text-stone-500 leading-relaxed mt-4 pt-3 border-t border-stone-100">
+                料金は掲載内容に応じてお見積りいたします。
+                お気軽にお問い合わせください。折り返しご案内いたします。
+              </p>
             </div>
           </div>
         </div>
@@ -92,10 +96,7 @@ export default function PromotionPage() {
         {/* Option */}
         <div className="bg-yellow-50 border border-yellow-200 rounded-2xl px-5 py-4">
           <p className="text-sm font-black text-stone-700 mb-1">✨ オプション</p>
-          <div className="flex items-center justify-between">
-            <span className="text-sm text-stone-600">SNS紹介（Instagram等）</span>
-            <span className="font-black text-yellow-700">+¥3,000</span>
-          </div>
+          <p className="text-sm text-stone-600">SNS紹介（Instagram・Threads）</p>
         </div>
 
         {/* Notes */}
@@ -173,6 +174,9 @@ export default function PromotionPage() {
             <li>・ 掲載希望内容</li>
             <li>・ 参考URL（あれば）</li>
           </ul>
+          <p className="text-xs text-stone-500 leading-relaxed">
+            お見積りは無料です。内容を確認のうえ、料金と掲載までの流れをご案内いたします。
+          </p>
           <a
             href="mailto:poyapiyotonemuneko@gmail.com"
             className="flex items-center justify-center gap-2 w-full bg-stone-800 hover:bg-stone-700 text-white font-bold text-sm rounded-2xl py-3 transition-colors"
