@@ -7,7 +7,7 @@ const OG_IMAGE = "/poyapiyo-flag.png";
 export const metadata: Metadata = {
   title: "掲載・プロモーションのご案内｜訪日台湾・香港旅行者向けPR",
   description:
-    "訪日外国人（台湾・香港）向け旅行ガイドサイト Japan Trip Picks への店舗・スポット掲載プランのご案内。ライトプラン¥10,000／スタンダードプラン¥15,000、日本語＋繁体字での紹介文作成つき・永久掲載。SNS紹介オプションもご用意しています。",
+    "訪日外国人（台湾・香港）向け旅行ガイドサイト Japan Trip Picks への店舗・スポット掲載のご案内。¥10,000で貴店専用の記事を1本作成し、日本語＋繁体字での紹介文つきで永久掲載します。SNS紹介オプションもご用意しています。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "掲載・プロモーションのご案内｜Japan Trip Picks",
@@ -62,48 +62,28 @@ export default function PromotionPage() {
           </div>
         </div>
 
-        {/* Plans */}
+        {/* Plan */}
         <div className="space-y-4">
           <h2 className="text-sm font-black text-stone-500 uppercase tracking-widest px-1">掲載プラン</h2>
 
-          {/* Light Plan */}
           <div className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden">
-            <div className="bg-green-400 px-5 py-3 flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <span className="w-7 h-7 rounded-full bg-white text-green-500 text-xs font-black flex items-center justify-center">L</span>
-                <span className="font-black text-white text-base">ライトプラン</span>
+            <div className="bg-rose-400 px-5 py-4 flex items-center justify-between">
+              <div>
+                <span className="font-black text-white text-base block">貴店専用ページ</span>
+                <span className="text-white/90 text-xs">記事を1本まるごと作成します</span>
               </div>
-              <span className="text-white font-black text-xl">¥10,000</span>
+              <span className="text-white font-black text-2xl">¥10,000</span>
             </div>
             <div className="px-5 py-4">
-              <p className="text-xs text-stone-500 font-semibold mb-3">🟢 スポット掲載 — とりあえず載せたい方向け</p>
+              <p className="text-xs text-stone-500 font-semibold mb-3">🌸 1店舗ごとに独立したページをお作りします</p>
               <ul className="space-y-2 text-sm text-stone-600">
-                <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 既存フォーマットに掲載</li>
-                <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 写真3〜5枚<span className="text-stone-400 text-xs">（※1）</span></li>
-                <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 基本情報（住所・アクセス・営業時間など）</li>
-                <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 紹介文作成（日本語＋繁体字）</li>
-                <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 修正1回</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Standard Plan */}
-          <div className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden">
-            <div className="bg-blue-500 px-5 py-3 flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <span className="w-7 h-7 rounded-full bg-white text-blue-500 text-xs font-black flex items-center justify-center">S</span>
-                <span className="font-black text-white text-base">スタンダードプラン</span>
-              </div>
-              <span className="text-white font-black text-xl">¥15,000</span>
-            </div>
-            <div className="px-5 py-4">
-              <p className="text-xs text-stone-500 font-semibold mb-3">🔵 特集記事掲載 — しっかりPRしたい方向け</p>
-              <ul className="space-y-2 text-sm text-stone-600">
-                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 1記事作成</li>
-                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 写真5〜10枚<span className="text-stone-400 text-xs">（※1）</span></li>
-                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 基本情報（住所・アクセス・営業時間など）</li>
-                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 紹介文作成（日本語＋繁体字）</li>
-                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 修正2回</li>
+                <li className="flex items-center gap-2"><span className="text-rose-400 font-bold">✔</span> 貴店専用の記事を1本作成</li>
+                <li className="flex items-center gap-2"><span className="text-rose-400 font-bold">✔</span> 写真5〜10枚<span className="text-stone-400 text-xs">（※1）</span></li>
+                <li className="flex items-center gap-2"><span className="text-rose-400 font-bold">✔</span> 基本情報（住所・アクセス・営業時間など）</li>
+                <li className="flex items-center gap-2"><span className="text-rose-400 font-bold">✔</span> 紹介文作成（日本語＋繁体字）</li>
+                <li className="flex items-center gap-2"><span className="text-rose-400 font-bold">✔</span> 公式サイト・地図へのリンク</li>
+                <li className="flex items-center gap-2"><span className="text-rose-400 font-bold">✔</span> 修正2回</li>
+                <li className="flex items-center gap-2"><span className="text-rose-400 font-bold">✔</span> 永久掲載（月額費用・更新料なし）</li>
               </ul>
             </div>
           </div>
@@ -140,6 +120,47 @@ export default function PromotionPage() {
           </ul>
         </div>
 
+        {/* 掲載基準 */}
+        <div className="bg-white rounded-2xl border border-stone-200 px-5 py-4">
+          <p className="text-sm font-black text-stone-700 mb-1">🛡 掲載基準について</p>
+          <p className="text-xs text-stone-500 leading-relaxed mb-3">
+            掲載の可否は当サイトにて判断いたします。以下に該当すると判断した場合は、
+            お申し込みをお受けできませんので、あらかじめご了承ください。
+          </p>
+          <ul className="space-y-1.5 text-xs text-stone-600 leading-relaxed">
+            <li>1. 法令、条例、業界規制等に違反する内容</li>
+            <li>2. 掲載内容に虚偽があるか、誤認・錯誤を招くおそれのある場合</li>
+            <li>3. 公序良俗に反する内容、または誹謗中傷・人権侵害にあたる内容</li>
+            <li>4. 第三者の氏名・写真・商標・著作物等を無断で使用している場合</li>
+            <li>5. その他、当サイトの品位を損なうと判断した場合</li>
+          </ul>
+          <p className="text-[10px] text-stone-400 leading-relaxed mt-3">
+            ※掲載可否の判断理由については、原則として公開しておりません。
+          </p>
+        </div>
+
+        {/* 免責事項 */}
+        <div className="bg-stone-50 rounded-2xl border border-stone-200 px-5 py-4">
+          <p className="text-sm font-black text-stone-700 mb-3">⚖️ 免責事項</p>
+          <ul className="space-y-2 text-xs text-stone-600 leading-relaxed">
+            <li>
+              ・掲載内容および掲載により生じるお客様と第三者との間のトラブルについて、
+              当サイトは責任を負いかねます。
+            </li>
+            <li>
+              ・掲載による集客効果・検索順位・売上等を保証するものではありません。
+            </li>
+            <li>
+              ・天災、通信障害、システム上の不具合など当サイトの責によらない事由により
+              掲載に支障が生じた場合、賠償および補填措置の対象といたしません。
+            </li>
+            <li>
+              ・掲載は当サイトの運営期間中に限ります。やむを得ずサイトを終了する場合、
+              掲載料の返金には応じかねますので、あらかじめご了承ください。
+            </li>
+          </ul>
+        </div>
+
         {/* Contact */}
         <div className="bg-white rounded-3xl border border-stone-100 shadow-sm px-5 py-5 space-y-3">
           <p className="font-black text-stone-800">📩 お問い合わせ</p>
@@ -166,6 +187,10 @@ export default function PromotionPage() {
             </p>
           </div>
           <p className="text-[10px] text-stone-300">※掲載はサイト掲載期間中、永久掲載となります。</p>
+          <p className="text-[10px] text-stone-400 leading-relaxed">
+            運営者：Japan Trip Picks（個人事業）／運営者の氏名・所在地・連絡先は、
+            ご請求により遅滞なく開示いたします。上記メールアドレスまでお問い合わせください。
+          </p>
         </div>
 
       </article>
