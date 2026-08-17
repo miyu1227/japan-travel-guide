@@ -187,10 +187,38 @@ export default function PromotionPage() {
             </p>
           </div>
           <p className="text-[10px] text-stone-300">※掲載はサイト掲載期間中、永久掲載となります。</p>
-          <p className="text-[10px] text-stone-400 leading-relaxed">
-            運営者：Japan Trip Picks（個人事業）／運営者の氏名・所在地・連絡先は、
-            ご請求により遅滞なく開示いたします。上記メールアドレスまでお問い合わせください。
-          </p>
+        </div>
+
+        {/* 運営者情報 */}
+        <div className="bg-white rounded-2xl border border-stone-200 px-5 py-4">
+          <p className="text-sm font-black text-stone-700 mb-3">🏢 運営者情報</p>
+          <dl className="text-xs text-stone-600 space-y-2">
+            <div className="flex gap-3">
+              <dt className="w-16 shrink-0 text-stone-400">運営者</dt>
+              <dd>Japan Trip Picks</dd>
+            </div>
+            <div className="flex gap-3">
+              <dt className="w-16 shrink-0 text-stone-400">所在地</dt>
+              <dd className="leading-relaxed">
+                〒106-0032<br />
+                東京都港区六本木3丁目16番12号 六本木KSビル5F
+              </dd>
+            </div>
+            <div className="flex gap-3">
+              <dt className="w-16 shrink-0 text-stone-400">電話番号</dt>
+              <dd>
+                <a href="tel:08061376853" className="hover:text-stone-800 transition-colors">080-6137-6853</a>
+              </dd>
+            </div>
+            <div className="flex gap-3">
+              <dt className="w-16 shrink-0 text-stone-400">メール</dt>
+              <dd>
+                <a href="mailto:poyapiyotonemuneko@gmail.com" className="hover:text-stone-800 transition-colors">
+                  poyapiyotonemuneko@gmail.com
+                </a>
+              </dd>
+            </div>
+          </dl>
         </div>
 
       </article>
