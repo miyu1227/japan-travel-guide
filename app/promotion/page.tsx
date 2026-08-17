@@ -124,8 +124,8 @@ export default function PromotionPage() {
           <ul className="space-y-3 text-xs text-stone-600 leading-relaxed">
             <li>
               <span className="font-bold text-stone-700">※1 写真について</span><br />
-              お客様よりご提供いただくのが基本となります。当方で撮影をご希望の場合は、
-              交通費を別途申し受けます（遠方の場合は事前にご相談ください）。
+              お客様よりご提供いただきます。当方での撮影は承っておりませんので、
+              あらかじめご了承ください。
             </li>
             <li>
               <span className="font-bold text-stone-700">※2 閉店・移転された場合</span><br />
@@ -162,7 +162,7 @@ export default function PromotionPage() {
           <div className="border-t border-stone-100 pt-3">
             <p className="text-xs font-semibold text-stone-500 mb-2">🌏 For business inquiries (English)</p>
             <p className="text-xs text-stone-400 leading-relaxed">
-              We offer promotion and featured listings for businesses in Japan. All listings will remain on the site permanently. Photos are to be provided by the business; on-site photography can be arranged with travel costs charged separately. Please include your business name, location, content request, and website or social media.
+              We offer promotion and featured listings for businesses in Japan. All listings will remain on the site permanently. Photos are to be provided by the business; we do not offer on-site photography. Please include your business name, location, content request, and website or social media.
             </p>
           </div>
           <p className="text-[10px] text-stone-300">※掲載はサイト掲載期間中、永久掲載となります。</p>
