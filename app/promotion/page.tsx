@@ -79,7 +79,7 @@ export default function PromotionPage() {
               <p className="text-xs text-stone-500 font-semibold mb-3">🟢 スポット掲載 — とりあえず載せたい方向け</p>
               <ul className="space-y-2 text-sm text-stone-600">
                 <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 既存フォーマットに掲載</li>
-                <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 写真3〜5枚</li>
+                <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 写真3〜5枚<span className="text-stone-400 text-xs">（※1）</span></li>
                 <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 基本情報（住所・アクセス・営業時間など）</li>
                 <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 紹介文作成（日本語＋繁体字）</li>
                 <li className="flex items-center gap-2"><span className="text-green-400 font-bold">✔</span> 修正1回</li>
@@ -100,7 +100,7 @@ export default function PromotionPage() {
               <p className="text-xs text-stone-500 font-semibold mb-3">🔵 特集記事掲載 — しっかりPRしたい方向け</p>
               <ul className="space-y-2 text-sm text-stone-600">
                 <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 1記事作成</li>
-                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 写真5〜10枚</li>
+                <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 写真5〜10枚<span className="text-stone-400 text-xs">（※1）</span></li>
                 <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 基本情報（住所・アクセス・営業時間など）</li>
                 <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 紹介文作成（日本語＋繁体字）</li>
                 <li className="flex items-center gap-2"><span className="text-blue-400 font-bold">✔</span> 修正2回</li>
@@ -116,6 +116,28 @@ export default function PromotionPage() {
             <span className="text-sm text-stone-600">SNS紹介（Instagram等）</span>
             <span className="font-black text-yellow-700">+¥3,000</span>
           </div>
+        </div>
+
+        {/* Notes */}
+        <div className="bg-white rounded-2xl border border-stone-200 px-5 py-4">
+          <p className="text-sm font-black text-stone-700 mb-3">📋 ご確認事項</p>
+          <ul className="space-y-3 text-xs text-stone-600 leading-relaxed">
+            <li>
+              <span className="font-bold text-stone-700">※1 写真について</span><br />
+              お客様よりご提供いただくのが基本となります。当方で撮影をご希望の場合は、
+              交通費を別途申し受けます（遠方の場合は事前にご相談ください）。
+            </li>
+            <li>
+              <span className="font-bold text-stone-700">※2 閉店・移転された場合</span><br />
+              掲載の削除または基本情報の修正にて対応いたします。
+              記事内容の全面的な書き換えが必要な場合は、新規のお申し込みとなります。
+            </li>
+            <li>
+              <span className="font-bold text-stone-700">※3 掲載枠について</span><br />
+              第三者への譲渡・転売はできません。運営者が変わられた場合も、
+              掲載内容の引き継ぎはお受けしておりません。
+            </li>
+          </ul>
         </div>
 
         {/* Contact */}
@@ -140,7 +162,7 @@ export default function PromotionPage() {
           <div className="border-t border-stone-100 pt-3">
             <p className="text-xs font-semibold text-stone-500 mb-2">🌏 For business inquiries (English)</p>
             <p className="text-xs text-stone-400 leading-relaxed">
-              We offer promotion and featured listings for businesses in Japan. All listings will remain on the site permanently. Please include your business name, location, content request, and website or social media.
+              We offer promotion and featured listings for businesses in Japan. All listings will remain on the site permanently. Photos are to be provided by the business; on-site photography can be arranged with travel costs charged separately. Please include your business name, location, content request, and website or social media.
             </p>
           </div>
           <p className="text-[10px] text-stone-300">※掲載はサイト掲載期間中、永久掲載となります。</p>
