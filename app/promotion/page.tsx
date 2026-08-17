@@ -7,7 +7,7 @@ const OG_IMAGE = "/poyapiyo-flag.png";
 export const metadata: Metadata = {
   title: "掲載・プロモーションのご案内｜訪日台湾・香港旅行者向けPR",
   description:
-    "訪日外国人（台湾・香港）向け旅行ガイドサイト Japan Trip Picks への店舗・スポット掲載プランのご案内。ライトプラン¥5,000／スタンダードプラン¥10,000、日本語＋繁体字での紹介文作成つき・永久掲載。SNS紹介オプションもご用意しています。",
+    "訪日外国人（台湾・香港）向け旅行ガイドサイト Japan Trip Picks への店舗・スポット掲載プランのご案内。ライトプラン¥10,000／スタンダードプラン¥15,000、日本語＋繁体字での紹介文作成つき・永久掲載。SNS紹介オプションもご用意しています。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "掲載・プロモーションのご案内｜Japan Trip Picks",
@@ -73,7 +73,7 @@ export default function PromotionPage() {
                 <span className="w-7 h-7 rounded-full bg-white text-green-500 text-xs font-black flex items-center justify-center">L</span>
                 <span className="font-black text-white text-base">ライトプラン</span>
               </div>
-              <span className="text-white font-black text-xl">¥5,000</span>
+              <span className="text-white font-black text-xl">¥10,000</span>
             </div>
             <div className="px-5 py-4">
               <p className="text-xs text-stone-500 font-semibold mb-3">🟢 スポット掲載 — とりあえず載せたい方向け</p>
@@ -94,7 +94,7 @@ export default function PromotionPage() {
                 <span className="w-7 h-7 rounded-full bg-white text-blue-500 text-xs font-black flex items-center justify-center">S</span>
                 <span className="font-black text-white text-base">スタンダードプラン</span>
               </div>
-              <span className="text-white font-black text-xl">¥10,000</span>
+              <span className="text-white font-black text-xl">¥15,000</span>
             </div>
             <div className="px-5 py-4">
               <p className="text-xs text-stone-500 font-semibold mb-3">🔵 特集記事掲載 — しっかりPRしたい方向け</p>
