@@ -136,6 +136,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   snacks: [
     {
+      name: "東京外帶蛋糕推薦｜PARIYA・IG爆紅杯型鮮奶油蛋糕🍰",
+      desc: "澀谷車站直結B2！草莓經典款¥1,058起，帶回飯店當宵夜的最強選擇",
+      tag: "東京",
+      emoji: "🍰",
+      href: "/takeout-cake",
+      image: "/takeout-cake/cover.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "Mister Donut期間限定｜超人氣もっちゅりん甜甜圈🍩",
       desc: "波堤×布丁的革命性組合！每天排隊售完的日本限定話題甜點",
       tag: "日本",

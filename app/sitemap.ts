@@ -21,6 +21,7 @@ const ARTICLE_ROUTES: { slug: string; priority?: number }[] = [
   // Snacks
   { slug: "mister-donut", priority: 0.8 },
   { slug: "tokyo-cookies", priority: 0.8 },
+  { slug: "takeout-cake", priority: 0.85 },
   // Cafés
   { slug: "cafe", priority: 0.9 },
   { slug: "kiyosumi-cafe", priority: 0.8 },
