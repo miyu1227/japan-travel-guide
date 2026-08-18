@@ -11,7 +11,7 @@ const OG_IMAGE = "/kobe-cafe/caffarel-3.jpg";
 export const metadata: Metadata = {
   title: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店【實際造訪】",
   description:
-    "神戶必去的4間人氣咖啡廳：教堂改建的「フロインドリーブ 生田店」、北野異人館的「パンとエスプレッソと異人館」、熊熊主題麵包吃到飽「ケーニヒスクローネ くまポチ邸」，以及義大利巧克力老店「Caffarel 神戶北野本店」。附交通方式、營業時間、推薦菜單與散步路線。",
+    "教堂改建的「フロインドリーブ」、北野異人館的「パンとエスプレッソと」、熊熊主題吃到飽「くまポチ邸」、巧克力老店「Caffarel」。附交通、營業時間與散步路線。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店",

@@ -12,7 +12,7 @@ const OG_IMAGE = "/tokyo-yakiniku/cover.jpg";
 export const metadata: Metadata = {
   title: "東京高級燒肉推薦｜叙々苑 品川王子大飯店店【實際造訪】",
   description:
-    "東京高級燒肉推薦！日本高級燒肉代表品牌「叙々苑（JOJOEN）」品川王子大飯店店，品川站徒步2分、飯店1樓、無煙烤爐與雙人座位。附午餐價格（¥2,640〜）、晚餐預算、營業時間與訂位重點。台灣・香港旅客東京自由行必收藏🥩",
+    "日本高級燒肉代表「叙々苑」品川王子大飯店店。品川站徒步2分、飯店1樓、無煙烤爐與雙人座位。附午餐價格（¥2,640〜）、晚餐預算、營業時間與訂位重點。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "東京高級燒肉推薦｜叙々苑 品川王子大飯店店",

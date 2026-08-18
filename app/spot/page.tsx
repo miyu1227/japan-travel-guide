@@ -10,9 +10,9 @@ const PAGE_URL = "https://www.japantrippicks.com/spot";
 const OG_IMAGE = "/spot/shinjuku-1.jpg";
 
 export const metadata: Metadata = {
-  title: "東京野餐推薦3選｜新宿御苑・代代木公園・日比谷公園完全指南【2026】",
+  title: "東京野餐3選｜新宿御苑・代代木・日比谷【2026】",
   description:
-    "東京野餐最推薦的3大公園：新宿御苑、代代木公園、日比谷公園。附交通方式、門票資訊、外帶美食推薦（東京中城日比谷麵包店・咖啡店），以及最佳造訪季節。台灣・香港旅客來東京旅遊想放鬆的人必看！",
+    "東京野餐最推薦的3大公園：新宿御苑、代代木公園、日比谷公園。附交通方式、門票資訊、外帶美食推薦與最佳造訪季節。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "東京野餐推薦3選｜新宿御苑・代代木・日比谷公園完全指南【2026】",

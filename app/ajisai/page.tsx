@@ -10,7 +10,7 @@ const PAGE_URL = "https://www.japantrippicks.com/ajisai";
 const OG_IMAGE = "/ajisai/cover.jpg";
 
 export const metadata: Metadata = {
-  title: "東京繡球花景點推薦2選｜台場シンボルプロムナード＆文京白山神社紫陽花🌸",
+  title: "東京繡球花景點2選｜台場・白山神社免費賞花🌸",
   description:
     "6月的東京限定景色！精選2個免費賞紫陽花（あじさい）景點：台場シンボルプロムナード公園、文京區白山神社「文京あじさいまつり」。含最佳花期、交通方式與拍照攻略。",
   alternates: { canonical: PAGE_URL },

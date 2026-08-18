@@ -10,9 +10,9 @@ const PAGE_URL = "https://www.japantrippicks.com/nakameguro-cafe";
 const OG_IMAGE = "/nakameguro-cafe/starbucks-1.jpg";
 
 export const metadata: Metadata = {
-  title: "中目黑咖啡廳推薦｜星巴克臻選東京烘焙工坊・隈研吾建築【實際造訪】",
+  title: "中目黑星巴克臻選｜隈研吾設計烘焙工坊✅實訪",
   description:
-    "中目黑咖啡廳推薦！世界6間之一的「STARBUCKS RESERVE ROASTERY TOKYO」星巴克臻選東京烘焙工坊，隈研吾設計・目黑川旁賞櫻聖地。4層樓咖啡主題樂園完整介紹，附交通・營業時間・樓層特色。台灣・香港旅客必看！",
+    "世界6間之一的「STARBUCKS RESERVE ROASTERY TOKYO」。隈研吾設計、目黑川旁賞櫻聖地，4層樓咖啡主題樂園。附交通・營業時間・樓層特色。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "中目黑咖啡廳推薦｜星巴克臻選東京烘焙工坊・隈研吾建築",

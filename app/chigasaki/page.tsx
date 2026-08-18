@@ -9,9 +9,9 @@ const PAGE_URL = "https://www.japantrippicks.com/chigasaki";
 const OG_IMAGE = "/chigasaki/cover.jpg";
 
 export const metadata: Metadata = {
-  title: "茅崎夏日推薦｜湘南海灘野餐＆海邊咖啡tuckshop【實際造訪】",
+  title: "茅崎湘南海灘野餐｜海邊咖啡tuckshop✅實訪",
   description:
-    "東京近郊一小時的湘南海邊小旅行：在「茅崎公園（ヘッドランドビーチ）」看烏帽子岩與江之島、鋪野餐墊吃早餐，再走2分鐘到清晨6點就開門的海邊咖啡「tuckshop」喝咖啡配司康。附交通方式、停車場、營業時間與夏天玩水注意事項。",
+    "東京近郊一小時的湘南海邊小旅行。在茅崎公園看烏帽子岩與江之島、鋪野餐墊吃早餐，再走2分鐘到清晨6點就開門的海邊咖啡tuckshop。附交通、停車場、營業時間。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "茅崎夏日推薦｜湘南海灘野餐＆海邊咖啡tuckshop",

@@ -10,9 +10,9 @@ const PAGE_URL = "https://www.japantrippicks.com/ikejiri-cafe";
 const OG_IMAGE = "/ikejiri-cafe/unlivre-1.jpg";
 
 export const metadata: Metadata = {
-  title: "池尻大橋咖啡廳推薦｜UN LIVRE 法式甜點店・澀谷一站的隱藏名店【實際造訪】",
+  title: "池尻大橋咖啡廳｜UN LIVRE 法式甜點✅實訪",
   description:
-    "池尻大橋咖啡廳推薦！澀谷搭車一站就到的「UN LIVRE（アンリブレ）」法式甜點咖啡廳，草莓蛋糕・季節限定刨冰・戶外露台座位。附完整交通、營業時間、必點甜點與價位。台灣・香港旅客東京自由行必收藏☕",
+    "澀谷搭車一站就到的「UN LIVRE（アンリブレ）」法式甜點咖啡廳。草莓蛋糕・季節限定刨冰・戶外露台座位。附交通、營業時間、必點甜點與價位。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "池尻大橋咖啡廳推薦｜UN LIVRE 法式甜點店・澀谷一站的隱藏名店",

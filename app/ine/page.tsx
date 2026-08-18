@@ -14,7 +14,7 @@ const OG_IMAGE = "/ine/town-1.jpg";
 export const metadata: Metadata = {
   title: "京都伊根町觀光推薦｜舟屋村絕景・推薦咖啡＆住宿【實際造訪】",
   description:
-    "京都伊根町完整旅遊指南！日本三大舟屋村之一的夢幻海邊聚落，被選為「日本最美村落」。推薦的舟屋咖啡「INE CAFE」與當地住宿「仁風荘」，從京都市區一日遊或慢遊兩日遊都剛剛好。台灣・香港旅客必看！",
+    "日本三大舟屋村之一、被選為「日本最美村落」的京都伊根町。推薦舟屋咖啡「INE CAFE」與住宿「仁風荘」，京都市區一日遊或兩日慢遊都剛好。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "京都伊根町觀光推薦｜舟屋村絕景・推薦咖啡＆住宿",

@@ -10,7 +10,7 @@ const PAGE_URL = "https://www.japantrippicks.com/bolt-uehara";
 const OG_IMAGE = "/bolt-uehara/bolt-1.jpg";
 
 export const metadata: Metadata = {
-  title: "代代木上原咖啡廳推薦｜BOLT・寵物友善人氣咖啡店【實際造訪】",
+  title: "代代木上原咖啡廳｜BOLT・寵物友善名店✅實訪",
   description:
     "代代木上原咖啡廳推薦「BOLT」！東京寵物友善（可帶狗）的時尚咖啡店，位於代代木上原住宅區。手沖咖啡・自家烘焙甜點，附交通方式・店舖資訊。台灣・香港旅客必看東京散步推薦！",
   alternates: { canonical: PAGE_URL },

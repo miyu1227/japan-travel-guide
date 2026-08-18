@@ -10,9 +10,9 @@ const PAGE_URL = "https://www.japantrippicks.com/shibuya-yakiniku";
 const OG_IMAGE = "/shibuya-yakiniku/chiba-1.jpg";
 
 export const metadata: Metadata = {
-  title: "澀谷燒肉推薦｜ホルモン千葉・京都發跡的內臟燒肉名店【實際造訪】",
+  title: "澀谷燒肉推薦｜ホルモン千葉・內臟名店✅實訪",
   description:
-    "澀谷肉食推薦！京都發跡的內臟燒肉名店「ホルモン千葉（Hormone Chiba）」，獨創斜面鐵板收集肉汁、店員全程代烤、收尾炒烏龍麵必吃。附交通、營業時間、預約規則與價位。台灣・香港旅客東京自由行必收藏🥩",
+    "京都發跡的內臟燒肉名店「ホルモン千葉」。獨創斜面鐵板收集肉汁、店員全程代烤、收尾炒烏龍麵必吃。附交通、營業時間、預約規則與價位。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "澀谷燒肉推薦｜ホルモン千葉・京都發跡的內臟燒肉名店",

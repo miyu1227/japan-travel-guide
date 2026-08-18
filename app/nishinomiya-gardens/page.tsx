@@ -11,7 +11,7 @@ const OG_IMAGE = "/nishinomiya-gardens/tooth-1.jpg";
 export const metadata: Metadata = {
   title: "阪急西宮花園美食｜TOOTH TOOTH 蕎麥薄餅與甜點咖啡",
   description:
-    "從大阪梅田搭阪急約15分鐘、西宮北口站徒步3分鐘就到的阪急西宮花園（西宮ガーデンズ）。2樓的神戶人氣甜點品牌「TOOTH TOOTH PATISSERIE＆CAFE」可以吃到現煎法式蕎麥薄餅、季節水果可麗餅與紅茶。附交通方式、營業時間、價格帶與實際造訪心得。",
+    "從梅田搭阪急約15分、西宮北口站徒步3分。2樓「TOOTH TOOTH PATISSERIE＆CAFE」可以吃到現煎法式蕎麥薄餅、季節水果可麗餅與紅茶。附營業時間與價格帶。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "阪急西宮花園美食｜TOOTH TOOTH 蕎麥薄餅與甜點咖啡",

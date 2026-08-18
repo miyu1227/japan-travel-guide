@@ -12,7 +12,7 @@ const KLOOK_URL =
 export const metadata: Metadata = {
   title: "日本自由行 eSIM 使用指南｜抵達日本就能上網的事前準備",
   description:
-    "第一次日本自由行不知道網路怎麼準備？本篇整理 eSIM 的設定流程、與實體 SIM／租借 Wi-Fi 的差別、iPhone 與 Android 的支援確認方式，以及「什麼時候啟用才不會浪費天數」等購買前注意事項，出發前先把上網搞定。",
+    "eSIM 的設定流程、與實體SIM／租借Wi-Fi的差別、iPhone與Android的支援確認方式，以及「什麼時候啟用才不會浪費天數」等注意事項。出發前先把上網搞定。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "日本自由行 eSIM 使用指南｜抵達日本就能上網的事前準備",

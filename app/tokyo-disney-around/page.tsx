@@ -15,7 +15,7 @@ const OG_IMAGE = "/tokyo-disney-around/cover.jpg";
 export const metadata: Metadata = {
   title: "東京迪士尼周邊玩法｜不進園也能玩的舞浜半日遊",
   description:
-    "沒買到門票、只剩半天、或遇到雨天？舞浜站周邊不進園也玩得起來。迪士尼度假區線一日券的搭乘方式與米奇車廂、イクスピアリ的法式咖啡廳與Disney Store，加上從東京市區怎麼來、半日行程怎麼排，一次整理。",
+    "舞浜站周邊不進園也玩得起來。迪士尼度假區線一日券與米奇車廂、イクスピアリ的法式咖啡廳與Disney Store，加上從東京市區怎麼來、半日行程怎麼排。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "東京迪士尼周邊玩法｜不進園也能玩的舞浜半日遊",

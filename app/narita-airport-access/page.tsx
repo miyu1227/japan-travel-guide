@@ -14,9 +14,9 @@ const KLOOK_9H =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314574&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F587377-9h-nine-hours-narita-airport%2F";
 
 export const metadata: Metadata = {
-  title: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR怎麼選",
+  title: "成田機場到東京交通｜Skyliner・巴士・JR比較",
   description:
-    "成田機場到東京市區怎麼走最順？Skyliner、Narita Express、機場巴士、JR普通電車、包車的所要時間與適合的人一次比較，另外整理行李配送、深夜抵達的前泊選項，以及上野・新宿・池袋等飯店區域該搭哪一種。",
+    "Skyliner、Narita Express、機場巴士、JR普通電車、包車的所要時間與適合的人一次比較。另附行李配送、深夜抵達的前泊選項與上野・新宿・池袋的最佳路線。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR怎麼選",

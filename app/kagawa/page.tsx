@@ -16,9 +16,9 @@ const PAGE_URL = "https://www.japantrippicks.com/kagawa";
 const OG_IMAGE = "/kagawa/yamagoe-1.jpg";
 
 export const metadata: Metadata = {
-  title: "香川觀光推薦5選｜烏龍麵縣必去美食・水族館・金刀比羅宮【實際造訪】",
+  title: "香川觀光5選｜讚岐烏龍麵・水族館・金刀比羅宮",
   description:
-    "香川縣旅遊完全指南！讚岐烏龍麵名店「山越うどん」「山下うどん」、四國水族館、金刀比羅宮、人氣溫泉旅館御宿敷島館。四國香川一日遊・兩日遊推薦行程，附交通・門票・必吃。台灣・香港旅客必看！",
+    "讚岐烏龍麵名店「山越うどん」「山下うどん」、四國水族館、金刀比羅宮、溫泉旅館御宿敷島館。香川一日遊・兩日遊行程，附交通・門票・必吃。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "香川觀光推薦5選｜烏龍麵縣必去美食・水族館・金刀比羅宮",

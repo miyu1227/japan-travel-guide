@@ -12,7 +12,7 @@ const OG_IMAGE = "/shimokitazawa-cafe/vegan-1.jpg";
 export const metadata: Metadata = {
   title: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點【實際造訪】",
   description:
-    "下北澤咖啡廳推薦4選！純素烘焙・手工起司蛋糕・自家焙煎咖啡＆派、新文化複合設施BONUS TRACK，東京下北澤必去的人氣咖啡廳美食完整介紹。附交通方式・推薦菜單・價格。台灣・香港旅客必看！",
+    "純素烘焙・手工起司蛋糕・自家焙煎咖啡＆派，加上新文化複合設施BONUS TRACK。下北澤人氣咖啡廳完整介紹，附交通・推薦菜單・價格。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點",

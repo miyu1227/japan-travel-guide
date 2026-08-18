@@ -18,7 +18,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.japantrippicks.com"),
   title: {
     default: "Japan Trip Picks｜台灣・香港旅客的日本旅遊指南",
-    template: "%s | Japan Trip Picks",
+    // サイト名はGoogleがWebSite構造化データから補うため、タイトルには付けない
+    template: "%s",
   },
   description:
     "台灣・香港旅客專屬！必吃・必買・必去的日本旅遊推薦。拉麵、咖啡廳、景點、箱根一日遊など不踩雷實用指南。",

@@ -9,7 +9,7 @@ const PAGE_URL = "https://www.japantrippicks.com/isehara-gelato";
 const OG_IMAGE = "/isehara-gelato/meguri-1.jpg";
 
 export const metadata: Metadata = {
-  title: "伊勢原義式冰淇淋推薦｜石田牧場めぐり・神奈川人氣甜點【實際造訪】",
+  title: "伊勢原義式冰淇淋｜石田牧場めぐり・牧場直送✅實訪",
   description:
     "神奈川伊勢原必吃義式冰淇淋「石田牧場のジェラート屋 めぐり」！從牧場直送的新鮮牛奶製作的人氣ジェラート，CP值超高的隱藏甜點名店。附交通方式・推薦口味・價格。台灣・香港旅客必看！",
   alternates: { canonical: PAGE_URL },

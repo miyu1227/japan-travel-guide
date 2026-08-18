@@ -9,9 +9,9 @@ const PAGE_URL = "https://www.japantrippicks.com/shibuya-cafe";
 const OG_IMAGE = "/shibuya-cafe/recoco-1.jpg";
 
 export const metadata: Metadata = {
-  title: "澀谷咖啡廳推薦｜RECOCO レココ・黑膠唱片試聽咖啡【實際造訪】",
+  title: "澀谷咖啡廳｜RECOCO・黑膠唱片試聽咖啡✅實訪",
   description:
-    "澀谷必去的特色咖啡廳推薦：可以親手試聽黑膠唱片的音樂體驗咖啡「RECOCO（レココ）渋谷」。約300張唱片聽到飽，全席電源・Wi-Fi完備，附交通方式・營業時間・推薦菜單。台灣・香港旅客必看！",
+    "可以親手試聽黑膠唱片的音樂體驗咖啡「RECOCO（レココ）渋谷」。約300張唱片聽到飽，全席電源・Wi-Fi完備。附交通方式・營業時間・推薦菜單。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "澀谷咖啡廳推薦｜RECOCO レココ・黑膠唱片試聽咖啡",

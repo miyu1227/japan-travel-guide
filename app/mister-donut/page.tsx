@@ -10,9 +10,9 @@ const PAGE_URL = "https://www.japantrippicks.com/mister-donut";
 const OG_IMAGE = "/mister-donut/motchurin-1.jpg";
 
 export const metadata: Metadata = {
-  title: "Mister Donut期間限定推薦｜超人氣もっちゅりん甜甜圈【實際購買】",
+  title: "Mister Donut期間限定｜もっちゅりん甜甜圈✅實購",
   description:
-    "日本Mister Donut（ミスタードーナツ）期間限定話題新商品「もっちゅりん」完整介紹！結合波堤＆布丁的Q彈口感超人氣，每天排隊售完。附口味種類・價格・購買方式。台灣・香港旅客來日本必吃！",
+    "Mister Donut（ミスタードーナツ）期間限定話題新商品「もっちゅりん」。結合波堤＆布丁的Q彈口感，每天排隊售完。附口味種類・價格・購買方式。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "Mister Donut期間限定推薦｜超人氣もっちゅりん甜甜圈",

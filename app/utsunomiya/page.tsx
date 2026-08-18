@@ -9,9 +9,9 @@ const PAGE_URL = "https://www.japantrippicks.com/utsunomiya";
 const OG_IMAGE = "/utsunomiya/wakayama-1.jpg";
 
 export const metadata: Metadata = {
-  title: "宇都宮觀光推薦3選｜栃木必去竹林・餃子街・二荒山神社【實際造訪】",
+  title: "宇都宮觀光3選｜若山農場竹林・餃子街・二荒山",
   description:
-    "宇都宮觀光推薦3選！夢幻竹林絕景「若竹之杜 若山農場」、餃子街「宇都宮餃子通」、能量景點「宇都宮二荒山神社」。東京近郊一日遊好去處，附交通方式・推薦景點完整指南。台灣・香港旅客必看！",
+    "夢幻竹林絕景「若竹之杜 若山農場」、餃子街「宇都宮餃子通」、能量景點「宇都宮二荒山神社」。東京近郊一日遊好去處，附交通方式與完整指南。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "宇都宮觀光推薦3選｜栃木必去竹林・餃子街・神社",

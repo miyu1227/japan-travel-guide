@@ -10,9 +10,9 @@ const PAGE_URL = "https://www.japantrippicks.com/noge";
 const OG_IMAGE = "/noge/cover.jpg";
 
 export const metadata: Metadata = {
-  title: "橫濱野毛續攤推薦2選｜平價居酒屋・神級壽司¥99起【實際造訪】",
+  title: "橫濱野毛續攤2選｜壽司¥99起・平價居酒屋✅實訪",
   description:
-    "橫濱最大的居酒屋街「野毛」續攤（はしご酒）推薦2選！霓虹燈中華酒場「AM:PM」的口水雞與脆邊煎餃，以及壽司一貫¥99起的「大眾壽司酒場 スシマヅメ 野毛本店」。從櫻木町站徒步3分、兩間都一人¥2,000〜3,000吃飽喝足。附交通・價格・續攤路線。台灣・香港旅客必看🍶",
+    "橫濱最大居酒屋街「野毛」的續攤2選：霓虹中華酒場「AM:PM」與壽司一貫¥99起的「スシマヅメ 野毛本店」。櫻木町站徒步3分，一人¥2,000〜3,000。附續攤路線。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "橫濱野毛續攤推薦2選｜平價居酒屋・神級壽司¥99起",

@@ -10,9 +10,9 @@ const PAGE_URL = "https://www.japantrippicks.com/takeout-cake";
 const OG_IMAGE = "/takeout-cake/cover.jpg";
 
 export const metadata: Metadata = {
-  title: "東京外帶蛋糕推薦｜PARIYA 澀谷SCRAMBLE SQUARE店・IG爆紅杯型鮮奶油蛋糕【實際購買】",
+  title: "東京外帶蛋糕｜PARIYA澀谷・杯型鮮奶油蛋糕✅實購",
   description:
-    "東京外帶蛋糕推薦！青山發跡的人氣熟食店「PARIYA（帕莉亞）」的招牌杯型鮮奶油蛋糕，草莓經典款¥1,058起、還有季節限定水蜜桃口味。澀谷SCRAMBLE SQUARE B2直達車站，帶回飯店當宵夜剛剛好🍰 附價格・營業時間・購買重點。台灣・香港旅客必看！",
+    "青山發跡的人氣熟食店「PARIYA」招牌杯型鮮奶油蛋糕，草莓經典款¥1,058起、還有季節限定水蜜桃口味。澀谷SCRAMBLE SQUARE B2直達車站，附價格・營業時間。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "東京外帶蛋糕推薦｜PARIYA 澀谷SCRAMBLE SQUARE店",

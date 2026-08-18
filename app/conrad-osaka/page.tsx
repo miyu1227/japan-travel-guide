@@ -12,9 +12,9 @@ const KLOOK_CONRAD_STAY =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1381759&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F282449-conrad-osaka%2F";
 
 export const metadata: Metadata = {
-  title: "大阪飯店自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet",
+  title: "大阪飯店自助餐｜康萊德40樓景觀buffet✅實訪",
   description:
-    "想在大阪吃一頓有氣氛的飯店料理？康萊德大阪40樓「Atmos Italian Dining」是地上200公尺的景觀餐廳，挑高10.5公尺的落地窗、水晶藝術裝置與義式自助餐一次滿足。附交通方式（肥後橋站直結）、用餐時段、預約與穿著建議，實際造訪心得分享。",
+    "康萊德大阪40樓「Atmos Italian Dining」是地上200公尺的景觀餐廳，挑高10.5公尺落地窗配義式自助餐。附交通（肥後橋站直結）、用餐時段、預約與穿著建議。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "大阪飯店自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet",

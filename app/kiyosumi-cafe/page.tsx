@@ -10,9 +10,9 @@ const PAGE_URL = "https://www.japantrippicks.com/kiyosumi-cafe";
 const OG_IMAGE = "/kiyosumi-cafe/iki-1.jpg";
 
 export const metadata: Metadata = {
-  title: "清澄白河咖啡廳推薦2選｜B² ＆ iki Roastery・東京咖啡聖地【實際造訪】",
+  title: "清澄白河咖啡廳2選｜B²・iki Roastery✅實訪",
   description:
-    "清澄白河咖啡廳推薦！日本首間「麵包工廠＋咖啡烘焙廠」一體的 B²（B Squared），以及隅田川旁倉庫改建的紐西蘭風咖啡廳 iki Roastery & Eatery。附交通、營業時間、必吃麵包與價格。台灣・香港旅客東京自由行必收藏☕",
+    "日本首間「麵包工廠＋咖啡烘焙廠」一體的 B²，以及隅田川旁倉庫改建的紐西蘭風咖啡廳 iki Roastery & Eatery。附交通、營業時間、必吃麵包與價格。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "清澄白河咖啡廳推薦2選｜B² ＆ iki Roastery・東京咖啡聖地",

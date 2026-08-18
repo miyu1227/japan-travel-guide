@@ -10,9 +10,9 @@ const PAGE_URL = "https://www.japantrippicks.com/daikanyama-cafe";
 const OG_IMAGE = "/daikanyama-cafe/princi-1.jpg";
 
 export const metadata: Metadata = {
-  title: "代官山咖啡廳推薦3選｜東京必去義式烘焙・高級甜點・法式可頌【實際造訪】",
+  title: "代官山咖啡廳3選｜義式烘焙・甜點・可頌✅實訪",
   description:
-    "代官山咖啡廳推薦3選！米蘭義式烘焙名店「PRINCI 代官山T-SITE」、星級甜點師的頂級甜點店「DOLCE TACUBO」，以及2026年7月新開幕的法式可頌專門店「Doré by Charles-Henry」。東京代官山必去人氣店，附交通方式・菜單・價格。台灣・香港旅客必看！",
+    "代官山咖啡廳3選：米蘭義式烘焙「PRINCI T-SITE」、星級甜點師的「DOLCE TACUBO」、可頌專門店「Doré by Charles-Henry」。附交通・菜單・價格。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "代官山咖啡廳推薦3選｜東京必去義式烘焙・高級甜點・法式可頌",

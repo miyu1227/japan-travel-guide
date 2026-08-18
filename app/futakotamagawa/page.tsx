@@ -10,9 +10,9 @@ const PAGE_URL = "https://www.japantrippicks.com/futakotamagawa";
 const OG_IMAGE = "/futakotamagawa/steaman-1.jpg";
 
 export const metadata: Metadata = {
-  title: "二子玉川美食推薦4選｜東京必吃中華・甜點・韓國料理・精品咖啡【實際造訪】",
+  title: "二子玉川美食4選｜中華・蘋果派・韓式・咖啡✅實訪",
   description:
-    "二子玉川美食推薦4選！蒸籠中華「STEAMAN」、蘋果派名店「GRANNY SMITH」、韓式屋台「ぶたこたまがわ」、世田谷精品咖啡「WOODBERRY COFFEE 玉川高島屋S.C.店」。東京近郊散步美食完整介紹，附交通・菜單・價格。台灣・香港旅客必看！",
+    "二子玉川美食4選：蒸籠中華「STEAMAN」、蘋果派名店「GRANNY SMITH」、韓式屋台「ぶたこたまがわ」、精品咖啡「WOODBERRY COFFEE」。附交通・菜單・價格。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "二子玉川美食推薦4選｜東京必吃中華・甜點・韓國料理・精品咖啡",

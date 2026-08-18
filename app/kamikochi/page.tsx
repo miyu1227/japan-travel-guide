@@ -14,7 +14,7 @@ const PAGE_URL = "https://www.japantrippicks.com/kamikochi";
 const OG_IMAGE = "/kamikochi/cover.jpg";
 
 export const metadata: Metadata = {
-  title: "上高地＆奧飛騨旅行推薦4選｜日本阿爾卑斯山絕景完全指南【實際造訪】",
+  title: "上高地＆奧飛騨4選｜河童橋・纜車・溫泉✅實訪",
   description:
     "上高地＆奧飛騨旅行推薦4選！河童橋絕景・平湯大瀑布・新穂高纜車2000m展望・奧飛騨花園飯店燒岳溫泉。日本阿爾卑斯山自然療癒之旅，附交通方式・門票・溫泉資訊。台灣・香港旅客必看！",
   alternates: { canonical: PAGE_URL },

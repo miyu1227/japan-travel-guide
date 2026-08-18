@@ -9,9 +9,9 @@ const PAGE_URL = "https://www.japantrippicks.com/kansai-ramen";
 const OG_IMAGE = "/kansai-ramen/tsujita-2.jpg";
 
 export const metadata: Metadata = {
-  title: "關西拉麵推薦｜大阪必吃濃厚魚介沾麵・つじ田 肥後橋【實際吃過】",
+  title: "關西拉麵推薦｜大阪つじ田・濃厚魚介沾麵✅實吃",
   description:
-    "關西拉麵推薦！大阪肥後橋人氣名店「つじ田」的濃厚魚介系沾麵（つけ麺），加檸檬與黑七味變化風味。附地址・交通・價格・吃法教學，另整理關西拉麵的流派特色。台灣・香港旅客大阪自由行必收藏🍜",
+    "大阪肥後橋名店「つじ田」的濃厚魚介系沾麵，加檸檬與黑七味變化風味。附地址・交通・價格・吃法教學，另整理關西拉麵的流派特色。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "關西拉麵推薦｜大阪必吃濃厚魚介沾麵・つじ田 肥後橋",

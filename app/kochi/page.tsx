@@ -12,9 +12,9 @@ const PAGE_URL = "https://www.japantrippicks.com/kochi";
 const OG_IMAGE = "/kochi/nikobuchi-1.jpg";
 
 export const metadata: Metadata = {
-  title: "高知觀光推薦3選｜四國必去仁淀藍秘境・鰹魚タタキ・ひろめ市場【實際造訪】",
+  title: "高知觀光3選｜仁淀藍・鰹魚タタキ・ひろめ市場",
   description:
-    "高知縣旅遊完全指南！日本三大清流「仁淀川」的夢幻藍色秘境「にこ淵」、鰹魚タタキ體驗道場、人氣美食市場「ひろめ市場」。四國高知一日遊推薦行程，附交通・門票・必吃。台灣・香港旅客必看！",
+    "日本三大清流仁淀川的夢幻藍色秘境「にこ淵」、鰹魚タタキ體驗道場、人氣美食市場「ひろめ市場」。四國高知一日遊行程，附交通・門票・必吃。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "高知觀光推薦3選｜四國必去仁淀藍秘境・鰹魚タタキ・ひろめ市場",

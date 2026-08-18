@@ -10,9 +10,9 @@ const KLOOK_URL =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1307238&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F1552-subway-ticket-tokyo%2F";
 
 export const metadata: Metadata = {
-  title: "東京地鐵券攻略｜Tokyo Subway Ticket 24/48/72小時怎麼選",
+  title: "東京地鐵券攻略｜24/48/72小時該選哪一種",
   description:
-    "Tokyo Subway Ticket 是專為外國旅客設計的地下鐵周遊券，可不限次數搭乘東京メトロ與都營地下鐵。本文整理24/48/72小時該選哪一種、哪裡買、計時方式，以及「不能搭JR山手線」等常見誤會，並附上什麼行程買了才划算的判斷方式。",
+    "外國旅客限定的地下鐵周遊券，可不限次數搭乘東京メトロ與都營地下鐵。24/48/72小時該選哪種、哪裡買、計時方式，以及「不能搭JR山手線」等常見誤會一次說清。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "東京地鐵券攻略｜Tokyo Subway Ticket 24/48/72小時怎麼選",

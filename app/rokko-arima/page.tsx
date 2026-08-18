@@ -14,7 +14,7 @@ const OG_IMAGE = "/rokko-arima/rokko-1.jpg";
 export const metadata: Metadata = {
   title: "六甲山健行推薦｜神戶登山＆有馬溫泉一日遊【實際造訪】",
   description:
-    "神戶六甲山健行完全指南！從御影出發登頂六甲山，下山搭纜車到有馬溫泉泡湯，最後品嚐「arima gelateria Stagione」人氣義式冰淇淋。關西自然＆溫泉一日遊推薦行程，附登山路線・交通・推薦店家。",
+    "從御影出發登頂六甲山，下山搭纜車到有馬溫泉泡湯，最後品嚐「arima gelateria Stagione」義式冰淇淋。附登山路線・交通・推薦店家。",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "六甲山健行推薦｜神戶登山＆有馬溫泉一日遊",

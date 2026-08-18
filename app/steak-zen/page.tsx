@@ -9,7 +9,7 @@ const PAGE_URL = "https://www.japantrippicks.com/steak-zen";
 const OG_IMAGE = "/steak-zen/zen-1.jpg";
 
 export const metadata: Metadata = {
-  title: "神戶牛推薦｜ステーキハウスZEN三宮店・鐵板燒名店【實際品嚐】",
+  title: "神戶牛推薦｜ステーキハウスZEN三宮・A5鐵板燒",
   description:
     "神戶旅遊必吃神戶牛！「ステーキハウスZEN 三宮店」是當地人氣鐵板燒名店，A5等級神戶牛在主廚眼前現煎，肉質入口即化。附交通方式・推薦菜單・價格・預約方式。台灣・香港旅客必看！",
   alternates: { canonical: PAGE_URL },
