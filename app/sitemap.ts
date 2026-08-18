@@ -69,7 +69,6 @@ const STATIC_ROUTES: { slug: string; priority: number; changeFrequency: "monthly
   { slug: "about", priority: 0.6, changeFrequency: "monthly" },
   { slug: "contact", priority: 0.5, changeFrequency: "yearly" },
   { slug: "privacy", priority: 0.4, changeFrequency: "yearly" },
-  { slug: "promotion", priority: 0.4, changeFrequency: "yearly" },
 ];
 
 const latestUpdate = ARTICLES.reduce(

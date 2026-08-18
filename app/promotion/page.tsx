@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   title: "掲載・プロモーションのご案内｜訪日台湾・香港旅行者向けPR",
   description:
     "訪日外国人（台湾・香港）向け旅行ガイドサイト Japan Trip Picks への店舗・スポット掲載のご案内。貴店専用の記事を1本作成し、日本語＋繁体字での紹介文つきで永久掲載します。料金はお見積りいたしますので、お気軽にお問い合わせください。",
+  // 掲載枠の営業ページ。読者向けコンテンツではないので検索対象から外す。
+  robots: { index: false, follow: true },
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
