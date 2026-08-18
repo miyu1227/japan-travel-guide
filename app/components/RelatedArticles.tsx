@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getRelatedArticles } from "@/lib/articles";
+import { HUB_OF_ARTICLE } from "@/lib/hubs";
 
 /**
  * 同じ地域・同じカテゴリの記事を自動で並べる関連記事ブロック。
@@ -13,11 +14,23 @@ export default function RelatedArticles({
   exclude?: string[];
 }) {
   const related = getRelatedArticles(slug, { limit: 8, exclude });
+  const hub = HUB_OF_ARTICLE[slug];
   if (related.length === 0) return null;
 
   return (
     <section className="mt-8">
       <h2 className="text-base font-black text-stone-800 mb-3">🗾 更多同區・同類型的文章</h2>
+      {hub && (
+        <Link
+          href={`/${hub.slug}`}
+          className="flex items-center justify-between bg-yellow-50 border border-yellow-200 rounded-2xl px-4 py-3 mb-2 hover:border-yellow-400 transition-colors"
+        >
+          <span className="text-sm font-bold text-stone-800">
+            {hub.emoji} 看完整的「{hub.h1}」
+          </span>
+          <span className="text-stone-400 text-sm">›</span>
+        </Link>
+      )}
       <div className="grid sm:grid-cols-2 gap-2">
         {related.map((a) => (
           <Link

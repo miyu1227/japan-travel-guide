@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { footerGroups } from "@/lib/articles";
+import { HUBS } from "@/lib/hubs";
 
 
 export default function SiteFooter() {
@@ -7,6 +8,25 @@ export default function SiteFooter() {
     <footer className="bg-white border-t border-yellow-100 mt-12 pt-8 pb-6 px-4">
       <div className="max-w-6xl mx-auto">
         {/* サイト内リンク */}
+        {/* 主題総覧（ハブ） */}
+        <div className="mb-6">
+          <h3 className="text-sm font-black text-stone-700 mb-2 flex items-center gap-1">
+            <span>🧭</span>
+            主題總覽
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {HUBS.map((hub) => (
+              <Link
+                key={hub.slug}
+                href={`/${hub.slug}`}
+                className="text-xs font-bold text-stone-600 bg-yellow-50 border border-yellow-200 rounded-full px-3 py-1.5 hover:border-yellow-400 hover:text-stone-800 transition-colors"
+              >
+                {hub.emoji} {hub.h1}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-8">
           {footerGroups.map((group) => (
             <div key={group.title}>

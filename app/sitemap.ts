@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { ARTICLES } from "@/lib/articles";
+import { HUBS, hubMembers } from "@/lib/hubs";
 
 const BASE_URL = "https://www.japantrippicks.com";
 
@@ -82,6 +83,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1.0,
     },
+    // 主題ハブ（カテゴリの受け皿）
+    ...HUBS.map((h) => ({
+      url: `${BASE_URL}/${h.slug}`,
+      lastModified: new Date(
+        hubMembers(h).reduce((latest, a) => (a.updated > latest ? a.updated : latest), "2026-01-01")
+      ),
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
+    })),
     // lastModified は記事ごとの実更新日を使う（一括固定日にしない）
     ...ARTICLES.map((a) => ({
       url: `${BASE_URL}/${a.slug}`,
