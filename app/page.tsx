@@ -14,16 +14,16 @@ const categories = [
   { id: "prep", icon: "🎒", label: "Travel Prep", labelZh: "出發前準備", color: "bg-yellow-100 text-yellow-700 border-yellow-300", activeColor: "bg-yellow-400 text-white border-yellow-400", hasAreaFilter: false },
 ];
 
-const areas = ["すべて", "東京", "大阪", "兵庫", "北海道", "四国", "その他"];
+const areas = ["全部", "東京", "大阪", "兵庫", "北海道", "四國", "其他"];
 
 
 const INITIAL_VISIBLE = 5;
 
 function AreaFilter({ catId, color }: { catId: string; color: string }) {
-  const [selected, setSelected] = useState("すべて");
+  const [selected, setSelected] = useState("全部");
   const [expanded, setExpanded] = useState(false);
   const items = picks[catId];
-  const filtered = selected === "すべて"
+  const filtered = selected === "全部"
     ? items
     : items.filter((item) => item.areas.includes(selected));
   const hasMore = filtered.length > INITIAL_VISIBLE;

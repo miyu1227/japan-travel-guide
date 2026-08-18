@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/showa-kinen-park";
 const OG_IMAGE = "/showa-kinen-park/park-1.jpg";
@@ -76,6 +77,11 @@ const relatedLinks = [
   { href: "/koyo", label: "🍁 東京紅葉推薦｜神宮外苑銀杏並木", desc: "金黃銀杏大道・東京秋天必去景點" },
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "悠閒散步的人氣公園完全指南" },
   { href: "/ueno-zoo", label: "🐼 上野動物園推薦｜東京必去親子景點", desc: "日本最古老的動物園，大熊貓超人氣" },
+];
+
+const faqs = [
+  { q: "一天逛得完嗎？", a: "園區廣達165公頃，走完全部很吃力。建議挑一個區域重點逛，或利用園內的租借自行車移動。" },
+  { q: "什麼季節去最好？", a: "春櫻、夏向日葵、秋紅葉、冬燈光秀，四季都有主題。想一次看到大片花海的話，春天與秋天最穩。" },
 ];
 
 export default function ShowaKinenParkPage() {
@@ -230,6 +236,8 @@ export default function ShowaKinenParkPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

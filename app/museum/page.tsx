@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/museum";
 const OG_IMAGE = "/museum/nact-1.jpg";
@@ -72,6 +73,11 @@ const relatedLinks = [
   { href: "/koyo", label: "🍁 東京紅葉推薦｜神宮外苑銀杏並木", desc: "金黃銀杏大道・東京秋天必去景點" },
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "悠閒散步的人氣公園完全指南" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩3間人氣店" },
+];
+
+const faqs = [
+  { q: "沒有看展也值得去嗎？", a: "值得。國立新美術館的玻璃曲面建築本身就是拍照重點，根津美術館則有很漂亮的日本庭園，光是散步就很好逛。" },
+  { q: "兩間可以排同一天嗎？", a: "可以。六本木與表參道之間搭地鐵很近，排成「上午美術館、下午咖啡廳（咖啡店）」剛剛好。" },
 ];
 
 export default function MuseumPage() {
@@ -301,6 +307,8 @@ export default function MuseumPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

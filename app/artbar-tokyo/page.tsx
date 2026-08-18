@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/artbar-tokyo";
 const OG_IMAGE = "/artbar-tokyo/artbar-1.jpg";
@@ -70,6 +71,11 @@ const relatedLinks = [
   { href: "/museum", label: "🎨 東京美術館推薦｜國立新美術館＆根津美術館", desc: "現代建築・日本庭園" },
   { href: "/shibuya-cafe", label: "🎵 澀谷咖啡廳推薦｜RECOCO・黑膠唱片試聽咖啡", desc: "可親手試聽黑膠唱片的音樂體驗" },
   { href: "/nakameguro-cafe", label: "☕ 中目黑咖啡廳推薦｜星巴克臻選東京烘焙工坊", desc: "全世界6間之一・隈研吾設計建築" },
+];
+
+const faqs = [
+  { q: "完全不會畫畫也可以參加嗎？", a: "可以。課程會跟著講師一步一步臨摹梵谷、莫內等名畫，初學者也能完成一幅帶回家。畫具與圍裙店家都準備好，空手（手ぶら）就能參加。" },
+  { q: "要先預約嗎？有哪幾間分店？", a: "採預約制，建議先在官網挑好日期與當天的畫作主題。東京有原宿、代官山、銀座，橫濱也有分店，可以選離飯店（酒店）最近的一間。" },
 ];
 
 export default function ArtbarTokyoPage() {
@@ -222,6 +228,8 @@ export default function ArtbarTokyoPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

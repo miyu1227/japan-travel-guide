@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/utsunomiya";
 const OG_IMAGE = "/utsunomiya/wakayama-1.jpg";
@@ -72,6 +73,11 @@ const relatedLinks = [
   { href: "/kamikochi", label: "🏔️ 上高地＆奧飛騨旅行推薦4選｜日本阿爾卑斯絕景", desc: "河童橋・新穂高纜車・奧飛騨溫泉" },
   { href: "/hakone", label: "🚃 箱根一日遊推薦｜從東京搭浪漫特快出發", desc: "美術館・足湯・神社・甜點" },
   { href: "/koyo", label: "🍁 東京紅葉推薦｜神宮外苑銀杏並木", desc: "金黃銀杏大道・東京秋天必去景點" },
+];
+
+const faqs = [
+  { q: "竹林要門票嗎？", a: "若竹之杜 若山農場是私人管理的竹林，需要入場費，而且有開放日與時段的限制，出發前務必先確認。" },
+  { q: "一天排得下嗎？", a: "排得下。竹林在郊外、餃子街與二荒山神社在市區，先去竹林再回市區吃餃子、參拜，動線最順。" },
 ];
 
 export default function UtsunomiyaPage() {
@@ -328,6 +334,8 @@ export default function UtsunomiyaPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

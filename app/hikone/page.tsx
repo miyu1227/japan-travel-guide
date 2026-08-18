@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const KLOOK_KAMENOI_HIKONE =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339986&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F416852-kamenoi-hotel-hikone%2F";
@@ -74,6 +75,11 @@ const relatedLinks = [
   { href: "/shukugawa", label: "☕ 夙川咖啡廳推薦2選｜關西必去咖啡廳", desc: "法式可麗餅＆精品咖啡" },
   { href: "/kobe-cafe", label: "☕ 神戶咖啡推薦｜フロインドリーブ＆異人館咖啡", desc: "教堂改建咖啡廳・北野洋館咖啡" },
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "A5鐵板燒名店・主廚現煎" },
+];
+
+const faqs = [
+  { q: "彥根貓（ひこにゃん）什麼時候會出現？", a: "一天有固定的登場時段與地點，出發前先在官網確認當天的時間表，再把參觀城堡的時間排在前後最順。" },
+  { q: "從京都或大阪過去方便嗎？", a: "搭JR琵琶湖線到「彥根」駅，出站後走一段就是城下町，是關西近郊很好排的一日遊。" },
 ];
 
 export default function HikonePage() {
@@ -297,6 +303,8 @@ export default function HikonePage() {
             <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
           </a>
         </section>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

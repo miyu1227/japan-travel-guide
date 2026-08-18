@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/chigasaki";
 const OG_IMAGE = "/chigasaki/cover.jpg";
@@ -78,6 +79,11 @@ const relatedLinks = [
   { href: "/hakone", label: "🚃 箱根一日遊推薦｜從東京搭浪漫特快出發", desc: "美術館・足湯・神社・甜點" },
   { href: "/isehara-gelato", label: "🍦 伊勢原ジェラート｜石田牧場めぐり", desc: "牧場直送鮮牛奶的隱藏名店" },
   { href: "/spot", label: "📍 東京景點推薦懶人包", desc: "第一次來東京必去的人氣景點" },
+];
+
+const faqs = [
+  { q: "從東京過去要多久？", a: "約一小時就到，是很適合當天來回的近郊小旅行。早上先在茅崎公園野餐、看烏帽子岩與江之島，再走2分鐘到海邊咖啡廳（咖啡店）。" },
+  { q: "咖啡廳幾點開門？開車去有停車場嗎？", a: "海邊咖啡 tuckshop 清晨6點就開門，是少數一大早就喝得到咖啡的店。現場有停車場，開車或搭電車都方便。" },
 ];
 
 export default function ChigasakiPage() {
@@ -319,6 +325,8 @@ export default function ChigasakiPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

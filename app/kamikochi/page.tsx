@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const KLOOK_SHINHOTAKA =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339988&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F106936-alpine-splendor-shinhotaka-ropeway-kamikochi-join-day-bus-tour-takayama";
@@ -78,6 +79,11 @@ const relatedLinks = [
   { href: "/hakone", label: "🚃 箱根一日遊推薦｜從東京搭浪漫特快出發", desc: "美術館・足湯・神社・甜點" },
   { href: "/hokkaido", label: "🗾 北海道自由行必去景點10選", desc: "札幌・小樽・富良野一次玩遍" },
   { href: "/koyo", label: "🍁 東京紅葉推薦｜神宮外苑銀杏並木", desc: "金黃銀杏大道・東京秋天必去景點" },
+];
+
+const faqs = [
+  { q: "上高地可以開車進去嗎？", a: "不行。上高地禁止私家車進入，要在指定的停車場轉乘專用巴士或計程車（的士）。" },
+  { q: "幾月去最好？", a: "一般開山期是春末到秋天，冬季封山。新穗高纜車能上到2000公尺以上，不用爬山也看得到高山絕景。" },
 ];
 
 export default function KamikochiPage() {
@@ -491,6 +497,8 @@ export default function KamikochiPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

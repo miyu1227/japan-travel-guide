@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const KLOOK_AQUARIUM =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339931&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F74358-shikoku-aquarium";
@@ -81,6 +82,11 @@ const relatedLinks = [
   { href: "/hikone", label: "🏯 彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓", desc: "日本國寶＋彥根貓＋江戶城下町" },
   { href: "/utsunomiya", label: "🎋 宇都宮觀光推薦3選｜栃木必去竹林・餃子・神社", desc: "若山農場・餃子通・二荒山神社" },
   { href: "/kamikochi", label: "🏔️ 上高地＆奧飛騨旅行推薦4選", desc: "河童橋・新穂高纜車・奧飛騨溫泉" },
+];
+
+const faqs = [
+  { q: "烏龍麵店幾點去比較好？", a: "讚岐的名店多半中午前後最擠，而且賣完就收，建議上午就先去吃第一碗。" },
+  { q: "金刀比羅宮要爬很多階梯嗎？", a: "參道階梯不少，建議穿好走的鞋並預留半天。和四國水族館排在同一天會偏趕，兩天行程會輕鬆很多。" },
 ];
 
 export default function KagawaPage() {
@@ -443,6 +449,8 @@ export default function KagawaPage() {
             <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
           </a>
         </section>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

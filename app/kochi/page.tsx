@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const KLOOK_CLEMENT_INN =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339930&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F691887-jr-clement-inn-kochi%2F";
@@ -75,6 +76,11 @@ const relatedLinks = [
   { href: "/kagawa", label: "🍜 香川觀光推薦5選｜烏龍麵縣美食・水族館・金刀比羅宮", desc: "讚岐烏龍麵＆四國水族館＆金刀比羅宮" },
   { href: "/hikone", label: "🏯 彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓", desc: "日本國寶＋彥根貓＋江戶城下町" },
   { href: "/kamikochi", label: "🏔️ 上高地＆奧飛騨旅行推薦4選", desc: "河童橋・新穂高纜車・奧飛騨溫泉" },
+];
+
+const faqs = [
+  { q: "にこ淵怎麼去？", a: "位在仁淀川上游，大眾運輸不容易到達，多數人是租車或包車前往。水色會受天氣與時間影響，晴天正午前後最藍。" },
+  { q: "鰹魚タタキ可以自己烤嗎？", a: "可以，有提供稻草現燒的體驗，烤好馬上吃最香。想輕鬆一點就直接去ひろめ市場，一攤一攤吃過去。" },
 ];
 
 export default function KochiPage() {
@@ -327,6 +333,8 @@ export default function KochiPage() {
             <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
           </a>
         </section>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

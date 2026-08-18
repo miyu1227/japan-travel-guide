@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const KLOOK_KOUSHIEN =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339963&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F491613-meitei-no-yado-hotel-koushien%2F";
@@ -112,6 +113,11 @@ const relatedLinks = [
   { href: "/kamikochi", label: "🏔️ 上高地＆奧飛騨旅行推薦4選", desc: "日本阿爾卑斯絕景・河童橋・溫泉療癒之旅" },
   { href: "/hikone", label: "🏯 彥根城觀光推薦", desc: "日本國寶城・吉祥物彥根貓・江戶城下町散步" },
   { href: "/utsunomiya", label: "🎋 宇都宮觀光推薦3選", desc: "夢幻竹林・餃子・神社，東京近郊一日遊隱藏寶地" },
+];
+
+const faqs = [
+  { q: "從東京怎麼去？", a: "搭JR中央線到「勝沼ぶどう郷」駅。車站到各酒莊有一段距離，接駁多半靠計程車（的士）或自駕。" },
+  { q: "採水果要預約嗎？", a: "採桃、採葡萄多半是預約制而且有季節限制，出發前先確認當期的開放時間。酒莊的付費品酒也建議先查好時段。" },
 ];
 
 export default function KatsunumaPage() {
@@ -635,6 +641,8 @@ export default function KatsunumaPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

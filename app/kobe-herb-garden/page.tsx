@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const KLOOK_HERB =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339728&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F37865-kobe-nunobiki-herb-gardens-ticket";
@@ -78,6 +79,11 @@ const relatedLinks = [
   { href: "/kobe-cafe", label: "☕ 神戶咖啡推薦｜フロインドリーブ＆異人館咖啡2選", desc: "教堂改建咖啡廳・北野異人館洋館咖啡" },
   { href: "/rokko-arima", label: "🏔️ 六甲山健行推薦｜神戶登山＆有馬溫泉一日遊", desc: "登山＋纜車＋溫泉完美行程" },
   { href: "/shukugawa", label: "☕ 夙川咖啡廳推薦2選｜法式可麗餅＆精品咖啡", desc: "關西必去咖啡廳" },
+];
+
+const faqs = [
+  { q: "怎麼上山？", a: "從新幹線「新神戶」站直接走到纜車站，搭纜車上標高約400公尺的山頂，沿途就能俯瞰神戶港。" },
+  { q: "白天去還是傍晚去好？", a: "想看花海選白天，想看神戶港夜景就抓傍晚上山。纜車的末班時間依季節調整，回程時間要先確認。" },
 ];
 
 export default function KobeHerbGardenPage() {
@@ -285,6 +291,8 @@ export default function KobeHerbGardenPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

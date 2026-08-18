@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const KLOOK_INE_TOUR =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339927&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F150458-amanohashidate-iegan-day-trip-iegan-boat-house-iegan-bay-cruise-aman";
@@ -75,6 +76,11 @@ const relatedLinks = [
   { href: "/hikone", label: "🏯 彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓", desc: "日本國寶＋彥根貓＋江戶城下町" },
   { href: "/kobe-cafe", label: "☕ 神戶咖啡推薦｜フロインドリーブ＆異人館咖啡", desc: "教堂改建咖啡廳・北野洋館咖啡" },
   { href: "/kamikochi", label: "🏔️ 上高地＆奧飛騨旅行推薦4選", desc: "河童橋・新穂高纜車・奧飛騨溫泉" },
+];
+
+const faqs = [
+  { q: "從京都市區當天來回可行嗎？", a: "可行，但車程不算短。想慢慢逛建議住一晚；當天來回的話，把重點放在舟屋群的海上遊覽與 INE CAFE 就夠。" },
+  { q: "舟屋可以住嗎？", a: "有改建成住宿的舟屋，文章介紹的「仁風荘」就是其中之一。旺季很快就滿，日期一定下來就盡早訂。" },
 ];
 
 export default function InePage() {
@@ -305,6 +311,8 @@ export default function InePage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

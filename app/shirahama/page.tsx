@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const KLOOK_TORETORE =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339829&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F153493-conan-themed-niche-wakayama-one-day-tour-takashi-station-toretore";
@@ -86,6 +87,11 @@ const relatedLinks = [
   { href: "/ine", label: "🏘️ 京都伊根町觀光推薦｜舟屋村絕景・咖啡＆住宿", desc: "日本最美村落・INE CAFE" },
   { href: "/rokko-arima", label: "🏔️ 六甲山健行推薦｜神戶登山＆有馬溫泉一日遊", desc: "登山＋纜車＋溫泉完美行程" },
   { href: "/artbar-tokyo", label: "🎨 東京畫畫體驗推薦｜Artbar Tokyo・喝酒作畫", desc: "初學者也OK的Paint & Sip體驗" },
+];
+
+const faqs = [
+  { q: "熊貓一定看得到嗎？", a: "熊貓的展示狀況會變動，出發前建議先看官網公告。園區本身還有其他動物與遊樂設施，一整天都排得滿。" },
+  { q: "白浜適合待幾天？", a: "景點分散在海岸線上，一天會很趕，住一晚比較從容。豪華露營與海景咖啡都適合安排在傍晚看夕陽。" },
 ];
 
 export default function ShirahamaPage() {
@@ -514,6 +520,8 @@ export default function ShirahamaPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

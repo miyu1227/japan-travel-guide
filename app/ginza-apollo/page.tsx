@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/ginza-apollo";
 const OG_IMAGE = "/ginza-apollo/apollo-1.jpg";
@@ -71,6 +72,11 @@ const relatedLinks = [
   { href: "/futakotamagawa", label: "🍽️ 二子玉川美食推薦3選｜中華・甜點・韓國料理", desc: "蒸籠中華・蘋果派・韓式屋台" },
   { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/tokyo-cookies", label: "🍪 東京伴手禮推薦｜高級手工餅乾", desc: "奧地利認證大師的手工餅乾禮盒" },
+];
+
+const faqs = [
+  { q: "需要訂位嗎？", a: "是話題餐廳，晚餐時段建議先訂位。店在銀座Nouvo的11樓，從銀座站走過去就到。" },
+  { q: "適合幾個人去？", a: "菜色以地中海風的分享盤為主，2〜4人一起點最好分。招牌的起司（芝士）料理幾乎每桌都會點。" },
 ];
 
 export default function GinzaApolloPage() {
@@ -234,6 +240,8 @@ export default function GinzaApolloPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const KLOOK_ROKKO_NIGHT =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339868&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F88299-mtrokko-night-view-day-tour-kobe-osaka";
@@ -75,6 +76,11 @@ const relatedLinks = [
   { href: "/kobe-cafe", label: "☕ 神戶咖啡推薦｜フロインドリーブ＆異人館咖啡", desc: "教堂改建咖啡廳・北野洋館咖啡" },
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "A5鐵板燒名店・主廚現煎" },
   { href: "/shukugawa", label: "☕ 夙川咖啡廳推薦2選｜關西必去咖啡廳", desc: "法式可麗餅＆精品咖啡" },
+];
+
+const faqs = [
+  { q: "一定要爬山嗎？", a: "不一定。文章走的是從御影登頂的路線，但也可以直接搭纜車上山，下山同樣能接到有馬溫泉。" },
+  { q: "泡完溫泉還有什麼？", a: "有馬的溫泉街可以逛，還有義式冰淇淋（雪糕）店 arima gelateria Stagione，泡完湯來一支剛剛好。" },
 ];
 
 export default function RokkoArimaPage() {
@@ -319,6 +325,8 @@ export default function RokkoArimaPage() {
             <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
           </a>
         </section>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

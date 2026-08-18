@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/futakotamagawa";
 const OG_IMAGE = "/futakotamagawa/steaman-1.jpg";
@@ -76,6 +77,11 @@ const relatedLinks = [
   { href: "/shimokitazawa-cafe", label: "☕ 下北澤咖啡廳推薦3選｜東京必去人氣美食", desc: "純素烘焙・起司蛋糕・自家焙煎咖啡" },
   { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/shin-okubo", label: "🍲 新大久保美食推薦｜韓國料理・咖啡・甜點", desc: "ナッコプセ鍋・韓系咖啡廳・ドバイ餅" },
+];
+
+const faqs = [
+  { q: "二子玉川離澀谷多遠？", a: "東急田園都市線從澀谷過來十幾分鐘就到，是很好插進東京行程的近郊街區。四間店都在車站周邊。" },
+  { q: "四間店該怎麼排？", a: "中午先吃蒸籠中華或韓式屋台，下午再去吃蘋果派配精品咖啡，用甜點（甜品）與咖啡收尾最順。" },
 ];
 
 export default function FutakotamagawaPage() {
@@ -394,6 +400,8 @@ export default function FutakotamagawaPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

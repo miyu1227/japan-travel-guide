@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/cafe";
 const OG_IMAGE = "/cafe/gelato-1.jpg";
@@ -129,6 +130,11 @@ const relatedLinks = [
   { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "悠閒散步的人氣公園完全指南" },
   { href: "/hakone", label: "🚃 箱根一日遊推薦｜從東京搭浪漫特快出發", desc: "美術館・足湯・神社的完美行程" },
+];
+
+const faqs = [
+  { q: "自由之丘這3間店要走很遠嗎？", a: "不用。三間都在東急東橫線・大井町線「自由が丘」駅徒步約3〜5分的範圍內，散步順走就能一次逛完。" },
+  { q: "一個人預算大概多少？", a: "貝果約¥300〜¥600、義式冰淇淋（雪糕）約¥500〜¥900、現做起司（芝士）披薩約¥800〜¥1,500。三間都吃一輪大約¥2,000上下。" },
 ];
 
 export default function JiyugaokaCafePage() {
@@ -296,6 +302,8 @@ export default function JiyugaokaCafePage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

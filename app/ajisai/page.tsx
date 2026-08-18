@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/ajisai";
 const OG_IMAGE = "/ajisai/cover.jpg";
@@ -122,6 +123,11 @@ const relatedLinks = [
   { href: "/tokyo-tower", label: "🗼 東京鐵塔推薦｜東京必去地標・夜景景點", desc: "333公尺東京象徵・主展望台＆頂層展望台夜景" },
   { href: "/skytree", label: "🌃 東京晴空塔攻略｜門票、交通、夜景整理", desc: "Tokyo Skytree展望台＆東京ソラマチ完整指南" },
   { href: "/tokyo-disney-around", label: "🎢 東京迪士尼周邊玩法｜不進園也能玩！", desc: "Disney Resort Line一日券＆イクスピアリ美食" },
+];
+
+const faqs = [
+  { q: "紫陽花的最佳花期是什麼時候？", a: "一般是6月上旬到中旬最盛，實際會隨當年天氣前後移動。兩處都是免費入場，可以安排在同一天連走。" },
+  { q: "這兩個景點要門票嗎？好到嗎？", a: "都免費。台場的シンボルプロムナード公園從百合海鷗線「台場」「青海」駅徒步約3〜5分；文京白山神社從都營三田線「白山」駅徒步約3分，不用搭計程車（的士）也很好到。" },
 ];
 
 export default function AjisaiPage() {
@@ -272,6 +278,8 @@ export default function AjisaiPage() {
             ))}
           </div>
         </section>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

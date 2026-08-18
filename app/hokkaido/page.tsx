@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const KLOOK_AOI =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1347320&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F150522-shirogane-blue-pond-shikisai-no-oka-farm-tomita-one-day-tour";
@@ -178,6 +179,11 @@ const seasons = [
   { season: "夏", emoji: "💜", desc: "薰衣草季！富良野花田最壯觀" },
   { season: "秋", emoji: "🍂", desc: "紅葉絕美，氣溫涼爽很舒服" },
   { season: "冬", emoji: "❄️", desc: "雪景＋雪祭，是最多人來的旺季" },
+];
+
+const faqs = [
+  { q: "薰衣草季是什麼時候？", a: "富良野的薰衣草一般在7月最盛，其他季節則有不同花田的樣子。小樽與美瑛青池則是四季都能去。" },
+  { q: "行李很重怎麼辦？", a: "札幌市內飯店（酒店）與新千歲機場之間有行李配送服務，早上寄出、晚上送到，最後一天可以空手去逛街再直接進機場。" },
 ];
 
 export default function HokkaidoPage() {
@@ -469,6 +475,8 @@ export default function HokkaidoPage() {
             <p className="relative text-[10px] text-stone-500 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
           </a>
         </section>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

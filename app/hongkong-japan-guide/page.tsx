@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/hongkong-japan-guide";
-const OG_IMAGE = "/poyapiyo-flag.png";
+const OG_IMAGE = "/hongkong-japan-guide/cover.png";
 
 export const metadata: Metadata = {
   title: "香港去日本自由行攻略｜機票・上網卡・日圓兌換",
@@ -181,6 +182,18 @@ export default function HongKongJapanGuidePage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           香港去日本自由行攻略｜<br />機票、上網卡、日圓兌換與退稅新制✈️
         </h1>
+
+        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-yellow-100 shadow-sm mb-3">
+          <Image
+            src="/hongkong-japan-guide/cover.png"
+            alt="香港去日本自由行攻略｜機票・上網卡・日圓兌換・退稅"
+            fill
+            sizes="(max-width: 768px) 100vw, 672px"
+            className="object-cover"
+            priority
+          />
+        </div>
+
         <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-18</p>
 
         {/* Intro */}

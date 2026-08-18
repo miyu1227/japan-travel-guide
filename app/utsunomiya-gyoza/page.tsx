@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/utsunomiya-gyoza";
 const OG_IMAGE = "/utsunomiya-gyoza/minmin-1.jpg";
@@ -71,6 +72,11 @@ const relatedLinks = [
   { href: "/utsunomiya", label: "🎋 宇都宮觀光推薦3選｜栃木必去竹林・餃子・神社", desc: "若山農場竹林・餃子通・二荒山神社" },
   { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/shin-okubo", label: "🇰🇷 新大久保美食推薦｜韓國料理・咖啡・甜點", desc: "ナッコプセ鍋・韓系咖啡廳・ドバイ餅" },
+];
+
+const faqs = [
+  { q: "兩家怎麼比？", a: "みんみん有煎餃、水餃、炸餃三種吃法，正嗣則專注在煎餃與水餃。兩家都在市中心，可以一次吃兩家做對決。" },
+  { q: "從東京去要多久？", a: "搭新幹線約50分就到，是很好排的當天來回小旅行。老店有可能只收現金，身上先準備一些日幣（日圓）現金比較保險。" },
 ];
 
 export default function UtsunomiyaGyozaPage() {
@@ -274,6 +280,8 @@ export default function UtsunomiyaGyozaPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

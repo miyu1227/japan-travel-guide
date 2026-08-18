@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/ikejiri-cafe";
 const OG_IMAGE = "/ikejiri-cafe/unlivre-1.jpg";
@@ -76,6 +77,11 @@ const relatedLinks = [
   { href: "/nakameguro-cafe", label: "☕ 中目黑咖啡廳推薦｜星巴克臻選東京烘焙工坊", desc: "隈研吾建築・目黑川賞櫻聖地" },
   { href: "/shibuya-cafe", label: "🎵 澀谷咖啡廳推薦｜RECOCO 黑膠唱片試聽咖啡", desc: "約300張唱片聽到飽的音樂體驗" },
   { href: "/daikanyama-cafe", label: "☕ 代官山咖啡廳推薦2選｜義式烘焙＆高級甜點", desc: "PRINCI＆DOLCE TACUBO" },
+];
+
+const faqs = [
+  { q: "從澀谷過去要多久？", a: "東急田園都市線從澀谷只要一站，出站走幾分鐘就到，很適合插在澀谷行程中間休息。" },
+  { q: "有戶外座位嗎？必點什麼？", a: "有露台座位，天氣好的時候最搶手。草莓蛋糕與季節限定刨冰是店裡的招牌甜點（甜品）。" },
 ];
 
 export default function IkejiriCafePage() {
@@ -240,6 +246,8 @@ export default function IkejiriCafePage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

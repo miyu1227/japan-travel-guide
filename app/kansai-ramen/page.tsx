@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/kansai-ramen";
 const OG_IMAGE = "/kansai-ramen/tsujita-2.jpg";
@@ -109,6 +110,11 @@ const relatedLinks = [
   { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/osaka-gourmet", label: "🍻 大阪美食推薦2選｜鐵板燒名店＆人氣居酒屋", desc: "鉄板屋な。＆酒場ビリー" },
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "A5鐵板燒名店・主廚現煎" },
+];
+
+const faqs = [
+  { q: "沾麵怎麼吃才對？", a: "先吃原味，中途加店家準備的檸檬與黑七味換口味，最後可以請店家加湯把沾汁喝完。" },
+  { q: "交通與預算？", a: "大阪地下鐵四橋線「肥後橋」駅徒步約3分、京阪中之島線「渡邊橋」駅徒步約4分，一碗約¥1,000〜¥1,500。" },
 ];
 
 export default function KansaiRamenArticle() {
@@ -280,6 +286,8 @@ export default function KansaiRamenArticle() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />

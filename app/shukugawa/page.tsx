@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/shukugawa";
 const OG_IMAGE = "/shukugawa/crepe-1.jpg";
@@ -101,6 +102,11 @@ const relatedLinks = [
   { href: "/kobe-cafe", label: "☕ 神戶咖啡推薦｜フロインドリーブ＆異人館咖啡", desc: "教堂改建咖啡廳・北野異人館洋館咖啡" },
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "A5鐵板燒名店・主廚現煎" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩" },
+];
+
+const faqs = [
+  { q: "夙川在哪裡？好到嗎？", a: "在兵庫，從大阪梅田或神戶三宮搭阪急電車都很快，是關西行程裡很好插進去的安靜住宅區。" },
+  { q: "兩間怎麼排？", a: "中午先吃法式可麗餅當正餐，下午再去自家焙煎的咖啡廳（咖啡店）收尾，兩間走路就能移動。" },
 ];
 
 export default function ShukugawaPage() {
@@ -256,6 +262,8 @@ export default function ShukugawaPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqs} />
 
         <AuthorCard />
         <PrepBanner />
