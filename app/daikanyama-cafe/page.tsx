@@ -9,13 +9,13 @@ const PAGE_URL = "https://www.japantrippicks.com/daikanyama-cafe";
 const OG_IMAGE = "/daikanyama-cafe/princi-1.jpg";
 
 export const metadata: Metadata = {
-  title: "代官山咖啡廳推薦2選｜東京必去義式烘焙＆高級甜點【實際造訪】",
+  title: "代官山咖啡廳推薦3選｜東京必去義式烘焙・高級甜點・法式可頌【實際造訪】",
   description:
-    "代官山咖啡廳推薦2選！米蘭義式烘焙名店「PRINCI 代官山T-SITE」與星級甜點師的頂級甜點店「DOLCE TACUBO」。東京代官山必去人氣店，附交通方式・菜單・價格。台灣・香港旅客必看！",
+    "代官山咖啡廳推薦3選！米蘭義式烘焙名店「PRINCI 代官山T-SITE」、星級甜點師的頂級甜點店「DOLCE TACUBO」，以及2026年7月新開幕的法式可頌專門店「Doré by Charles-Henry」。東京代官山必去人氣店，附交通方式・菜單・價格。台灣・香港旅客必看！",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "代官山咖啡廳推薦2選｜東京必去義式烘焙＆高級甜點",
-    description: "米蘭義式烘焙PRINCI＆星級甜點DOLCE TACUBO。代官山必去2間人氣咖啡廳。",
+    title: "代官山咖啡廳推薦3選｜東京必去義式烘焙・高級甜點・法式可頌",
+    description: "米蘭義式烘焙PRINCI・星級甜點DOLCE TACUBO・法式可頌專門店Doré by Charles-Henry。代官山必去3間人氣咖啡廳。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "代官山咖啡廳推薦2選｜東京必去義式烘焙＆高級甜點",
-    description: "代官山必去2間人氣咖啡廳！米蘭義式烘焙＆星級甜點☕",
+    title: "代官山咖啡廳推薦3選｜東京必去義式烘焙・高級甜點・法式可頌",
+    description: "代官山必去3間人氣咖啡廳！米蘭義式烘焙・星級甜點・法式可頌專門店☕",
     images: [OG_IMAGE],
   },
 };
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "代官山咖啡廳推薦2選｜東京必去義式烘焙＆高級甜點【實際造訪】",
-  description: "代官山必去咖啡廳：米蘭PRINCI代官山T-SITE、頂級甜點DOLCE TACUBO代官山。",
+  headline: "代官山咖啡廳推薦3選｜東京必去義式烘焙・高級甜點・法式可頌【實際造訪】",
+  description: "代官山必去咖啡廳：米蘭PRINCI代官山T-SITE、頂級甜點DOLCE TACUBO代官山、法式可頌專門店Doré by Charles-Henry。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-18T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -54,6 +54,13 @@ const breadcrumbJsonLd = {
 };
 
 const tacuboPhotos = ["/daikanyama-cafe/tacubo-1.jpg", "/daikanyama-cafe/tacubo-2.jpg", "/daikanyama-cafe/tacubo-3.jpg"];
+const charlesHenryPhotos = [
+  "/daikanyama-cafe/charleshenry-1.jpg",
+  "/daikanyama-cafe/charleshenry-2.jpg",
+  "/daikanyama-cafe/charleshenry-3.jpg",
+  "/daikanyama-cafe/charleshenry-4.jpg",
+  "/daikanyama-cafe/charleshenry-5.jpg",
+];
 
 const relatedLinks = [
   { href: "/nakameguro-cafe", label: "☕ 中目黑咖啡廳推薦｜星巴克臻選東京烘焙工坊", desc: "隈研吾建築・目黑川賞櫻聖地" },
@@ -87,9 +94,9 @@ export default function DaikanyamaCafePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          代官山咖啡廳推薦2選｜<br />東京必去義式烘焙＆高級甜點☕
+          代官山咖啡廳推薦3選｜東京必去<br />義式烘焙・高級甜點・法式可頌☕
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-18</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -98,7 +105,7 @@ export default function DaikanyamaCafePage() {
             <strong>代官山</strong>是東京最受歡迎的高級時尚街區之一，從澀谷搭電車只要1站就能抵達🏙️ 街道安靜優雅，聚集了許多設計精品店、選物店和特色咖啡廳，被譽為「東京的巴黎」。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的兩間店——來自米蘭的義式烘焙名店<strong>「PRINCI 代官山T-SITE」</strong>，以及日本星級甜點師打造的頂級甜點<strong>「DOLCE TACUBO」</strong>✨ 風格完全不同，都是代官山必訪的人氣店！
+            這次推薦的三間店——來自米蘭的義式烘焙名店<strong>「PRINCI 代官山T-SITE」</strong>、星級主廚打造的頂級甜點<strong>「DOLCE TACUBO」</strong>，以及2026年7月才新開幕、由法國主廚坐鎮的可頌專門店<strong>「Doré by Charles-Henry」</strong>✨ 風格完全不同，都是代官山必訪的人氣店！
           </p>
         </section>
 
@@ -122,11 +129,18 @@ export default function DaikanyamaCafePage() {
                 <p className="text-xs text-stone-500 leading-relaxed">濃厚泡芙・焦香費南雪・生冰淇淋</p>
               </div>
             </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">Doré by Charles-Henry → 法式可頌專門店</p>
+                <p className="text-xs text-stone-500 leading-relaxed">代官山站徒步2分、早上9點開門、可頌牆超好拍</p>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">代官山咖啡廳推薦・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">代官山咖啡廳推薦・3選</h2>
 
         {/* Spot 1: PRINCI */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -238,12 +252,84 @@ export default function DaikanyamaCafePage() {
           </div>
         </section>
 
+        {/* Spot 3: Doré by Charles-Henry */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+          <div className="grid grid-cols-3 gap-0.5">
+            {charlesHenryPhotos.slice(0, 3).map((src, i) => (
+              <div key={i} className="relative aspect-square bg-stone-100">
+                <Image src={src} alt="Doré by Charles-Henry 代官山 - 法式可頌專門店" fill sizes="33vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 gap-0.5">
+            {charlesHenryPhotos.slice(3, 5).map((src, i) => (
+              <div key={i} className="relative aspect-[3/2] bg-stone-100">
+                <Image src={src} alt="Doré by Charles-Henry 代官山 - 可頌與法式甜點" fill sizes="50vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-pink-500 text-white flex items-center justify-center text-sm font-black shrink-0">3</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">Doré by Charles-Henry</h3>
+                <span className="text-xs text-stone-400">ドレ バイ シャルルアンリ・法式可頌專門店</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              <strong>2026年7月才開幕</strong>的法式可頌專門店🥐 主廚<strong>Charles-Henry（夏爾亨利）</strong>來自法國諾曼第，曾在巴黎侯布雄以及倫敦、羅馬、舊金山、東京的米其林星級餐廳歷練，2024年先在代官山開了以「珠寶般的水果塔」聞名的<strong>Charles-Henry</strong>，這間可頌專門店就開在<strong>隔壁</strong>。使用<strong>法國產發酵奶油與嚴選法國小麥粉</strong>，用傳統工法做出外層酥脆、內裡濕潤的可頌。
+            </p>
+
+            <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                櫃檯上一整排的可頌根本是藝術品✨ 甜的有<strong>檸檬蛋白霜可頌（Croissant Citron Meringue）</strong>、草莓香草可頌、開心果覆盆子長條可頌、三重巧克力麵包；鹹的則有<strong>火腿起司蛋 Croque Madame（¥1,230）</strong>、香腸三明治、菠菜起司西班牙臘腸的<strong>Pain Suisse</strong>，甚至還有明太子鮭魚檸檬口味🐟 我們點了<strong>Bostock（¥790）</strong>——用可頌吐司烤過再鋪滿莓果與糖粉，配上冰拿鐵剛剛好。店裡最好拍的是<strong>整面純白可頌造型的牆</strong>，坐在前面拍一張就是完美的IG照📸
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🥐 法式可頌專門", "👨‍🍳 米其林經歷主廚", "🧈 法國產發酵奶油", "📸 可頌牆超好拍", "🎁 禮盒包裝好看", "🌅 早上9點開門"].map((t) => (
+                <span key={t} className="text-xs bg-pink-50 text-pink-700 border border-pink-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600">📍 東京都澀谷區惠比壽西1-35-14（Charles-Henry隔壁）</p>
+              <p className="text-xs text-stone-600">🚃 東急東橫線「代官山」駅 徒歩約2分</p>
+              <p className="text-xs text-stone-600">⏰ 9:00〜19:00</p>
+              <p className="text-xs text-stone-600">💴 可頌類約¥400〜、Bostock ¥790、Croque Madame ¥1,230（價格以店頭為準）</p>
+              <p className="text-xs text-stone-600">🪑 內用約10席（不接受訂位）</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">
+                座位只有約10席、又<strong>不能訂位</strong>，想內用建議<strong>一開門就去</strong>；外帶禮盒很有質感，當伴手禮也很加分🎁
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-4">
+              <a href="https://charles-henry.jp/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
+                🔗 官方網站
+              </a>
+              <a href="https://www.instagram.com/charleshenry_official/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
+                📷 Instagram
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">代官山咖啡散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從澀谷搭東急東橫線只要1站，交通非常方便</li>
-            <li>✅ 兩間店距離很近，可以安排同一天順遊</li>
+            <li>✅ 三間店距離很近，可以安排同一天順遊</li>
+            <li>✅ Doré <strong>早上9點開門</strong>、座位又少，最適合當成代官山散步的第一站🥐</li>
+            <li>✅ 想吃水果塔的話，Doré隔壁就是同一位主廚的塔專門店<strong>Charles-Henry</strong>，兩間可以一起逛</li>
             <li>✅ <strong>代官山T-SITE（蔦屋書店）</strong>本身也是必逛景點📚</li>
             <li>✅ 代官山街上有許多選物店，可以邊逛邊買</li>
             <li>✅ 也可以順遊中目黑（目黑川）或惠比壽，安排一整天散步行程</li>
@@ -253,8 +339,8 @@ export default function DaikanyamaCafePage() {
         {/* ぽやぴよ */}
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
-            米蘭義式烘焙＆星級甜點——代官山是東京最有格調的咖啡散步區✨<br />
-            從早餐到下午茶，在這兩間店之間走一趟，就是最完美的代官山行程！
+            米蘭義式烘焙、星級甜點，再加上一間法國主廚的可頌專門店——代官山是東京最有格調的咖啡散步區✨<br />
+            從早餐到下午茶，在這三間店之間走一趟，就是最完美的代官山行程！
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
             <div className="text-3xl shrink-0">🐥</div>

@@ -201,8 +201,8 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       areas: ["その他"],
     },
     {
-      name: "代官山咖啡廳推薦2選｜東京必去義式烘焙＆高級甜點☕",
-      desc: "米蘭義式烘焙PRINCI＆星級甜點DOLCE TACUBO，代官山必去人氣店",
+      name: "代官山咖啡廳推薦3選｜義式烘焙・高級甜點・法式可頌☕",
+      desc: "米蘭義式烘焙PRINCI・星級甜點DOLCE TACUBO・法式可頌專門店Doré，代官山必去人氣店",
       tag: "東京",
       emoji: "☕",
       href: "/daikanyama-cafe",
