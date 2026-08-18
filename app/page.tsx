@@ -17,6 +17,15 @@ const areas = ["すべて", "東京", "大阪", "兵庫", "北海道", "四国",
 const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string; areas: string[] }[]> = {
   ramen: [
     {
+      name: "橫濱野毛續攤推薦2選｜平價居酒屋・壽司一貫¥99起🍶",
+      desc: "櫻木町站徒步3分！霓虹中華酒場AM:PM＋全國釣魚直送的大眾壽司酒場，一人¥2,000〜3,000",
+      tag: "神奈川",
+      emoji: "🍶",
+      href: "/noge",
+      image: "/noge/cover.jpg",
+      areas: ["その他"],
+    },
+    {
       name: "東京高級燒肉推薦｜叙々苑 品川王子大飯店店🥩",
       desc: "品川站徒步2分！日本高級燒肉代表，午餐¥2,640起就能吃到",
       tag: "東京",
