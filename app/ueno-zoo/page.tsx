@@ -10,9 +10,9 @@ const PAGE_URL = "https://www.japantrippicks.com/ueno-zoo";
 const OG_IMAGE = "/ueno-zoo/zoo-1.jpg";
 
 export const metadata: Metadata = {
-  title: "上野動物園推薦｜東京必去親子景點・大熊貓【實際造訪】",
+  title: "上野動物園推薦｜東京必去親子景點・門票¥600",
   description:
-    "日本最古老的動物園，大熊貓・亞洲象・小熊貓等超人氣動物。門票只要¥600，親子旅行・情侶約會都推薦。附交通方式・門票・營業時間。",
+    "日本最古老的動物園，亞洲象・蘇門答臘虎・大猩猩・小熊貓等超人氣動物。門票只要¥600，親子旅行・情侶約會都推薦。大熊貓已於2026年1月返還中國。附交通方式・門票・營業時間。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "上野動物園推薦｜東京必去親子景點・大熊貓",
-    description: "東京必去！日本最古老的動物園，大熊貓超人氣。門票¥600，附交通・營業時間。",
+    title: "上野動物園推薦｜東京必去親子景點・門票¥600",
+    description: "東京必去！日本最古老的動物園，亞洲象與小熊貓超人氣。門票¥600，附交通・營業時間。大熊貓已返還中國。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "上野動物園推薦｜東京必去親子景點",
-    description: "東京必去！日本最古老的動物園，大熊貓・門票¥600🐼",
+    description: "東京必去！日本最古老的動物園・門票¥600🐘",
     images: [OG_IMAGE],
   },
 };
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "上野動物園推薦｜東京必去親子景點・大熊貓【實際造訪】",
-  description: "東京必去景點「上野動物園」。日本最古老的動物園，大熊貓超人氣。",
+  headline: "上野動物園推薦｜東京必去親子景點・門票¥600【實際造訪】",
+  description: "東京必去景點「上野動物園」。日本最古老的動物園，門票¥600，亞洲象與小熊貓等豐富展示。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-18T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -99,9 +99,9 @@ export default function UenoZooPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          上野動物園推薦｜東京必去<br />親子景點・大熊貓🐼
+          上野動物園推薦｜東京必去<br />親子景點・門票¥600🐘
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-18</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -110,7 +110,7 @@ export default function UenoZooPage() {
             <strong>上野動物園</strong>是日本最古老的動物園，創立於1882年（明治15年），至今已有超過140年的歷史🏛️ 位於上野公園內，從上野車站走路只要5分鐘。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            園內有超人氣的<strong>大熊貓</strong>、亞洲象、蘇門答臘虎、小熊貓等豐富的動物展示。門票只要<strong>¥600</strong>，小學生以下免費，CP值超高✨ 不論是親子旅行、情侶約會還是朋友出遊都非常適合。
+            園內有<strong>亞洲象</strong>、蘇門答臘虎、大猩猩、小熊貓等豐富的動物展示。門票只要<strong>¥600</strong>，小學生以下免費，CP值超高✨ 不論是親子旅行、情侶約會還是朋友出遊都非常適合。長年的招牌大熊貓已於<strong>2026年1月返還中國</strong>，這點出發前先知道比較不會失望。
           </p>
         </section>
 
@@ -145,18 +145,18 @@ export default function UenoZooPage() {
             </div>
 
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
-              日本歷史最悠久的動物園，園區分為<strong>東園</strong>和<strong>西園</strong>，由單軌電車連接。東園有大熊貓、大猩猩、老虎等人氣動物；西園有企鵝、長頸鹿、河馬等。整個園區走一圈約需2〜3小時，規模適中不會太累。
+              日本歷史最悠久的動物園，園區分為<strong>東園</strong>和<strong>西園</strong>，由單軌電車連接。東園有大猩猩、老虎等人氣動物；西園有企鵝、長頸鹿、河馬等。整個園區走一圈約需2〜3小時，規模適中不會太累。
             </p>
 
             <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                門票只要<strong>¥600</strong>，小學生以下<strong>免費</strong>，CP值爆表💰 大熊貓區整修後更加寬敞舒適，可以慢慢觀察。園內也有餐廳和紀念品商店，熊貓周邊超可愛🐼 逛完還可以順遊上野公園、阿美橫丁，一整天的行程安排很充實！
+                門票只要<strong>¥600</strong>，小學生以下<strong>免費</strong>，CP值爆表💰 動物種類多、園區規模適中，慢慢逛也不會太累。園內也有餐廳和紀念品商店，逛完還可以順遊上野公園、阿美橫丁，一整天的行程安排很充實！
               </p>
             </div>
 
             <div className="flex flex-wrap gap-2 mb-4">
-              {["🐼 大熊貓", "💰 門票¥600", "👶 親子推薦", "🚶 上野站徒步5分", "🆓 小學以下免費"].map((t) => (
+              {["💰 門票¥600", "👶 親子推薦", "🚶 上野站徒步5分", "🆓 小學以下免費", "🐘 亞洲象"].map((t) => (
                 <span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>
               ))}
             </div>
@@ -165,10 +165,10 @@ export default function UenoZooPage() {
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-amber-700 mb-2">🦁 必看動物</p>
               <ul className="text-xs text-stone-600 space-y-1">
-                <li>・大熊貓（ジャイアントパンダ）— 上野動物園的超級明星🐼</li>
                 <li>・亞洲象 — 園內最大的動物，氣勢十足🐘</li>
                 <li>・小熊貓（レッサーパンダ）— 萌度爆表，超療癒</li>
                 <li>・蘇門答臘虎 — 稀有品種，近距離觀察很震撼🐯</li>
+                <li>・大猩猩 — 東園的人氣動物，表情超有戲🦍</li>
               </ul>
             </div>
 
@@ -203,33 +203,33 @@ export default function UenoZooPage() {
             上野動物園（正式名稱：<strong>東京都恩賜上野動物園</strong>）於<strong>1882年3月20日</strong>開園，是<strong>日本最古老的動物園</strong>🐘 佔地約14.3公頃，飼育約<strong>350種、3000隻</strong>動物，是日本最具代表性的動物園之一。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            園區分為<strong>東園＆西園</strong>，兩園之間有<strong>「東園～西園架空索道（東京都営）」</strong>連結（目前運休中）。1972年中日建交紀念，中國贈送第一對大熊貓「康康＆蘭蘭」，從此上野動物園＝大熊貓的印象深植人心🐼 現在的<strong>公主櫻濱＆桃鈴</strong>是2021年出生的雙胞胎。
+            園區分為<strong>東園＆西園</strong>，兩園之間有<strong>「東園～西園架空索道（東京都営）」</strong>連結（目前運休中）。1972年中日建交紀念，中國贈送第一對大熊貓「康康＆蘭蘭」，從此上野動物園＝大熊貓的印象深植人心🐼 不過2021年出生的雙胞胎<strong>曉曉＆蕾蕾</strong>已在2026年1月返還中國，這段超過50年的緣分暫時告一段落。
           </p>
         </section>
 
         {/* 熊貓觀覽情報 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">大熊貓觀覽的秘訣</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">大熊貓現在還看得到嗎？</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
               <div>
-                <p className="text-sm font-bold text-stone-700">早上開園時最有機會看到熊貓活動</p>
-                <p className="text-xs text-stone-500 leading-relaxed">熊貓在早上10點前較活躍，中午常常在午睡。想看熊貓吃竹子的話開園（9:30）就入場最有機會。</p>
+                <p className="text-sm font-bold text-stone-700">上野動物園目前沒有大熊貓</p>
+                <p className="text-xs text-stone-500 leading-relaxed">「リーリー・シンシン」已於2024年9月返還中國，雙胞胎「曉曉・蕾蕾」也在2026年1月下旬返還，最後公開日是1月25日。</p>
               </div>
             </div>
             <div className="flex gap-3">
               <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
               <div>
-                <p className="text-sm font-bold text-stone-700">假日需要「觀覽整理券」</p>
-                <p className="text-xs text-stone-500 leading-relaxed">週六日＆連休期間，熊貓館入場需要事先領取或線上抽選整理券。出發前必看官網最新資訊。</p>
+                <p className="text-sm font-bold text-stone-700">日本國內目前也沒有其他地方看得到</p>
+                <p className="text-xs text-stone-500 leading-relaxed">和歌山白浜Adventure World的4隻也在2025年6月返還，所以現在全日本都沒有可以看大熊貓的動物園。</p>
               </div>
             </div>
             <div className="flex gap-3">
               <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
               <div>
-                <p className="text-sm font-bold text-stone-700">分為「熊貓森林」＆「熊貓館」兩區</p>
-                <p className="text-xs text-stone-500 leading-relaxed">「熊貓森林」是2020年新開放的區域，環境更自然。兩區的熊貓不同隻，記得都要看。</p>
+                <p className="text-sm font-bold text-stone-700">還是很值得去，只是別為了熊貓來</p>
+                <p className="text-xs text-stone-500 leading-relaxed">門票¥600、動物種類豐富、離上野站只要5分鐘，以東京的景點來說CP值仍然很高。今後是否再引進大熊貓請以官網公告為準。</p>
               </div>
             </div>
           </div>
@@ -283,13 +283,13 @@ export default function UenoZooPage() {
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 門票能現場買嗎？</p>
               <p className="text-xs text-stone-600 leading-relaxed">
-                可以，但假日、櫻花季、熊貓熱潮期會排隊。<strong>網路購票（東京都立公園網站）</strong>可以省去排隊時間。門票大人¥600，中學生¥200，65歲以上¥300，小學生以下免費——超佛心！
+                可以，但假日與櫻花季會排隊。<strong>網路購票（東京都立公園網站）</strong>可以省去排隊時間。門票大人¥600，中學生¥200，65歲以上¥300，小學生以下免費——超佛心！
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 一定能看到大熊貓嗎？</p>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 現在還看得到大熊貓嗎？</p>
               <p className="text-xs text-stone-600 leading-relaxed">
-                熊貓館有<strong>健檢日、換場整備日</strong>會臨時休館，或熊貓身體狀況不佳時暫停展出。出發前一定要看官網「本日的動物」頁面確認。
+                看不到了。雙胞胎「曉曉・蕾蕾」已於<strong>2026年1月</strong>返還中國，日本國內目前沒有任何動物園展示大熊貓。其他動物的展示狀況（健檢日、整備日等）則可以看官網「本日的動物」頁面確認。
               </p>
             </div>
             <div>
@@ -311,7 +311,7 @@ export default function UenoZooPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">逛動物園小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
-            <li>✅ 建議<strong>平日上午</strong>前往，假日特別是大熊貓區會很擠</li>
+            <li>✅ 建議<strong>平日上午</strong>前往，假日的人氣動物區會很擠</li>
             <li>✅ 園區走一圈約需2〜3小時，穿舒適的鞋子👟</li>
             <li>✅ 園內有餐廳，也可以自帶便當在休息區用餐</li>
             <li>✅ 逛完可以順遊<strong>上野公園</strong>和<strong>阿美橫丁</strong>購物</li>
@@ -329,7 +329,7 @@ export default function UenoZooPage() {
             <div className="text-3xl shrink-0">🐥</div>
             <div>
               <p className="text-sm font-semibold text-stone-700 mb-0.5">ぽやぴよ的話</p>
-              <p className="text-sm text-stone-600">「大熊貓真的太可愛了，看到的瞬間心都融化了🐼」</p>
+              <p className="text-sm text-stone-600">「門票只要¥600就能看一整天，是東京最佛心的景點之一🐘」</p>
             </div>
           </div>
         </div>

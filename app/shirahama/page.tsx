@@ -13,9 +13,9 @@ const PAGE_URL = "https://www.japantrippicks.com/shirahama";
 const OG_IMAGE = "/shirahama/cover.jpg";
 
 export const metadata: Metadata = {
-  title: "和歌山白浜4選｜熊貓樂園・海景咖啡・海鮮BBQ",
+  title: "和歌山白浜4選｜冒險大世界・海景咖啡・海鮮BBQ",
   description:
-    "可近距離看熊貓的「Adventure World冒險大世界」、白浜志原海岸的豪華露營、海景名店「Kagerou Café」、「とれとれ市場」海鮮BBQ。附交通・料金・營業時間。",
+    "動物與海豚表演的「Adventure World冒險大世界」、白浜志原海岸的豪華露營、海景名店「Kagerou Café」、「とれとれ市場」海鮮BBQ。附交通・料金・營業時間。園內的大熊貓已於2025年6月返還中國。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "和歌山白浜景點推薦4選｜熊貓樂園・海邊露營・海景咖啡・海鮮BBQ",
-    description: "和歌山白浜必去4選！冒險大世界看熊貓・志原海岸豪華露營・海景咖啡・とれとれ市場海鮮BBQ。附交通・料金。",
+    title: "和歌山白浜景點推薦4選｜動物樂園・海邊露營・海景咖啡・海鮮BBQ",
+    description: "和歌山白浜必去4選！冒險大世界看海豚表演與Safari・志原海岸豪華露營・海景咖啡・とれとれ市場海鮮BBQ。附交通・料金。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "和歌山白浜景點推薦4選｜熊貓・海邊露營・海鮮BBQ",
-    description: "和歌山白浜必去4選！看熊貓・海邊豪華露營・海景咖啡・海鮮BBQ🐼🌊",
+    title: "和歌山白浜景點推薦4選｜動物樂園・海邊露營・海鮮BBQ",
+    description: "和歌山白浜必去4選！動物樂園・海邊豪華露營・海景咖啡・海鮮BBQ🐬🌊",
     images: [OG_IMAGE],
   },
 };
@@ -48,14 +48,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "和歌山白浜景點推薦4選｜熊貓樂園・海邊露營・海景咖啡・海鮮BBQ【實際造訪】",
+  headline: "和歌山白浜景點推薦4選｜動物樂園・海邊露營・海景咖啡・海鮮BBQ【實際造訪】",
   description: "和歌山白浜必去景點：Adventure World冒險大世界、In the Outdoor白浜志原海岸、Kagerou Café、とれとれ市場海鮮BBQ。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-18T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -90,7 +90,7 @@ const relatedLinks = [
 ];
 
 const faqs = [
-  { q: "熊貓一定看得到嗎？", a: "熊貓的展示狀況會變動，出發前建議先看官網公告。園區本身還有其他動物與遊樂設施，一整天都排得滿。" },
+  { q: "現在還看得到熊貓嗎？", a: "看不到了。Adventure World原本飼養的4隻大熊貓已於2025年6月28日全部返還中國，日本國內目前沒有可以看到大熊貓的動物園。園區仍有Safari World的陸地動物、Marine World的海豚表演與遊樂設施，一整天都排得滿。" },
   { q: "白浜適合待幾天？", a: "景點分散在海岸線上，一天會很趕，住一晚比較從容。豪華露營與海景咖啡都適合安排在傍晚看夕陽。" },
 ];
 
@@ -122,18 +122,18 @@ export default function ShirahamaPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          和歌山白浜景點推薦4選｜熊貓・<br />海邊露營・海景咖啡・海鮮BBQ🐼🌊
+          和歌山白浜景點推薦4選｜動物樂園・<br />海邊露營・海景咖啡・海鮮BBQ🐬🌊
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-18</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">白浜，是關西最療癒的海邊度假勝地</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            <strong>白浜（Shirahama）</strong>位於和歌山縣南部，是關西人氣的海濱度假地🌊 這裡有雪白的沙灘、溫泉、超好吃（好食）的海鮮，還有可以近距離看到<strong>熊貓</strong>的主題樂園，從大阪開車約2小時就能抵達，非常適合安排一趟兩天一夜的小旅行。
+            <strong>白浜（Shirahama）</strong>位於和歌山縣南部，是關西人氣的海濱度假地🌊 這裡有雪白的沙灘、溫泉、超好吃（好食）的海鮮，還有能近距離看動物的大型主題樂園，從大阪開車約2小時就能抵達，非常適合安排一趟兩天一夜的小旅行。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這篇整理了實際造訪過、白浜最推薦（推介）的<strong>4個景點</strong>——看熊貓的<strong>Adventure World</strong>、海邊豪華露營<strong>In the Outdoor白浜志原海岸</strong>、海景名店<strong>Kagerou Café</strong>，還有海鮮BBQ天堂<strong>とれとれ市場</strong>，一次玩遍白浜的自然、美食與住宿✨
+            這篇整理了實際造訪過、白浜最推薦（推介）的<strong>4個景點</strong>——動物與海豚表演的<strong>Adventure World</strong>、海邊豪華露營<strong>In the Outdoor白浜志原海岸</strong>、海景名店<strong>Kagerou Café</strong>，還有海鮮BBQ天堂<strong>とれとれ市場</strong>，一次玩遍白浜的自然、美食與住宿✨
           </p>
         </section>
 
@@ -144,8 +144,8 @@ export default function ShirahamaPage() {
             <div className="flex gap-3">
               <span className="text-green-400 font-black text-sm shrink-0">▸</span>
               <div>
-                <p className="text-sm font-bold text-stone-700">Adventure World → 熊貓・海陸動物主題樂園</p>
-                <p className="text-xs text-stone-500 leading-relaxed">約120種1600隻動物，還有遊樂園，親子必去</p>
+                <p className="text-sm font-bold text-stone-700">Adventure World → 海陸動物主題樂園</p>
+                <p className="text-xs text-stone-500 leading-relaxed">約120種1600隻動物，還有遊樂園，親子必去（大熊貓已返還中國）</p>
               </div>
             </div>
             <div className="flex gap-3">
@@ -202,18 +202,18 @@ export default function ShirahamaPage() {
             </div>
 
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
-              集動物園、水族館與遊樂園於一體的複合主題樂園，飼養約<strong>120種、1600隻動物</strong>🐼 分為可近距離觀察陸地動物的<strong>Safari World</strong>、有海豚表演的<strong>Marine World</strong>，以及有遊樂設施的<strong>Enjoy World</strong>。這裡最大的明星就是超人氣的<strong>熊貓家族</strong>，是全日本少數能親眼看到熊貓的地方之一。
+              集動物園、水族館與遊樂園於一體的複合主題樂園，飼養約<strong>120種、1600隻動物</strong>🐼 分為可近距離觀察陸地動物的<strong>Safari World</strong>、有海豚表演的<strong>Marine World</strong>，以及有遊樂設施的<strong>Enjoy World</strong>。這裡長年最大的明星是<strong>熊貓家族</strong>，不過4隻大熊貓已在<strong>2025年6月28日全部返還中國</strong>，現在的看點改為Safari的陸地動物與海豚表演。
             </p>
 
             <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                能一次看到熊貓、餵食動物、看海豚表演，親子・情侶都超適合🐬 也可以搭乘專車近距離觀賞獅子、老虎的「LIVE！THE Safari」導覽。園區很大，建議<strong>安排一整天</strong>慢慢玩，並事先在官網購票，就能不用排隊直接入園。
+                能一次餵食動物、看海豚表演、玩遊樂設施，親子・情侶都超適合🐬 也可以搭乘專車近距離觀賞獅子、老虎的「LIVE！THE Safari」導覽。園區很大，建議<strong>安排一整天</strong>慢慢玩，並事先在官網購票，就能不用排隊直接入園。
               </p>
             </div>
 
             <div className="flex flex-wrap gap-2 mb-4">
-              {["🐼 看得到熊貓", "🐬 海豚表演", "🦁 Safari導覽", "🎡 遊樂園", "👨‍👩‍👧 親子必去"].map((t) => (
+              {["🐬 海豚表演", "🦁 Safari導覽", "🎡 遊樂園", "👨‍👩‍👧 親子必去", "🐼 熊貓已返還"].map((t) => (
                 <span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>
               ))}
             </div>
@@ -509,14 +509,14 @@ export default function ShirahamaPage() {
         {/* ぽやぴよ */}
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
-            看熊貓、住海邊、吃海鮮、看海喝咖啡——白浜把度假該有的元素通通集合在一起🌊<br />
+            看動物、住海邊、吃海鮮、看海喝咖啡——白浜把度假該有的元素通通集合在一起🌊<br />
             關西自由行想找個能好好放鬆的地方，白浜真的非常值得安排一趟！
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
             <div className="text-3xl shrink-0">🐥</div>
             <div>
               <p className="text-sm font-semibold text-stone-700 mb-0.5">ぽやぴよ的話</p>
-              <p className="text-sm text-stone-600">「白天看熊貓、晚上在海邊烤肉看星星，這就是最幸福的假期🐼🔥」</p>
+              <p className="text-sm text-stone-600">「白天看海豚表演、晚上在海邊烤肉看星星，這就是最幸福的假期🐬🔥」</p>
             </div>
           </div>
         </div>
