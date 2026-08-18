@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/kiyosumi-cafe";
 const OG_IMAGE = "/kiyosumi-cafe/iki-1.jpg";
@@ -157,6 +158,13 @@ const relatedLinks = [
   { href: "/ikejiri-cafe", label: "🍓 池尻大橋咖啡廳推薦｜UN LIVRE 法式甜點店", desc: "澀谷搭車一站直達的隱藏名店" },
   { href: "/nakameguro-cafe", label: "☕ 中目黑咖啡廳推薦｜星巴克臻選東京烘焙工坊", desc: "隈研吾建築・目黑川賞櫻聖地" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩" },
+];
+
+const faqItems = [
+  { q: "兩間有公休日嗎？", a: "iki Roastery 週三公休，B² 除了年末年始基本上全年無休。行程排在週三的話要特別注意。" },
+  { q: "早上就開門嗎？", a: "B² 是9:00〜18:00（L.O. 17:30）。兩間都是早上就開的店，安排成東京行程的「早晨場」CP值最高。" },
+  { q: "一個人大概多少錢？", a: "兩間都是每人約¥1,000〜¥2,000。B²的麵包¥300起，可頌約¥398、鹽可頌約¥381。" },
+  { q: "這一帶還有什麼？", a: "清澄白河的麵包店密度很高，買麵包的預算建議多抓一點。" },
 ];
 
 export default function KiyosumiCafePage() {
@@ -331,6 +339,8 @@ export default function KiyosumiCafePage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqItems} />
 
         <AuthorCard />
         <PrepBanner />

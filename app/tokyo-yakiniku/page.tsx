@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-yakiniku";
 const OG_IMAGE = "/tokyo-yakiniku/cover.jpg";
@@ -65,6 +66,13 @@ const relatedLinks = [
   { href: "/shibuya-yakiniku", label: "🥩 澀谷燒肉推薦｜ホルモン千葉・內臟燒肉名店", desc: "京都發跡・斜面鐵板・店員全程代烤" },
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "A5鐵板燒名店・主廚現煎" },
   { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
+];
+
+const faqItems = [
+  { q: "午餐和晚餐差多少？", a: "午餐¥2,640〜¥4,000，晚餐一個人約¥15,000〜¥20,000（另加5%服務費，午餐與外帶除外）。想吃叙々苑又想控制預算，午餐是最好的選擇。" },
+  { q: "需要訂位嗎？", a: "晚餐時段人氣很高，建議事先訂位。另外平日16:00〜17:00是休息時間，別在那個時段跑過去。" },
+  { q: "有更便宜的吃法嗎？", a: "同一間飯店的美食廣場「品川キッチン」裡有叙々苑キッチン，燒肉丼約¥1,750、石鍋拌飯丼約¥1,500。" },
+  { q: "離車站多遠？", a: "JR各線「品川」駅高輪口徒步約2分、京急本線「品川」駅西口徒步約2分，就在品川王子大飯店1樓。" },
 ];
 
 export default function TokyoYakinikuPage() {
@@ -223,6 +231,8 @@ export default function TokyoYakinikuPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqItems} />
 
         <AuthorCard />
         <PrepBanner />

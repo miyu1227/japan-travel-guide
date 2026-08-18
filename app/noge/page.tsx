@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/noge";
 const OG_IMAGE = "/noge/cover.jpg";
@@ -68,6 +69,13 @@ const relatedLinks = [
   { href: "/shibuya-yakiniku", label: "🥩 澀谷燒肉推薦｜ホルモン千葉・內臟燒肉名店", desc: "京都發跡・斜面鐵板・店員全程代烤" },
   { href: "/tokyo-yakiniku", label: "🥩 東京高級燒肉推薦｜叙々苑 品川王子大飯店店", desc: "品川站2分・午餐¥2,640起" },
   { href: "/chigasaki", label: "🌊 茅崎夏日推薦｜湘南海灘野餐＆海邊咖啡", desc: "同樣是神奈川的半日小旅行" },
+];
+
+const faqItems = [
+  { q: "幾點開始續攤最好？", a: "AM:PM 週六從14:00、週日假日14:00〜22:00就有開，平日則是17:00以後。スシマヅメ週六日假日12:00就開門。白天的野毛很安靜，18:00之後整條街才會亮起來。" },
+  { q: "有公休日嗎？", a: "スシマヅメ野毛本店週一公休（遇假日順延至週二），AM:PM無公休。" },
+  { q: "一個人大概多少錢？", a: "兩間都是一人約¥2,000〜¥3,000。壽司一貫¥99起、生魚片¥429起、口水雞¥890。另外有些店會收お通し（開胃小菜費，約¥300〜500）。" },
+  { q: "需要訂位嗎？", a: "野毛的店多半很小，人數越少越好進。4人以上建議先訂位。" },
 ];
 
 export default function NogePage() {
@@ -318,6 +326,8 @@ export default function NogePage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqItems} />
 
         <AuthorCard />
         <PrepBanner />

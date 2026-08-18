@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/spot";
 const OG_IMAGE = "/spot/shinjuku-1.jpg";
@@ -89,6 +90,13 @@ const relatedLinks = [
   { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京最值得去的咖啡店指南", desc: "貝果・義式冰淇淋・起司披薩3間人氣店" },
   { href: "/hakone", label: "🚃 箱根一日遊推薦｜從東京搭浪漫特快出發", desc: "美術館・足湯・神社的完美行程" },
+];
+
+const faqItems = [
+  { q: "三個公園要門票嗎？", a: "新宿御苑大人¥500・高中生¥250・中學以下免費；代代木公園與日比谷公園都是免費入場。" },
+  { q: "開放時間是幾點？", a: "新宿御苑9:00〜16:30（週一休園），代代木公園與日比谷公園24小時開放。" },
+  { q: "野餐的食物在哪裡買？", a: "便利商店或超市最方便又便宜。日比谷公園的話，東京中城日比谷買好走1〜2分鐘就到野餐區。" },
+  { q: "哪一個公園最好到？", a: "代代木公園從JR「原宿」駅徒步約3分、日比谷公園從地下鐵「日比谷」駅徒步約2分，都非常近。" },
 ];
 
 export default function SpotPicnicPage() {
@@ -414,7 +422,9 @@ export default function SpotPicnicPage() {
             </div>
           </div>
           <div className="bg-white rounded-2xl border border-blue-200 px-4 py-3 text-center">
-            <p className="text-xs text-stone-400">👉 eSIM 連結即將放上</p>
+            <Link href="/japan-esim" className="text-xs font-bold text-blue-500 hover:underline">
+              👉 日本 eSIM 使用指南｜出發前先把上網搞定 →
+            </Link>
           </div>
         </section>
 
@@ -428,6 +438,8 @@ export default function SpotPicnicPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqItems} />
 
         <AuthorCard />
         <PrepBanner />

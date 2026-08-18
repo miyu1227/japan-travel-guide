@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/shimokitazawa-cafe";
 const OG_IMAGE = "/shimokitazawa-cafe/vegan-1.jpg";
@@ -68,6 +69,13 @@ const relatedLinks = [
   { href: "/kobe-cafe", label: "☕ 神戶咖啡推薦｜フロインドリーブ＆異人館咖啡", desc: "教堂改建咖啡廳・北野異人館洋館咖啡" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩" },
   { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
+];
+
+const faqItems = [
+  { q: "有公休日嗎？", a: "TOKYO VEGAN BAKES 週一・週二公休，Pati coffee&plants 週二公休。週初造訪的話一定要先確認。" },
+  { q: "座位很少嗎？", a: "La Piña 只有6個座位，假日可能需要等候，建議平日前往。" },
+  { q: "早上就有開的店嗎？", a: "Pati coffee&plants 8:00開門，適合當第一站。BONUS TRACK 的店舖多數是11:00〜20:00。" },
+  { q: "預算大概多少？", a: "TOKYO VEGAN BAKES ¥330〜¥880、起司蛋糕¥500起、派¥480〜¥630、飲品¥550〜¥700。" },
 ];
 
 export default function ShimokitazawaCafePage() {
@@ -442,6 +450,8 @@ export default function ShimokitazawaCafePage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqItems} />
 
         <AuthorCard />
         <PrepBanner />

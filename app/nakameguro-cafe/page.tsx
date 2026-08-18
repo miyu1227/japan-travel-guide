@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/nakameguro-cafe";
 const OG_IMAGE = "/nakameguro-cafe/starbucks-1.jpg";
@@ -65,6 +66,13 @@ const relatedLinks = [
   { href: "/shimokitazawa-cafe", label: "☕ 下北澤咖啡廳推薦3選｜東京必去人氣美食", desc: "純素烘焙・起司蛋糕・自家焙煎咖啡" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩" },
   { href: "/koyo", label: "🍁 東京紅葉推薦｜神宮外苑銀杏並木", desc: "金黃銀杏大道・東京秋天必去景點" },
+];
+
+const faqItems = [
+  { q: "星巴克臻選需要預約嗎？", a: "平常可以直接進去，但3月下旬〜4月上旬的櫻花季會採預約制入場，那段期間出發前一定要先查官網。" },
+  { q: "從中目黑站要走多久？", a: "東急東橫線・東京メトロ日比谷線「中目黑」駅沿著目黑川徒步約13分。沿路都是特色小店，走起來不會無聊。" },
+  { q: "幾點去比較不擠？", a: "營業時間是7:00〜22:00（櫻花季8:00〜21:30）。平日早上或傍晚最鬆，週末的午餐時段人最多。" },
+  { q: "一個人大概要花多少？", a: "飲品¥600〜¥1,500、調酒¥1,200〜。限定周邊商品也很適合當伴手禮。" },
 ];
 
 export default function NakameguroCafePage() {
@@ -217,6 +225,8 @@ export default function NakameguroCafePage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqItems} />
 
         <AuthorCard />
         <PrepBanner />

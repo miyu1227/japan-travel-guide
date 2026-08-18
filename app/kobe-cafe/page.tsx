@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/kobe-cafe";
 const OG_IMAGE = "/kobe-cafe/caffarel-3.jpg";
@@ -62,6 +63,13 @@ const relatedLinks = [
   { href: "/shukugawa", label: "☕ 夙川おすすめカフェ2選｜兵庫・神戸", desc: "ガレットランチ＆本格コーヒー" },
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "A5鐵板燒名店・主廚現煎" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩" },
+];
+
+const faqItems = [
+  { q: "需要排隊嗎？", a: "フロインドリーブ的熱門時段常要排隊，くまポチ邸平日開店前就有人排。四間都建議平日上午造訪。" },
+  { q: "四間怎麼串成一天？", a: "三宮→生田神社→フロインドリーブ→托爾街的Caffarel→北野異人館街，這條路線走起來剛剛好。" },
+  { q: "公休日是哪天？", a: "フロインドリーブ生田店週三休、Caffarel 神戶北野本店週二休（L.O. 17:00）。出發前以官網為準。" },
+  { q: "預算大概多少？", a: "每人約¥1,200〜¥2,500。くまポチ邸的主餐約¥2,310起，含麵包吃到飽與迷你甜點。" },
 ];
 
 export default function KobeCafePage() {
@@ -441,6 +449,8 @@ export default function KobeCafePage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqItems} />
 
         <AuthorCard />
         <PrepBanner />

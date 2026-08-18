@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/takeout-cake";
 const OG_IMAGE = "/takeout-cake/cover.jpg";
@@ -59,6 +60,13 @@ const relatedLinks = [
   { href: "/tokyo-cookies", label: "🍪 東京伴手禮推薦｜高級手工餅乾・必買甜點", desc: "奧地利認證大師的餅乾禮盒・需預約" },
   { href: "/shibuya-cafe", label: "☕ 澀谷咖啡廳推薦｜東京必去人氣咖啡散步", desc: "逛完澀谷順路坐下來休息" },
   { href: "/daikanyama-cafe", label: "☕ 代官山咖啡廳推薦3選｜義式烘焙・高級甜點・法式可頌", desc: "PRINCI・DOLCE TACUBO・Doré" },
+];
+
+const faqItems = [
+  { q: "幾點去買比較有貨？", a: "人氣口味傍晚就可能賣完。想吃季節限定的話，建議中午〜下午去。營業時間10:00〜21:00。" },
+  { q: "可以帶回台灣・香港嗎？", a: "不行。鮮奶油蛋糕無法上飛機，賞味期限多半是當日。想帶回國請改買餅乾・費南雪等常溫燒菓子。" },
+  { q: "要保冷劑該怎麼說？", a: "結帳時說「保冷剤（ほれいざい）ください」就可以。店員常會問「お持ち歩き何分ですか？」＝要拿多久才會吃。" },
+  { q: "怎麼去？", a: "澀谷SCRAMBLE SQUARE B2F，與澀谷駅站內地下直接連通，下雨天也不會淋到。" },
 ];
 
 export default function TakeoutCakePage() {
@@ -215,6 +223,8 @@ export default function TakeoutCakePage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqItems} />
 
         <AuthorCard />
         <PrepBanner />

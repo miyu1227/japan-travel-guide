@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/shibuya-yakiniku";
 const OG_IMAGE = "/shibuya-yakiniku/chiba-1.jpg";
@@ -66,6 +67,13 @@ const relatedLinks = [
   { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/shibuya-cafe", label: "🎵 澀谷咖啡廳推薦｜RECOCO 黑膠唱片試聽咖啡", desc: "約300張唱片聽到飽的音樂體驗" },
   { href: "/ikejiri-cafe", label: "🍓 池尻大橋咖啡廳推薦｜UN LIVRE 法式甜點店", desc: "澀谷搭車一站直達的隱藏名店" },
+];
+
+const faqItems = [
+  { q: "可以訂位嗎？", a: "平日可以電話預約，但週末與假日不接受預約，只能現場排隊。想避開人潮建議平日、或一開店就去。" },
+  { q: "公休日是哪天？", a: "週一公休。不過各資訊來源不太一致，出發前致電確認比較保險。" },
+  { q: "一個人大概多少？", a: "每人約¥4,000〜¥6,000，套餐約¥2,800前後。" },
+  { q: "座位是什麼型態？", a: "只有L型吧台座位、沒有包廂。人數多的話比較難安排。" },
 ];
 
 export default function ShibuyaYakinikuPage() {
@@ -245,6 +253,8 @@ export default function ShibuyaYakinikuPage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqItems} />
 
         <AuthorCard />
         <PrepBanner />

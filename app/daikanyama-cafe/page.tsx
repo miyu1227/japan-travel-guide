@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/daikanyama-cafe";
 const OG_IMAGE = "/daikanyama-cafe/princi-1.jpg";
@@ -67,6 +68,13 @@ const relatedLinks = [
   { href: "/nakameguro-cafe", label: "☕ 中目黑咖啡廳推薦｜星巴克臻選東京烘焙工坊", desc: "隈研吾建築・目黑川賞櫻聖地" },
   { href: "/shimokitazawa-cafe", label: "☕ 下北澤咖啡廳推薦3選｜東京必去人氣美食", desc: "純素烘焙・起司蛋糕・自家焙煎咖啡" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩" },
+];
+
+const faqItems = [
+  { q: "三間可以排在同一天嗎？", a: "可以。三間都在代官山駅徒步2〜5分的範圍內，走路就能串起來。" },
+  { q: "Doré 可以訂位嗎？", a: "不接受訂位，內用座位只有約10席。9:00開門，想內用建議一開門就去，或改成外帶。" },
+  { q: "從澀谷怎麼過去？", a: "東急東橫線搭1站就到代官山，非常近。" },
+  { q: "有早餐時段嗎？", a: "PRINCI 代官山T-SITE 7:00就開門，麵包¥300起，很適合當代官山散步的第一站。" },
 ];
 
 export default function DaikanyamaCafePage() {
@@ -351,6 +359,8 @@ export default function DaikanyamaCafePage() {
             </div>
           </div>
         </div>
+
+        <FaqSection items={faqItems} />
 
         <AuthorCard />
         <PrepBanner />
