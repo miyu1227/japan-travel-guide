@@ -17,6 +17,15 @@ const areas = ["すべて", "東京", "大阪", "兵庫", "北海道", "四国",
 const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string; areas: string[] }[]> = {
   ramen: [
     {
+      name: "東京高級燒肉推薦｜叙々苑 品川王子大飯店店🥩",
+      desc: "品川站徒步2分！日本高級燒肉代表，午餐¥2,640起就能吃到",
+      tag: "東京",
+      emoji: "🥩",
+      href: "/tokyo-yakiniku",
+      image: "/tokyo-yakiniku/cover.jpg",
+      areas: ["東京"],
+    },
+    {
       name: "澀谷燒肉推薦｜ホルモン千葉・京都發跡的內臟燒肉名店🥩",
       desc: "獨創斜面鐵板收集肉汁！店員全程代烤，收尾炒烏龍麵必吃",
       tag: "東京",
