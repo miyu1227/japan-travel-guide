@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/mister-donut";
 const OG_IMAGE = "/mister-donut/motchurin-1.jpg";
@@ -296,6 +297,8 @@ export default function MisterDonutPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="mister-donut" exclude={["/daikanyama-cafe", "/isehara-gelato", "/tokyo-cookies"]} />
 
       </article>
 

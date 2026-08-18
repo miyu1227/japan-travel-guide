@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/shukugawa";
 const OG_IMAGE = "/shukugawa/crepe-1.jpg";
@@ -264,6 +265,8 @@ export default function ShukugawaPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="shukugawa" exclude={["/cafe", "/kobe-cafe", "/steak-zen"]} />
 
       </article>
 

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/chigasaki";
 const OG_IMAGE = "/chigasaki/cover.jpg";
@@ -327,6 +328,8 @@ export default function ChigasakiPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="chigasaki" exclude={["/hakone", "/isehara-gelato", "/spot"]} />
 
       </article>
 

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/haneda-airport-access";
 const OG_IMAGE = "/haneda-airport-access/cover.png";
@@ -494,6 +495,8 @@ export default function HanedaAirportAccessPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="haneda-airport-access" exclude={["/japan-esim", "/narita-airport-access", "/tokyo-subway-ticket"]} />
 
       </article>
 

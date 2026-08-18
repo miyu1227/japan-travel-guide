@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-subway-ticket";
 const OG_IMAGE = "/tokyo-subway-ticket/cover.png";
@@ -395,6 +396,8 @@ export default function TokyoSubwayTicketPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="tokyo-subway-ticket" exclude={["/koyo", "/skytree", "/tokyo-tower"]} />
 
       </article>
 

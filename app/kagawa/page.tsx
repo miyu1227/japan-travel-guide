@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const KLOOK_AQUARIUM =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339931&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F74358-shikoku-aquarium";
@@ -451,6 +452,8 @@ export default function KagawaPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="kagawa" exclude={["/hikone", "/kamikochi", "/utsunomiya"]} />
 
       </article>
 

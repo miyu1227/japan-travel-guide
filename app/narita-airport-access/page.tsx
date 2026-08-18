@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/narita-airport-access";
 const OG_IMAGE = "/narita-airport-access/cover.png";
@@ -509,6 +510,8 @@ export default function NaritaAirportAccessPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="narita-airport-access" exclude={["/haneda-airport-access", "/japan-esim", "/tokyo-subway-ticket"]} />
 
       </article>
 

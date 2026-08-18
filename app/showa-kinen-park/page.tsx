@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/showa-kinen-park";
 const OG_IMAGE = "/showa-kinen-park/park-1.jpg";
@@ -238,6 +239,8 @@ export default function ShowaKinenParkPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="showa-kinen-park" exclude={["/koyo", "/spot", "/ueno-zoo"]} />
 
       </article>
 

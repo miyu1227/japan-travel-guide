@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/museum";
 const OG_IMAGE = "/museum/nact-1.jpg";
@@ -309,6 +310,8 @@ export default function MuseumPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="museum" exclude={["/cafe", "/koyo", "/spot"]} />
 
       </article>
 

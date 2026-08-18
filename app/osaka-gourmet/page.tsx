@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/osaka-gourmet";
 const OG_IMAGE = "/osaka-gourmet/teppan-1.jpg";
@@ -315,6 +316,8 @@ export default function OsakaGourmetPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="osaka-gourmet" exclude={["/ginza-apollo", "/kansai-ramen", "/steak-zen"]} />
 
       </article>
 

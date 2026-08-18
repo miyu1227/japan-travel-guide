@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/koyo";
 const OG_IMAGE = "/koyo/gaien-1.jpg";
@@ -331,6 +332,8 @@ export default function KoyoPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="koyo" exclude={["/cafe", "/ramen", "/spot"]} />
 
       </article>
 

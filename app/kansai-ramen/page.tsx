@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/kansai-ramen";
 const OG_IMAGE = "/kansai-ramen/tsujita-2.jpg";
@@ -291,6 +292,8 @@ export default function KansaiRamenArticle() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="kansai-ramen" exclude={["/osaka-gourmet", "/ramen", "/steak-zen"]} />
 
       </article>
 

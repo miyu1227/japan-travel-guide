@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { picks, type PickItem } from "@/lib/articles";
 
 const categories = [
   { id: "ramen", icon: "🍽️", label: "Gourmet", labelZh: "美食", color: "bg-red-100 text-red-600 border-red-300", activeColor: "bg-red-400 text-white border-red-400", hasAreaFilter: true },
@@ -14,513 +15,6 @@ const categories = [
 
 const areas = ["すべて", "東京", "大阪", "兵庫", "北海道", "四国", "その他"];
 
-const picks: Record<string, { name: string; desc: string; tag: string; emoji: string; href?: string; image?: string; areas: string[] }[]> = {
-  ramen: [
-    {
-      name: "橫濱野毛續攤推薦2選｜平價居酒屋・壽司一貫¥99起🍶",
-      desc: "櫻木町站徒步3分！霓虹中華酒場AM:PM＋全國釣魚直送的大眾壽司酒場，一人¥2,000〜3,000",
-      tag: "神奈川",
-      emoji: "🍶",
-      href: "/noge",
-      image: "/noge/cover.jpg",
-      areas: ["その他"],
-    },
-    {
-      name: "東京高級燒肉推薦｜叙々苑 品川王子大飯店店🥩",
-      desc: "品川站徒步2分！日本高級燒肉代表，午餐¥2,640起就能吃到",
-      tag: "東京",
-      emoji: "🥩",
-      href: "/tokyo-yakiniku",
-      image: "/tokyo-yakiniku/cover.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "澀谷燒肉推薦｜ホルモン千葉・京都發跡的內臟燒肉名店🥩",
-      desc: "獨創斜面鐵板收集肉汁！店員全程代烤，收尾炒烏龍麵必吃",
-      tag: "東京",
-      emoji: "🥩",
-      href: "/shibuya-yakiniku",
-      image: "/shibuya-yakiniku/chiba-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "兵庫三田蕎麥麵推薦｜蕎麦いち・關西手打蕎麥名店🍃",
-      desc: "神戶近郊隱藏名店！嚴選國產蕎麥粉的職人手打蕎麥",
-      tag: "兵庫",
-      emoji: "🍃",
-      href: "/sanda-soba",
-      image: "/sanda-soba/soba1-1.jpg",
-      areas: ["兵庫"],
-    },
-    {
-      name: "阪急西宮花園美食｜TOOTH TOOTH 蕎麥薄餅與甜點咖啡🍽️",
-      desc: "西宮北口徒步3分！神戶甜點品牌的現煎蕎麥薄餅與季節水果可麗餅",
-      tag: "兵庫",
-      emoji: "🍽️",
-      href: "/nishinomiya-gardens",
-      image: "/nishinomiya-gardens/tooth-1.jpg",
-      areas: ["兵庫"],
-    },
-    {
-      name: "大阪飯店自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet🥂",
-      desc: "地上200公尺的義式自助餐，挑高落地窗與水晶藝術裝置超好拍",
-      tag: "大阪",
-      emoji: "🥂",
-      href: "/conrad-osaka",
-      image: "/conrad-osaka/atmos-1.jpg",
-      areas: ["大阪"],
-    },
-    {
-      name: "大阪美食推薦2選｜鐵板燒名店＆人氣居酒屋🍻",
-      desc: "鉄板屋な。＆酒場ビリー，大阪在地人氣的精緻晚餐＆夜遊居酒屋",
-      tag: "大阪",
-      emoji: "🍻",
-      href: "/osaka-gourmet",
-      image: "/osaka-gourmet/teppan-1.jpg",
-      areas: ["大阪"],
-    },
-    {
-      name: "宇都宮餃子推薦2選｜兩大名店みんみん＆正嗣 對決🥟",
-      desc: "1958年創業兩大巨頭！煎餃・水餃・炸餃CP值超高，餃子之都必吃",
-      tag: "栃木",
-      emoji: "🥟",
-      href: "/utsunomiya-gyoza",
-      image: "/utsunomiya-gyoza/minmin-1.jpg",
-      areas: ["その他"],
-    },
-    {
-      name: "銀座美食推薦｜THE APOLLO・希臘料理人氣餐廳🍽️",
-      desc: "銀座必吃話題餐廳！地中海風味分享盤＆招牌烤起司料理",
-      tag: "東京",
-      emoji: "🍽️",
-      href: "/ginza-apollo",
-      image: "/ginza-apollo/apollo-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "二子玉川美食推薦4選｜中華・甜點・韓國料理・精品咖啡🍽️",
-      desc: "蒸籠中華・蘋果派・韓式屋台・世田谷精品咖啡WOODBERRY，東京近郊散步美食",
-      tag: "東京",
-      emoji: "🍽️",
-      href: "/futakotamagawa",
-      image: "/futakotamagawa/steaman-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "神戶牛推薦｜ステーキハウスZEN 三宮店・A5鐵板燒名店🥩",
-      desc: "神戶必吃A5神戶牛鐵板燒名店，主廚現煎入口即化",
-      tag: "兵庫",
-      emoji: "🥩",
-      href: "/steak-zen",
-      image: "/steak-zen/zen-1.jpg",
-      areas: ["兵庫"],
-    },
-    {
-      name: "東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系🍜",
-      desc: "三軒茶屋無招牌名店めん和正・和利道・俺流鹽味・台場神仙・AFURI柚子鹽・町田商店",
-      tag: "東京",
-      emoji: "🍜",
-      href: "/ramen",
-      image: "/ramen/washo-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "關西拉麵推薦｜大阪必吃濃厚魚介沾麵・つじ田🍜",
-      desc: "大阪肥後橋名店つじ田的濃厚魚介沾麵，加檸檬與黑七味變化風味",
-      tag: "大阪",
-      emoji: "🍜",
-      href: "/kansai-ramen",
-      image: "/kansai-ramen/tsujita-2.jpg",
-      areas: ["大阪"],
-    },
-    {
-      name: "新大久保美食推薦｜韓國料理・咖啡・甜點食べ歩き🇰🇷",
-      desc: "ナッコプセ鍋・韓系咖啡廳・ドバイ餅，實際走訪3間必去",
-      tag: "東京",
-      emoji: "🍲",
-      href: "/shin-okubo",
-      image: "/shin-okubo/sawee-1.jpg",
-      areas: ["東京"],
-    },
-  ],
-  snacks: [
-    {
-      name: "東京外帶蛋糕推薦｜PARIYA・IG爆紅杯型鮮奶油蛋糕🍰",
-      desc: "澀谷車站直結B2！草莓經典款¥1,058起，帶回飯店當宵夜的最強選擇",
-      tag: "東京",
-      emoji: "🍰",
-      href: "/takeout-cake",
-      image: "/takeout-cake/cover.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "Mister Donut期間限定｜超人氣もっちゅりん甜甜圈🍩",
-      desc: "波堤×布丁的革命性組合！每天排隊售完的日本限定話題甜點",
-      tag: "日本",
-      emoji: "🍩",
-      href: "/mister-donut",
-      image: "/mister-donut/motchurin-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "東京伴手禮推薦｜高級手工餅乾・必買甜點🍪",
-      desc: "奧地利認證大師的手工餅乾禮盒，需預約的超人氣伴手禮",
-      tag: "東京",
-      emoji: "🍪",
-      href: "/tokyo-cookies",
-      image: "/tokyo-cookies/kayanuma-1.jpg",
-      areas: ["東京"],
-    },
-  ],
-  cafe: [
-    {
-      name: "清澄白河咖啡廳推薦2選｜B² ＆ iki Roastery・東京咖啡聖地☕",
-      desc: "麵包工廠×咖啡烘焙廠的 B²，隅田川旁倉庫改建的 iki，兩間都早上開門",
-      tag: "東京",
-      emoji: "☕",
-      href: "/kiyosumi-cafe",
-      image: "/kiyosumi-cafe/iki-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "池尻大橋咖啡廳推薦｜UN LIVRE・澀谷一站的法式甜點名店🍓",
-      desc: "澀谷搭車一站直達！當季水果蛋糕＆夏季限定刨冰，寵物友善露台座位",
-      tag: "東京",
-      emoji: "🍓",
-      href: "/ikejiri-cafe",
-      image: "/ikejiri-cafe/unlivre-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "澀谷咖啡廳推薦｜RECOCO レココ・黑膠唱片試聽咖啡🎵",
-      desc: "澀谷必去！可親手試聽黑膠唱片的音樂體驗咖啡，約300張唱片聽到飽",
-      tag: "東京",
-      emoji: "🎵",
-      href: "/shibuya-cafe",
-      image: "/shibuya-cafe/recoco-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "代代木上原咖啡廳推薦｜BOLT・寵物友善人氣店☕",
-      desc: "代代木上原必去！可帶狗的時尚咖啡空間，手沖咖啡＆自家烘焙甜點",
-      tag: "東京",
-      emoji: "☕",
-      href: "/bolt-uehara",
-      image: "/bolt-uehara/bolt-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "伊勢原義式冰淇淋推薦｜石田牧場めぐり・神奈川人氣甜點🍦",
-      desc: "牧場直送鮮牛奶！神奈川伊勢原必吃ジェラート，CP值超高的隱藏名店",
-      tag: "神奈川",
-      emoji: "🍦",
-      href: "/isehara-gelato",
-      image: "/isehara-gelato/meguri-1.jpg",
-      areas: ["その他"],
-    },
-    {
-      name: "代官山咖啡廳推薦3選｜義式烘焙・高級甜點・法式可頌☕",
-      desc: "米蘭義式烘焙PRINCI・星級甜點DOLCE TACUBO・法式可頌專門店Doré，代官山必去人氣店",
-      tag: "東京",
-      emoji: "☕",
-      href: "/daikanyama-cafe",
-      image: "/daikanyama-cafe/princi-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "中目黑咖啡廳推薦｜星巴克臻選東京烘焙工坊・隈研吾建築☕",
-      desc: "全世界6間之一的星巴克臻選！隈研吾設計・目黑川賞櫻聖地",
-      tag: "東京",
-      emoji: "☕",
-      href: "/nakameguro-cafe",
-      image: "/nakameguro-cafe/starbucks-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點☕",
-      desc: "純素烘焙・起司蛋糕・自家焙煎・BONUS TRACK，下北澤必去人氣店",
-      tag: "東京",
-      emoji: "☕",
-      href: "/shimokitazawa-cafe",
-      image: "/shimokitazawa-cafe/vegan-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店☕",
-      desc: "教堂改建咖啡廳・北野異人館洋館咖啡・熊熊麵包吃到飽・Caffarel義大利巧克力，神戶必去4間人氣店",
-      tag: "兵庫",
-      emoji: "☕",
-      href: "/kobe-cafe",
-      image: "/kobe-cafe/caffarel-3.jpg",
-      areas: ["兵庫"],
-    },
-    {
-      name: "夙川咖啡廳推薦2選｜法式可麗餅＆精品咖啡☕",
-      desc: "クレープリー・ルポ＆ゆげ焙煎所，關西必去咖啡廳",
-      tag: "兵庫",
-      emoji: "☕",
-      href: "/shukugawa",
-      image: "/shukugawa/crepe-1.jpg",
-      areas: ["兵庫"],
-    },
-    {
-      name: "自由之丘咖啡店推薦｜東京必去咖啡散步地區☕",
-      desc: "貝果・義式冰淇淋・起司披薩，3間人氣店實際走訪",
-      tag: "東京",
-      emoji: "☕",
-      href: "/cafe",
-      image: "/cafe/gelato-1.jpg",
-      areas: ["東京"],
-    },
-  ],
-  spot: [
-    {
-      name: "茅崎夏日推薦｜湘南海灘野餐＆清晨6點開門的海邊咖啡🌊",
-      desc: "東京出發1小時！看烏帽子岩與江之島的海灘野餐＋海邊咖啡tuckshop的手作司康",
-      tag: "神奈川",
-      emoji: "🌊",
-      href: "/chigasaki",
-      image: "/chigasaki/cover.jpg",
-      areas: ["その他"],
-    },
-    {
-      name: "神戶布引香草園推薦｜纜車空中散步・花海與夜景🌿",
-      desc: "搭纜車登上400m山頂！四季花海・古堡建築・神戶港夜景，從新神戶駅直達",
-      tag: "兵庫",
-      emoji: "🌿",
-      href: "/kobe-herb-garden",
-      image: "/kobe-herb-garden/cover.jpg",
-      areas: ["兵庫"],
-    },
-    {
-      name: "和歌山白浜景點推薦4選｜熊貓・海邊露營・海景咖啡・海鮮BBQ🐼🌊",
-      desc: "冒險大世界看熊貓・志原海岸豪華露營・かげろう海景咖啡・とれとれ市場海鮮BBQ，關西度假必去",
-      tag: "和歌山",
-      emoji: "🐼",
-      href: "/shirahama",
-      image: "/shirahama/cover.jpg",
-      areas: ["その他"],
-    },
-    {
-      name: "東京畫畫體驗推薦｜Artbar Tokyo・喝酒作畫的大人藝術體驗🎨",
-      desc: "一邊喝紅酒一邊畫畫的Paint & Sip體驗！初學者也OK・手ぶら參加，原宿・代官山分店",
-      tag: "東京",
-      emoji: "🎨",
-      href: "/artbar-tokyo",
-      image: "/artbar-tokyo/artbar-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "東京繡球花景點推薦2選｜台場シンボルプロムナード＆文京白山神社紫陽花🌸",
-      desc: "6月限定！免費入場的東京都心紫陽花景點・台場散步道＆白山神社文京あじさいまつり",
-      tag: "東京",
-      emoji: "🌸",
-      href: "/ajisai",
-      image: "/ajisai/cover.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "山梨勝沼＆石和溫泉一泊二日｜葡萄鄉美食・酒莊・採桃🍇🍑",
-      desc: "東京近郊葡萄酒故鄉！銀月食堂・Château Mercian酒莊・石和溫泉ホテル甲子園・あすなろ園採桃・信玄餅・鳥もつ煮",
-      tag: "山梨",
-      emoji: "🍇",
-      href: "/katsunuma",
-      image: "/katsunuma/cover.jpg",
-      areas: ["その他"],
-    },
-    {
-      name: "東京迪士尼周邊玩法｜不進園也能玩！度假區線一日券＆イクスピアリ美食🎢",
-      desc: "Disney Resort Line一日券・可愛車廂＆CAFÉ AUX BACCHANALES法式咖啡廳",
-      tag: "東京",
-      emoji: "🎢",
-      href: "/tokyo-disney-around",
-      image: "/tokyo-disney-around/cover.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "東京晴空塔攻略｜門票預約、交通方式、夜景與拍照景點整理🌃",
-      desc: "Tokyo Skytree展望台・夜景・玻璃地板＆東京ソラマチ周邊整理",
-      tag: "東京",
-      emoji: "🌃",
-      href: "/skytree",
-      image: "/skytree/cover.png",
-      areas: ["東京"],
-    },
-    {
-      name: "六甲山健行推薦｜神戶登山＆有馬溫泉一日遊🏔️♨️",
-      desc: "登山＋纜車＋有馬溫泉＋人氣ジェラート，關西自然＆溫泉完美行程",
-      tag: "兵庫",
-      emoji: "🏔️",
-      href: "/rokko-arima",
-      image: "/rokko-arima/rokko-1.jpg",
-      areas: ["兵庫"],
-    },
-    {
-      name: "京都伊根町觀光推薦｜舟屋村絕景・咖啡＆住宿🏘️",
-      desc: "日本最美村落「伊根舟屋」！INE CAFE咖啡＆仁風荘住宿完整指南",
-      tag: "京都",
-      emoji: "🏘️",
-      href: "/ine",
-      image: "/ine/town-1.jpg",
-      areas: ["その他"],
-    },
-    {
-      name: "高知觀光推薦3選｜四國必去仁淀藍秘境・鰹魚タタキ・ひろめ市場🌊",
-      desc: "夢幻仁淀藍秘境＆鰹魚炙烤體驗＆ひろめ市場美食，四國高知一日遊",
-      tag: "高知",
-      emoji: "🌊",
-      href: "/kochi",
-      image: "/kochi/nikobuchi-1.jpg",
-      areas: ["四国"],
-    },
-    {
-      name: "香川觀光推薦5選｜烏龍麵縣美食・水族館・金刀比羅宮🍜",
-      desc: "讚岐烏龍麵名店＆四國水族館＆金刀比羅宮，烏龍麵縣完整指南",
-      tag: "香川",
-      emoji: "🍜",
-      href: "/kagawa",
-      image: "/kagawa/yamagoe-1.jpg",
-      areas: ["四国"],
-    },
-    {
-      name: "彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓🏯",
-      desc: "日本國寶彥根城＋人氣吉祥物彥根貓＋江戶城下町散步",
-      tag: "滋賀",
-      emoji: "🏯",
-      href: "/hikone",
-      image: "/hikone/castle-1.png",
-      areas: ["その他"],
-    },
-    {
-      name: "宇都宮觀光推薦3選｜栃木必去竹林・餃子・神社🎋",
-      desc: "夢幻竹林・餃子巡禮・能量神社，東京近郊一日遊隱藏寶地",
-      tag: "栃木",
-      emoji: "🎋",
-      href: "/utsunomiya",
-      image: "/utsunomiya/wakayama-1.jpg",
-      areas: ["その他"],
-    },
-    {
-      name: "昭和紀念公園推薦｜東京立川散步必去・四季絕景🌿",
-      desc: "東京最大級的國營公園！春櫻・夏向日葵・秋紅葉・冬燈光秀",
-      tag: "東京",
-      emoji: "🌿",
-      href: "/showa-kinen-park",
-      image: "/showa-kinen-park/park-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "上高地＆奧飛騨旅行推薦4選｜日本阿爾卑斯絕景🏔️",
-      desc: "河童橋・平湯大瀑布・新穂高纜車・奧飛騨溫泉飯店，自然療癒之旅",
-      tag: "その他",
-      emoji: "🏔️",
-      href: "/kamikochi",
-      image: "/kamikochi/cover.jpg",
-      areas: ["その他"],
-    },
-    {
-      name: "東京鐵塔推薦｜東京必去地標・夜景景點🗼",
-      desc: "333公尺東京象徵！主展望台＆頂層展望台夜景超震撼",
-      tag: "東京",
-      emoji: "🗼",
-      href: "/tokyo-tower",
-      image: "/tokyo-tower/tower-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "上野動物園推薦｜東京必去親子景點・大熊貓🐼",
-      desc: "日本最古老的動物園，門票¥600，大熊貓・親子旅行推薦",
-      tag: "東京",
-      emoji: "🐼",
-      href: "/ueno-zoo",
-      image: "/ueno-zoo/zoo-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "東京美術館推薦｜國立新美術館＆根津美術館2選🎨",
-      desc: "六本木現代建築・表參道日本庭園，2間必去美術館完整指南",
-      tag: "東京",
-      emoji: "🎨",
-      href: "/museum",
-      image: "/museum/nact-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "東京紅葉推薦｜神宮外苑銀杏並木の金黃大道🍁",
-      desc: "約300公尺的金黃銀杏隧道，東京秋天最具代表性的景點",
-      tag: "東京",
-      emoji: "🍁",
-      href: "/koyo",
-      image: "/koyo/gaien-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "東京野餐推薦3選｜新宿御苑・代代木・日比谷公園🌿",
-      desc: "草地・拍照・放鬆，東京最受歡迎3大野餐公園完整指南",
-      tag: "東京",
-      emoji: "📍",
-      href: "/spot",
-      image: "/spot/shinjuku-1.jpg",
-      areas: ["東京"],
-    },
-    {
-      name: "箱根一日遊推薦｜從東京搭浪漫特快出發🚃",
-      desc: "美術館・足湯・神社・甜點，一天玩遍箱根精華",
-      tag: "箱根",
-      emoji: "♨️",
-      href: "/hakone",
-      image: "/hakone/shrine-1.jpg",
-      areas: ["その他"],
-    },
-    {
-      name: "北海道自由行必去景點10選｜札幌・小樽・富良野一次玩遍",
-      desc: "音樂盒堂・青池・薰衣草花田・迴轉壽司・成吉思汗，北海道精華全收錄",
-      tag: "北海道",
-      emoji: "🗾",
-      href: "/hokkaido",
-      image: "/hokkaido/farm-1.jpg",
-      areas: ["北海道"],
-    },
-  ],
-  prep: [
-    {
-      name: "羽田機場到東京市區交通攻略｜京急、單軌電車、巴士、計程車怎麼選？✈️",
-      desc: "羽田機場到東京市區交通完整指南！京急・單軌電車・機場巴士・計程車・行李配送・前泊比較",
-      tag: "機場交通",
-      emoji: "✈️",
-      href: "/haneda-airport-access",
-      image: "/haneda-airport-access/cover.png",
-      areas: ["東京"],
-    },
-    {
-      name: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR、行李配送怎麼選？🚄",
-      desc: "成田機場到東京市區交通完整指南！Skyliner・NEX・機場巴士・包車・行李配送・前泊比較",
-      tag: "機場交通",
-      emoji: "🚄",
-      href: "/narita-airport-access",
-      image: "/narita-airport-access/cover.png",
-      areas: ["東京"],
-    },
-    {
-      name: "日本自由行 eSIM 使用指南｜抵達日本就能上網的事前準備📱",
-      desc: "eSIM 使用方式＆與實體 SIM／租借 Wi-Fi 比較。出發前先安心搞定上網",
-      tag: "上網準備",
-      emoji: "📱",
-      href: "/japan-esim",
-      image: "/japan-esim/cover.png",
-      areas: ["東京"],
-    },
-    {
-      name: "東京地鐵24/48/72小時乘車券｜Tokyo Subway Ticket購買與使用方式🚇",
-      desc: "東京自由行交通指南！地下鐵周遊券完整解說，附行程範例與選購建議",
-      tag: "交通票券",
-      emoji: "🚇",
-      href: "/tokyo-subway-ticket",
-      image: "/tokyo-subway-ticket/cover.png",
-      areas: ["東京"],
-    },
-  ],
-};
 
 const INITIAL_VISIBLE = 5;
 
@@ -531,8 +25,12 @@ function AreaFilter({ catId, color }: { catId: string; color: string }) {
   const filtered = selected === "すべて"
     ? items
     : items.filter((item) => item.areas.includes(selected));
-  const visible = expanded ? filtered : filtered.slice(0, INITIAL_VISIBLE);
   const hasMore = filtered.length > INITIAL_VISIBLE;
+  // SEO: 折りたたみ分もDOMには必ず出す（初期HTMLに全記事リンクを残すため）
+  const isVisible = (item: PickItem) => {
+    const idx = filtered.indexOf(item);
+    return idx !== -1 && (expanded || idx < INITIAL_VISIBLE);
+  };
 
   return (
     <>
@@ -562,15 +60,16 @@ function AreaFilter({ catId, color }: { catId: string; color: string }) {
       ) : (
         <div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
-          {visible.map((item) => {
+          {items.map((item) => {
+            const vis = isVisible(item);
             const CardWrapper = item.href
               ? ({ children }: { children: React.ReactNode }) => (
-                  <Link href={item.href!} className="block bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                  <Link href={item.href!} className={`${vis ? "block" : "hidden"} bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden`}>
                     {children}
                   </Link>
                 )
               : ({ children }: { children: React.ReactNode }) => (
-                  <div className="bg-white rounded-2xl border border-stone-100 shadow-sm p-4 flex items-start gap-3">
+                  <div className={`${vis ? "flex" : "hidden"} bg-white rounded-2xl border border-stone-100 shadow-sm p-4 items-start gap-3`}>
                     {children}
                   </div>
                 );
@@ -579,7 +78,7 @@ function AreaFilter({ catId, color }: { catId: string; color: string }) {
                 {item.image ? (
                   <>
                     <div className="relative w-full aspect-[16/9] bg-stone-100">
-                      <Image src={item.image} alt={item.name} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" priority />
+                      <Image src={item.image} alt={item.name} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw" className="object-cover" />
                     </div>
                     <div className="p-4">
                       <div className="flex items-start justify-between gap-2 mb-1">
@@ -638,8 +137,9 @@ function AreaFilter({ catId, color }: { catId: string; color: string }) {
 function StaticCards({ catId, color }: { catId: string; color: string }) {
   const [expanded, setExpanded] = useState(false);
   const items = picks[catId];
-  const visible = expanded ? items : items.slice(0, INITIAL_VISIBLE);
   const hasMore = items.length > INITIAL_VISIBLE;
+  // SEO: 折りたたみ分もDOMには必ず出す
+  const isVisible = (index: number) => expanded || index < INITIAL_VISIBLE;
   if (items.length === 0) {
     return (
       <div className="bg-white rounded-2xl border border-dashed border-stone-200 p-8 text-center text-stone-400">
@@ -651,15 +151,16 @@ function StaticCards({ catId, color }: { catId: string; color: string }) {
   return (
     <div>
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
-      {visible.map((item) => {
+      {items.map((item, index) => {
+        const vis = isVisible(index);
         const CardWrapper = item.href
           ? ({ children }: { children: React.ReactNode }) => (
-              <Link href={item.href!} className="block bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <Link href={item.href!} className={`${vis ? "block" : "hidden"} bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden`}>
                 {children}
               </Link>
             )
           : ({ children }: { children: React.ReactNode }) => (
-              <div className="bg-white rounded-2xl border border-stone-100 shadow-sm p-4 flex items-start gap-3">
+              <div className={`${vis ? "flex" : "hidden"} bg-white rounded-2xl border border-stone-100 shadow-sm p-4 items-start gap-3`}>
                 {children}
               </div>
             );
@@ -668,7 +169,7 @@ function StaticCards({ catId, color }: { catId: string; color: string }) {
             {item.image ? (
               <>
                 <div className="relative w-full aspect-[16/9] bg-stone-100">
-                  <Image src={item.image} alt={item.name} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" priority />
+                  <Image src={item.image} alt={item.name} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw" className="object-cover" />
                 </div>
                 <div className="p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">

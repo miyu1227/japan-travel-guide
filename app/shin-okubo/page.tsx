@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/shin-okubo";
 const OG_IMAGE = "/shin-okubo/sawee-1.jpg";
@@ -334,6 +335,8 @@ export default function ShinOkuboPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="shin-okubo" exclude={["/ramen", "/shibuya-yakiniku", "/spot"]} />
 
       </article>
 

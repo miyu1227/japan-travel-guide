@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const KLOOK_HERB =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339728&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F37865-kobe-nunobiki-herb-gardens-ticket";
@@ -293,6 +294,8 @@ export default function KobeHerbGardenPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="kobe-herb-garden" exclude={["/kobe-cafe", "/rokko-arima", "/shukugawa"]} />
 
       </article>
 

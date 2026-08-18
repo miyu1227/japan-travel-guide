@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/daikanyama-cafe";
 const OG_IMAGE = "/daikanyama-cafe/princi-1.jpg";
@@ -370,6 +371,8 @@ export default function DaikanyamaCafePage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="daikanyama-cafe" exclude={["/cafe", "/nakameguro-cafe", "/shimokitazawa-cafe"]} />
 
       </article>
 

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/sanda-soba";
 const OG_IMAGE = "/sanda-soba/soba1-1.jpg";
@@ -282,6 +283,8 @@ export default function SandaSobaPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="sanda-soba" exclude={["/kobe-cafe", "/rokko-arima", "/steak-zen"]} />
 
       </article>
 

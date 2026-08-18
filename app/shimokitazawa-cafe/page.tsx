@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/shimokitazawa-cafe";
 const OG_IMAGE = "/shimokitazawa-cafe/vegan-1.jpg";
@@ -461,6 +462,8 @@ export default function ShimokitazawaCafePage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="shimokitazawa-cafe" exclude={["/cafe", "/kobe-cafe", "/ramen"]} />
 
       </article>
 

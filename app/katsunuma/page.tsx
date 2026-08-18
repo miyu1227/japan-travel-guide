@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const KLOOK_KOUSHIEN =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339963&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F491613-meitei-no-yado-hotel-koushien%2F";
@@ -643,6 +644,8 @@ export default function KatsunumaPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="katsunuma" exclude={["/hikone", "/kamikochi", "/utsunomiya"]} />
 
       </article>
 

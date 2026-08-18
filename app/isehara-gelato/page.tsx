@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/isehara-gelato";
 const OG_IMAGE = "/isehara-gelato/meguri-1.jpg";
@@ -305,6 +306,8 @@ export default function IseharaGelatoPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="isehara-gelato" exclude={["/daikanyama-cafe", "/hakone", "/nakameguro-cafe"]} />
 
       </article>
 

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/utsunomiya-gyoza";
 const OG_IMAGE = "/utsunomiya-gyoza/minmin-1.jpg";
@@ -282,6 +283,8 @@ export default function UtsunomiyaGyozaPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="utsunomiya-gyoza" exclude={["/ramen", "/shin-okubo", "/utsunomiya"]} />
 
       </article>
 

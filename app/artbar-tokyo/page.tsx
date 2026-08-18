@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/artbar-tokyo";
 const OG_IMAGE = "/artbar-tokyo/artbar-1.jpg";
@@ -230,6 +231,8 @@ export default function ArtbarTokyoPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="artbar-tokyo" exclude={["/museum", "/nakameguro-cafe", "/shibuya-cafe"]} />
 
       </article>
 

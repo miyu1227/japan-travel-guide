@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/shibuya-yakiniku";
 const OG_IMAGE = "/shibuya-yakiniku/chiba-1.jpg";
@@ -264,6 +265,8 @@ export default function ShibuyaYakinikuPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="shibuya-yakiniku" exclude={["/ikejiri-cafe", "/ramen", "/shibuya-cafe"]} />
 
       </article>
 

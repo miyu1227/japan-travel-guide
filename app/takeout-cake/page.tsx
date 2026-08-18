@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/takeout-cake";
 const OG_IMAGE = "/takeout-cake/cover.jpg";
@@ -234,6 +235,8 @@ export default function TakeoutCakePage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="takeout-cake" exclude={["/daikanyama-cafe", "/shibuya-cafe", "/tokyo-cookies"]} />
 
       </article>
 

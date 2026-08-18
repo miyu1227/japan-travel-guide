@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/kiyosumi-cafe";
 const OG_IMAGE = "/kiyosumi-cafe/iki-1.jpg";
@@ -350,6 +351,8 @@ export default function KiyosumiCafePage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="kiyosumi-cafe" exclude={["/cafe", "/ikejiri-cafe", "/nakameguro-cafe"]} />
 
       </article>
 

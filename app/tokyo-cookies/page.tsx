@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-cookies";
 const OG_IMAGE = "/tokyo-cookies/kayanuma-1.jpg";
@@ -285,6 +286,8 @@ export default function TokyoCookiesPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="tokyo-cookies" exclude={["/cafe", "/museum", "/ramen"]} />
 
       </article>
 

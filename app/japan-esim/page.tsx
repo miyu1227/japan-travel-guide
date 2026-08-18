@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/japan-esim";
 const OG_IMAGE = "/japan-esim/cover.png";
@@ -441,6 +442,8 @@ export default function JapanEsimPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="japan-esim" exclude={["/koyo", "/tokyo-subway-ticket", "/tokyo-tower"]} />
 
       </article>
 

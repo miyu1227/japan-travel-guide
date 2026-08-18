@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/spot";
 const OG_IMAGE = "/spot/shinjuku-1.jpg";
@@ -447,6 +448,8 @@ export default function SpotPicnicPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="spot" exclude={["/cafe", "/hakone", "/ramen"]} />
 
       </article>
 

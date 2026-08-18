@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/nishinomiya-gardens";
 const OG_IMAGE = "/nishinomiya-gardens/tooth-1.jpg";
@@ -318,6 +319,8 @@ export default function NishinomiyaGardensPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="nishinomiya-gardens" exclude={["/kobe-cafe", "/shukugawa", "/steak-zen"]} />
 
       </article>
 

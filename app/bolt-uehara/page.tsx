@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/bolt-uehara";
 const OG_IMAGE = "/bolt-uehara/bolt-1.jpg";
@@ -278,6 +279,8 @@ export default function BoltUeharaPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="bolt-uehara" exclude={["/daikanyama-cafe", "/nakameguro-cafe", "/shimokitazawa-cafe"]} />
 
       </article>
 

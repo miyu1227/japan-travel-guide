@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/cafe";
 const OG_IMAGE = "/cafe/gelato-1.jpg";
@@ -307,6 +308,8 @@ export default function JiyugaokaCafePage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="cafe" exclude={["/hakone", "/ramen", "/spot"]} />
 
       </article>
 

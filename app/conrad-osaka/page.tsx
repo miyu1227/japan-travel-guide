@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/conrad-osaka";
 const OG_IMAGE = "/conrad-osaka/atmos-1.jpg";
@@ -401,6 +402,8 @@ export default function ConradOsakaPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="conrad-osaka" exclude={["/kansai-ramen", "/osaka-gourmet", "/steak-zen"]} />
 
       </article>
 

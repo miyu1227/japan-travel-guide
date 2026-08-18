@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/kobe-cafe";
 const OG_IMAGE = "/kobe-cafe/caffarel-3.jpg";
@@ -460,6 +461,8 @@ export default function KobeCafePage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="kobe-cafe" exclude={["/cafe", "/shukugawa", "/steak-zen"]} />
 
       </article>
 

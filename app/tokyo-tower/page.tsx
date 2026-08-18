@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-tower";
 const OG_IMAGE = "/tokyo-tower/tower-1.jpg";
@@ -321,6 +322,8 @@ export default function TokyoTowerPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="tokyo-tower" exclude={["/koyo", "/museum", "/ueno-zoo"]} />
 
       </article>
 

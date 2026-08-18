@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/steak-zen";
 const OG_IMAGE = "/steak-zen/zen-1.jpg";
@@ -325,6 +326,8 @@ export default function SteakZenPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="steak-zen" exclude={["/museum", "/ramen", "/shukugawa"]} />
 
       </article>
 

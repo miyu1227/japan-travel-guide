@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-yakiniku";
 const OG_IMAGE = "/tokyo-yakiniku/cover.jpg";
@@ -242,6 +243,8 @@ export default function TokyoYakinikuPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="tokyo-yakiniku" exclude={["/ramen", "/shibuya-yakiniku", "/steak-zen"]} />
 
       </article>
 

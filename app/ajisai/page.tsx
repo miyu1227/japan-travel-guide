@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/ajisai";
 const OG_IMAGE = "/ajisai/cover.jpg";
@@ -270,6 +271,8 @@ export default function AjisaiPage() {
             ← 返回首頁
           </Link>
         </div>
+
+        <RelatedArticles slug="ajisai" exclude={["/skytree", "/tokyo-disney-around", "/tokyo-tower"]} />
 
       </article>
     </div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/utsunomiya";
 const OG_IMAGE = "/utsunomiya/wakayama-1.jpg";
@@ -336,6 +337,8 @@ export default function UtsunomiyaPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="utsunomiya" exclude={["/hakone", "/kamikochi", "/koyo"]} />
 
       </article>
 

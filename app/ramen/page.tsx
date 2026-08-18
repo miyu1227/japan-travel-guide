@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/ramen";
 const OG_IMAGE = "/ramen/washo-1.jpg";
@@ -418,6 +419,8 @@ export default function RamenArticle() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="ramen" exclude={["/kansai-ramen", "/shibuya-yakiniku", "/shin-okubo"]} />
 
       </article>
 

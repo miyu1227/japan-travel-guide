@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
+import RelatedArticles from "../components/RelatedArticles";
 
 const PAGE_URL = "https://www.japantrippicks.com/ueno-zoo";
 const OG_IMAGE = "/ueno-zoo/zoo-1.jpg";
@@ -341,6 +342,8 @@ export default function UenoZooPage() {
             ))}
           </div>
         </section>
+
+        <RelatedArticles slug="ueno-zoo" exclude={["/museum", "/ramen", "/spot"]} />
 
       </article>
 
