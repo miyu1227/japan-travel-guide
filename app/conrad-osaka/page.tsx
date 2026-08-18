@@ -15,13 +15,24 @@ export const metadata: Metadata = {
   title: "大阪飯店自助餐｜康萊德40樓景觀buffet✅實訪",
   description:
     "康萊德大阪40樓「Atmos Italian Dining」是地上200公尺的景觀餐廳，挑高10.5公尺落地窗配義式自助餐。附交通（肥後橋站直結）、用餐時段、預約與穿著建議。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "大阪飯店自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet",
     description: "康萊德大阪40樓的景觀義式自助餐。地上200公尺全景、水晶藝術裝置，附交通・時段・預約建議。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "康萊德大阪 Atmos Italian Dining 挑高用餐空間" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   headline: "大阪飯店自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet【實際造訪】",
   description: "康萊德大阪40樓「Atmos Italian Dining」的義式自助餐實際造訪心得。空間、餐點、交通與預約重點整理。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-08-12T00:00:00+09:00",
@@ -90,7 +101,7 @@ export default function ConradOsakaPage() {
 
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
-          <span className="bg-red-100 text-red-700 border border-red-300 text-xs font-semibold px-3 py-1 rounded-full">🍽️ 飯店美食</span>
+          <span className="bg-red-100 text-red-700 border border-red-300 text-xs font-semibold px-3 py-1 rounded-full">🍽️ 飯店（酒店）美食</span>
           <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 大阪・中之島</span>
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">✅ 實際造訪</span>
         </div>
@@ -111,7 +122,7 @@ export default function ConradOsakaPage() {
             這次去的是<strong>康萊德大阪（Conrad Osaka）40樓</strong>的義式餐廳<strong>「Atmos Italian Dining」</strong>。位在中之島、<strong>地上200公尺</strong>的高度，挑高10.5公尺的落地窗整面採光，本身就是很值得看的空間。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這篇寫給<strong>想在大阪安排一頓紀念日、或想找室內備案</strong>的台灣・香港旅人。<strong>你會知道</strong>：空間長什麼樣、自助餐大概吃得到什麼、早餐／午餐／甜點／晚餐時段怎麼選、從肥後橋站怎麼走，還有要不要訂位與穿著上的注意。
+            這篇寫給<strong>想在大阪安排一頓紀念日、或想找室內備案</strong>的台灣・香港旅人。<strong>你會知道</strong>：空間長什麼樣、自助餐大概吃得到什麼、早餐／午餐／甜點（甜品）／晚餐時段怎麼選、從肥後橋站怎麼走，還有要不要訂位與穿著上的注意。
           </p>
         </section>
 
@@ -148,7 +159,7 @@ export default function ConradOsakaPage() {
             </p>
 
             <div className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 mb-3">
-              <p className="text-xs font-bold text-red-600 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-xs font-bold text-red-600 mb-1">✨ 推薦（推介）給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
                 最有記憶點的其實是<strong>空間</strong>。一整面挑高到10.5公尺的窗、垂掛下來的水晶裝置在陽光下會折射出彩虹色，坐在裡面就已經值回票價✨ 自助餐的好處是<strong>不用看菜單、不用日文點餐</strong>，想吃什麼自己拿，帶長輩或小孩來也很輕鬆。義式料理對台灣・香港旅人來說接受度也高，不會有「踩到地雷」的風險。
               </p>
@@ -163,7 +174,7 @@ export default function ConradOsakaPage() {
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-amber-700 mb-2">🍽️ 實際吃到的（依季節與時段變動）</p>
               <ul className="text-xs text-stone-600 space-y-1">
-                <li>・前菜盤：煙燻鮭魚、生火腿、章魚沙拉、鮮蝦、義式冷肉</li>
+                <li>・前菜盤：煙燻鮭魚（三文魚）、生火腿、章魚沙拉、鮮蝦、義式冷肉</li>
                 <li>・現切烤牛肉，淋上巴薩米克醬汁</li>
                 <li>・番茄燉飯、青醬義大利麵、千層麵</li>
                 <li>・蔬菜湯與炸蔬菜、麵包與披薩</li>
@@ -310,7 +321,7 @@ export default function ConradOsakaPage() {
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ <strong>白天想拍照、晚上想看夜景</strong>，先決定要哪一種再選時段</li>
             <li>✅ 時間制大約90〜100分鐘，<strong>先繞一圈看有什麼再拿</strong>比較不會吃不完</li>
-            <li>✅ 現切烤肉與現做的品項通常在同一區，趁熱去拿最好吃</li>
+            <li>✅ 現切烤肉與現做的品項通常在同一區，趁熱去拿最好吃（好食）</li>
             <li>✅ 肥後橋站<strong>4號出口直結</strong>，下雨天完全不用淋雨，很適合當室內備案</li>
             <li>✅ 甜點自助餐是<strong>限定日期＋季節主題</strong>，出發前務必到官網確認當期內容</li>
           </ul>

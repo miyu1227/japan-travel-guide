@@ -12,13 +12,24 @@ export const metadata: Metadata = {
   title: "大阪美食推薦｜梅田在地人氣鐵板燒與居酒屋【實際造訪】",
   description:
     "梅田・福島一帶的在地人氣店：精緻鐵板燒「鉄板屋な。」與話題居酒屋「酒場ビリー」。附交通、預算帶、要不要事先訂位、幾點去比較好進與同晚串店方式。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "大阪美食推薦｜梅田在地人氣鐵板燒與居酒屋",
     description: "大阪必吃！鐵板屋な。＆酒場ビリー，在地人氣餐廳。附交通・菜單・推薦。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "大阪美食推薦・鉄板屋な。" }],
   },
@@ -36,7 +47,7 @@ const articleJsonLd = {
   headline: "大阪美食推薦｜梅田在地人氣鐵板燒與居酒屋【實際造訪】",
   description: "大阪必吃美食推薦：鉄板屋な。、酒場ビリー。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -125,7 +136,7 @@ export default function OsakaGourmetPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">大阪美食推薦・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">大阪美食推薦（推介）・2選</h2>
 
         {/* Spot 1: 鉄板屋な。 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">

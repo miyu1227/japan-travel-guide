@@ -15,13 +15,24 @@ export const metadata: Metadata = {
   title: "高知觀光3選｜仁淀藍・鰹魚タタキ・ひろめ市場",
   description:
     "日本三大清流仁淀川的夢幻藍色秘境「にこ淵」、鰹魚タタキ體驗道場、人氣美食市場「ひろめ市場」。四國高知一日遊行程，附交通・門票・必吃。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "高知觀光推薦3選｜四國必去仁淀藍秘境・鰹魚タタキ・ひろめ市場",
     description: "高知旅遊指南！仁淀藍秘境にこ淵＆鰹魚タタキ體驗＆ひろめ市場美食。附交通・推薦。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "高知觀光推薦・にこ淵仁淀藍" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   headline: "高知觀光推薦3選｜四國必去仁淀藍秘境・鰹魚タタキ・ひろめ市場【實際造訪】",
   description: "高知縣旅遊完全指南。仁淀川にこ淵、タタキ道場、ひろめ市場。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -103,7 +114,7 @@ export default function KochiPage() {
             <strong>高知縣</strong>位於四國南部，擁有<strong>日本三大清流之一</strong>的<strong>仁淀川</strong>🌊 透明度極高的河水形成夢幻的「<strong>仁淀藍</strong>」絕景，是攝影愛好者必朝聖的隱藏景點。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            除了自然絕景，高知也是<strong>「鰹魚之鄉」</strong>，<strong>鰹魚タタキ（炙烤鰹魚生魚片）</strong>是當地必吃名物🐟 這次推薦的3個必去景點：仁淀川的秘境<strong>「にこ淵」</strong>、可以親手體驗的<strong>「タタキ道場」</strong>，以及高知美食天堂<strong>「ひろめ市場」</strong>✨
+            除了自然絕景，高知也是<strong>「鰹魚之鄉」</strong>，<strong>鰹魚タタキ（炙烤鰹魚生魚片）</strong>是當地必吃（必食）名物🐟 這次推薦（推介）的3個必去景點：仁淀川的秘境<strong>「にこ淵」</strong>、可以親手體驗的<strong>「タタキ道場」</strong>，以及高知美食天堂<strong>「ひろめ市場」</strong>✨
           </p>
         </section>
 
@@ -210,7 +221,7 @@ export default function KochiPage() {
               <div><h3 className="text-base font-black text-stone-800">ひろめ市場</h3><span className="text-xs text-stone-400">Hirome Market</span></div>
             </div>
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
-              高知市中心的<strong>美食天堂</strong>🍻 位於高知城旁，是匯集<strong>60間店舖</strong>的室內市場，包含鰹魚タタキ專門店、餃子、海鮮丼、烏龍麵、甜點、酒吧等。中央有共用座位區，可以邊吃邊喝邊聊天，氣氛熱鬧又輕鬆。
+              高知市中心的<strong>美食天堂</strong>🍻 位於高知城旁，是匯集<strong>60間店舖</strong>的室內市場，包含鰹魚タタキ專門店、餃子、海鮮丼、烏龍麵、甜點（甜品）、酒吧等。中央有共用座位區，可以邊吃邊喝邊聊天，氣氛熱鬧又輕鬆。
             </p>
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-amber-700 mb-1">✨ 推薦給旅客的理由</p>
@@ -276,7 +287,7 @@ export default function KochiPage() {
               <span className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-white/80 backdrop-blur px-3 py-1 rounded-full tracking-wide shadow-sm">
                 🎫 Travel Tips
               </span>
-              <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">高知車站直結飯店</span>
+              <span className="text-[10px] text-stone-500 bg-white/60 backdrop-blur px-2 py-0.5 rounded-full">高知車站直結飯店（酒店）</span>
             </div>
 
             <div className="relative flex items-center gap-3 mb-4">

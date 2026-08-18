@@ -294,13 +294,13 @@ export default function Home() {
                 日本旅行、失敗しない。
               </p>
               <p className="text-sm sm:text-base text-red-500 font-semibold leading-relaxed">
-                🍜 日本旅遊必看！不踩雷美食＆景點推薦
+                🍜 日本旅遊必看！不踩雷美食推薦・必食推介
               </p>
 
               <div className="mt-3 pt-3 border-t border-dashed border-yellow-200 space-y-2">
                 <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
                   <span className="mr-1">🇯🇵</span>
-                  專為<strong className="text-stone-800">台灣與香港旅客</strong>打造的日本旅遊資訊網站，精選<span className="text-pink-500 font-semibold">咖啡廳</span>、<span className="text-red-500 font-semibold">美食</span>與<span className="text-blue-500 font-semibold">觀光景點</span>。
+                  專為<strong className="text-stone-800">台灣與香港旅客</strong>打造的日本旅遊資訊網站，精選<span className="text-pink-500 font-semibold">咖啡廳・咖啡店</span>、<span className="text-red-500 font-semibold">必吃必食美食</span>與<span className="text-blue-500 font-semibold">觀光景點</span>，連甜點甜品同伴手禮手信都寫齊。
                 </p>
                 <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
                   <span className="mr-1">✨</span>
@@ -311,7 +311,7 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center gap-2 flex-wrap text-xs">
-            {["✅ 台灣人親測", "📸 IG打卡點", "💰 CP值爆表", "🗺️ 地圖連結"].map((badge) => (
+            {["✅ 台灣人親測", "🇭🇰 香港旅客啱用", "📸 IG打卡點", "💰 CP值爆表・抵食", "🗺️ 地圖連結"].map((badge) => (
               <span key={badge} className="bg-white border border-stone-200 text-stone-600 px-3 py-1 rounded-full">
                 {badge}
               </span>
@@ -328,6 +328,10 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-1.5">
             {[
+              { href: "/taiwan-japan-guide", label: "台灣飛日本" },
+              { href: "/hongkong-japan-guide", label: "香港去日本" },
+              { href: "/tokyo-gourmet", label: "東京必食推介" },
+              { href: "/tokyo-cafe", label: "東京咖啡店推介" },
               { href: "/tokyo-tower", label: "東京鐵塔" },
               { href: "/skytree", label: "東京晴空塔" },
               { href: "/tokyo-disney-around", label: "東京迪士尼" },

@@ -15,13 +15,24 @@ export const metadata: Metadata = {
   title: "東京晴空塔攻略｜門票預約、交通方式、夜景與拍照景點整理",
   description:
     "天望デッキ與天望回廊的差別、押上站與淺草出發的交通、門票要不要先預約、白天／傍晚／夜景哪個時段最好，加上玻璃地板拍照點與東京ソラマチ周邊。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "東京晴空塔攻略｜門票預約、交通方式、夜景與拍照景點整理",
     description: "東京晴空塔展望台完整指南。票券・交通・夜景・玻璃地板・周邊景點整理。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "東京晴空塔・夜景" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   headline: "東京晴空塔攻略｜門票預約、交通方式、夜景與拍照景點整理",
   description: "東京晴空塔（Tokyo Skytree）完整指南。票券・交通・夜景・玻璃地板・周邊景點整理。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -313,7 +324,7 @@ export default function SkytreePage() {
           <div className="space-y-3">
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
               <p className="text-xs font-bold text-amber-700 mb-1">🛍️ 東京ソラマチ</p>
-              <p className="text-xs text-stone-600 leading-relaxed">直接連結晴空塔的大型商業設施。商店、餐廳、咖啡廳、墨田水族館＆天文館都在這裡，雨天也能逛。</p>
+              <p className="text-xs text-stone-600 leading-relaxed">直接連結晴空塔的大型商業設施。商店、餐廳、咖啡廳（咖啡店）、墨田水族館＆天文館都在這裡，雨天也能逛。</p>
             </div>
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
               <p className="text-xs font-bold text-amber-700 mb-1">🏯 淺草・雷門</p>
@@ -330,7 +341,7 @@ export default function SkytreePage() {
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">適合安排在什麼行程？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            推薦這樣搭配：
+            推薦（推介）這樣搭配：
           </p>
           <div className="space-y-2 text-sm text-stone-600">
             <p>🌅 <strong>淺草寺早上散步</strong> → 午餐 → <strong>晴空塔傍晚〜夜景</strong></p>

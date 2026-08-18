@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店【實際造訪】",
   description:
     "教堂改建的「フロインドリーブ」、北野異人館的「パンとエスプレッソと」、熊熊主題吃到飽「くまポチ邸」、巧克力老店「Caffarel」。附交通、營業時間與散步路線。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店",
     description: "教堂咖啡廳・北野異人館咖啡・熊熊麵包吃到飽・義大利巧克力老店。神戶必去4間人氣咖啡廳。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "神戶咖啡推薦・Caffarel 神戶北野本店的甜點盤" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店【實際造訪】",
   description: "神戶必去咖啡廳：教堂改建的フロインドリーブ生田店、北野異人館的パンとエスプレッソと異人館、熊熊主題麵包吃到飽的ケーニヒスクローネ くまポチ邸，以及義大利巧克力老店Caffarel 神戶北野本店。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -93,7 +104,7 @@ export default function KobeCafePage() {
 
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
-          <span className="bg-pink-100 text-pink-700 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳</span>
+          <span className="bg-pink-100 text-pink-700 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳（咖啡店）</span>
           <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 神戶</span>
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">✅ 實際造訪</span>
         </div>
@@ -111,7 +122,7 @@ export default function KobeCafePage() {
             神戶從明治時代就深受西洋文化影響，是日本最早接觸咖啡與西式點心的地區之一☕ 整座城市充滿異國風情，街角隨處都能遇見有故事的咖啡廳。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            這次推薦的是四間實際造訪過、最有特色的<strong>神戶咖啡廳</strong>——由教堂改建的歷史名店<strong>「フロインドリーブ 生田店」</strong>、位於北野異人館街、洋館氛圍滿點的<strong>「パンとエスプレッソと異人館」</strong>、超人氣熊熊主題、麵包吃到飽的<strong>「ケーニヒスクローネ くまポチ邸」</strong>，以及來自義大利杜林的巧克力老店<strong>「Caffarel 神戶北野本店」</strong>。
+            這次推薦（推介）的是四間實際造訪過、最有特色的<strong>神戶咖啡廳</strong>——由教堂改建的歷史名店<strong>「フロインドリーブ 生田店」</strong>、位於北野異人館街、洋館氛圍滿點的<strong>「パンとエスプレッソと異人館」</strong>、超人氣熊熊主題、麵包吃到飽的<strong>「ケーニヒスクローネ くまポチ邸」</strong>，以及來自義大利杜林的巧克力老店<strong>「Caffarel 神戶北野本店」</strong>。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
             這篇寫給<strong>安排神戶半日〜一日散步、想挑一間坐下來休息</strong>的台灣・香港旅人。<strong>你會知道</strong>：四間各自的特色與價格帶、公休日與容易排隊的時段、從三宮・元町怎麼走，還有怎麼把它們串成一條散步路線。
@@ -125,7 +136,7 @@ export default function KobeCafePage() {
             <div className="flex gap-3">
               <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
               <div>
-                <p className="text-sm font-bold text-stone-700">フロインドリーブ 生田店 → 教堂咖啡廳・德式甜點</p>
+                <p className="text-sm font-bold text-stone-700">フロインドリーブ 生田店 → 教堂咖啡廳・德式甜點（甜品）</p>
                 <p className="text-xs text-stone-500 leading-relaxed">挑高彩繪玻璃空間，神戶最有名的西點老店</p>
               </div>
             </div>
@@ -189,7 +200,7 @@ export default function KobeCafePage() {
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                光是空間本身就值得專程造訪✨ 推薦點他們招牌的<strong>三明治套餐</strong>，麵包是自家烘焙、用料豐富，搭配紅茶或咖啡很有英式下午茶的感覺🫖 也別忘了看一看樓下的烘焙坊，可以買到德式餅乾當伴手禮。
+                光是空間本身就值得專程造訪✨ 推薦點他們招牌的<strong>三明治套餐</strong>，麵包是自家烘焙、用料豐富，搭配紅茶或咖啡很有英式下午茶的感覺🫖 也別忘了看一看樓下的烘焙坊，可以買到德式餅乾（曲奇）當伴手禮（手信）。
               </p>
             </div>
 
@@ -321,7 +332,7 @@ export default function KobeCafePage() {
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                麵包吃到飽＋迷你甜點＋飯後霜淇淋，CP值超高又好拍🥐🍦 招牌菜「蛋與麻糬的燉牛肉」很有特色，先著50名還能吃到限定的招牌點心「クローネ」。位在飯店內、可眺望神戶市街，混雜時最長可待3小時，很適合逛街逛累來吃頓豐盛的早午餐。
+                麵包吃到飽＋迷你甜點＋飯後霜淇淋，CP值超高又好拍🥐🍦 招牌菜「蛋與麻糬的燉牛肉」很有特色，先著50名還能吃到限定的招牌點心「クローネ」。位在飯店（酒店）內、可眺望神戶市街，混雜時最長可待3小時，很適合逛街逛累來吃頓豐盛的早午餐。
               </p>
             </div>
 
@@ -387,7 +398,7 @@ export default function KobeCafePage() {
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                點一份<strong>「お皿盛りドルチェ」（附飲料）</strong>就能一次吃到蛋糕、義式冰淇淋與當季水果，盤子上還有拉糖裝飾，端上來的瞬間就想拍照📸 想喝點特別的，可以試試杜林名產<strong>「Bicerin」</strong>——巧克力、濃縮咖啡與牛奶分成三層的熱飲。<strong>貓咪造型的巧克力</strong>做得超可愛，當伴手禮送人幾乎不會失手🐱
+                點一份<strong>「お皿盛りドルチェ」（附飲料）</strong>就能一次吃到蛋糕、義式冰淇淋（雪糕）與當季水果，盤子上還有拉糖裝飾，端上來的瞬間就想拍照📸 想喝點特別的，可以試試杜林名產<strong>「Bicerin」</strong>——巧克力、濃縮咖啡與牛奶分成三層的熱飲。<strong>貓咪造型的巧克力</strong>做得超可愛，當伴手禮送人幾乎不會失手🐱
               </p>
             </div>
 

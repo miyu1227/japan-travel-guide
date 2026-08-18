@@ -15,13 +15,24 @@ export const metadata: Metadata = {
   title: "彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓【實際造訪】",
   description:
     "日本國寶彥根城完整指南，還能遇見人氣吉祥物彥根貓（ひこにゃん）。城下町散步、必吃布丁、造型饅頭巡禮。附門票・交通・吉祥物見面時間。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓",
     description: "日本國寶彥根城！可以遇見彥根貓ひこにゃん，城下町散步、必吃布丁。附門票・交通・推薦。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "彥根城觀光推薦・吉祥物彥根貓" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   headline: "彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓【實際造訪】",
   description: "滋賀「彥根城」完整指南。日本國寶之一、吉祥物彥根貓見面、城下町散步。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -107,7 +118,7 @@ export default function HikonePage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">滋賀彥根觀光推薦</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">滋賀彥根觀光推薦（推介）</h2>
 
         {/* Spot 1: 彥根城 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -190,19 +201,19 @@ export default function HikonePage() {
             <div className="flex items-center gap-3 mb-3">
               <div className="w-8 h-8 rounded-full bg-green-500 text-white flex items-center justify-center text-sm font-black shrink-0">2</div>
               <div>
-                <h3 className="text-base font-black text-stone-800">城下町散步＆人氣甜點</h3>
+                <h3 className="text-base font-black text-stone-800">城下町散步＆人氣甜點（甜品）</h3>
                 <span className="text-xs text-stone-400">Hikone Castle Town & Sweets</span>
               </div>
             </div>
 
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
-              彥根城周邊的<strong>「夢京橋城堡道」</strong>和<strong>「四番町廣場」</strong>，是充滿江戶時代風情的城下町🏮 街道兩旁聚集了各種特色小店：<strong>布丁專賣店</strong>、<strong>彥根貓造型饅頭</strong>、近江牛串燒、甜點咖啡廳等。逛城＋散步＋吃美食，半天行程剛剛好！
+              彥根城周邊的<strong>「夢京橋城堡道」</strong>和<strong>「四番町廣場」</strong>，是充滿江戶時代風情的城下町🏮 街道兩旁聚集了各種特色小店：<strong>布丁專賣店</strong>、<strong>彥根貓造型饅頭</strong>、近江牛串燒、甜點咖啡廳（咖啡店）等。逛城＋散步＋吃美食，半天行程剛剛好！
             </p>
 
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                城下町本身就像時光倒流到江戶時代，氛圍超棒📸 必吃的有：<strong>彦根プリン（彥根布丁）</strong>濃郁香醇、<strong>彥根貓饅頭・人形燒</strong>可愛到捨不得吃、<strong>近江牛肉包</strong>奢華美味🥩 邊走邊吃，是來彥根的最大樂趣之一！
+                城下町本身就像時光倒流到江戶時代，氛圍超棒📸 必吃（必食）的有：<strong>彦根プリン（彥根布丁）</strong>濃郁香醇、<strong>彥根貓饅頭・人形燒</strong>可愛到捨不得吃、<strong>近江牛肉包</strong>奢華美味🥩 邊走邊吃，是來彥根的最大樂趣之一！
               </p>
             </div>
 

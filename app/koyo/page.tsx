@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "東京紅葉推薦｜外苑前銀杏並木・金黃大道【實際造訪】",
   description:
     "東京紅葉季必去景點「神宮外苑銀杏並木」。約300公尺長的金黃銀杏大道，從青山通一路延伸，是東京最具代表性的秋景之一。附交通方式・最佳觀賞期・拍照秘訣。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "東京紅葉推薦｜外苑前銀杏並木・金黃大道",
     description: "東京紅葉必去景點「神宮外苑銀杏並木」。約300公尺的金黃銀杏隧道。附交通・觀賞期・拍照攻略。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "東京紅葉推薦・神宮外苑銀杏並木" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "東京紅葉推薦｜外苑前銀杏並木・金黃大道【實際造訪】",
   description: "東京紅葉季必去景點「神宮外苑銀杏並木」。金黃銀杏大道・交通・觀賞期完整指南。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -98,7 +109,7 @@ export default function KoyoPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">秋天來東京，絕不能錯過的風景</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            每到11月下旬，東京就會換上最美的秋裝🍁 這次要推薦的是東京紅葉季最具代表性的景點——<strong>神宮外苑銀杏並木</strong>。
+            每到11月下旬，東京就會換上最美的秋裝🍁 這次要推薦（推介）的是東京紅葉季最具代表性的景點——<strong>神宮外苑銀杏並木</strong>。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
             從青山通往聖德紀念繪畫館延伸，約300公尺長的銀杏隧道鋪滿金黃落葉，整條路像是被染成金色一樣✨ 是很多電影、廣告都會取景的場所。

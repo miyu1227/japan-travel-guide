@@ -22,32 +22,50 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description:
-    "台灣・香港旅客專屬！必吃・必買・必去的日本旅遊推薦。拉麵、咖啡廳、景點、箱根一日遊など不踩雷實用指南。",
+    "台灣・香港旅客專屬的日本自由行指南：必吃必食美食、咖啡廳甜點甜品、景點推薦推介、機場交通與上網卡eSIM。實際走過寫成的不踩雷攻略。",
   keywords: [
+    // 台灣用語
+    "日本自由行",
     "日本旅遊",
-    "台灣旅客",
-    "香港旅客",
+    "東京必吃",
     "東京拉麵推薦",
-    "關西拉麵推薦",
-    "東京咖啡推薦",
-    "箱根一日遊",
-    "自由之丘咖啡",
-    "東京野餐",
-    "新宿御苑",
+    "東京咖啡廳推薦",
+    "東京景點推薦",
+    "大阪美食推薦",
+    "日本伴手禮",
+    "台灣飛日本",
+    // 香港用語
+    "日本自由行攻略",
+    "東京必食",
+    "東京美食推介",
+    "東京甜品推介",
+    "大阪必食",
+    "日本手信",
+    "香港飛日本",
+    "日本上網卡",
   ],
   authors: [{ name: "Japan Trip Picks" }],
   creator: "Japan Trip Picks",
   alternates: {
     canonical: "https://www.japantrippicks.com",
+    // 同一URLで台湾・香港の両方を対象にする宣言。片方だけの地域シグナルにしない。
+    languages: {
+      "zh-Hant": "https://www.japantrippicks.com",
+      "zh-TW": "https://www.japantrippicks.com",
+      "zh-HK": "https://www.japantrippicks.com",
+      "zh-MO": "https://www.japantrippicks.com",
+      "x-default": "https://www.japantrippicks.com",
+    },
   },
   openGraph: {
     type: "website",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     url: "https://www.japantrippicks.com",
     siteName: "Japan Trip Picks",
     title: "Japan Trip Picks｜台灣・香港旅客的日本旅遊指南",
     description:
-      "台灣・香港旅客專屬！必吃・必買・必去的日本旅遊推薦。拉麵、咖啡廳、景點全收錄。",
+      "台灣・香港旅客專屬！必吃必食・必買・必去的日本旅遊推薦推介。拉麵、咖啡廳、甜品、景點全收錄。",
     images: [
       {
         url: "/poyapiyo-flag.png",
@@ -81,8 +99,8 @@ const websiteJsonLd = {
   "@type": "WebSite",
   name: "Japan Trip Picks",
   url: "https://www.japantrippicks.com",
-  description: "台灣・香港旅客專屬的日本旅遊指南",
-  inLanguage: "zh-TW",
+  description: "台灣・香港旅客專屬的日本自由行指南。必吃必食美食、咖啡廳甜品、景點推薦推介。",
+  inLanguage: ["zh-TW", "zh-HK"],
   publisher: {
     "@type": "Organization",
     name: "Japan Trip Picks",
@@ -101,7 +119,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="zh-TW"
+      lang="zh-Hant"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
  <head>

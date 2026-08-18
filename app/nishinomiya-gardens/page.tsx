@@ -12,13 +12,24 @@ export const metadata: Metadata = {
   title: "阪急西宮花園美食｜TOOTH TOOTH 蕎麥薄餅與甜點咖啡",
   description:
     "從梅田搭阪急約15分、西宮北口站徒步3分。2樓「TOOTH TOOTH PATISSERIE＆CAFE」可以吃到現煎法式蕎麥薄餅、季節水果可麗餅與紅茶。附營業時間與價格帶。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "阪急西宮花園美食｜TOOTH TOOTH 蕎麥薄餅與甜點咖啡",
     description: "西宮北口站徒步3分。神戶甜點品牌TOOTH TOOTH的法式蕎麥薄餅與季節可麗餅，附交通・時段・價格帶。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "TOOTH TOOTH 阪急西宮花園店的季節水果可麗餅" }],
   },
@@ -36,7 +47,7 @@ const articleJsonLd = {
   headline: "阪急西宮花園美食｜TOOTH TOOTH 蕎麥薄餅與甜點咖啡【實際造訪】",
   description: "阪急西宮花園2樓「TOOTH TOOTH PATISSERIE＆CAFE」的實際造訪心得。蕎麥薄餅、季節可麗餅、空間與交通整理。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-08-12T00:00:00+09:00",
@@ -105,7 +116,7 @@ export default function NishinomiyaGardensPage() {
             <strong>阪急西宮花園（阪急西宮ガーデンズ）</strong>在「西宮北口」站旁邊，是關西很大的一間購物中心。從<strong>大阪梅田搭阪急神戶線大約15分鐘</strong>，往神戶三宮也差不多，剛好卡在兩大城市中間🚃
           </p>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            這次吃的是2樓的<strong>「TOOTH TOOTH PATISSERIE＆CAFE」</strong>——神戶起家的甜點品牌，在這裡有完整的咖啡廳空間，可以坐下來好好吃一頓，不是只有外帶櫃。
+            這次吃的是2樓的<strong>「TOOTH TOOTH PATISSERIE＆CAFE」</strong>——神戶起家的甜點（甜品）品牌，在這裡有完整的咖啡廳（咖啡店）空間，可以坐下來好好吃（好食）一頓，不是只有外帶櫃。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
             這篇寫給<strong>行程在大阪與神戶之間移動、想找一頓不踩雷的午餐或下午茶</strong>的台灣・香港旅人。<strong>你會知道</strong>：實際吃到什麼、價格帶大概多少、店內是什麼氣氛、從西宮北口站怎麼走，還有什麼時段去比較不用等。
@@ -145,7 +156,7 @@ export default function NishinomiyaGardensPage() {
             </p>
 
             <div className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 mb-3">
-              <p className="text-xs font-bold text-red-600 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-xs font-bold text-red-600 mb-1">✨ 推薦（推介）給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
                 最方便的一點是<strong>「正餐和甜點可以在同一間解決」</strong>。想吃飽就點鹹的蕎麥薄餅，想吃甜就點可麗餅或蛋糕，同行的人口味不一樣也不用分頭找店🍽️ 座位數多、空間寬敞，帶著大包小包逛街逛累了走進來也不會有壓力。加上是購物中心裡面，冷氣、廁所、電梯什麼都有，<strong>下雨天或帶長輩、小孩時特別好用</strong>。
               </p>
@@ -160,8 +171,8 @@ export default function NishinomiyaGardensPage() {
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-amber-700 mb-2">🍽️ 這次實際點的</p>
               <ul className="text-xs text-stone-600 space-y-1">
-                <li>・<strong>鹹味蕎麥薄餅</strong>：火腿、半熟蛋與滿滿起司，餅皮薄脆、邊緣烤得很香，附一小份沙拉</li>
-                <li>・<strong>季節水果可麗餅</strong>：白桃、香草冰淇淋、莓果醬與脆脆的碎粒，甜度不重</li>
+                <li>・<strong>鹹味蕎麥薄餅</strong>：火腿、半熟蛋與滿滿起司（芝士），餅皮薄脆、邊緣烤得很香，附一小份沙拉</li>
+                <li>・<strong>季節水果可麗餅</strong>：白桃、香草冰淇淋（雪糕）、莓果醬與脆脆的碎粒，甜度不重</li>
                 <li>・<strong>熱紅茶（附茶壺）</strong>：可以慢慢續杯，配甜點剛好</li>
               </ul>
             </div>

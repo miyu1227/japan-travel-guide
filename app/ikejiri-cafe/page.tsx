@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "池尻大橋咖啡廳｜UN LIVRE 法式甜點✅實訪",
   description:
     "澀谷搭車一站就到的「UN LIVRE（アンリブレ）」法式甜點咖啡廳。草莓蛋糕・季節限定刨冰・戶外露台座位。附交通、營業時間、必點甜點與價位。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "池尻大橋咖啡廳推薦｜UN LIVRE 法式甜點店・澀谷一站的隱藏名店",
     description: "澀谷一站直達！池尻大橋人氣甜點咖啡廳，草莓蛋糕・季節刨冰・寵物友善露台。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "池尻大橋咖啡廳推薦・UN LIVRE 草莓刨冰" }],
   },
@@ -38,7 +49,7 @@ const articleJsonLd = {
   description:
     "池尻大橋必去咖啡廳「UN LIVRE（アンリブレ）」完整介紹。法式甜點・季節限定刨冰・露台座位，附交通與營業時間。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-31T00:00:00+09:00",
@@ -86,7 +97,7 @@ export default function IkejiriCafePage() {
 
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
-          <span className="bg-pink-100 text-pink-700 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳</span>
+          <span className="bg-pink-100 text-pink-700 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳（咖啡店）</span>
           <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 東京・池尻大橋</span>
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">✅ 實際造訪</span>
         </div>
@@ -104,14 +115,14 @@ export default function IkejiriCafePage() {
             <strong>池尻大橋</strong>位在東急田園都市線上，從<strong>澀谷搭車只要一站、約2分鐘</strong>就能抵達🚃 一走出車站，觀光客的喧鬧瞬間消失，取而代之的是住宅區的安靜街道、選品店與一間間個性咖啡廳，是東京人自己在假日散步的區域。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次介紹的<strong>「UN LIVRE（アンリブレ）」</strong>是這一帶最有人氣的法式甜點咖啡廳之一。店名在法文中是「<strong>一本書</strong>」的意思，理念來自「從一本書得到靈感的甜點店」，蛋糕櫃裡永遠排著當季水果做的甜點🍰 逛完澀谷後順道繞過來，就能用最短的移動距離換到完全不同的東京風景✨
+            這次介紹的<strong>「UN LIVRE（アンリブレ）」</strong>是這一帶最有人氣的法式甜點（甜品）咖啡廳之一。店名在法文中是「<strong>一本書</strong>」的意思，理念來自「從一本書得到靈感的甜點店」，蛋糕櫃裡永遠排著當季水果做的甜點🍰 逛完澀谷後順道繞過來，就能用最短的移動距離換到完全不同的東京風景✨
           </p>
         </section>
 
         <PrepBannerCompact />
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">池尻大橋咖啡廳推薦（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">池尻大橋咖啡廳推薦・推介（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-3 gap-0.5">
@@ -139,7 +150,7 @@ export default function IkejiriCafePage() {
             </div>
 
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
-              2022年3月開幕的<strong>法式甜點專門店＋內用咖啡廳</strong>🍰 灰白色的手抹牆面搭配拱型壁龕、木質長桌與吊燈，整體氛圍安靜又有質感。中央大桌上擺滿<strong>費南雪、餅乾、烘焙點心禮盒</strong>，玻璃櫃裡則是當季水果的蛋糕，買伴手禮和坐下來吃甜點都可以一次解決。夏天還會推出<strong>季節限定刨冰</strong>，綿密的冰上淋著自家熬煮的草莓醬，是夏季造訪最推薦的一品🍓
+              2022年3月開幕的<strong>法式甜點專門店＋內用咖啡廳</strong>🍰 灰白色的手抹牆面搭配拱型壁龕、木質長桌與吊燈，整體氛圍安靜又有質感。中央大桌上擺滿<strong>費南雪、餅乾（曲奇）、烘焙點心禮盒</strong>，玻璃櫃裡則是當季水果的蛋糕，買伴手禮（手信）和坐下來吃甜點都可以一次解決。夏天還會推出<strong>季節限定刨冰</strong>，綿密的冰上淋著自家熬煮的草莓醬，是夏季造訪最推薦的一品🍓
             </p>
 
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">

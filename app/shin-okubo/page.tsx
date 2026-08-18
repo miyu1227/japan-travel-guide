@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "新大久保美食推薦｜東京韓國街必吃散步指南",
   description:
     "實際走訪整理3間必吃：章魚蝦內臟鍋「サウィ食堂」、韓系咖啡廳SHINCHON CAFE、話題杜拜麻糬MUJIGE。附新宿出發交通、價格、逛街順序與避開人潮的時段。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "新大久保美食推薦｜東京韓國街必吃散步指南",
     description: "東京最有韓國氛圍的街區。實際走訪3間必吃：章魚蝦內臟鍋・韓系咖啡廳・話題杜拜麻糬。附交通與逛街順序。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "新大久保グルメ" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "新大久保美食推薦｜東京韓國街必吃散步指南",
   description: "實際走訪新大久保3間店：章魚蝦內臟鍋、韓系咖啡廳、話題杜拜麻糬。附交通與逛街順序。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -157,10 +168,10 @@ export default function ShinOkuboPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">為什麼要去新大久保？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            這篇寫給<strong>第一次去新大久保、只有半天空檔</strong>的台灣・香港旅人。新大久保是東京最有韓國感的街區，從新宿搭JR只要一站，走幾步就能看到韓國料理店、可愛咖啡廳和各種韓系甜點🇰🇷
+            這篇寫給<strong>第一次去新大久保、只有半天空檔</strong>的台灣・香港旅人。新大久保是東京最有韓國感的街區，從新宿搭JR只要一站，走幾步就能看到韓國料理店、可愛咖啡廳（咖啡店）和各種韓系甜點（甜品）🇰🇷
           </p>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            這次實際走訪，整理了3間特別推薦的店——從熱騰騰的鍋物到打卡咖啡廳、再到人氣甜點，<strong>一個下午就能全部逛完</strong>！
+            這次實際走訪，整理了3間特別推薦（推介）的店——從熱騰騰的鍋物到打卡咖啡廳、再到人氣甜點，<strong>一個下午就能全部逛完</strong>！
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
             <strong>這篇會告訴你</strong>：3間實際吃過的店與價格帶、從新宿・澀谷・池袋怎麼去、什麼時段人最少，還有把鍋物→咖啡→甜點串起來的散步順序👇
@@ -262,7 +273,7 @@ export default function ShinOkuboPage() {
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 週末人很多，建議平日或早上前往</li>
             <li>✅ 鍋物午餐→咖啡廳→甜點的順序最順暢</li>
-            <li>✅ 附近有很多韓國食品超市，買伴手禮也很方便</li>
+            <li>✅ 附近有很多韓國食品超市，買伴手禮（手信）也很方便</li>
             <li>✅ 來日本前先準備網路，方便用 Google Map 找店 📱</li>
           </ul>
         </section>

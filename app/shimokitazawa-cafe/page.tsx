@@ -14,13 +14,24 @@ export const metadata: Metadata = {
   title: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點【實際造訪】",
   description:
     "純素烘焙・手工起司蛋糕・自家焙煎咖啡＆派，加上新文化複合設施BONUS TRACK。下北澤人氣咖啡廳完整介紹，附交通・推薦菜單・價格。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點",
     description: "下北澤咖啡廳推薦4選！純素烘焙・起司蛋糕・自家焙煎咖啡，東京人氣美食完整指南。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "下北澤咖啡推薦・TOKYO VEGAN BAKES" }],
   },
@@ -38,7 +49,7 @@ const articleJsonLd = {
   headline: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點【實際造訪】",
   description: "下北澤咖啡廳推薦4選！東京必去的人氣咖啡廳美食＆甜點完整介紹。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -97,7 +108,7 @@ export default function ShimokitazawaCafePage() {
 
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
-          <span className="bg-pink-100 text-pink-700 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳</span>
+          <span className="bg-pink-100 text-pink-700 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳（咖啡店）</span>
           <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 東京・下北澤</span>
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">✅ 實際造訪</span>
         </div>
@@ -115,7 +126,7 @@ export default function ShimokitazawaCafePage() {
             下北澤是東京最受歡迎的文青散步區之一，除了古著和劇場，近年也聚集了許多風格獨特的<strong>咖啡廳</strong>☕ 街道巷弄裡藏著各種特色小店，非常適合邊走邊逛。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦4間店：100%純素烘焙<strong>「TOKYO VEGAN BAKES」</strong>、手工起司蛋糕<strong>「La Piña」</strong>、綠意滿滿的自家焙煎咖啡<strong>「Pati coffee&plants」</strong>，以及下北澤最新人氣文化複合設施<strong>「BONUS TRACK」</strong>——風格各異，都是下北澤必訪的人氣店✨
+            這次推薦（推介）4間店：100%純素烘焙<strong>「TOKYO VEGAN BAKES」</strong>、手工起司（芝士）蛋糕<strong>「La Piña」</strong>、綠意滿滿的自家焙煎咖啡<strong>「Pati coffee&plants」</strong>，以及下北澤最新人氣文化複合設施<strong>「BONUS TRACK」</strong>——風格各異，都是下北澤必訪的人氣店✨
           </p>
         </section>
 
@@ -186,13 +197,13 @@ export default function ShimokitazawaCafePage() {
             </div>
 
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
-              位於下北線路街「reload」2樓，是由兩間人氣純素烘焙品牌聯手打造的<strong>100%植物性</strong>烘焙店🌱 從麵團到調味料全部店內手作，使用日本國產素材，常時備有<strong>35種以上</strong>的麵包與甜點。店面以橘色為主調，繽紛可愛。
+              位於下北線路街「reload」2樓，是由兩間人氣純素烘焙品牌聯手打造的<strong>100%植物性</strong>烘焙店🌱 從麵團到調味料全部店內手作，使用日本國產素材，常時備有<strong>35種以上</strong>的麵包與甜點（甜品）。店面以橘色為主調，繽紛可愛。
             </p>
 
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                就算不是素食者也會被圈粉！口感和一般麵包一樣好吃，完全感覺不到是Vegan🥐 招牌的<strong>海苔鹽麵包</strong>只要¥330，CP值超高。外帶後可以在reload的共用露台邊吃邊享受下北澤的氛圍☀️
+                就算不是素食者也會被圈粉！口感和一般麵包一樣好吃（好食），完全感覺不到是Vegan🥐 招牌的<strong>海苔鹽麵包</strong>只要¥330，CP值超高。外帶後可以在reload的共用露台邊吃邊享受下北澤的氛圍☀️
               </p>
             </div>
 

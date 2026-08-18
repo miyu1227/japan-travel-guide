@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "東京美術館推薦｜國立新美術館・根津美術館2選【實際造訪】",
   description:
     "東京旅遊必去的人氣美術館推薦：六本木「國立新美術館」與表參道「根津美術館」。建築美學・日本庭園・拍照景點完整介紹，附交通方式・門票・最佳造訪時間。台灣・香港旅客必看！",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "東京美術館推薦｜國立新美術館・根津美術館2選",
     description: "六本木國立新美術館・表參道根津美術館。建築・庭園・拍照景點完整指南。附交通・門票・推薦時段。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "東京美術館推薦・國立新美術館" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "東京美術館推薦｜國立新美術館・根津美術館2選【實際造訪】",
   description: "東京旅遊必去美術館：六本木國立新美術館、表參道根津美術館。建築・庭園・拍照景點。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -99,7 +110,7 @@ export default function MuseumPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">下雨天也能玩東京！美術館散步行程</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            來東京旅遊不只是逛街購物，<strong>東京美術館</strong>也是非常推薦的行程🎨 不管是建築迷、藝術愛好者，還是喜歡拍照的人都能找到喜歡的地方。
+            來東京旅遊不只是逛街購物，<strong>東京美術館</strong>也是非常推薦（推介）的行程🎨 不管是建築迷、藝術愛好者，還是喜歡拍照的人都能找到喜歡的地方。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
             這次推薦兩間實際造訪過、最值得去的美術館：六本木的<strong>國立新美術館</strong>和表參道的<strong>根津美術館</strong>。一間是現代建築代表，一間有夢幻日本庭園——氛圍完全不同，可以依照行程選擇✨
@@ -116,7 +127,7 @@ export default function MuseumPage() {
               <span className="text-purple-400 font-black text-sm shrink-0">▸</span>
               <div>
                 <p className="text-sm font-bold text-stone-700">國立新美術館 → 現代建築・特展豐富</p>
-                <p className="text-xs text-stone-500 leading-relaxed">六本木、玻璃曲面建築、館內咖啡廳超有名</p>
+                <p className="text-xs text-stone-500 leading-relaxed">六本木、玻璃曲面建築、館內咖啡廳（咖啡店）超有名</p>
               </div>
             </div>
             <div className="flex gap-3">

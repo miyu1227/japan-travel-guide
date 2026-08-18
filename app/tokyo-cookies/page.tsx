@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "東京伴手禮推薦｜高級手工餅乾・必買甜點【實際購買】",
   description:
     "東京伴手禮推薦！赤坂「ツッカベッカライ カヤヌマ」的手工餅乾禮盒，奧地利國家認證甜點大師的絕品餅乾。需預約才能買到的超人氣伴手禮，附購買方式・價格・交通。台灣・香港旅客必看！",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "東京伴手禮推薦｜高級手工餅乾・必買甜點",
     description: "東京必買伴手禮！奧地利認證大師的手工餅乾禮盒。需預約的超人氣甜點。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "東京伴手禮推薦・ツッカベッカライ カヤヌマ" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "東京伴手禮推薦｜高級手工餅乾・必買甜點【實際購買】",
   description: "東京必買伴手禮：赤坂ツッカベッカライ カヤヌマ的手工餅乾禮盒。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -79,7 +90,7 @@ export default function TokyoCookiesPage() {
 
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
-          <span className="bg-orange-100 text-orange-700 border border-orange-300 text-xs font-semibold px-3 py-1 rounded-full">🍪 伴手禮</span>
+          <span className="bg-orange-100 text-orange-700 border border-orange-300 text-xs font-semibold px-3 py-1 rounded-full">🍪 伴手禮（手信）</span>
           <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 東京・赤坂</span>
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">✅ 實際購買</span>
         </div>
@@ -94,10 +105,10 @@ export default function TokyoCookiesPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">來東京旅遊，帶什麼伴手禮回去最有面子？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            來日本旅遊，<strong>伴手禮</strong>是行程中很重要的一環🎁 不想買到處都有的觀光零食？那就試試東京當地人才知道的<strong>高級手工餅乾</strong>。
+            來日本旅遊，<strong>伴手禮</strong>是行程中很重要的一環🎁 不想買到處都有的觀光零食？那就試試東京當地人才知道的<strong>高級手工餅乾（曲奇）</strong>。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的是位於赤坂的老字號甜點名店<strong>「ツッカベッカライ カヤヌマ」</strong>——由奧地利國家認證甜點大師手工製作，需要<strong>預約才能買到</strong>的超人氣餅乾禮盒✨ 不論送禮或自用，都是最有品味的選擇。
+            這次推薦（推介）的是位於赤坂的老字號甜點（甜品）名店<strong>「ツッカベッカライ カヤヌマ」</strong>——由奧地利國家認證甜點大師手工製作，需要<strong>預約才能買到</strong>的超人氣餅乾禮盒✨ 不論送禮或自用，都是最有品味的選擇。
           </p>
         </section>
 
@@ -201,7 +212,7 @@ export default function TokyoCookiesPage() {
           <h2 className="text-base font-black text-stone-800 mb-3">其他東京人氣伴手禮</h2>
           <div className="space-y-2 text-sm text-stone-600">
             <p>🍯 <strong>東京香蕉（東京ばな奈）</strong> — 東京車站限定，最經典的東京伴手禮</p>
-            <p>🍪 <strong>NEW YORK PERFECT CHEESE</strong> — 東京車站高人氣起司餅乾</p>
+            <p>🍪 <strong>NEW YORK PERFECT CHEESE</strong> — 東京車站高人氣起司（芝士）餅乾</p>
             <p>🎂 <strong>PRESS BUTTER SAND</strong> — 焦糖奶油夾心餅，包裝時尚</p>
             <p>🍰 <strong>Pierre Marcolini 生chocolat</strong> — 比利時巧克力大師，銀座本店</p>
             <p>🥮 <strong>ヨックモック（YOKU MOKO）</strong> — 蛋捲餅乾世界知名，藍色鐵盒經典</p>
@@ -245,7 +256,7 @@ export default function TokyoCookiesPage() {
           <h2 className="text-base font-black text-stone-800 mb-3">買伴手禮小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 一定要<strong>事先電話預約</strong>，直接去可能會撲空</li>
-            <li>✅ 僅收現金，記得準備好日幣💴</li>
+            <li>✅ 僅收現金，記得準備好日幣（日圓）💴</li>
             <li>✅ 營業時間到16:00，建議安排在中午前後前往</li>
             <li>✅ 餅乾常溫保存即可，適合帶回台灣送禮</li>
             <li>✅ 附近就是溜池山王・赤坂，可以順便散步觀光</li>

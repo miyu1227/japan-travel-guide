@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "上野動物園推薦｜東京必去親子景點・大熊貓【實際造訪】",
   description:
     "日本最古老的動物園，大熊貓・亞洲象・小熊貓等超人氣動物。門票只要¥600，親子旅行・情侶約會都推薦。附交通方式・門票・營業時間。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "上野動物園推薦｜東京必去親子景點・大熊貓",
     description: "東京必去！日本最古老的動物園，大熊貓超人氣。門票¥600，附交通・營業時間。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "上野動物園推薦・東京必去景點" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "上野動物園推薦｜東京必去親子景點・大熊貓【實際造訪】",
   description: "東京必去景點「上野動物園」。日本最古老的動物園，大熊貓超人氣。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -106,7 +117,7 @@ export default function UenoZooPage() {
         <PrepBannerCompact />
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京動物園推薦（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">東京動物園推薦・推介（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-2 gap-0.5">
@@ -239,7 +250,7 @@ export default function UenoZooPage() {
               <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
               <div>
                 <p className="text-sm font-bold text-stone-700">阿美橫丁（徒歩約5分）</p>
-                <p className="text-xs text-stone-500 leading-relaxed">上野代表的商店街，海鮮丼、章魚燒、伴手禮應有盡有。逛完動物園過來吃午餐超順路。</p>
+                <p className="text-xs text-stone-500 leading-relaxed">上野代表的商店街，海鮮丼、章魚燒、伴手禮（手信）應有盡有。逛完動物園過來吃午餐超順路。</p>
               </div>
             </div>
             <div className="flex gap-3">

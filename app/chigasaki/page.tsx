@@ -12,13 +12,24 @@ export const metadata: Metadata = {
   title: "茅崎湘南海灘野餐｜海邊咖啡tuckshop✅實訪",
   description:
     "東京近郊一小時的湘南海邊小旅行。在茅崎公園看烏帽子岩與江之島、鋪野餐墊吃早餐，再走2分鐘到清晨6點就開門的海邊咖啡tuckshop。附交通、停車場、營業時間。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "茅崎夏日推薦｜湘南海灘野餐＆海邊咖啡tuckshop",
     description: "東京近郊一小時的湘南海邊小旅行。海灘野餐看烏帽子岩＋清晨6點開門的海邊咖啡tuckshop🌊",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "茅崎海灘野餐 - 湘南夏日推薦" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   description:
     "東京近郊一小時的湘南海邊小旅行：茅崎公園（ヘッドランドビーチ）海灘野餐、看烏帽子岩與江之島，再到清晨6點開門的海邊咖啡tuckshop喝咖啡配司康。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-08-18T00:00:00+09:00",
@@ -140,7 +151,7 @@ export default function ChigasakiPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">茅崎夏日推薦・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">茅崎夏日推薦（推介）・2選</h2>
 
         {/* Spot 1: ヘッドランドビーチ */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -285,7 +296,7 @@ export default function ChigasakiPage() {
           <h2 className="text-base font-black text-stone-800 mb-3">茅崎海邊小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從東京車站搭<strong>JR東海道線</strong>到茅ヶ崎駅約1小時，不用轉車最輕鬆🚃</li>
-            <li>✅ 車站到海邊走路約23分鐘，怕熱的話<strong>搭巴士或計程車</strong>比較舒服；夏天記得帶水與防曬</li>
+            <li>✅ 車站到海邊走路約23分鐘，怕熱的話<strong>搭巴士或計程車（的士）</strong>比較舒服；夏天記得帶水與防曬</li>
             <li>✅ 想避開人潮又想拍好照片，<strong>清晨6〜9點</strong>是最舒服的時段（也剛好是tuckshop開門的時間）🌅</li>
             <li>✅ 沙灘上沒有遮陽處，<strong>建議自備野餐墊、遮陽帽與飲料</strong>；垃圾請自己帶走🚮</li>
             <li>✅ 突堤附近水流強，<strong>不建議下水游泳</strong>；想玩水請去有救生員的正規海水浴場</li>

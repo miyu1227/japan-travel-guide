@@ -14,13 +14,24 @@ export const metadata: Metadata = {
   title: "清澄白河咖啡廳2選｜B²・iki Roastery✅實訪",
   description:
     "日本首間「麵包工廠＋咖啡烘焙廠」一體的 B²，以及隅田川旁倉庫改建的紐西蘭風咖啡廳 iki Roastery & Eatery。附交通、營業時間、必吃麵包與價格。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "清澄白河咖啡廳推薦2選｜B² ＆ iki Roastery・東京咖啡聖地",
     description: "麵包工廠×咖啡烘焙廠的 B²，隅田川旁倉庫改建的 iki Roastery，清澄白河必去2間。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "清澄白河咖啡廳推薦・iki Roastery & Eatery 拿鐵與開心果丹麥" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   description:
     "清澄白河必去咖啡廳「B²（B Squared）」與「iki Roastery & Eatery」完整介紹，附交通、營業時間與必點推薦。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-31T00:00:00+09:00",
@@ -220,14 +231,14 @@ export default function KiyosumiCafePage() {
             </div>
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3">
               <p className="text-sm font-bold text-pink-700 mb-1">② iki Roastery &amp; Eatery</p>
-              <p className="text-xs text-stone-600 leading-relaxed">想<strong>坐下來好好吃早午餐</strong>、想拍挑高倉庫空間、想喝紐西蘭系咖啡、有帶狗 → 選這間。</p>
+              <p className="text-xs text-stone-600 leading-relaxed">想<strong>坐下來好好吃（好食）早午餐</strong>、想拍挑高倉庫空間、想喝紐西蘭系咖啡、有帶狗 → 選這間。</p>
             </div>
           </div>
           <p className="text-xs text-stone-400 mt-3">※ 兩間相距步行約15分鐘，早上先去 iki 吃早餐、回程繞去 B² 買麵包當宵夜是很順的走法</p>
         </section>
 
         {/* Shops */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">清澄白河咖啡廳推薦2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">清澄白河咖啡廳推薦（推介）2選</h2>
 
         <div className="space-y-8 mb-8">
           {shops.map((shop) => (

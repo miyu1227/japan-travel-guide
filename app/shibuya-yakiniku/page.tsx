@@ -14,13 +14,24 @@ export const metadata: Metadata = {
   title: "澀谷燒肉推薦｜ホルモン千葉・內臟名店✅實訪",
   description:
     "京都發跡的內臟燒肉名店「ホルモン千葉」。獨創斜面鐵板收集肉汁、店員全程代烤、收尾炒烏龍麵必吃。附交通、營業時間、預約規則與價位。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "澀谷燒肉推薦｜ホルモン千葉・京都發跡的內臟燒肉名店",
     description: "獨創收集肉汁的斜面鐵板！店員代烤・收尾炒烏龍麵，澀谷必吃內臟燒肉。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "澀谷燒肉推薦・ホルモン千葉的鐵板內臟燒肉" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   description:
     "澀谷必吃內臟燒肉「ホルモン千葉」完整介紹。獨創斜面鐵板、店員代烤、收尾炒烏龍麵，附交通與預約規則。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-31T00:00:00+09:00",
@@ -113,14 +124,14 @@ export default function ShibuyaYakinikuPage() {
             澀谷的燒肉店多到數不完，但如果只能挑一間，很多日本人會直接說出<strong>「ホルモン千葉」</strong>這個名字。這是一間<strong>發跡於京都</strong>的內臟燒肉（ホルモン）名店，目前只有<strong>京都本店、大阪梅田、東京澀谷、東京新宿</strong>四間店🔥
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            它厲害的地方不是高級和牛，而是<strong>「怎麼把普通的肉煎到最好吃」</strong>——店家自行開發了一塊<strong>帶洩油口的斜面鐵板</strong>，把烤肉時流掉的肉汁全部集中到下面的醬碗裡，最後再用這鍋肉汁炒一份收尾的烏龍麵。從第一口到最後一口，沒有一滴鮮味被浪費掉✨
+            它厲害的地方不是高級和牛，而是<strong>「怎麼把普通的肉煎到最好吃（好食）」</strong>——店家自行開發了一塊<strong>帶洩油口的斜面鐵板</strong>，把烤肉時流掉的肉汁全部集中到下面的醬碗裡，最後再用這鍋肉汁炒一份收尾的烏龍麵。從第一口到最後一口，沒有一滴鮮味被浪費掉✨
           </p>
         </section>
 
         <PrepBannerCompact />
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">澀谷燒肉推薦（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">澀谷燒肉推薦・推介（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-2 gap-0.5">

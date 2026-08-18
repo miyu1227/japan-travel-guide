@@ -12,13 +12,24 @@ export const metadata: Metadata = {
   title: "東京畫畫體驗｜Artbar Tokyo・喝酒作畫✅實訪",
   description:
     "一邊喝紅酒一邊畫畫的Paint & Sip藝術體驗。臨摹梵谷・莫內名畫，初學者也OK、手ぶら參加。原宿・代官山・銀座・橫濱多間分店，附交通・料金・預約方式。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "東京畫畫體驗推薦｜Artbar Tokyo・喝酒作畫的大人藝術體驗",
     description: "一邊喝紅酒一邊畫畫的Paint & Sip體驗，初學者也OK・手ぶら參加。原宿・代官山・銀座分店，附料金・預約。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Artbar Tokyo・東京畫畫體驗推薦" }],
   },
@@ -36,7 +47,7 @@ const articleJsonLd = {
   headline: "東京畫畫體驗推薦｜Artbar Tokyo・喝酒作畫的大人藝術體驗【實際造訪】",
   description: "東京必去體驗景點「Artbar Tokyo」。一邊喝紅酒一邊畫畫的Paint & Sip藝術體驗，初學者也OK。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -105,7 +116,7 @@ export default function ArtbarTokyoPage() {
         </section>
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京畫畫體驗推薦・Artbar Tokyo</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">東京畫畫體驗推薦（推介）・Artbar Tokyo</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-3 gap-0.5">

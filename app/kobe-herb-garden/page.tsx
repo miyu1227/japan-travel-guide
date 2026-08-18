@@ -15,13 +15,24 @@ export const metadata: Metadata = {
   title: "神戶布引香草園推薦｜纜車空中散步・花海與夜景【實際造訪】",
   description:
     "搭纜車登上標高400m山頂，四季花海・薰衣草・古堡風建築・神戶港夜景一次擁有。從新神戶站直達，附交通・纜車料金・營業時間。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "神戶布引香草園推薦｜纜車空中散步・花海與夜景",
     description: "搭纜車登上400m山頂！四季花海・薰衣草・古堡建築・神戶港夜景。從新神戶駅直達，附交通・纜車料金。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "神戶布引香草園推薦・花海與纜車" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   headline: "神戶布引香草園推薦｜纜車空中散步・花海與夜景【實際造訪】",
   description: "神戶必去景點「神戶布引香草園」。搭纜車登上標高400m山頂，四季花海・古堡建築・神戶港夜景。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -108,7 +119,7 @@ export default function KobeHerbGardenPage() {
             <strong>神戶布引香草園</strong>是日本最大級的香草園，位於神戶市區後方、標高<strong>400公尺</strong>的山頂上🌿 最大的魅力是可以搭乘<strong>神戶布引纜車</strong>，從新神戶駅旁一路空中滑行到山頂，沿途還能俯瞰布引瀑布與神戶市街，光是纜車就值回票價。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            園內以德國古堡為造型的建築超好拍，四季有薰衣草、向日葵等不同花卉，還有香草咖啡廳與溫室。到了傍晚，更能一次看到<strong>神戶港夕景與夜景</strong>，是關西旅遊中兼具自然、拍照與浪漫夜景的人氣景點✨
+            園內以德國古堡為造型的建築超好拍，四季有薰衣草、向日葵等不同花卉，還有香草咖啡廳（咖啡店）與溫室。到了傍晚，更能一次看到<strong>神戶港夕景與夜景</strong>，是關西旅遊中兼具自然、拍照與浪漫夜景的人氣景點✨
           </p>
         </section>
 
@@ -201,9 +212,9 @@ export default function KobeHerbGardenPage() {
             </p>
 
             <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
-              <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦（推介）給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                從<strong>新神戶駅</strong>走幾分鐘就能搭纜車，交通超方便🚡 山頂空氣清新、視野遼闊，能同時看到瀨戶內海與神戶市街。傍晚上山還能欣賞<strong>夕景轉夜景</strong>的浪漫瞬間，夏季更有夜間點燈活動。香草咖啡廳的花草茶與甜點也別錯過，是很適合放慢腳步的半日行程。
+                從<strong>新神戶駅</strong>走幾分鐘就能搭纜車，交通超方便🚡 山頂空氣清新、視野遼闊，能同時看到瀨戶內海與神戶市街。傍晚上山還能欣賞<strong>夕景轉夜景</strong>的浪漫瞬間，夏季更有夜間點燈活動。香草咖啡廳的花草茶與甜點（甜品）也別錯過，是很適合放慢腳步的半日行程。
               </p>
             </div>
 

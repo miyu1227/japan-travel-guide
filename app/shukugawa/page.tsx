@@ -12,13 +12,24 @@ export const metadata: Metadata = {
   title: "夙川咖啡廳推薦2選｜關西必去法式可麗餅＆精品咖啡【實際造訪】",
   description:
     "兵庫・夙川咖啡廳推薦2選！法式可麗餅午餐「クレープリー・ルポ」與精品自家焙煎「ゆげ焙煎所」。關西旅遊咖啡廳散步好去處，附交通方式・菜單・推薦。台灣・香港旅客必看！",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "夙川咖啡廳推薦2選｜關西必去法式可麗餅＆精品咖啡",
     description: "兵庫・夙川人氣咖啡廳2選！法式可麗餅＆精品咖啡。關西咖啡散步推薦。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "夙川咖啡廳推薦・クレープリー・ルポ" }],
   },
@@ -36,7 +47,7 @@ const articleJsonLd = {
   headline: "夙川咖啡廳推薦2選｜關西必去法式可麗餅＆精品咖啡【實際造訪】",
   description: "兵庫・夙川咖啡廳推薦2選。法式可麗餅＆精品咖啡。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -111,7 +122,7 @@ export default function ShukugawaPage() {
 
         {/* Badges */}
         <div className="mb-4 flex flex-wrap items-center gap-2">
-          <span className="bg-pink-100 text-pink-600 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳</span>
+          <span className="bg-pink-100 text-pink-600 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳（咖啡店）</span>
           <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 兵庫・夙川</span>
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">✅ 實際造訪</span>
         </div>
@@ -129,7 +140,7 @@ export default function ShukugawaPage() {
             兵庫・<strong>夙川</strong>是關西地區最受歡迎的悠閒住宅區之一，擁有靜謐的街道和美麗的河岸步道🌿 春天河畔的櫻花更是美不勝收，是關西人心中的賞櫻名所🌸
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦兩間實際造訪過、最值得去的<strong>夙川咖啡廳</strong>——正宗法式可麗餅<strong>「クレープリー・ルポ」</strong>和精品自家焙煎<strong>「ゆげ焙煎所」</strong>。來關西旅遊時，不妨安排一個悠閒的咖啡散步行程✨
+            這次推薦（推介）兩間實際造訪過、最值得去的<strong>夙川咖啡廳</strong>——正宗法式可麗餅<strong>「クレープリー・ルポ」</strong>和精品自家焙煎<strong>「ゆげ焙煎所」</strong>。來關西旅遊時，不妨安排一個悠閒的咖啡散步行程✨
           </p>
         </section>
 

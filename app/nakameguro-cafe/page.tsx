@@ -14,13 +14,24 @@ export const metadata: Metadata = {
   title: "中目黑星巴克臻選｜隈研吾設計烘焙工坊✅實訪",
   description:
     "世界6間之一的「STARBUCKS RESERVE ROASTERY TOKYO」。隈研吾設計、目黑川旁賞櫻聖地，4層樓咖啡主題樂園。附交通・營業時間・樓層特色。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "中目黑咖啡廳推薦｜星巴克臻選東京烘焙工坊・隈研吾建築",
     description: "世界6間之一的星巴克臻選！中目黑必去人氣咖啡廳，隈研吾建築・目黑川賞櫻。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "中目黑咖啡廳推薦・星巴克臻選東京烘焙工坊" }],
   },
@@ -38,7 +49,7 @@ const articleJsonLd = {
   headline: "中目黑咖啡廳推薦｜星巴克臻選東京烘焙工坊・隈研吾建築【實際造訪】",
   description: "中目黑必去咖啡廳「STARBUCKS RESERVE ROASTERY TOKYO」完整介紹。隈研吾設計、目黑川旁賞櫻聖地。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -94,7 +105,7 @@ export default function NakameguroCafePage() {
 
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
-          <span className="bg-pink-100 text-pink-700 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳</span>
+          <span className="bg-pink-100 text-pink-700 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳（咖啡店）</span>
           <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 東京・中目黑</span>
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">✅ 實際造訪</span>
         </div>
@@ -112,7 +123,7 @@ export default function NakameguroCafePage() {
             <strong>中目黑</strong>是東京最受歡迎的文青散步區之一，沿著<strong>目黑川</strong>延伸的街道充滿質感小店和特色咖啡廳☕ 春天兩岸800棵櫻花盛開的景象更是東京最著名的賞櫻景點之一🌸
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的是中目黑的超級地標<strong>「STARBUCKS RESERVE ROASTERY TOKYO」</strong>——全世界只有6間的星巴克臻選烘焙工坊之一，由日本建築大師<strong>隈研吾</strong>操刀設計，是每個來東京旅遊的人都必訪的咖啡聖地✨
+            這次推薦（推介）的是中目黑的超級地標<strong>「STARBUCKS RESERVE ROASTERY TOKYO」</strong>——全世界只有6間的星巴克臻選烘焙工坊之一，由日本建築大師<strong>隈研吾</strong>操刀設計，是每個來東京旅遊的人都必訪的咖啡聖地✨
           </p>
         </section>
 
@@ -153,7 +164,7 @@ export default function NakameguroCafePage() {
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                就算不是星巴克迷也會被圈粉！建築本身超有魅力📸 4樓露台可以俯瞰目黑川，<strong>春天賞櫻</strong>絕佳位置🌸 這裡還能買到只有東京店才有的<strong>限定商品</strong>和周邊，是最棒的伴手禮選擇！每層樓都有獨特體驗，建議慢慢逛約1〜2小時。
+                就算不是星巴克迷也會被圈粉！建築本身超有魅力📸 4樓露台可以俯瞰目黑川，<strong>春天賞櫻</strong>絕佳位置🌸 這裡還能買到只有東京店才有的<strong>限定商品</strong>和周邊，是最棒的伴手禮（手信）選擇！每層樓都有獨特體驗，建議慢慢逛約1〜2小時。
               </p>
             </div>
 

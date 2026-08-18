@@ -16,13 +16,24 @@ export const metadata: Metadata = {
   title: "東京迪士尼周邊玩法｜不進園也能玩的舞浜半日遊",
   description:
     "舞浜站周邊不進園也玩得起來。迪士尼度假區線一日券與米奇車廂、イクスピアリ的法式咖啡廳與Disney Store，加上從東京市區怎麼來、半日行程怎麼排。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "東京迪士尼周邊玩法｜不進園也能玩的舞浜半日遊",
     description: "迪士尼度假區線一日券＆イクスピアリ人氣咖啡廳完整指南。舞浜站周邊不進園也能玩的半日行程。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "東京迪士尼度假區線・周邊玩法" }],
   },
@@ -40,7 +51,7 @@ const articleJsonLd = {
   headline: "東京迪士尼周邊玩法｜不進園也能玩的舞浜半日遊",
   description: "迪士尼度假區線（Disney Resort Line）一日券・可愛車廂與イクスピアリ人氣咖啡廳CAFÉ AUX BACCHANALES。舞浜站周邊半日遊指南。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -167,14 +178,14 @@ export default function TokyoDisneyAroundPage() {
             雖然來東京大家都想衝<strong>東京迪士尼樂園</strong>或<strong>迪士尼海洋</strong>，但門票越來越貴、人潮也不少。這篇整理的是<strong>「不進園」也能享受迪士尼氛圍的玩法</strong>——舞浜站周邊其實有一整片度假區可以散步，用半天的預算就能玩得很滿足✨
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這篇寫給<strong>沒搶到門票、行程只剩半天，或遇到雨天想找備案</strong>的台灣・香港旅人。<strong>你會知道</strong>：不進園可以玩到什麼、度假區線一日券怎麼買與值不值得、從東京市區怎麼過來，還有半天的時間該怎麼排。這次介紹兩個實際去過的點：<strong>迪士尼度假區線一日券</strong>可以無限次搭乘環狀電車繞行度假區，加上位在舞浜站旁購物中心<strong>イクスピアリ</strong>的法式咖啡廳<strong>CAFÉ AUX BACCHANALES</strong>🎢☕
+            這篇寫給<strong>沒搶到門票、行程只剩半天，或遇到雨天想找備案</strong>的台灣・香港旅人。<strong>你會知道</strong>：不進園可以玩到什麼、度假區線一日券怎麼買與值不值得、從東京市區怎麼過來，還有半天的時間該怎麼排。這次介紹兩個實際去過的點：<strong>迪士尼度假區線一日券</strong>可以無限次搭乘環狀電車繞行度假區，加上位在舞浜站旁購物中心<strong>イクスピアリ</strong>的法式咖啡廳（咖啡店）<strong>CAFÉ AUX BACCHANALES</strong>🎢☕
           </p>
         </section>
 
         <PrepBannerCompact />
 
         {/* H2: 推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">舞浜周邊玩法・2個推薦</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">舞浜周邊玩法・2個推薦（推介）</h2>
 
         {/* Spots */}
         <div className="space-y-8 mb-10">
@@ -247,7 +258,7 @@ export default function TokyoDisneyAroundPage() {
           <ul className="space-y-2 text-sm text-stone-600">
             <li>🕘 09:30｜到達舞浜站，先到イクスピアリ的<strong>CAFÉ AUX BACCHANALES</strong>吃早餐＆可頌</li>
             <li>🕚 11:00｜買一張<strong>迪士尼度假區線1日券</strong>，先繞一圈欣賞景色＆BGM</li>
-            <li>🕐 13:00｜下車到度假區飯店群、迪士尼商店（イクスピアリ內Disney Store）逛逛</li>
+            <li>🕐 13:00｜下車到度假區飯店（酒店）群、迪士尼商店（イクスピアリ內Disney Store）逛逛</li>
             <li>🕒 15:00｜再搭度假區線回舞浜站，結束半日行程</li>
           </ul>
         </section>

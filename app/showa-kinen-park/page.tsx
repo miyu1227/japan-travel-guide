@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "昭和紀念公園推薦｜東京立川散步必去・四季絕景【實際造訪】",
   description:
     "東京散步推薦！立川「昭和紀念公園」是日本最大級的國營公園，廣達165公頃。春櫻、夏向日葵、秋紅葉、冬燈光秀，四季都有不同的絕景。附門票・交通方式・推薦路線。台灣・香港旅客必看！",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "昭和紀念公園推薦｜東京立川散步必去・四季絕景",
     description: "東京最大級的國營公園！春櫻・夏向日葵・秋紅葉・冬燈光秀。附門票・交通・推薦路線。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "昭和紀念公園・東京散步推薦" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "昭和紀念公園推薦｜東京立川散步必去・四季絕景【實際造訪】",
   description: "東京立川「昭和紀念公園」完整指南。日本最大級的國營公園・四季絕景。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -111,7 +122,7 @@ export default function ShowaKinenParkPage() {
         <PrepBannerCompact />
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京散步景點推薦</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">東京散步景點推薦（推介）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-2 gap-0.5">

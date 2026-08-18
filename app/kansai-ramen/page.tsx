@@ -12,13 +12,24 @@ export const metadata: Metadata = {
   title: "關西拉麵推薦｜大阪つじ田・濃厚魚介沾麵✅實吃",
   description:
     "大阪肥後橋名店「つじ田」的濃厚魚介系沾麵，加檸檬與黑七味變化風味。附地址・交通・價格・吃法教學，另整理關西拉麵的流派特色。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "關西拉麵推薦｜大阪必吃濃厚魚介沾麵・つじ田 肥後橋",
     description: "大阪肥後橋名店つじ田的濃厚魚介沾麵，加檸檬變化風味。附關西拉麵流派解說。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "關西拉麵推薦・つじ田 肥後橋店的濃厚魚介沾麵" }],
   },
@@ -36,7 +47,7 @@ const articleJsonLd = {
   headline: "關西拉麵推薦｜大阪必吃濃厚魚介沾麵・つじ田 肥後橋【實際吃過】",
   description: "關西（大阪）拉麵推薦。肥後橋名店つじ田的濃厚魚介系沾麵完整介紹，附交通・價格・吃法與關西拉麵流派說明。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-31T00:00:00+09:00",
@@ -165,7 +176,7 @@ export default function KansaiRamenArticle() {
         </section>
 
         {/* H2: 推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">關西拉麵推薦（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">關西拉麵推薦・推介（持續更新中）</h2>
 
         {/* Shops */}
         <div className="space-y-8 mb-10">
@@ -251,7 +262,7 @@ export default function KansaiRamenArticle() {
             <li>✅ 多數店採<strong>食券機（售票機）</strong>，先買餐券再入座，不會日文也不用擔心</li>
             <li>✅ 肥後橋・本町一帶是商辦區，<strong>週末部分店家會公休</strong>，出發前建議查官網</li>
             <li>✅ 想一次吃多間的話，大阪梅田・難波周邊拉麵店密度最高</li>
-            <li>✅ 老店不少只收現金，建議隨身帶日幣紙鈔</li>
+            <li>✅ 老店不少只收現金，建議隨身帶日幣（日圓）紙鈔</li>
           </ul>
         </section>
 

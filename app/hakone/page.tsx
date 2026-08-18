@@ -15,13 +15,24 @@ export const metadata: Metadata = {
   title: "箱根一日遊推薦｜從東京出發的浪漫特快完整攻略",
   description:
     "從新宿搭浪漫特快約1.5小時。實際走過的一日行程：玻璃美術館、箱根神社湖上鳥居、足湯、自然薯蕎麥麵共5個景點。附浪漫特快訂位與周遊券該不該買的判斷。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "箱根一日遊推薦｜從東京出發的浪漫特快完整攻略",
     description: "從東京搭浪漫特快1.5小時到箱根！玻璃美術館・神社・足湯・蕎麥麵5個必去景點完整攻略。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "箱根神社・箱根一日遊" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   headline: "箱根一日遊推薦｜從東京出發的浪漫特快完整攻略",
   description: "從東京搭浪漫特快1.5小時到箱根。玻璃美術館・箱根神社・足湯・蕎麥麵5個必去景點。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -196,7 +207,7 @@ export default function HakonePage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-6">
           <h2 className="text-base font-black text-stone-800 mb-3">為什麼選擇箱根一日遊？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            想從東京出發輕鬆玩一天，<strong>箱根一日遊</strong>是最多人推薦的選擇✨ 從新宿搭浪漫特快只需約1.5小時，抵達後就能感受到截然不同的溫泉鄉氛圍。
+            想從東京出發輕鬆玩一天，<strong>箱根一日遊</strong>是最多人推薦（推介）的選擇✨ 從新宿搭浪漫特快只需約1.5小時，抵達後就能感受到截然不同的溫泉鄉氛圍。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
             這篇寫給<strong>行程排在東京、想抽一天去近郊</strong>的台灣・香港旅人。<strong>你會知道</strong>：浪漫特快怎麼搭與要不要先訂位、一天玩得完哪幾個點、山上移動大概要抓多少時間，還有雨天與冬天要注意什麼。以下是我實際走過的完整行程👇

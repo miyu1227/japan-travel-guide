@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "銀座希臘料理｜THE APOLLO 話題餐廳✅實訪",
   description:
     "銀座Nouvo 11樓的希臘料理餐廳「THE APOLLO」。招牌起司料理與地中海風味分享盤，附交通方式・推薦菜單・價格。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "銀座美食推薦｜THE APOLLO・希臘料理人氣餐廳",
     description: "銀座必吃！東京話題希臘料理餐廳，分享盤＆招牌起司料理。附交通・菜單・推薦。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "銀座美食推薦・THE APOLLO希臘料理" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "銀座美食推薦｜THE APOLLO・希臘料理人氣餐廳【實際造訪】",
   description: "銀座必吃美食「THE APOLLO」。東京最具話題的希臘料理餐廳。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -99,7 +110,7 @@ export default function GinzaApolloPage() {
             來東京旅遊，<strong>銀座</strong>是不可錯過的高級美食區🏙️ 從米其林星級壽司、和牛鐵板燒到世界各國料理應有盡有。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的<strong>「THE APOLLO」</strong>是來自<strong>澳洲雪梨的人氣希臘料理餐廳</strong>，2016年春天進駐銀座🇬🇷 位於銀座Nouvo大樓11樓的時尚空間，提供地中海風味的<strong>分享盤式料理</strong>，是銀座最具話題的多人聚餐勝地✨
+            這次推薦（推介）的<strong>「THE APOLLO」</strong>是來自<strong>澳洲雪梨的人氣希臘料理餐廳</strong>，2016年春天進駐銀座🇬🇷 位於銀座Nouvo大樓11樓的時尚空間，提供地中海風味的<strong>分享盤式料理</strong>，是銀座最具話題的多人聚餐勝地✨
           </p>
         </section>
 
@@ -140,7 +151,7 @@ export default function GinzaApolloPage() {
             <div className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-red-500 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                招牌的<strong>「Saganaki Cheese」</strong>（烤起司淋蜂蜜）是必點🧀 烤得金黃酥脆的起司搭配蜂蜜與奧勒岡，鹹甜交融超級療癒。其他像<strong>烤龍蝦、和牛菲力</strong>、希臘風味沙拉等都是分享盤式料理，<strong>2〜4人聚餐</strong>最划算。在銀座難得能吃到正宗希臘料理，氛圍也超適合約會💕
+                招牌的<strong>「Saganaki Cheese」</strong>（烤起司（芝士）淋蜂蜜）是必點🧀 烤得金黃酥脆的起司搭配蜂蜜與奧勒岡，鹹甜交融超級療癒。其他像<strong>烤龍蝦、和牛菲力</strong>、希臘風味沙拉等都是分享盤式料理，<strong>2〜4人聚餐</strong>最划算。在銀座難得能吃到正宗希臘料理，氛圍也超適合約會💕
               </p>
             </div>
 

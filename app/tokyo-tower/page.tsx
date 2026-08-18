@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "東京鐵塔推薦｜東京必去地標・夜景景點【實際造訪】",
   description:
     "東京必去地標「東京鐵塔」完整介紹！333公尺高的東京象徵，主展望台＆頂層展望台夜景超震撼。附門票價格・交通方式・營業時間・拍照景點。台灣・香港旅客東京自由行必看！",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "東京鐵塔推薦｜東京必去地標・夜景景點",
     description: "東京必去！333公尺東京象徵。主展望台＆頂層展望台夜景。附門票・交通・營業時間。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "東京鐵塔推薦・東京必去地標" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "東京鐵塔推薦｜東京必去地標・夜景景點【實際造訪】",
   description: "東京必去地標「東京鐵塔」。333公尺東京象徵，夜景超震撼。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -114,7 +125,7 @@ export default function TokyoTowerPage() {
         <PrepBannerCompact />
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京地標景點推薦</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">東京地標景點推薦（推介）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-3 gap-0.5">

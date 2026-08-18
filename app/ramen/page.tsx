@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系【實際吃過】",
   description:
     "實際吃過的6間東京拉麵：三軒茶屋「めん和正」、目黑和利道、中目黑俺流鹽味、台場神仙、六本木AFURI柚子鹽、家系町田商店。附地址・交通・價格・推薦菜單。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系",
     description: "三軒茶屋無招牌名店・目黑排隊店・中目黑鹽味・台場豚骨・六本木柚子鹽・家系拉麵。實際吃過的東京拉麵6選！",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "東京拉麵推薦・めん和正的中華麵" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系【實際吃過】",
   description: "整理6間實際吃過的東京拉麵推薦，包含三軒茶屋めん和正、目黑和利道、中目黑俺流鹽味、台場神仙、六本木AFURI柚子鹽、家系町田商店。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -256,7 +267,7 @@ export default function RamenArticle() {
         </section>
 
         {/* H2: 推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京拉麵推薦・6間必吃</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">東京拉麵推薦（推介）・6間必吃（必食）</h2>
 
         {/* Shops */}
         <div className="space-y-8 mb-10">
@@ -340,7 +351,7 @@ export default function RamenArticle() {
             <li>✅ つけ麺可以選麵量（並・中・大），通常同價或加價很少</li>
             <li>✅ 家系拉麵可以選麵硬度・湯頭濃淡・油量，不確定就說「普通」</li>
             <li>✅ 吃完沾麵可以加湯（割りスープ），把濃湯稀釋成清湯喝完</li>
-            <li>✅ 老店不少<strong>只收現金</strong>，建議隨身帶日幣紙鈔</li>
+            <li>✅ 老店不少<strong>只收現金</strong>，建議隨身帶日幣（日圓）紙鈔</li>
           </ul>
         </section>
 

@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "日本自由行 eSIM 使用指南｜抵達日本就能上網的事前準備",
   description:
     "eSIM 的設定流程、與實體SIM／租借Wi-Fi的差別、iPhone與Android的支援確認方式，以及「什麼時候啟用才不會浪費天數」等注意事項。出發前先把上網搞定。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "日本自由行 eSIM 使用指南｜抵達日本就能上網的事前準備",
     description: "日本 eSIM 完整介紹。比較實體 SIM 與租借 Wi-Fi，附 Klook 預約流程與注意事項。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "日本自由行 eSIM 使用指南" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "日本自由行 eSIM 使用指南｜抵達日本就能上網的事前準備",
   description: "日本 eSIM 完整介紹。使用方式、與實體 SIM／租借 Wi-Fi 比較、適用對象與購買前注意事項。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -232,7 +243,7 @@ export default function JapanEsimPage() {
                   <td className="border border-stone-200 px-2 py-2 text-center">⭕ 可多人共用</td>
                 </tr>
                 <tr className="bg-stone-50/50">
-                  <td className="border border-stone-200 px-2 py-2 font-semibold">推薦對象</td>
+                  <td className="border border-stone-200 px-2 py-2 font-semibold">推薦（推介）對象</td>
                   <td className="border border-stone-200 px-2 py-2 text-center">獨自旅遊者・想省事的人</td>
                   <td className="border border-stone-200 px-2 py-2 text-center">不熟悉 eSIM 的人</td>
                   <td className="border border-stone-200 px-2 py-2 text-center">家庭・多人同行</td>
@@ -336,7 +347,7 @@ export default function JapanEsimPage() {
             <li>📱 開啟手機設定，切換到日本 eSIM 為主要數據</li>
             <li>🔁 開啟「數據漫遊」（部分方案需要）</li>
             <li>🗺️ 確認地圖 App 可以連線、Google Map 顯示正常</li>
-            <li>🚆 開始搭電車到飯店，路上可即時查路線、看地圖</li>
+            <li>🚆 開始搭電車到飯店（酒店），路上可即時查路線、看地圖</li>
           </ul>
           <p className="text-xs text-stone-500 leading-relaxed mt-3">
             出發前若已先安裝好 eSIM，剛下飛機只需開啟漫遊即可——可以節省在機場找 SIM 卡櫃台的時間。

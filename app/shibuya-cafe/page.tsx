@@ -12,13 +12,24 @@ export const metadata: Metadata = {
   title: "澀谷咖啡廳｜RECOCO・黑膠唱片試聽咖啡✅實訪",
   description:
     "可以親手試聽黑膠唱片的音樂體驗咖啡「RECOCO（レココ）渋谷」。約300張唱片聽到飽，全席電源・Wi-Fi完備。附交通方式・營業時間・推薦菜單。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "澀谷咖啡廳推薦｜RECOCO レココ・黑膠唱片試聽咖啡",
     description: "澀谷必去！可親手試聽黑膠唱片的音樂體驗咖啡。約300張唱片聽到飽，附交通・菜單・營業時間。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "澀谷咖啡廳推薦・RECOCO レココ渋谷" }],
   },
@@ -36,7 +47,7 @@ const articleJsonLd = {
   headline: "澀谷咖啡廳推薦｜RECOCO レココ・黑膠唱片試聽咖啡【實際造訪】",
   description: "澀谷必去特色咖啡廳：可親手試聽黑膠唱片的音樂體驗咖啡「RECOCO（レココ）渋谷」。約300張唱片聽到飽。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -87,7 +98,7 @@ export default function ShibuyaCafePage() {
 
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
-          <span className="bg-pink-100 text-pink-700 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳</span>
+          <span className="bg-pink-100 text-pink-700 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳（咖啡店）</span>
           <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 東京・澀谷</span>
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">✅ 實際造訪</span>
         </div>
@@ -110,7 +121,7 @@ export default function ShibuyaCafePage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">澀谷咖啡廳推薦・黑膠唱片咖啡</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">澀谷咖啡廳推薦（推介）・黑膠唱片咖啡</h2>
 
         {/* Spot 1: RECOCO */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">

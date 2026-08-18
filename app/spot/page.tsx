@@ -14,13 +14,24 @@ export const metadata: Metadata = {
   title: "東京野餐3選｜新宿御苑・代代木・日比谷【2026】",
   description:
     "東京野餐最推薦的3大公園：新宿御苑、代代木公園、日比谷公園。附交通方式、門票資訊、外帶美食推薦與最佳造訪季節。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "東京野餐推薦3選｜新宿御苑・代代木・日比谷公園完全指南【2026】",
     description: "東京野餐推薦3大公園：新宿御苑・代代木公園・日比谷公園。附交通・門票・外帶美食推薦。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "東京野餐推薦・新宿御苑" }],
   },
@@ -38,7 +49,7 @@ const articleJsonLd = {
   headline: "東京野餐推薦3選｜新宿御苑・代代木公園・日比谷公園完全指南【2026】",
   description: "東京野餐推薦3大公園。附交通方式、門票資訊、外帶美食推薦。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -153,7 +164,7 @@ export default function SpotPicnicPage() {
         <PrepBannerCompact />
 
         {/* H2: 公園推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京野餐公園推薦・3選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">東京野餐公園推薦（推介）・3選</h2>
 
         {/* Spot 1: 新宿御苑 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -249,7 +260,7 @@ export default function SpotPicnicPage() {
             <div className="bg-blue-50 border border-blue-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-blue-600 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                免費入場，在原宿・表參道逛完之後可以順路過來放鬆☕ 氣氛輕鬆，非常適合帶著便利商店食物來隨興野餐。
+                免費入場，在原宿・表參道逛完之後可以順路過來放鬆☕ 氣氛輕鬆，非常適合帶著便利商店（便利店）食物來隨興野餐。
               </p>
             </div>
 

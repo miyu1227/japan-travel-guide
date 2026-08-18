@@ -14,13 +14,24 @@ export const metadata: Metadata = {
   title: "橫濱野毛續攤2選｜壽司¥99起・平價居酒屋✅實訪",
   description:
     "橫濱最大居酒屋街「野毛」的續攤2選：霓虹中華酒場「AM:PM」與壽司一貫¥99起的「スシマヅメ 野毛本店」。櫻木町站徒步3分，一人¥2,000〜3,000。附續攤路線。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "橫濱野毛續攤推薦2選｜平價居酒屋・神級壽司¥99起",
     description: "櫻木町站徒步3分！霓虹中華酒場AM:PM＋壽司¥99起的スシマヅメ，一人¥2,000〜3,000的橫濱夜晚🍶",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "橫濱野毛續攤推薦・スシマヅメ的鐵火卷與天婦羅" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   description:
     "橫濱野毛的續攤推薦：ネオ町中華AM:PM與大眾壽司酒場スシマヅメ野毛本店。交通、價格、營業時間與續攤路線完整整理。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-08-18T00:00:00+09:00",
@@ -120,7 +131,7 @@ export default function NogePage() {
             這一帶戰後是有名的黑市，後來慢慢長成了<strong>約600間餐飲店擠在一起</strong>的橫濱最大飲酒街🏮 巷子窄、招牌亂、店都很小，正因為這樣，這裡的玩法從來不是「找一間坐一整晚」，而是<strong>「はしご酒（hashigo-zake）」＝續攤</strong>：一間喝兩杯、吃兩盤就換下一間。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這篇寫給<strong>想體驗日本人真實夜生活、又不想花大錢</strong>的台灣・香港旅人。介紹兩間實際走過、<strong>便宜又好吃</strong>的店：霓虹燈下的新派中華酒場<strong>「AM:PM」</strong>，以及壽司<strong>一貫¥99起</strong>的<strong>「大眾壽司酒場 スシマヅメ 野毛本店」</strong>。兩間走路不用5分鐘，剛好串成一晚。
+            這篇寫給<strong>想體驗日本人真實夜生活、又不想花大錢</strong>的台灣・香港旅人。介紹兩間實際走過、<strong>便宜又好吃（好食）</strong>的店：霓虹燈下的新派中華酒場<strong>「AM:PM」</strong>，以及壽司<strong>一貫¥99起</strong>的<strong>「大眾壽司酒場 スシマヅメ 野毛本店」</strong>。兩間走路不用5分鐘，剛好串成一晚。
           </p>
         </section>
 
@@ -146,7 +157,7 @@ export default function NogePage() {
             </div>
           </div>
           <p className="text-xs text-stone-500 leading-relaxed mt-3">
-            推薦順序：<strong>先AM:PM暖身 → 再去スシマヅメ收尾</strong>（壽司當結尾比較不會被中華的重口味蓋過）🍣
+            推薦（推介）順序：<strong>先AM:PM暖身 → 再去スシマヅメ收尾</strong>（壽司當結尾比較不會被中華的重口味蓋過）🍣
           </p>
         </section>
 

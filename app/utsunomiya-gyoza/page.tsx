@@ -12,13 +12,24 @@ export const metadata: Metadata = {
   title: "宇都宮餃子2選｜みんみん＆正嗣 兩大名店對決",
   description:
     "「宇都宮みんみん本店」與「餃子專門店 正嗣 宮島町本店」兩大巨頭完整介紹。煎餃・水餃・炸餃CP值超高，從東京搭新幹線50分即達。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "宇都宮餃子推薦2選｜兩大名店みんみん＆正嗣 對決",
     description: "宇都宮必吃餃子！みんみん＆正嗣兩大巨頭比較。煎餃・水餃・炸餃CP值超高🥟",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "宇都宮餃子推薦・みんみん本店" }],
   },
@@ -36,7 +47,7 @@ const articleJsonLd = {
   headline: "宇都宮餃子推薦2選｜兩大名店みんみん＆正嗣 對決【實際品嚐】",
   description: "宇都宮餃子推薦2選。みんみん本店與正嗣宮島町本店完整介紹。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -125,7 +136,7 @@ export default function UtsunomiyaGyozaPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">宇都宮餃子推薦・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">宇都宮餃子推薦（推介）・2選</h2>
 
         {/* Shop 1: みんみん */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -208,7 +219,7 @@ export default function UtsunomiyaGyozaPage() {
             <div className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-red-500 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                餃子內餡<strong>蔬菜比例高</strong>，肉味不會過重，吃起來清爽不膩，<strong>連吃兩、三份也不會膩</strong>是正嗣的最大魅力🥬 一份6個只要<strong>¥270</strong>，是宇都宮最便宜的等級之一！外帶包裝也很完善，當伴手禮帶回飯店也OK。
+                餃子內餡<strong>蔬菜比例高</strong>，肉味不會過重，吃起來清爽不膩，<strong>連吃兩、三份也不會膩</strong>是正嗣的最大魅力🥬 一份6個只要<strong>¥270</strong>，是宇都宮最便宜的等級之一！外帶包裝也很完善，當伴手禮（手信）帶回飯店（酒店）也OK。
               </p>
             </div>
 

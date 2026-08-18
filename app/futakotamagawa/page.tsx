@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "二子玉川美食4選｜中華・蘋果派・韓式・咖啡✅實訪",
   description:
     "二子玉川美食4選：蒸籠中華「STEAMAN」、蘋果派名店「GRANNY SMITH」、韓式屋台「ぶたこたまがわ」、精品咖啡「WOODBERRY COFFEE」。附交通・菜單・價格。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "二子玉川美食推薦4選｜東京必吃中華・甜點・韓國料理・精品咖啡",
     description: "二子玉川必吃美食4選！蒸籠中華・蘋果派・韓式屋台・世田谷精品咖啡。附交通・菜單・推薦。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "二子玉川美食推薦" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "二子玉川美食推薦4選｜東京必吃中華・甜點・韓國料理・精品咖啡【實際造訪】",
   description: "二子玉川美食推薦4選：蒸籠中華STEAMAN、蘋果派GRANNY SMITH、韓式屋台ぶたこたまがわ、精品咖啡WOODBERRY COFFEE 玉川高島屋S.C.店。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -104,7 +115,7 @@ export default function FutakotamagawaPage() {
             <strong>二子玉川</strong>位於東京世田谷區，是日本人心中的高級住宅區，擁有河岸公園、購物中心與許多特色餐廳🌿 從澀谷搭電車只要10分鐘，非常適合安排一個半天的散步美食行程。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦4間實際造訪過的人氣店：時尚蒸籠中華<strong>「STEAMAN」</strong>、蘋果派專門店<strong>「GRANNY SMITH」</strong>、韓國屋台風<strong>「ぶたこたまがわ」</strong>，以及2025年9月新開幕的世田谷精品咖啡<strong>「WOODBERRY COFFEE 玉川高島屋S.C.店」</strong>✨
+            這次推薦（推介）4間實際造訪過的人氣店：時尚蒸籠中華<strong>「STEAMAN」</strong>、蘋果派專門店<strong>「GRANNY SMITH」</strong>、韓國屋台風<strong>「ぶたこたまがわ」</strong>，以及2025年9月新開幕的世田谷精品咖啡<strong>「WOODBERRY COFFEE 玉川高島屋S.C.店」</strong>✨
           </p>
         </section>
 
@@ -132,14 +143,14 @@ export default function FutakotamagawaPage() {
               <span className="text-red-400 font-black text-sm shrink-0">▸</span>
               <div>
                 <p className="text-sm font-bold text-stone-700">ぶたこたまがわ → 韓國屋台風・燒肉＆小吃</p>
-                <p className="text-xs text-stone-500 leading-relaxed">深夜營業、サムギョプサル＆起司年糕</p>
+                <p className="text-xs text-stone-500 leading-relaxed">深夜營業、サムギョプサル＆起司（芝士）年糕</p>
               </div>
             </div>
             <div className="flex gap-3">
               <span className="text-red-400 font-black text-sm shrink-0">▸</span>
               <div>
                 <p className="text-sm font-bold text-stone-700">WOODBERRY COFFEE → 世田谷精品咖啡・純素烘焙</p>
-                <p className="text-xs text-stone-500 leading-relaxed">早上9點開門、高島屋南館1F、素食與無麩質甜點超多</p>
+                <p className="text-xs text-stone-500 leading-relaxed">早上9點開門、高島屋南館1F、素食與無麩質甜點（甜品）超多</p>
               </div>
             </div>
           </div>
@@ -220,7 +231,7 @@ export default function FutakotamagawaPage() {
             <div className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-red-500 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                每一款蘋果派都用不同的蘋果品種和做法，口感完全不同🍰 可以內用搭配咖啡，也可以外帶當伴手禮。內用座位有18席，氛圍溫馨。從二子玉川站走路2分鐘，逛完街順便來一片剛剛好！
+                每一款蘋果派都用不同的蘋果品種和做法，口感完全不同🍰 可以內用搭配咖啡，也可以外帶當伴手禮（手信）。內用座位有18席，氛圍溫馨。從二子玉川站走路2分鐘，逛完街順便來一片剛剛好！
               </p>
             </div>
 
@@ -312,7 +323,7 @@ export default function FutakotamagawaPage() {
             </div>
 
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
-              <strong>WOODBERRY COFFEE</strong> 是2012年從世田谷「用賀」起家的<strong>精品咖啡烘焙品牌</strong>☕ 堅持直接向產地農園採購生豆（Direct Trade）、自家烘焙，現在在東京・神奈川已經有10間以上分店。這家<strong>玉川高島屋S.C.店於2025年9月新開幕</strong>，是二子玉川目前最好逛也最好坐的咖啡廳之一。
+              <strong>WOODBERRY COFFEE</strong> 是2012年從世田谷「用賀」起家的<strong>精品咖啡烘焙品牌</strong>☕ 堅持直接向產地農園採購生豆（Direct Trade）、自家烘焙，現在在東京・神奈川已經有10間以上分店。這家<strong>玉川高島屋S.C.店於2025年9月新開幕</strong>，是二子玉川目前最好逛也最好坐的咖啡廳（咖啡店）之一。
             </p>
 
             <div className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 mb-3">

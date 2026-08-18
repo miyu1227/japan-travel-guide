@@ -14,13 +14,24 @@ export const metadata: Metadata = {
   title: "東京高級燒肉推薦｜叙々苑 品川王子大飯店店【實際造訪】",
   description:
     "日本高級燒肉代表「叙々苑」品川王子大飯店店。品川站徒步2分、飯店1樓、無煙烤爐與雙人座位。附午餐價格（¥2,640〜）、晚餐預算、營業時間與訂位重點。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "東京高級燒肉推薦｜叙々苑 品川王子大飯店店",
     description: "品川站徒步2分！日本高級燒肉代表「叙々苑」，午餐¥2,640起就能吃到高級燒肉🥩",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "東京高級燒肉推薦・叙々苑的和牛拼盤" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   description:
     "東京高級燒肉「叙々苑 品川王子大飯店店」完整介紹。品川站徒步2分、午餐價格、晚餐預算、營業時間與訂位重點。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-08-18T00:00:00+09:00",
@@ -114,7 +125,7 @@ export default function TokyoYakinikuPage() {
             日本的燒肉分成很多層次——從一個人¥3,000的平價吃到飽，到一個人¥20,000的頂級和牛專門店都有🥩 而說到<strong>「高級燒肉」</strong>這個類別，日本人第一個想到的名字幾乎都是<strong>叙々苑（JOJOEN）</strong>。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            叙々苑1976年在六本木創業，是日本<strong>高級燒肉店的開創者</strong>，以乾淨明亮的空間、細緻的服務和穩定的肉質，長年被當作接待客戶、家族慶生、紀念日的定番選擇。這次介紹的是交通最方便的分店之一——<strong>「叙々苑 品川王子大飯店店」</strong>。
+            叙々苑1976年在六本木創業，是日本<strong>高級燒肉店的開創者</strong>，以乾淨明亮的空間、細緻的服務和穩定的肉質，長年被當作接待客戶、家族慶生、紀念日的定番選擇。這次介紹的是交通最方便的分店之一——<strong>「叙々苑 品川王子大飯店（酒店）店」</strong>。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
             這篇寫給<strong>想吃一頓有質感的燒肉、又不想跑太遠</strong>的台灣・香港旅人。<strong>你會知道</strong>：午餐和晚餐的價差有多大、怎麼用最划算的方式吃到叙々苑、營業時間的「中間休息」陷阱，還有點餐時該注意什麼。
@@ -124,7 +135,7 @@ export default function TokyoYakinikuPage() {
         <PrepBannerCompact />
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京高級燒肉推薦・叙々苑 品川王子大飯店店</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">東京高級燒肉推薦（推介）・叙々苑 品川王子大飯店店</h2>
 
         {/* Spot 1: 叙々苑 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">

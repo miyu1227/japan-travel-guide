@@ -6,7 +6,17 @@ const PAGE_URL = "https://www.japantrippicks.com/contact";
 export const metadata: Metadata = {
   title: "聯絡我們｜Japan Trip Picks",
   description: "Japan Trip Picks 的聯絡資訊。如有任何問題或合作需求，歡迎透過電子郵件與我們聯絡。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   robots: { index: true, follow: true },
 };
 

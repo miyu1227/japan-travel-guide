@@ -14,13 +14,24 @@ export const metadata: Metadata = {
   title: "代官山咖啡廳3選｜義式烘焙・甜點・可頌✅實訪",
   description:
     "代官山咖啡廳3選：米蘭義式烘焙「PRINCI T-SITE」、星級甜點師的「DOLCE TACUBO」、可頌專門店「Doré by Charles-Henry」。附交通・菜單・價格。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "代官山咖啡廳推薦3選｜東京必去義式烘焙・高級甜點・法式可頌",
     description: "米蘭義式烘焙PRINCI・星級甜點DOLCE TACUBO・法式可頌專門店Doré by Charles-Henry。代官山必去3間人氣咖啡廳。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "代官山咖啡廳推薦・PRINCI代官山" }],
   },
@@ -38,7 +49,7 @@ const articleJsonLd = {
   headline: "代官山咖啡廳推薦3選｜東京必去義式烘焙・高級甜點・法式可頌【實際造訪】",
   description: "代官山必去咖啡廳：米蘭PRINCI代官山T-SITE、頂級甜點DOLCE TACUBO代官山、法式可頌專門店Doré by Charles-Henry。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -96,7 +107,7 @@ export default function DaikanyamaCafePage() {
 
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
-          <span className="bg-pink-100 text-pink-700 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳</span>
+          <span className="bg-pink-100 text-pink-700 border border-pink-300 text-xs font-semibold px-3 py-1 rounded-full">☕ 咖啡廳（咖啡店）</span>
           <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 東京・代官山</span>
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">✅ 實際造訪</span>
         </div>
@@ -114,7 +125,7 @@ export default function DaikanyamaCafePage() {
             <strong>代官山</strong>是東京最受歡迎的高級時尚街區之一，從澀谷搭電車只要1站就能抵達🏙️ 街道安靜優雅，聚集了許多設計精品店、選物店和特色咖啡廳，被譽為「東京的巴黎」。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的三間店——來自米蘭的義式烘焙名店<strong>「PRINCI 代官山T-SITE」</strong>、星級主廚打造的頂級甜點<strong>「DOLCE TACUBO」</strong>，以及2026年7月才新開幕、由法國主廚坐鎮的可頌專門店<strong>「Doré by Charles-Henry」</strong>✨ 風格完全不同，都是代官山必訪的人氣店！
+            這次推薦（推介）的三間店——來自米蘭的義式烘焙名店<strong>「PRINCI 代官山T-SITE」</strong>、星級主廚打造的頂級甜點（甜品）<strong>「DOLCE TACUBO」</strong>，以及2026年7月才新開幕、由法國主廚坐鎮的可頌專門店<strong>「Doré by Charles-Henry」</strong>✨ 風格完全不同，都是代官山必訪的人氣店！
           </p>
         </section>
 
@@ -135,7 +146,7 @@ export default function DaikanyamaCafePage() {
               <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
               <div>
                 <p className="text-sm font-bold text-stone-700">DOLCE TACUBO → 星級甜點外帶專賣</p>
-                <p className="text-xs text-stone-500 leading-relaxed">濃厚泡芙・焦香費南雪・生冰淇淋</p>
+                <p className="text-xs text-stone-500 leading-relaxed">濃厚泡芙・焦香費南雪・生冰淇淋（雪糕）</p>
               </div>
             </div>
             <div className="flex gap-3">
@@ -231,7 +242,7 @@ export default function DaikanyamaCafePage() {
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-amber-700 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                每一款甜點的品質都超越一般甜點店✨ 招牌的<strong>濃厚卡士達泡芙</strong>、<strong>焦香費南雪</strong>、<strong>濃厚布丁</strong>都是不可錯過的人氣商品🍮 也有<strong>卡努蕾（canelé）</strong>、薩布雷餅乾、現做生冰淇淋。代官山散步中途買一份當下午茶，是最幸福的享受！
+                每一款甜點的品質都超越一般甜點店✨ 招牌的<strong>濃厚卡士達泡芙</strong>、<strong>焦香費南雪</strong>、<strong>濃厚布丁</strong>都是不可錯過的人氣商品🍮 也有<strong>卡努蕾（canelé）</strong>、薩布雷餅乾（曲奇）、現做生冰淇淋。代官山散步中途買一份當下午茶，是最幸福的享受！
               </p>
             </div>
 
@@ -294,7 +305,7 @@ export default function DaikanyamaCafePage() {
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                櫃檯上一整排的可頌根本是藝術品✨ 甜的有<strong>檸檬蛋白霜可頌（Croissant Citron Meringue）</strong>、草莓香草可頌、開心果覆盆子長條可頌、三重巧克力麵包；鹹的則有<strong>火腿起司蛋 Croque Madame（¥1,230）</strong>、香腸三明治、菠菜起司西班牙臘腸的<strong>Pain Suisse</strong>，甚至還有明太子鮭魚檸檬口味🐟 我們點了<strong>Bostock（¥790）</strong>——用可頌吐司烤過再鋪滿莓果與糖粉，配上冰拿鐵剛剛好。店裡最好拍的是<strong>整面純白可頌造型的牆</strong>，坐在前面拍一張就是完美的IG照📸
+                櫃檯上一整排的可頌根本是藝術品✨ 甜的有<strong>檸檬蛋白霜可頌（Croissant Citron Meringue）</strong>、草莓香草可頌、開心果覆盆子長條可頌、三重巧克力麵包；鹹的則有<strong>火腿起司（芝士）蛋 Croque Madame（¥1,230）</strong>、香腸三明治、菠菜起司西班牙臘腸的<strong>Pain Suisse</strong>，甚至還有明太子鮭魚（三文魚）檸檬口味🐟 我們點了<strong>Bostock（¥790）</strong>——用可頌吐司烤過再鋪滿莓果與糖粉，配上冰拿鐵剛剛好。店裡最好拍的是<strong>整面純白可頌造型的牆</strong>，坐在前面拍一張就是完美的IG照📸
               </p>
             </div>
 
@@ -316,7 +327,7 @@ export default function DaikanyamaCafePage() {
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
               <span className="text-sm shrink-0">💡</span>
               <p className="text-xs text-stone-600">
-                座位只有約10席、又<strong>不能訂位</strong>，想內用建議<strong>一開門就去</strong>；外帶禮盒很有質感，當伴手禮也很加分🎁
+                座位只有約10席、又<strong>不能訂位</strong>，想內用建議<strong>一開門就去</strong>；外帶禮盒很有質感，當伴手禮（手信）也很加分🎁
               </p>
             </div>
 

@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南",
   description:
     "整理自由之丘3間人氣東京咖啡店，包含Q彈貝果、義式冰淇淋、現做起司披薩。街道安靜又可愛，非常適合散步、拍照和享受東京下午茶。來東京旅遊一定要安排半天來這裡！",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南",
     description: "自由之丘3間人氣東京咖啡店。貝果・義式冰淇淋・起司披薩。適合散步、拍照、東京下午茶。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "自由之丘咖啡推薦" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南",
   description: "整理自由之丘3間人氣東京咖啡店。貝果・義式冰淇淋・起司披薩。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -156,7 +167,7 @@ export default function JiyugaokaCafePage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">為什麼要去自由之丘喝咖啡？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            說到東京咖啡推薦，很多人第一個想到的是澀谷或表參道——但其實<strong>自由之丘</strong>才是真正適合慢慢享受的地方☕
+            說到東京咖啡推薦（推介），很多人第一個想到的是澀谷或表參道——但其實<strong>自由之丘</strong>才是真正適合慢慢享受的地方☕
           </p>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             這裡街道安靜、充滿歐式氛圍，走幾步就能發現隱藏版的東京咖啡店。不趕行程、不擠人群，非常適合安排半天的悠閒散步。
@@ -267,7 +278,7 @@ export default function JiyugaokaCafePage() {
             <li>✅ 建議安排半天，慢慢逛才能感受氛圍</li>
             <li>✅ 平日人少，拍照更方便</li>
             <li>✅ 天氣好的時候最適合，帶相機來✨</li>
-            <li>✅ 附近也有很多甜點店，可以一間一間逛</li>
+            <li>✅ 附近也有很多甜點（甜品）店，可以一間一間逛</li>
           </ul>
         </section>
 

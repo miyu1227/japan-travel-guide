@@ -7,7 +7,17 @@ const PAGE_URL = "https://www.japantrippicks.com/about";
 export const metadata: Metadata = {
   title: "關於我們・作者介紹｜Japan Trip Picks",
   description: "Japan Trip Picks 是專為台灣・香港旅客打造的日本旅遊資訊網站。作者ぽやぴよ是東京在住日本人，實際造訪過所有介紹景點，用第一視角分享真實旅遊體驗。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   robots: { index: true, follow: true },
 };
 
@@ -77,7 +87,7 @@ export default function AboutPage() {
             大家好，我是<strong>ぽやぴよ</strong>🐥 出身於東京、目前也住在東京的日本人。從小就喜歡旅行、吃東西＆咖啡，工作之餘常常趁週末或連假到日本各地小旅行。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            因為身邊有很多台灣・香港的朋友來日本玩，發現大家的煩惱都很類似——「日文網站看不懂」「Google翻譯的中文不太通順」「訪日客推薦景點都差不多」。所以決定用<strong>日本人視角＋繁體中文</strong>，把自己實際去過、覺得推薦的地方一個個記錄下來✨
+            因為身邊有很多台灣・香港的朋友來日本玩，發現大家的煩惱都很類似——「日文網站看不懂」「Google翻譯的中文不太通順」「訪日客推薦（推介）景點都差不多」。所以決定用<strong>日本人視角＋繁體中文</strong>，把自己實際去過、覺得推薦的地方一個個記錄下來✨
           </p>
         </section>
 
@@ -89,7 +99,7 @@ export default function AboutPage() {
               <span className="text-lg shrink-0">✅</span>
               <div>
                 <p className="text-sm font-bold text-stone-700 mb-0.5">實際造訪</p>
-                <p className="text-xs text-stone-500">所有介紹的景點・餐廳・咖啡廳・住宿都是本人親自造訪。從未去過的地方不會寫。</p>
+                <p className="text-xs text-stone-500">所有介紹的景點・餐廳・咖啡廳（咖啡店）・住宿都是本人親自造訪。從未去過的地方不會寫。</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
@@ -142,7 +152,7 @@ export default function AboutPage() {
             ))}
           </div>
           <p className="text-xs text-stone-500 leading-relaxed">
-            主題涵蓋<strong>咖啡廳・美食・景點・溫泉・住宿・伴手禮</strong>。目前累計介紹超過30個以上的旅遊景點與店家。
+            主題涵蓋<strong>咖啡廳・美食・景點・溫泉・住宿・伴手禮（手信）</strong>。目前累計介紹超過30個以上的旅遊景點與店家。
           </p>
         </section>
 

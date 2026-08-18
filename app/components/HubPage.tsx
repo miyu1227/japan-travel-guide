@@ -13,13 +13,24 @@ export function hubMetadata(hub: Hub) {
   return {
     title: hub.title,
     description: hub.description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+      languages: {
+        "zh-Hant": url,
+        "zh-TW": url,
+        "zh-HK": url,
+        "zh-MO": url,
+        "x-default": url,
+      },
+    },
     openGraph: {
       title: hub.title,
       description: hub.description,
       url,
       type: "website" as const,
       locale: "zh_TW",
+      alternateLocale: ["zh_HK"],
       siteName: "Japan Trip Picks",
       images: [{ url: cover, width: 1200, height: 630, alt: hub.h1 }],
     },
@@ -43,7 +54,7 @@ export default function HubPage({ slug }: { slug: string }) {
     name: hub.title,
     description: hub.description,
     url,
-    inLanguage: "zh-TW",
+    inLanguage: ["zh-TW", "zh-HK"],
     isPartOf: { "@type": "WebSite", name: "Japan Trip Picks", url: BASE },
     publisher: { "@type": "Organization", name: "Japan Trip Picks", url: BASE },
     mainEntity: {

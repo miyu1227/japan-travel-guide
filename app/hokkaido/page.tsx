@@ -19,13 +19,24 @@ export const metadata: Metadata = {
   title: "北海道自由行必去景點10選｜札幌・小樽・富良野完整攻略",
   description:
     "北海道自由行完整指南！小樽音樂盒堂、美瑛青池、富良野薰衣草花田、札幌迴轉壽司、成吉思汗烤肉…台灣香港旅客最推薦的10個景點＋美食＋3天行程一次整理。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "北海道自由行必去景點10選｜札幌・小樽・富良野完整攻略",
     description: "小樽・美瑛・富良野・札幌の必去景點＋美食＋3天行程。台灣香港旅客的北海道完整自由行指南。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "北海道富良野薰衣草花田" }],
   },
@@ -43,7 +54,7 @@ const articleJsonLd = {
   headline: "北海道自由行必去景點10選｜札幌・小樽・富良野完整攻略",
   description: "小樽・美瑛・富良野・札幌の必去景點＋美食＋3天行程。台灣香港旅客的北海道完整自由行指南。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -358,7 +369,7 @@ export default function HokkaidoPage() {
         </div>
         <div className="bg-yellow-50 border border-yellow-200 rounded-2xl px-4 py-3 mb-10 flex items-start gap-2">
           <span className="text-lg shrink-0">🐥</span>
-          <p className="text-sm text-stone-600">「如果是第一次來，最推薦<strong>夏天（薰衣草）</strong>或<strong>冬天（雪祭）</strong>！」</p>
+          <p className="text-sm text-stone-600">「如果是第一次來，最推薦（推介）<strong>夏天（薰衣草）</strong>或<strong>冬天（雪祭）</strong>！」</p>
         </div>
 
         {/* H2: 行程 */}
@@ -368,7 +379,7 @@ export default function HokkaidoPage() {
         <div className="space-y-3 mb-10">
           {[
             { day: "Day 1", area: "札幌", plan: "大通公園 → 時計台 → 晚餐成吉思汗烤肉＋啤酒🍺" },
-            { day: "Day 2", area: "小樽", plan: "小樽運河 → 音樂盒堂 → ルタオ甜點 → 海鮮午餐🦀" },
+            { day: "Day 2", area: "小樽", plan: "小樽運河 → 音樂盒堂 → ルタオ甜點（甜品） → 海鮮午餐🦀" },
             { day: "Day 3", area: "富良野・美瑛", plan: "青池 → 富田農場薰衣草花田 → 回札幌💜" },
           ].map((d) => (
             <div key={d.day} className="bg-white rounded-2xl border border-stone-100 shadow-sm p-4 flex items-start gap-4">
@@ -411,7 +422,7 @@ export default function HokkaidoPage() {
               <strong>新千歳空港（New Chitose Airport / CTS）</strong>是北海道最大的機場，也是台灣・香港旅客往返北海道的主要門戶🛫 從空港到<strong>札幌駅</strong>搭JR快速AIRPORT只要約37分鐘，非常方便。
             </p>
             <p className="text-sm text-stone-600 leading-relaxed">
-              機場內有<strong>大丸松坂屋・Royce巧克力工廠・Steamboy等美食街</strong>，還有<strong>哆啦A夢主題樂園、Hello Kitty Happy Flight</strong>等景點🎁 建議提早2〜3小時到機場，最後採買一波伴手禮再回國！
+              機場內有<strong>大丸松坂屋・Royce巧克力工廠・Steamboy等美食街</strong>，還有<strong>哆啦A夢主題樂園、Hello Kitty Happy Flight</strong>等景點🎁 建議提早2〜3小時到機場，最後採買一波伴手禮（手信）再回國！
             </p>
           </div>
 
@@ -437,7 +448,7 @@ export default function HokkaidoPage() {
               <div className="flex-1 min-w-0">
                 <h3 className="text-base font-black text-stone-800 leading-tight mb-1">最後一天行李好重？</h3>
                 <p className="text-xs text-stone-700 leading-relaxed">
-                  <strong>札幌市內飯店⇄新千歳空港</strong>的行李配送服務🧳 早上寄出，晚上就能在機場取件，最後一天可以輕鬆逛小樽或札幌市區！
+                  <strong>札幌市內飯店（酒店）⇄新千歳空港</strong>的行李配送服務🧳 早上寄出，晚上就能在機場取件，最後一天可以輕鬆逛小樽或札幌市區！
                 </p>
               </div>
             </div>
@@ -473,7 +484,7 @@ export default function HokkaidoPage() {
               🌿 東京野餐推薦｜新宿御苑・代代木公園
             </Link>
             <Link href="/ramen" className="flex items-center gap-2 text-sm text-blue-600 hover:underline">
-              🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系
+              🍜 東京拉麵推薦6選｜必吃（必食）排隊名店・柚子鹽・家系
             </Link>
           </div>
         </div>

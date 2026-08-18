@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "東京地鐵券攻略｜24/48/72小時該選哪一種",
   description:
     "外國旅客限定的地下鐵周遊券，可不限次數搭乘東京メトロ與都營地下鐵。24/48/72小時該選哪種、哪裡買、計時方式，以及「不能搭JR山手線」等常見誤會一次說清。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "東京地鐵券攻略｜Tokyo Subway Ticket 24/48/72小時怎麼選",
     description: "Tokyo Subway Ticket 24/48/72小時票券完整解說。東京メトロ＆都營地下鐵不限次搭乘。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Tokyo Subway Ticket介紹" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "東京地鐵券攻略｜Tokyo Subway Ticket 24/48/72小時怎麼選",
   description: "Tokyo Subway Ticket完整指南。24/48/72小時票券差別、使用範圍與行程建議。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -201,7 +212,7 @@ export default function TokyoSubwayTicketPage() {
             </div>
             <div className="bg-blue-50 border border-blue-100 rounded-xl px-4 py-3">
               <p className="text-sm font-bold text-stone-700 mb-1">🕒 72 小時券</p>
-              <p className="text-xs text-stone-600">3天都會搭地鐵移動、住地下鐵沿線飯店的旅客</p>
+              <p className="text-xs text-stone-600">3天都會搭地鐵移動、住地下鐵沿線飯店（酒店）的旅客</p>
             </div>
           </div>
 
@@ -225,7 +236,7 @@ export default function TokyoSubwayTicketPage() {
 
         {/* おすすめ */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">推薦這樣使用 Tokyo Subway Ticket</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">推薦（推介）這樣使用 Tokyo Subway Ticket</h2>
 
           <div className="mb-4">
             <p className="text-sm font-bold text-stone-700 mb-2">🌸 經典 1 日行程範例</p>

@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "代代木上原咖啡廳｜BOLT・寵物友善名店✅實訪",
   description:
     "代代木上原咖啡廳推薦「BOLT」！東京寵物友善（可帶狗）的時尚咖啡店，位於代代木上原住宅區。手沖咖啡・自家烘焙甜點，附交通方式・店舖資訊。台灣・香港旅客必看東京散步推薦！",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "代代木上原咖啡廳推薦｜BOLT・寵物友善人氣咖啡店",
     description: "代代木上原必去咖啡店！可帶狗的時尚咖啡空間，手沖咖啡＆自家烘焙甜點☕",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "代代木上原咖啡廳推薦・BOLT" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "代代木上原咖啡廳推薦｜BOLT・寵物友善人氣咖啡店【實際造訪】",
   description: "代代木上原必去咖啡店「BOLT」。寵物友善的時尚咖啡空間。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -99,7 +110,7 @@ export default function BoltUeharaPage() {
             <strong>代代木上原</strong>是東京最具品味的住宅區之一🌿 距離澀谷、表參道只有一站，卻保有安靜悠閒的氛圍。街上散布著時尚咖啡店、麵包店、選物店，是當地人最愛的散步路線。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的<strong>「BOLT」</strong>是代代木上原超人氣<strong>寵物友善咖啡店</strong>🐕 不只咖啡好喝、空間時尚，還能帶上愛犬一起享受悠閒時光，是代代木上原必訪的人氣店！
+            這次推薦（推介）的<strong>「BOLT」</strong>是代代木上原超人氣<strong>寵物友善咖啡店</strong>🐕 不只咖啡好喝、空間時尚，還能帶上愛犬一起享受悠閒時光，是代代木上原必訪的人氣店！
           </p>
         </section>
 
@@ -140,7 +151,7 @@ export default function BoltUeharaPage() {
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                代代木上原是當地人才知道的<strong>「隱藏好區」</strong>，遊客不多、氣氛悠閒🌿 BOLT就在這樣的住宅區裡，可以體驗最道地的東京生活感。手沖咖啡＆自家製甜點都很有水準，是<strong>放慢腳步、認真感受東京</strong>的最佳場所。
+                代代木上原是當地人才知道的<strong>「隱藏好區」</strong>，遊客不多、氣氛悠閒🌿 BOLT就在這樣的住宅區裡，可以體驗最道地的東京生活感。手沖咖啡＆自家製甜點（甜品）都很有水準，是<strong>放慢腳步、認真感受東京</strong>的最佳場所。
               </p>
             </div>
 

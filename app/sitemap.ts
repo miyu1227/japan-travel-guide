@@ -57,6 +57,8 @@ const PRIORITY: Record<string, number> = {
   "katsunuma": 0.85,
   "shirahama": 0.85,
   "chigasaki": 0.85,
+  "taiwan-japan-guide": 0.9,
+  "hongkong-japan-guide": 0.9,
   "japan-esim": 0.85,
   "tokyo-subway-ticket": 0.85,
   "narita-airport-access": 0.85,

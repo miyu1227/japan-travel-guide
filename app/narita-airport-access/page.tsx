@@ -17,13 +17,24 @@ export const metadata: Metadata = {
   title: "成田機場到東京交通｜Skyliner・巴士・JR比較",
   description:
     "Skyliner、Narita Express、機場巴士、JR普通電車、包車的所要時間與適合的人一次比較。另附行李配送、深夜抵達的前泊選項與上野・新宿・池袋的最佳路線。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR怎麼選",
     description: "成田機場到東京交通方式比較。Skyliner・NEX・機場巴士・JR・包車・行李配送・前泊完整介紹。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "成田機場到東京交通攻略" }],
   },
@@ -41,7 +52,7 @@ const articleJsonLd = {
   headline: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR怎麼選",
   description: "成田機場到東京市區交通方式比較。Skyliner、Narita Express、機場巴士、JR、包車、行李配送與成田機場前泊整理。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -101,7 +112,7 @@ export default function NaritaAirportAccessPage() {
             成田機場離東京中心約60〜80公里，交通方式有很多種，每一種都有適合的人。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這篇寫給<strong>第一次從成田入境、還沒決定要搭什麼</strong>的台灣・香港旅人。<strong>你會知道</strong>：Skyliner、Narita Express、機場巴士、JR普通電車、包車各自的所要時間與適合的人，飯店在上野・新宿・池袋・東京站時該選哪一種，還有<strong>行李很多</strong>與<strong>深夜／清晨班機</strong>時的解法（行李配送、成田前泊）。
+            這篇寫給<strong>第一次從成田入境、還沒決定要搭什麼</strong>的台灣・香港旅人。<strong>你會知道</strong>：Skyliner、Narita Express、機場巴士、JR普通電車、包車各自的所要時間與適合的人，飯店（酒店）在上野・新宿・池袋・東京站時該選哪一種，還有<strong>行李很多</strong>與<strong>深夜／清晨班機</strong>時的解法（行李配送、成田前泊）。
           </p>
         </section>
 
@@ -128,7 +139,7 @@ export default function NaritaAirportAccessPage() {
               <thead>
                 <tr className="bg-amber-50">
                   <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">交通方式</th>
-                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">推薦對象</th>
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">推薦（推介）對象</th>
                   <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">適合區域</th>
                   <th className="border border-stone-200 px-2 py-2 text-center font-bold text-stone-700">行李</th>
                   <th className="border border-stone-200 px-2 py-2 text-center font-bold text-stone-700">轉乘</th>
@@ -347,7 +358,7 @@ export default function NaritaAirportAccessPage() {
           </p>
           <ul className="space-y-1.5 text-sm text-stone-600 mb-4">
             <li>🌙 深夜抵達、來不及搭末班車</li>
-            <li>🌅 清早班機、不想搭計程車趕</li>
+            <li>🌅 清早班機、不想搭計程車（的士）趕</li>
             <li>💤 想短時間補眠，不用拉到市區飯店</li>
           </ul>
 

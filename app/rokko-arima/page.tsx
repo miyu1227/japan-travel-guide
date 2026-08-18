@@ -15,13 +15,24 @@ export const metadata: Metadata = {
   title: "六甲山健行推薦｜神戶登山＆有馬溫泉一日遊【實際造訪】",
   description:
     "從御影出發登頂六甲山，下山搭纜車到有馬溫泉泡湯，最後品嚐「arima gelateria Stagione」義式冰淇淋。附登山路線・交通・推薦店家。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "六甲山健行推薦｜神戶登山＆有馬溫泉一日遊",
     description: "六甲山登山＋有馬溫泉＋人氣ジェラート！關西自然＆溫泉一日遊指南。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "六甲山健行推薦・神戶登山" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   headline: "六甲山健行推薦｜神戶登山＆有馬溫泉一日遊【實際造訪】",
   description: "神戶六甲山健行完全指南。登山＋有馬溫泉＋人氣ジェラート。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -98,12 +109,12 @@ export default function RokkoArimaPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">關西最棒的一日遊：登山＋溫泉＋甜點</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">關西最棒的一日遊：登山＋溫泉＋甜點（甜品）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>六甲山</strong>位於兵庫縣神戶市，是<strong>關西人氣No.1的健行勝地</strong>🏔️ 最高峰標高931公尺，從神戶市區搭電車就能輕鬆抵達登山口。除了健行絕景外，下山後可以搭<strong>纜車到有馬溫泉</strong>，享受<strong>日本三大古湯</strong>之一的溫泉文化♨️
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的<strong>「登山＋溫泉＋甜點」完美一日遊</strong>——御影出發登六甲山頂、纜車下到有馬溫泉、最後品嚐人氣<strong>「arima gelateria Stagione」</strong>義式冰淇淋🍦 是關西旅遊中能同時感受自然、文化、美食的最棒行程✨
+            這次推薦（推介）的<strong>「登山＋溫泉＋甜點」完美一日遊</strong>——御影出發登六甲山頂、纜車下到有馬溫泉、最後品嚐人氣<strong>「arima gelateria Stagione」</strong>義式冰淇淋（雪糕）🍦 是關西旅遊中能同時感受自然、文化、美食的最棒行程✨
           </p>
         </section>
 

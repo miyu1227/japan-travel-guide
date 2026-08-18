@@ -12,13 +12,24 @@ export const metadata: Metadata = {
   title: "宇都宮觀光3選｜若山農場竹林・餃子街・二荒山",
   description:
     "夢幻竹林絕景「若竹之杜 若山農場」、餃子街「宇都宮餃子通」、能量景點「宇都宮二荒山神社」。東京近郊一日遊好去處，附交通方式與完整指南。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "宇都宮觀光推薦3選｜栃木必去竹林・餃子街・神社",
     description: "宇都宮一日遊！夢幻竹林・餃子街・能量景點神社。附交通・推薦完整指南。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "宇都宮觀光推薦・若山農場竹林" }],
   },
@@ -36,7 +47,7 @@ const articleJsonLd = {
   headline: "宇都宮觀光推薦3選｜栃木必去竹林・餃子街・二荒山神社【實際造訪】",
   description: "宇都宮觀光推薦3選。若山農場竹林、宇都宮餃子通、二荒山神社完整介紹。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -100,7 +111,7 @@ export default function UtsunomiyaPage() {
             <strong>宇都宮</strong>是栃木縣的縣廳所在地，從東京搭新幹線只要<strong>約50分</strong>就能抵達🚄 是日本知名的「<strong>餃子之都</strong>」，每年人均餃子消費量名列前茅。除了餃子之外，還有<strong>夢幻竹林</strong>和歷史悠久的<strong>能量景點</strong>。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的3個必去景點：<strong>若山農場</strong>的夢幻竹林（為日劇、廣告取景地）、<strong>宇都宮餃子通</strong>的餃子巡禮，以及宇都宮地標<strong>二荒山神社</strong>✨ 一天行程剛剛好！
+            這次推薦（推介）的3個必去景點：<strong>若山農場</strong>的夢幻竹林（為日劇、廣告取景地）、<strong>宇都宮餃子通</strong>的餃子巡禮，以及宇都宮地標<strong>二荒山神社</strong>✨ 一天行程剛剛好！
           </p>
         </section>
 
@@ -174,7 +185,7 @@ export default function UtsunomiyaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600">📍 栃木縣宇都宮市新里町丙254</p>
-              <p className="text-xs text-stone-600">🚃 JR「宇都宮」駅搭計程車約25分（建議自駕）</p>
+              <p className="text-xs text-stone-600">🚃 JR「宇都宮」駅搭計程車（的士）約25分（建議自駕）</p>
               <p className="text-xs text-stone-600">⏰ 9:00〜17:00（季節變動）</p>
               <p className="text-xs text-stone-600">💴 入園料 ¥1,000〜（依季節變動）</p>
               <p className="text-xs text-stone-600">🅿️ 免費停車場有</p>

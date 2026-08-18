@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "東京繡球花景點2選｜台場・白山神社免費賞花🌸",
   description:
     "6月的東京限定景色！精選2個免費賞紫陽花（あじさい）景點：台場シンボルプロムナード公園、文京區白山神社「文京あじさいまつり」。含最佳花期、交通方式與拍照攻略。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "東京繡球花景點推薦2選｜台場シンボルプロムナード＆文京白山神社🌸",
     description: "6月東京限定景色！紫陽花景點：台場シンボルプロムナード＆文京白山神社。花期・交通・拍照攻略。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "東京繡球花景點・紫陽花" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "東京繡球花景點推薦2選｜台場シンボルプロムナード＆文京白山神社紫陽花",
   description: "6月東京限定景色！紫陽花（あじさい）景點：台場シンボルプロムナード公園、文京區白山神社「文京あじさいまつり」。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -205,7 +216,7 @@ export default function AjisaiPage() {
                 <p className="text-sm text-stone-600 leading-relaxed mb-3" dangerouslySetInnerHTML={{ __html: spot.intro }} />
 
                 <div className="bg-purple-50 border border-purple-100 rounded-xl px-4 py-3 mb-3">
-                  <p className="text-xs font-bold text-purple-500 mb-1">✨ 推薦給旅客的理由</p>
+                  <p className="text-xs font-bold text-purple-500 mb-1">✨ 推薦（推介）給旅客的理由</p>
                   <p className="text-sm text-stone-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: spot.reason }} />
                 </div>
 

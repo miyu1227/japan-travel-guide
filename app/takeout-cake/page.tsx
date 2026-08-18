@@ -14,13 +14,24 @@ export const metadata: Metadata = {
   title: "東京外帶蛋糕｜PARIYA澀谷・杯型鮮奶油蛋糕✅實購",
   description:
     "青山發跡的人氣熟食店「PARIYA」招牌杯型鮮奶油蛋糕，草莓經典款¥1,058起、還有季節限定水蜜桃口味。澀谷SCRAMBLE SQUARE B2直達車站，附價格・營業時間。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "東京外帶蛋糕推薦｜PARIYA 澀谷SCRAMBLE SQUARE店",
     description: "IG爆紅的杯型鮮奶油蛋糕！澀谷車站直結B2，帶回飯店當宵夜的最強選擇🍰",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "東京外帶蛋糕推薦・PARIYA的草莓與水蜜桃鮮奶油蛋糕" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   description:
     "東京外帶蛋糕推薦：青山發跡的熟食名店PARIYA的招牌杯型鮮奶油蛋糕。澀谷SCRAMBLE SQUARE B2、價格、營業時間與購買重點。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-08-18T00:00:00+09:00",
@@ -90,7 +101,7 @@ export default function TakeoutCakePage() {
 
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
-          <span className="bg-orange-100 text-orange-700 border border-orange-300 text-xs font-semibold px-3 py-1 rounded-full">🍰 甜點・伴手禮</span>
+          <span className="bg-orange-100 text-orange-700 border border-orange-300 text-xs font-semibold px-3 py-1 rounded-full">🍰 甜點（甜品）・伴手禮（手信）</span>
           <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 東京・澀谷</span>
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">✅ 實際購買</span>
         </div>
@@ -103,9 +114,9 @@ export default function TakeoutCakePage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">在日本，「外帶蛋糕回飯店」是最被低估的旅行享受</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">在日本，「外帶蛋糕回飯店（酒店）」是最被低估的旅行享受</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            東京的甜點店幾乎都是<strong>排隊、限時、要等位</strong>，但其實有一個更輕鬆的玩法——<strong>買一個蛋糕帶回飯店</strong>🏨 洗完澡、脫掉走了一整天的鞋子，配一杯便利商店的拿鐵，那一口的幸福感比在店裡排一小時還強。
+            東京的甜點店幾乎都是<strong>排隊、限時、要等位</strong>，但其實有一個更輕鬆的玩法——<strong>買一個蛋糕帶回飯店</strong>🏨 洗完澡、脫掉走了一整天的鞋子，配一杯便利商店（便利店）的拿鐵，那一口的幸福感比在店裡排一小時還強。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             日本的蛋糕店也非常懂這件事：<strong>保冷劑幾乎都會附</strong>、盒子做得很挺、鮮奶油也扛得住一小段路程，所以「外帶」在日本是完全成立的選項🍰
@@ -118,7 +129,7 @@ export default function TakeoutCakePage() {
         <PrepBannerCompact />
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京外帶蛋糕推薦・PARIYA</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">東京外帶蛋糕推薦（推介）・PARIYA</h2>
 
         {/* Spot 1: PARIYA */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
@@ -180,7 +191,7 @@ export default function TakeoutCakePage() {
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
               <span className="text-sm shrink-0">💡</span>
               <p className="text-xs text-stone-600">
-                鮮奶油蛋糕<strong>當天吃完最好吃</strong>，不要放到隔天；飯店房間的冰箱通常偏弱，買回去先冰、早點吃掉🧊
+                鮮奶油蛋糕<strong>當天吃完最好吃（好食）</strong>，不要放到隔天；飯店房間的冰箱通常偏弱，買回去先冰、早點吃掉🧊
               </p>
             </div>
 
@@ -205,7 +216,7 @@ export default function TakeoutCakePage() {
             <li>✅ 百貨公司地下（デパ地下）與車站直結的商場，是外帶甜點CP值最高的地方🚉</li>
             <li>✅ 賞味期限多半是<strong>當日</strong>，買回飯店當天吃完最安全</li>
             <li>✅ 日本蛋糕普遍<strong>甜度偏低</strong>，覺得台灣・香港的蛋糕太甜的人會非常喜歡</li>
-            <li>✅ 想帶回國的話請改買餅乾・費南雪等常溫燒菓子，鮮奶油蛋糕無法上飛機🍪</li>
+            <li>✅ 想帶回國的話請改買餅乾（曲奇）・費南雪等常溫燒菓子，鮮奶油蛋糕無法上飛機🍪</li>
           </ul>
         </section>
 

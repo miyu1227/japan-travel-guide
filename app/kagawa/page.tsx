@@ -19,13 +19,24 @@ export const metadata: Metadata = {
   title: "香川觀光5選｜讚岐烏龍麵・水族館・金刀比羅宮",
   description:
     "讚岐烏龍麵名店「山越うどん」「山下うどん」、四國水族館、金刀比羅宮、溫泉旅館御宿敷島館。香川一日遊・兩日遊行程，附交通・門票・必吃。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "香川觀光推薦5選｜烏龍麵縣必去美食・水族館・金刀比羅宮",
     description: "香川旅遊指南！讚岐烏龍麵名店＆四國水族館＆金刀比羅宮＆人氣溫泉旅館。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "香川觀光推薦・讚岐烏龍麵" }],
   },
@@ -43,7 +54,7 @@ const articleJsonLd = {
   headline: "香川觀光推薦5選｜烏龍麵縣必去美食・水族館・金刀比羅宮【實際造訪】",
   description: "香川縣旅遊完全指南。讚岐烏龍麵名店、四國水族館、金刀比羅宮、人氣溫泉旅館。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -109,7 +120,7 @@ export default function KagawaPage() {
             <strong>香川縣</strong>是日本四國地區的縣，自稱<strong>「烏龍麵縣」</strong>🍜 日本人均烏龍麵消費量No.1，全縣有約600家烏龍麵店，是名副其實的<strong>讚岐烏龍麵</strong>之鄉。從關西可搭新幹線＋瀨戶大橋線約3小時抵達。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的5個必去景點：人氣烏龍麵名店<strong>「山越うどん」「山下うどん」</strong>、超人氣<strong>「四國水族館」</strong>、四國最大能量景點<strong>「金刀比羅宮」</strong>，以及高松名宿<strong>「御宿敷島館」</strong>✨ 一日〜兩日遊行程剛剛好！
+            這次推薦（推介）的5個必去景點：人氣烏龍麵名店<strong>「山越うどん」「山下うどん」</strong>、超人氣<strong>「四國水族館」</strong>、四國最大能量景點<strong>「金刀比羅宮」</strong>，以及高松名宿<strong>「御宿敷島館」</strong>✨ 一日〜兩日遊行程剛剛好！
           </p>
         </section>
 
@@ -269,7 +280,7 @@ export default function KagawaPage() {
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-amber-700 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                Dormy系列著名的<strong>「夜鳴拉麵服務」</strong>—— 晚上免費提供一碗醬油拉麵🍜 早餐也有當地特色料理，包括<strong>讚岐烏龍麵吃到飽</strong>！房間整潔舒適，工作人員親切，是台灣・香港旅客也很安心入住的飯店。
+                Dormy系列著名的<strong>「夜鳴拉麵服務」</strong>—— 晚上免費提供一碗醬油拉麵🍜 早餐也有當地特色料理，包括<strong>讚岐烏龍麵吃到飽</strong>！房間整潔舒適，工作人員親切，是台灣・香港旅客也很安心入住的飯店（酒店）。
               </p>
             </div>
             <div className="flex flex-wrap gap-2 mb-4">{["♨️ 大浴場＆露天風呂", "🍜 夜鳴拉麵免費", "🍳 烏龍麵早餐", "⛩️ 金刀比羅宮徒歩"].map((t) => (<span key={t} className="text-xs bg-amber-50 text-amber-700 border border-amber-200 px-3 py-1 rounded-full">{t}</span>))}</div>

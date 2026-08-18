@@ -15,13 +15,24 @@ export const metadata: Metadata = {
   title: "山梨勝沼一泊二日｜酒莊品酒・採桃・石和溫泉🍇",
   description:
     "搭中央線到「勝沼ぶどう郷」，走進日本葡萄酒的故鄉山梨勝沼。銀月食堂・シャトー・メルシャン酒莊品酒・石和溫泉住宿・採桃體驗完整記錄。附交通・預約資訊。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "山梨勝沼一泊二日｜葡萄鄉美食＆シャトー・メルシャン酒莊＆石和溫泉住宿＆採桃體驗",
     description: "東京近郊！勝沼葡萄鄉一泊二日。銀月食堂・Château Mercian・石和溫泉ホテル甲子園・採桃・信玄餅・鳥もつ煮完整指南。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "山梨勝沼一日遊・葡萄鄉之旅" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   headline: "山梨勝沼一日遊｜葡萄鄉美食＆シャトー・メルシャン酒莊之旅【實際造訪】",
   description: "東京近郊勝沼ぶどう郷葡萄鄉一日遊：在地食堂「銀月食堂」與シャトー・メルシャン酒莊品酒導覽。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -142,7 +153,7 @@ export default function KatsunumaPage() {
             從新宿搭中央線特急約1個多小時，就能抵達山梨縣的<strong>「勝沼ぶどう郷」</strong>車站🍇 這裡是<strong>日本葡萄酒的發源地</strong>，四周被葡萄園與酒莊環繞，是東京近郊很適合安排一泊二日小旅行的地方。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次從「勝沼ぶどう郷」駅出發，造訪了車站旁的在地食堂<strong>「銀月食堂」</strong>、日本代表性酒莊<strong>「シャトー・メルシャン」</strong>，並住進<strong>石和溫泉「銘庭の宿 ホテル甲子園」</strong>享受溫泉＆桑拿🧖 隔天到<strong>「あすなろ園」</strong>採桃🍑、順路去<strong>「桔梗信玄餅工場」</strong>買伴手禮，最後在<strong>「里の駅 いちのみや」</strong>吃山梨B級美食鳥もつ煮＆葡萄汁。以下是實際造訪的完整紀錄✨
+            這次從「勝沼ぶどう郷」駅出發，造訪了車站旁的在地食堂<strong>「銀月食堂」</strong>、日本代表性酒莊<strong>「シャトー・メルシャン」</strong>，並住進<strong>石和溫泉「銘庭の宿 ホテル甲子園」</strong>享受溫泉＆桑拿🧖 隔天到<strong>「あすなろ園」</strong>採桃🍑、順路去<strong>「桔梗信玄餅工場」</strong>買伴手禮（手信），最後在<strong>「里の駅 いちのみや」</strong>吃山梨B級美食鳥もつ煮＆葡萄汁。以下是實際造訪的完整紀錄✨
           </p>
         </section>
 
@@ -220,7 +231,7 @@ export default function KatsunumaPage() {
             </p>
 
             <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
-              <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦（推介）給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
                 一出車站就能吃到、完全不用花力氣找路！這次點了清爽的<strong>支那麵</strong>和份量十足的<strong>生薑燒定食</strong>（附荷包蛋、高麗菜絲、味噌湯與白飯），還有葡萄產地才有的濃郁<strong>葡萄汁</strong>🍇 價位親民、氛圍樸實，很適合抵達後先在這裡補充體力再出發。
               </p>
@@ -295,7 +306,7 @@ export default function KatsunumaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600">📍 山梨県甲州市勝沼町下岩崎1425-1</p>
-              <p className="text-xs text-stone-600">🚃 JR「勝沼ぶどう郷」駅搭計程車約8分</p>
+              <p className="text-xs text-stone-600">🚃 JR「勝沼ぶどう郷」駅搭計程車（的士）約8分</p>
               <p className="text-xs text-stone-600">⏰ 葡萄酒藝廊・商店 10:00〜16:30（年末年始休）</p>
               <p className="text-xs text-stone-600">💴 Discovery Tour ¥3,000（約90分・限額10名・需預約）</p>
             </div>
@@ -496,7 +507,7 @@ export default function KatsunumaPage() {
             <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                山梨最有名的和菓子伴手禮之一，包裝可愛、常溫可保存數日，很適合帶回台灣・香港送人🎁 工場內也有咖啡廳可以吃到<strong>信玄餅霜淇淋</strong>＆<strong>信玄餅風味甜點</strong>，逛累了剛好休息。回程前先來這裡採買最有效率。
+                山梨最有名的和菓子伴手禮之一，包裝可愛、常溫可保存數日，很適合帶回台灣・香港送人🎁 工場內也有咖啡廳（咖啡店）可以吃到<strong>信玄餅霜淇淋</strong>＆<strong>信玄餅風味甜點（甜品）</strong>，逛累了剛好休息。回程前先來這裡採買最有效率。
               </p>
             </div>
 

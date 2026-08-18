@@ -12,13 +12,24 @@ export const metadata: Metadata = {
   title: "伊勢原義式冰淇淋｜石田牧場めぐり・牧場直送✅實訪",
   description:
     "神奈川伊勢原必吃義式冰淇淋「石田牧場のジェラート屋 めぐり」！從牧場直送的新鮮牛奶製作的人氣ジェラート，CP值超高的隱藏甜點名店。附交通方式・推薦口味・價格。台灣・香港旅客必看！",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "伊勢原義式冰淇淋推薦｜石田牧場めぐり・神奈川人氣甜點",
     description: "神奈川伊勢原必吃！牧場直送牛奶的人氣義式冰淇淋。附交通・推薦口味・價格。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "伊勢原義式冰淇淋・石田牧場めぐり" }],
   },
@@ -36,7 +47,7 @@ const articleJsonLd = {
   headline: "伊勢原義式冰淇淋推薦｜石田牧場めぐり・神奈川人氣甜點【實際造訪】",
   description: "神奈川伊勢原必吃義式冰淇淋「石田牧場のジェラート屋 めぐり」。牧場直送的人氣ジェラート。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -98,7 +109,7 @@ export default function IseharaGelatoPage() {
             <strong>伊勢原</strong>位於神奈川縣中部，從新宿搭小田急線約60分就能抵達🚃 是一個被大山環繞、保留豐富自然的小城鎮，當地人常來這裡享受悠閒散步和美食。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的<strong>「石田牧場のジェラート屋 めぐり」</strong>是當地人氣No.1的<strong>義式冰淇淋專門店</strong>🍦 直接設在牧場旁邊，使用每天現擠的<strong>新鮮牛奶</strong>製作的ジェラート，濃郁香醇、CP值超高。是來神奈川旅遊絕對不能錯過的隱藏甜點名店✨
+            這次推薦（推介）的<strong>「石田牧場のジェラート屋 めぐり」</strong>是當地人氣No.1的<strong>義式冰淇淋（雪糕）專門店</strong>🍦 直接設在牧場旁邊，使用每天現擠的<strong>新鮮牛奶</strong>製作的ジェラート，濃郁香醇、CP值超高。是來神奈川旅遊絕對不能錯過的隱藏甜點（甜品）名店✨
           </p>
         </section>
 
@@ -149,7 +160,7 @@ export default function IseharaGelatoPage() {
 
             {/* 推薦口味 */}
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
-              <p className="text-xs font-bold text-amber-700 mb-2">🍨 必吃口味</p>
+              <p className="text-xs font-bold text-amber-700 mb-2">🍨 必吃（必食）口味</p>
               <ul className="text-xs text-stone-600 space-y-1">
                 <li>・<strong>ミルク（牛乳）</strong>—— 招牌！能完整品嚐牧場的鮮牛奶</li>
                 <li>・<strong>季節水果</strong>—— 用伊勢原當地水果，依時節變換</li>
@@ -161,7 +172,7 @@ export default function IseharaGelatoPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600">📍 神奈川縣伊勢原市小稻葉2330</p>
-              <p className="text-xs text-stone-600">🚃 小田急線「伊勢原」駅搭計程車約15分／開車約20分</p>
+              <p className="text-xs text-stone-600">🚃 小田急線「伊勢原」駅搭計程車（的士）約15分／開車約20分</p>
               <p className="text-xs text-stone-600">⏰ 11:00〜17:00（週一・週二公休／冬季變動）</p>
               <p className="text-xs text-stone-600">💴 迷你 ¥360／單球 ¥450／雙球 ¥630／三球 ¥750</p>
               <p className="text-xs text-stone-600">🅿️ 免費停車場有</p>
@@ -254,7 +265,7 @@ export default function IseharaGelatoPage() {
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要租車嗎？</p>
               <p className="text-xs text-stone-600 leading-relaxed">
-                伊勢原駅有<strong>公車</strong>可到各景點，不強制需要租車。但如果想深入牧場、農場多處遊覽，租車會更彈性。伊勢原駅有Times Car等租車服務。
+                伊勢原駅有<strong>公車（巴士）</strong>可到各景點，不強制需要租車。但如果想深入牧場、農場多處遊覽，租車會更彈性。伊勢原駅有Times Car等租車服務。
               </p>
             </div>
           </div>

@@ -15,13 +15,24 @@ export const metadata: Metadata = {
   title: "京都伊根町觀光推薦｜舟屋村絕景・推薦咖啡＆住宿【實際造訪】",
   description:
     "日本三大舟屋村之一、被選為「日本最美村落」的京都伊根町。推薦舟屋咖啡「INE CAFE」與住宿「仁風荘」，京都市區一日遊或兩日慢遊都剛好。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "京都伊根町觀光推薦｜舟屋村絕景・推薦咖啡＆住宿",
     description: "日本最美村落「伊根舟屋」！附INE CAFE咖啡＆仁風荘住宿。京都隱藏絕景。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "伊根町舟屋・京都隱藏絕景" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   headline: "京都伊根町觀光推薦｜舟屋村絕景・推薦咖啡＆住宿【實際造訪】",
   description: "京都伊根町完整旅遊指南。舟屋村、INE CAFE、仁風荘。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -103,7 +114,7 @@ export default function InePage() {
             <strong>伊根町（伊根の舟屋）</strong>位於京都府北部，是<strong>日本最美村落聯盟</strong>認定的夢幻海邊聚落🌊 230棟<strong>舟屋（funaya）</strong>沿著伊根灣排列，1樓是船庫、2樓是住家，形成全世界都罕見的獨特街景。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            因為交通較不便，反而保留了純樸的漁村風情，被譽為<strong>「京都的小威尼斯」</strong>🚤 這次推薦伊根町觀光的<strong>3個要素</strong>——舟屋村絕景＋舟屋咖啡<strong>「INE CAFE」</strong>＋當地住宿<strong>「仁風荘」</strong>，安排一日遊或慢遊兩日都很棒✨
+            因為交通較不便，反而保留了純樸的漁村風情，被譽為<strong>「京都的小威尼斯」</strong>🚤 這次推薦（推介）伊根町觀光的<strong>3個要素</strong>——舟屋村絕景＋舟屋咖啡<strong>「INE CAFE」</strong>＋當地住宿<strong>「仁風荘」</strong>，安排一日遊或慢遊兩日都很棒✨
           </p>
         </section>
 
@@ -211,10 +222,10 @@ export default function InePage() {
           <div className="p-5">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-8 h-8 rounded-full bg-pink-500 text-white flex items-center justify-center text-sm font-black shrink-0">2</div>
-              <div><h3 className="text-base font-black text-stone-800">INE CAFE</h3><span className="text-xs text-stone-400">Ine Cafe / 舟屋咖啡廳</span></div>
+              <div><h3 className="text-base font-black text-stone-800">INE CAFE</h3><span className="text-xs text-stone-400">Ine Cafe / 舟屋咖啡廳（咖啡店）</span></div>
             </div>
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
-              由<strong>舟屋改建</strong>的人氣咖啡廳☕ 1樓是船庫＆露台座位，可以一邊喝咖啡一邊看著海水拍打船庫的迷人景色🌊 提供當地新鮮素材製作的咖啡、甜點、輕食，是伊根散步途中休息的最佳選擇。
+              由<strong>舟屋改建</strong>的人氣咖啡廳☕ 1樓是船庫＆露台座位，可以一邊喝咖啡一邊看著海水拍打船庫的迷人景色🌊 提供當地新鮮素材製作的咖啡、甜點（甜品）、輕食，是伊根散步途中休息的最佳選擇。
             </p>
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>

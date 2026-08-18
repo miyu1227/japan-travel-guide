@@ -13,13 +13,24 @@ export const metadata: Metadata = {
   title: "Mister Donut期間限定｜もっちゅりん甜甜圈✅實購",
   description:
     "Mister Donut（ミスタードーナツ）期間限定話題新商品「もっちゅりん」。結合波堤＆布丁的Q彈口感，每天排隊售完。附口味種類・價格・購買方式。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "Mister Donut期間限定推薦｜超人氣もっちゅりん甜甜圈",
     description: "日本ミスドの新商品「もっちゅりん」！結合波堤＆布丁的Q彈甜甜圈。每天排隊售完。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Mister Donut もっちゅりん" }],
   },
@@ -37,7 +48,7 @@ const articleJsonLd = {
   headline: "Mister Donut期間限定推薦｜超人氣もっちゅりん甜甜圈【實際購買】",
   description: "日本Mister Donut期間限定新商品「もっちゅりん」完整介紹。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -94,7 +105,7 @@ export default function MisterDonutPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">每天排隊售完！日本最話題的限定甜甜圈</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            日本最大連鎖甜甜圈店<strong>Mister Donut（ミスタードーナツ）</strong>，2026年推出的<strong>期間限定新商品</strong>「もっちゅりん」🍩 結合招牌波堤的Q彈與布丁的滑順，是日本社群媒體話題第一名的甜點！
+            日本最大連鎖甜甜圈店<strong>Mister Donut（ミスタードーナツ）</strong>，2026年推出的<strong>期間限定新商品</strong>「もっちゅりん」🍩 結合招牌波堤的Q彈與布丁的滑順，是日本社群媒體話題第一名的甜點（甜品）！
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
             因為太受歡迎，全國門市每天都<strong>排隊到售完</strong>，許多客人開店前就在等。從台灣・香港來日本旅遊，絕對不能錯過這個只有日本才吃得到的限定美味✨
@@ -104,7 +115,7 @@ export default function MisterDonutPage() {
         <PrepBannerCompact />
 
         {/* Shop */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">日本期間限定甜點推薦</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">日本期間限定甜點推薦（推介）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-1 gap-0.5">
@@ -233,7 +244,7 @@ export default function MisterDonutPage() {
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 可以外帶多久？</p>
               <p className="text-xs text-stone-600 leading-relaxed">
-                甜甜圈類<strong>當天內</strong>食用最美味，冷藏保存約1〜2天但布丁餡口感會變化。飯店冰箱冰過再吃反而別有一番風味，但建議當天吃完。
+                甜甜圈類<strong>當天內</strong>食用最美味，冷藏保存約1〜2天但布丁餡口感會變化。飯店（酒店）冰箱冰過再吃反而別有一番風味，但建議當天吃完。
               </p>
             </div>
             <div>

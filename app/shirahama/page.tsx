@@ -15,13 +15,24 @@ export const metadata: Metadata = {
   title: "和歌山白浜4選｜熊貓樂園・海景咖啡・海鮮BBQ",
   description:
     "可近距離看熊貓的「Adventure World冒險大世界」、白浜志原海岸的豪華露營、海景名店「Kagerou Café」、「とれとれ市場」海鮮BBQ。附交通・料金・營業時間。",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "和歌山白浜景點推薦4選｜熊貓樂園・海邊露營・海景咖啡・海鮮BBQ",
     description: "和歌山白浜必去4選！冒險大世界看熊貓・志原海岸豪華露營・海景咖啡・とれとれ市場海鮮BBQ。附交通・料金。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "和歌山白浜景點推薦・海邊露營與海景" }],
   },
@@ -39,7 +50,7 @@ const articleJsonLd = {
   headline: "和歌山白浜景點推薦4選｜熊貓樂園・海邊露營・海景咖啡・海鮮BBQ【實際造訪】",
   description: "和歌山白浜必去景點：Adventure World冒險大世界、In the Outdoor白浜志原海岸、Kagerou Café、とれとれ市場海鮮BBQ。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -113,10 +124,10 @@ export default function ShirahamaPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">白浜，是關西最療癒的海邊度假勝地</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            <strong>白浜（Shirahama）</strong>位於和歌山縣南部，是關西人氣的海濱度假地🌊 這裡有雪白的沙灘、溫泉、超好吃的海鮮，還有可以近距離看到<strong>熊貓</strong>的主題樂園，從大阪開車約2小時就能抵達，非常適合安排一趟兩天一夜的小旅行。
+            <strong>白浜（Shirahama）</strong>位於和歌山縣南部，是關西人氣的海濱度假地🌊 這裡有雪白的沙灘、溫泉、超好吃（好食）的海鮮，還有可以近距離看到<strong>熊貓</strong>的主題樂園，從大阪開車約2小時就能抵達，非常適合安排一趟兩天一夜的小旅行。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這篇整理了實際造訪過、白浜最推薦的<strong>4個景點</strong>——看熊貓的<strong>Adventure World</strong>、海邊豪華露營<strong>In the Outdoor白浜志原海岸</strong>、海景名店<strong>Kagerou Café</strong>，還有海鮮BBQ天堂<strong>とれとれ市場</strong>，一次玩遍白浜的自然、美食與住宿✨
+            這篇整理了實際造訪過、白浜最推薦（推介）的<strong>4個景點</strong>——看熊貓的<strong>Adventure World</strong>、海邊豪華露營<strong>In the Outdoor白浜志原海岸</strong>、海景名店<strong>Kagerou Café</strong>，還有海鮮BBQ天堂<strong>とれとれ市場</strong>，一次玩遍白浜的自然、美食與住宿✨
           </p>
         </section>
 
@@ -317,13 +328,13 @@ export default function ShirahamaPage() {
             </div>
 
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
-              白浜名產「<strong>かげろう</strong>」的老店「福菱」直營的海景咖啡廳☕ 露台座位可以一邊看海一邊享用甜點，店內外約有50個座位。招牌是本店限定的<strong>「生かげろう」</strong>——入口即化的鬆軟蛋糕夾心，一個只要120円，便宜又好吃。
+              白浜名產「<strong>かげろう</strong>」的老店「福菱」直營的海景咖啡廳（咖啡店）☕ 露台座位可以一邊看海一邊享用甜點（甜品），店內外約有50個座位。招牌是本店限定的<strong>「生かげろう」</strong>——入口即化的鬆軟蛋糕夾心，一個只要120円，便宜又好吃。
             </p>
 
             <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                能一邊看海一邊吃白浜名產，還能<strong>買伴手禮</strong>🎁 除了甜點，手沖咖啡、招牌炸豬排三明治、蓬鬆歐姆蛋三明治也很受歡迎。逛完景點來這裡看海休息剛剛好，也支援刷卡・行動支付與英文服務，對旅客很友善。
+                能一邊看海一邊吃白浜名產，還能<strong>買伴手禮（手信）</strong>🎁 除了甜點，手沖咖啡、招牌炸豬排三明治、蓬鬆歐姆蛋三明治也很受歡迎。逛完景點來這裡看海休息剛剛好，也支援刷卡・行動支付與英文服務，對旅客很友善。
             </p>
             </div>
 

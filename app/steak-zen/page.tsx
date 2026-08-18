@@ -12,13 +12,24 @@ export const metadata: Metadata = {
   title: "神戶牛推薦｜ステーキハウスZEN三宮・A5鐵板燒",
   description:
     "神戶旅遊必吃神戶牛！「ステーキハウスZEN 三宮店」是當地人氣鐵板燒名店，A5等級神戶牛在主廚眼前現煎，肉質入口即化。附交通方式・推薦菜單・價格・預約方式。台灣・香港旅客必看！",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "神戶牛推薦｜ステーキハウスZEN 三宮店・鐵板燒名店",
     description: "神戶牛A5鐵板燒名店「ステーキハウスZEN 三宮店」。主廚現煎・入口即化。附交通・菜單・預約。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "神戶牛推薦・ステーキハウスZEN 三宮店" }],
   },
@@ -36,7 +47,7 @@ const articleJsonLd = {
   headline: "神戶牛推薦｜ステーキハウスZEN 三宮店・鐵板燒名店【實際品嚐】",
   description: "神戶牛A5鐵板燒名店「ステーキハウスZEN 三宮店」實際品嚐心得。交通・菜單・預約方式。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -102,12 +113,12 @@ export default function SteakZenPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">來神戶旅遊，必吃的當然是「神戶牛」</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">來神戶旅遊，必吃（必食）的當然是「神戶牛」</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             來日本關西旅遊，<strong>神戶牛</strong>絕對是必吃名單第一名🥩 油花細緻、入口即化，是世界知名的和牛代表。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的是位於三宮的人氣鐵板燒名店<strong>「ステーキハウスZEN 三宮店」</strong>。由主廚在你眼前現場煎烤，從聲音到香氣都是一場饗宴✨ 是台灣・香港旅客造訪神戶時CP值很高的神戶牛體驗。
+            這次推薦（推介）的是位於三宮的人氣鐵板燒名店<strong>「ステーキハウスZEN 三宮店」</strong>。由主廚在你眼前現場煎烤，從聲音到香氣都是一場饗宴✨ 是台灣・香港旅客造訪神戶時CP值很高的神戶牛體驗。
           </p>
         </section>
 
@@ -161,7 +172,7 @@ export default function SteakZenPage() {
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-amber-700 mb-2">🍽️ 推薦菜單</p>
               <ul className="text-xs text-stone-600 space-y-1">
-                <li>・神戶牛鐵板燒午餐套餐（含沙拉・蔬菜・飯・湯・甜點）</li>
+                <li>・神戶牛鐵板燒午餐套餐（含沙拉・蔬菜・飯・湯・甜點（甜品））</li>
                 <li>・神戶牛菲力／沙朗（依季節時價）</li>
                 <li>・神戶牛漢堡排（想輕鬆吃時的好選擇）</li>
               </ul>
@@ -268,7 +279,7 @@ export default function SteakZenPage() {
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 神戶牛可以帶回台灣・香港嗎？</p>
               <p className="text-xs text-stone-600 leading-relaxed">
-                原則上<strong>生鮮牛肉入境是被限制的</strong>（台灣禁止、香港限量）。想帶伴手禮的話，可以買<strong>神戶牛咖哩包、牛肉乾、神戶牛餅乾</strong>等常溫加工品。
+                原則上<strong>生鮮牛肉入境是被限制的</strong>（台灣禁止、香港限量）。想帶伴手禮（手信）的話，可以買<strong>神戶牛咖哩包、牛肉乾、神戶牛餅乾（曲奇）</strong>等常溫加工品。
               </p>
             </div>
             <div>

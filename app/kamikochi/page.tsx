@@ -17,13 +17,24 @@ export const metadata: Metadata = {
   title: "上高地＆奧飛騨4選｜河童橋・纜車・溫泉✅實訪",
   description:
     "上高地＆奧飛騨旅行推薦4選！河童橋絕景・平湯大瀑布・新穂高纜車2000m展望・奧飛騨花園飯店燒岳溫泉。日本阿爾卑斯山自然療癒之旅，附交通方式・門票・溫泉資訊。台灣・香港旅客必看！",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "上高地＆奧飛騨旅行推薦4選｜日本阿爾卑斯山絕景完全指南",
     description: "上高地河童橋・平湯大瀑布・新穂高纜車・奧飛騨溫泉飯店。日本阿爾卑斯絕景之旅完整指南。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "上高地旅行推薦・河童橋絕景" }],
   },
@@ -41,7 +52,7 @@ const articleJsonLd = {
   headline: "上高地＆奧飛騨旅行推薦4選｜日本阿爾卑斯山絕景完全指南【實際造訪】",
   description: "上高地＆奧飛騨旅行推薦4選。河童橋・平湯大瀑布・新穂高纜車・奧飛騨溫泉飯店。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -106,7 +117,7 @@ export default function KamikochiPage() {
             <strong>上高地</strong>位於長野縣，海拔1,500公尺的高原度假勝地，被譽為<strong>「日本阿爾卑斯山」</strong>的入口🏔️ 是日本<strong>「特別名勝」＆「特別天然紀念物」</strong>雙重指定的珍貴自然景觀，每年吸引約120萬遊客造訪。鄰接岐阜縣的<strong>奧飛騨溫泉鄉</strong>，是日本最受歡迎的自然景觀＆溫泉旅遊地之一。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的4個必去景點：<strong>河童橋</strong>的絕景、<strong>平湯大瀑布</strong>的震撼、<strong>新穂高纜車</strong>的2000公尺展望，以及<strong>奧飛騨花園飯店燒岳</strong>的夢幻溫泉✨ 本篇同時整理了<strong>散策路線</strong>和<strong>四季景色</strong>，安排2〜3天的行程剛剛好！
+            這次推薦（推介）的4個必去景點：<strong>河童橋</strong>的絕景、<strong>平湯大瀑布</strong>的震撼、<strong>新穂高纜車</strong>的2000公尺展望，以及<strong>奧飛騨花園飯店（酒店）燒岳</strong>的夢幻溫泉✨ 本篇同時整理了<strong>散策路線</strong>和<strong>四季景色</strong>，安排2〜3天的行程剛剛好！
           </p>
         </section>
 
@@ -274,7 +285,7 @@ export default function KamikochiPage() {
             <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-green-700 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                不用爬山就能體驗<strong>2000公尺以上的高山絕景</strong>🏔️ 山頂站可以吃到飛騨高山拉麵、冰淇淋，還有免費的足湯！秋天紅葉、冬天雪景、夏天避暑，四季都有不同的魅力。也是日本人氣的<strong>星空觀賞</strong>景點。
+                不用爬山就能體驗<strong>2000公尺以上的高山絕景</strong>🏔️ 山頂站可以吃到飛騨高山拉麵、冰淇淋（雪糕），還有免費的足湯！秋天紅葉、冬天雪景、夏天避暑，四季都有不同的魅力。也是日本人氣的<strong>星空觀賞</strong>景點。
               </p>
             </div>
 
@@ -458,7 +469,7 @@ export default function KamikochiPage() {
           <h2 className="text-base font-black text-stone-800 mb-3">上高地＆奧飛騨旅行小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 上高地為自然保護區，<strong>4/17〜11/15</strong>才開放，冬季封山</li>
-            <li>✅ 上高地禁止私家車進入，需<strong>轉乘專用巴士</strong>或計程車</li>
+            <li>✅ 上高地禁止私家車進入，需<strong>轉乘專用巴士</strong>或計程車（的士）</li>
             <li>✅ 建議安排<strong>2〜3天行程</strong>，在奧飛騨溫泉住一晚最完美♨️</li>
             <li>✅ 山上氣溫比松本市區低5〜10°C，即使夏天也要帶<strong>薄外套</strong>🧥</li>
             <li>✅ 從東京搭特急列車「あずさ」到松本約2.5小時，再轉巴士進上高地</li>

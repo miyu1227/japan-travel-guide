@@ -12,13 +12,24 @@ export const metadata: Metadata = {
   title: "兵庫三田蕎麥麵推薦｜蕎麦いち・關西手打蕎麥名店【實際造訪】",
   description:
     "兵庫三田必吃手打蕎麥麵「蕎麦いち」！神戶近郊的隱藏名店，使用嚴選國產蕎麥粉現打的職人風味。十割蕎麥・季節料理應有盡有，附交通方式・推薦菜單・價格。台灣・香港旅客必看！",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
+    languages: {
+      "zh-Hant": PAGE_URL,
+      "zh-TW": PAGE_URL,
+      "zh-HK": PAGE_URL,
+      "zh-MO": PAGE_URL,
+      "x-default": PAGE_URL,
+    },
+  },
   openGraph: {
     title: "兵庫三田蕎麥麵推薦｜蕎麦いち・關西手打蕎麥名店",
     description: "兵庫三田必吃手打蕎麥！神戶近郊隱藏名店。十割蕎麥・季節料理。附交通・菜單。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
+    alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "兵庫三田蕎麥麵推薦・蕎麦いち" }],
   },
@@ -36,7 +47,7 @@ const articleJsonLd = {
   headline: "兵庫三田蕎麥麵推薦｜蕎麦いち・關西手打蕎麥名店【實際造訪】",
   description: "兵庫三田必吃手打蕎麥麵「蕎麦いち」完整介紹。",
   url: PAGE_URL,
-  inLanguage: "zh-TW",
+  inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
@@ -98,7 +109,7 @@ export default function SandaSobaPage() {
             <strong>兵庫縣三田市</strong>位於神戶市北部、被自然環繞的小城市🌿 從大阪・神戶搭電車約40分鐘，是關西人氣的<strong>郊外蕎麥麵聖地</strong>。豐富的水源＆涼爽氣候，孕育出獨特的「<strong>三田蕎麥文化</strong>」。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦的<strong>「蕎麦いち」</strong>是三田當地最具代表性的手打蕎麥麵名店🍜 使用<strong>嚴選國產蕎麥粉</strong>，從製粉到打麵都堅持職人手工，是來關西旅遊絕對能讓你刮目相看的隱藏寶藏✨
+            這次推薦（推介）的<strong>「蕎麦いち」</strong>是三田當地最具代表性的手打蕎麥麵名店🍜 使用<strong>嚴選國產蕎麥粉</strong>，從製粉到打麵都堅持職人手工，是來關西旅遊絕對能讓你刮目相看的隱藏寶藏✨
           </p>
         </section>
 
@@ -191,7 +202,7 @@ export default function SandaSobaPage() {
             蕎麥麵是日本代表性的傳統麵食，江戶時代起就是庶民的日常美食🍃 依據蕎麥粉比例分為：<strong>「二八そば」（蕎麥粉8：麵粉2）</strong>是最常見比例、<strong>「十割そば」（100%蕎麥粉）</strong>是最高級也最難製作、<strong>「更科そば」</strong>則使用精製的白色蕎麥芯製作。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            兵庫三田地區以<strong>清冽的水質＆山區氣候</strong>適合蕎麥栽培，江戶時代起就是關西的蕎麥產地之一。搭配三田產的<strong>山葵、蔥、天婦羅</strong>是最經典的吃法。日本人吃蕎麥麵時「刻意發出啜麵聲」是禮儀的一部分——代表「好吃」「感謝廚師」的意思。
+            兵庫三田地區以<strong>清冽的水質＆山區氣候</strong>適合蕎麥栽培，江戶時代起就是關西的蕎麥產地之一。搭配三田產的<strong>山葵、蔥、天婦羅</strong>是最經典的吃法。日本人吃蕎麥麵時「刻意發出啜麵聲」是禮儀的一部分——代表「好吃（好食）」「感謝廚師」的意思。
           </p>
         </section>
 
