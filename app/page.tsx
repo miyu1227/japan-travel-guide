@@ -80,8 +80,8 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
       areas: ["東京"],
     },
     {
-      name: "二子玉川美食推薦3選｜中華・甜點・韓國料理🍽️",
-      desc: "蒸籠中華・蘋果派・韓式屋台，東京近郊散步美食",
+      name: "二子玉川美食推薦4選｜中華・甜點・韓國料理・精品咖啡🍽️",
+      desc: "蒸籠中華・蘋果派・韓式屋台・世田谷精品咖啡WOODBERRY，東京近郊散步美食",
       tag: "東京",
       emoji: "🍽️",
       href: "/futakotamagawa",

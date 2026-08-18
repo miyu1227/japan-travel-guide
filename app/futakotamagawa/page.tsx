@@ -9,13 +9,13 @@ const PAGE_URL = "https://www.japantrippicks.com/futakotamagawa";
 const OG_IMAGE = "/futakotamagawa/steaman-1.jpg";
 
 export const metadata: Metadata = {
-  title: "二子玉川美食推薦3選｜東京必吃中華・甜點・韓國料理【實際造訪】",
+  title: "二子玉川美食推薦4選｜東京必吃中華・甜點・韓國料理・精品咖啡【實際造訪】",
   description:
-    "二子玉川美食推薦3選！蒸籠中華「STEAMAN」、蘋果派名店「GRANNY SMITH」、韓式屋台「ぶたこたまがわ」。東京近郊散步美食完整介紹，附交通・菜單・價格。台灣・香港旅客必看！",
+    "二子玉川美食推薦4選！蒸籠中華「STEAMAN」、蘋果派名店「GRANNY SMITH」、韓式屋台「ぶたこたまがわ」、世田谷精品咖啡「WOODBERRY COFFEE 玉川高島屋S.C.店」。東京近郊散步美食完整介紹，附交通・菜單・價格。台灣・香港旅客必看！",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "二子玉川美食推薦3選｜東京必吃中華・甜點・韓國料理",
-    description: "二子玉川必吃美食3選！蒸籠中華・蘋果派・韓式屋台。附交通・菜單・推薦。",
+    title: "二子玉川美食推薦4選｜東京必吃中華・甜點・韓國料理・精品咖啡",
+    description: "二子玉川必吃美食4選！蒸籠中華・蘋果派・韓式屋台・世田谷精品咖啡。附交通・菜單・推薦。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "二子玉川美食推薦3選｜東京必吃中華・甜點・韓國料理",
-    description: "二子玉川必吃3間人氣美食！蒸籠中華・蘋果派・韓式屋台。",
+    title: "二子玉川美食推薦4選｜東京必吃中華・甜點・韓國料理・精品咖啡",
+    description: "二子玉川必吃4間人氣美食！蒸籠中華・蘋果派・韓式屋台・世田谷精品咖啡。",
     images: [OG_IMAGE],
   },
 };
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "二子玉川美食推薦3選｜東京必吃中華・甜點・韓國料理【實際造訪】",
-  description: "二子玉川美食推薦3選：蒸籠中華STEAMAN、蘋果派GRANNY SMITH、韓式屋台ぶたこたまがわ。",
+  headline: "二子玉川美食推薦4選｜東京必吃中華・甜點・韓國料理・精品咖啡【實際造訪】",
+  description: "二子玉川美食推薦4選：蒸籠中華STEAMAN、蘋果派GRANNY SMITH、韓式屋台ぶたこたまがわ、精品咖啡WOODBERRY COFFEE 玉川高島屋S.C.店。",
   url: PAGE_URL,
   inLanguage: "zh-TW",
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-08-18T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -52,6 +52,13 @@ const breadcrumbJsonLd = {
     { "@type": "ListItem", position: 2, name: "二子玉川美食推薦", item: PAGE_URL },
   ],
 };
+
+const woodberryPhotos = [
+  "/futakotamagawa/woodberry-1.jpg",
+  "/futakotamagawa/woodberry-2.jpg",
+  "/futakotamagawa/woodberry-3.jpg",
+  "/futakotamagawa/woodberry-4.jpg",
+];
 
 const relatedLinks = [
   { href: "/shimokitazawa-cafe", label: "☕ 下北澤咖啡廳推薦3選｜東京必去人氣美食", desc: "純素烘焙・起司蛋糕・自家焙煎咖啡" },
@@ -85,9 +92,9 @@ export default function FutakotamagawaPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          二子玉川美食推薦3選｜<br />東京必吃中華・甜點・韓國料理🍽️
+          二子玉川美食推薦4選｜東京必吃<br />中華・甜點・韓國料理・精品咖啡🍽️
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-18</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -96,7 +103,7 @@ export default function FutakotamagawaPage() {
             <strong>二子玉川</strong>位於東京世田谷區，是日本人心中的高級住宅區，擁有河岸公園、購物中心與許多特色餐廳🌿 從澀谷搭電車只要10分鐘，非常適合安排一個半天的散步美食行程。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦3間實際造訪過的人氣店：時尚蒸籠中華<strong>「STEAMAN」</strong>、蘋果派專門店<strong>「GRANNY SMITH」</strong>，以及韓國屋台風<strong>「ぶたこたまがわ」</strong>✨
+            這次推薦4間實際造訪過的人氣店：時尚蒸籠中華<strong>「STEAMAN」</strong>、蘋果派專門店<strong>「GRANNY SMITH」</strong>、韓國屋台風<strong>「ぶたこたまがわ」</strong>，以及2025年9月新開幕的世田谷精品咖啡<strong>「WOODBERRY COFFEE 玉川高島屋S.C.店」</strong>✨
           </p>
         </section>
 
@@ -127,11 +134,18 @@ export default function FutakotamagawaPage() {
                 <p className="text-xs text-stone-500 leading-relaxed">深夜營業、サムギョプサル＆起司年糕</p>
               </div>
             </div>
+            <div className="flex gap-3">
+              <span className="text-red-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">WOODBERRY COFFEE → 世田谷精品咖啡・純素烘焙</p>
+                <p className="text-xs text-stone-500 leading-relaxed">早上9點開門、高島屋南館1F、素食與無麩質甜點超多</p>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">二子玉川美食推薦・3選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">二子玉川美食推薦・4選</h2>
 
         {/* Spot 1: STEAMAN */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -277,6 +291,68 @@ export default function FutakotamagawaPage() {
           </div>
         </section>
 
+        {/* Spot 4: WOODBERRY COFFEE */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+          <div className="grid grid-cols-2 gap-0.5">
+            {woodberryPhotos.map((src, i) => (
+              <div key={i} className="relative aspect-square bg-stone-100">
+                <Image src={src} alt="WOODBERRY COFFEE 玉川高島屋S.C.店 - 二子玉川精品咖啡" fill sizes="50vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-red-400 text-white flex items-center justify-center text-sm font-black shrink-0">4</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">WOODBERRY COFFEE 玉川高島屋S.C.店</h3>
+                <span className="text-xs text-stone-400">世田谷發跡的精品咖啡烘焙品牌</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              <strong>WOODBERRY COFFEE</strong> 是2012年從世田谷「用賀」起家的<strong>精品咖啡烘焙品牌</strong>☕ 堅持直接向產地農園採購生豆（Direct Trade）、自家烘焙，現在在東京・神奈川已經有10間以上分店。這家<strong>玉川高島屋S.C.店於2025年9月新開幕</strong>，是二子玉川目前最好逛也最好坐的咖啡廳之一。
+            </p>
+
+            <div className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-red-500 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                點單時可以<strong>從好幾支單品豆裡自己挑</strong>，每支都附一張風味卡（產地・品種・處理法・烘焙度），像在喝紅酒一樣有趣🍷 我們點了薩爾瓦多淺焙手沖與夏季限定冰咖啡，配上巧克力布朗尼與檸檬磅蛋糕，酸甜果香和甜點超搭。<strong>甜點櫃裡有大量標示「V（純素）」與「G（無麩質）」的品項</strong>——司康、可麗露、肉桂捲、胡蘿蔔蛋糕都有，這在日本咖啡廳其實很少見，<strong>吃素或對麩質敏感的旅客可以很安心</strong>🌱 店裡也賣咖啡豆、濾掛與Hario／KINTO等器具，很好買伴手禮。
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["☕ 自家烘焙精品咖啡", "🌱 純素・無麩質甜點", "🥑 酪梨吐司・巴西莓果碗", "🛍️ 咖啡豆・器具好買", "🪑 全店約40席"].map((t) => (
+                <span key={t} className="text-xs bg-red-50 text-red-700 border border-red-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600">📍 東京都世田谷區玉川3-17-1 玉川高島屋S・C 南館 1F</p>
+              <p className="text-xs text-stone-600">🚃 東急「二子玉川」駅 徒歩約4分</p>
+              <p className="text-xs text-stone-600">⏰ 9:00〜20:00（L.O. 餐點19:00／飲料19:30）・依玉川高島屋S.C.休館日</p>
+              <p className="text-xs text-stone-600">💴 甜點約¥330〜¥770、咖啡約¥500〜（價格以店頭菜單為準）</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">
+                甜點標價分成<strong>「內用」與「外帶」兩種</strong>（外帶稅率較低所以更便宜），點餐時先想好要不要坐下來☕
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-4">
+              <a href="https://www.instagram.com/woodberry_futakotamagawa/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
+                📷 Instagram
+              </a>
+              <a href="https://www.takashimaya.co.jp/tamagawa/sc/shop/?id=3204" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
+                🔗 店家資訊（玉川高島屋S.C.）
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">二子玉川美食散步小建議</h2>
@@ -284,6 +360,9 @@ export default function FutakotamagawaPage() {
             <li>✅ 從澀谷搭東急田園都市線只要10分鐘，交通方便</li>
             <li>✅ STEAMAN和ぶたこたまがわ在同一棟大樓，可以排同一天</li>
             <li>✅ GRANNY SMITH在高島屋地下，逛百貨順便吃蘋果派</li>
+            <li>✅ GRANNY SMITH（本館B1）與WOODBERRY COFFEE（南館1F）都在玉川高島屋，甜點可以一次吃兩間🍎☕</li>
+            <li>✅ WOODBERRY <strong>早上9點就開門</strong>，很適合當作二子玉川散步的第一站</li>
+            <li>✅ 吃素或不吃麩質的旅客，WOODBERRY的純素・無麩質甜點選擇最多🌱</li>
             <li>✅ 二子玉川公園就在附近，吃完可以散步走走🌿</li>
             <li>✅ 週末人多，建議平日午餐時段前往比較悠閒</li>
           </ul>
@@ -292,7 +371,7 @@ export default function FutakotamagawaPage() {
         {/* ぽやぴよ */}
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
-            蒸籠中華、蘋果派、韓式屋台——三種完全不同風格的美食✨<br />
+            蒸籠中華、蘋果派、韓式屋台，再加上一杯自家烘焙的精品咖啡——四種完全不同風格的美食✨<br />
             二子玉川是個很適合慢慢逛、慢慢吃的東京近郊小寶地！
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
