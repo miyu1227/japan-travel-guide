@@ -141,6 +141,11 @@ export const HUBS: Hub[] = [
     ],
     sections: [
       {
+        heading: "先看這個：5天4夜的排法",
+        note: "把下面的景點實際排進行程的範例。",
+        slugs: ["tokyo-5day-itinerary"],
+      },
+      {
         heading: "地標・展望台",
         note: "第一次來東京的定番，先卡進行程裡。",
         slugs: ["skytree", "tokyo-tower", "tokyo-disney-around"],
