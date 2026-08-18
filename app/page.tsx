@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { picks, type PickItem } from "@/lib/articles";
+import { HUBS } from "@/lib/hubs";
 
 const categories = [
   { id: "ramen", icon: "🍽️", label: "Gourmet", labelZh: "美食", color: "bg-red-100 text-red-600 border-red-300", activeColor: "bg-red-400 text-white border-red-400", hasAreaFilter: true },
@@ -383,6 +384,25 @@ export default function Home() {
               </a>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* 主題総覧（ハブ）への導線 */}
+      <section className="max-w-7xl mx-auto px-4 pt-6">
+        <h2 className="text-sm font-black text-stone-700 mb-3 flex items-center gap-1">
+          <span>🧭</span>
+          主題總覽｜想好要玩哪一種了嗎？
+        </h2>
+        <div className="flex gap-2 overflow-x-auto scrollbar-hide pb-1">
+          {HUBS.map((hub) => (
+            <Link
+              key={hub.slug}
+              href={`/${hub.slug}`}
+              className="flex-shrink-0 text-xs font-bold text-stone-700 bg-white border-2 border-yellow-200 rounded-full px-4 py-2 shadow-sm hover:border-yellow-400 hover:shadow-md transition-all"
+            >
+              {hub.emoji} {hub.h1}
+            </Link>
+          ))}
         </div>
       </section>
 
