@@ -209,12 +209,6 @@ export default function PromotionPage() {
               </dd>
             </div>
             <div className="flex gap-3">
-              <dt className="w-16 shrink-0 text-stone-400">電話番号</dt>
-              <dd>
-                <a href="tel:08061376853" className="hover:text-stone-800 transition-colors">080-6137-6853</a>
-              </dd>
-            </div>
-            <div className="flex gap-3">
               <dt className="w-16 shrink-0 text-stone-400">メール</dt>
               <dd>
                 <a href="mailto:poyapiyotonemuneko@gmail.com" className="hover:text-stone-800 transition-colors">
