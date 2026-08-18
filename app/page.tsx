@@ -248,6 +248,15 @@ const picks: Record<string, { name: string; desc: string; tag: string; emoji: st
   ],
   spot: [
     {
+      name: "茅崎夏日推薦｜湘南海灘野餐＆清晨6點開門的海邊咖啡🌊",
+      desc: "東京出發1小時！看烏帽子岩與江之島的海灘野餐＋海邊咖啡tuckshop的手作司康",
+      tag: "神奈川",
+      emoji: "🌊",
+      href: "/chigasaki",
+      image: "/chigasaki/cover.jpg",
+      areas: ["その他"],
+    },
+    {
       name: "神戶布引香草園推薦｜纜車空中散步・花海與夜景🌿",
       desc: "搭纜車登上400m山頂！四季花海・古堡建築・神戶港夜景，從新神戶駅直達",
       tag: "兵庫",

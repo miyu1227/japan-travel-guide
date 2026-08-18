@@ -55,6 +55,7 @@ const ARTICLE_ROUTES: { slug: string; priority?: number }[] = [
   { slug: "kobe-herb-garden", priority: 0.85 },
   { slug: "katsunuma", priority: 0.85 },
   { slug: "shirahama", priority: 0.85 },
+  { slug: "chigasaki", priority: 0.85 },
   // Travel Prep
   { slug: "japan-esim", priority: 0.85 },
   { slug: "tokyo-subway-ticket", priority: 0.85 },
