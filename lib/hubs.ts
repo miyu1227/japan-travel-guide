@@ -141,11 +141,6 @@ export const HUBS: Hub[] = [
     ],
     sections: [
       {
-        heading: "先看這個：5天4夜的排法",
-        note: "把下面的景點實際排進行程的範例。",
-        slugs: ["tokyo-5day-itinerary"],
-      },
-      {
         heading: "地標・展望台",
         note: "第一次來東京的定番，先卡進行程裡。",
         slugs: ["skytree", "tokyo-tower", "tokyo-disney-around"],
@@ -232,11 +227,6 @@ export const HUBS: Hub[] = [
       },
     ],
     sections: [
-      {
-        heading: "先看這個：5天4夜的排法",
-        note: "把下面的美食與景點實際排進行程的範例。",
-        slugs: ["kansai-5day-itinerary"],
-      },
       {
         heading: "大阪（美食為主）",
         note: "梅田・福島一帶的在地店，比道頓堀更好吃。",
