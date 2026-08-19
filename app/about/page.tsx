@@ -48,6 +48,7 @@ const organizationJsonLd = {
   contactPoint: {
     "@type": "ContactPoint",
     email: "poyapiyotonemuneko@gmail.com",
+    telephone: "+81-50-6864-2628",
     contactType: "Customer Support",
   },
 };
@@ -197,6 +198,13 @@ export default function AboutPage() {
                 poyapiyotonemuneko@gmail.com
               </a>
               <p className="text-xs text-stone-500 mt-1">歡迎讀者提問、業配洽談、資訊更新指正等。通常3〜5個工作日內回覆。</p>
+            </div>
+            <div className="border-t border-stone-100 pt-4">
+              <p className="text-xs font-bold text-stone-500 mb-1">電話</p>
+              <a href="tel:+815068642628" className="text-blue-600 underline">
+                050-6864-2628
+              </a>
+              <p className="text-xs text-stone-500 mt-1">海外撥打請輸入 +81-50-6864-2628。受理時間為日本時間平日10:00〜18:00。</p>
             </div>
             <div className="border-t border-stone-100 pt-4">
               <p className="text-xs font-bold text-stone-500 mb-1">聯盟行銷揭露</p>

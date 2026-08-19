@@ -5,7 +5,7 @@ const PAGE_URL = "https://www.japantrippicks.com/contact";
 
 export const metadata: Metadata = {
   title: "聯絡我們｜Japan Trip Picks",
-  description: "Japan Trip Picks 的聯絡資訊。如有任何問題或合作需求，歡迎透過電子郵件與我們聯絡。",
+  description: "Japan Trip Picks 的聯絡資訊。如有任何問題或合作需求，歡迎透過電子郵件或電話與我們聯絡。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -36,13 +36,23 @@ export default function ContactPage() {
         <p className="text-xs text-stone-400 mb-6">Contact</p>
 
         <div className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-6 space-y-4 text-sm text-stone-600 leading-relaxed">
-          <p>如有任何問題或合作需求，歡迎透過以下電子郵件與我們聯絡：</p>
+          <p>如有任何問題或合作需求，歡迎透過以下方式與我們聯絡：</p>
           <p>
             <a href="mailto:poyapiyotonemuneko@gmail.com" className="text-blue-600 font-semibold underline break-all">
               poyapiyotonemuneko@gmail.com
             </a>
           </p>
           <p>我們通常會在2～3個工作天內回覆。</p>
+          <div className="border-t border-stone-100 pt-4">
+            <p className="mb-1">電話（日本國內）：</p>
+            <p>
+              <a href="tel:+815068642628" className="text-blue-600 font-semibold underline">
+                050-6864-2628
+              </a>
+              <span className="text-xs text-stone-400">（海外撥打：+81-50-6864-2628）</span>
+            </p>
+            <p className="text-xs text-stone-400 mt-1">※受理時間為日本時間平日10:00〜18:00，僅提供日文與簡單英文服務。</p>
+          </div>
           <p className="text-xs text-stone-400">※依內容不同，回覆可能需要一些時間，敬請見諒。</p>
         </div>
       </article>

@@ -195,6 +195,15 @@ export default function PromotionPage() {
           >
             ✉️ poyapiyotonemuneko@gmail.com
           </a>
+          <a
+            href="tel:+815068642628"
+            className="flex items-center justify-center gap-2 w-full bg-white hover:bg-stone-50 text-stone-700 border border-stone-200 font-bold text-sm rounded-2xl py-3 transition-colors"
+          >
+            ☎︎ 050-6864-2628
+          </a>
+          <p className="text-[10px] text-stone-400 leading-relaxed">
+            ※お電話は平日10:00〜18:00に承っております。不在の際はメールでご連絡ください。
+          </p>
 
           <div className="border-t border-stone-100 pt-3">
             <p className="text-xs font-semibold text-stone-500 mb-2">🌏 For business inquiries (English)</p>
@@ -218,6 +227,14 @@ export default function PromotionPage() {
               <dd className="leading-relaxed">
                 〒106-0032<br />
                 東京都港区六本木3丁目16番12号 六本木KSビル5F
+              </dd>
+            </div>
+            <div className="flex gap-3">
+              <dt className="w-16 shrink-0 text-stone-400">電話</dt>
+              <dd>
+                <a href="tel:+815068642628" className="hover:text-stone-800 transition-colors">
+                  050-6864-2628
+                </a>
               </dd>
             </div>
             <div className="flex gap-3">
