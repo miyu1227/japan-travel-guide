@@ -201,9 +201,6 @@ export default function PromotionPage() {
           >
             ☎︎ 050-6864-2628
           </a>
-          <p className="text-[10px] text-stone-400 leading-relaxed">
-            ※お電話は平日10:00〜18:00に承っております。不在の際はメールでご連絡ください。
-          </p>
 
           <div className="border-t border-stone-100 pt-3">
             <p className="text-xs font-semibold text-stone-500 mb-2">🌏 For business inquiries (English)</p>

@@ -51,7 +51,6 @@ export default function ContactPage() {
               </a>
               <span className="text-xs text-stone-400">（海外撥打：+81-50-6864-2628）</span>
             </p>
-            <p className="text-xs text-stone-400 mt-1">※受理時間為日本時間平日10:00〜18:00，僅提供日文與簡單英文服務。</p>
           </div>
           <p className="text-xs text-stone-400">※依內容不同，回覆可能需要一些時間，敬請見諒。</p>
         </div>
