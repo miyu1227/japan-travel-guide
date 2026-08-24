@@ -62,6 +62,9 @@ export default function SiteFooter() {
             <Link href="/privacy" className="text-stone-500 hover:text-stone-800 hover:underline">隱私權政策</Link>
             <span className="text-stone-300">|</span>
             <Link href="/promotion" className="text-stone-500 hover:text-stone-800 hover:underline">合作</Link>
+            <span className="text-stone-300">|</span>
+            {/* 日本の事業者向けサイト（掲載・プロモーション） */}
+            <Link href="/business" lang="ja" className="text-stone-500 hover:text-stone-800 hover:underline">For Business</Link>
           </nav>
         </div>
 

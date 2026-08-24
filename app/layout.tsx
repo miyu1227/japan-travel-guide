@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import SiteFooter from "./components/SiteFooter";
+import TravelOnly from "./components/TravelOnly";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -136,11 +137,14 @@ export default function RootLayout({
     `}
   </Script>
 
-  <script
-    async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5774362091987331"
-    crossOrigin="anonymous"
-  />
+  {/* /business（事業者向け）には広告を出さない */}
+  <TravelOnly>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5774362091987331"
+      crossOrigin="anonymous"
+    />
+  </TravelOnly>
 
   <script
     type="application/ld+json"
@@ -149,7 +153,10 @@ export default function RootLayout({
 </head>
       <body className="min-h-full flex flex-col">
         <div className="flex-1">{children}</div>
-        <SiteFooter />
+        {/* /business は独自フッターを持つので、本体のフッターは出さない */}
+        <TravelOnly>
+          <SiteFooter />
+        </TravelOnly>
       </body>
     </html>
   );

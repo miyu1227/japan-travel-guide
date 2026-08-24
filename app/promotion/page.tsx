@@ -56,6 +56,21 @@ export default function PromotionPage() {
 
       <article className="max-w-2xl mx-auto px-4 py-8 space-y-6">
 
+        {/* 事業者向けサイトへの導線。詳細はそちらに集約している。 */}
+        <Link
+          href="/business"
+          className="block bg-white rounded-2xl border border-stone-200 px-5 py-4 hover:border-stone-400 transition-colors"
+        >
+          <p className="text-xs font-bold text-stone-400 tracking-widest mb-1">FOR BUSINESS</p>
+          <p className="text-sm font-black text-stone-800 leading-snug">
+            事業者向けサイトを公開しました →
+          </p>
+          <p className="text-xs text-stone-500 leading-relaxed mt-1">
+            サービス内容・料金プラン・掲載までの流れ・よくあるご質問は
+            「Japan Trip Picks for Business」にまとめています。
+          </p>
+        </Link>
+
         {/* Hero */}
         <div className="bg-gradient-to-br from-stone-800 to-stone-950 rounded-3xl p-7 text-white">
           <p className="text-xs text-stone-400 uppercase tracking-widest mb-2">Business</p>

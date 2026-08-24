@@ -1,0 +1,389 @@
+import Image from "next/image";
+import Link from "next/link";
+import type { Metadata } from "next";
+import { businessMetadata, PARENT_SITE_NAME, PARENT_SITE_URL } from "@/lib/business/site";
+import { HIGHLIGHT_FAQ } from "@/lib/business/faq";
+import { OPTIONS, PRICING_NOTES } from "@/lib/business/pricing";
+import FaqList from "./components/FaqList";
+import FinalCta from "./components/FinalCta";
+import PlanCards from "./components/PlanCards";
+import ServiceCards from "./components/ServiceCards";
+import {
+  Card,
+  CtaAnchor,
+  CtaGroup,
+  CtaLink,
+  NoteList,
+  Section,
+  SectionHeading,
+} from "./components/ui";
+
+export const metadata: Metadata = businessMetadata({
+  title: "台湾・香港向けインバウンド集客支援｜Japan Trip Picks for Business",
+  description:
+    "台湾・香港からの訪日旅行者向けに、店舗・ホテル・観光施設のPR掲載や繁体字コンテンツ制作を行うJapan Trip Picks for Business。小規模店舗から観光事業者まで対応します。",
+  ogTitle: "台湾・香港からの訪日客に、あなたのお店・施設を届ける。",
+});
+
+/** こんな事業者におすすめ */
+const AUDIENCE = [
+  "台湾・香港からの来店を増やしたい",
+  "インバウンド向けに何をすればいいか分からない",
+  "繁体字の記事を作りたい",
+  "自店を海外の旅行者に知ってもらいたい",
+  "海外向けのSNSやコンテンツを試してみたい",
+];
+
+/** 選ばれる理由。事実として言えることだけを書く。 */
+const REASONS = [
+  {
+    emoji: "🎯",
+    title: "台湾・香港の訪日旅行者向けに特化",
+    body: "扱っているのは訪日旅行の情報だけです。読者層を広く取らないぶん、旅行者が読む前提で書けます。",
+  },
+  {
+    emoji: "🈶",
+    title: "日本語＋繁体字でコンテンツ制作",
+    body: "日本語の原稿と繁体字の本文をセットで用意します。台湾・香港で言い方が変わる語は必要に応じて併記します。",
+  },
+  {
+    emoji: "♾️",
+    title: "掲載後も記事が残る",
+    body: "買い切りで、サイトの運営期間中は掲載が続きます。月額費用・更新料はいただきません。",
+  },
+  {
+    emoji: "🪶",
+    title: "小規模店舗でも使いやすい価格",
+    body: "5,000円のスポット掲載から始められます。1店舗・1記事からお申し込みいただけます。",
+  },
+  {
+    emoji: "🚶",
+    title: "旅行者目線で紹介",
+    body: "行き方・所要時間・値段の目安など、旅行者が迷いやすいところを補って書きます。",
+  },
+];
+
+/** 掲載までの流れ */
+const STEPS = [
+  { title: "お問い合わせ", body: "フォームまたはメールで、店舗名・所在地・ご希望内容をお送りください。" },
+  { title: "掲載内容の確認", body: "プラン・料金・スケジュールをご案内します。この時点では契約になりません。" },
+  { title: "素材のご共有", body: "写真と基本情報（住所・アクセス・営業時間など）をお送りいただきます。" },
+  { title: "記事・ページ制作", body: "日本語の原稿と繁体字の本文を制作します。" },
+  { title: "内容のご確認", body: "公開前に内容をご確認いただき、修正のご要望を反映します。" },
+  { title: "公開", body: "Japan Trip Picks 上に公開します。以降はサイト運営中、掲載が続きます。" },
+];
+
+export default function BusinessTopPage() {
+  return (
+    <>
+      {/* ------------------------------------------------------------- Hero */}
+      <div className="border-b border-biz-line bg-biz-blue-soft px-5 py-12 sm:px-6 sm:py-16 lg:py-20">
+        <div className="mx-auto grid w-full max-w-5xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+          <div>
+            <p className="mb-3 inline-block rounded-full bg-white px-3 py-1 text-xs font-bold text-biz-blue">
+              訪日旅行メディア Japan Trip Picks のBtoB窓口
+            </p>
+            <h1 className="text-[1.65rem] leading-[1.35] font-bold text-biz-ink sm:text-4xl sm:leading-[1.3]">
+              <span className="biz-phrase">台湾・香港からの訪日客に、</span>
+              <span className="biz-phrase">あなたのお店・施設を届ける。</span>
+            </h1>
+            <p className="mt-5 max-w-xl text-sm leading-relaxed text-biz-muted sm:text-base">
+              Japan Trip Picks は、台湾・香港向けの訪日旅行メディアを運営しています。
+              そのノウハウを使って、日本の店舗・ホテル・観光施設の情報発信をお手伝いします。
+            </p>
+
+            <div className="mt-7">
+              <CtaGroup>
+                <CtaLink href="/business/services">サービスを見る</CtaLink>
+                <CtaLink href="/business/contact" variant="secondary">
+                  掲載について相談する
+                </CtaLink>
+              </CtaGroup>
+            </div>
+
+            <ul className="mt-7 flex flex-wrap gap-2">
+              {["繁体字で制作", "5,000円から", "月額費用なし", "1店舗から"].map((tag) => (
+                <li
+                  key={tag}
+                  className="rounded-full border border-white bg-white/70 px-3 py-1 text-xs font-bold text-biz-ink"
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* 記事の見え方のイメージ。CLSを出さないよう比率を固定する。 */}
+          <div className="mx-auto w-full max-w-sm lg:max-w-none">
+            <div className="overflow-hidden rounded-2xl border border-white bg-white shadow-[0_8px_28px_rgba(18,49,79,0.10)]">
+              <div className="relative aspect-[4/3] w-full bg-biz-line">
+                <Image
+                  src="/ramen/washo-1.jpg"
+                  alt="Japan Trip Picks に掲載しているラーメン店の記事写真"
+                  fill
+                  sizes="(max-width: 1024px) 90vw, 440px"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div className="p-4 sm:p-5">
+                <p className="text-xs font-bold text-biz-blue">掲載イメージ</p>
+                <p className="mt-1 text-sm leading-relaxed font-bold text-biz-ink">
+                  東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系
+                </p>
+                <p className="mt-2 text-xs leading-relaxed text-biz-muted">
+                  写真・基本情報・繁体字の紹介文をセットで掲載します。
+                  実際の記事は Japan Trip Picks 上でご覧いただけます。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ------------------------------------------------------------ とは */}
+      <Section tone="white" id="about">
+        <SectionHeading
+          eyebrow="ABOUT"
+          title="Japan Trip Picks for Business とは"
+          description="訪日旅行者向けメディアの運営で分かったことを、日本の事業者さま向けのサービスにしたものです。"
+        />
+
+        <div className="grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
+          <Card>
+            <p className="text-sm leading-relaxed text-biz-muted sm:text-[0.95rem]">
+              Japan Trip Picks は、台湾・香港の旅行者に向けて、日本のグルメ・カフェ・観光・旅行準備の情報を
+              繁体字で発信している旅行メディアです。実際に訪れた場所を、旅行者が知りたい順に書いています。
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-biz-muted sm:text-[0.95rem]">
+              Japan Trip Picks for Business は、そのBtoB窓口です。
+              「繁体字で紹介文を用意したい」「海外の旅行者向けに何か始めたい」という事業者さまに向けて、
+              PR掲載と繁体字コンテンツ制作をご提供しています。
+            </p>
+            <p className="mt-4 rounded-xl bg-biz-sand p-4 text-xs leading-relaxed text-biz-muted">
+              当サイトは大規模媒体ではありません。掲載による集客数・検索順位・売上を保証することはできません。
+              できること・できないことを最初にお伝えしたうえでご案内します。
+            </p>
+          </Card>
+
+          <Card className="flex flex-col justify-between bg-biz-blue-soft">
+            <div>
+              <p className="text-sm font-bold text-biz-ink">運営しているメディア</p>
+              <p className="mt-3 text-lg font-bold text-biz-ink">{PARENT_SITE_NAME}</p>
+              <p className="mt-2 text-xs leading-relaxed text-biz-muted">
+                台湾・香港の旅行者向け。繁体字の訪日旅行ガイドです。実際の記事の作り・見え方は、
+                そちらでご確認いただけます。
+              </p>
+            </div>
+            <div className="mt-5">
+              <CtaAnchor href={PARENT_SITE_URL} variant="secondary" external className="w-full sm:w-full">
+                <span aria-hidden="true">🌏</span>
+                訪日旅行者向けメディアを見る
+              </CtaAnchor>
+            </div>
+          </Card>
+        </div>
+      </Section>
+
+      {/* -------------------------------------------------------- おすすめ */}
+      <Section tone="sand" id="audience">
+        <SectionHeading
+          eyebrow="FOR WHOM"
+          title="こんな事業者さまにおすすめです"
+          description="ひとつでも当てはまれば、お役に立てるかもしれません。"
+        />
+        <ul className="grid gap-3 sm:grid-cols-2">
+          {AUDIENCE.map((item) => (
+            <li
+              key={item}
+              className="flex items-start gap-3 rounded-2xl border border-biz-line bg-white p-4 sm:p-5"
+            >
+              <span
+                aria-hidden="true"
+                className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-biz-blue-soft text-xs font-bold text-biz-blue"
+              >
+                ✓
+              </span>
+              <span className="text-sm leading-relaxed font-bold text-biz-ink">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      {/* --------------------------------------------------------- サービス */}
+      <Section tone="white" id="services">
+        <SectionHeading
+          eyebrow="SERVICES"
+          title="サービス一覧"
+          description="掲載から繁体字のコンテンツ制作まで。まずは1件からお試しいただけます。"
+        />
+        <ServiceCards />
+        <div className="mt-8">
+          <CtaGroup>
+            <CtaLink href="/business/services" variant="secondary">
+              サービスの詳細を見る
+            </CtaLink>
+          </CtaGroup>
+        </div>
+      </Section>
+
+      {/* ------------------------------------------------------------ 理由 */}
+      <Section tone="soft" id="reasons">
+        <SectionHeading
+          eyebrow="WHY US"
+          title="Japan Trip Picks を選ぶ理由"
+          description="規模の大きさではなく、対象の絞り方と続けやすさでお役に立ちます。"
+        />
+        <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {REASONS.map((reason, i) => (
+            <li
+              key={reason.title}
+              className="rounded-2xl border border-white bg-white p-5 shadow-[0_1px_2px_rgba(18,49,79,0.04)]"
+            >
+              <div className="flex items-center gap-2">
+                <span
+                  aria-hidden="true"
+                  className="flex size-7 items-center justify-center rounded-full bg-biz-blue-soft text-xs font-bold text-biz-blue"
+                >
+                  {i + 1}
+                </span>
+                <span aria-hidden="true" className="text-lg">
+                  {reason.emoji}
+                </span>
+              </div>
+              <h3 className="mt-3 text-base leading-snug font-bold text-biz-ink">{reason.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-biz-muted">{reason.body}</p>
+            </li>
+          ))}
+        </ol>
+      </Section>
+
+      {/* ------------------------------------------------------------ 料金 */}
+      <Section tone="white" id="pricing">
+        <SectionHeading
+          eyebrow="PRICING"
+          title="料金"
+          description="どちらも買い切りです。月額費用・更新料はいただきません。"
+        />
+        <PlanCards showCta={false} />
+
+        <div className="mt-5 grid gap-4 sm:grid-cols-2">
+          {OPTIONS.map((option) => (
+            <Card key={option.id} className="bg-biz-sand">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="text-base font-bold text-biz-ink">
+                  <span className="text-xs font-bold text-biz-blue">オプション</span>
+                  <br />
+                  {option.name}
+                </h3>
+                <p className="text-xl font-bold text-biz-ink">{option.priceLabel}</p>
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-biz-muted">{option.note}</p>
+            </Card>
+          ))}
+          <Card className="bg-biz-sand">
+            <div className="flex flex-wrap items-baseline justify-between gap-2">
+              <h3 className="text-base font-bold text-biz-ink">
+                <span className="text-xs font-bold text-biz-blue">その他</span>
+                <br />
+                繁体字コンテンツ制作・集客支援
+              </h3>
+              <p className="text-xl font-bold text-biz-ink">要相談</p>
+            </div>
+            <p className="mt-2 text-sm leading-relaxed text-biz-muted">
+              分量・用途をうかがったうえでお見積りいたします。
+            </p>
+          </Card>
+        </div>
+
+        <div className="mt-8">
+          <CtaGroup>
+            <CtaLink href="/business/pricing" variant="secondary">
+              料金の詳細を見る
+            </CtaLink>
+          </CtaGroup>
+        </div>
+      </Section>
+
+      {/* ------------------------------------------------------------ 流れ */}
+      <Section tone="sand" id="flow">
+        <SectionHeading
+          eyebrow="FLOW"
+          title="掲載までの流れ"
+          description="お問い合わせから公開まで、6つのステップで進めます。"
+        />
+        <ol className="space-y-3">
+          {STEPS.map((step, i) => (
+            <li
+              key={step.title}
+              className="flex gap-4 rounded-2xl border border-biz-line bg-white p-4 sm:items-center sm:p-5"
+            >
+              <span
+                aria-hidden="true"
+                className="flex size-9 shrink-0 items-center justify-center rounded-full bg-biz-navy text-sm font-bold text-white"
+              >
+                {i + 1}
+              </span>
+              <div className="min-w-0">
+                <h3 className="text-[0.95rem] font-bold text-biz-ink">{step.title}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-biz-muted">{step.body}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+        <div className="mt-6">
+          <NoteList title="お申し込み前にご確認ください" items={PRICING_NOTES} />
+        </div>
+      </Section>
+
+      {/* ------------------------------------------------------------- FAQ */}
+      <Section tone="white" id="faq">
+        <SectionHeading
+          eyebrow="FAQ"
+          title="よくあるご質問"
+          description="よくいただくご質問を抜粋しています。"
+        />
+        <FaqList items={HIGHLIGHT_FAQ} />
+        <div className="mt-8">
+          <CtaGroup>
+            <CtaLink href="/business/faq" variant="secondary">
+              すべての質問を見る
+            </CtaLink>
+          </CtaGroup>
+        </div>
+      </Section>
+
+      {/* ---------------------------------------------------------- 実績導線 */}
+      <Section tone="soft" id="works">
+        <div className="grid gap-4 lg:grid-cols-[1fr_auto] lg:items-end">
+          <SectionHeading
+            eyebrow="WORKS"
+            title="実際に制作している記事の例"
+            description="Japan Trip Picks で公開している記事をご覧いただけます。掲載後の見え方の参考にしてください。"
+          />
+          <div className="lg:mb-10">
+            <CtaLink href="/business/works" variant="secondary">
+              記事の例を見る
+            </CtaLink>
+          </div>
+        </div>
+      </Section>
+
+      <FinalCta />
+
+      {/* 本体サイトへの導線 */}
+      <div className="border-t border-biz-line bg-white px-5 py-8 sm:px-6">
+        <p className="mx-auto w-full max-w-5xl text-center text-sm text-biz-muted">
+          旅行者向けのサイトをお探しの方は
+          <Link
+            href="/"
+            className="mx-1 font-bold text-biz-blue underline underline-offset-4 hover:text-biz-ink"
+          >
+            Japan Trip Picks
+          </Link>
+          へ。
+        </p>
+      </div>
+    </>
+  );
+}

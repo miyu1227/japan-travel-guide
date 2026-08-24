@@ -71,6 +71,16 @@ const STATIC_ROUTES: { slug: string; priority: number; changeFrequency: "monthly
   { slug: "privacy", priority: 0.4, changeFrequency: "yearly" },
 ];
 
+/** BtoBサイト（/business）。事業者向けなので記事とは別枠で持つ。 */
+const BUSINESS_ROUTES: { path: string; priority: number }[] = [
+  { path: "/business", priority: 0.8 },
+  { path: "/business/services", priority: 0.7 },
+  { path: "/business/pricing", priority: 0.7 },
+  { path: "/business/works", priority: 0.6 },
+  { path: "/business/faq", priority: 0.6 },
+  { path: "/business/contact", priority: 0.6 },
+];
+
 const latestUpdate = ARTICLES.reduce(
   (latest, a) => (a.updated > latest ? a.updated : latest),
   ARTICLES[0].updated
@@ -104,6 +114,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/${r.slug}`,
       lastModified: new Date(latestUpdate),
       changeFrequency: r.changeFrequency,
+      priority: r.priority,
+    })),
+    ...BUSINESS_ROUTES.map((r) => ({
+      url: `${BASE_URL}${r.path}`,
+      lastModified: new Date(latestUpdate),
+      changeFrequency: "monthly" as const,
       priority: r.priority,
     })),
   ];

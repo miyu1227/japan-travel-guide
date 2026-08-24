@@ -24,3 +24,56 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ==========================================================================
+   Japan Trip Picks for Business（/business 配下）専用トークン
+   旅行者向け本体のスタイルは変更しない。ここで足したトークンは
+   bg-biz-navy / text-biz-ink のようなユーティリティとして使う。
+   ========================================================================== */
+@theme {
+  --color-biz-ink: #12314f;        /* 見出し・本文の基本色（ネイビー寄り） */
+  --color-biz-navy: #1b4671;       /* 濃い面（ヒーロー・最終CTA） */
+  --color-biz-navy-deep: #0f2f4d;
+  --color-biz-blue: #2e6db4;       /* リンク・アイコン */
+  --color-biz-blue-soft: #eef5fc;  /* 淡いブルーの面 */
+  --color-biz-sand: #fbf7f1;       /* 淡いベージュの面 */
+  --color-biz-line: #e2eaf2;       /* 罫線 */
+  --color-biz-muted: #55708a;      /* 補足テキスト */
+  --color-biz-cta: #c2410c;        /* CTA。白文字でコントラスト比4.5:1以上 */
+  --color-biz-cta-hover: #9a3412;
+}
+
+/* /business を開いている間は、html ごと白に固定する。
+   これがないと、ダークモード端末の iOS でゴムバンドスクロールしたときに
+   本体サイト用の黒い背景がのぞく。 */
+html:has(.biz-root),
+body:has(.biz-root) {
+  background-color: #ffffff;
+  color-scheme: light;
+}
+
+/* /business のルート。本体サイトの dark 指定に引きずられないよう明示する。 */
+.biz-root {
+  color-scheme: light;
+  background-color: #ffffff;
+  color: var(--color-biz-ink);
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
+    "Noto Sans JP", system-ui, sans-serif;
+}
+
+/* 日本語が変な位置で折れないようにする。
+   keep-all は逆にはみ出すので使わず、禁則（line-break: strict）＋
+   最終手段の anywhere で横スクロールを止める。 */
+.biz-root :is(h1, h2, h3, h4, p, li, dt, dd, td, th, figcaption, label, summary) {
+  line-break: strict;
+  overflow-wrap: anywhere;
+}
+
+.biz-root :is(h1, h2, h3) {
+  text-wrap: pretty;
+}
+
+/* 見出しを意味の切れ目で折り返すための単位。 */
+.biz-root .biz-phrase {
+  display: inline-block;
+}
