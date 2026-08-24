@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { businessMetadata, breadcrumbJsonLd } from "@/lib/business/site";
+import { businessMetadata, breadcrumbJsonLd, DOWNLOAD_PATH } from "@/lib/business/site";
 import {
-  COMPARISON_ROWS,
   CONSULT_ITEMS,
+  INCLUDED,
+  NOT_INCLUDED,
   OPTIONS,
   PLANS,
   PRICING_NOTES,
@@ -14,19 +15,19 @@ import { Card, CtaGroup, CtaLink, JsonLd, NoteList, Section, SectionHeading } fr
 
 export const metadata: Metadata = businessMetadata({
   path: "pricing",
-  title: "料金プラン｜スポット掲載5,000円・特集記事掲載10,000円",
+  title: "掲載プラン｜貴店専用ページの制作・永久掲載",
   description:
-    "Japan Trip Picks for Business の料金プラン。スポット掲載のライトプランが5,000円、特集記事掲載のスタンダードプランが10,000円。どちらも買い切りで月額費用はかかりません。",
+    "Japan Trip Picks for Business の掲載プラン。1店舗ごとに独立した専用ページを日本語＋繁体字で制作し、サイト運営期間中は追加費用なく掲載を続けます。料金は媒体資料でご確認いただけます。",
 });
 
-const crumbs = [{ name: "TOP", href: "/business" }, { name: "料金" }];
+const crumbs = [{ name: "TOP", href: "/business" }, { name: "掲載プラン" }];
 
 const jsonLd = breadcrumbJsonLd([
   { name: "TOP", path: "" },
-  { name: "料金", path: "pricing" },
+  { name: "掲載プラン", path: "pricing" },
 ]);
 
-/** 掲載基準。運営として判断する基準を明示しておく。 */
+/** 掲載基準 */
 const CRITERIA = [
   "法令、条例、業界規制等に違反する内容",
   "掲載内容に虚偽があるか、誤認・錯誤を招くおそれのある場合",
@@ -50,129 +51,98 @@ export default function PricingPage() {
       <JsonLd data={jsonLd} />
 
       <PageHero
-        eyebrow="PRICING"
-        title="料金プラン"
-        lead="掲載プランは2種類です。どちらも買い切りで、月額費用・更新料はいただきません。オプションと個別見積りのサービスもあります。"
+        eyebrow="PLAN"
+        title="掲載プラン"
+        lead="ご提供しているのは、1店舗ごとに専用ページを作る買い切りのプランです。月額費用・更新料はいただきません。料金は媒体資料に記載しています。"
         crumbs={crumbs}
-      />
+      >
+        <CtaGroup>
+          <CtaLink href={DOWNLOAD_PATH}>料金が載った媒体資料を請求する</CtaLink>
+        </CtaGroup>
+      </PageHero>
 
-      {/* ------------------------------------------------------------ プラン */}
+      {/* -------------------------------------------------------- プラン */}
       <Section tone="white">
         <PlanCards />
-      </Section>
 
-      {/* ------------------------------------------------------------ 比較表 */}
-      <Section tone="soft">
-        <SectionHeading
-          eyebrow="COMPARE"
-          title="プランの違い"
-          description="どちらを選べばよいか迷う場合は、写真の枚数と記事の作り方で比べてください。"
-        />
-
-        {/* スマホ：1項目ずつ縦に積む（表を横に潰さない） */}
-        <ul className="space-y-3 sm:hidden">
-          {COMPARISON_ROWS.map((row) => (
-            <li key={row.label} className="rounded-2xl border border-white bg-white p-4">
-              <p className="text-xs font-bold text-biz-blue">{row.label}</p>
-              <dl className="mt-2 grid grid-cols-2 gap-3">
-                {PLANS.map((plan) => (
-                  <div key={plan.id} className="min-w-0">
-                    <dt className="text-[0.7rem] font-bold text-biz-muted">{plan.name}</dt>
-                    <dd className="mt-1 text-sm leading-snug font-bold text-biz-ink">
-                      {row.values[plan.id] ?? "—"}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </li>
-          ))}
-        </ul>
-
-        {/* PC・タブレット：通常の比較表。念のため横スクロール可にしておく */}
-        <div className="hidden overflow-x-auto rounded-2xl border border-white bg-white sm:block">
-          <table className="w-full min-w-[36rem] border-collapse text-left">
-            <caption className="sr-only">ライトプランとスタンダードプランの比較</caption>
-            <thead>
-              <tr className="border-b border-biz-line">
-                <th scope="col" className="p-4 text-sm font-bold text-biz-muted">
-                  項目
-                </th>
-                {PLANS.map((plan) => (
-                  <th key={plan.id} scope="col" className="p-4 text-sm font-bold text-biz-ink">
-                    {plan.name}
-                    <span className="mt-0.5 block text-xs font-normal text-biz-muted">{plan.kind}</span>
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {COMPARISON_ROWS.map((row) => (
-                <tr key={row.label} className="border-b border-biz-line last:border-b-0">
-                  <th scope="row" className="p-4 align-top text-sm font-bold text-biz-muted">
-                    {row.label}
-                  </th>
-                  {PLANS.map((plan) => (
-                    <td key={plan.id} className="p-4 align-top text-sm text-biz-ink">
-                      {row.values[plan.id] ?? "—"}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </Section>
-
-      {/* ---------------------------------------------------------- オプション */}
-      <Section tone="white">
-        <SectionHeading
-          eyebrow="OPTIONS"
-          title="オプション・その他のサービス"
-          description="掲載プランに追加できるオプションと、個別にお見積りするサービスです。"
-        />
-
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="mt-6 grid gap-4 sm:grid-cols-2">
           {OPTIONS.map((option) => (
-            <Card key={option.id}>
+            <Card key={option.id} className="bg-biz-sand">
               <p className="text-xs font-bold text-biz-blue">オプション</p>
-              <div className="mt-1 flex flex-wrap items-baseline justify-between gap-2">
-                <h3 className="text-base font-bold text-biz-ink">{option.name}</h3>
-                <p className="text-2xl leading-none font-bold text-biz-ink">{option.priceLabel}</p>
-              </div>
-              <p className="mt-3 text-sm leading-relaxed text-biz-muted">{option.note}</p>
+              <h3 className="mt-1 text-base font-bold text-biz-ink">{option.name}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-biz-muted">{option.note}</p>
             </Card>
           ))}
-
           {CONSULT_ITEMS.map((item) => (
             <Card key={item.id} className="bg-biz-sand">
               <p className="text-xs font-bold text-biz-blue">個別見積り</p>
               <div className="mt-1 flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="text-base font-bold text-biz-ink">{item.name}</h3>
-                <p className="text-xl leading-none font-bold text-biz-ink">{item.priceLabel}</p>
+                <p className="text-base font-bold text-biz-ink">{item.priceLabel}</p>
               </div>
-              <p className="mt-3 text-sm leading-relaxed text-biz-muted">{item.note}</p>
+              <p className="mt-2 text-sm leading-relaxed text-biz-muted">{item.note}</p>
             </Card>
           ))}
         </div>
+      </Section>
 
-        <div className="mt-8 rounded-2xl border border-biz-line bg-biz-blue-soft p-5 sm:p-6">
-          <h3 className="text-base font-bold text-biz-ink">料金について分からないことがあれば</h3>
+      {/* ------------------------------------------- 含まれる／含まれない */}
+      <Section tone="soft">
+        <SectionHeading
+          eyebrow="SCOPE"
+          title="含まれるもの・含まれないもの"
+          description="あとで認識のずれが出ないよう、できないことも先に書いています。"
+        />
+
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div className="rounded-2xl border border-white bg-white p-5 sm:p-6">
+            <h3 className="text-sm font-bold text-biz-ink">含まれるもの</h3>
+            <ul className="mt-3 space-y-2">
+              {INCLUDED.map((item) => (
+                <li key={item} className="flex gap-2 text-sm leading-relaxed text-biz-muted">
+                  <span aria-hidden="true" className="shrink-0 font-bold text-biz-blue">
+                    ✓
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="rounded-2xl border border-white bg-white p-5 sm:p-6">
+            <h3 className="text-sm font-bold text-biz-ink">含まれないもの</h3>
+            <ul className="mt-3 space-y-2">
+              {NOT_INCLUDED.map((item) => (
+                <li key={item} className="flex gap-2 text-sm leading-relaxed text-biz-muted">
+                  <span aria-hidden="true" className="shrink-0 font-bold text-biz-muted">
+                    ×
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-6 rounded-2xl border border-white bg-white p-5 sm:p-6">
+          <h3 className="text-base font-bold text-biz-ink">料金について</h3>
           <p className="mt-2 text-sm leading-relaxed text-biz-muted">
-            「この内容だといくらになるか」「まず何から始めるべきか」など、
-            お見積りやご相談は無料です。お問い合わせいただいた時点では契約になりません。
+            掲載プランの料金は、媒体資料に記載しています。資料請求は無料で、
+            ご請求いただいた時点では契約になりません。
+            お見積りが必要な場合も、内容をうかがったうえで無料でお出しします。
           </p>
           <div className="mt-5">
             <CtaGroup>
-              <CtaLink href="/business/contact">料金について問い合わせる</CtaLink>
-              <CtaLink href="/business/faq" variant="secondary">
-                よくあるご質問を見る
+              <CtaLink href={DOWNLOAD_PATH}>媒体資料を請求する</CtaLink>
+              <CtaLink href="/business/contact" variant="secondary">
+                直接問い合わせる
               </CtaLink>
             </CtaGroup>
           </div>
         </div>
       </Section>
 
-      {/* ------------------------------------------------------- 注意事項など */}
+      {/* ------------------------------------------------- 注意事項など */}
       <Section tone="sand" id="notes">
         <SectionHeading
           eyebrow="NOTES"
@@ -208,7 +178,10 @@ export default function PricingPage() {
             <h3 className="text-sm font-bold text-biz-ink">免責事項</h3>
             <ul className="mt-3 space-y-2">
               {DISCLAIMERS.map((item) => (
-                <li key={item.slice(0, 20)} className="flex gap-2 text-xs leading-relaxed text-biz-muted">
+                <li
+                  key={item.slice(0, 20)}
+                  className="flex gap-2 text-xs leading-relaxed text-biz-muted"
+                >
                   <span aria-hidden="true" className="shrink-0 text-biz-blue">
                     ・
                   </span>
@@ -221,8 +194,8 @@ export default function PricingPage() {
       </Section>
 
       <FinalCta
-        title="料金のご相談・お見積りは無料です"
-        lead="掲載内容をうかがったうえで、料金と進め方をご案内します。ご相談だけでも構いません。"
+        title="まずは媒体資料をご覧ください"
+        lead={`掲載内容と料金をまとめています。ご請求・ご相談は無料で、この時点では契約になりません。プランは現在「${PLANS[0].name}」の1種類です。`}
       />
     </>
   );

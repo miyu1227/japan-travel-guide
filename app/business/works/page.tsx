@@ -1,7 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { businessMetadata, breadcrumbJsonLd, PARENT_SITE_NAME } from "@/lib/business/site";
+import {
+  businessMetadata,
+  breadcrumbJsonLd,
+  DOWNLOAD_PATH,
+  PARENT_SITE_NAME,
+} from "@/lib/business/site";
 import {
   HAS_SPONSORED,
   SHOWCASE_CATEGORIES,
@@ -146,16 +151,16 @@ export default function WorksPage() {
         <div className="rounded-2xl border border-biz-line bg-white p-5 sm:p-6">
           <h2 className="text-base font-bold text-biz-ink">掲載をご検討中の方へ</h2>
           <p className="mt-2 text-sm leading-relaxed text-biz-muted">
-            スポット掲載（5,000円）は既存の記事フォーマットへの掲載、
-            特集記事掲載（10,000円）は貴店専用の記事を1本制作する形です。
-            どちらが合うかは、お持ちの写真の枚数と伝えたい情報量で決まります。
+            掲載すると、上のような記事と同じ作りで、貴店専用のページを1本お作りします。
+            写真5〜10枚と基本情報をご用意いただければ、日本語と繁体字の本文はこちらで制作します。
+            料金は媒体資料に記載しています。
           </p>
           <div className="mt-5">
             <CtaGroup>
+              <CtaLink href={DOWNLOAD_PATH}>媒体資料を請求する</CtaLink>
               <CtaLink href="/business/pricing" variant="secondary">
-                料金プランを見る
+                掲載プランの内容を見る
               </CtaLink>
-              <CtaLink href="/business/contact">掲載について相談する</CtaLink>
             </CtaGroup>
           </div>
         </div>

@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { businessMetadata, breadcrumbJsonLd } from "@/lib/business/site";
+import {
+  businessMetadata,
+  breadcrumbJsonLd,
+  DOWNLOAD_PATH,
+  PRICE_PLACEHOLDER,
+  SHOW_PRICES,
+} from "@/lib/business/site";
 import { SERVICES, SERVICE_STATUS_LABEL } from "@/lib/business/services";
 import { PRICING_NOTES } from "@/lib/business/pricing";
 import FinalCta from "../components/FinalCta";
@@ -19,13 +25,13 @@ export const metadata: Metadata = businessMetadata({
   path: "services",
   title: "サービス一覧｜台湾・香港向けPR掲載と繁体字コンテンツ制作",
   description:
-    "Japan Trip Picks for Business のサービス一覧。スポット掲載5,000円、特集記事掲載10,000円、SNS紹介＋3,000円、繁体字コンテンツ制作は要相談。台湾・香港向けの情報発信をお手伝いします。",
+    "Japan Trip Picks for Business のサービス一覧。貴店専用ページの制作・永久掲載、SNS紹介、繁体字コンテンツ制作、台湾・香港向け集客支援のご案内です。",
 });
 
 const STATUS_TONE = {
   available: "blue",
+  option: "muted",
   consult: "muted",
-  preparing: "muted",
 } as const;
 
 const crumbs = [
@@ -133,14 +139,23 @@ export default function ServicesPage() {
                   </div>
                   <div className="mt-5 border-t border-biz-line pt-4">
                     <p className="text-xs font-bold text-biz-blue">料金</p>
-                    <p className="mt-1 text-2xl leading-none font-bold text-biz-ink">{service.price}</p>
-                    {service.priceNote && (
-                      <p className="mt-2 text-xs text-biz-muted">{service.priceNote}</p>
-                    )}
+                    <p className="mt-1 text-xl leading-none font-bold text-biz-ink">
+                      {SHOW_PRICES ? service.price : PRICE_PLACEHOLDER}
+                    </p>
+                    <p className="mt-2 text-xs text-biz-muted">
+                      {SHOW_PRICES
+                        ? service.priceNote
+                        : service.status === "consult"
+                          ? "内容をうかがってお見積りします"
+                          : "料金は媒体資料に記載しています"}
+                    </p>
                   </div>
                   <div className="mt-5">
-                    <CtaLink href="/business/contact" className="w-full sm:w-full">
-                      このサービスを相談する
+                    <CtaLink
+                      href={service.status === "consult" ? "/business/contact" : DOWNLOAD_PATH}
+                      className="w-full sm:w-full"
+                    >
+                      {service.status === "consult" ? "このサービスを相談する" : "資料を請求する"}
                     </CtaLink>
                   </div>
                 </div>
@@ -159,8 +174,9 @@ export default function ServicesPage() {
         <NoteList items={PRICING_NOTES} />
         <div className="mt-6">
           <CtaGroup>
+            <CtaLink href={DOWNLOAD_PATH}>料金が載った資料を請求する</CtaLink>
             <CtaLink href="/business/pricing" variant="secondary">
-              料金プランを比べる
+              掲載プランの内容を見る
             </CtaLink>
             <CtaLink href="/business/works" variant="secondary">
               制作している記事の例を見る

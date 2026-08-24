@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { SERVICES, SERVICE_STATUS_LABEL, type Service } from "@/lib/business/services";
+import { PRICE_PLACEHOLDER, SHOW_PRICES } from "@/lib/business/site";
 import { Badge } from "./ui";
 
 const STATUS_TONE = {
   available: "blue",
+  option: "muted",
   consult: "muted",
-  preparing: "muted",
 } as const;
 
 /** サービスカード一覧。TOPで使う（詳細はサービスページのアンカーへ飛ばす） */
@@ -31,8 +32,8 @@ export default function ServiceCards({ services = SERVICES }: { services?: Servi
             </div>
             <p className="mt-2 grow text-sm leading-relaxed text-biz-muted">{service.summary}</p>
             <p className="mt-4 border-t border-biz-line pt-3 text-sm font-bold text-biz-ink">
-              {service.price}
-              {service.priceNote && (
+              {SHOW_PRICES ? service.price : PRICE_PLACEHOLDER}
+              {SHOW_PRICES && service.priceNote && (
                 <span className="ml-2 text-xs font-normal text-biz-muted">{service.priceNote}</span>
               )}
             </p>

@@ -1,9 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { businessMetadata, PARENT_SITE_NAME, PARENT_SITE_URL } from "@/lib/business/site";
+import {
+  businessMetadata,
+  DOWNLOAD_PATH,
+  PARENT_SITE_NAME,
+  PARENT_SITE_URL,
+} from "@/lib/business/site";
 import { HIGHLIGHT_FAQ } from "@/lib/business/faq";
 import { OPTIONS, PRICING_NOTES } from "@/lib/business/pricing";
+import { MARKET_STATS, SOURCES } from "@/lib/business/market";
 import FaqList from "./components/FaqList";
 import FinalCta from "./components/FinalCta";
 import PlanCards from "./components/PlanCards";
@@ -53,8 +59,8 @@ const REASONS = [
   },
   {
     emoji: "🪶",
-    title: "小規模店舗でも使いやすい価格",
-    body: "5,000円のスポット掲載から始められます。1店舗・1記事からお申し込みいただけます。",
+    title: "小規模店舗でも始めやすい",
+    body: "1店舗・1記事からお申し込みいただけます。買い切りなので、続けるための費用はかかりません。",
   },
   {
     emoji: "🚶",
@@ -65,8 +71,8 @@ const REASONS = [
 
 /** 掲載までの流れ */
 const STEPS = [
-  { title: "お問い合わせ", body: "フォームまたはメールで、店舗名・所在地・ご希望内容をお送りください。" },
-  { title: "掲載内容の確認", body: "プラン・料金・スケジュールをご案内します。この時点では契約になりません。" },
+  { title: "資料請求・お問い合わせ", body: "フォームまたはメールで、店舗名・所在地・ご希望内容をお送りください。" },
+  { title: "掲載内容と料金のご案内", body: "媒体資料をお送りし、プラン・料金・スケジュールをご案内します。この時点では契約になりません。" },
   { title: "素材のご共有", body: "写真と基本情報（住所・アクセス・営業時間など）をお送りいただきます。" },
   { title: "記事・ページ制作", body: "日本語の原稿と繁体字の本文を制作します。" },
   { title: "内容のご確認", body: "公開前に内容をご確認いただき、修正のご要望を反映します。" },
@@ -94,15 +100,15 @@ export default function BusinessTopPage() {
 
             <div className="mt-7">
               <CtaGroup>
-                <CtaLink href="/business/services">サービスを見る</CtaLink>
-                <CtaLink href="/business/contact" variant="secondary">
-                  掲載について相談する
+                <CtaLink href={DOWNLOAD_PATH}>媒体資料を請求する</CtaLink>
+                <CtaLink href="/business/services" variant="secondary">
+                  サービスを見る
                 </CtaLink>
               </CtaGroup>
             </div>
 
             <ul className="mt-7 flex flex-wrap gap-2">
-              {["繁体字で制作", "5,000円から", "月額費用なし", "1店舗から"].map((tag) => (
+              {["はじめから繁体字", "買い切り・月額なし", "1店舗から", "永久掲載"].map((tag) => (
                 <li
                   key={tag}
                   className="rounded-full border border-white bg-white/70 px-3 py-1 text-xs font-bold text-biz-ink"
@@ -185,6 +191,43 @@ export default function BusinessTopPage() {
         </div>
       </Section>
 
+      {/* ---------------------------------------------------------- 市場 */}
+      <Section tone="soft" id="market">
+        <SectionHeading
+          eyebrow="MARKET"
+          title="なぜ台湾・香港なのか"
+          description="人数でも消費額でも大きく、しかも「何度も来ている人」が中心の市場です。数字は公的統計から引いています。"
+        />
+
+        <ul className="grid gap-4 sm:grid-cols-3">
+          {MARKET_STATS.map((stat) => (
+            <li key={stat.label} className="h-full">
+              <div className="flex h-full flex-col rounded-2xl border border-white bg-white p-5">
+                <p className="flex items-baseline gap-1">
+                  <span className="text-3xl leading-none font-bold text-biz-ink sm:text-4xl">
+                    {stat.value}
+                  </span>
+                  {stat.unit && (
+                    <span className="text-base font-bold text-biz-ink">{stat.unit}</span>
+                  )}
+                </p>
+                <p className="mt-3 text-sm font-bold text-biz-blue">{stat.label}</p>
+                <p className="mt-2 grow text-xs leading-relaxed text-biz-muted">{stat.detail}</p>
+                <p className="mt-3 text-[0.7rem] text-biz-muted">出典：{SOURCES[stat.source].label}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-8">
+          <CtaGroup>
+            <CtaLink href="/business/taiwan-hongkong" variant="secondary">
+              台湾・香港市場をもっと詳しく見る
+            </CtaLink>
+          </CtaGroup>
+        </div>
+      </Section>
+
       {/* -------------------------------------------------------- おすすめ */}
       <Section tone="sand" id="audience">
         <SectionHeading
@@ -258,50 +301,48 @@ export default function BusinessTopPage() {
         </ol>
       </Section>
 
-      {/* ------------------------------------------------------------ 料金 */}
+      {/* ------------------------------------------------------ 掲載プラン */}
       <Section tone="white" id="pricing">
         <SectionHeading
-          eyebrow="PRICING"
-          title="料金"
-          description="どちらも買い切りです。月額費用・更新料はいただきません。"
+          eyebrow="PLAN"
+          title="掲載プラン"
+          description="1店舗ごとに専用ページを作る、買い切りのプランです。月額費用・更新料はいただきません。"
         />
         <PlanCards showCta={false} />
 
         <div className="mt-5 grid gap-4 sm:grid-cols-2">
           {OPTIONS.map((option) => (
             <Card key={option.id} className="bg-biz-sand">
-              <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h3 className="text-base font-bold text-biz-ink">
-                  <span className="text-xs font-bold text-biz-blue">オプション</span>
-                  <br />
-                  {option.name}
-                </h3>
-                <p className="text-xl font-bold text-biz-ink">{option.priceLabel}</p>
-              </div>
+              <p className="text-xs font-bold text-biz-blue">オプション</p>
+              <h3 className="mt-1 text-base font-bold text-biz-ink">{option.name}</h3>
               <p className="mt-2 text-sm leading-relaxed text-biz-muted">{option.note}</p>
             </Card>
           ))}
           <Card className="bg-biz-sand">
-            <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <h3 className="text-base font-bold text-biz-ink">
-                <span className="text-xs font-bold text-biz-blue">その他</span>
-                <br />
-                繁体字コンテンツ制作・集客支援
-              </h3>
-              <p className="text-xl font-bold text-biz-ink">要相談</p>
-            </div>
+            <p className="text-xs font-bold text-biz-blue">その他</p>
+            <h3 className="mt-1 text-base font-bold text-biz-ink">
+              繁体字コンテンツ制作・集客支援
+            </h3>
             <p className="mt-2 text-sm leading-relaxed text-biz-muted">
               分量・用途をうかがったうえでお見積りいたします。
             </p>
           </Card>
         </div>
 
-        <div className="mt-8">
-          <CtaGroup>
-            <CtaLink href="/business/pricing" variant="secondary">
-              料金の詳細を見る
-            </CtaLink>
-          </CtaGroup>
+        <div className="mt-8 rounded-2xl border border-biz-line bg-biz-blue-soft p-5 sm:p-6">
+          <h3 className="text-base font-bold text-biz-ink">料金は媒体資料に記載しています</h3>
+          <p className="mt-2 text-sm leading-relaxed text-biz-muted">
+            掲載プランの料金、媒体の実績（記事数・繁体字検索での掲載順位・表示回数）は、
+            媒体資料でご確認いただけます。ご請求は無料で、この時点では契約になりません。
+          </p>
+          <div className="mt-5">
+            <CtaGroup>
+              <CtaLink href={DOWNLOAD_PATH}>媒体資料を請求する</CtaLink>
+              <CtaLink href="/business/pricing" variant="secondary">
+                プランの内容を見る
+              </CtaLink>
+            </CtaGroup>
+          </div>
         </div>
       </Section>
 

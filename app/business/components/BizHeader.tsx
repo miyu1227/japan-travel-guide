@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
-import { NAV, PARENT_SITE_NAME, PARENT_SITE_URL } from "@/lib/business/site";
+import { DOWNLOAD_PATH, NAV, PARENT_SITE_NAME, PARENT_SITE_URL } from "@/lib/business/site";
 
 export default function BizHeader() {
   const pathname = usePathname();
@@ -66,13 +66,14 @@ export default function BizHeader() {
             </ul>
           </nav>
 
-          {/* 常時表示CTA。スマホでは文言を短くして幅を取りすぎないようにする */}
+          {/* 常時表示CTA。資料請求は問い合わせより心理的な負担が軽いのでこちらを出す。
+              スマホでは文言を短くして幅を取りすぎないようにする。 */}
           <Link
-            href="/business/contact"
+            href={DOWNLOAD_PATH}
             className="inline-flex min-h-10 shrink-0 items-center justify-center rounded-lg bg-biz-cta px-3 text-[0.8rem] font-bold whitespace-nowrap text-white transition-colors hover:bg-biz-cta-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-cta sm:px-4 sm:text-sm"
           >
-            <span className="lg:hidden">相談する</span>
-            <span className="hidden lg:inline">掲載について相談する</span>
+            <span className="lg:hidden">資料請求</span>
+            <span className="hidden lg:inline">媒体資料を請求する</span>
           </Link>
 
           {/* ハンバーガー */}

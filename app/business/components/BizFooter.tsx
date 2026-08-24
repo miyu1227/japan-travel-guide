@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CONTACT, NAV, PARENT_SITE_NAME, PARENT_SITE_URL, SITE_NAME } from "@/lib/business/site";
+import { CONTACT, DOWNLOAD_PATH, NAV, PARENT_SITE_NAME, PARENT_SITE_URL, SITE_NAME } from "@/lib/business/site";
 
 export default function BizFooter() {
   return (
@@ -22,7 +22,10 @@ export default function BizFooter() {
           <nav aria-label="フッターメニュー">
             <p className="mb-3 text-sm font-bold text-biz-ink">メニュー</p>
             <ul>
-              {NAV.filter((item) => item.href !== "/business").map((item) => (
+              {[
+                ...NAV.filter((item) => item.href !== "/business"),
+                { href: DOWNLOAD_PATH, label: "資料請求" },
+              ].map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}

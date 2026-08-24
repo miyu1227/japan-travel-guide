@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { businessMetadata, breadcrumbJsonLd, CONTACT, PARENT_SITE_NAME } from "@/lib/business/site";
+import {
+  businessMetadata,
+  breadcrumbJsonLd,
+  CONTACT,
+  DOWNLOAD_PATH,
+  PARENT_SITE_NAME,
+} from "@/lib/business/site";
 import ContactForm from "../components/ContactForm";
 import PageHero from "../components/PageHero";
 import { Card, CtaAnchor, CtaGroup, CtaLink, JsonLd, Section, SectionHeading } from "../components/ui";
@@ -24,7 +30,7 @@ const MAIL_TEMPLATE = [
   "ご担当者名",
   "所在地",
   "Webサイト / SNS の URL",
-  "ご希望のサービス（スポット掲載 / 特集記事掲載 など）",
+  "ご希望のサービス（貴店専用ページの掲載 / 繁体字コンテンツ制作 など）",
   "ご相談内容",
 ];
 
@@ -47,6 +53,20 @@ export default function ContactPage() {
           title="お問い合わせ方法"
           description="下のフォームからメールを作成いただくか、直接メール・お電話でご連絡ください。"
         />
+
+        <div className="mb-6 rounded-2xl border border-biz-line bg-biz-blue-soft p-5 sm:p-6">
+          <h3 className="text-sm font-bold text-biz-ink">
+            まず内容と料金を知りたい場合は、資料請求が早いです
+          </h3>
+          <p className="mt-2 text-xs leading-relaxed text-biz-muted">
+            掲載内容・料金・お申し込みの流れをまとめた媒体資料をお送りします。ご請求は無料です。
+          </p>
+          <div className="mt-4">
+            <CtaGroup>
+              <CtaLink href={DOWNLOAD_PATH}>媒体資料を請求する</CtaLink>
+            </CtaGroup>
+          </div>
+        </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
           <Card>
@@ -168,8 +188,9 @@ export default function ContactPage() {
 
         <div className="mt-8">
           <CtaGroup>
+            <CtaLink href={DOWNLOAD_PATH}>媒体資料を請求する</CtaLink>
             <CtaLink href="/business/pricing" variant="secondary">
-              料金プランを見る
+              掲載プランの内容を見る
             </CtaLink>
             <CtaLink href="/business/faq" variant="secondary">
               よくあるご質問を見る

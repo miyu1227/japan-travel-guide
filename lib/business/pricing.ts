@@ -1,17 +1,19 @@
-// 料金プランの定義。金額・内容の変更はこのファイルだけで完結する。
-// TOPの料金セクションと料金ページが同じ定義を参照する。
+// 掲載プランの定義。
+//
+// 現在ご提供しているのは「貴店専用ページ」1プランと、SNS紹介のオプションのみ。
+// 金額は媒体資料（資料請求）でのみ提示するため、
+// サイトに出すかどうかは lib/business/site.ts の SHOW_PRICES で切り替える。
 
 export type Plan = {
   id: string;
   name: string;
-  /** プランの正体（スポット掲載 / 特集記事掲載） */
+  /** プランの正体 */
   kind: string;
   price: number;
   priceLabel: string;
   taxNote: string;
   summary: string;
   features: string[];
-  /** 「おすすめ」バッジを出すか */
   recommended?: boolean;
   /** 対応するサービスID */
   serviceId: string;
@@ -19,36 +21,22 @@ export type Plan = {
 
 export const PLANS: Plan[] = [
   {
-    id: "light",
-    name: "ライトプラン",
-    kind: "スポット掲載",
-    price: 5000,
-    priceLabel: "5,000円",
-    taxNote: "税込・買い切り",
-    summary: "まずは小さく試したい方へ。既存フォーマットへの掲載です。",
-    features: [
-      "既存フォーマットに掲載",
-      "写真3〜5枚",
-      "基本情報掲載",
-      "日本語＋繁体字の紹介文",
-      "修正1回",
-    ],
-    serviceId: "spot",
-  },
-  {
-    id: "standard",
-    name: "スタンダードプラン",
-    kind: "特集記事掲載",
+    id: "feature",
+    name: "貴店専用ページ",
+    kind: "記事を1本まるごと制作します",
     price: 10000,
     priceLabel: "10,000円",
-    taxNote: "税込・買い切り",
-    summary: "1記事まるごとを使って、しっかり紹介したい方へ。",
+    taxNote: "税込・お支払いは初回のみ",
+    summary:
+      "1店舗ごとに独立したページを作ります。他店と埋もれず、検索から直接お店のページに届きます。",
     features: [
       "貴店専用の記事を1本制作",
       "写真5〜10枚",
-      "基本情報掲載",
-      "日本語＋繁体字の記事本文",
+      "基本情報（住所・アクセス・営業時間）",
+      "紹介文の作成（日本語＋繁体字）",
+      "公式サイト・地図へのリンク",
       "修正2回",
+      "永久掲載（月額費用・更新料なし）",
     ],
     recommended: true,
     serviceId: "feature",
@@ -67,8 +55,8 @@ export const OPTIONS: PricingOption[] = [
   {
     id: "sns",
     name: "SNS紹介",
-    priceLabel: "+3,000円",
-    note: "Instagram・Threads での紹介投稿を追加します。",
+    priceLabel: "3,000円",
+    note: "Instagram・Threads での紹介投稿を追加します。繁体字のキャプションつき。",
     serviceId: "sns",
   },
 ];
@@ -90,18 +78,19 @@ export const CONSULT_ITEMS: PricingOption[] = [
   },
 ];
 
-/** 料金表の比較行。プランを増やしたらここに1行足す。 */
-export type ComparisonRow = { label: string; values: Record<string, string> };
+/** 掲載プランに含まれるもの／含まれないものを、誤解が出ないように並べる。 */
+export const INCLUDED: string[] = [
+  "貴店専用ページの記事制作（日本語＋繁体字）",
+  "基本情報（住所・アクセス・営業時間）の掲載",
+  "公式サイト・地図へのリンク",
+  "公開前のご確認と修正2回",
+  "サイト運営期間中の継続掲載（追加費用なし）",
+];
 
-export const COMPARISON_ROWS: ComparisonRow[] = [
-  { label: "料金（税込）", values: { light: "5,000円", standard: "10,000円" } },
-  { label: "掲載の形", values: { light: "既存フォーマット内", standard: "専用記事1本" } },
-  { label: "写真の枚数", values: { light: "3〜5枚", standard: "5〜10枚" } },
-  { label: "基本情報の掲載", values: { light: "あり", standard: "あり" } },
-  { label: "日本語＋繁体字", values: { light: "紹介文", standard: "記事本文" } },
-  { label: "修正回数", values: { light: "1回", standard: "2回" } },
-  { label: "掲載期間", values: { light: "サイト運営中は掲載継続", standard: "サイト運営中は掲載継続" } },
-  { label: "月額・更新料", values: { light: "なし", standard: "なし" } },
+export const NOT_INCLUDED: string[] = [
+  "写真の撮影（お客様よりご提供いただきます）",
+  "集客数・検索順位・売上の保証",
+  "掲載枠の第三者への譲渡・転売",
 ];
 
 /** 料金まわりの注意書き。誇大にならないよう事実だけ書く。 */
@@ -109,6 +98,7 @@ export const PRICING_NOTES: string[] = [
   "料金は買い切りです。月額費用・更新料はいただきません。",
   "掲載はサイトの運営期間中、継続して掲載されます（永久掲載）。",
   "写真はお客様よりご提供いただきます。当方での撮影は承っておりません。",
+  "情報・写真をいただいてから公開まで、約1ヶ月を目安としています（制作状況により前後します）。",
   "掲載による集客効果・検索順位・売上を保証するものではありません。",
   "掲載内容によってはお受けできない場合があります（掲載基準をご確認ください）。",
 ];

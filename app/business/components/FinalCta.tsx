@@ -1,5 +1,5 @@
-import { CONTACT } from "@/lib/business/site";
-import { CtaAnchor, CtaGroup, CtaLink, Section, SectionHeading } from "./ui";
+import { CONTACT, DOWNLOAD_PATH } from "@/lib/business/site";
+import { CtaGroup, CtaLink, Section, SectionHeading } from "./ui";
 
 /** 全ページ共通の最終CTA */
 export default function FinalCta({
@@ -14,11 +14,10 @@ export default function FinalCta({
       <div className="mx-auto max-w-3xl text-center">
         <SectionHeading eyebrow="CONTACT" title={title} description={lead} inverted align="center" />
         <CtaGroup align="center">
-          <CtaLink href="/business/contact">お問い合わせフォームへ</CtaLink>
-          <CtaAnchor href={`mailto:${CONTACT.email}`} variant="ghost">
-            <span aria-hidden="true">✉</span>
-            メールで問い合わせる
-          </CtaAnchor>
+          <CtaLink href={DOWNLOAD_PATH}>媒体資料を請求する</CtaLink>
+          <CtaLink href="/business/contact" variant="ghost">
+            そのまま問い合わせる
+          </CtaLink>
         </CtaGroup>
         <p className="mt-5 text-xs leading-relaxed text-white/70">
           お電話でも承ります：

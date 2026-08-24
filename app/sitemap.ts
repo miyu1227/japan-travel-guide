@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { ARTICLES } from "@/lib/articles";
 import { HUBS, hubMembers } from "@/lib/hubs";
+import { SEARCH_INDEXABLE } from "@/lib/business/site";
 
 const BASE_URL = "https://www.japantrippicks.com";
 
@@ -71,13 +72,18 @@ const STATIC_ROUTES: { slug: string; priority: number; changeFrequency: "monthly
   { slug: "privacy", priority: 0.4, changeFrequency: "yearly" },
 ];
 
-/** BtoBサイト（/business）。事業者向けなので記事とは別枠で持つ。 */
+/**
+ * BtoBサイト（/business）。事業者向けなので記事とは別枠で持つ。
+ * noindex のあいだは sitemap にも載せない（noindex と sitemap 掲載は矛盾するため）。
+ */
 const BUSINESS_ROUTES: { path: string; priority: number }[] = [
   { path: "/business", priority: 0.8 },
+  { path: "/business/taiwan-hongkong", priority: 0.7 },
   { path: "/business/services", priority: 0.7 },
   { path: "/business/pricing", priority: 0.7 },
   { path: "/business/works", priority: 0.6 },
   { path: "/business/faq", priority: 0.6 },
+  { path: "/business/download", priority: 0.6 },
   { path: "/business/contact", priority: 0.6 },
 ];
 
@@ -116,11 +122,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: r.changeFrequency,
       priority: r.priority,
     })),
-    ...BUSINESS_ROUTES.map((r) => ({
-      url: `${BASE_URL}${r.path}`,
-      lastModified: new Date(latestUpdate),
-      changeFrequency: "monthly" as const,
-      priority: r.priority,
-    })),
+    ...(SEARCH_INDEXABLE
+      ? BUSINESS_ROUTES.map((r) => ({
+          url: `${BASE_URL}${r.path}`,
+          lastModified: new Date(latestUpdate),
+          changeFrequency: "monthly" as const,
+          priority: r.priority,
+        }))
+      : []),
   ];
 }

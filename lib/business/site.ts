@@ -5,6 +5,29 @@ import type { Metadata } from "next";
 export const ORIGIN = "https://www.japantrippicks.com";
 export const BASE_PATH = "/business";
 
+/**
+ * 検索エンジンにインデックスさせるか。
+ *
+ * 本体サイトが AdSense 審査中のあいだは false にしておく。
+ * 事業者向けの営業ページがドメイン配下で大量にインデックスされると、
+ * 審査で見られるコンテンツの母集団に営業ページが混ざるため。
+ * noindex でも URL を直接開けば見られるので、営業でURLを送る用途には影響しない。
+ * 審査を通過したら true に戻す（sitemap への掲載もこのフラグで切り替わる）。
+ */
+export const SEARCH_INDEXABLE = false;
+
+/**
+ * 料金をサイト上に出すか。
+ *
+ * 代理店には NET 価格で卸しており、代理店側が自由に上乗せして販売する建て付けのため、
+ * 直販価格をサイトに公開すると代理店が上乗せ販売できなくなる。
+ * そのため料金は媒体資料（資料請求）側でのみ提示する。
+ */
+export const SHOW_PRICES = false;
+
+/** 料金を伏せているときに、金額の代わりに出す文言 */
+export const PRICE_PLACEHOLDER = "お問い合わせください";
+
 export const SITE_NAME = "Japan Trip Picks for Business";
 export const PARENT_SITE_NAME = "Japan Trip Picks";
 export const PARENT_SITE_URL = `${ORIGIN}/`;
@@ -26,12 +49,16 @@ export type NavItem = { href: string; label: string };
 /** ヘッダー・フッター共通のナビゲーション */
 export const NAV: NavItem[] = [
   { href: "/business", label: "TOP" },
+  { href: "/business/taiwan-hongkong", label: "台湾・香港市場" },
   { href: "/business/services", label: "サービス" },
-  { href: "/business/pricing", label: "料金" },
+  { href: "/business/pricing", label: "掲載プラン" },
   { href: "/business/works", label: "実績" },
   { href: "/business/faq", label: "FAQ" },
   { href: "/business/contact", label: "お問い合わせ" },
 ];
+
+/** 資料請求ページ。ヘッダーの常時CTAはここへ送る。 */
+export const DOWNLOAD_PATH = "/business/download";
 
 /** 相対パスから絶対URLを作る。canonical と OGP の url に使う。 */
 export function bizUrl(path = ""): string {
@@ -47,7 +74,7 @@ type BizMetadataInput = {
   /** OGP用のタイトル。未指定なら title を使う */
   ogTitle?: string;
   image?: string;
-  /** 検索結果に出したくないページで false にする */
+  /** 個別に検索結果から外したいページで false にする（既定は SEARCH_INDEXABLE） */
   index?: boolean;
 };
 
@@ -61,7 +88,7 @@ export function businessMetadata({
   description,
   ogTitle,
   image = OG_IMAGE,
-  index = true,
+  index = SEARCH_INDEXABLE,
 }: BizMetadataInput): Metadata {
   const url = bizUrl(path);
 
