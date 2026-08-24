@@ -76,7 +76,7 @@ export default function DownloadPage() {
         <SectionHeading
           eyebrow="REQUEST"
           title="資料請求フォーム"
-          description="入力内容からメールを作成します。折り返し、担当より資料をお送りします。"
+          description="そのまま送信できます。受付の控えを自動でお送りし、担当者より資料をお送りします。"
         />
         <div className="rounded-2xl border border-white bg-white p-5 sm:p-7">
           <ContactForm variant="document" />

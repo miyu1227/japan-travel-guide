@@ -51,7 +51,7 @@ export default function ContactPage() {
         <SectionHeading
           eyebrow="HOW TO CONTACT"
           title="お問い合わせ方法"
-          description="下のフォームからメールを作成いただくか、直接メール・お電話でご連絡ください。"
+          description="下のフォームから送信いただくか、直接メール・お電話でご連絡ください。"
         />
 
         <div className="mb-6 rounded-2xl border border-biz-line bg-biz-blue-soft p-5 sm:p-6">
@@ -129,7 +129,7 @@ export default function ContactPage() {
         <SectionHeading
           eyebrow="FORM"
           title="お問い合わせフォーム"
-          description="入力内容からメール本文を作成します。ご利用のメールソフトが開きます。"
+          description="そのまま送信できます。受付の控えを自動でお送りし、担当者よりあらためてご連絡します。"
         />
         <div className="rounded-2xl border border-white bg-white p-5 sm:p-7">
           <ContactForm />

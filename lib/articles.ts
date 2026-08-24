@@ -21,6 +21,13 @@ export type Article = {
   /** ISO date (YYYY-MM-DD) */
   published: string;
   updated: string;
+  /**
+   * 対価をいただいて制作したPR掲載記事なら true。
+   * 景品表示法（いわゆるステマ規制）で広告である旨の明示が必要なので、
+   * 記事ページ冒頭で PrLabel を出し、カードにもPRバッジを出す。
+   * 未指定＝自主制作記事。既存記事はすべて未指定。
+   */
+  sponsored?: boolean;
 };
 
 export const ARTICLES: Article[] = [

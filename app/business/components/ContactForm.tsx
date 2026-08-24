@@ -7,11 +7,9 @@ import { CONTACT } from "@/lib/business/site";
 /**
  * お問い合わせ／資料請求フォーム。
  *
- * サーバー側の送信処理はまだないので、「送信したふり」はしない。
- * 入力内容からメール本文を組み立てて、
- *   1. ご利用のメールソフトを開く（mailto）
- *   2. 本文をコピーして自分で送る
- * のどちらかを選べる形にしている。挙動はフォーム上に明記する。
+ * /api/business-contact に送信し、運営者への通知と送信者への自動返信を出す。
+ * 送信基盤が未設定のとき（環境変数なし）はサーバーが 503 を返すので、
+ * 「送れたフリ」はせずメール連絡へ誘導する。
  */
 
 export type FormVariant = "contact" | "document";
@@ -37,69 +35,77 @@ const EMPTY: FormState = {
   message: "",
 };
 
+type Status =
+  | { kind: "idle" }
+  | { kind: "submitting" }
+  | { kind: "success" }
+  | { kind: "error"; reason: "not_configured" | "rate_limited" | "invalid" | "failed" };
+
 const FIELD_CLASS =
-  "mt-1.5 block w-full rounded-xl border border-biz-line bg-white px-3.5 py-3 text-base text-biz-ink placeholder:text-slate-400 focus:border-biz-blue focus:outline-2 focus:outline-offset-0 focus:outline-biz-blue";
+  "mt-1.5 block w-full rounded-xl border border-biz-line bg-white px-3.5 py-3 text-base text-biz-ink placeholder:text-slate-400 focus:border-biz-blue focus:outline-2 focus:outline-offset-0 focus:outline-biz-blue disabled:bg-slate-50 disabled:text-biz-muted";
 
 /** 資料請求で選べる資料の種類 */
 const DOCUMENTS = [
-  {
-    value: "店舗・施設向けの媒体資料",
-    hint: "掲載内容・料金・お申し込みの流れ",
-  },
-  {
-    value: "広告代理店向けの資料",
-    hint: "代理店さま向けのお取り扱い条件",
-  },
+  { value: "店舗・施設向けの媒体資料", hint: "掲載内容・料金・お申し込みの流れ" },
+  { value: "広告代理店向けの資料", hint: "代理店さま向けのお取り扱い条件" },
 ];
 
 const COPY = {
   contact: {
     intro:
-      "現在このフォームは、入力内容をメール本文に組み立てるためのものです。送信ボタンを押すと、ご利用のメールソフトが起動し、入力内容が入った状態でメールが作成されます。",
-    subjectPrefix: "【掲載のご相談】",
-    fallbackSubject: "【掲載のご相談】Japan Trip Picks for Business",
-    bodyTitle: "Japan Trip Picks for Business お問い合わせ",
+      "必要事項をご記入のうえ送信してください。ご入力いただいたアドレスに、受付内容の控えを自動でお送りします。",
     groupLegend: "ご希望のサービス（複数選択可）",
     groupLabel: "ご希望のサービス",
     messageLabel: "お問い合わせ内容",
     messageRequired: true,
-    messagePlaceholder:
-      "ご相談内容、ご希望の掲載時期、写真のご用意状況などをご記入ください。",
-    submitLabel: "メールソフトで送信内容を作成する",
+    messagePlaceholder: "ご相談内容、ご希望の掲載時期、写真のご用意状況などをご記入ください。",
+    submitLabel: "この内容で送信する",
+    successTitle: "お問い合わせを受け付けました",
   },
   document: {
     intro:
-      "現在このフォームは、入力内容をメール本文に組み立てるためのものです。送信ボタンを押すとご利用のメールソフトが起動しますので、そのままお送りください。折り返し、担当より媒体資料をメールでお送りします。",
-    subjectPrefix: "【資料請求】",
-    fallbackSubject: "【資料請求】Japan Trip Picks for Business",
-    bodyTitle: "Japan Trip Picks for Business 資料請求",
+      "必要事項をご記入のうえ送信してください。ご入力いただいたアドレスに、受付内容の控えを自動でお送りします。",
     groupLegend: "ご希望の資料（複数選択可）",
     groupLabel: "ご希望の資料",
     messageLabel: "ご質問・ご要望（任意）",
     messageRequired: false,
-    messagePlaceholder:
-      "検討中の内容やご質問があればご記入ください。空欄のままでも構いません。",
-    submitLabel: "メールソフトで資料請求メールを作成する",
+    messagePlaceholder: "検討中の内容やご質問があればご記入ください。空欄のままでも構いません。",
+    submitLabel: "この内容で資料を請求する",
+    successTitle: "資料請求を受け付けました",
   },
 } as const;
 
+const ERROR_MESSAGE: Record<
+  Extract<Status, { kind: "error" }>["reason"],
+  string
+> = {
+  not_configured:
+    "ただいまフォームからの送信をご利用いただけません。お手数ですが、下記のアドレスまでメールでご連絡ください。",
+  rate_limited:
+    "短時間に送信が繰り返されています。しばらく時間をおいてからお試しいただくか、メールでご連絡ください。",
+  invalid: "入力内容をご確認ください。必須項目が未入力か、メールアドレスの形式に誤りがあります。",
+  failed:
+    "送信に失敗しました。お手数ですが、時間をおいて再度お試しいただくか、メールでご連絡ください。",
+};
+
 export default function ContactForm({ variant = "contact" }: { variant?: FormVariant }) {
   const [state, setState] = useState<FormState>(EMPTY);
-  const [copied, setCopied] = useState<"idle" | "done" | "failed">("idle");
-  /** コピーできなかったときに画面へ出す本文 */
-  const [composed, setComposed] = useState("");
+  const [status, setStatus] = useState<Status>({ kind: "idle" });
+  /** ハニーポット。人は触らない項目。 */
+  const [hp, setHp] = useState("");
   const baseId = useId();
 
   const copy = COPY[variant];
   const options =
     variant === "document"
-      ? DOCUMENTS.map((d) => ({ value: d.value, hint: d.hint }))
+      ? DOCUMENTS
       : [
           ...SERVICES.map((s) => ({ value: s.name, hint: undefined as string | undefined })),
           { value: "まだ決めていない・相談したい", hint: undefined },
         ];
 
   const fieldId = (name: string) => `${baseId}-${name}`;
+  const submitting = status.kind === "submitting";
 
   const update = (key: keyof FormState) => (value: string) =>
     setState((prev) => ({ ...prev, [key]: value }));
@@ -112,54 +118,76 @@ export default function ContactForm({ variant = "contact" }: { variant?: FormVar
         : [...prev.choices, name],
     }));
 
-  const subject = state.company ? `${copy.subjectPrefix}${state.company}` : copy.fallbackSubject;
-
-  const buildBody = () =>
-    [
-      copy.bodyTitle,
-      "",
-      `店舗・企業名：${state.company || "（未入力）"}`,
-      `ご担当者名：${state.person || "（未入力）"}`,
-      `メールアドレス：${state.email || "（未入力）"}`,
-      `所在地：${state.area || "（未入力）"}`,
-      `Webサイト / SNS：${state.url || "（未入力）"}`,
-      `${copy.groupLabel}：${state.choices.length > 0 ? state.choices.join("、") : "（未選択）"}`,
-      "",
-      `${copy.messageLabel.replace("（任意）", "")}：`,
-      state.message || "（未入力）",
-    ].join("\n");
-
-  // メールソフトを開く。フォーム自体はサーバーに送信しない。
-  const openMailClient = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const href = `mailto:${CONTACT.email}?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(buildBody())}`;
-    window.location.href = href;
-  };
+    setStatus({ kind: "submitting" });
 
-  const copyBody = async () => {
-    const text = `宛先: ${CONTACT.email}\n件名: ${subject}\n\n${buildBody()}`;
-    setComposed(text);
     try {
-      await navigator.clipboard.writeText(text);
-      setCopied("done");
+      const res = await fetch("/api/business-contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...state, variant, hp }),
+      });
+
+      if (res.ok) {
+        setStatus({ kind: "success" });
+        return;
+      }
+
+      const data = await res.json().catch(() => ({}));
+      const reason = data?.reason;
+      setStatus({
+        kind: "error",
+        reason:
+          reason === "not_configured" || reason === "rate_limited" || reason === "invalid"
+            ? reason
+            : "failed",
+      });
     } catch {
-      // 権限やフォーカスの都合でコピーできない環境がある。
-      // その場合は本文を画面に出して、手でコピーできるようにする。
-      setCopied("failed");
+      setStatus({ kind: "error", reason: "failed" });
     }
   };
 
+  /* ------------------------------------------------------------ 送信後 */
+
+  if (status.kind === "success") {
+    return (
+      <div
+        // 送信後にフォームが差し替わるので、読み上げにも伝える
+        role="status"
+        aria-live="polite"
+        className="rounded-2xl border border-biz-line bg-biz-blue-soft p-5 sm:p-6"
+      >
+        <p className="flex items-center gap-2 text-base font-bold text-biz-ink">
+          <span aria-hidden="true">✓</span>
+          {copy.successTitle}
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-biz-muted">
+          ご入力いただいたアドレス（{state.email}）に、受付内容の控えをお送りしました。
+          <br />
+          担当者よりあらためてメールにてご連絡いたしますので、少々お待ちくださいませ。
+        </p>
+        <p className="mt-3 text-xs leading-relaxed text-biz-muted">
+          控えのメールが届かない場合は、迷惑メールフォルダをご確認ください。
+          それでも見当たらない場合は、お手数ですが{" "}
+          <a
+            href={`mailto:${CONTACT.email}`}
+            className="font-bold break-all text-biz-blue underline underline-offset-4"
+          >
+            {CONTACT.email}
+          </a>{" "}
+          までご連絡ください。
+        </p>
+      </div>
+    );
+  }
+
+  /* ------------------------------------------------------------ フォーム */
+
   return (
-    <form onSubmit={openMailClient} className="space-y-5">
-      {/* この画面から直接送信されないことを最初に明示する */}
+    <form onSubmit={handleSubmit} className="space-y-5">
       <p className="rounded-xl border border-biz-line bg-biz-sand p-4 text-xs leading-relaxed text-biz-muted">
         {copy.intro}
-        <strong className="font-bold text-biz-ink">
-          この画面から直接送信されることはありません。
-        </strong>
-        メールソフトが起動しない場合は、下の「入力内容をコピー」をお使いください。
       </p>
 
       <div className="grid gap-5 sm:grid-cols-2">
@@ -175,6 +203,7 @@ export default function ContactForm({ variant = "contact" }: { variant?: FormVar
             name="company"
             type="text"
             required
+            disabled={submitting}
             autoComplete="organization"
             value={state.company}
             onChange={(e) => update("company")(e.target.value)}
@@ -195,6 +224,7 @@ export default function ContactForm({ variant = "contact" }: { variant?: FormVar
             name="person"
             type="text"
             required
+            disabled={submitting}
             autoComplete="name"
             value={state.person}
             onChange={(e) => update("person")(e.target.value)}
@@ -215,6 +245,7 @@ export default function ContactForm({ variant = "contact" }: { variant?: FormVar
             name="email"
             type="email"
             required
+            disabled={submitting}
             inputMode="email"
             autoComplete="email"
             value={state.email}
@@ -222,6 +253,9 @@ export default function ContactForm({ variant = "contact" }: { variant?: FormVar
             placeholder="例：info@example.com"
             className={FIELD_CLASS}
           />
+          <p className="mt-1.5 text-xs text-biz-muted">
+            このアドレスに受付の控えをお送りします。
+          </p>
         </div>
 
         <div>
@@ -232,6 +266,7 @@ export default function ContactForm({ variant = "contact" }: { variant?: FormVar
             id={fieldId("area")}
             name="area"
             type="text"
+            disabled={submitting}
             value={state.area}
             onChange={(e) => update("area")(e.target.value)}
             placeholder="例：東京都渋谷区"
@@ -248,6 +283,7 @@ export default function ContactForm({ variant = "contact" }: { variant?: FormVar
           id={fieldId("url")}
           name="url"
           type="url"
+          disabled={submitting}
           inputMode="url"
           value={state.url}
           onChange={(e) => update("url")(e.target.value)}
@@ -259,7 +295,7 @@ export default function ContactForm({ variant = "contact" }: { variant?: FormVar
         </p>
       </div>
 
-      <fieldset className="rounded-xl border border-biz-line p-4">
+      <fieldset className="rounded-xl border border-biz-line p-4" disabled={submitting}>
         <legend className="px-1 text-sm font-bold text-biz-ink">{copy.groupLegend}</legend>
         <ul className="mt-2 grid gap-1 sm:grid-cols-2">
           {options.map((option) => {
@@ -307,6 +343,7 @@ export default function ContactForm({ variant = "contact" }: { variant?: FormVar
           id={fieldId("message")}
           name="message"
           required={copy.messageRequired}
+          disabled={submitting}
           rows={copy.messageRequired ? 6 : 4}
           value={state.message}
           onChange={(e) => update("message")(e.target.value)}
@@ -315,52 +352,55 @@ export default function ContactForm({ variant = "contact" }: { variant?: FormVar
         />
       </div>
 
-      <div className="flex flex-col gap-3 sm:flex-row">
+      {/* ハニーポット。人には見せず、自動入力してくる機械だけを弾く。 */}
+      <div aria-hidden="true" className="absolute h-0 w-0 overflow-hidden opacity-0">
+        <label htmlFor={fieldId("hp")}>この項目は入力しないでください</label>
+        <input
+          id={fieldId("hp")}
+          name="company_website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={hp}
+          onChange={(e) => setHp(e.target.value)}
+        />
+      </div>
+
+      <div>
         <button
           type="submit"
-          className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-biz-cta px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-biz-cta-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-cta sm:w-auto"
+          disabled={submitting}
+          className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-biz-cta px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-biz-cta-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-cta disabled:cursor-not-allowed disabled:bg-biz-muted sm:w-auto"
         >
-          <span aria-hidden="true">✉</span>
-          {copy.submitLabel}
-        </button>
-        <button
-          type="button"
-          onClick={copyBody}
-          className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-biz-line bg-white px-5 py-3 text-sm font-bold text-biz-ink transition-colors hover:border-biz-blue hover:text-biz-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-blue sm:w-auto"
-        >
-          入力内容をコピー
+          {submitting ? "送信中…" : copy.submitLabel}
         </button>
       </div>
 
-      {/* 個人情報の扱い。フォームで氏名・連絡先をいただくので明記しておく。 */}
+      {/* エラーは読み上げにも伝える */}
+      <div aria-live="polite">
+        {status.kind === "error" && (
+          <div className="rounded-xl border border-biz-cta bg-orange-50 p-4">
+            <p className="text-sm leading-relaxed font-bold text-biz-ink">
+              {ERROR_MESSAGE[status.reason]}
+            </p>
+            {status.reason !== "invalid" && (
+              <p className="mt-2 text-sm">
+                <a
+                  href={`mailto:${CONTACT.email}`}
+                  className="font-bold break-all text-biz-blue underline underline-offset-4"
+                >
+                  {CONTACT.email}
+                </a>
+              </p>
+            )}
+          </div>
+        )}
+      </div>
+
       <p className="text-xs leading-relaxed text-biz-muted">
         ご記入いただいた内容は、お問い合わせへの回答・資料の送付・その後のご連絡にのみ使用します。
         ご本人の同意なく第三者へ提供することはありません。
       </p>
-
-      {/* コピー結果は読み上げにも伝わるようにする */}
-      <p aria-live="polite" className="min-h-5 text-xs text-biz-muted">
-        {copied === "done" &&
-          `コピーしました。${CONTACT.email} 宛にそのまま貼り付けてお送りください。`}
-        {copied === "failed" &&
-          "自動でコピーできませんでした。下の本文を選択してコピーし、メールでお送りください。"}
-      </p>
-
-      {copied === "failed" && composed && (
-        <div>
-          <label htmlFor={fieldId("composed")} className="text-xs font-bold text-biz-ink">
-            送信用の本文
-          </label>
-          <textarea
-            id={fieldId("composed")}
-            readOnly
-            rows={12}
-            value={composed}
-            onFocus={(e) => e.currentTarget.select()}
-            className={`${FIELD_CLASS} font-mono text-xs`}
-          />
-        </div>
-      )}
     </form>
   );
 }

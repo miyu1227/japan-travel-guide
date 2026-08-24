@@ -155,6 +155,8 @@ export function resolveShowcase(
     return [
       {
         ...item,
+        // 記事データ側に印があれば、そちらを正とする
+        sponsored: item.sponsored || article.sponsored,
         article,
         href: `/${article.slug}`,
         originalTitle: article.name,
@@ -164,5 +166,8 @@ export function resolveShowcase(
   });
 }
 
-/** PR掲載として制作した記事があるか。見出しの出し分けに使う。 */
-export const HAS_SPONSORED = SHOWCASE_ITEMS.some((i) => i.sponsored);
+/** PR掲載として制作した記事があるか。見出しの出し分けに使う。
+ *  記事データ側の sponsored も見るので、記事に印を付ければ自動で反映される。 */
+export const HAS_SPONSORED = SHOWCASE_ITEMS.some(
+  (i) => i.sponsored || ARTICLE_BY_SLUG[i.slug]?.sponsored
+);
