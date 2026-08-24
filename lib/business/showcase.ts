@@ -7,6 +7,12 @@
 // sponsored が1件でもあると、ページ側の見出しを「掲載事例」に切り替えられる。
 import { ARTICLE_BY_SLUG, type Article } from "@/lib/articles";
 
+/**
+ * TOPのヒーローで「掲載イメージ」として見せる記事のslug。
+ * 写真とタイトルは lib/articles.ts から引くので、ここを差し替えるだけで入れ替わる。
+ */
+export const HERO_ARTICLE_SLUG = "kansai-ramen";
+
 export type ShowcaseCategory = "gourmet" | "cafe" | "spot" | "prep";
 
 export const SHOWCASE_CATEGORIES: {

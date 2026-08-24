@@ -27,15 +27,17 @@ export default function BizHeader() {
     <header className="sticky top-0 z-50 border-b border-biz-line bg-white/95 backdrop-blur-sm">
       <div className="mx-auto flex h-16 w-full max-w-5xl items-center gap-3 px-4 sm:px-6">
         {/* ロゴ */}
+        {/* ブランド名は折り返しも省略もさせない。
+            ナビ側に十分な余白があるので shrink-0 で固定する。 */}
         <Link
           href="/business"
-          className="flex h-full min-w-0 shrink items-center gap-2 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-blue"
+          className="flex h-full shrink-0 items-center gap-2 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-blue"
         >
           <span aria-hidden="true" className="text-lg leading-none">
             🐥
           </span>
-          <span className="min-w-0 leading-tight">
-            <span className="block truncate text-[0.95rem] font-bold text-biz-ink">
+          <span className="leading-tight">
+            <span className="block text-[0.95rem] font-bold whitespace-nowrap text-biz-ink">
               Japan Trip Picks
             </span>
             <span className="block text-[0.65rem] font-bold tracking-[0.14em] text-biz-blue">
@@ -47,8 +49,9 @@ export default function BizHeader() {
         <div className="ml-auto flex items-center gap-2">
           {/* PCナビ */}
           <nav aria-label="メインメニュー" className="hidden lg:block">
+            {/* TOPはロゴが担うのでPCナビからは外す（横幅がロゴを圧迫するため） */}
             <ul className="flex items-center gap-1">
-              {NAV.map((item) => (
+              {NAV.filter((item) => item.href !== "/business").map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
@@ -65,6 +68,19 @@ export default function BizHeader() {
               ))}
             </ul>
           </nav>
+
+          {/* 旅行者向け本体サイトへの導線。BtoBサイト側からいつでも実物を見に行けるようにする。
+              スマホではハンバーガーメニューの中に同じリンクを置いている。 */}
+          <a
+            href={PARENT_SITE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden items-center gap-1 rounded-md px-3 py-2 text-sm font-bold text-biz-muted transition-colors hover:text-biz-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-blue lg:inline-flex"
+          >
+            <span aria-hidden="true">🌏</span>
+            旅行者向けサイト
+            <span aria-hidden="true">↗</span>
+          </a>
 
           {/* 常時表示CTA。資料請求は問い合わせより心理的な負担が軽いのでこちらを出す。
               スマホでは文言を短くして幅を取りすぎないようにする。 */}
@@ -139,6 +155,8 @@ export default function BizHeader() {
           </ul>
           <a
             href={PARENT_SITE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="mt-3 flex min-h-11 items-center gap-2 rounded-lg bg-biz-blue-soft px-3 text-sm font-bold text-biz-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-blue"
           >

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import type { Metadata } from "next";
 import {
   businessMetadata,
@@ -10,6 +9,8 @@ import {
 import { HIGHLIGHT_FAQ } from "@/lib/business/faq";
 import { OPTIONS, PRICING_NOTES } from "@/lib/business/pricing";
 import { MARKET_STATS, SOURCES } from "@/lib/business/market";
+import { HERO_ARTICLE_SLUG } from "@/lib/business/showcase";
+import { ARTICLE_BY_SLUG } from "@/lib/articles";
 import FaqList from "./components/FaqList";
 import FinalCta from "./components/FinalCta";
 import PlanCards from "./components/PlanCards";
@@ -80,6 +81,10 @@ const STEPS = [
 ];
 
 export default function BusinessTopPage() {
+  // ヒーローの「掲載イメージ」は本体サイトの実記事から引く。
+  // 写真とタイトルがズレないよう、ここでハードコードはしない。
+  const heroArticle = ARTICLE_BY_SLUG[HERO_ARTICLE_SLUG];
+
   return (
     <>
       {/* ------------------------------------------------------------- Hero */}
@@ -119,13 +124,20 @@ export default function BusinessTopPage() {
             </ul>
           </div>
 
-          {/* 記事の見え方のイメージ。CLSを出さないよう比率を固定する。 */}
+          {/* 記事の見え方のイメージ。実記事へのリンクにして、実物を見てもらう。
+              別タブで開くのは、営業資料としてこのページを閉じさせないため。
+              CLSを出さないよう比率は固定する。 */}
           <div className="mx-auto w-full max-w-sm lg:max-w-none">
-            <div className="overflow-hidden rounded-2xl border border-white bg-white shadow-[0_8px_28px_rgba(18,49,79,0.10)]">
+            <a
+              href={`/${heroArticle.slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block overflow-hidden rounded-2xl border border-white bg-white shadow-[0_8px_28px_rgba(18,49,79,0.10)] transition-shadow hover:shadow-[0_10px_32px_rgba(18,49,79,0.18)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-blue"
+            >
               <div className="relative aspect-[4/3] w-full bg-biz-line">
                 <Image
-                  src="/ramen/washo-1.jpg"
-                  alt="Japan Trip Picks に掲載しているラーメン店の記事写真"
+                  src={heroArticle.image ?? "/poyapiyo-flag.png"}
+                  alt={`Japan Trip Picks の掲載記事「${heroArticle.shortLabel}」で使用している写真`}
                   fill
                   sizes="(max-width: 1024px) 90vw, 440px"
                   className="object-cover"
@@ -133,16 +145,39 @@ export default function BusinessTopPage() {
                 />
               </div>
               <div className="p-4 sm:p-5">
-                <p className="text-xs font-bold text-biz-blue">掲載イメージ</p>
-                <p className="mt-1 text-sm leading-relaxed font-bold text-biz-ink">
-                  東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系
+                <p className="flex items-center gap-2 text-xs font-bold text-biz-blue">
+                  掲載イメージ
+                  <span className="rounded-full bg-biz-blue-soft px-2 py-0.5 text-[0.65rem]">
+                    {heroArticle.tag}
+                  </span>
+                </p>
+                <p
+                  lang="zh-Hant"
+                  className="mt-1 text-sm leading-relaxed font-bold text-biz-ink"
+                >
+                  {heroArticle.name}
                 </p>
                 <p className="mt-2 text-xs leading-relaxed text-biz-muted">
                   写真・基本情報・繁体字の紹介文をセットで掲載します。
-                  実際の記事は Japan Trip Picks 上でご覧いただけます。
                 </p>
+                <span className="mt-3 inline-flex items-center gap-1 text-sm font-bold text-biz-blue group-hover:underline">
+                  実際の記事を見る
+                  <span aria-hidden="true">↗</span>
+                </span>
               </div>
-            </div>
+            </a>
+
+            {/* 本体サイト（旅行者向け）への導線。ファーストビューから見に行けるようにする。 */}
+            <a
+              href={PARENT_SITE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 flex min-h-11 items-center justify-center gap-2 rounded-xl border border-white bg-white/70 px-4 text-xs font-bold text-biz-ink transition-colors hover:bg-white hover:text-biz-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-blue sm:text-sm"
+            >
+              <span aria-hidden="true">🌏</span>
+              旅行者向けサイト {PARENT_SITE_NAME} を見る
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
       </div>
@@ -412,18 +447,30 @@ export default function BusinessTopPage() {
 
       <FinalCta />
 
-      {/* 本体サイトへの導線 */}
-      <div className="border-t border-biz-line bg-white px-5 py-8 sm:px-6">
-        <p className="mx-auto w-full max-w-5xl text-center text-sm text-biz-muted">
-          旅行者向けのサイトをお探しの方は
-          <Link
-            href="/"
-            className="mx-1 font-bold text-biz-blue underline underline-offset-4 hover:text-biz-ink"
-          >
-            Japan Trip Picks
-          </Link>
-          へ。
-        </p>
+      {/* 本体サイトへの導線。営業先に「実物」を見てもらうための出口。 */}
+      <div className="border-t border-biz-line bg-white px-5 py-10 sm:px-6">
+        <div className="mx-auto w-full max-w-5xl">
+          <div className="rounded-2xl border border-biz-line bg-biz-blue-soft p-5 text-center sm:p-7">
+            <p className="text-xs font-bold tracking-[0.18em] text-biz-blue">OUR MEDIA</p>
+            <h2 className="mt-2 text-lg leading-snug font-bold text-biz-ink sm:text-xl">
+              掲載先のメディアを、実際にご覧ください
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-biz-muted">
+              {PARENT_SITE_NAME} は、台湾・香港の旅行者に向けて繁体字で発信している訪日旅行メディアです。
+              どんな記事が並んでいるか、掲載されるとどう見えるかは、実際のサイトが一番わかりやすいと思います。
+            </p>
+            <div className="mt-6 flex justify-center">
+              <CtaAnchor href={PARENT_SITE_URL} external>
+                <span aria-hidden="true">🌏</span>
+                {PARENT_SITE_NAME} を見る
+                <span aria-hidden="true">↗</span>
+              </CtaAnchor>
+            </div>
+            <p className="mt-3 text-xs text-biz-muted">
+              繁体字のサイトが開きます（別タブ）
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );

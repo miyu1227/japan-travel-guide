@@ -63,10 +63,13 @@ export default function BizFooter() {
             <p className="mt-6 mb-3 text-sm font-bold text-biz-ink">関連サイト</p>
             <a
               href={PARENT_SITE_URL}
-              className="inline-flex items-center gap-2 rounded-lg bg-biz-blue-soft px-3 py-2 text-sm font-bold text-biz-blue underline-offset-4 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-biz-blue-soft px-3 py-2 text-sm font-bold text-biz-blue underline-offset-4 hover:underline"
             >
               <span aria-hidden="true">🌏</span>
               {PARENT_SITE_NAME}（訪日旅行者向け）
+              <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
