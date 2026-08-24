@@ -83,7 +83,7 @@ export default function DownloadPage() {
         </div>
 
         <div className="mt-6 rounded-2xl border border-white bg-white p-5 sm:p-6">
-          <h3 className="text-sm font-bold text-biz-ink">メール・お電話でのご請求も承ります</h3>
+          <h3 className="text-sm font-bold text-biz-ink">メールでのご請求も承ります</h3>
           <p className="mt-2 text-xs leading-relaxed text-biz-muted">
             店舗・企業名とご担当者名を添えてご連絡ください。折り返し資料をお送りします。
           </p>
@@ -92,10 +92,6 @@ export default function DownloadPage() {
               <CtaAnchor href={`mailto:${CONTACT.email}?subject=${encodeURIComponent("【資料請求】Japan Trip Picks for Business")}`} variant="secondary">
                 <span aria-hidden="true">✉</span>
                 メールで請求する
-              </CtaAnchor>
-              <CtaAnchor href={CONTACT.telHref} variant="secondary">
-                <span aria-hidden="true">☎</span>
-                {CONTACT.tel}
               </CtaAnchor>
             </CtaGroup>
           </div>

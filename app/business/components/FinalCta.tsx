@@ -1,4 +1,4 @@
-import { CONTACT, DOWNLOAD_PATH } from "@/lib/business/site";
+import { DOWNLOAD_PATH } from "@/lib/business/site";
 import { CtaGroup, CtaLink, Section, SectionHeading } from "./ui";
 
 /** 全ページ共通の最終CTA */
@@ -19,12 +19,6 @@ export default function FinalCta({
             そのまま問い合わせる
           </CtaLink>
         </CtaGroup>
-        <p className="mt-5 text-xs leading-relaxed text-white/70">
-          お電話でも承ります：
-          <a href={CONTACT.telHref} className="font-bold text-white underline underline-offset-4">
-            {CONTACT.tel}
-          </a>
-        </p>
       </div>
     </Section>
   );

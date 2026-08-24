@@ -51,7 +51,7 @@ export default function ContactPage() {
         <SectionHeading
           eyebrow="HOW TO CONTACT"
           title="お問い合わせ方法"
-          description="下のフォームから送信いただくか、直接メール・お電話でご連絡ください。"
+          description="下のフォームから送信いただくか、直接メールでご連絡ください。"
         />
 
         <div className="mb-6 rounded-2xl border border-biz-line bg-biz-blue-soft p-5 sm:p-6">
@@ -68,43 +68,24 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
-          <Card>
-            <p className="text-sm font-bold text-biz-ink">
-              <span aria-hidden="true" className="mr-2">
-                ✉
-              </span>
-              メール
-            </p>
-            <p className="mt-2 text-sm break-all text-biz-muted">{CONTACT.email}</p>
-            <p className="mt-3 text-xs leading-relaxed text-biz-muted">
-              内容を確認のうえ、料金と掲載までの流れをご案内します。
-            </p>
-            <div className="mt-4">
-              <CtaAnchor href={`mailto:${CONTACT.email}`} className="w-full sm:w-full">
-                メールで問い合わせる
-              </CtaAnchor>
-            </div>
-          </Card>
-
-          <Card>
-            <p className="text-sm font-bold text-biz-ink">
-              <span aria-hidden="true" className="mr-2">
-                ☎
-              </span>
-              電話
-            </p>
-            <p className="mt-2 text-sm text-biz-muted">{CONTACT.tel}</p>
-            <p className="mt-3 text-xs leading-relaxed text-biz-muted">
-              込み入ったご相談は、メールでいただけますと詳しくご案内できます。
-            </p>
-            <div className="mt-4">
-              <CtaAnchor href={CONTACT.telHref} variant="secondary" className="w-full sm:w-full">
-                {CONTACT.tel} に電話する
-              </CtaAnchor>
-            </div>
-          </Card>
-        </div>
+        <Card>
+          <p className="text-sm font-bold text-biz-ink">
+            <span aria-hidden="true" className="mr-2">
+              ✉
+            </span>
+            メール
+          </p>
+          <p className="mt-2 text-sm break-all text-biz-muted">{CONTACT.email}</p>
+          <p className="mt-3 text-xs leading-relaxed text-biz-muted">
+            内容を確認のうえ、料金と掲載までの流れをご案内します。
+            掲載のご相談は内容を正確にうかがう必要があるため、メールでのご連絡をお願いしております。
+          </p>
+          <div className="mt-4">
+            <CtaAnchor href={`mailto:${CONTACT.email}`} className="w-full sm:w-auto">
+              メールで問い合わせる
+            </CtaAnchor>
+          </div>
+        </Card>
 
         <div className="mt-6 rounded-2xl border border-biz-line bg-biz-sand p-5 sm:p-6">
           <h3 className="text-sm font-bold text-biz-ink">メールで直接ご連絡いただく場合</h3>
