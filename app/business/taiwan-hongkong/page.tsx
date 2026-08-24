@@ -212,10 +212,13 @@ export default function TaiwanHongKongPage() {
             </p>
           </Card>
           <Card>
-            <h3 className="text-base font-bold text-biz-ink">実際に足を運んだ場所を書きます</h3>
+            <h3 className="text-base font-bold text-biz-ink">
+              媒体の記事は、実際に足を運んで書いています
+            </h3>
             <p className="mt-2 text-sm leading-relaxed text-biz-muted">
-              日本在住の運営者が現地を訪れて記事にしています。
-              行き方・所要時間・値段の目安など、旅行者が迷いやすいところを補って書きます。
+              日本在住の運営者が現地を訪れて書いた記事で媒体を作っています。
+              掲載記事については、ご提供いただいた写真と情報をもとに、同じ書き方で制作します。
+              当方での撮影・取材訪問は承っておりません。
             </p>
           </Card>
           <Card>

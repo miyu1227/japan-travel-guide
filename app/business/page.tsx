@@ -194,12 +194,14 @@ export default function BusinessTopPage() {
           <Card>
             <p className="text-sm leading-relaxed text-biz-muted sm:text-[0.95rem]">
               Japan Trip Picks は、台湾・香港の旅行者に向けて、日本のグルメ・カフェ・観光・旅行準備の情報を
-              繁体字で発信している旅行メディアです。実際に訪れた場所を、旅行者が知りたい順に書いています。
+              繁体字で発信している旅行メディアです。媒体の記事は、運営者が実際に訪れた場所を、
+              旅行者が知りたい順に書いています。
             </p>
             <p className="mt-4 text-sm leading-relaxed text-biz-muted sm:text-[0.95rem]">
               Japan Trip Picks for Business は、そのBtoB窓口です。
               「繁体字で紹介文を用意したい」「海外の旅行者向けに何か始めたい」という事業者さまに向けて、
-              PR掲載と繁体字コンテンツ制作をご提供しています。
+              PR掲載と繁体字コンテンツ制作をご提供しています。掲載記事は、ご提供いただいた写真と情報をもとに、
+              媒体の記事と同じ書き方で制作します（当方での撮影・取材訪問は承っておりません）。
             </p>
             <p className="mt-4 rounded-xl bg-biz-sand p-4 text-xs leading-relaxed text-biz-muted">
               当サイトは大規模媒体ではありません。掲載による集客数・検索順位・売上を保証することはできません。
