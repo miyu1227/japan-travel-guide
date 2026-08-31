@@ -8,13 +8,12 @@ export const BASE_PATH = "/business";
 /**
  * 検索エンジンにインデックスさせるか。
  *
- * 本体サイトが AdSense 審査中のあいだは false にしておく。
- * 事業者向けの営業ページがドメイン配下で大量にインデックスされると、
- * 審査で見られるコンテンツの母集団に営業ページが混ざるため。
- * noindex でも URL を直接開けば見られるので、営業でURLを送る用途には影響しない。
- * 審査を通過したら true に戻す（sitemap への掲載もこのフラグで切り替わる）。
+ * もともとは本体サイトの AdSense 審査中に営業ページが母集団へ混ざるのを避けるため
+ * false にしていたが、AdSense は不承認となり再申請しない方針になったため true に戻した（2026-08-31）。
+ * 広告収益を前提にしない以上、事業者に見つけてもらうほうが優先される。
+ * 再申請する方針に戻すときは、ここを false にすれば sitemap とrobotsの両方が同時に切り替わる。
  */
-export const SEARCH_INDEXABLE = false;
+export const SEARCH_INDEXABLE = true;
 
 /**
  * 料金をサイト上に出すか。
@@ -59,6 +58,9 @@ export const NAV: NavItem[] = [
 
 /** 資料請求ページ。ヘッダーの常時CTAはここへ送る。 */
 export const DOWNLOAD_PATH = "/business/download";
+
+/** 代理店・支援会社向けページ。ナビには載せず、TOPとフッターから入る。 */
+export const PARTNER_PATH = "/business/partner";
 
 /** 相対パスから絶対URLを作る。canonical と OGP の url に使う。 */
 export function bizUrl(path = ""): string {

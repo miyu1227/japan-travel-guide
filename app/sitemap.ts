@@ -81,6 +81,7 @@ const BUSINESS_ROUTES: { path: string; priority: number }[] = [
   { path: "/business/taiwan-hongkong", priority: 0.7 },
   { path: "/business/services", priority: 0.7 },
   { path: "/business/pricing", priority: 0.7 },
+  { path: "/business/partner", priority: 0.7 },
   { path: "/business/works", priority: 0.6 },
   { path: "/business/faq", priority: 0.6 },
   { path: "/business/download", priority: 0.6 },

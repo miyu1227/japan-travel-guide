@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
-import { DOWNLOAD_PATH, NAV, PARENT_SITE_NAME, PARENT_SITE_URL } from "@/lib/business/site";
+import { DOWNLOAD_PATH, NAV, PARENT_SITE_NAME, PARENT_SITE_URL, PARTNER_PATH } from "@/lib/business/site";
 
 export default function BizHeader() {
   const pathname = usePathname();
@@ -134,8 +134,9 @@ export default function BizHeader() {
         className="border-t border-biz-line bg-white lg:hidden"
       >
         <nav aria-label="メインメニュー（モバイル）" className="mx-auto w-full max-w-5xl px-4 py-3 sm:px-6">
+          {/* 代理店向けはPCナビには出さない（横幅が足りない）ので、ここにだけ足す */}
           <ul className="divide-y divide-biz-line">
-            {NAV.map((item) => (
+            {[...NAV, { href: PARTNER_PATH, label: "代理店の方へ" }].map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}

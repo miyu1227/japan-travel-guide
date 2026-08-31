@@ -5,6 +5,7 @@ import {
   DOWNLOAD_PATH,
   PARENT_SITE_NAME,
   PARENT_SITE_URL,
+  PARTNER_PATH,
 } from "@/lib/business/site";
 import { HIGHLIGHT_FAQ } from "@/lib/business/faq";
 import { OPTIONS, PRICING_NOTES } from "@/lib/business/pricing";
@@ -443,6 +444,27 @@ export default function BusinessTopPage() {
             <CtaLink href="/business/works" variant="secondary">
               記事の例を見る
             </CtaLink>
+          </div>
+        </div>
+      </Section>
+
+      {/* -------------------------------------------------------- 代理店導線 */}
+      {/* 店舗さま向けの説明ばかりだと、クライアントを持つ会社が自分向けと判断できない。
+          分岐をひとつ置いて、条件の話は代理店ページへ送る。 */}
+      <Section tone="white" id="partner">
+        <div className="rounded-2xl border border-biz-line bg-biz-sand p-5 sm:p-7">
+          <p className="text-xs font-bold tracking-[0.18em] text-biz-blue">FOR PARTNERS</p>
+          <h2 className="mt-2 text-lg leading-snug font-bold text-biz-ink sm:text-xl">
+            広告代理店・支援会社の方へ
+          </h2>
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-biz-muted">
+            クライアントさま向けの商材として、当媒体の掲載枠をお取り扱いいただけます。
+            NET価格でお納めし、ご提示価格は御社にてご設定いただけます。制作は当方で完結します。
+          </p>
+          <div className="mt-6">
+            <CtaGroup>
+              <CtaLink href={PARTNER_PATH}>お取り扱いの条件を見る</CtaLink>
+            </CtaGroup>
           </div>
         </div>
       </Section>

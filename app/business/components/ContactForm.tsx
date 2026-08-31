@@ -88,8 +88,15 @@ const ERROR_MESSAGE: Record<
     "送信に失敗しました。お手数ですが、時間をおいて再度お試しいただくか、メールでご連絡ください。",
 };
 
-export default function ContactForm({ variant = "contact" }: { variant?: FormVariant }) {
-  const [state, setState] = useState<FormState>(EMPTY);
+export default function ContactForm({
+  variant = "contact",
+  defaultChoices = [],
+}: {
+  variant?: FormVariant;
+  /** 最初からチェックを入れておく選択肢。代理店向けページのように用件が決まっている画面で使う。 */
+  defaultChoices?: string[];
+}) {
+  const [state, setState] = useState<FormState>({ ...EMPTY, choices: defaultChoices });
   const [status, setStatus] = useState<Status>({ kind: "idle" });
   /** ハニーポット。人は触らない項目。 */
   const [hp, setHp] = useState("");

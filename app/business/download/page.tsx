@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { businessMetadata, breadcrumbJsonLd, CONTACT } from "@/lib/business/site";
+import { businessMetadata, breadcrumbJsonLd, CONTACT, PARTNER_PATH } from "@/lib/business/site";
 import ContactForm from "../components/ContactForm";
 import PageHero from "../components/PageHero";
 import { Card, CtaAnchor, CtaGroup, CtaLink, JsonLd, Section, SectionHeading } from "../components/ui";
@@ -66,8 +66,15 @@ export default function DownloadPage() {
           <h3 className="text-sm font-bold text-biz-ink">広告代理店さまへ</h3>
           <p className="mt-2 text-xs leading-relaxed text-biz-muted">
             代理店さま向けには、お取り扱いの条件を記載した別の資料をご用意しています。
-            下のフォームで「広告代理店向けの資料」をお選びください。
+            下のフォームで「広告代理店向けの資料」をお選びいただくか、代理店さま向けのページをご覧ください。
           </p>
+          <div className="mt-4">
+            <CtaGroup>
+              <CtaLink href={PARTNER_PATH} variant="secondary">
+                代理店・支援会社の方へ
+              </CtaLink>
+            </CtaGroup>
+          </div>
         </div>
       </Section>
 

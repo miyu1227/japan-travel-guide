@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CONTACT, DOWNLOAD_PATH, NAV, PARENT_SITE_NAME, PARENT_SITE_URL, SITE_NAME } from "@/lib/business/site";
+import { CONTACT, DOWNLOAD_PATH, NAV, PARENT_SITE_NAME, PARENT_SITE_URL, PARTNER_PATH, SITE_NAME } from "@/lib/business/site";
 
 export default function BizFooter() {
   return (
@@ -24,6 +24,7 @@ export default function BizFooter() {
             <ul>
               {[
                 ...NAV.filter((item) => item.href !== "/business"),
+                { href: PARTNER_PATH, label: "代理店の方へ" },
                 { href: DOWNLOAD_PATH, label: "資料請求" },
               ].map((item) => (
                 <li key={item.href}>
