@@ -76,6 +76,15 @@ const STATIC_ROUTES: { slug: string; priority: number; changeFrequency: "monthly
  * BtoBサイト（/business）。事業者向けなので記事とは別枠で持つ。
  * noindex のあいだは sitemap にも載せない（noindex と sitemap 掲載は矛盾するため）。
  */
+/**
+ * BtoBページの最終更新日。
+ *
+ * 記事の更新日（latestUpdate）を借りると、BtoB側を直しても日付が動かず、
+ * 逆に記事を1本足しただけでBtoB全ページが更新されたことになってしまう。
+ * BtoBページを直したときは、ここを直す。
+ */
+const BUSINESS_UPDATED = "2026-08-31";
+
 const BUSINESS_ROUTES: { path: string; priority: number }[] = [
   { path: "/business", priority: 0.8 },
   { path: "/business/taiwan-hongkong", priority: 0.7 },
@@ -126,7 +135,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...(SEARCH_INDEXABLE
       ? BUSINESS_ROUTES.map((r) => ({
           url: `${BASE_URL}${r.path}`,
-          lastModified: new Date(latestUpdate),
+          lastModified: new Date(BUSINESS_UPDATED),
           changeFrequency: "monthly" as const,
           priority: r.priority,
         }))
