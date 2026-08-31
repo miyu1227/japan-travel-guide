@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { businessMetadata, breadcrumbJsonLd, CONTACT, PARTNER_PATH } from "@/lib/business/site";
-import ContactForm from "../components/ContactForm";
+import { businessMetadata, breadcrumbJsonLd, PARTNER_PATH } from "@/lib/business/site";
+import MailCta from "../components/MailCta";
 import PageHero from "../components/PageHero";
-import { Card, CtaAnchor, CtaGroup, CtaLink, JsonLd, Section, SectionHeading } from "../components/ui";
+import { Card, CtaGroup, CtaLink, JsonLd, Section, SectionHeading } from "../components/ui";
 
 export const metadata: Metadata = businessMetadata({
   path: "download",
@@ -66,7 +66,7 @@ export default function DownloadPage() {
           <h3 className="text-sm font-bold text-biz-ink">広告代理店さまへ</h3>
           <p className="mt-2 text-xs leading-relaxed text-biz-muted">
             代理店さま向けには、お取り扱いの条件を記載した別の資料をご用意しています。
-            下のフォームで「広告代理店向けの資料」をお選びいただくか、代理店さま向けのページをご覧ください。
+            代理店さま向けのページに、専用のご請求先をご案内しています。
           </p>
           <div className="mt-4">
             <CtaGroup>
@@ -78,31 +78,14 @@ export default function DownloadPage() {
         </div>
       </Section>
 
-      {/* ------------------------------------------------------ フォーム */}
-      <Section tone="soft" id="form">
+      {/* -------------------------------------------------------- 資料請求 */}
+      <Section tone="soft" id="mail">
         <SectionHeading
           eyebrow="REQUEST"
-          title="資料請求フォーム"
-          description="そのまま送信できます。受付の控えを自動でお送りし、担当者より資料をお送りします。"
+          title="媒体資料のご請求"
+          description="ご請求は無料です。この時点では契約になりません。折り返し担当者より資料をお送りします。"
         />
-        <div className="rounded-2xl border border-white bg-white p-5 sm:p-7">
-          <ContactForm variant="document" />
-        </div>
-
-        <div className="mt-6 rounded-2xl border border-white bg-white p-5 sm:p-6">
-          <h3 className="text-sm font-bold text-biz-ink">メールでのご請求も承ります</h3>
-          <p className="mt-2 text-xs leading-relaxed text-biz-muted">
-            店舗・企業名とご担当者名を添えてご連絡ください。折り返し資料をお送りします。
-          </p>
-          <div className="mt-4">
-            <CtaGroup>
-              <CtaAnchor href={`mailto:${CONTACT.email}?subject=${encodeURIComponent("【資料請求】Japan Trip Picks for Business")}`} variant="secondary">
-                <span aria-hidden="true">✉</span>
-                メールで請求する
-              </CtaAnchor>
-            </CtaGroup>
-          </div>
-        </div>
+        <MailCta variant="document" />
       </Section>
 
       {/* ----------------------------------------------------- 関連導線 */}

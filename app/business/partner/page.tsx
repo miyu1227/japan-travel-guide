@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { businessMetadata, breadcrumbJsonLd, CONTACT, DOWNLOAD_PATH } from "@/lib/business/site";
-import ContactForm from "../components/ContactForm";
+import { businessMetadata, breadcrumbJsonLd, DOWNLOAD_PATH } from "@/lib/business/site";
+import MailCta from "../components/MailCta";
 import PageHero from "../components/PageHero";
 import {
   Card,
   CheckedList,
-  CtaAnchor,
   CtaGroup,
   CtaLink,
   JsonLd,
@@ -27,9 +26,6 @@ const jsonLd = breadcrumbJsonLd([
   { name: "TOP", path: "" },
   { name: "代理店の方へ", path: "partner" },
 ]);
-
-/** 資料請求フォームで最初から選んでおく資料。代理店版は価格を記載していない。 */
-const AGENCY_DOCUMENT = "広告代理店向けの資料";
 
 /** どんな会社さまを想定しているか */
 const AUDIENCE = [
@@ -78,7 +74,7 @@ const TERMS = [
 const STEPS = [
   {
     title: "資料請求",
-    body: "下のフォーム、またはメールでご連絡ください。代理店さま向けの資料（NET価格・お取引条件を記載）をお送りします。",
+    body: "メールでご連絡ください。代理店さま向けの資料（NET価格・お取引条件を記載）をお送りします。",
   },
   {
     title: "条件のご確認",
@@ -147,7 +143,7 @@ export default function PartnerPage() {
         crumbs={crumbs}
       >
         <CtaGroup>
-          <CtaLink href="#form">代理店向けの資料を請求する</CtaLink>
+          <CtaLink href="#mail">代理店向けの資料を請求する</CtaLink>
           <CtaLink href="/business/works" variant="secondary">
             制作している記事を見る
           </CtaLink>
@@ -339,39 +335,22 @@ export default function PartnerPage() {
         </p>
       </Section>
 
-      {/* -------------------------------------------------------- フォーム */}
-      <Section tone="white" id="form">
+      {/* ------------------------------------------------------ 資料請求 */}
+      <Section tone="white" id="mail">
         <SectionHeading
           eyebrow="REQUEST"
           title="代理店向けの資料を請求する"
           description="NET価格とお取引条件を記載した資料をお送りします。クライアント配布用（価格の記載なし）の資料もあわせてお送りします。ご請求の時点では契約になりません。"
         />
 
-        <div className="rounded-2xl border border-biz-line bg-white p-5 sm:p-7">
-          <ContactForm variant="document" defaultChoices={[AGENCY_DOCUMENT]} />
-        </div>
+        <MailCta variant="agency" />
 
-        <div className="mt-6 rounded-2xl border border-biz-line bg-biz-sand p-5 sm:p-6">
-          <h3 className="text-sm font-bold text-biz-ink">メールでのご請求も承ります</h3>
-          <p className="mt-2 text-xs leading-relaxed text-biz-muted">
-            御社名とご担当者名を添えてご連絡ください。折り返し代理店さま向けの資料をお送りします。
-          </p>
-          <div className="mt-4">
-            <CtaGroup>
-              <CtaAnchor
-                href={`mailto:${CONTACT.email}?subject=${encodeURIComponent(
-                  "【資料請求】代理店向け／Japan Trip Picks for Business",
-                )}`}
-                variant="secondary"
-              >
-                <span aria-hidden="true">✉</span>
-                メールで請求する
-              </CtaAnchor>
-              <CtaLink href={DOWNLOAD_PATH} variant="secondary">
-                店舗向けの媒体資料はこちら
-              </CtaLink>
-            </CtaGroup>
-          </div>
+        <div className="mt-6">
+          <CtaGroup>
+            <CtaLink href={DOWNLOAD_PATH} variant="secondary">
+              店舗向けの媒体資料はこちら
+            </CtaLink>
+          </CtaGroup>
         </div>
       </Section>
     </>

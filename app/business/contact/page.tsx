@@ -6,9 +6,9 @@ import {
   DOWNLOAD_PATH,
   PARENT_SITE_NAME,
 } from "@/lib/business/site";
-import ContactForm from "../components/ContactForm";
+import MailCta from "../components/MailCta";
 import PageHero from "../components/PageHero";
-import { Card, CtaAnchor, CtaGroup, CtaLink, JsonLd, Section, SectionHeading } from "../components/ui";
+import { Card, CtaGroup, CtaLink, JsonLd, Section, SectionHeading } from "../components/ui";
 
 export const metadata: Metadata = businessMetadata({
   path: "contact",
@@ -23,16 +23,6 @@ const jsonLd = breadcrumbJsonLd([
   { name: "TOP", path: "" },
   { name: "お問い合わせ", path: "contact" },
 ]);
-
-/** メールでお問い合わせいただく場合に書いていただきたいこと */
-const MAIL_TEMPLATE = [
-  "店舗・企業名",
-  "ご担当者名",
-  "所在地",
-  "Webサイト / SNS の URL",
-  "ご希望のサービス（貴店専用ページの掲載 / 繁体字コンテンツ制作 など）",
-  "ご相談内容",
-];
 
 export default function ContactPage() {
   return (
@@ -51,7 +41,7 @@ export default function ContactPage() {
         <SectionHeading
           eyebrow="HOW TO CONTACT"
           title="お問い合わせ方法"
-          description="下のフォームから送信いただくか、直接メールでご連絡ください。"
+          description="メールで承っております。掲載のご相談は内容を正確にうかがう必要があるため、メールでのご連絡をお願いしております。"
         />
 
         <div className="mb-6 rounded-2xl border border-biz-line bg-biz-blue-soft p-5 sm:p-6">
@@ -68,53 +58,13 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <Card>
-          <p className="text-sm font-bold text-biz-ink">
-            <span aria-hidden="true" className="mr-2">
-              ✉
-            </span>
-            メール
-          </p>
-          <p className="mt-2 text-sm break-all text-biz-muted">{CONTACT.email}</p>
-          <p className="mt-3 text-xs leading-relaxed text-biz-muted">
-            内容を確認のうえ、料金と掲載までの流れをご案内します。
-            掲載のご相談は内容を正確にうかがう必要があるため、メールでのご連絡をお願いしております。
-          </p>
-          <div className="mt-4">
-            <CtaAnchor href={`mailto:${CONTACT.email}`} className="w-full sm:w-auto">
-              メールで問い合わせる
-            </CtaAnchor>
-          </div>
-        </Card>
-
-        <div className="mt-6 rounded-2xl border border-biz-line bg-biz-sand p-5 sm:p-6">
-          <h3 className="text-sm font-bold text-biz-ink">メールで直接ご連絡いただく場合</h3>
-          <p className="mt-2 text-xs leading-relaxed text-biz-muted">
-            以下をお書き添えいただけますと、折り返しのご案内がスムーズです。
-          </p>
-          <ul className="mt-3 grid gap-1.5 sm:grid-cols-2">
-            {MAIL_TEMPLATE.map((item) => (
-              <li key={item} className="flex gap-2 text-xs leading-relaxed text-biz-muted">
-                <span aria-hidden="true" className="text-biz-blue">
-                  ・
-                </span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+        <div id="mail" className="scroll-mt-20 sm:scroll-mt-24">
+          <MailCta />
         </div>
-      </Section>
 
-      {/* ------------------------------------------------------ フォーム */}
-      <Section tone="soft" id="form">
-        <SectionHeading
-          eyebrow="FORM"
-          title="お問い合わせフォーム"
-          description="そのまま送信できます。受付の控えを自動でお送りし、担当者よりあらためてご連絡します。"
-        />
-        <div className="rounded-2xl border border-white bg-white p-5 sm:p-7">
-          <ContactForm />
-        </div>
+        <p className="mt-4 text-xs leading-relaxed text-biz-muted">
+          内容を確認のうえ、料金と掲載までの流れをご案内します。営業のご連絡を繰り返しお送りすることはありません。
+        </p>
       </Section>
 
       {/* -------------------------------------------------- 英語での案内 */}
