@@ -333,15 +333,15 @@ export const ARTICLES: Article[] = [
   {
     slug: "daikanyama-cafe",
     category: "cafe",
-    name: "代官山咖啡廳推薦3選｜義式烘焙・高級甜點・法式可頌☕",
+    name: "代官山咖啡廳推薦4選｜義式烘焙・甜點・可頌・自家烘焙☕",
     shortLabel: "代官山咖啡",
-    desc: "米蘭義式烘焙PRINCI・星級甜點DOLCE TACUBO・法式可頌專門店Doré，代官山必去人氣店",
+    desc: "米蘭義式烘焙PRINCI・星級甜點DOLCE TACUBO・法式可頌Doré・自家烘焙DUCT COFFEE LAB",
     tag: "東京",
     emoji: "☕",
     image: "/daikanyama-cafe/princi-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-08-18",
+    updated: "2026-09-03",
   },
   {
     slug: "nakameguro-cafe",
