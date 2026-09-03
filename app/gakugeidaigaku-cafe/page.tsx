@@ -159,6 +159,9 @@ export default function GakugeidaigakuCafePage() {
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
               整面落地玻璃、灰白色調、幾乎沒有多餘裝飾——<strong>Bubbles Chill</strong> 是那種一走過就會回頭看一眼的極簡咖啡廳🤍 招牌上只有簡單的襯線字體店名，低調到很容易錯過。這裡主打<strong>開放式吐司（オープンサンド）</strong>與店主嚴選的<strong>精品咖啡</strong>，白天是咖啡廳，晚上也供應酒精飲料。
             </p>
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              咖啡的底子其實有來頭：這間是<strong>2014年在池尻大橋開的外帶咖啡站的姊妹店</strong>，2022年才在學藝大學開了這間可以坐下來慢慢吃的店☕ 所以雖然賣的是三明治，咖啡本身是照著咖啡專門店的標準在做的。
+            </p>
 
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
