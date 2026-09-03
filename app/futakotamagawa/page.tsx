@@ -8,12 +8,12 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 
 const PAGE_URL = "https://www.japantrippicks.com/futakotamagawa";
-const OG_IMAGE = "/futakotamagawa/steaman-1.jpg";
+const OG_IMAGE = "/futakotamagawa/sesame-1.jpg";
 
 export const metadata: Metadata = {
-  title: "二子玉川美食4選｜中華・蘋果派・韓式・咖啡✅實訪",
+  title: "二子玉川美食5選｜芝麻街・中華・蘋果派・咖啡✅實訪",
   description:
-    "二子玉川美食4選：蒸籠中華「STEAMAN」、蘋果派名店「GRANNY SMITH」、韓式屋台「ぶたこたまがわ」、精品咖啡「WOODBERRY COFFEE」。附交通・菜單・價格。",
+    "二子玉川美食5選：芝麻街主題咖啡廳、蒸籠中華「STEAMAN」、蘋果派「GRANNY SMITH」、韓式屋台、精品咖啡「WOODBERRY」。附交通・菜單・價格。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -26,19 +26,19 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "二子玉川美食推薦4選｜東京必吃中華・甜點・韓國料理・精品咖啡",
-    description: "二子玉川必吃美食4選！蒸籠中華・蘋果派・韓式屋台・世田谷精品咖啡。附交通・菜單・推薦。",
+    title: "二子玉川美食推薦5選｜芝麻街主題咖啡廳・中華・甜點・精品咖啡",
+    description: "二子玉川必吃美食5選！芝麻街官方店・蒸籠中華・蘋果派・韓式屋台・世田谷精品咖啡。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
     alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "二子玉川美食推薦" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "二子玉川美食推薦・芝麻街主題咖啡廳的角色甜甜圈" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "二子玉川美食推薦4選｜東京必吃中華・甜點・韓國料理・精品咖啡",
-    description: "二子玉川必吃4間人氣美食！蒸籠中華・蘋果派・韓式屋台・世田谷精品咖啡。",
+    title: "二子玉川美食推薦5選｜芝麻街・中華・甜點・精品咖啡",
+    description: "二子玉川必吃5間人氣美食！芝麻街官方店・蒸籠中華・蘋果派・韓式屋台・精品咖啡。",
     images: [OG_IMAGE],
   },
 };
@@ -46,14 +46,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "二子玉川美食推薦4選｜東京必吃中華・甜點・韓國料理・精品咖啡【實際造訪】",
-  description: "二子玉川美食推薦4選：蒸籠中華STEAMAN、蘋果派GRANNY SMITH、韓式屋台ぶたこたまがわ、精品咖啡WOODBERRY COFFEE 玉川高島屋S.C.店。",
+  headline: "二子玉川美食推薦5選｜芝麻街主題咖啡廳・中華・甜點・精品咖啡【實際造訪】",
+  description: "二子玉川美食推薦5選：芝麻街官方店SESAME STREET MARKET、蒸籠中華STEAMAN、蘋果派GRANNY SMITH、韓式屋台ぶたこたまがわ、精品咖啡WOODBERRY COFFEE。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-08-18T00:00:00+09:00",
+  dateModified: "2026-09-03T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -62,9 +62,16 @@ const breadcrumbJsonLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "首頁", item: "https://www.japantrippicks.com" },
-    { "@type": "ListItem", position: 2, name: "二子玉川美食推薦", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "二子玉川美食推薦5選", item: PAGE_URL },
   ],
 };
+
+const sesamePhotos = [
+  "/futakotamagawa/sesame-1.jpg",
+  "/futakotamagawa/sesame-2.jpg",
+  "/futakotamagawa/sesame-3.jpg",
+  "/futakotamagawa/sesame-4.jpg",
+];
 
 const woodberryPhotos = [
   "/futakotamagawa/woodberry-1.jpg",
@@ -74,14 +81,16 @@ const woodberryPhotos = [
 ];
 
 const relatedLinks = [
-  { href: "/shimokitazawa-cafe", label: "☕ 下北澤咖啡廳推薦3選｜東京必去人氣美食", desc: "純素烘焙・起司蛋糕・自家焙煎咖啡" },
+  { href: "/shimokitazawa-cafe", label: "☕ 下北澤咖啡廳推薦4選｜東京必去人氣美食", desc: "純素烘焙・起司蛋糕・自家焙煎・BONUS TRACK" },
   { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/shin-okubo", label: "🍲 新大久保美食推薦｜韓國料理・咖啡・甜點", desc: "ナッコプセ鍋・韓系咖啡廳・ドバイ餅" },
 ];
 
 const faqs = [
-  { q: "二子玉川離澀谷多遠？", a: "東急田園都市線從澀谷過來十幾分鐘就到，是很好插進東京行程的近郊街區。四間店都在車站周邊。" },
-  { q: "四間店該怎麼排？", a: "中午先吃蒸籠中華或韓式屋台，下午再去吃蘋果派配精品咖啡，用甜點（甜品）與咖啡收尾最順。" },
+  { q: "二子玉川離澀谷多遠？", a: "東急田園都市線從澀谷過來十幾分鐘就到，是很好插進東京行程的近郊街區。五間店都在車站周邊。" },
+  { q: "五間店該怎麼排？", a: "中午先吃蒸籠中華或韓式屋台，下午去芝麻街主題咖啡廳吃角色甜甜圈，再用蘋果派或精品咖啡收尾最順。" },
+  { q: "帶小孩的話推薦哪一間？", a: "芝麻街主題咖啡廳（SESAME STREET MARKET）。店裡有芝麻街的路牌、播放動畫的螢幕，甜點也都做成角色造型，是五間裡最適合親子的一間。" },
+  { q: "芝麻街主題店需要預約嗎？", a: "採現場排隊，沒有預約制。假日與長假人潮較多，想避開的話建議平日或一開店的10點前後前往。" },
 ];
 
 export default function FutakotamagawaPage() {
@@ -95,7 +104,7 @@ export default function FutakotamagawaPage() {
         <div className="max-w-2xl mx-auto px-4 h-14 flex items-center gap-3">
           <Link href="/" className="text-stone-500 hover:text-stone-800 text-sm">← 返回</Link>
           <span className="text-stone-300">|</span>
-          <span className="text-sm font-semibold text-stone-700 truncate">二子玉川美食推薦</span>
+          <span className="text-sm font-semibold text-stone-700 truncate">二子玉川美食推薦5選</span>
         </div>
       </header>
 
@@ -110,9 +119,9 @@ export default function FutakotamagawaPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          二子玉川美食推薦4選｜東京必吃<br />中華・甜點・韓國料理・精品咖啡🍽️
+          二子玉川美食推薦5選｜芝麻街主題店<br />中華・甜點・韓國料理・精品咖啡🍽️
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-18</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-03</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -121,7 +130,7 @@ export default function FutakotamagawaPage() {
             <strong>二子玉川</strong>位於東京世田谷區，是日本人心中的高級住宅區，擁有河岸公園、購物中心與許多特色餐廳🌿 從澀谷搭電車只要10分鐘，非常適合安排一個半天的散步美食行程。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦（推介）4間實際造訪過的人氣店：時尚蒸籠中華<strong>「STEAMAN」</strong>、蘋果派專門店<strong>「GRANNY SMITH」</strong>、韓國屋台風<strong>「ぶたこたまがわ」</strong>，以及2025年9月新開幕的世田谷精品咖啡<strong>「WOODBERRY COFFEE 玉川高島屋S.C.店」</strong>✨
+            這次推薦（推介）5間實際造訪過的人氣店：2026年3月新開幕的芝麻街官方主題店<strong>「SESAME STREET MARKET」</strong>、時尚蒸籠中華<strong>「STEAMAN」</strong>、蘋果派專門店<strong>「GRANNY SMITH」</strong>、韓國屋台風<strong>「ぶたこたまがわ」</strong>，以及世田谷精品咖啡<strong>「WOODBERRY COFFEE 玉川高島屋S.C.店」</strong>✨
           </p>
         </section>
 
@@ -131,6 +140,13 @@ export default function FutakotamagawaPage() {
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
           <div className="space-y-3">
+            <div className="flex gap-3">
+              <span className="text-red-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">SESAME STREET MARKET → 芝麻街官方主題咖啡廳</p>
+                <p className="text-xs text-stone-500 leading-relaxed">角色甜甜圈與拉花、400種以上周邊，親子最推</p>
+              </div>
+            </div>
             <div className="flex gap-3">
               <span className="text-red-400 font-black text-sm shrink-0">▸</span>
               <div>
@@ -163,9 +179,86 @@ export default function FutakotamagawaPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">二子玉川美食推薦・4選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">二子玉川美食推薦・5選</h2>
 
-        {/* Spot 1: STEAMAN */}
+        {/* Spot 1: SESAME STREET MARKET */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
+          <div className="grid grid-cols-2 gap-0.5">
+            {sesamePhotos.map((src, i) => (
+              <div key={i} className="relative aspect-square bg-stone-100">
+                <Image
+                  src={src}
+                  alt="セサミストリートマーケット 玉川高島屋S.C店 - 二子玉川美食推薦"
+                  fill
+                  sizes="50vw"
+                  className="object-cover"
+                  {...(i === 0 ? { priority: true } : {})}
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-red-400 text-white flex items-center justify-center text-sm font-black shrink-0">1</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">SESAME STREET MARKET 玉川高島屋S.C店</h3>
+                <span className="text-xs text-stone-400">セサミストリートマーケット／芝麻街官方主題店</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              <strong>芝麻街（Sesame Street）的官方主題店</strong>，把咖啡廳、商品店與工作坊結合在同一個空間🧸 這間<strong>2026年3月新開幕</strong>的玉川高島屋S.C店是全日本第4間、東京都內第3間，約104坪的空間裡有<strong>36個座位的內用區</strong>，以及400種以上的周邊商品。店內還立著一塊「SESAME STREET 123」的路牌與路燈，螢幕上循環播放著卡通。
+            </p>
+
+            <div className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-red-500 mb-1">✨ 推薦給旅客的理由</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                點得到的東西幾乎都能拍📸 <strong>角色甜甜圈</strong>有撒滿藍色糖粒、叼著一塊餅乾的<strong>餅乾怪獸</strong>，也有黃鼻子的<strong>Elmo</strong>；再配上一杯拉花印著角色圖案的<strong>角色拿鐵</strong>（每間分店的圖案都不一樣）。桌上鋪的是綠色格紋桌巾，餐盤也是店家專用的，隨手一拍都好看。除了甜點，櫃台還有<strong>冰淇淋、披薩與三明治</strong>，當正餐吃也沒問題。帶小孩來最合適，帶伴手禮（手信）回去也很方便🎁
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🧸 芝麻街官方店", "🍩 角色甜甜圈", "☕ 角色拉花拿鐵", "🛍️ 400種以上周邊", "👶 親子友善"].map((t) => (
+                <span key={t} className="text-xs bg-red-50 text-red-700 border border-red-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-amber-700 mb-2">🍩 實訪時的菜單價格（供參考）</p>
+              <ul className="text-xs text-stone-600 space-y-1.5">
+                <li><strong>經典甜甜圈</strong>（蜂蜜檸檬Elmo／糖霜餅乾怪獸）：各 ¥490</li>
+                <li><strong>角色拿鐵</strong>：¥650（冰、熱均有，僅限S size）</li>
+                <li><strong>角色甜甜圈</strong>：約 ¥590／<strong>餅乾怪獸冰淇淋三明治</strong>：約 ¥540</li>
+                <li><strong>披薩</strong> 約 ¥770／<strong>三明治</strong> 約 ¥860／<strong>義大利麵</strong> 約 ¥1,760</li>
+                <li>奶茶・印度奶茶 ¥400〜¥520／汽水 ¥260〜¥380</li>
+              </ul>
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600">📍 東京都世田谷區玉川2-27-5 玉川高島屋S・C 別館「マロニエコート」1F</p>
+              <p className="text-xs text-stone-600">🚃 東急「二子玉川」駅西口 徒步約5分</p>
+              <p className="text-xs text-stone-600">⏰ 10:00〜20:00（依玉川高島屋S.C.休館日）</p>
+              <p className="text-xs text-stone-600">💴 甜點約 ¥490〜¥590／飲品約 ¥260〜¥650</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">
+                在<strong>別館「マロニエコート」</strong>，與本館・南館是不同棟建築。限定菜單會隨季節更換，出發前可以先看IG
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-4">
+              <a href="https://www.takashimaya.co.jp/tamagawa/sc/shop/?id=3355" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
+                🔗 店家資訊（玉川高島屋S.C.）
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Spot 2: STEAMAN */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
           <div className="grid grid-cols-1 gap-0.5">
             <div className="relative aspect-[4/3] bg-stone-100">
@@ -175,7 +268,7 @@ export default function FutakotamagawaPage() {
 
           <div className="p-5">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-8 h-8 rounded-full bg-red-400 text-white flex items-center justify-center text-sm font-black shrink-0">1</div>
+              <div className="w-8 h-8 rounded-full bg-red-400 text-white flex items-center justify-center text-sm font-black shrink-0">2</div>
               <div>
                 <h3 className="text-base font-black text-stone-800">中華ビストロ STEAMAN</h3>
                 <span className="text-xs text-stone-400">Herbal Chinese STEAMAN</span>
@@ -213,7 +306,7 @@ export default function FutakotamagawaPage() {
           </div>
         </section>
 
-        {/* Spot 2: GRANNY SMITH */}
+        {/* Spot 3: GRANNY SMITH */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
           <div className="grid grid-cols-1 gap-0.5">
             <div className="relative aspect-[4/3] bg-stone-100">
@@ -223,7 +316,7 @@ export default function FutakotamagawaPage() {
 
           <div className="p-5">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-8 h-8 rounded-full bg-red-400 text-white flex items-center justify-center text-sm font-black shrink-0">2</div>
+              <div className="w-8 h-8 rounded-full bg-red-400 text-white flex items-center justify-center text-sm font-black shrink-0">3</div>
               <div>
                 <h3 className="text-base font-black text-stone-800">GRANNY SMITH APPLE PIE & COFFEE</h3>
                 <span className="text-xs text-stone-400">蘋果派專門店・二子玉川店</span>
@@ -261,7 +354,7 @@ export default function FutakotamagawaPage() {
           </div>
         </section>
 
-        {/* Spot 3: ぶたこたまがわ */}
+        {/* Spot 4: ぶたこたまがわ */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-1 gap-0.5">
             <div className="relative aspect-[4/3] bg-stone-100">
@@ -271,7 +364,7 @@ export default function FutakotamagawaPage() {
 
           <div className="p-5">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-8 h-8 rounded-full bg-red-400 text-white flex items-center justify-center text-sm font-black shrink-0">3</div>
+              <div className="w-8 h-8 rounded-full bg-red-400 text-white flex items-center justify-center text-sm font-black shrink-0">4</div>
               <div>
                 <h3 className="text-base font-black text-stone-800">コリアンキッチン ぶたこたまがわ</h3>
                 <span className="text-xs text-stone-400">Korean Kitchen Butakotamagawa</span>
@@ -309,7 +402,7 @@ export default function FutakotamagawaPage() {
           </div>
         </section>
 
-        {/* Spot 4: WOODBERRY COFFEE */}
+        {/* Spot 5: WOODBERRY COFFEE */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-2 gap-0.5">
             {woodberryPhotos.map((src, i) => (
@@ -321,7 +414,7 @@ export default function FutakotamagawaPage() {
 
           <div className="p-5">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-8 h-8 rounded-full bg-red-400 text-white flex items-center justify-center text-sm font-black shrink-0">4</div>
+              <div className="w-8 h-8 rounded-full bg-red-400 text-white flex items-center justify-center text-sm font-black shrink-0">5</div>
               <div>
                 <h3 className="text-base font-black text-stone-800">WOODBERRY COFFEE 玉川高島屋S.C.店</h3>
                 <span className="text-xs text-stone-400">世田谷發跡的精品咖啡烘焙品牌</span>
@@ -376,11 +469,13 @@ export default function FutakotamagawaPage() {
           <h2 className="text-base font-black text-stone-800 mb-3">二子玉川美食散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從澀谷搭東急田園都市線只要10分鐘，交通方便</li>
+            <li>✅ 芝麻街主題店在<strong>別館「マロニエコート」</strong>，和本館・南館不同棟，別走錯🧸</li>
             <li>✅ STEAMAN和ぶたこたまがわ在同一棟大樓，可以排同一天</li>
             <li>✅ GRANNY SMITH在高島屋地下，逛百貨順便吃蘋果派</li>
             <li>✅ GRANNY SMITH（本館B1）與WOODBERRY COFFEE（南館1F）都在玉川高島屋，甜點可以一次吃兩間🍎☕</li>
             <li>✅ WOODBERRY <strong>早上9點就開門</strong>，很適合當作二子玉川散步的第一站</li>
             <li>✅ 吃素或不吃麩質的旅客，WOODBERRY的純素・無麩質甜點選擇最多🌱</li>
+            <li>✅ 帶小孩的話，芝麻街主題店的角色甜甜圈與周邊最好殺時間👶</li>
             <li>✅ 二子玉川公園就在附近，吃完可以散步走走🌿</li>
             <li>✅ 週末人多，建議平日午餐時段前往比較悠閒</li>
           </ul>
@@ -389,7 +484,7 @@ export default function FutakotamagawaPage() {
         {/* ぽやぴよ */}
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
-            蒸籠中華、蘋果派、韓式屋台，再加上一杯自家烘焙的精品咖啡——四種完全不同風格的美食✨<br />
+            芝麻街的角色甜甜圈、蒸籠中華、蘋果派、韓式屋台，再加上一杯自家烘焙的精品咖啡——五種完全不同風格的美食✨<br />
             二子玉川是個很適合慢慢逛、慢慢吃的東京近郊小寶地！
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
