@@ -73,11 +73,12 @@ const eigamuraPhotos = [
   "/shodoshima/eigamura-2.jpg",
   "/shodoshima/eigamura-3.jpg",
   "/shodoshima/eigamura-4.jpg",
+  "/shodoshima/eigamura-5.jpg",
 ];
 const santaroPhotos = ["/shodoshima/santaro-1.jpg", "/shodoshima/santaro-2.jpg"];
 const minoriPhotos = ["/shodoshima/minori-1.jpg", "/shodoshima/minori-2.jpg"];
 const olivePhotos = ["/shodoshima/olive-1.jpg", "/shodoshima/olive-2.jpg", "/shodoshima/olive-3.jpg"];
-const marukinPhotos = ["/shodoshima/marukin-1.jpg", "/shodoshima/marukin-2.jpg", "/shodoshima/marukin-3.jpg"];
+const marukinPhotos = ["/shodoshima/marukin-1.jpg", "/shodoshima/marukin-2.jpg"];
 
 const relatedLinks = [
   { href: "/kagawa", label: "🍜 香川觀光推薦5選｜烏龍麵縣美食・水族館・金刀比羅宮", desc: "讚岐烏龍麵名店＆四國水族館＆金刀比羅宮" },
@@ -292,9 +293,16 @@ export default function ShodoshimaPage() {
 
         {/* Spot 2: 二十四の瞳映画村 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
-          <div className="grid grid-cols-2 gap-0.5">
-            {eigamuraPhotos.map((src, i) => (
+          <div className="grid grid-cols-3 gap-0.5">
+            {eigamuraPhotos.slice(0, 3).map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
+                <Image src={src} alt="二十四之瞳電影村 - 小豆島景點推薦" fill sizes="33vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 gap-0.5">
+            {eigamuraPhotos.slice(3, 5).map((src, i) => (
+              <div key={i} className="relative aspect-[3/2] bg-stone-100">
                 <Image src={src} alt="二十四之瞳電影村 - 小豆島景點推薦" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
@@ -543,10 +551,10 @@ export default function ShodoshimaPage() {
 
         {/* Spot 6: マルキン醤油記念館 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="grid grid-cols-2 gap-0.5">
             {marukinPhotos.map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
-                <Image src={src} alt="丸金醬油紀念館 - 小豆島景點推薦" fill sizes="33vw" className="object-cover" />
+                <Image src={src} alt="丸金醬油紀念館 - 小豆島景點推薦" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
           </div>
