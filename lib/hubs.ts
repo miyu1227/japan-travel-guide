@@ -270,7 +270,7 @@ export const HUBS: Hub[] = [
       {
         heading: "神戶美食（神戶牛・蕎麥麵）",
         note: "三宮周邊，晚餐或午餐都好安排。",
-        slugs: ["steak-zen", "sanda-soba"],
+        slugs: ["steak-zen", "kobe-gourmet", "sanda-soba"],
       },
       {
         heading: "咖啡廳・洋菓子（推介必食）",
