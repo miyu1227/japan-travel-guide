@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Search Console token
+tools/gsc/token_gsc.json
+tools/gsc/out/
+tools/gsc/sa_key.json
