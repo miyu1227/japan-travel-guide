@@ -16,9 +16,9 @@ const KLOOK_MONDAY =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314614&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F281392-hotel-monday-haneda-airport%2F";
 
 export const metadata: Metadata = {
-  title: "羽田機場到東京市區交通攻略｜京急、單軌電車怎麼選",
+  title: "羽田機場到東京交通2026｜京急、單軌、巴士價錢與時間",
   description:
-    "羽田機場到東京市區只要30〜45分。京急線、單軌電車、機場巴士、計程車的差別與適合的人一次看懂。另附行李配送、深夜清晨班機的住宿選項與區域別最佳路線。",
+    "羽田機場到東京怎麼去？京急線¥330約15分到品川、單軌電車¥520約13分到濱松町、利木津巴士¥1,300到新宿、定額計程車¥6,900起。附首末班車時間、深夜抵達對策、各區域最佳路線。2026年9月更新。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "羽田機場到東京市區交通攻略｜京急、單軌電車怎麼選",
-    description: "羽田機場到東京交通方式比較。京急・單軌電車・機場巴士・計程車・包車・行李配送・前泊完整介紹。",
+    title: "羽田機場到東京交通2026｜京急、單軌、巴士價錢與時間",
+    description: "羽田機場到東京交通比較：京急¥330／單軌¥520／利木津巴士¥1,300／定額計程車¥6,900起。首末班車、深夜抵達、各區域路線一次看懂。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "羽田機場到東京市區交通攻略｜京急、單軌電車怎麼選",
-    description: "羽田機場到東京市區交通完整指南！京急・單軌・機場巴士・計程車比較✈️",
+    title: "羽田機場到東京交通2026｜京急、單軌、巴士價錢與時間",
+    description: "羽田機場到東京：京急¥330／單軌¥520／巴士¥1,300／定額計程車¥6,900起。首末班車與深夜對策✈️",
     images: [OG_IMAGE],
   },
 };
@@ -51,15 +51,52 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "羽田機場到東京市區交通攻略｜京急、單軌電車怎麼選",
-  description: "羽田機場到東京市區交通方式比較。京急線、東京單軌電車、機場巴士、計程車、包車、行李配送與羽田機場前泊整理。",
+  headline: "羽田機場到東京交通2026｜京急、單軌、巴士價錢與時間",
+  description: "羽田機場到東京交通比較：京急¥330約15分到品川、單軌¥520約13分到濱松町、利木津巴士¥1,300到新宿、定額計程車¥6,900起。附首末班車時間、深夜抵達對策與各區域最佳路線。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-08-12T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
+};
+
+const faqItems = [
+  {
+    q: "羽田機場到東京車站要多久、多少錢？",
+    a: "最快是東京單軌電車：羽田到濱松町約13分（¥520），轉JR山手線2站到東京站，全程約25〜30分、約¥700。搭京急到品川再轉JR也可以，約30分、約¥550。",
+  },
+  {
+    q: "羽田機場到新宿怎麼去最方便？",
+    a: "行李多就搭利木津巴士，直達新宿站西口與主要飯店，約35〜55分、¥1,300。趕時間就搭京急快特到品川（約15分）再轉JR山手線到新宿（約20分），全程約40分、約¥530。",
+  },
+  {
+    q: "京急線和單軌電車，到底要搭哪一個？",
+    a: "看飯店靠哪一邊。京急接品川，往新宿、澀谷、橫濱、淺草方便，票價¥330；單軌電車接濱松町，往東京站、新橋、有樂町方便，票價¥520。時間都在15分上下，用「哪一站轉車比較少」來選就好。",
+  },
+  {
+    q: "深夜抵達羽田，還有電車可以搭嗎？",
+    a: "京急往品川方向的末班車約0:05、單軌電車約0點前後、利木津巴士往新宿最晚約22:55。凌晨1點以後抵達基本上只剩計程車（22:00〜5:00加成約2〜3成）或在機場住一晚。",
+  },
+  {
+    q: "從羽田可以直接去東京迪士尼嗎？",
+    a: "有直達舞浜（東京迪士尼度假區）的利木津巴士，約40〜60分，拖行李時最輕鬆。搭電車則要在濱松町或品川轉乘，至少轉2次。",
+  },
+  {
+    q: "進市區後還需要買地鐵周遊券嗎？",
+    a: "接下來幾天主要靠地下鐵移動的話，Tokyo Subway Ticket通常划得來；但它不能搭JR、京急與單軌電車，機場往返這段要另外付。行程偏JR山手線的人就不用勉強買。",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
 };
 
 const breadcrumbJsonLd = {
@@ -82,6 +119,7 @@ export default function HanedaAirportAccessPage() {
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -103,18 +141,35 @@ export default function HanedaAirportAccessPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          羽田機場到東京市區交通攻略｜<br />京急、單軌電車、巴士、計程車怎麼選？✈️
+          羽田機場到東京交通攻略 2026｜<br />京急、單軌電車、巴士、計程車的價錢與時間✈️
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07（票價為2026年9月時點）</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            羽田機場是<strong>距離東京市區較近</strong>的國際空港，從機場到市中心約30〜45分就能抵達✈️<br />
-            交通方式有<strong>京急線、東京單軌電車、機場巴士、計程車（的士）</strong>等多種選擇。
+            羽田機場是<strong>離東京市區最近</strong>的國際機場：京急線<strong>約15分、¥330</strong>到品川，單軌電車<strong>約13分、¥520</strong>到濱松町，利木津巴士<strong>¥1,300</strong>直達新宿✈️<br />
+            比成田便宜一半以上，也快很多。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這篇寫給<strong>第一次從羽田入境、想快點到飯店（酒店）放行李</strong>的台灣・香港旅人。<strong>你會知道</strong>：京急線與單軌電車差在哪、住品川・新宿・淺草該搭哪一種、行李很多時怎麼辦，還有<strong>紅眼班機與清晨起飛</strong>時的羽田住宿選項。
+            這篇寫給<strong>第一次從羽田入境、想快點到飯店（酒店）放行李</strong>的台灣・香港旅人。<strong>你會知道</strong>：每種交通方式的<strong>票價、所要時間、首末班車</strong>，住品川・新宿・淺草該搭哪一種，行李很多時怎麼辦，還有<strong>紅眼班機與清晨起飛</strong>時的羽田住宿選項。
+          </p>
+        </section>
+
+        {/* 航廈と乗り場 */}
+        <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">先確認你在哪個航廈：國際線幾乎都是第3航廈</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-3">
+            從台灣・香港飛羽田，<strong>絕大多數航班都停第3航廈（Terminal 3）</strong>。第1・第2航廈以日本國內線為主，只有少數國際線（如部分ANA航班）會用第2航廈。
+          </p>
+          <ul className="space-y-2 text-sm text-stone-600">
+            <li>🚃 <strong>京急線</strong>：第3航廈站在<strong>地下1樓</strong>，出入境大廳搭電扶梯下去就到。第1・第2航廈共用一站，也在地下1樓。</li>
+            <li>🚝 <strong>東京單軌電車</strong>：第3航廈站在<strong>3樓</strong>，跟出境大廳同層，走過連通道即到。</li>
+            <li>🚌 <strong>利木津巴士</strong>：在各航廈<strong>1樓入境大廳外的巴士站</strong>，第3航廈是往外走就看得到的月台。</li>
+            <li>🚕 <strong>計程車</strong>：同樣在1樓外，跟著「タクシー／Taxi」指標走。</li>
+          </ul>
+          <p className="text-xs text-stone-500 leading-relaxed mt-3">
+            各線車站都跟航廈直結，跟著天花板的指標走，<strong>5分內都到得了</strong>，不用擔心拖行李走很遠。
           </p>
         </section>
 
@@ -135,57 +190,57 @@ export default function HanedaAirportAccessPage() {
 
         {/* 比較表 */}
         <section id="compare" className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8 scroll-mt-20">
-          <h2 className="text-base font-black text-stone-800 mb-3">交通手段早見表</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">羽田機場到東京 交通方式比較表（票價・時間・首末班）</h2>
           <div className="overflow-x-auto -mx-5 px-5">
-            <table className="w-full text-xs text-stone-600 border-collapse min-w-[600px]">
+            <table className="w-full text-xs text-stone-600 border-collapse min-w-[640px]">
               <thead>
                 <tr className="bg-amber-50">
                   <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">交通方式</th>
-                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">推薦（推介）對象</th>
-                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">適合區域</th>
-                  <th className="border border-stone-200 px-2 py-2 text-center font-bold text-stone-700">行李</th>
-                  <th className="border border-stone-200 px-2 py-2 text-center font-bold text-stone-700">轉乘</th>
-                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">注意點</th>
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">到哪裡</th>
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">票價（大人）</th>
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">所要時間</th>
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">首班／末班</th>
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">適合</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td className="border border-stone-200 px-2 py-2 font-semibold text-pink-600">京急線</td>
-                  <td className="border border-stone-200 px-2 py-2">想直達品川・淺草線沿線</td>
-                  <td className="border border-stone-200 px-2 py-2">品川・泉岳寺・淺草</td>
-                  <td className="border border-stone-200 px-2 py-2 text-center">⭕</td>
-                  <td className="border border-stone-200 px-2 py-2 text-center">少</td>
-                  <td className="border border-stone-200 px-2 py-2">通勤時段較擁擠</td>
+                  <td className="border border-stone-200 px-2 py-2">品川（直通淺草線）</td>
+                  <td className="border border-stone-200 px-2 py-2">¥330（IC ¥327）</td>
+                  <td className="border border-stone-200 px-2 py-2">快特約15分／急行約25分</td>
+                  <td className="border border-stone-200 px-2 py-2">約5:23／約0:05</td>
+                  <td className="border border-stone-200 px-2 py-2">品川・新宿・澀谷・橫濱・淺草</td>
                 </tr>
                 <tr className="bg-stone-50/50">
                   <td className="border border-stone-200 px-2 py-2 font-semibold text-sky-600">東京單軌電車</td>
-                  <td className="border border-stone-200 px-2 py-2">JR山手線沿線</td>
-                  <td className="border border-stone-200 px-2 py-2">浜松町・東京站方面</td>
-                  <td className="border border-stone-200 px-2 py-2 text-center">⭕</td>
-                  <td className="border border-stone-200 px-2 py-2 text-center">需轉JR</td>
-                  <td className="border border-stone-200 px-2 py-2">浜松町轉乘走道有距離</td>
+                  <td className="border border-stone-200 px-2 py-2">濱松町（轉JR山手線）</td>
+                  <td className="border border-stone-200 px-2 py-2">¥520（IC ¥519）</td>
+                  <td className="border border-stone-200 px-2 py-2">空港快速約13分／各停約20分</td>
+                  <td className="border border-stone-200 px-2 py-2">約5:15／約0:00</td>
+                  <td className="border border-stone-200 px-2 py-2">東京站・新橋・有樂町・上野</td>
                 </tr>
                 <tr>
-                  <td className="border border-stone-200 px-2 py-2 font-semibold text-amber-600">機場巴士</td>
-                  <td className="border border-stone-200 px-2 py-2">想直達飯店附近</td>
-                  <td className="border border-stone-200 px-2 py-2">新宿・池袋・銀座・台場等</td>
-                  <td className="border border-stone-200 px-2 py-2 text-center">⭕</td>
-                  <td className="border border-stone-200 px-2 py-2 text-center">⭕ 無</td>
-                  <td className="border border-stone-200 px-2 py-2">塞車可能延誤</td>
+                  <td className="border border-stone-200 px-2 py-2 font-semibold text-amber-600">利木津巴士</td>
+                  <td className="border border-stone-200 px-2 py-2">新宿・池袋・銀座・台場・舞浜等</td>
+                  <td className="border border-stone-200 px-2 py-2">約¥1,300（新宿）</td>
+                  <td className="border border-stone-200 px-2 py-2">35〜55分（新宿）</td>
+                  <td className="border border-stone-200 px-2 py-2">約7:05／約22:55（新宿線）</td>
+                  <td className="border border-stone-200 px-2 py-2">行李多・家族・直達飯店</td>
                 </tr>
                 <tr className="bg-stone-50/50">
-                  <td className="border border-stone-200 px-2 py-2 font-semibold text-purple-600">計程車・包車</td>
-                  <td className="border border-stone-200 px-2 py-2">家族・深夜抵達</td>
-                  <td className="border border-stone-200 px-2 py-2">任何地點</td>
-                  <td className="border border-stone-200 px-2 py-2 text-center">⭕⭕</td>
-                  <td className="border border-stone-200 px-2 py-2 text-center">⭕ 無</td>
-                  <td className="border border-stone-200 px-2 py-2">價格較高</td>
+                  <td className="border border-stone-200 px-2 py-2 font-semibold text-purple-600">定額計程車</td>
+                  <td className="border border-stone-200 px-2 py-2">東京23區內飯店門口</td>
+                  <td className="border border-stone-200 px-2 py-2">¥6,900〜8,400（依區域）＋高速費</td>
+                  <td className="border border-stone-200 px-2 py-2">30〜50分</td>
+                  <td className="border border-stone-200 px-2 py-2">24小時（22:00〜5:00加成）</td>
+                  <td className="border border-stone-200 px-2 py-2">深夜抵達・3人以上・行李超多</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="text-xs text-stone-500 leading-relaxed mt-3">
-            ※ 價格、所要時間、路線會依時期不同而變動。出發前請以各官方網站／預約頁面為準。
+            ※ 票價為2026年9月時點、大人單程。首末班車以平日、往市區方向為準，會依星期與季節微調，出發前請再查一次官方時刻表。
           </p>
         </section>
 
@@ -193,8 +248,15 @@ export default function HanedaAirportAccessPage() {
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">① 京急線（Keikyu Line）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            京急電鐵直接連接<strong>羽田機場第1・第2・第3航廈</strong>，可直達<strong>品川</strong>，再透過都營淺草線直通到<strong>泉岳寺・新橋・淺草</strong>等地🚃 約14分到品川、約30分到淺草，速度快又方便。
+            京急電鐵直接連接<strong>羽田機場第1・第2・第3航廈</strong>，可直達<strong>品川</strong>，再透過都營淺草線直通到<strong>泉岳寺・新橋・淺草</strong>等地🚃 <strong>快特約15分到品川</strong>（急行約25分）、約35分到淺草，是羽田最便宜也最快的選擇。
           </p>
+          <div className="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 mb-3 text-xs text-stone-600 leading-relaxed space-y-1">
+            <p>💴 <strong>票價</strong>：羽田→品川 ¥330（IC ¥327）、→淺草 約¥550、→橫濱 約¥400</p>
+            <p>⏱ <strong>時間</strong>：品川 快特約15分／急行約25分・淺草 約35分・橫濱 約25分</p>
+            <p>🕐 <strong>首末班</strong>：往品川方向 首班約5:23、末班約0:05（平日）</p>
+            <p>🎫 <strong>怎麼買</strong>：Suica／PASMO 直接嗶進站最方便；買票的話用售票機選「品川」即可，有中文介面</p>
+            <p>⚠️ <strong>注意</strong>：往橫濱和往品川是<strong>反方向</strong>，上車前看月台顯示的「品川・都営線方面」或「横浜方面」。快特・急行・普通都停品川，搭快特最快</p>
+          </div>
           <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
             <p className="text-xs font-bold text-pink-700 mb-1">✨ 推薦給</p>
             <p className="text-xs text-stone-600 leading-relaxed">
@@ -204,7 +266,7 @@ export default function HanedaAirportAccessPage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
-            {["🚃 約14分到品川", "💴 票價親民", "🚉 淺草線直通", "⚠️ 通勤時段擠"].map((t) => (
+            {["🚃 快特約15分到品川", "💴 ¥330 最便宜", "🚉 淺草線直通", "⚠️ 通勤時段擠"].map((t) => (
               <span key={t} className="text-xs bg-pink-50 text-pink-700 border border-pink-200 px-3 py-1 rounded-full">{t}</span>
             ))}
           </div>
@@ -214,18 +276,25 @@ export default function HanedaAirportAccessPage() {
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">② 東京單軌電車（Tokyo Monorail）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            從羽田機場直達<strong>浜松町站</strong>的單軌電車🚝 從浜松町可以轉<strong>JR山手線</strong>到<strong>東京站、新宿、澀谷</strong>等地。約13〜18分到浜松町，沿途可欣賞東京灣景色。
+            從羽田機場直達<strong>濱松町站</strong>的單軌電車🚝 從濱松町可以轉<strong>JR山手線</strong>到<strong>東京站（2站）、新橋（1站）、上野</strong>等地。<strong>空港快速約13分到濱松町</strong>，沿途可欣賞東京灣與跑道景色，第一次來東京很有感。
           </p>
+          <div className="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 mb-3 text-xs text-stone-600 leading-relaxed space-y-1">
+            <p>💴 <strong>票價</strong>：羽田→濱松町 ¥520（IC ¥519）、再轉JR到東京站 ¥160，合計約¥680</p>
+            <p>⏱ <strong>時間</strong>：濱松町 空港快速約13分／各站停約20分・東京站 全程約25〜30分</p>
+            <p>🕐 <strong>首末班</strong>：首班約5:15、末班約0:00前後</p>
+            <p>🎫 <strong>優惠票</strong>：週六日・假日有「單軌電車＆山手線內優惠票」，¥500 就能從羽田搭到山手線內任一站，比分開買便宜</p>
+            <p>⚠️ <strong>注意</strong>：濱松町站轉 JR 要走一段連通道並上下樓梯，行李兩件以上會有點辛苦。有 JR PASS 的人單軌電車也可以用</p>
+          </div>
           <div className="bg-sky-50 border border-sky-100 rounded-xl px-4 py-3 mb-3">
             <p className="text-xs font-bold text-sky-700 mb-1">✨ 推薦給</p>
             <p className="text-xs text-stone-600 leading-relaxed">
-              ・住東京站・浜松町・JR沿線<br />
+              ・住東京站・濱松町・新橋・上野<br />
               ・想看東京灣景色的旅人<br />
               ・有 JR PASS 可使用的人
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
-            {["🚝 約13〜18分", "🌊 看東京灣", "🔁 浜松町轉JR", "⚠️ 浜松町轉乘走道長"].map((t) => (
+            {["🚝 空港快速約13分", "💴 ¥520", "🔁 濱松町轉JR", "⚠️ 轉乘走道長"].map((t) => (
               <span key={t} className="text-xs bg-sky-50 text-sky-700 border border-sky-200 px-3 py-1 rounded-full">{t}</span>
             ))}
           </div>
@@ -235,8 +304,15 @@ export default function HanedaAirportAccessPage() {
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">③ 機場巴士 / Limousine Bus</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            從羽田機場直達<strong>新宿、池袋、東京站、銀座、台場、橫濱</strong>等主要區域的高速巴士🚌 行李可放在巴士底部行李艙，無需轉乘，<strong>直接到飯店附近</strong>。
+            從羽田機場直達<strong>新宿、池袋、東京站、銀座、台場、舞浜（迪士尼）、橫濱</strong>等主要區域的高速巴士🚌 行李可放在巴士底部行李艙，無需轉乘，<strong>直接停在飯店門口或飯店附近</strong>。
           </p>
+          <div className="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 mb-3 text-xs text-stone-600 leading-relaxed space-y-1">
+            <p>💴 <strong>票價</strong>：新宿 約¥1,300、東京站・銀座 約¥1,000、舞浜 約¥1,300（依路線不同）</p>
+            <p>⏱ <strong>時間</strong>：新宿 35〜55分、東京站 約30〜45分、舞浜 約40〜60分（塞車會更久）</p>
+            <p>🕐 <strong>首末班</strong>：新宿線 首班約7:05、末班約22:55。<strong>比電車早收班</strong>，晚班機要注意</p>
+            <p>🎫 <strong>怎麼買</strong>：入境大廳的巴士櫃台或自動售票機，也可在官網／Klook 事先預約。假日與傍晚常客滿，建議先訂</p>
+            <p>⚠️ <strong>注意</strong>：新宿線會停多家飯店（京王廣場、希爾頓、凱悅等），上車前確認你的飯店在不在停靠名單</p>
+          </div>
           <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
             <p className="text-xs font-bold text-amber-700 mb-1">✨ 推薦給</p>
             <p className="text-xs text-stone-600 leading-relaxed">
@@ -256,7 +332,27 @@ export default function HanedaAirportAccessPage() {
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">④ 計程車・包車 / Taxi & Private Transfer</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            羽田機場到市區距離較近，<strong>計程車</strong>也是實用選擇🚕 部分區域有<strong>定額計程車</strong>服務（成田比羽田更常見，但羽田也有部分區間）。<strong>包車</strong>則可事先預約專車，直接送到飯店門口。
+            羽田機場到市區距離較近，<strong>計程車</strong>也是實用選擇🚕 東京23區有<strong>定額計程車（定額タクシー）</strong>制度：上車前跟司機說「定額」，到該區內任何地點都是固定價，不用怕繞路。<strong>包車</strong>則可事先預約專車，直接送到飯店門口。
+          </p>
+          <div className="overflow-x-auto -mx-5 px-5 mb-3">
+            <table className="w-full text-xs text-stone-600 border-collapse min-w-[420px]">
+              <thead>
+                <tr className="bg-purple-50">
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">飯店所在區</th>
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">定額（5:00〜22:00）</th>
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">深夜（22:00〜5:00）</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td className="border border-stone-200 px-2 py-2">千代田區（東京站・秋葉原）</td><td className="border border-stone-200 px-2 py-2">¥6,900</td><td className="border border-stone-200 px-2 py-2">¥8,300</td></tr>
+                <tr className="bg-stone-50/50"><td className="border border-stone-200 px-2 py-2">澀谷區（澀谷・惠比壽・原宿）</td><td className="border border-stone-200 px-2 py-2">¥7,800</td><td className="border border-stone-200 px-2 py-2">¥9,200</td></tr>
+                <tr><td className="border border-stone-200 px-2 py-2">新宿區（新宿・神樂坂）</td><td className="border border-stone-200 px-2 py-2">¥8,300</td><td className="border border-stone-200 px-2 py-2">¥9,800</td></tr>
+                <tr className="bg-stone-50/50"><td className="border border-stone-200 px-2 py-2">台東區（淺草・上野）</td><td className="border border-stone-200 px-2 py-2">¥8,400</td><td className="border border-stone-200 px-2 py-2">¥9,900</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-stone-500 leading-relaxed mb-3">
+            ※ 2026年3月改定後的價格，另加首都高速通行費（約¥1,000〜1,500）。<strong>港區、中央區、品川區、目黑區</strong>等離機場近的區<strong>不適用定額</strong>，直接跳表反而更便宜。3〜4人分攤的話，到新宿一人約¥2,500，跟巴士差不多。
           </p>
           <div className="bg-purple-50 border border-purple-100 rounded-xl px-4 py-3 mb-3">
             <p className="text-xs font-bold text-purple-700 mb-1">✨ 推薦給</p>
@@ -379,29 +475,48 @@ export default function HanedaAirportAccessPage() {
           <p className="text-[10px] text-stone-400 mt-2 text-center">※ 內含聯盟行銷連結，讀者不會因此支付額外費用。</p>
         </section>
 
+        {/* ICカード・2029 */}
+        <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">一張 Suica 全部搭得到：入境後先做這件事</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-3">
+            京急、單軌電車、JR、地下鐵、巴士都能用 <strong>Suica／PASMO</strong> 嗶卡付款，不用每次買票。iPhone 用戶可以直接在 Apple 錢包新增 Suica 並用信用卡儲值，<strong>還沒落地就能準備好</strong>；實體卡則在京急・單軌電車的售票機或 JR 綠色窗口買「Welcome Suica」。
+          </p>
+          <p className="text-xs text-stone-500 leading-relaxed">
+            🚧 <strong>2029年新路線</strong>：JR「羽田機場 Access 線」預定 2029 年通車，屆時羽田到<strong>東京站約18分、新宿約23分</strong>不用轉車。在那之前，往東京站還是單軌電車＋山手線最快。
+          </p>
+        </section>
+
         {/* エリア別おすすめ */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">飯店區域別推薦交通方式</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">飯店區域別：羽田機場到各區最佳路線與費用</h2>
           <div className="space-y-3">
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
               <p className="text-xs font-bold text-amber-700 mb-1">📍 品川・泉岳寺・淺草</p>
-              <p className="text-xs text-stone-600 leading-relaxed">→ <strong>京急線</strong>最直接。約14分到品川，淺草線直通淺草。</p>
+              <p className="text-xs text-stone-600 leading-relaxed">→ <strong>京急線</strong>最直接。品川 約15分・¥330，淺草 約35分・約¥550，不用轉車。</p>
             </div>
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
-              <p className="text-xs font-bold text-amber-700 mb-1">📍 浜松町・東京站・有樂町</p>
-              <p className="text-xs text-stone-600 leading-relaxed">→ <strong>東京單軌電車</strong>到浜松町轉JR山手線。</p>
+              <p className="text-xs font-bold text-amber-700 mb-1">📍 東京站・濱松町・新橋・有樂町</p>
+              <p className="text-xs text-stone-600 leading-relaxed">→ <strong>東京單軌電車</strong>到濱松町（約13分・¥520）轉 JR 山手線，東京站全程約25〜30分・約¥680。</p>
             </div>
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
               <p className="text-xs font-bold text-amber-700 mb-1">📍 新宿・澀谷・池袋</p>
-              <p className="text-xs text-stone-600 leading-relaxed">→ <strong>機場巴士</strong>直達飯店附近最方便。或京急→品川→JR轉乘。</p>
+              <p className="text-xs text-stone-600 leading-relaxed">→ 行李多搭<strong>利木津巴士</strong>直達（新宿 35〜55分・約¥1,300）。趕時間搭京急快特到品川再轉 JR 山手線，新宿全程約40分・約¥530，澀谷約35分・約¥500。</p>
             </div>
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
               <p className="text-xs font-bold text-amber-700 mb-1">📍 銀座・六本木・台場</p>
-              <p className="text-xs text-stone-600 leading-relaxed">→ <strong>機場巴士</strong>多有直達路線。或計程車到飯店門口。</p>
+              <p className="text-xs text-stone-600 leading-relaxed">→ <strong>利木津巴士</strong>有直達路線（銀座約¥1,000）。銀座・六本木在港區・中央區，計程車不適用定額但距離近，跳表約¥6,000〜7,000，3人以上可考慮。</p>
+            </div>
+            <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
+              <p className="text-xs font-bold text-amber-700 mb-1">📍 上野・秋葉原</p>
+              <p className="text-xs text-stone-600 leading-relaxed">→ 單軌電車到濱松町轉 JR 山手線（上野約30分），或京急直通淺草線到<strong>淺草橋・押上</strong>轉車。</p>
             </div>
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
               <p className="text-xs font-bold text-amber-700 mb-1">📍 橫濱</p>
-              <p className="text-xs text-stone-600 leading-relaxed">→ <strong>機場巴士</strong>或<strong>京急線</strong>直達橫濱方向。</p>
+              <p className="text-xs text-stone-600 leading-relaxed">→ <strong>京急線</strong>往橫濱方向直達，約25分・約¥400。注意跟往品川是反方向。</p>
+            </div>
+            <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
+              <p className="text-xs font-bold text-amber-700 mb-1">📍 舞浜（東京迪士尼）</p>
+              <p className="text-xs text-stone-600 leading-relaxed">→ <strong>利木津巴士</strong>直達各迪士尼飯店，約40〜60分・約¥1,300。電車要轉2次以上，拖行李不建議。</p>
             </div>
           </div>
         </section>
@@ -413,45 +528,28 @@ export default function HanedaAirportAccessPage() {
             第一次來東京、又不熟悉日本電車的話，可以參考以下思考方式：
           </p>
           <div className="space-y-2 text-sm text-stone-600">
-            <p>🐥 <strong>輕便行李＆住品川或淺草線沿線</strong> → 京急線</p>
-            <p>🐥 <strong>住浜松町或東京站</strong> → 東京單軌電車</p>
-            <p>🐥 <strong>住新宿・池袋・銀座等</strong> → 機場巴士</p>
-            <p>🐥 <strong>家族同行、行李多</strong> → 機場巴士或計程車</p>
+            <p>🐥 <strong>輕便行李＆住品川、新宿、澀谷、淺草</strong> → 京急線（¥330・15分到品川）</p>
+            <p>🐥 <strong>住東京站、新橋、上野</strong> → 東京單軌電車（¥520・13分到濱松町）</p>
+            <p>🐥 <strong>行李多、住新宿・池袋・銀座・迪士尼</strong> → 利木津巴士（約¥1,300）</p>
+            <p>🐥 <strong>3人以上或深夜抵達</strong> → 定額計程車（¥6,900〜8,400＋高速費）</p>
             <p>🐥 <strong>想下飛機就觀光</strong> → 搭配行李配送服務</p>
-            <p>🐥 <strong>清早班機・深夜抵達</strong> → 羽田機場周邊或航廈內前泊</p>
+            <p>🐥 <strong>0點後抵達・6點前起飛</strong> → 羽田機場周邊或航廈內前泊</p>
           </div>
         </section>
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">羽田機場交通 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">羽田機場到東京 常見問題</h2>
           <div className="space-y-4">
-            <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 京急線和單軌電車，到底要搭哪一個？</p>
-              <p className="text-xs text-stone-600 leading-relaxed">
-                看你的飯店靠哪一邊。<strong>京急線</strong>接的是品川，之後轉 JR 山手線很方便，往<strong>淺草、橫濱</strong>方向也有直通車；<strong>單軌電車</strong>接的是濱松町，適合往<strong>東京站、新橋</strong>一帶。兩邊所要時間差不多，用「哪一站轉車比較少」來選就好。
-              </p>
-            </div>
-            <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 深夜抵達羽田，還有電車可以搭嗎？</p>
-              <p className="text-xs text-stone-600 leading-relaxed">
-                羽田的末班電車時間比想像中早，<strong>深夜抵達時常常已經沒有車</strong>。這種時候的選項是深夜巴士、計程車，或是乾脆在<strong>機場航廈內或周邊住一晚</strong>。凌晨的計程車會加成，人數少的話前泊反而比較划算。
-              </p>
-            </div>
-            <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 從羽田可以直接去東京迪士尼嗎？</p>
-              <p className="text-xs text-stone-600 leading-relaxed">
-                有直達舞浜地區的機場巴士，拖行李時最輕鬆。舞浜周邊不進園也很好玩，可以參考
-                <Link href="/tokyo-disney-around" className="text-blue-600 underline underline-offset-2">東京迪士尼周邊玩法</Link>。
-              </p>
-            </div>
-            <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 進市區後還需要買地鐵周遊券嗎？</p>
-              <p className="text-xs text-stone-600 leading-relaxed">
-                如果接下來幾天主要靠地下鐵移動，
-                <Link href="/tokyo-subway-ticket" className="text-blue-600 underline underline-offset-2">Tokyo Subway Ticket</Link> 通常划得來；但它<strong>不能搭 JR 與京急、單軌電車</strong>，機場往返這段還是要另外付。行程偏 JR 山手線的人就不用勉強買。
-              </p>
-            </div>
+            {faqItems.map((f) => (
+              <div key={f.q}>
+                <p className="text-sm font-bold text-stone-700 mb-1">❓ {f.q}</p>
+                <p className="text-xs text-stone-600 leading-relaxed">{f.a}</p>
+              </div>
+            ))}
+            <p className="text-xs text-stone-500 leading-relaxed">
+              相關文章：<Link href="/tokyo-disney-around" className="text-blue-600 underline underline-offset-2">東京迪士尼周邊玩法</Link>・<Link href="/tokyo-subway-ticket" className="text-blue-600 underline underline-offset-2">Tokyo Subway Ticket 怎麼買</Link>・<Link href="/narita-airport-access" className="text-blue-600 underline underline-offset-2">成田機場到東京交通</Link>
+            </p>
           </div>
         </section>
 
@@ -459,7 +557,7 @@ export default function HanedaAirportAccessPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">小結</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            羽田機場雖然離東京市區不遠，但「最適合的交通方式」會依<strong>飯店位置・行李・抵達時間・人數</strong>不同。
+            羽田機場到東京，<strong>京急 ¥330・單軌 ¥520・巴士 ¥1,300・定額計程車 ¥6,900 起</strong>，四種方式都在1小時內。「最適合的」會依<strong>飯店位置・行李・抵達時間・人數</strong>不同。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             出發前先想好<strong>「我住哪？行李多嗎？幾點到？」</strong>再對照本文比較表，就能避免抵達後手忙腳亂。

@@ -736,15 +736,15 @@ export const ARTICLES: Article[] = [
   {
     slug: "haneda-airport-access",
     category: "prep",
-    name: "羽田機場到東京市區交通攻略｜京急、單軌電車、巴士、計程車怎麼選？✈️",
+    name: "羽田機場到東京交通攻略 2026｜京急、單軌電車、巴士、計程車的價錢與時間✈️",
     shortLabel: "羽田機場交通",
-    desc: "羽田機場到東京市區交通完整指南！京急・單軌電車・機場巴士・計程車・行李配送・前泊比較",
+    desc: "京急¥330・單軌¥520・巴士¥1,300・定額計程車¥6,900起。首末班車、深夜抵達、各區域最佳路線",
     tag: "機場交通",
     emoji: "✈️",
     image: "/haneda-airport-access/cover.png",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-08-12",
+    updated: "2026-09-07",
   },
   {
     slug: "narita-airport-access",
