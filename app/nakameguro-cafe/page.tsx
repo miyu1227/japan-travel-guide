@@ -11,7 +11,7 @@ const PAGE_URL = "https://www.japantrippicks.com/nakameguro-cafe";
 const OG_IMAGE = "/nakameguro-cafe/starbucks-1.jpg";
 
 export const metadata: Metadata = {
-  title: "中目黑咖啡廳推薦2選｜星巴克臻選・冠軍拿鐵✅實訪",
+  title: "中目黑星巴克臻選烘焙工坊＆STREAMER｜中目黑咖啡廳推薦2選",
   description:
     "隈研吾設計的星巴克臻選烘焙工坊，加上拉花世界冠軍澤田洋史的STREAMER。兩間走路6分鐘，目黑川旁咖啡廳一次逛完。附交通・營業時間・價位。",
   alternates: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "中目黑咖啡廳推薦2選｜星巴克臻選烘焙工坊・STREAMER冠軍拿鐵",
+    title: "中目黑星巴克臻選烘焙工坊＆STREAMER｜中目黑咖啡廳推薦2選",
     description: "隈研吾建築的星巴克臻選，加上拉花世界冠軍的STREAMER。目黑川旁兩間必去咖啡廳。",
     url: PAGE_URL,
     type: "article",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "中目黑咖啡廳推薦2選｜星巴克臻選・STREAMER",
+    title: "中目黑星巴克臻選＆STREAMER｜中目黑咖啡廳推薦2選",
     description: "隈研吾建築的星巴克臻選＋拉花世界冠軍的STREAMER，走路6分鐘串一條☕",
     images: [OG_IMAGE],
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "中目黑咖啡廳推薦2選｜星巴克臻選烘焙工坊・STREAMER COFFEE【實際造訪】",
+  headline: "中目黑星巴克臻選烘焙工坊＆STREAMER COFFEE｜中目黑咖啡廳推薦2選【實際造訪】",
   description: "中目黑必去咖啡廳2間完整介紹。隈研吾設計的星巴克臻選烘焙工坊，與拉花世界冠軍澤田洋史的STREAMER COFFEE COMPANY。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
@@ -120,7 +120,7 @@ export default function NakameguroCafePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          中目黑咖啡廳推薦2選｜星巴克臻選<br />烘焙工坊・世界冠軍拉花咖啡☕
+          中目黑星巴克臻選烘焙工坊＆<br />STREAMER｜中目黑咖啡廳推薦2選☕
         </h1>
         <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-03</p>
 

@@ -359,7 +359,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "nakameguro-cafe",
     category: "cafe",
-    name: "中目黑咖啡廳推薦2選｜星巴克臻選烘焙工坊・世界冠軍拉花☕",
+    name: "中目黑星巴克臻選烘焙工坊＆STREAMER｜中目黑咖啡廳推薦2選☕",
     shortLabel: "中目黑咖啡",
     desc: "隈研吾設計的星巴克臻選，加上拉花世界冠軍的STREAMER，走路6分鐘串一條",
     tag: "東京",
