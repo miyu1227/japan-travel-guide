@@ -9,9 +9,9 @@ const PAGE_URL = "https://www.japantrippicks.com/osaka-gourmet";
 const OG_IMAGE = "/osaka-gourmet/teppan-1.jpg";
 
 export const metadata: Metadata = {
-  title: "大阪美食推薦｜梅田在地人氣鐵板燒與居酒屋【實際造訪】",
+  title: "大阪鐵板燒・居酒屋推薦｜梅田福島在地人氣2店",
   description:
-    "梅田・福島一帶的在地人氣店：精緻鐵板燒「鉄板屋な。」與話題居酒屋「酒場ビリー」。附交通、預算帶、要不要事先訂位、幾點去比較好進與同晚串店方式。",
+    "大阪鐵板燒與大阪居酒屋推薦：福島的主廚現煎鐵板燒「鉄板屋な。」（套餐¥5,000〜）與梅田的炭火串燒居酒屋「酒場ビリー」（一串¥150〜）。梅田晚餐怎麼排、要不要訂位、幾點去好進，實際造訪整理。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "大阪美食推薦｜梅田在地人氣鐵板燒與居酒屋",
-    description: "大阪必吃！鐵板屋な。＆酒場ビリー，在地人氣餐廳。附交通・菜單・推薦。",
+    title: "大阪鐵板燒・居酒屋推薦｜梅田福島在地人氣2店",
+    description: "大阪鐵板燒「鉄板屋な。」＆大阪居酒屋「酒場ビリー」。梅田晚餐這樣排，附交通・預算・訂位重點。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "大阪美食推薦｜梅田在地人氣鐵板燒與居酒屋",
-    description: "大阪必吃！福島區鐵板燒＆梅田話題居酒屋🍻",
+    title: "大阪鐵板燒・居酒屋推薦｜梅田福島在地人氣2店",
+    description: "大阪鐵板燒＆大阪居酒屋，梅田晚餐這樣排🍻",
     images: [OG_IMAGE],
   },
 };
@@ -44,14 +44,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "大阪美食推薦｜梅田在地人氣鐵板燒與居酒屋【實際造訪】",
-  description: "大阪必吃美食推薦：鉄板屋な。、酒場ビリー。",
+  headline: "大阪鐵板燒・居酒屋推薦｜梅田福島在地人氣2店",
+  description: "大阪鐵板燒「鉄板屋な。」與大阪居酒屋「酒場ビリー」，梅田晚餐的排法、預算與訂位重點。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-08-12T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -60,7 +60,7 @@ const breadcrumbJsonLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "首頁", item: "https://www.japantrippicks.com" },
-    { "@type": "ListItem", position: 2, name: "大阪美食推薦", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "大阪鐵板燒・居酒屋推薦", item: PAGE_URL },
   ],
 };
 
@@ -84,7 +84,7 @@ export default function OsakaGourmetPage() {
         <div className="max-w-2xl mx-auto px-4 h-14 flex items-center gap-3">
           <Link href="/" className="text-stone-500 hover:text-stone-800 text-sm">← 返回</Link>
           <span className="text-stone-300">|</span>
-          <span className="text-sm font-semibold text-stone-700 truncate">大阪美食推薦</span>
+          <span className="text-sm font-semibold text-stone-700 truncate">大阪鐵板燒・居酒屋推薦</span>
         </div>
       </header>
 
@@ -99,9 +99,9 @@ export default function OsakaGourmetPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          大阪美食推薦2選｜鐵板燒<br />名店＆人氣居酒屋🍻
+          大阪鐵板燒・居酒屋推薦｜<br />梅田・福島在地人氣2店🍻
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -110,7 +110,7 @@ export default function OsakaGourmetPage() {
             大阪是日本知名的<strong>「美食之都」</strong>🏙️ 除了道頓堀的章魚燒、大阪燒、串炸這些觀光美食之外，當地人也有許多<strong>隱藏版居酒屋＆名店</strong>，是台灣・香港旅客最容易錯過的寶藏。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這篇寫給<strong>已經吃過道頓堀、想找在地一點的店</strong>的台灣・香港旅人。<strong>你會知道</strong>：兩間店的位置與預算帶、要不要事先訂位、幾點去比較好進，以及怎麼把它們排進同一晚。福島區的<strong>「鉄板屋な。」</strong>提供精緻鐵板燒，梅田周邊的<strong>「酒場ビリー」</strong>則是話題居酒屋，兩間都離梅田很近✨
+            這篇寫給<strong>想在大阪吃一次鐵板燒、或找一間在地居酒屋</strong>的台灣・香港旅人。<strong>你會知道</strong>：兩間店的位置與預算帶（鐵板燒套餐¥5,000〜、居酒屋¥3,000〜5,000）、要不要事先訂位、幾點去比較好進，以及<strong>梅田晚餐怎麼排成一晚</strong>。福島區的<strong>「鉄板屋な。」</strong>是主廚現煎的精緻鐵板燒，梅田周邊的<strong>「酒場ビリー」</strong>則是炭火串燒的話題居酒屋，兩間都離梅田很近✨
           </p>
         </section>
 
@@ -136,7 +136,7 @@ export default function OsakaGourmetPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">大阪美食推薦（推介）・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">大阪鐵板燒＆居酒屋推薦（推介）・2選</h2>
 
         {/* Spot 1: 鉄板屋な。 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -263,8 +263,20 @@ export default function OsakaGourmetPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">大阪美食 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">大阪鐵板燒・居酒屋 常見問題</h2>
           <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 大阪鐵板燒一個人預算大概多少？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                在地型的鐵板燒店像鉄板屋な。，<strong>套餐約¥5,000起、單點¥3,000起</strong>，加飲料抓¥7,000〜8,000比較保險。這比道頓堀觀光區的神戶牛鐵板燒（動輒¥15,000以上）親民很多，也比較能吃到大阪本地的調味。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 梅田晚餐去哪裡好？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                從梅田站走路5〜10分或搭一站到<strong>福島</strong>，就是大阪人自己吃晚餐的區域。想吃精緻一點選鐵板燒，想熱鬧一點選居酒屋，兩間都在這一帶。吃完回梅田逛百貨或看夜景都順路，不用特地跑道頓堀。
+              </p>
+            </div>
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要事先訂位嗎？</p>
               <p className="text-xs text-stone-600 leading-relaxed">

@@ -130,7 +130,7 @@ const hubLinks = [
   { href: "/tokyo-cafe", label: "☕ 東京咖啡廳推薦｜人氣咖啡店・甜點" },
   { href: "/tokyo-spot", label: "📍 東京景點推薦｜地標・公園・美術館" },
   { href: "/tokyo-day-trip", label: "🚃 東京近郊一日遊｜箱根・橫濱・湘南" },
-  { href: "/osaka", label: "🍻 大阪美食推薦｜梅田在地人氣店" },
+  { href: "/osaka", label: "🍻 大阪必食推介｜梅田在地美食、沾麵、自助餐" },
   { href: "/kansai", label: "🏯 關西自由行推薦｜大阪・神戶・京都近郊" },
 ];
 
