@@ -17,7 +17,7 @@ const PAGE_URL = "https://www.japantrippicks.com/kagawa";
 const OG_IMAGE = "/kagawa/yamagoe-1.jpg";
 
 export const metadata: Metadata = {
-  title: "香川觀光5選｜讚岐烏龍麵・水族館・金刀比羅宮",
+  title: "香川美食・觀光推薦5選｜四國讚岐烏龍麵、水族館、金刀比羅宮",
   description:
     "讚岐烏龍麵名店「山越うどん」「山下うどん」、四國水族館、金刀比羅宮、溫泉旅館御宿敷島館。香川一日遊・兩日遊行程，附交通・門票・必吃。",
   alternates: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "香川觀光推薦5選｜烏龍麵縣必去美食・水族館・金刀比羅宮",
+    title: "香川美食・觀光推薦5選｜四國讚岐烏龍麵、水族館、金刀比羅宮",
     description: "香川旅遊指南！讚岐烏龍麵名店＆四國水族館＆金刀比羅宮＆人氣溫泉旅館。",
     url: PAGE_URL,
     type: "article",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "香川觀光推薦5選｜烏龍麵縣必去美食・水族館・金刀比羅宮",
+    title: "香川美食・觀光推薦5選｜四國讚岐烏龍麵、水族館、金刀比羅宮",
     description: "香川旅遊指南！讚岐烏龍麵＆四國水族館＆金刀比羅宮🍜",
     images: [OG_IMAGE],
   },
@@ -52,14 +52,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "香川觀光推薦5選｜烏龍麵縣必去美食・水族館・金刀比羅宮【實際造訪】",
+  headline: "香川美食・觀光推薦5選｜四國讚岐烏龍麵、水族館、金刀比羅宮【實際造訪】",
   description: "香川縣旅遊完全指南。讚岐烏龍麵名店、四國水族館、金刀比羅宮、人氣溫泉旅館。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -80,20 +80,30 @@ const konpiraPhotos = ["/kagawa/konpira-1.jpg", "/kagawa/konpira-2.jpg", "/kagaw
 
 const relatedLinks = [
   { href: "/hikone", label: "🏯 彥根貓＆彥根城攻略2026｜登場時間、門票、交通", desc: "日本國寶＋彥根貓＋江戶城下町" },
-  { href: "/utsunomiya", label: "🎋 宇都宮觀光推薦3選｜栃木必去竹林・餃子・神社", desc: "若山農場・餃子通・二荒山神社" },
+  { href: "/utsunomiya", label: "🎋 宇都宮一日遊推薦3選｜若山農場竹林・餃子街・二荒山神社", desc: "若山農場・餃子通・二荒山神社" },
   { href: "/kamikochi", label: "🏔️ 上高地攻略2026｜交通、開山期間、散策路線", desc: "河童橋・新穂高纜車・奧飛騨溫泉" },
 ];
 
 const faqs = [
+  { q: "四國讚岐烏龍麵推薦去哪裡吃？", a: "本站實際吃過的是這篇介紹的高松・琴平一帶的店。香川的烏龍麵店大多是早上開、賣完就收，中午前去最保險；一碗多在¥300〜¥600，自助式的店先拿麵再自己加天婦羅。" },
+  { q: "香川美食除了烏龍麵還有什麼？", a: "骨付鳥（帶骨烤雞腿）、鯛魚飯、和三盆糖點心是香川三大代表。這篇也整理了金刀比羅宮參道與水族館周邊可以順路吃的店。" },
   { q: "烏龍麵店幾點去比較好？", a: "讚岐的名店多半中午前後最擠，而且賣完就收，建議上午就先去吃第一碗。" },
   { q: "金刀比羅宮要爬很多階梯嗎？", a: "參道階梯不少，建議穿好走的鞋並預留半天。和四國水族館排在同一天會偏趕，兩天行程會輕鬆很多。" },
 ];
+
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
 
 export default function KagawaPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -115,9 +125,9 @@ export default function KagawaPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          香川觀光推薦5選｜烏龍麵縣<br />美食・水族館・金刀比羅宮🍜
+          香川美食・觀光推薦5選｜四國<br />讚岐烏龍麵・水族館・金刀比羅宮🍜
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

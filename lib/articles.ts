@@ -73,7 +73,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "sanda-soba",
     category: "ramen",
-    name: "兵庫三田蕎麥麵推薦｜蕎麦いち・關西手打蕎麥名店🍃",
+    name: "神戶近郊蕎麥麵推薦｜三田「蕎麦いち」關西手打名店🍃",
     shortLabel: "三田蕎麥麵",
     desc: "神戶近郊隱藏名店！嚴選國產蕎麥粉的職人手打蕎麥",
     tag: "兵庫",
@@ -81,7 +81,7 @@ export const ARTICLES: Article[] = [
     image: "/sanda-soba/soba1-1.jpg",
     areas: ["兵庫"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-07",
   },
   {
     slug: "nishinomiya-gardens",
@@ -99,7 +99,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "conrad-osaka",
     category: "ramen",
-    name: "大阪飯店自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet🥂",
+    name: "大阪自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet🥂",
     shortLabel: "大阪康萊德自助餐",
     desc: "地上200公尺的義式自助餐，挑高落地窗與水晶藝術裝置超好拍",
     tag: "大阪",
@@ -107,7 +107,7 @@ export const ARTICLES: Article[] = [
     image: "/conrad-osaka/atmos-1.jpg",
     areas: ["大阪"],
     published: "2026-08-12",
-    updated: "2026-08-12",
+    updated: "2026-09-07",
   },
   {
     slug: "osaka-gourmet",
@@ -159,7 +159,7 @@ export const ARTICLES: Article[] = [
     image: "/futakotamagawa/sesame-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-09-03",
+    updated: "2026-09-07",
   },
   {
     slug: "kobe-gourmet",
@@ -411,7 +411,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "cafe",
     category: "cafe",
-    name: "自由之丘咖啡店推薦｜東京必去咖啡散步地區☕",
+    name: "自由之丘甜點・咖啡店推薦｜東京必去咖啡散步地區☕",
     shortLabel: "自由之丘咖啡",
     desc: "貝果・義式冰淇淋・起司披薩，3間人氣店實際走訪",
     tag: "東京",
@@ -419,7 +419,7 @@ export const ARTICLES: Article[] = [
     image: "/cafe/gelato-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-07",
   },
   {
     slug: "chigasaki",
@@ -445,7 +445,7 @@ export const ARTICLES: Article[] = [
     image: "/kobe-herb-garden/cover.jpg",
     areas: ["兵庫"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-07",
   },
   {
     slug: "shirahama",
@@ -458,7 +458,7 @@ export const ARTICLES: Article[] = [
     image: "/shirahama/cover.jpg",
     areas: ["其他"],
     published: "2026-07-01",
-    updated: "2026-08-18",
+    updated: "2026-09-07",
   },
   {
     slug: "artbar-tokyo",
@@ -484,7 +484,7 @@ export const ARTICLES: Article[] = [
     image: "/ajisai/cover.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-07",
   },
   {
     slug: "katsunuma",
@@ -549,7 +549,7 @@ export const ARTICLES: Article[] = [
     image: "/ine/town-1.jpg",
     areas: ["其他"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-07",
   },
   {
     slug: "shodoshima",
@@ -580,7 +580,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "kagawa",
     category: "spot",
-    name: "香川觀光推薦5選｜烏龍麵縣美食・水族館・金刀比羅宮🍜",
+    name: "香川美食・觀光推薦5選｜四國讚岐烏龍麵、水族館、金刀比羅宮🍜",
     shortLabel: "香川觀光",
     desc: "讚岐烏龍麵名店＆四國水族館＆金刀比羅宮，烏龍麵縣完整指南",
     tag: "香川",
@@ -588,7 +588,7 @@ export const ARTICLES: Article[] = [
     image: "/kagawa/yamagoe-1.jpg",
     areas: ["四國"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-07",
   },
   {
     slug: "hikone",
@@ -606,7 +606,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "utsunomiya",
     category: "spot",
-    name: "宇都宮觀光推薦3選｜栃木必去竹林・餃子・神社🎋",
+    name: "宇都宮一日遊推薦3選｜若山農場竹林・餃子街・二荒山神社🎋",
     shortLabel: "宇都宮觀光",
     desc: "夢幻竹林・餃子巡禮・能量神社，東京近郊一日遊隱藏寶地",
     tag: "栃木",
@@ -614,7 +614,7 @@ export const ARTICLES: Article[] = [
     image: "/utsunomiya/wakayama-1.jpg",
     areas: ["其他"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-07",
   },
   {
     slug: "showa-kinen-park",
@@ -627,7 +627,7 @@ export const ARTICLES: Article[] = [
     image: "/showa-kinen-park/park-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-07",
   },
   {
     slug: "kamikochi",
@@ -645,7 +645,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "tokyo-tower",
     category: "spot",
-    name: "東京鐵塔推薦｜東京必去地標・夜景景點🗼",
+    name: "東京鐵塔攻略｜門票、營業時間、夜景與附近景點🗼",
     shortLabel: "東京鐵塔",
     desc: "333公尺東京象徵！主展望台＆頂層展望台夜景超震撼",
     tag: "東京",
@@ -653,7 +653,7 @@ export const ARTICLES: Article[] = [
     image: "/tokyo-tower/tower-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-07",
   },
   {
     slug: "ueno-zoo",
@@ -666,7 +666,7 @@ export const ARTICLES: Article[] = [
     image: "/ueno-zoo/zoo-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-08-18",
+    updated: "2026-09-07",
   },
   {
     slug: "museum",
@@ -749,7 +749,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "narita-airport-access",
     category: "prep",
-    name: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR、行李配送怎麼選？🚄",
+    name: "成田機場到東京交通攻略2026｜Skyliner、N'EX、巴士的價錢與時間🚄",
     shortLabel: "成田機場交通",
     desc: "成田機場到東京市區交通完整指南！Skyliner・NEX・機場巴士・包車・行李配送・前泊比較",
     tag: "機場交通",
@@ -757,12 +757,12 @@ export const ARTICLES: Article[] = [
     image: "/narita-airport-access/cover.png",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-08-12",
+    updated: "2026-09-07",
   },
   {
     slug: "taiwan-japan-guide",
     category: "prep",
-    name: "台灣飛日本自由行攻略｜機票、網路卡、換日幣與退稅新制✈️",
+    name: "台灣去日本自由行攻略2026｜機票、飛行時間、網路卡、換日幣與退稅新制✈️",
     shortLabel: "台灣飛日本攻略",
     desc: "桃園松山飛東京大阪怎麼選、悠遊卡能不能用、日幣何時換、2026年11月退稅新制",
     tag: "台灣出發",
@@ -770,12 +770,12 @@ export const ARTICLES: Article[] = [
     image: "/taiwan-japan-guide/cover.png",
     areas: ["東京", "大阪"],
     published: "2026-08-18",
-    updated: "2026-08-18",
+    updated: "2026-09-07",
   },
   {
     slug: "hongkong-japan-guide",
     category: "prep",
-    name: "香港去日本自由行攻略｜機票、上網卡、日圓兌換與退稅新制✈️",
+    name: "香港去日本自由行攻略2026｜機票、飛行時間、上網卡、日圓兌換與退稅新制✈️",
     shortLabel: "香港去日本攻略",
     desc: "香港飛東京大阪點揀、八達通用唔到、上網卡點買、2026年11月退稅新制",
     tag: "香港出發",
@@ -783,7 +783,7 @@ export const ARTICLES: Article[] = [
     image: "/hongkong-japan-guide/cover.png",
     areas: ["東京", "大阪"],
     published: "2026-08-18",
-    updated: "2026-08-18",
+    updated: "2026-09-07",
   },
   {
     slug: "japan-esim",
@@ -801,7 +801,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "tokyo-subway-ticket",
     category: "prep",
-    name: "東京地鐵24/48/72小時乘車券｜Tokyo Subway Ticket購買與使用方式🚇",
+    name: "東京地鐵券Tokyo Subway Ticket 2026｜價錢、購買、24/48/72小時怎麼選🚇",
     shortLabel: "東京地鐵24/48/72小時券",
     desc: "東京自由行交通指南！地下鐵周遊券完整解說，附行程範例與選購建議",
     tag: "交通票券",
@@ -809,7 +809,7 @@ export const ARTICLES: Article[] = [
     image: "/tokyo-subway-ticket/cover.png",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-08-12",
+    updated: "2026-09-07",
   },
 ];
 

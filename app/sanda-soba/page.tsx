@@ -9,7 +9,7 @@ const PAGE_URL = "https://www.japantrippicks.com/sanda-soba";
 const OG_IMAGE = "/sanda-soba/soba1-1.jpg";
 
 export const metadata: Metadata = {
-  title: "兵庫三田蕎麥麵推薦｜蕎麦いち・關西手打蕎麥名店【實際造訪】",
+  title: "神戶近郊蕎麥麵推薦｜三田「蕎麦いち」關西手打名店【實際造訪】",
   description:
     "兵庫三田必吃手打蕎麥麵「蕎麦いち」！神戶近郊的隱藏名店，使用嚴選國產蕎麥粉現打的職人風味。十割蕎麥・季節料理應有盡有，附交通方式・推薦菜單・價格。台灣・香港旅客必看！",
   alternates: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "兵庫三田蕎麥麵推薦｜蕎麦いち・關西手打蕎麥名店",
+    title: "神戶近郊蕎麥麵推薦｜三田「蕎麦いち」關西手打名店",
     description: "兵庫三田必吃手打蕎麥！神戶近郊隱藏名店。十割蕎麥・季節料理。附交通・菜單。",
     url: PAGE_URL,
     type: "article",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "兵庫三田蕎麥麵推薦｜蕎麦いち・關西手打蕎麥名店",
+    title: "神戶近郊蕎麥麵推薦｜三田「蕎麦いち」關西手打名店",
     description: "兵庫三田必吃！手打蕎麥職人名店🍃",
     images: [OG_IMAGE],
   },
@@ -44,14 +44,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "兵庫三田蕎麥麵推薦｜蕎麦いち・關西手打蕎麥名店【實際造訪】",
+  headline: "神戶近郊蕎麥麵推薦｜三田「蕎麦いち」關西手打名店【實際造訪】",
   description: "兵庫三田必吃手打蕎麥麵「蕎麦いち」完整介紹。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -72,11 +72,59 @@ const relatedLinks = [
   { href: "/rokko-arima", label: "🏔️ 六甲山健行推薦｜神戶登山＆有馬溫泉一日遊", desc: "登山＋纜車＋有馬溫泉＋ジェラート" },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  {
+    "@type": "Question",
+    "name": "神戶附近哪裡吃得到好吃的蕎麥麵？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "神戶市區的蕎麥麵店不多，本站最推的是三宮搭JR約35分、位在三田的手打名店「蕎麦いち」。用嚴選國產蕎麥粉現打，第一次吃點ざるそば（冷沾麵）最能吃出香氣。可以和有馬溫泉、三田Outlet排成同一天。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "冷そば還是溫そば選哪個？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ざるそば（冷そば）是最能品嚐蕎麥本身風味的吃法，蕎麥的香氣與Q彈麵條最佳呈現。かけそば（溫湯そば）則是冬天的暖胃選擇。第一次吃推薦「ざるそば」。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "吃蕎麥麵有什麼禮儀？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "(1) 「啜麵發出聲音」是好禮，代表美味。 (2) 吃完後「そば湯（そば湯汁）」倒入沾醬容器裡當湯喝，是傳統作法。 (3) 沾醬只沾麵條前半段，感受麵條本身風味。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "蕎麥麵對麩質過敏者友善嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "十割そば（100%蕎麥粉）不含小麥麩質。但一般二八そば含20%小麥。有麩質不耐請確認店家的比例，並注意蕎麥本身可能引起過敏。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "從神戶要怎麼去？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "從神戶三宮搭JR神戶線→尼崎轉福知山線約35分到「三田」駅。或者從大阪梅田搭JR福知山線約50分。租車自駕約1小時，方便串連其他景點。"
+    }
+  }
+],
+};
+
 export default function SandaSobaPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -98,9 +146,9 @@ export default function SandaSobaPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          兵庫三田蕎麥麵推薦｜<br />蕎麦いち・關西手打名店🍃
+          神戶近郊蕎麥麵推薦｜三田<br />「蕎麦いち」關西手打名店🍃
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -221,6 +269,12 @@ export default function SandaSobaPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
           <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 神戶附近哪裡吃得到好吃的蕎麥麵？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                神戶市區的蕎麥麵店不多，本站最推的是三宮搭JR約35分、位在三田的手打名店<strong>「蕎麦いち」</strong>。用嚴選國產蕎麥粉現打，第一次吃點ざるそば（冷沾麵）最能吃出香氣。可以和有馬溫泉、三田Outlet排成同一天。
+              </p>
+            </div>
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 冷そば還是溫そば選哪個？</p>
               <p className="text-xs text-stone-600 leading-relaxed">

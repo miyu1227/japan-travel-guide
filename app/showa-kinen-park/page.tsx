@@ -53,7 +53,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -80,15 +80,25 @@ const relatedLinks = [
 ];
 
 const faqs = [
+  { q: "昭和紀念公園門票多少錢？怎麼去？", a: "大人¥450、65歲以上¥210、中學生以下免費。JR中央線「立川」站走約10分到あけぼの口，或JR青梅線「西立川」站走約2分到西立川口。從新宿搭中央線特快約25分。" },
+  { q: "立川景點推薦除了昭和紀念公園還有哪裡？", a: "站前的GREEN SPRINGS（含PLAY! MUSEUM）與立川IKEA、ららぽーと都在走路範圍，公園逛完可以接著逛街吃飯。" },
   { q: "一天逛得完嗎？", a: "園區廣達165公頃，走完全部很吃力。建議挑一個區域重點逛，或利用園內的租借自行車移動。" },
   { q: "什麼季節去最好？", a: "春櫻、夏向日葵、秋紅葉、冬燈光秀，四季都有主題。想一次看到大片花海的話，春天與秋天最穩。" },
 ];
+
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
 
 export default function ShowaKinenParkPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -112,7 +122,7 @@ export default function ShowaKinenParkPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           昭和紀念公園推薦｜東京立川<br />散步必去・四季絕景🌿
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

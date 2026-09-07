@@ -82,43 +82,11 @@ const faqs = [
   { q: "兩間可以排同一天嗎？", a: "可以。六本木與表參道之間搭地鐵很近，排成「上午美術館、下午咖啡廳（咖啡店）」剛剛好。" },
 ];
 
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: [
-  {
-    "@type": "Question",
-    "name": "國立新美術館和根津美術館門票多少錢？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "國立新美術館入館免費，只有看特展才要買票，票價依展覽不同（多在¥1,500〜¥2,300）。根津美術館企劃展一般¥1,300、特別展¥1,500，中學生以下免費，需要事先網路預約。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "東京美術館推薦第一次去哪一間？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "只想拍建築、時間有限選六本木的國立新美術館，免費又離地鐵近；想看日本庭園與東洋古美術選表參道的根津美術館。兩間搭地鐵約15分，可以排同一天。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "沒有看展也值得去嗎？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "值得。國立新美術館的玻璃曲面建築本身就是拍照重點，根津美術館則有很漂亮的日本庭園，光是散步就很好逛。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "兩間可以排同一天嗎？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "可以。六本木與表參道之間搭地鐵很近，排成「上午美術館、下午咖啡廳（咖啡店）」剛剛好。"
-    }
-  }
-],
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
 };
 
 export default function MuseumPage() {

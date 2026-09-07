@@ -55,7 +55,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-08-18T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -90,15 +90,24 @@ const relatedLinks = [
 ];
 
 const faqs = [
+  { q: "白浜怎麼去？從大阪多久？", a: "大阪天王寺・新大阪搭JR特急「くろしお」約2小時20分到「白浜」站，再搭巴士約15分到白良浜。飛機的話關西・羽田都有航班到南紀白浜機場，機場到市區約15分。" },
   { q: "現在還看得到熊貓嗎？", a: "看不到了。Adventure World原本飼養的4隻大熊貓已於2025年6月28日全部返還中國，日本國內目前沒有可以看到大熊貓的動物園。園區仍有Safari World的陸地動物、Marine World的海豚表演與遊樂設施，一整天都排得滿。" },
   { q: "白浜適合待幾天？", a: "景點分散在海岸線上，一天會很趕，住一晚比較從容。豪華露營與海景咖啡都適合安排在傍晚看夕陽。" },
 ];
+
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
 
 export default function ShirahamaPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -124,7 +133,7 @@ export default function ShirahamaPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           和歌山白浜景點推薦4選｜動物樂園・<br />海邊露營・海景咖啡・海鮮BBQ🐬🌊
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-18</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

@@ -55,7 +55,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -79,15 +79,24 @@ const relatedLinks = [
 ];
 
 const faqs = [
+  { q: "伊根舟屋咖啡廳推薦哪一間？", a: "本站實際去過、面海的舟屋改建咖啡廳在這篇的「咖啡」段落有詳細介紹，坐在窗邊就能看到船從腳下進出。伊根的咖啡廳多在16〜17點就關，建議中午前後去。" },
   { q: "從京都市區當天來回可行嗎？", a: "可行，但車程不算短。想慢慢逛建議住一晚；當天來回的話，把重點放在舟屋群的海上遊覽與 INE CAFE 就夠。" },
   { q: "舟屋可以住嗎？", a: "有改建成住宿的舟屋，文章介紹的「仁風荘」就是其中之一。旺季很快就滿，日期一定下來就盡早訂。" },
 ];
+
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
 
 export default function InePage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -111,7 +120,7 @@ export default function InePage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           京都伊根町觀光推薦｜舟屋村<br />絕景・咖啡＆住宿完整指南🏘️
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

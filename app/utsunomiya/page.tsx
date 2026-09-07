@@ -10,7 +10,7 @@ const PAGE_URL = "https://www.japantrippicks.com/utsunomiya";
 const OG_IMAGE = "/utsunomiya/wakayama-1.jpg";
 
 export const metadata: Metadata = {
-  title: "宇都宮觀光3選｜若山農場竹林・餃子街・二荒山",
+  title: "宇都宮一日遊推薦｜若山農場竹林、餃子街、二荒山神社",
   description:
     "夢幻竹林絕景「若竹之杜 若山農場」、餃子街「宇都宮餃子通」、能量景點「宇都宮二荒山神社」。東京近郊一日遊好去處，附交通方式與完整指南。",
   alternates: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "宇都宮觀光推薦3選｜栃木必去竹林・餃子街・神社",
+    title: "宇都宮一日遊推薦3選｜若山農場竹林・餃子街・二荒山神社",
     description: "宇都宮一日遊！夢幻竹林・餃子街・能量景點神社。附交通・推薦完整指南。",
     url: PAGE_URL,
     type: "article",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "宇都宮觀光推薦3選｜栃木必去竹林・餃子街・神社",
+    title: "宇都宮一日遊推薦3選｜若山農場竹林・餃子街・二荒山神社",
     description: "宇都宮一日遊！夢幻竹林絕景＆餃子街＆能量神社🎋",
     images: [OG_IMAGE],
   },
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "宇都宮觀光推薦3選｜栃木必去竹林・餃子街・二荒山神社【實際造訪】",
+  headline: "宇都宮一日遊推薦3選｜若山農場竹林・餃子街・二荒山神社【實際造訪】",
   description: "宇都宮觀光推薦3選。若山農場竹林、宇都宮餃子通、二荒山神社完整介紹。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -76,15 +76,24 @@ const relatedLinks = [
 ];
 
 const faqs = [
+  { q: "宇都宮一日遊怎麼排？從東京多久？", a: "東京站搭東北新幹線約50分到宇都宮，當天來回綽綽有餘。建議上午去若山農場的竹林（從宇都宮站搭巴士或計程車約20〜30分），中午回市區吃餃子街，下午逛二荒山神社與大谷資料館擇一。" },
   { q: "竹林要門票嗎？", a: "若竹之杜 若山農場是私人管理的竹林，需要入場費，而且有開放日與時段的限制，出發前務必先確認。" },
   { q: "一天排得下嗎？", a: "排得下。竹林在郊外、餃子街與二荒山神社在市區，先去竹林再回市區吃餃子、參拜，動線最順。" },
 ];
+
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
 
 export default function UtsunomiyaPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -106,9 +115,9 @@ export default function UtsunomiyaPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          宇都宮觀光推薦3選｜<br />栃木必去竹林・餃子・神社🎋
+          宇都宮一日遊推薦3選｜<br />若山農場竹林・餃子街・二荒山神社🎋
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

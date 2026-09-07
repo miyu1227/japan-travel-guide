@@ -11,7 +11,7 @@ const PAGE_URL = "https://www.japantrippicks.com/cafe";
 const OG_IMAGE = "/cafe/gelato-1.jpg";
 
 export const metadata: Metadata = {
-  title: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南",
+  title: "自由之丘甜點・咖啡廳推薦｜東京最值得去的咖啡店指南",
   description:
     "整理自由之丘3間人氣東京咖啡店，包含Q彈貝果、義式冰淇淋、現做起司披薩。街道安靜又可愛，非常適合散步、拍照和享受東京下午茶。來東京旅遊一定要安排半天來這裡！",
   alternates: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "自由之丘咖啡推薦｜東京最值得去的咖啡店指南",
+    title: "自由之丘甜點・咖啡廳推薦｜東京最值得去的咖啡店指南",
     description: "自由之丘3間人氣東京咖啡店。貝果・義式冰淇淋・起司披薩。適合散步、拍照、東京下午茶。",
     url: PAGE_URL,
     type: "article",
@@ -53,7 +53,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -133,15 +133,24 @@ const relatedLinks = [
 ];
 
 const faqs = [
+  { q: "自由之丘甜點推薦哪些？", a: "自由之丘是東京甜點店最密集的區域，這篇介紹的咖啡廳都有自家甜點；車站周邊還有蒙布朗發源店與多間洋菓子名店，下午茶時段人最多，建議開店後不久前往。" },
   { q: "自由之丘這3間店要走很遠嗎？", a: "不用。三間都在東急東橫線・大井町線「自由が丘」駅徒步約3〜5分的範圍內，散步順走就能一次逛完。" },
   { q: "一個人預算大概多少？", a: "貝果約¥300〜¥600、義式冰淇淋（雪糕）約¥500〜¥900、現做起司（芝士）披薩約¥800〜¥1,500。三間都吃一輪大約¥2,000上下。" },
 ];
+
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
 
 export default function JiyugaokaCafePage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -165,9 +174,9 @@ export default function JiyugaokaCafePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          自由之丘咖啡推薦｜<br />東京最值得去的咖啡店指南☕
+          自由之丘甜點・咖啡推薦｜<br />東京最值得去的咖啡店指南☕
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Why Jiyugaoka */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

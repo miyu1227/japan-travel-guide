@@ -85,51 +85,11 @@ const faqs = [
   { q: "從京都或大阪過去方便嗎？", a: "搭JR琵琶湖線到「彥根」駅，出站後走一段就是城下町，是關西近郊很好排的一日遊。" },
 ];
 
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: [
-  {
-    "@type": "Question",
-    "name": "彥根城門票多少錢？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "2024年10月起彥根城＋玄宮園共通券大人¥1,000、中小學生¥300；加彥根城博物館的套票¥1,500。開放8:30〜17:00，最後入場16:30，全年無休。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "從京都到彥根怎麼去？多久？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "JR京都站搭琵琶湖線新快速約50分、¥1,170，直達不用轉車；從大阪站約80分。彥根站西口出來走約15分到彥根城表門，沿路就是城下町。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "彥根貓幾點出現？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "每天13:30〜14:00在天守前廣場、15:00〜15:30在彥根城博物館冠木門前；週六日・假日11:00〜11:30另在四番町廣場加開一場。雨天改在博物館冠木門，夏季會縮短到10〜20分，出發前看官方出陣スケジュール。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "彥根貓（ひこにゃん）登場要排隊嗎？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "天守前那場人最多，提早15分到前排就拍得到。出發前先在官網確認當天的時間表，再把參觀城堡的時間排在前後最順。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "從京都或大阪過去方便嗎？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "搭JR琵琶湖線到「彥根」駅，出站後走一段就是城下町，是關西近郊很好排的一日遊。"
-    }
-  }
-],
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
 };
 
 export default function HikonePage() {

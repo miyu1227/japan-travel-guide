@@ -69,7 +69,7 @@ const minminPhotos = ["/utsunomiya-gyoza/minmin-1.jpg", "/utsunomiya-gyoza/minmi
 const masashiPhotos = ["/utsunomiya-gyoza/masashi-1.jpg", "/utsunomiya-gyoza/masashi-2.jpg"];
 
 const relatedLinks = [
-  { href: "/utsunomiya", label: "🎋 宇都宮觀光推薦3選｜栃木必去竹林・餃子・神社", desc: "若山農場竹林・餃子通・二荒山神社" },
+  { href: "/utsunomiya", label: "🎋 宇都宮一日遊推薦3選｜若山農場竹林・餃子街・二荒山神社", desc: "若山農場竹林・餃子通・二荒山神社" },
   { href: "/ramen", label: "🍜 東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/shin-okubo", label: "🇰🇷 新大久保美食推薦｜韓國料理・咖啡・甜點", desc: "ナッコプセ鍋・韓系咖啡廳・ドバイ餅" },
 ];

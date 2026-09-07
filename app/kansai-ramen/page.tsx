@@ -127,11 +127,6 @@ const faqs = [
   },
 ];
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
-};
 
 const kansaiStyles = [
   {
@@ -157,6 +152,12 @@ const relatedLinks = [
   { href: "/osaka-gourmet", label: "🍻 大阪鐵板燒・居酒屋推薦｜梅田・福島在地人氣2店", desc: "鉄板屋な。＆酒場ビリー" },
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "A5鐵板燒名店・主廚現煎" },
 ];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
 
 export default function KansaiRamenArticle() {
   return (

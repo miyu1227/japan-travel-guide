@@ -8,7 +8,7 @@ const PAGE_URL = "https://www.japantrippicks.com/hongkong-japan-guide";
 const OG_IMAGE = "/hongkong-japan-guide/cover.png";
 
 export const metadata: Metadata = {
-  title: "香港去日本自由行攻略｜機票・上網卡・日圓兌換",
+  title: "香港去日本自由行攻略2026｜機票、飛行時間、上網卡、日圓兌換",
   description:
     "香港出發去日本的行前準備一次講清：香港飛東京・大阪的直航選擇與飛行時間、八達通在日本用唔用得、上網卡同eSIM點揀、日圓兌換、轉插頭、時差，以及2026年11月起的退稅新制。附落地後入市區的交通攻略。",
   alternates: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "香港去日本自由行攻略｜機票、上網卡、日圓兌換與退稅新制",
+    title: "香港去日本自由行攻略2026｜機票、飛行時間、上網卡、日圓兌換與退稅新制",
     description:
       "香港飛東京大阪點揀？八達通日本用唔到、上網卡點買、日圓幾時換、2026年11月退稅新制一次睇曬。",
     url: PAGE_URL,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "香港去日本自由行攻略｜機票、上網卡、日圓兌換",
+    title: "香港去日本自由行攻略2026｜機票、飛行時間、上網卡、日圓兌換",
     description: "香港出發去日本嘅行前準備一次搞掂✈️",
     images: [OG_IMAGE],
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "香港去日本自由行攻略｜機票、上網卡、日圓兌換與退稅新制",
+  headline: "香港去日本自由行攻略2026｜機票、飛行時間、上網卡、日圓兌換與退稅新制",
   description:
     "香港出發去日本的完整行前準備：直航航點與飛行時間、八達通與Suica、上網卡eSIM、日圓兌換、轉插頭與時差、2026年11月起的退稅新制。",
   url: PAGE_URL,
@@ -52,7 +52,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-08-18T00:00:00+09:00",
-  dateModified: "2026-08-18T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -135,6 +135,7 @@ const hubLinks = [
 ];
 
 const faqs = [
+  { q: "香港去日本要飛幾耐？", a: "香港飛東京（成田・羽田）約4小時、飛大阪關西約3小時40分、飛福岡約3小時、飛札幌約5小時。加埋機場入市區嘅1小時，朝早班機當日下午就可以開始玩。" },
   {
     q: "香港去日本要簽證嗎？",
     a: "香港特區護照持有人以旅遊目的短期停留日本可免簽證。出發前記得確認護照有效期，以及日本入境所需嘅入境卡與海關申報（可以事先喺 Visit Japan Web 登記，落機過關快好多）。實際規定以官方公告為準。",
@@ -157,11 +158,19 @@ const faqs = [
   },
 ];
 
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
+
 export default function HongKongJapanGuidePage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -180,7 +189,7 @@ export default function HongKongJapanGuidePage() {
         </div>
 
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          香港去日本自由行攻略｜<br />機票、上網卡、日圓兌換與退稅新制✈️
+          香港去日本自由行攻略 2026｜<br />機票、飛行時間、上網卡、日圓兌換與退稅新制✈️
         </h1>
 
         <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-yellow-100 shadow-sm mb-3">
@@ -194,7 +203,7 @@ export default function HongKongJapanGuidePage() {
           />
         </div>
 
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-18</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

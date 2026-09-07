@@ -53,7 +53,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-09-03T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -87,17 +87,27 @@ const relatedLinks = [
 ];
 
 const faqs = [
+  { q: "二子玉川怎麼去？從澀谷多久？", a: "東急田園都市線從澀谷約12分直達「二子玉川」站，也可以從大井町線過來。出站就是二子玉川rise購物中心，這篇的5間店都在站周邊走路10分內。" },
+  { q: "二子玉川有什麼好玩？", a: "多摩川河岸散步、二子玉川rise與蔦屋家電、芝麻街官方主題店，加上這篇的中華・甜點・韓國料理・精品咖啡，半天到一天剛好。" },
   { q: "二子玉川離澀谷多遠？", a: "東急田園都市線從澀谷過來十幾分鐘就到，是很好插進東京行程的近郊街區。五間店都在車站周邊。" },
   { q: "五間店該怎麼排？", a: "中午先吃蒸籠中華或韓式屋台，下午去芝麻街主題咖啡廳吃角色甜甜圈，再用蘋果派或精品咖啡收尾最順。" },
   { q: "帶小孩的話推薦哪一間？", a: "芝麻街主題咖啡廳（SESAME STREET MARKET）。店裡有芝麻街的路牌、播放動畫的螢幕，甜點也都做成角色造型，是五間裡最適合親子的一間。" },
   { q: "芝麻街主題店需要預約嗎？", a: "採現場排隊，沒有預約制。假日與長假人潮較多，想避開的話建議平日或一開店的10點前後前往。" },
 ];
 
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
+
 export default function FutakotamagawaPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -121,7 +131,7 @@ export default function FutakotamagawaPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           二子玉川美食推薦5選｜芝麻街主題店<br />中華・甜點・韓國料理・精品咖啡🍽️
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-03</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

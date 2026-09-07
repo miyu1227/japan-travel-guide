@@ -52,7 +52,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-08-18T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -73,11 +73,67 @@ const relatedLinks = [
   { href: "/ramen", label: "🍜 東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  {
+    "@type": "Question",
+    "name": "東京動物園推薦哪一間？上野動物園值得去嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "東京市區交通最方便、門票最便宜的是上野動物園（大人¥600、小學生以下免費），從上野站走5分就到，逛2〜3小時剛好。想看更大範圍的放養型展示可以考慮多摩動物公園，但離市區約1小時。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "需要多久才能逛完？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "想看重點動物約2〜3小時，慢慢逛全區約半天（4〜5小時）。有小朋友的話建議預留半天以上。園區廣，記得穿好走的鞋。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "門票能現場買嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以，但假日與櫻花季會排隊。網路購票（東京都立公園網站）可以省去排隊時間。門票大人¥600，中學生¥200，65歲以上¥300，小學生以下免費——超佛心！"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "現在還看得到大熊貓嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "看不到了。雙胞胎「曉曉・蕾蕾」已於2026年1月返還中國，日本國內目前沒有任何動物園展示大熊貓。其他動物的展示狀況（健檢日、整備日等）則可以看官網「本日的動物」頁面確認。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "帶小朋友需要注意什麼？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可租借嬰兒車（¥300/日）、園內有多個育兒室＆餵奶處。夏天特別要注意防曬＆水分補給，東園東邊有兒童動物園可以近距離接觸小動物。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "雨天可以去嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以，室內展示館包含兩棲爬蟲類館、鳥館都能避雨。動物在雨天反而較活躍，人潮也少，是拍照的好時機📸"
+    }
+  }
+],
+};
+
 export default function UenoZooPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -101,7 +157,7 @@ export default function UenoZooPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           上野動物園推薦｜東京必去<br />親子景點・門票¥600🐘
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-18</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -274,6 +330,12 @@ export default function UenoZooPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
           <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京動物園推薦哪一間？上野動物園值得去嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                東京市區交通最方便、門票最便宜的是<strong>上野動物園</strong>（大人¥600、小學生以下免費），從上野站走5分就到，逛2〜3小時剛好。想看更大範圍的放養型展示可以考慮多摩動物公園，但離市區約1小時。
+              </p>
+            </div>
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要多久才能逛完？</p>
               <p className="text-xs text-stone-600 leading-relaxed">

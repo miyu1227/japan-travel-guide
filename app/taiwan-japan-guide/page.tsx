@@ -8,7 +8,7 @@ const PAGE_URL = "https://www.japantrippicks.com/taiwan-japan-guide";
 const OG_IMAGE = "/taiwan-japan-guide/cover.png";
 
 export const metadata: Metadata = {
-  title: "台灣飛日本自由行攻略｜機票・網路卡・換日幣",
+  title: "台灣去日本自由行攻略2026｜機票、飛行時間、網路卡、換日幣",
   description:
     "台灣出發去日本的行前準備一次看完：桃園・松山飛東京大阪的航線與飛行時間、悠遊卡在日本能不能用、網路卡與eSIM怎麼選、日幣什麼時候換、電壓插頭、時差，以及2026年11月上路的日本退稅新制。",
   alternates: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "台灣飛日本自由行攻略｜機票、網路卡、換日幣與退稅新制",
+    title: "台灣去日本自由行攻略2026｜機票、飛行時間、網路卡、換日幣與退稅新制",
     description:
       "桃園松山飛東京大阪怎麼選？悠遊卡在日本不能用、網路卡怎麼買、日幣何時換、2026年11月退稅新制一次看懂。",
     url: PAGE_URL,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "台灣飛日本自由行攻略｜機票、網路卡、換日幣",
+    title: "台灣去日本自由行攻略2026｜機票、飛行時間、網路卡、換日幣",
     description: "台灣出發的日本自由行行前準備一次搞定✈️",
     images: [OG_IMAGE],
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "台灣飛日本自由行攻略｜機票、網路卡、換日幣與退稅新制",
+  headline: "台灣去日本自由行攻略2026｜機票、飛行時間、網路卡、換日幣與退稅新制",
   description:
     "台灣出發的日本自由行完整行前準備：直航航線與飛行時間、悠遊卡與Suica、網路卡eSIM、換日幣、電壓插頭與時差、2026年11月上路的退稅新制。",
   url: PAGE_URL,
@@ -52,7 +52,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-08-18T00:00:00+09:00",
-  dateModified: "2026-08-18T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -135,6 +135,7 @@ const hubLinks = [
 ];
 
 const faqs = [
+  { q: "台灣到日本要飛多久？", a: "桃園・松山飛東京（成田・羽田）約3小時、飛大阪關西約2小時40分、飛福岡約2小時、飛札幌約4小時。加上機場進市區的1小時，出發當天下午就能開始玩。" },
   {
     q: "台灣去日本要簽證嗎？",
     a: "中華民國護照持有人以觀光目的短期停留日本可免簽證。出發前記得確認護照效期，並事先在 Visit Japan Web 完成入境與海關申報登錄，過關會快很多。實際規定請以官方公告為準。",
@@ -157,11 +158,19 @@ const faqs = [
   },
 ];
 
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
+
 export default function TaiwanJapanGuidePage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -180,7 +189,7 @@ export default function TaiwanJapanGuidePage() {
         </div>
 
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          台灣飛日本自由行攻略｜<br />機票、網路卡、換日幣與退稅新制✈️
+          台灣去日本自由行攻略 2026｜<br />機票、飛行時間、網路卡、換日幣與退稅新制✈️
         </h1>
 
         <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-yellow-100 shadow-sm mb-3">
@@ -194,7 +203,7 @@ export default function TaiwanJapanGuidePage() {
           />
         </div>
 
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-18</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

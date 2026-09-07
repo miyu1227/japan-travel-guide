@@ -84,51 +84,11 @@ const faqItems = [
   { q: "預算大概多少？", a: "每人約¥1,200〜¥2,500。くまポチ邸的主餐約¥2,310起，含麵包吃到飽與迷你甜點。" },
 ];
 
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: [
-  {
-    "@type": "Question",
-    "name": "神戶咖啡廳推薦哪幾間？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "實際走訪推薦4間：生田神社旁教堂改建的德式麵包老店フロインドリーブ、北野異人館的パンとエスプレッソと異人館、麵包吃到飽的くまポチ邸、以及巧克力老店Caffarel神戶北野本店。全部在三宮站走路15分內，可以串成一天。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "需要排隊嗎？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "フロインドリーブ的熱門時段常要排隊，くまポチ邸平日開店前就有人排。四間都建議平日上午造訪。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "四間怎麼串成一天？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "三宮→生田神社→フロインドリーブ→托爾街的Caffarel→北野異人館街，這條路線走起來剛剛好。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "公休日是哪天？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "フロインドリーブ生田店週三休、Caffarel 神戶北野本店週二休（L.O. 17:00）。出發前以官網為準。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "預算大概多少？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "每人約¥1,200〜¥2,500。くまポチ邸的主餐約¥2,310起，含麵包吃到飽與迷你甜點。"
-    }
-  }
-],
+  mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
 };
 
 export default function KobeCafePage() {

@@ -91,59 +91,11 @@ const faqItems = [
   { q: "預算大概多少？", a: "TOKYO VEGAN BAKES ¥330〜¥880、起司蛋糕¥500起、派¥480〜¥630、飲品¥550〜¥700。" },
 ];
 
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: [
-  {
-    "@type": "Question",
-    "name": "下北澤美食推薦哪些？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "這篇4個地方都實際去過：純素烘焙TOKYO VEGAN BAKES（¥330〜880）、只有6席的起司蛋糕店La Piña（¥500起）、早上8點開門的派專門店Pati coffee&plants（派¥480〜630）、以及聚集十幾間小店的BONUS TRACK。從下北澤站走路5〜12分都到得了。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "下北澤怎麼去？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "小田急線或京王井之頭線「下北澤」站，從新宿約8分、澀谷約4分。BONUS TRACK離小田急「世田谷代田」站更近，走1分。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "有公休日嗎？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "TOKYO VEGAN BAKES 週一・週二公休，Pati coffee&plants 週二公休。週初造訪的話一定要先確認。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "座位很少嗎？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "La Piña 只有6個座位，假日可能需要等候，建議平日前往。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "早上就有開的店嗎？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Pati coffee&plants 8:00開門，適合當第一站。BONUS TRACK 的店舖多數是11:00〜20:00。"
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "預算大概多少？",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "TOKYO VEGAN BAKES ¥330〜¥880、起司蛋糕¥500起、派¥480〜¥630、飲品¥550〜¥700。"
-    }
-  }
-],
+  mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
 };
 
 export default function ShimokitazawaCafePage() {

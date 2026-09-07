@@ -73,7 +73,7 @@ const tatakiPhotos = ["/kochi/tataki-1.jpg", "/kochi/tataki-2.jpg", "/kochi/tata
 const hiromePhotos = ["/kochi/hirome-1.jpg", "/kochi/hirome-2.jpg", "/kochi/hirome-3.jpg", "/kochi/hirome-4.jpg"];
 
 const relatedLinks = [
-  { href: "/kagawa", label: "🍜 香川觀光推薦5選｜烏龍麵縣美食・水族館・金刀比羅宮", desc: "讚岐烏龍麵＆四國水族館＆金刀比羅宮" },
+  { href: "/kagawa", label: "🍜 香川美食・觀光推薦5選｜四國讚岐烏龍麵、水族館、金刀比羅宮", desc: "讚岐烏龍麵＆四國水族館＆金刀比羅宮" },
   { href: "/hikone", label: "🏯 彥根貓＆彥根城攻略2026｜登場時間、門票、交通", desc: "日本國寶＋彥根貓＋江戶城下町" },
   { href: "/kamikochi", label: "🏔️ 上高地攻略2026｜交通、開山期間、散策路線", desc: "河童橋・新穂高纜車・奧飛騨溫泉" },
 ];

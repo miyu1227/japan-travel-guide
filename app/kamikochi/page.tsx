@@ -89,6 +89,7 @@ const faqs = [
   { q: "幾月去最好？", a: "6月新綠與殘雪的對比最美、人也比黃金週少；10月上旬〜中旬是紅葉。夏天比松本市區低5〜10°C是避暑聖地。新穂高纜車全年營業，冬天想看雪山可以改去那裡。" },
 ];
 
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

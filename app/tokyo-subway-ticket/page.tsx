@@ -10,7 +10,7 @@ const KLOOK_URL =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1307238&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F1552-subway-ticket-tokyo%2F";
 
 export const metadata: Metadata = {
-  title: "東京地鐵券攻略｜24/48/72小時該選哪一種",
+  title: "東京地鐵券Tokyo Subway Ticket 2026｜價錢、購買、24/48/72小時怎麼選",
   description:
     "外國旅客限定的地下鐵周遊券，可不限次數搭乘東京メトロ與都營地下鐵。24/48/72小時該選哪種、哪裡買、計時方式，以及「不能搭JR山手線」等常見誤會一次說清。",
   alternates: {
@@ -52,7 +52,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-08-12T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -66,16 +66,80 @@ const breadcrumbJsonLd = {
 };
 
 const relatedLinks = [
-  { href: "/tokyo-tower", label: "🗼 東京鐵塔推薦｜東京必去地標・夜景景點", desc: "333公尺東京象徵・主展望台＆頂層展望台夜景" },
+  { href: "/tokyo-tower", label: "🗼 東京鐵塔攻略｜門票、營業時間、夜景與附近景點", desc: "333公尺東京象徵・主展望台＆頂層展望台夜景" },
   { href: "/koyo", label: "🍁 東京紅葉2026｜神宮外苑銀杏並木時期與交通", desc: "金黃銀杏大道・東京秋天必去景點" },
   { href: "/skytree", label: "🌃 東京晴空塔攻略｜門票、交通與夜景", desc: "押上站在都營淺草線與半藏門線上，這張票剛好能用" },
 ];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  {
+    "@type": "Question",
+    "name": "Tokyo Subway Ticket多少錢？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "2026年3月14日起調漲：24小時券¥1,000、48小時券¥1,500、72小時券¥2,000（兒童半價）。東京メトロ單程最低¥180，一天搭6趟以上24小時券就回本。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "在哪裡買？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "成田・羽田機場的巴士櫃台與旅客服務中心、東京メトロ主要站的旅客服務處（新橋、新宿西口、上野御徒町等）、BIC CAMERA等電器行，以及Klook・KKday等平台先買兌換券。購買需出示護照。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "可以搭 JR 山手線嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不行。這是最多人搞錯的一點。這張票只能搭東京メトロ與都營地下鐵，JR（包含山手線）、京王、小田急、東急等私鐵都不在範圍內。行程如果大量繞山手線，買了反而用不太到。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "24小時是「當天到隔天同一個時間」嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "是的，計時方式是從第一次通過閘門開始算，不是以日期切換。所以下午2點開始用的24小時票，可以用到隔天下午2點——下午開始用反而比較不浪費。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "一張票兩個人可以輪流用嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不行，這張票是一人一張，同行者要各自準備。小朋友則有兒童票的設定。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "從機場到市區的那一段也能用嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不能。Skyliner、Narita Express、京急線、單軌電車都不在範圍內，機場往返要另外付。機場那段怎麼走，可以看 成田機場交通攻略與 羽田機場交通攻略。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "到日本才買來得及嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "這張票是給持短期停留簽證等外國旅客的專用票券，購買時通常需要出示護照，抵達日本後在機場或指定窗口購買也是常見做法。若想省下現場排隊時間，也可以出發前先在網路上訂好。實際的販售地點與條件可能調整，出發前再確認一次比較保險。"
+    }
+  }
+],
+};
 
 export default function TokyoSubwayTicketPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -99,7 +163,7 @@ export default function TokyoSubwayTicketPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           東京地鐵24/48/72小時乘車券｜<br />Tokyo Subway Ticket購買與使用方式🚇
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -316,6 +380,18 @@ export default function TokyoSubwayTicketPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">Tokyo Subway Ticket 常見問題</h2>
           <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ Tokyo Subway Ticket多少錢？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                <strong>2026年3月14日起調漲</strong>：24小時券¥1,000、48小時券¥1,500、72小時券¥2,000（兒童半價）。東京メトロ單程最低¥180，一天搭6趟以上24小時券就回本。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 在哪裡買？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                成田・羽田機場的巴士櫃台與旅客服務中心、東京メトロ主要站的旅客服務處（新橋、新宿西口、上野御徒町等）、BIC CAMERA等電器行，以及Klook・KKday等平台先買兌換券。購買需出示護照。
+              </p>
+            </div>
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 可以搭 JR 山手線嗎？</p>
               <p className="text-xs text-stone-600 leading-relaxed">

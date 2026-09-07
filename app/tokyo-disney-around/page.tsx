@@ -123,7 +123,7 @@ const spots = [
 ];
 
 const relatedLinks = [
-  { href: "/tokyo-tower", label: "🗼 東京鐵塔推薦｜東京必去地標・夜景景點", desc: "333公尺東京象徵・主展望台＆頂層展望台夜景" },
+  { href: "/tokyo-tower", label: "🗼 東京鐵塔攻略｜門票、營業時間、夜景與附近景點", desc: "333公尺東京象徵・主展望台＆頂層展望台夜景" },
   { href: "/skytree", label: "🌃 東京晴空塔攻略｜門票、交通、夜景整理", desc: "Tokyo Skytree展望台＆東京ソラマチ完整指南" },
   { href: "/tokyo-subway-ticket", label: "🚇 東京地鐵24/48/72小時乘車券", desc: "東京自由行交通指南・地下鐵周遊券完整解說" },
 ];

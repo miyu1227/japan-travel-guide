@@ -81,7 +81,7 @@ const olivePhotos = ["/shodoshima/olive-1.jpg", "/shodoshima/olive-2.jpg", "/sho
 const marukinPhotos = ["/shodoshima/marukin-1.jpg", "/shodoshima/marukin-2.jpg"];
 
 const relatedLinks = [
-  { href: "/kagawa", label: "🍜 香川觀光推薦5選｜烏龍麵縣美食・水族館・金刀比羅宮", desc: "讚岐烏龍麵名店＆四國水族館＆金刀比羅宮" },
+  { href: "/kagawa", label: "🍜 香川美食・觀光推薦5選｜四國讚岐烏龍麵、水族館、金刀比羅宮", desc: "讚岐烏龍麵名店＆四國水族館＆金刀比羅宮" },
   { href: "/kochi", label: "🌊 高知觀光推薦3選｜仁淀藍秘境・鰹魚タタキ", desc: "夢幻仁淀藍＆炙烤鰹魚＆ひろめ市場" },
   { href: "/kobe-herb-garden", label: "🌿 神戶布引香草園｜纜車空中散步與夜景", desc: "從新神戶站搭纜車，10分鐘上山" },
 ];

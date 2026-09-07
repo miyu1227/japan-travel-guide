@@ -14,7 +14,7 @@ const KLOOK_9H =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1314574&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F587377-9h-nine-hours-narita-airport%2F";
 
 export const metadata: Metadata = {
-  title: "成田機場到東京交通｜Skyliner・巴士・JR比較",
+  title: "成田機場到東京交通2026｜Skyliner、N'EX、巴士價錢與時間",
   description:
     "Skyliner、Narita Express、機場巴士、JR普通電車、包車的所要時間與適合的人一次比較。另附行李配送、深夜抵達的前泊選項與上野・新宿・池袋的最佳路線。",
   alternates: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR怎麼選",
+    title: "成田機場到東京交通攻略2026｜Skyliner、N'EX、巴士的價錢與時間",
     description: "成田機場到東京交通方式比較。Skyliner・NEX・機場巴士・JR・包車・行李配送・前泊完整介紹。",
     url: PAGE_URL,
     type: "article",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR怎麼選",
+    title: "成田機場到東京交通攻略2026｜Skyliner、N'EX、巴士的價錢與時間",
     description: "成田機場到東京市區交通完整指南！Skyliner・NEX・機場巴士・包車比較🚄",
     images: [OG_IMAGE],
   },
@@ -49,14 +49,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "成田機場到東京市區交通攻略｜Skyliner、巴士、JR怎麼選",
+  headline: "成田機場到東京交通攻略2026｜Skyliner、N'EX、巴士的價錢與時間",
   description: "成田機場到東京市區交通方式比較。Skyliner、Narita Express、機場巴士、JR、包車、行李配送與成田機場前泊整理。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-08-12T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -75,11 +75,67 @@ const relatedLinks = [
   { href: "/haneda-airport-access", label: "✈️ 羽田機場到東京市區交通攻略", desc: "回程或轉羽田進出時，先看這篇比較京急與單軌" },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  {
+    "@type": "Question",
+    "name": "成田機場到東京多少錢？最便宜和最快的是哪個？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "最快是Skyliner到日暮里・上野約40分、¥2,580；住新宿・澀谷選N'EX約60〜90分、東京站約¥3,070；最便宜是京成本線＋JR約1.5小時、¥1,200〜1,410。利木津巴士直達飯店約1.5〜2小時，票價2026年10月起改定，以官網為準。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Skyliner 需要事先訂位嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Skyliner 是全車對號座，需要先取得座位。可以在機場的售票櫃檯或售票機當場買，網路預訂也可以。平常時段當天買通常沒問題，不過連假與過年期間比較容易客滿，行程固定的話先訂會比較安心。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "深夜才到成田，還有車進市區嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "班機延誤或紅眼班機抵達時，電車可能已經沒有末班車，深夜巴士的班次也很有限。這種情況下，比較實際的做法是在成田機場周邊前泊一晚，隔天早上再輕鬆進市區。詳細請看上面「⑦ 成田機場前泊」的部分。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "可以從成田直接殺去東京迪士尼嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以，機場巴士有直接開往舞浜地區飯店的路線，不用拖著行李換車。想先了解舞浜周邊怎麼玩，可以參考 東京迪士尼周邊玩法。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "有 Suica／PASMO 就不用買其他票券了嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "機場到市區這一段用 IC 卡就能搭（Skyliner 等對號座另外需要特急券）。進市區之後如果每天都會搭好幾趟地下鐵，再看看 Tokyo Subway Ticket 划不划算。要注意它只能搭東京メトロ與都營地下鐵，JR 山手線不能用。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "行李配送當天就會送到飯店嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "要看寄件時間與飯店位置，並不是每一件都能當天送達，有些情況會是隔天。想下飛機直接去觀光的話，建議把當晚要用的東西（換洗衣物、藥品、充電線）先拿出來隨身帶著，其餘再交給配送。"
+    }
+  }
+],
+};
+
 export default function NaritaAirportAccessPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -101,9 +157,9 @@ export default function NaritaAirportAccessPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          成田機場到東京市區交通攻略｜<br />Skyliner、巴士、JR、行李配送怎麼選？🚄
+          成田機場到東京交通攻略 2026｜<br />Skyliner、N&apos;EX、巴士的價錢與時間🚄
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -199,7 +255,7 @@ export default function NaritaAirportAccessPage() {
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">① Keisei Skyliner</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            京成電鐵推出的<strong>機場特急列車</strong>🚄 是從成田機場到<strong>日暮里・上野</strong>的最快選項之一，約36〜40分鐘抵達日暮里。班次穩定、不太塞車，是<strong>住上野・淺草・日暮里</strong>附近的旅客的首選之一。
+            京成電鐵推出的<strong>機場特急列車</strong>🚄 是從成田機場到<strong>日暮里・上野</strong>的最快選項之一，約36〜40分鐘抵達日暮里，大人單程<strong>¥2,580</strong>（乘車券¥1,280＋特急券¥1,300），全車對號座。班次穩定、不太塞車，是<strong>住上野・淺草・日暮里</strong>附近的旅客的首選之一。
           </p>
           <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
             <p className="text-xs font-bold text-pink-700 mb-1">✨ 推薦給</p>
@@ -220,7 +276,7 @@ export default function NaritaAirportAccessPage() {
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">② Narita Express（N&apos;EX）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            JR東日本的<strong>機場特急列車</strong>🚆 從成田機場直達<strong>東京・品川・新宿・澀谷・池袋・橫濱</strong>等主要車站，所要時間約60〜90分。優點是直接連接 JR 山手線沿線，<strong>住新宿・澀谷・池袋</strong>的旅客可以一車到達。
+            JR東日本的<strong>機場特急列車</strong>🚆 從成田機場直達<strong>東京・品川・新宿・澀谷・池袋・橫濱</strong>等主要車站，所要時間約60〜90分，到東京站<strong>約¥3,070〜3,140</strong>、新宿約¥3,250。JR PASS可搭。優點是直接連接 JR 山手線沿線，<strong>住新宿・澀谷・池袋</strong>的旅客可以一車到達。
           </p>
           <div className="bg-sky-50 border border-sky-100 rounded-xl px-4 py-3 mb-3">
             <p className="text-xs font-bold text-sky-700 mb-1">✨ 推薦給</p>
@@ -435,6 +491,12 @@ export default function NaritaAirportAccessPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">成田機場交通 常見問題</h2>
           <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 成田機場到東京多少錢？最便宜和最快的是哪個？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                最快是<strong>Skyliner</strong>到日暮里・上野約40分、¥2,580；住新宿・澀谷選<strong>N&apos;EX</strong>約60〜90分、東京站約¥3,070；最便宜是京成本線＋JR約1.5小時、¥1,200〜1,410。利木津巴士直達飯店約1.5〜2小時，票價2026年10月起改定，以官網為準。
+              </p>
+            </div>
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ Skyliner 需要事先訂位嗎？</p>
               <p className="text-xs text-stone-600 leading-relaxed">

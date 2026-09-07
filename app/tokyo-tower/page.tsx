@@ -10,7 +10,7 @@ const PAGE_URL = "https://www.japantrippicks.com/tokyo-tower";
 const OG_IMAGE = "/tokyo-tower/tower-1.jpg";
 
 export const metadata: Metadata = {
-  title: "東京鐵塔推薦｜東京必去地標・夜景景點【實際造訪】",
+  title: "東京鐵塔攻略｜門票¥1,500起、營業時間、夜景與附近景點【實際造訪】",
   description:
     "東京必去地標「東京鐵塔」完整介紹！333公尺高的東京象徵，主展望台＆頂層展望台夜景超震撼。附門票價格・交通方式・營業時間・拍照景點。台灣・香港旅客東京自由行必看！",
   alternates: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "東京鐵塔推薦｜東京必去地標・夜景景點",
+    title: "東京鐵塔攻略｜門票¥1,500起、營業時間、夜景與附近景點",
     description: "東京必去！333公尺東京象徵。主展望台＆頂層展望台夜景。附門票・交通・營業時間。",
     url: PAGE_URL,
     type: "article",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "東京鐵塔推薦｜東京必去地標・夜景景點",
+    title: "東京鐵塔攻略｜門票¥1,500起、營業時間、夜景與附近景點",
     description: "東京必去！333公尺地標，主展望台＆頂層展望台夜景🗼",
     images: [OG_IMAGE],
   },
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "東京鐵塔推薦｜東京必去地標・夜景景點【實際造訪】",
+  headline: "東京鐵塔攻略｜門票¥1,500起、營業時間、夜景與附近景點【實際造訪】",
   description: "東京必去地標「東京鐵塔」。333公尺東京象徵，夜景超震撼。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -81,11 +81,67 @@ const relatedLinks = [
   { href: "/museum", label: "🎨 東京美術館推薦｜國立新美術館＆根津美術館", desc: "現代建築・日本庭園" },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  {
+    "@type": "Question",
+    "name": "東京鐵塔門票多少錢？營業到幾點？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Main Deck（150m）大人¥1,500、高中生¥1,200、中小學生¥900，可自由入場；Top Deck Tour（250m）¥3,300（現場¥3,500）需預約時段。營業9:00〜23:00，Main Deck最後入場22:30。看夜景的話晚餐後再上去也來得及。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "東京鐵塔 vs 東京晴空塔，該選哪個？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "東京鐵塔復古氛圍＆浪漫氣氛強，位在都心便於周邊行程串連；東京晴空塔高度更高（634m）＆展望更廣，但位置在墨田區。喜歡經典氛圍＆想拍地標本身選東京鐵塔，追求高度與新設施選晴空塔。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Main Deck 和 Top Deck Tour 差在哪？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Main Deck（150m）可自由參觀＆隨時入場，¥1,500。Top Deck Tour（250m）需事先預約時段、含導覽＋一杯飲品，¥3,300（網路）／¥3,500（現場）。想看更高更遠、有充裕時間的話推薦 Top Deck Tour。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "幾點去最好？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "最推薦日落前1小時到達——可以一次看到白天景色、黃昏、以及夜景轉換的三段風景。網站可查各月份的日落時間，冬天16:30左右、夏天19:00左右。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "天氣不好還值得去嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "晴朗時可以看到富士山、天氣不佳時能見度會下降。但雨天有「雨天限定的雲海景色」，夜晚燈光穿透雨霧也別有一番風味。強風時Top Deck可能會停止營運，建議事先查詢官網。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "有中文語音導覽嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Top Deck Tour 提供13種語言的語音導覽，包含繁體中文與簡體中文。入場時可以拿導覽器材，跟著語音認識展望台看到的東京景色。"
+    }
+  }
+],
+};
+
 export default function TokyoTowerPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -107,9 +163,9 @@ export default function TokyoTowerPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          東京鐵塔推薦｜東京必去<br />地標・夜景景點🗼
+          東京鐵塔攻略｜門票、營業時間、<br />夜景與附近景點🗼
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -254,6 +310,12 @@ export default function TokyoTowerPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
           <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京鐵塔門票多少錢？營業到幾點？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                <strong>Main Deck（150m）大人¥1,500</strong>、高中生¥1,200、中小學生¥900，可自由入場；<strong>Top Deck Tour（250m）¥3,300</strong>（現場¥3,500）需預約時段。營業9:00〜23:00，Main Deck最後入場22:30。看夜景的話晚餐後再上去也來得及。
+              </p>
+            </div>
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京鐵塔 vs 東京晴空塔，該選哪個？</p>
               <p className="text-xs text-stone-600 leading-relaxed">

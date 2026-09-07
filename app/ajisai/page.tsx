@@ -53,7 +53,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -120,21 +120,30 @@ const spots = [
 ];
 
 const relatedLinks = [
-  { href: "/tokyo-tower", label: "🗼 東京鐵塔推薦｜東京必去地標・夜景景點", desc: "333公尺東京象徵・主展望台＆頂層展望台夜景" },
+  { href: "/tokyo-tower", label: "🗼 東京鐵塔攻略｜門票、營業時間、夜景與附近景點", desc: "333公尺東京象徵・主展望台＆頂層展望台夜景" },
   { href: "/skytree", label: "🌃 東京晴空塔攻略｜門票、交通、夜景整理", desc: "Tokyo Skytree展望台＆東京ソラマチ完整指南" },
   { href: "/tokyo-disney-around", label: "🎢 東京迪士尼周邊玩法｜不進園也能玩！", desc: "Disney Resort Line一日券＆イクスピアリ美食" },
 ];
 
 const faqs = [
+  { q: "東京紫陽花什麼時候開？", a: "6月上旬〜下旬，最美的是6月中旬。白山神社的紫陽花祭例年在6月中旬的週末舉辦，台場的則整個6月都看得到。梅雨季的雨後最漂亮。" },
   { q: "紫陽花的最佳花期是什麼時候？", a: "一般是6月上旬到中旬最盛，實際會隨當年天氣前後移動。兩處都是免費入場，可以安排在同一天連走。" },
   { q: "這兩個景點要門票嗎？好到嗎？", a: "都免費。台場的シンボルプロムナード公園從百合海鷗線「台場」「青海」駅徒步約3〜5分；文京白山神社從都營三田線「白山」駅徒步約3分，不用搭計程車（的士）也很好到。" },
 ];
+
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
 
 export default function AjisaiPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -158,7 +167,7 @@ export default function AjisaiPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           東京繡球花景點推薦2選｜<br />台場＆文京白山神社紫陽花🌸
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Cover */}
         <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-sm mb-6 bg-stone-100">

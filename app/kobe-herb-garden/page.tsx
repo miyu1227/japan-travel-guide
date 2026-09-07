@@ -55,7 +55,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -82,15 +82,24 @@ const relatedLinks = [
 ];
 
 const faqs = [
+  { q: "神戶布引香草園怎麼去？纜車多少錢？", a: "從三宮走約5分到新神戶站，再走約5分到纜車「ハーブ園山麓」站，搭纜車約10分到山頂。纜車來回票含入園費，大人約¥2,000前後，17:00以後有夜間優惠票；價格會依季節調整，出發前看官網。" },
   { q: "怎麼上山？", a: "從新幹線「新神戶」站直接走到纜車站，搭纜車上標高約400公尺的山頂，沿途就能俯瞰神戶港。" },
   { q: "白天去還是傍晚去好？", a: "想看花海選白天，想看神戶港夜景就抓傍晚上山。纜車的末班時間依季節調整，回程時間要先確認。" },
 ];
+
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
 
 export default function KobeHerbGardenPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -116,7 +125,7 @@ export default function KobeHerbGardenPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           神戶布引香草園推薦｜纜車<br />空中散步・花海與夜景🌿
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

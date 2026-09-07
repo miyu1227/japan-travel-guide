@@ -12,7 +12,7 @@ const KLOOK_CONRAD_STAY =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1381759&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F282449-conrad-osaka%2F";
 
 export const metadata: Metadata = {
-  title: "大阪飯店自助餐｜康萊德40樓景觀buffet✅實訪",
+  title: "大阪自助餐推薦｜康萊德大阪40樓Atmos景觀buffet✅實訪",
   description:
     "康萊德大阪40樓「Atmos Italian Dining」是地上200公尺的景觀餐廳，挑高10.5公尺落地窗配義式自助餐。附交通（肥後橋站直結）、用餐時段、預約與穿著建議。",
   alternates: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "大阪飯店自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet",
+    title: "大阪自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet",
     description: "康萊德大阪40樓的景觀義式自助餐。地上200公尺全景、水晶藝術裝置，附交通・時段・預約建議。",
     url: PAGE_URL,
     type: "article",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "大阪飯店自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet",
+    title: "大阪自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet",
     description: "地上200公尺的義式自助餐，挑高落地窗與水晶藝術裝置✨",
     images: [OG_IMAGE],
   },
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "大阪飯店自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet【實際造訪】",
+  headline: "大阪自助餐推薦｜康萊德大阪 Atmos 40樓景觀buffet【實際造訪】",
   description: "康萊德大阪40樓「Atmos Italian Dining」的義式自助餐實際造訪心得。空間、餐點、交通與預約重點整理。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-08-12T00:00:00+09:00",
-  dateModified: "2026-08-12T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -80,11 +80,67 @@ const relatedLinks = [
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "從大阪當天來回，關西的另一頓大餐" },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  {
+    "@type": "Question",
+    "name": "大阪自助餐推薦哪一間？康萊德的價位大概多少？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "本站實際吃過、最推的是康萊德大阪40樓的Atmos：地上200公尺的落地窗配義式料理，早餐・午餐・甜點・晚餐四個時段價位不同，午餐與甜點自助餐是最好入手的價位帶，晚餐則往上抓。實際金額會隨季節活動變動，訂位頁面會顯示當天的價格。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "一定要事先訂位嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "建議先訂。這裡是時間制的自助餐，座位數有限，週末與假日的午餐時段常常會滿。官網可以線上訂位，選好日期與時段比較安心。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "有服裝規定嗎？穿得太隨便會不會不好意思？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "這裡是自助餐廳，不需要正式服裝，但畢竟是五星飯店的最上層，穿得整齊一點會比較自在。實際上不少人是觀光途中順道過來的，不用太緊張，只是別穿夾腳拖或運動短褲那種太休閒的裝扮。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "不會日文也能點餐嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "自助餐最大的好處就是幾乎不用開口，想吃什麼自己去拿就好。這裡是國際連鎖飯店，服務人員也習慣應對外國旅客，飲料點單用英文都通。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "可以帶小孩去嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "自助餐本來就比較適合帶小孩——不用等上菜、想吃什麼自己選。多數飯店自助餐會有兒童價的設定，帶小小孩同行時，建議訂位時先告知人數與年齡，座位安排會比較順。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "一定看得到景色嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "窗邊座位不保證，人多的時候會被安排到內側。不過這間店的挑高空間與水晶裝置本身就很有看頭，就算不是窗邊也不會失望。真的很在意的話，可以在訂位時備註希望靠窗，但還是要看當天狀況。"
+    }
+  }
+],
+};
+
 export default function ConradOsakaPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -108,9 +164,9 @@ export default function ConradOsakaPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          大阪飯店自助餐推薦｜康萊德大阪<br />Atmos 40樓景觀buffet🥂
+          大阪自助餐推薦｜康萊德大阪<br />Atmos 40樓景觀buffet🥂
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -282,6 +338,12 @@ export default function ConradOsakaPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">康萊德大阪自助餐 常見問題</h2>
           <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 大阪自助餐推薦哪一間？康萊德的價位大概多少？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                本站實際吃過、最推的是<strong>康萊德大阪40樓的Atmos</strong>：地上200公尺的落地窗配義式料理，早餐・午餐・甜點・晚餐四個時段價位不同，午餐與甜點自助餐是最好入手的價位帶，晚餐則往上抓。實際金額會隨季節活動變動，訂位頁面會顯示當天的價格。
+              </p>
+            </div>
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 一定要事先訂位嗎？</p>
               <p className="text-xs text-stone-600 leading-relaxed">
