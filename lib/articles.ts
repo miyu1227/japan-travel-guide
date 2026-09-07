@@ -515,15 +515,15 @@ export const ARTICLES: Article[] = [
   {
     slug: "skytree",
     category: "spot",
-    name: "東京晴空塔攻略｜門票預約、交通方式、夜景與拍照景點整理🌃",
+    name: "東京晴空塔攻略2026｜門票價錢、營業時間、交通與夜景時段🌃",
     shortLabel: "東京晴空塔",
-    desc: "Tokyo Skytree展望台・夜景・玻璃地板＆東京ソラマチ周邊整理",
+    desc: "門票¥1,800起・營業10:00〜22:00・品川・新橋直達押上。夜景時段、玻璃地板與ソラマチ周邊整理",
     tag: "東京",
     emoji: "🌃",
     image: "/skytree/cover.png",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-08-12",
+    updated: "2026-09-07",
   },
   {
     slug: "rokko-arima",
