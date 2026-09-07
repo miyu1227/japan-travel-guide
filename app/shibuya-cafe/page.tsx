@@ -73,7 +73,7 @@ const recocoPhotos = [
 
 const relatedLinks = [
   { href: "/nakameguro-cafe", label: "☕ 中目黑咖啡廳推薦｜星巴克臻選東京烘焙工坊", desc: "全世界6間之一・隈研吾設計建築" },
-  { href: "/shimokitazawa-cafe", label: "☕ 下北澤咖啡廳推薦4選｜東京必去人氣甜點", desc: "純素烘焙・起司蛋糕・自家焙煎" },
+  { href: "/shimokitazawa-cafe", label: "☕ 下北澤美食・咖啡廳推薦4選｜甜點、派、純素烘焙", desc: "純素烘焙・起司蛋糕・自家焙煎" },
   { href: "/bolt-uehara", label: "☕ 代代木上原咖啡廳推薦｜BOLT・寵物友善人氣店", desc: "手沖咖啡＆自家烘焙甜點" },
 ];
 

@@ -72,7 +72,7 @@ const shrinePhotos = ["/utsunomiya/shrine-1.jpg", "/utsunomiya/shrine-2.jpg", "/
 const relatedLinks = [
   { href: "/kamikochi", label: "🏔️ 上高地攻略2026｜交通、開山期間、散策路線", desc: "河童橋・新穂高纜車・奧飛騨溫泉" },
   { href: "/hakone", label: "🚃 箱根一日遊推薦｜從東京搭浪漫特快出發", desc: "美術館・足湯・神社・甜點" },
-  { href: "/koyo", label: "🍁 東京紅葉推薦｜神宮外苑銀杏並木", desc: "金黃銀杏大道・東京秋天必去景點" },
+  { href: "/koyo", label: "🍁 東京紅葉2026｜神宮外苑銀杏並木時期與交通", desc: "金黃銀杏大道・東京秋天必去景點" },
 ];
 
 const faqs = [

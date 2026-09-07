@@ -52,7 +52,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-08-12T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -127,16 +127,64 @@ const shops = [
 ];
 
 const relatedLinks = [
-  { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
+  { href: "/ramen", label: "🍜 東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/shibuya-yakiniku", label: "🥩 澀谷燒肉推薦｜肉 ホルモン千葉", desc: "同樣是山手線沿線，想再吃一頓肉的話" },
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "從新大久保搭一站就到，散步收尾剛好" },
 ];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  {
+    "@type": "Question",
+    "name": "新大久保美食推薦哪些？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "實際走訪推薦3間：サウィ食堂的ナッコプセ鍋（一人¥1,500〜2,500）、SHINCHON CAFE的韓系咖啡（¥600〜1,200）、MUJIGE的甜點（¥400〜800）。三間都在JR新大久保站走路5分內。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "新大久保怎麼去？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "JR山手線「新大久保」站，從新宿1站約2分、澀谷約15分、池袋約10分。出站就是大久保通り，主要的店都在這條路上。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "需要事先訂位嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "這3間都是走進去排隊的類型，基本上不需要訂位。週末12:00〜14:00與18:00之後鍋物店常要等，避開週末或11點多先去會順很多。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "半天真的逛得完嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。店與店之間走路都在5分鐘內，照「鍋物午餐→咖啡廳休息→外帶甜點」走，3〜4小時就很充實。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "不太能吃辣也可以去嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ナッコプセ鍋是中辣，夠味但不會痛。怕辣可以配飲料或白飯，或把重點放在咖啡廳與甜點。"
+    }
+  }
+],
+};
 
 export default function ShinOkuboPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -162,7 +210,7 @@ export default function ShinOkuboPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           新大久保美食推薦｜<br />韓國料理・咖啡・甜點食べ歩き完全指南🍲
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -280,8 +328,14 @@ export default function ShinOkuboPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">新大久保 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">新大久保美食 常見問題</h2>
           <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 新大久保美食推薦哪些？預算多少？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                這篇3間都實際走訪過：<strong>サウィ食堂</strong>的ナッコプセ鍋（一人¥1,500〜2,500）、<strong>SHINCHON CAFE</strong>的韓系咖啡（¥600〜1,200）、<strong>MUJIGE</strong>的甜點（¥400〜800）。三間都在JR新大久保站走路5分內，一個下午吃得完。
+              </p>
+            </div>
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要事先訂位嗎？</p>
               <p className="text-xs text-stone-600 leading-relaxed">

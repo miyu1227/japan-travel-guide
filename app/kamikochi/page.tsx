@@ -78,7 +78,7 @@ const kappaPhotos = ["/kamikochi/kappa-1.jpg", "/kamikochi/kappa-2.jpg", "/kamik
 const relatedLinks = [
   { href: "/hakone", label: "🚃 箱根一日遊推薦｜從東京搭浪漫特快出發", desc: "美術館・足湯・神社・甜點" },
   { href: "/hokkaido", label: "🗾 北海道自由行必去景點10選", desc: "札幌・小樽・富良野一次玩遍" },
-  { href: "/koyo", label: "🍁 東京紅葉推薦｜神宮外苑銀杏並木", desc: "金黃銀杏大道・東京秋天必去景點" },
+  { href: "/koyo", label: "🍁 東京紅葉2026｜神宮外苑銀杏並木時期與交通", desc: "金黃銀杏大道・東京秋天必去景點" },
 ];
 
 const faqs = [

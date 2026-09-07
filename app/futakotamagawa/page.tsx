@@ -81,8 +81,8 @@ const woodberryPhotos = [
 ];
 
 const relatedLinks = [
-  { href: "/shimokitazawa-cafe", label: "☕ 下北澤咖啡廳推薦4選｜東京必去人氣美食", desc: "純素烘焙・起司蛋糕・自家焙煎・BONUS TRACK" },
-  { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
+  { href: "/shimokitazawa-cafe", label: "☕ 下北澤美食・咖啡廳推薦4選｜甜點、派、純素烘焙", desc: "純素烘焙・起司蛋糕・自家焙煎・BONUS TRACK" },
+  { href: "/ramen", label: "🍜 東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/shin-okubo", label: "🍲 新大久保美食推薦｜韓國料理・咖啡・甜點", desc: "ナッコプセ鍋・韓系咖啡廳・ドバイ餅" },
 ];
 

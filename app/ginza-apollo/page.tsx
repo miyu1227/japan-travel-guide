@@ -70,7 +70,7 @@ const photos = ["/ginza-apollo/apollo-1.jpg", "/ginza-apollo/apollo-2.jpg", "/gi
 
 const relatedLinks = [
   { href: "/futakotamagawa", label: "🍽️ 二子玉川美食推薦3選｜中華・甜點・韓國料理", desc: "蒸籠中華・蘋果派・韓式屋台" },
-  { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
+  { href: "/ramen", label: "🍜 東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/tokyo-cookies", label: "🍪 東京伴手禮推薦｜高級手工餅乾", desc: "奧地利認證大師的手工餅乾禮盒" },
 ];
 

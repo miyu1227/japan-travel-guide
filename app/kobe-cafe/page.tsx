@@ -10,7 +10,7 @@ const PAGE_URL = "https://www.japantrippicks.com/kobe-cafe";
 const OG_IMAGE = "/kobe-cafe/caffarel-3.jpg";
 
 export const metadata: Metadata = {
-  title: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店【實際造訪】",
+  title: "神戶咖啡廳推薦4選｜三宮・北野的教堂咖啡與巧克力老店【實際造訪】",
   description:
     "教堂改建的「フロインドリーブ」、北野異人館的「パンとエスプレッソと」、熊熊主題吃到飽「くまポチ邸」、巧克力老店「Caffarel」。附交通、營業時間與散步路線。",
   alternates: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店",
+    title: "神戶咖啡廳推薦4選｜三宮・北野的教堂咖啡與巧克力老店",
     description: "教堂咖啡廳・北野異人館咖啡・熊熊麵包吃到飽・義大利巧克力老店。神戶必去4間人氣咖啡廳。",
     url: PAGE_URL,
     type: "article",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店",
+    title: "神戶咖啡廳推薦4選｜三宮・北野的教堂咖啡與巧克力老店",
     description: "教堂咖啡廳・異人館咖啡・熊熊麵包吃到飽・義大利巧克力老店☕",
     images: [OG_IMAGE],
   },
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店【實際造訪】",
+  headline: "神戶咖啡廳推薦4選｜三宮・北野的教堂咖啡與巧克力老店【實際造訪】",
   description: "神戶必去咖啡廳：教堂改建的フロインドリーブ生田店、北野異人館的パンとエスプレッソと異人館、熊熊主題麵包吃到飽的ケーニヒスクローネ くまポチ邸，以及義大利巧克力老店Caffarel 神戶北野本店。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-08-13T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -77,17 +77,66 @@ const relatedLinks = [
 ];
 
 const faqItems = [
+  { q: "神戶咖啡廳推薦哪幾間？", a: "實際走訪推薦4間：生田神社旁教堂改建的德式麵包老店フロインドリーブ、北野異人館的パンとエスプレッソと異人館、麵包吃到飽的くまポチ邸、以及巧克力老店Caffarel神戶北野本店。全部在三宮站走路15分內，可以串成一天。" },
   { q: "需要排隊嗎？", a: "フロインドリーブ的熱門時段常要排隊，くまポチ邸平日開店前就有人排。四間都建議平日上午造訪。" },
   { q: "四間怎麼串成一天？", a: "三宮→生田神社→フロインドリーブ→托爾街的Caffarel→北野異人館街，這條路線走起來剛剛好。" },
   { q: "公休日是哪天？", a: "フロインドリーブ生田店週三休、Caffarel 神戶北野本店週二休（L.O. 17:00）。出發前以官網為準。" },
   { q: "預算大概多少？", a: "每人約¥1,200〜¥2,500。くまポチ邸的主餐約¥2,310起，含麵包吃到飽與迷你甜點。" },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  {
+    "@type": "Question",
+    "name": "神戶咖啡廳推薦哪幾間？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "實際走訪推薦4間：生田神社旁教堂改建的德式麵包老店フロインドリーブ、北野異人館的パンとエスプレッソと異人館、麵包吃到飽的くまポチ邸、以及巧克力老店Caffarel神戶北野本店。全部在三宮站走路15分內，可以串成一天。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "需要排隊嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "フロインドリーブ的熱門時段常要排隊，くまポチ邸平日開店前就有人排。四間都建議平日上午造訪。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "四間怎麼串成一天？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "三宮→生田神社→フロインドリーブ→托爾街的Caffarel→北野異人館街，這條路線走起來剛剛好。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "公休日是哪天？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "フロインドリーブ生田店週三休、Caffarel 神戶北野本店週二休（L.O. 17:00）。出發前以官網為準。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "預算大概多少？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "每人約¥1,200〜¥2,500。くまポチ邸的主餐約¥2,310起，含麵包吃到飽與迷你甜點。"
+    }
+  }
+],
+};
+
 export default function KobeCafePage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -111,9 +160,9 @@ export default function KobeCafePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          神戶咖啡推薦4選｜教堂咖啡・異人館<br />熊熊麵包吃到飽＆巧克力老店☕
+          神戶咖啡廳推薦4選｜三宮・北野的<br />教堂咖啡、熊熊麵包吃到飽＆巧克力老店☕
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-13</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">

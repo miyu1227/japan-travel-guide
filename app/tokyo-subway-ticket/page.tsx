@@ -67,7 +67,7 @@ const breadcrumbJsonLd = {
 
 const relatedLinks = [
   { href: "/tokyo-tower", label: "🗼 東京鐵塔推薦｜東京必去地標・夜景景點", desc: "333公尺東京象徵・主展望台＆頂層展望台夜景" },
-  { href: "/koyo", label: "🍁 東京紅葉推薦｜神宮外苑銀杏並木", desc: "金黃銀杏大道・東京秋天必去景點" },
+  { href: "/koyo", label: "🍁 東京紅葉2026｜神宮外苑銀杏並木時期與交通", desc: "金黃銀杏大道・東京秋天必去景點" },
   { href: "/skytree", label: "🌃 東京晴空塔攻略｜門票、交通與夜景", desc: "押上站在都營淺草線與半藏門線上，這張票剛好能用" },
 ];
 

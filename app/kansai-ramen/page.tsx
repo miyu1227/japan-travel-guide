@@ -153,7 +153,7 @@ const kansaiStyles = [
 ];
 
 const relatedLinks = [
-  { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
+  { href: "/ramen", label: "🍜 東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/osaka-gourmet", label: "🍻 大阪鐵板燒・居酒屋推薦｜梅田・福島在地人氣2店", desc: "鉄板屋な。＆酒場ビリー" },
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "A5鐵板燒名店・主廚現煎" },
 ];
@@ -206,7 +206,7 @@ export default function KansaiRamenArticle() {
           </p>
           <div className="mt-3 bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
             <p className="text-xs text-stone-600">
-              🗼 找東京的拉麵嗎？請看 <Link href="/ramen" className="text-blue-600 underline underline-offset-2 font-semibold">東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系</Link>
+              🗼 找東京的拉麵嗎？請看 <Link href="/ramen" className="text-blue-600 underline underline-offset-2 font-semibold">東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系</Link>
             </p>
           </div>
         </section>

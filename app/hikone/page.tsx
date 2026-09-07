@@ -13,7 +13,7 @@ const PAGE_URL = "https://www.japantrippicks.com/hikone";
 const OG_IMAGE = "/hikone/castle-1.png";
 
 export const metadata: Metadata = {
-  title: "彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓【實際造訪】",
+  title: "彥根貓＆彥根城攻略2026｜登場時間、門票、京都出發交通",
   description:
     "日本國寶彥根城完整指南，還能遇見人氣吉祥物彥根貓（ひこにゃん）。城下町散步、必吃布丁、造型饅頭巡禮。附門票・交通・吉祥物見面時間。",
   alternates: {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓",
+    title: "彥根貓＆彥根城攻略2026｜登場時間、門票、京都出發交通",
     description: "日本國寶彥根城！可以遇見彥根貓ひこにゃん，城下町散步、必吃布丁。附門票・交通・推薦。",
     url: PAGE_URL,
     type: "article",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓",
+    title: "彥根貓＆彥根城攻略2026｜登場時間、門票、京都出發交通",
     description: "日本國寶彥根城！可以遇見人氣吉祥物彥根貓ひこにゃん🐱",
     images: [OG_IMAGE],
   },
@@ -48,14 +48,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓【實際造訪】",
+  headline: "彥根貓＆彥根城攻略2026｜登場時間、門票、京都出發交通【實際造訪】",
   description: "滋賀「彥根城」完整指南。日本國寶之一、吉祥物彥根貓見面、城下町散步。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -78,15 +78,66 @@ const relatedLinks = [
 ];
 
 const faqs = [
-  { q: "彥根貓（ひこにゃん）什麼時候會出現？", a: "一天有固定的登場時段與地點，出發前先在官網確認當天的時間表，再把參觀城堡的時間排在前後最順。" },
+  { q: "彥根城門票多少錢？", a: "2024年10月起彥根城＋玄宮園共通券大人¥1,000、中小學生¥300；加彥根城博物館的套票¥1,500。開放8:30〜17:00，最後入場16:30，全年無休。" },
+  { q: "從京都到彥根怎麼去？多久？", a: "JR京都站搭琵琶湖線新快速約50分、¥1,170，直達不用轉車；從大阪站約80分。彥根站西口出來走約15分到彥根城表門，沿路就是城下町。" },
+  { q: "彥根貓幾點出現？", a: "每天13:30〜14:00在天守前廣場、15:00〜15:30在彥根城博物館冠木門前；週六日・假日11:00〜11:30另在四番町廣場加開一場。雨天改在博物館冠木門，夏季會縮短到10〜20分，出發前看官方出陣スケジュール。" },
+  { q: "彥根貓（ひこにゃん）登場要排隊嗎？", a: "天守前那場人最多，提早15分到前排就拍得到。出發前先在官網確認當天的時間表，再把參觀城堡的時間排在前後最順。" },
   { q: "從京都或大阪過去方便嗎？", a: "搭JR琵琶湖線到「彥根」駅，出站後走一段就是城下町，是關西近郊很好排的一日遊。" },
 ];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  {
+    "@type": "Question",
+    "name": "彥根城門票多少錢？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "2024年10月起彥根城＋玄宮園共通券大人¥1,000、中小學生¥300；加彥根城博物館的套票¥1,500。開放8:30〜17:00，最後入場16:30，全年無休。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "從京都到彥根怎麼去？多久？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "JR京都站搭琵琶湖線新快速約50分、¥1,170，直達不用轉車；從大阪站約80分。彥根站西口出來走約15分到彥根城表門，沿路就是城下町。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "彥根貓幾點出現？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "每天13:30〜14:00在天守前廣場、15:00〜15:30在彥根城博物館冠木門前；週六日・假日11:00〜11:30另在四番町廣場加開一場。雨天改在博物館冠木門，夏季會縮短到10〜20分，出發前看官方出陣スケジュール。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "彥根貓（ひこにゃん）登場要排隊嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "天守前那場人最多，提早15分到前排就拍得到。出發前先在官網確認當天的時間表，再把參觀城堡的時間排在前後最順。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "從京都或大阪過去方便嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "搭JR琵琶湖線到「彥根」駅，出站後走一段就是城下町，是關西近郊很好排的一日遊。"
+    }
+  }
+],
+};
 
 export default function HikonePage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -108,15 +159,15 @@ export default function HikonePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          彥根城觀光推薦｜滋賀必去<br />國寶城・吉祥物彥根貓🏯
+          彥根貓＆彥根城攻略 2026｜<br />登場時間、門票、京都出發交通🏯
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">日本國寶之一！可以遇見超人氣吉祥物彥根貓</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            <strong>彥根城</strong>位於滋賀縣彥根市，是<strong>日本現存12天守之一</strong>，也是被指定為<strong>國寶</strong>的5座城之一🏯 從京都搭JR約50分、大阪搭JR約80分就能抵達，是關西旅遊不能錯過的歷史名勝。
+            <strong>彥根城</strong>位於滋賀縣彥根市，是<strong>日本現存12天守之一</strong>，也是被指定為<strong>國寶</strong>的5座城之一🏯 從京都搭JR新快速約50分（¥1,170）、大阪約80分就能抵達，是關西旅遊不能錯過的歷史名勝。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
             彥根城最大的魅力——除了壯麗的城堡建築之外，當然就是超人氣吉祥物<strong>「彥根貓（ひこにゃん）」</strong>🐱 每天會在城內固定時間出沒，可以近距離合照！周邊城下町還有許多布丁店、彥根貓造型饅頭等美食，是親子・情侶旅遊的絕佳行程✨
@@ -166,10 +217,10 @@ export default function HikonePage() {
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-pink-600 mb-2">🐱 彥根貓出場時間（參考）</p>
               <ul className="text-xs text-stone-600 space-y-1">
-                <li>・10:30〜 天守前廣場</li>
-                <li>・13:00〜 彥根城博物館前</li>
-                <li>・15:00〜 四番町廣場</li>
-                <li>※每日3場、約30分鐘。具體時間請查官網</li>
+                <li>・13:30〜14:00 天守前廣場</li>
+                <li>・15:00〜15:30 彥根城博物館（冠木門前）</li>
+                <li>・週六日・假日加開 11:00〜11:30 四番町廣場</li>
+                <li>※雨天兩場都改在博物館冠木門，不用門票也看得到。夏季會縮短到10〜20分。出發前以官方「出陣スケジュール」為準</li>
               </ul>
             </div>
 
@@ -178,7 +229,7 @@ export default function HikonePage() {
               <p className="text-xs text-stone-600">📍 滋賀縣彥根市金龜町1-1</p>
               <p className="text-xs text-stone-600">🚃 JR琵琶湖線「彥根」駅 徒歩約15分</p>
               <p className="text-xs text-stone-600">⏰ 8:30〜17:00（入場至16:30）</p>
-              <p className="text-xs text-stone-600">💴 大人 ¥800／中小學生 ¥200（含玄宮園）</p>
+              <p className="text-xs text-stone-600">💴 彥根城＋玄宮園 大人 ¥1,000／中小學生 ¥300・加彥根城博物館的套票 ¥1,500（2024年10月改定）</p>
               <p className="text-xs text-stone-600">🅿️ 收費停車場有</p>
             </div>
 
@@ -248,8 +299,8 @@ export default function HikonePage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">彥根城旅行小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
-            <li>✅ 從京都搭JR琵琶湖線約<strong>50分</strong>，從大阪約<strong>80分</strong></li>
-            <li>✅ 想看彥根貓的話<strong>10:30 / 13:00 / 15:00</strong>三場時間別錯過</li>
+            <li>✅ 從京都搭JR琵琶湖線新快速約<strong>50分・¥1,170</strong>，從大阪約<strong>80分</strong>，不用轉車</li>
+            <li>✅ 想看彥根貓的話<strong>13:30（天守前）／15:00（博物館）</strong>兩場別錯過，週末還有11:00四番町廣場</li>
             <li>✅ <strong>春天櫻花季（4月上旬）</strong>是最美的造訪期🌸</li>
             <li>✅ 城內石階多，<strong>穿好走的鞋</strong>👟</li>
             <li>✅ 推薦行程：上午逛城→午餐近江牛→下午散步城下町＆甜點</li>

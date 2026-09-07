@@ -83,7 +83,7 @@ const charlesHenryPhotos = [
 
 const relatedLinks = [
   { href: "/nakameguro-cafe", label: "☕ 中目黑咖啡廳推薦2選｜星巴克臻選・世界冠軍拉花", desc: "隈研吾建築・拉花世界冠軍的STREAMER" },
-  { href: "/shimokitazawa-cafe", label: "☕ 下北澤咖啡廳推薦4選｜東京必去人氣美食", desc: "純素烘焙・起司蛋糕・自家焙煎・BONUS TRACK" },
+  { href: "/shimokitazawa-cafe", label: "☕ 下北澤美食・咖啡廳推薦4選｜甜點、派、純素烘焙", desc: "純素烘焙・起司蛋糕・自家焙煎・BONUS TRACK" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩" },
 ];
 

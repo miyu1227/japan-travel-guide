@@ -10,7 +10,7 @@ const PAGE_URL = "https://www.japantrippicks.com/koyo";
 const OG_IMAGE = "/koyo/gaien-1.jpg";
 
 export const metadata: Metadata = {
-  title: "東京紅葉推薦｜外苑前銀杏並木・金黃大道【實際造訪】",
+  title: "東京紅葉2026｜神宮外苑銀杏並木時期、交通與其他景點",
   description:
     "東京紅葉季必去景點「神宮外苑銀杏並木」。約300公尺長的金黃銀杏大道，從青山通一路延伸，是東京最具代表性的秋景之一。附交通方式・最佳觀賞期・拍照秘訣。",
   alternates: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "東京紅葉推薦｜外苑前銀杏並木・金黃大道",
+    title: "東京紅葉2026｜神宮外苑銀杏並木時期、交通與其他景點",
     description: "東京紅葉必去景點「神宮外苑銀杏並木」。約300公尺的金黃銀杏隧道。附交通・觀賞期・拍照攻略。",
     url: PAGE_URL,
     type: "article",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "東京紅葉推薦｜外苑前銀杏並木",
+    title: "東京紅葉2026｜神宮外苑銀杏並木時期與交通",
     description: "東京紅葉必去！金黃銀杏隧道約300公尺的人氣景點。",
     images: [OG_IMAGE],
   },
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "東京紅葉推薦｜外苑前銀杏並木・金黃大道【實際造訪】",
+  headline: "東京紅葉2026｜神宮外苑銀杏並木的時期、交通與其他紅葉景點【實際造訪】",
   description: "東京紅葉季必去景點「神宮外苑銀杏並木」。金黃銀杏大道・交通・觀賞期完整指南。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -69,15 +69,63 @@ const gaienPhotos = ["/koyo/gaien-1.jpg", "/koyo/gaien-2.jpg", "/koyo/gaien-3.jp
 
 const relatedLinks = [
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "悠閒散步的人氣公園完全指南" },
-  { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
+  { href: "/ramen", label: "🍜 東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩3間人氣店" },
 ];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  {
+    "@type": "Question",
+    "name": "東京紅葉是幾月？2026年什麼時候去最好？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "東京的紅葉比京都晚，看頭在11月中旬〜12月上旬。神宮外苑銀杏並木通常11月中旬轉黃、11月下旬〜12月初達到高峰；六義園、小石川後樂園的楓葉也是11月下旬〜12月上旬。每年會因氣候差1〜2週，出發前查紅葉見頃情報。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "神宮外苑銀杏並木怎麼去？要門票嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "免費、全日開放。東京メトロ銀座線「外苑前」站走約3分，大江戶線「國立競技場」站、副都心線「北參道」站也走得到。銀杏祭期間車位極難找，不建議開車。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "最佳造訪時間是幾點？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "拍照優先的話推薦早上7:00〜9:00或平日下午，人潮相對少。下午3點左右光線最柔和。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "銀杏會臭嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "神宮外苑並木的樹全部是雄樹不會結果，基本上沒有氣味問題。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "下雨天還值得去嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "下雨時銀杏葉被打落，反而形成一整片金黃色地毯，人潮也少。撐傘、穿防水鞋即可。"
+    }
+  }
+],
+};
 
 export default function KoyoPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -101,9 +149,9 @@ export default function KoyoPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          東京紅葉推薦｜神宮外苑<br />銀杏並木の金黃大道🍁
+          東京紅葉 2026｜神宮外苑銀杏並木的<br />時期、交通與其他紅葉景點🍁
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -266,8 +314,20 @@ export default function KoyoPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">東京紅葉 常見問題</h2>
           <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京紅葉是幾月？2026年什麼時候去最好？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                東京的紅葉比京都晚，看頭在<strong>11月中旬〜12月上旬</strong>。神宮外苑銀杏並木通常11月中旬轉黃、11月下旬〜12月初達到高峰；六義園、小石川後樂園的楓葉也是11月下旬〜12月上旬。每年會因氣候差1〜2週，出發前查「紅葉見頃情報」。神宮外苑的いちょう祭り例年也在這段期間舉辦，2026年日程以官網公告為準。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 神宮外苑銀杏並木怎麼去？要門票嗎？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                <strong>免費、全日開放</strong>。東京メトロ銀座線「外苑前」站走約3分，大江戶線「國立競技場」站、副都心線「北參道」站也走得到。
+              </p>
+            </div>
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 最佳造訪時間是幾點？</p>
               <p className="text-xs text-stone-600 leading-relaxed">

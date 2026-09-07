@@ -10,7 +10,7 @@ const PAGE_URL = "https://www.japantrippicks.com/ramen";
 const OG_IMAGE = "/ramen/washo-1.jpg";
 
 export const metadata: Metadata = {
-  title: "東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系【實際吃過】",
+  title: "東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系【實際吃過】",
   description:
     "實際吃過的6間東京拉麵：三軒茶屋「めん和正」、目黑和利道、中目黑俺流鹽味、台場神仙、六本木AFURI柚子鹽、家系町田商店。附地址・交通・價格・推薦菜單。",
   alternates: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系",
+    title: "東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系",
     description: "三軒茶屋無招牌名店・目黑排隊店・中目黑鹽味・台場豚骨・六本木柚子鹽・家系拉麵。實際吃過的東京拉麵6選！",
     url: PAGE_URL,
     type: "article",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系",
+    title: "東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系",
     description: "三軒茶屋無招牌名店・目黑排隊店・台場豚骨・六本木柚子鹽。實際吃過的東京拉麵6選🍜",
     images: [OG_IMAGE],
   },
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系【實際吃過】",
+  headline: "東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系【實際吃過】",
   description: "整理6間實際吃過的東京拉麵推薦，包含三軒茶屋めん和正、目黑和利道、中目黑俺流鹽味、台場神仙、六本木AFURI柚子鹽、家系町田商店。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-08-12T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -197,11 +197,67 @@ const relatedLinks = [
   { href: "/shin-okubo", label: "🍲 新大久保美食推薦｜韓國料理・咖啡・甜點", desc: "ナッコプセ鍋・韓系咖啡廳・杜拜巧克力" },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  {
+    "@type": "Question",
+    "name": "東京必吃拉麵有哪些？第一次來要選哪一間？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "這篇6間都是實際吃過的店：三軒茶屋的無招牌名店めん和正、目黑的和利道、中目黑的俺流鹽味拉麵、台場的金澤濃厚豚骨神仙、六本木的AFURI柚子鹽、以及到處都有的家系町田商店。第一次來東京、不吃太重口味的人先選AFURI柚子鹽；想體驗日本人排隊的那種店就去めん和正。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "東京拉麵一碗多少錢？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "2026年的行情是¥900〜¥1,600。清湯系（柚子鹽、醬油）約¥900〜¥1,200，濃厚豚骨與沾麵約¥1,100〜¥1,800，加叉燒或味玉再多¥150〜¥300。很多老店只收現金。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "排隊名店大概要等多久？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "12:00〜13:30的午餐尖峰最慘，人氣店排30分鐘以上很常見。抓開店後不久或下午2點以後，通常可以直接進去。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "不會日文也點得到嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "多數店是食券機先買餐券，機器上有照片，有些能切換中文或英文。真的看不懂時，按最上排左邊那格通常就是招牌拉麵。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "可以刷卡或用行動支付嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "新一點的店與連鎖店多半可以，但老店只收現金的情況還是不少。身上留一點日幣現金比較保險。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "這幾間可以排在同一天嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "中目黑與六本木都在日比谷線上，串在同一天很順；三軒茶屋與台場要另外換車。"
+    }
+  }
+],
+};
+
 export default function RamenArticle() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -225,9 +281,9 @@ export default function RamenArticle() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          東京拉麵推薦6選｜必吃排隊<br />名店・柚子鹽・家系拉麵🍜
+          東京必吃拉麵推薦6選｜<br />排隊名店・柚子鹽・家系拉麵🍜
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-08-12</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Why ramen */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -357,8 +413,20 @@ export default function RamenArticle() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">東京吃拉麵 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">東京必吃拉麵 常見問題</h2>
           <div className="space-y-4">
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京必吃拉麵有哪些？第一次來要選哪一間？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                這6間都是實際吃過的店。<strong>第一次來東京、不吃太重口味</strong>的人，先選六本木的AFURI柚子鹽；想體驗<strong>日本人排隊的那種店</strong>就去三軒茶屋的めん和正；想吃濃的選台場的神仙或家系的町田商店。
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京拉麵一碗多少錢？</p>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                2026年的行情是<strong>¥900〜¥1,600</strong>。清湯系（柚子鹽、醬油）約¥900〜¥1,200，濃厚豚骨與沾麵約¥1,100〜¥1,800，加叉燒或味玉再多¥150〜¥300。
+              </p>
+            </div>
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 排隊名店大概要等多久？</p>
               <p className="text-xs text-stone-600 leading-relaxed">

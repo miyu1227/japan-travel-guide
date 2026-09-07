@@ -76,7 +76,7 @@ const jojoenPhotos = [
 const relatedLinks = [
   { href: "/shibuya-yakiniku", label: "🥩 澀谷燒肉推薦｜ホルモン千葉・內臟燒肉名店", desc: "京都發跡・斜面鐵板・店員全程代烤" },
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "A5鐵板燒名店・主廚現煎" },
-  { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
+  { href: "/ramen", label: "🍜 東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
 ];
 
 const faqItems = [

@@ -73,7 +73,7 @@ const cafePhotos = ["/ine/cafe-1.jpg", "/ine/cafe-2.jpg"];
 const jinpusoPhotos = ["/ine/jinpuso-1.jpg"];
 
 const relatedLinks = [
-  { href: "/hikone", label: "🏯 彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓", desc: "日本國寶＋彥根貓＋江戶城下町" },
+  { href: "/hikone", label: "🏯 彥根貓＆彥根城攻略2026｜登場時間、門票、交通", desc: "日本國寶＋彥根貓＋江戶城下町" },
   { href: "/kobe-cafe", label: "☕ 神戶咖啡推薦｜フロインドリーブ＆異人館咖啡", desc: "教堂改建咖啡廳・北野洋館咖啡" },
   { href: "/kamikochi", label: "🏔️ 上高地攻略2026｜交通、開山期間、散策路線", desc: "河童橋・新穂高纜車・奧飛騨溫泉" },
 ];

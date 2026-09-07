@@ -77,7 +77,7 @@ const photos = [
 
 const relatedLinks = [
   { href: "/ueno-zoo", label: "🐼 上野動物園推薦｜東京必去親子景點", desc: "日本最古老的動物園，門票¥600就能逛一整天" },
-  { href: "/koyo", label: "🍁 東京紅葉推薦｜神宮外苑銀杏並木", desc: "金黃銀杏大道・東京秋天必去景點" },
+  { href: "/koyo", label: "🍁 東京紅葉2026｜神宮外苑銀杏並木時期與交通", desc: "金黃銀杏大道・東京秋天必去景點" },
   { href: "/museum", label: "🎨 東京美術館推薦｜國立新美術館＆根津美術館", desc: "現代建築・日本庭園" },
 ];
 

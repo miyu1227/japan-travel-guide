@@ -74,7 +74,7 @@ const photos = [
 ];
 
 const relatedLinks = [
-  { href: "/koyo", label: "🍁 東京紅葉推薦｜神宮外苑銀杏並木", desc: "金黃銀杏大道・東京秋天必去景點" },
+  { href: "/koyo", label: "🍁 東京紅葉2026｜神宮外苑銀杏並木時期與交通", desc: "金黃銀杏大道・東京秋天必去景點" },
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "悠閒散步的人氣公園完全指南" },
   { href: "/ueno-zoo", label: "🐼 上野動物園推薦｜東京必去親子景點", desc: "日本最古老的動物園，門票¥600就能逛一整天" },
 ];

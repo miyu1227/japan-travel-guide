@@ -71,7 +71,7 @@ const photos = ["/kobe-gourmet/famiglia-1.jpg", "/kobe-gourmet/famiglia-2.jpg"];
 
 const relatedLinks = [
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店・A5鐵板燒", desc: "神戶必吃A5神戶牛，主廚現煎入口即化" },
-  { href: "/kobe-cafe", label: "☕ 神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店", desc: "教堂改建咖啡廳・熊熊麵包吃到飽・Caffarel" },
+  { href: "/kobe-cafe", label: "☕ 神戶咖啡廳推薦4選｜三宮・北野的教堂咖啡與巧克力老店", desc: "教堂改建咖啡廳・熊熊麵包吃到飽・Caffarel" },
   { href: "/sanda-soba", label: "🍃 兵庫三田蕎麥麵推薦｜蕎麦いち・手打蕎麥名店", desc: "神戶近郊隱藏名店，嚴選國產蕎麥粉" },
 ];
 

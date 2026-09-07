@@ -75,7 +75,7 @@ const photos = [
 ];
 
 const relatedLinks = [
-  { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
+  { href: "/ramen", label: "🍜 東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
   { href: "/shibuya-cafe", label: "🎵 澀谷咖啡廳推薦｜RECOCO 黑膠唱片試聽咖啡", desc: "約300張唱片聽到飽的音樂體驗" },
   { href: "/ikejiri-cafe", label: "🍓 池尻大橋咖啡廳推薦｜UN LIVRE 法式甜點店", desc: "澀谷搭車一站直達的隱藏名店" },
 ];

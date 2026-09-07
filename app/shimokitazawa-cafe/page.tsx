@@ -11,7 +11,7 @@ const PAGE_URL = "https://www.japantrippicks.com/shimokitazawa-cafe";
 const OG_IMAGE = "/shimokitazawa-cafe/vegan-1.jpg";
 
 export const metadata: Metadata = {
-  title: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點【實際造訪】",
+  title: "下北澤美食・咖啡廳推薦4選｜甜點、派、純素烘焙與BONUS TRACK【實際造訪】",
   description:
     "純素烘焙・手工起司蛋糕・自家焙煎咖啡＆派，加上新文化複合設施BONUS TRACK。下北澤人氣咖啡廳完整介紹，附交通・推薦菜單・價格。",
   alternates: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點",
+    title: "下北澤美食・咖啡廳推薦4選｜甜點、派、純素烘焙與BONUS TRACK",
     description: "下北澤咖啡廳推薦4選！純素烘焙・起司蛋糕・自家焙煎咖啡，東京人氣美食完整指南。",
     url: PAGE_URL,
     type: "article",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點",
+    title: "下北澤美食・咖啡廳推薦4選｜甜點、派、純素烘焙與BONUS TRACK",
     description: "下北澤必去3間人氣咖啡廳推薦！純素烘焙・起司蛋糕・自家焙煎咖啡。",
     images: [OG_IMAGE],
   },
@@ -46,14 +46,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點【實際造訪】",
+  headline: "下北澤美食・咖啡廳推薦4選｜甜點、派、純素烘焙與BONUS TRACK【實際造訪】",
   description: "下北澤咖啡廳推薦4選！東京必去的人氣咖啡廳美食＆甜點完整介紹。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -79,21 +79,79 @@ const bonustrackPhotos = ["/shimokitazawa-cafe/bonustrack-1.jpg", "/shimokitazaw
 const relatedLinks = [
   { href: "/kobe-cafe", label: "☕ 神戶咖啡推薦｜フロインドリーブ＆異人館咖啡", desc: "教堂改建咖啡廳・北野異人館洋館咖啡" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩" },
-  { href: "/ramen", label: "🍜 東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
+  { href: "/ramen", label: "🍜 東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
 ];
 
 const faqItems = [
+  { q: "下北澤美食推薦哪些？", a: "這篇4個地方都實際去過：純素烘焙TOKYO VEGAN BAKES（¥330〜880）、只有6席的起司蛋糕店La Piña（¥500起）、早上8點開門的派專門店Pati coffee&plants（派¥480〜630）、以及聚集十幾間小店的BONUS TRACK。從下北澤站走路5〜12分都到得了。" },
+  { q: "下北澤怎麼去？", a: "小田急線或京王井之頭線「下北澤」站，從新宿約8分、澀谷約4分。BONUS TRACK離小田急「世田谷代田」站更近，走1分。" },
   { q: "有公休日嗎？", a: "TOKYO VEGAN BAKES 週一・週二公休，Pati coffee&plants 週二公休。週初造訪的話一定要先確認。" },
   { q: "座位很少嗎？", a: "La Piña 只有6個座位，假日可能需要等候，建議平日前往。" },
   { q: "早上就有開的店嗎？", a: "Pati coffee&plants 8:00開門，適合當第一站。BONUS TRACK 的店舖多數是11:00〜20:00。" },
   { q: "預算大概多少？", a: "TOKYO VEGAN BAKES ¥330〜¥880、起司蛋糕¥500起、派¥480〜¥630、飲品¥550〜¥700。" },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  {
+    "@type": "Question",
+    "name": "下北澤美食推薦哪些？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "這篇4個地方都實際去過：純素烘焙TOKYO VEGAN BAKES（¥330〜880）、只有6席的起司蛋糕店La Piña（¥500起）、早上8點開門的派專門店Pati coffee&plants（派¥480〜630）、以及聚集十幾間小店的BONUS TRACK。從下北澤站走路5〜12分都到得了。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "下北澤怎麼去？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "小田急線或京王井之頭線「下北澤」站，從新宿約8分、澀谷約4分。BONUS TRACK離小田急「世田谷代田」站更近，走1分。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "有公休日嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "TOKYO VEGAN BAKES 週一・週二公休，Pati coffee&plants 週二公休。週初造訪的話一定要先確認。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "座位很少嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "La Piña 只有6個座位，假日可能需要等候，建議平日前往。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "早上就有開的店嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pati coffee&plants 8:00開門，適合當第一站。BONUS TRACK 的店舖多數是11:00〜20:00。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "預算大概多少？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "TOKYO VEGAN BAKES ¥330〜¥880、起司蛋糕¥500起、派¥480〜¥630、飲品¥550〜¥700。"
+    }
+  }
+],
+};
+
 export default function ShimokitazawaCafePage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -115,9 +173,9 @@ export default function ShimokitazawaCafePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          下北澤咖啡廳推薦4選｜<br />東京必去人氣美食＆甜點☕
+          下北澤美食・咖啡廳推薦4選｜<br />甜點、派、純素烘焙與BONUS TRACK☕
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -168,7 +226,7 @@ export default function ShimokitazawaCafePage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">下北澤咖啡推薦・3選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4">下北澤美食・咖啡推薦・4選</h2>
 
         {/* Spot 1: TOKYO VEGAN BAKES */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">

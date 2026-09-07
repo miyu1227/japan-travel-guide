@@ -190,7 +190,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "ramen",
     category: "ramen",
-    name: "東京拉麵推薦6選｜必吃排隊名店・柚子鹽・家系🍜",
+    name: "東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系🍜",
     shortLabel: "東京拉麵推薦",
     desc: "三軒茶屋無招牌名店めん和正・和利道・俺流鹽味・台場神仙・AFURI柚子鹽・町田商店",
     tag: "東京",
@@ -198,7 +198,7 @@ export const ARTICLES: Article[] = [
     image: "/ramen/washo-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-08-12",
+    updated: "2026-09-07",
   },
   {
     slug: "kansai-ramen",
@@ -224,7 +224,7 @@ export const ARTICLES: Article[] = [
     image: "/shin-okubo/sawee-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-08-12",
+    updated: "2026-09-07",
   },
   {
     slug: "takeout-cake",
@@ -372,7 +372,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "shimokitazawa-cafe",
     category: "cafe",
-    name: "下北澤咖啡廳推薦4選｜東京必去人氣美食＆甜點☕",
+    name: "下北澤美食・咖啡廳推薦4選｜甜點、派、純素烘焙與BONUS TRACK☕",
     shortLabel: "下北澤咖啡",
     desc: "純素烘焙・起司蛋糕・自家焙煎・BONUS TRACK，下北澤必去人氣店",
     tag: "東京",
@@ -380,12 +380,12 @@ export const ARTICLES: Article[] = [
     image: "/shimokitazawa-cafe/vegan-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-07",
   },
   {
     slug: "kobe-cafe",
     category: "cafe",
-    name: "神戶咖啡推薦4選｜教堂咖啡・異人館・巧克力老店☕",
+    name: "神戶咖啡廳推薦4選｜三宮・北野的教堂咖啡與巧克力老店☕",
     shortLabel: "神戶咖啡",
     desc: "教堂改建咖啡廳・北野異人館洋館咖啡・熊熊麵包吃到飽・Caffarel義大利巧克力，神戶必去4間人氣店",
     tag: "兵庫",
@@ -393,7 +393,7 @@ export const ARTICLES: Article[] = [
     image: "/kobe-cafe/caffarel-3.jpg",
     areas: ["兵庫"],
     published: "2026-07-01",
-    updated: "2026-08-13",
+    updated: "2026-09-07",
   },
   {
     slug: "shukugawa",
@@ -593,7 +593,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "hikone",
     category: "spot",
-    name: "彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓🏯",
+    name: "彥根貓＆彥根城攻略2026｜登場時間、門票、京都出發交通🏯",
     shortLabel: "彥根城",
     desc: "日本國寶彥根城＋人氣吉祥物彥根貓＋江戶城下町散步",
     tag: "滋賀",
@@ -601,7 +601,7 @@ export const ARTICLES: Article[] = [
     image: "/hikone/castle-1.png",
     areas: ["其他"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-07",
   },
   {
     slug: "utsunomiya",
@@ -679,12 +679,12 @@ export const ARTICLES: Article[] = [
     image: "/museum/nact-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-07",
   },
   {
     slug: "koyo",
     category: "spot",
-    name: "東京紅葉推薦｜神宮外苑銀杏並木の金黃大道🍁",
+    name: "東京紅葉2026｜神宮外苑銀杏並木的時期、交通與其他紅葉景點🍁",
     shortLabel: "東京紅葉",
     desc: "約300公尺的金黃銀杏隧道，東京秋天最具代表性的景點",
     tag: "東京",
@@ -692,7 +692,7 @@ export const ARTICLES: Article[] = [
     image: "/koyo/gaien-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-07",
   },
   {
     slug: "spot",

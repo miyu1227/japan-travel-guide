@@ -53,7 +53,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -70,21 +70,63 @@ const nactPhotos = ["/museum/nact-1.jpg", "/museum/nact-2.jpg", "/museum/nact-3.
 const nezuPhotos = ["/museum/nezu-1.jpg", "/museum/nezu-2.jpg", "/museum/nezu-3.jpg"];
 
 const relatedLinks = [
-  { href: "/koyo", label: "🍁 東京紅葉推薦｜神宮外苑銀杏並木", desc: "金黃銀杏大道・東京秋天必去景點" },
+  { href: "/koyo", label: "🍁 東京紅葉2026｜神宮外苑銀杏並木時期與交通", desc: "金黃銀杏大道・東京秋天必去景點" },
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "悠閒散步的人氣公園完全指南" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩3間人氣店" },
 ];
 
 const faqs = [
+  { q: "國立新美術館和根津美術館門票多少錢？", a: "國立新美術館入館免費，只有看特展才要買票，票價依展覽不同（多在¥1,500〜¥2,300）。根津美術館企劃展一般¥1,300、特別展¥1,500，中學生以下免費，需要事先網路預約。" },
+  { q: "東京美術館推薦第一次去哪一間？", a: "只想拍建築、時間有限選六本木的國立新美術館，免費又離地鐵近；想看日本庭園與東洋古美術選表參道的根津美術館。兩間搭地鐵約15分，可以排同一天。" },
   { q: "沒有看展也值得去嗎？", a: "值得。國立新美術館的玻璃曲面建築本身就是拍照重點，根津美術館則有很漂亮的日本庭園，光是散步就很好逛。" },
   { q: "兩間可以排同一天嗎？", a: "可以。六本木與表參道之間搭地鐵很近，排成「上午美術館、下午咖啡廳（咖啡店）」剛剛好。" },
 ];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+  {
+    "@type": "Question",
+    "name": "國立新美術館和根津美術館門票多少錢？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "國立新美術館入館免費，只有看特展才要買票，票價依展覽不同（多在¥1,500〜¥2,300）。根津美術館企劃展一般¥1,300、特別展¥1,500，中學生以下免費，需要事先網路預約。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "東京美術館推薦第一次去哪一間？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "只想拍建築、時間有限選六本木的國立新美術館，免費又離地鐵近；想看日本庭園與東洋古美術選表參道的根津美術館。兩間搭地鐵約15分，可以排同一天。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "沒有看展也值得去嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "值得。國立新美術館的玻璃曲面建築本身就是拍照重點，根津美術館則有很漂亮的日本庭園，光是散步就很好逛。"
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "兩間可以排同一天嗎？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。六本木與表參道之間搭地鐵很近，排成「上午美術館、下午咖啡廳（咖啡店）」剛剛好。"
+    }
+  }
+],
+};
 
 export default function MuseumPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
@@ -110,7 +152,7 @@ export default function MuseumPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           東京美術館推薦｜國立新美術館＆<br />根津美術館2選🎨
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -196,7 +238,7 @@ export default function MuseumPage() {
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600">📍 東京都港區六本木7-22-2</p>
               <p className="text-xs text-stone-600">🚇 東京メトロ千代田線「乃木坂」駅 徒歩約0分／日比谷線・大江戸線「六本木」駅 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 10:00〜18:00（週二休館）</p>
+              <p className="text-xs text-stone-600">⏰ 10:00〜18:00（展期中週五到20:00・週二休館）</p>
               <p className="text-xs text-stone-600">💴 入館免費（特展需另購票）</p>
             </div>
 
@@ -263,7 +305,7 @@ export default function MuseumPage() {
               <p className="text-xs text-stone-600">📍 東京都港區南青山6-5-1</p>
               <p className="text-xs text-stone-600">🚇 東京メトロ「表參道」駅A5出口 徒歩約8分</p>
               <p className="text-xs text-stone-600">⏰ 10:00〜17:00（週一休館）</p>
-              <p className="text-xs text-stone-600">💴 一般¥1,400〜（依展覽而異・需事先網路預約）</p>
+              <p className="text-xs text-stone-600">💴 企劃展 一般¥1,300／特別展 ¥1,500（中學生以下免費・需事先網路預約）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
