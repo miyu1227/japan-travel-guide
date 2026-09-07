@@ -68,7 +68,7 @@ const teppanPhotos = ["/osaka-gourmet/teppan-1.jpg", "/osaka-gourmet/teppan-2.jp
 const billiePhotos = ["/osaka-gourmet/billie-1.jpg", "/osaka-gourmet/billie-2.jpg", "/osaka-gourmet/billie-3.jpg", "/osaka-gourmet/billie-4.jpg"];
 
 const relatedLinks = [
-  { href: "/kansai-ramen", label: "🍜 關西拉麵推薦｜大阪必吃濃厚魚介沾麵", desc: "肥後橋つじ田・加檸檬與黑七味變化風味" },
+  { href: "/kansai-ramen", label: "🍜 大阪沾麵推薦｜肥後橋つじ田的濃厚豚骨魚介沾麵", desc: "濃厚沾麵¥1,050・酢橘與黑七味三段吃法" },
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "A5鐵板燒名店・主廚現煎" },
   { href: "/ginza-apollo", label: "🍽️ 銀座美食推薦｜THE APOLLO 希臘料理", desc: "東京話題餐廳・地中海風味分享盤" },
 ];
@@ -299,7 +299,7 @@ export default function OsakaGourmetPage() {
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 這兩間可以排在同一晚嗎？</p>
               <p className="text-xs text-stone-600 leading-relaxed">
                 可以，兩間都在梅田・福島一帶，走路或搭一站電車就到。<strong>先吃鐵板燒、再去居酒屋續攤</strong>是很順的順序。想再多吃一輪的話，
-                <Link href="/kansai-ramen" className="text-blue-600 underline underline-offset-2">關西拉麵推薦</Link>裡的肥後橋也在同一個方向。
+                <Link href="/kansai-ramen" className="text-blue-600 underline underline-offset-2">大阪沾麵推薦</Link>裡的肥後橋也在同一個方向。
               </p>
             </div>
           </div>

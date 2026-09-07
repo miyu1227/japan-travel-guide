@@ -192,7 +192,7 @@ const ramenTypes = [
 ];
 
 const relatedLinks = [
-  { href: "/kansai-ramen", label: "🍜 關西拉麵推薦｜大阪必吃濃厚魚介沾麵", desc: "大阪肥後橋つじ田・關西拉麵完全指南" },
+  { href: "/kansai-ramen", label: "🍜 大阪沾麵推薦｜肥後橋つじ田的濃厚豚骨魚介沾麵", desc: "濃厚沾麵¥1,050・酢橘與黑七味三段吃法" },
   { href: "/shibuya-yakiniku", label: "🥩 澀谷燒肉推薦｜ホルモン千葉・內臟燒肉名店", desc: "京都發跡・店員全程代烤" },
   { href: "/shin-okubo", label: "🍲 新大久保美食推薦｜韓國料理・咖啡・甜點", desc: "ナッコプセ鍋・韓系咖啡廳・杜拜巧克力" },
 ];
@@ -243,7 +243,7 @@ export default function RamenArticle() {
           </p>
           <div className="mt-3 bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
             <p className="text-xs text-stone-600">
-              🚄 找關西的拉麵嗎？請看 <Link href="/kansai-ramen" className="text-blue-600 underline underline-offset-2 font-semibold">關西拉麵推薦｜大阪必吃濃厚魚介沾麵</Link>
+              🚄 找關西的拉麵嗎？請看 <Link href="/kansai-ramen" className="text-blue-600 underline underline-offset-2 font-semibold">大阪沾麵推薦｜肥後橋つじ田的濃厚豚骨魚介沾麵</Link>
             </p>
           </div>
         </section>
