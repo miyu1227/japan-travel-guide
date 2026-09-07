@@ -15,9 +15,9 @@ const PAGE_URL = "https://www.japantrippicks.com/kamikochi";
 const OG_IMAGE = "/kamikochi/cover.jpg";
 
 export const metadata: Metadata = {
-  title: "上高地＆奧飛騨4選｜河童橋・纜車・溫泉✅實訪",
+  title: "上高地攻略2026｜交通、開山期間、散策路線與奧飛騨溫泉",
   description:
-    "上高地＆奧飛騨旅行推薦4選！河童橋絕景・平湯大瀑布・新穂高纜車2000m展望・奧飛騨花園飯店燒岳溫泉。日本阿爾卑斯山自然療癒之旅，附交通方式・門票・溫泉資訊。台灣・香港旅客必看！",
+    "日本上高地怎麼去？2026年開山4/17〜11/15，全年禁止私家車。從高山搭巴士約90分（¥3,100）、松本約1.5小時、新宿直達巴士約4.8小時、名古屋夜行巴士¥8,800。附河童橋・大正池散策路線、四季景色、新穂高纜車與奧飛騨溫泉，實際造訪整理。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "上高地＆奧飛騨旅行推薦4選｜日本阿爾卑斯山絕景完全指南",
-    description: "上高地河童橋・平湯大瀑布・新穂高纜車・奧飛騨溫泉飯店。日本阿爾卑斯絕景之旅完整指南。",
+    title: "上高地攻略2026｜交通、開山期間、散策路線與奧飛騨溫泉",
+    description: "上高地開山4/17〜11/15、禁止私家車。高山・松本・新宿・名古屋出發的交通與票價、河童橋散策路線、新穂高纜車與奧飛騨溫泉。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "上高地＆奧飛騨旅行推薦4選｜日本阿爾卑斯絕景",
-    description: "上高地河童橋・平湯大瀑布・新穂高纜車・奧飛騨溫泉！日本阿爾卑斯之旅🏔️",
+    title: "上高地攻略2026｜交通、開山期間、散策路線",
+    description: "上高地開山4/17〜11/15。高山・松本・新宿・名古屋怎麼去、河童橋散策、奧飛騨溫泉🏔️",
     images: [OG_IMAGE],
   },
 };
@@ -50,14 +50,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "上高地＆奧飛騨旅行推薦4選｜日本阿爾卑斯山絕景完全指南【實際造訪】",
-  description: "上高地＆奧飛騨旅行推薦4選。河童橋・平湯大瀑布・新穂高纜車・奧飛騨溫泉飯店。",
+  headline: "上高地攻略2026｜交通、開山期間、散策路線與奧飛騨溫泉【實際造訪】",
+  description: "日本上高地完整攻略：2026年開山期間、從高山・松本・新宿・名古屋的交通與票價、私家車管制、河童橋・大正池散策路線、四季景色，加上新穂高纜車、平湯大瀑布與奧飛騨溫泉飯店。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-09-07T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -66,7 +66,7 @@ const breadcrumbJsonLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "首頁", item: "https://www.japantrippicks.com" },
-    { "@type": "ListItem", position: 2, name: "上高地旅行推薦", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "上高地攻略", item: PAGE_URL },
   ],
 };
 
@@ -82,22 +82,32 @@ const relatedLinks = [
 ];
 
 const faqs = [
-  { q: "上高地可以開車進去嗎？", a: "不行。上高地禁止私家車進入，要在指定的停車場轉乘專用巴士或計程車（的士）。" },
-  { q: "幾月去最好？", a: "一般開山期是春末到秋天，冬季封山。新穗高纜車能上到2000公尺以上，不用爬山也看得到高山絕景。" },
+  { q: "上高地在日本哪裡？從東京、大阪怎麼去最順？", a: "上高地在長野縣松本市，靠近岐阜縣高山。從東京走松本：新宿搭特急あずさ約2.5小時到松本，再轉電車＋巴士約1.5小時；或搭新宿直達巴士約4小時47分。從大阪・名古屋走高山：名古屋搭特急ひだ約2.5小時到高山，再搭巴士約90分（¥3,100）；名古屋也有夜行直達巴士（¥8,800）。" },
+  { q: "上高地2026年幾月開放？", a: "2026年4月17日開山、11月15日閉山，冬季（11/16〜4/16）全面封閉無法進入。最舒服的是6月新綠、7〜8月避暑、10月上旬〜中旬紅葉；4月下旬黃金週與10月紅葉季人最多。" },
+  { q: "上高地可以開車進去嗎？", a: "不行。上高地全年禁止私家車，要在長野側的「沢渡」或岐阜側的「平湯・あかんだな」停車場，轉乘接駁巴士（沢渡¥1,600、平湯¥1,500，來回省¥200）或計程車。停車一天¥600〜800。" },
+  { q: "上高地要停留多久？當天來回可以嗎？", a: "可以。河童橋周邊加大正池或明神池的散步，3〜4小時就很充實。從高山或松本出發都能當天來回。想拍清晨沒人的河童橋，或加新穂高纜車、奧飛騨溫泉，就在平湯或新平湯住一晚。" },
+  { q: "幾月去最好？", a: "6月新綠與殘雪的對比最美、人也比黃金週少；10月上旬〜中旬是紅葉。夏天比松本市區低5〜10°C是避暑聖地。新穂高纜車全年營業，冬天想看雪山可以改去那裡。" },
 ];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
 
 export default function KamikochiPage() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
         <div className="max-w-2xl mx-auto px-4 h-14 flex items-center gap-3">
           <Link href="/" className="text-stone-500 hover:text-stone-800 text-sm">← 返回</Link>
           <span className="text-stone-300">|</span>
-          <span className="text-sm font-semibold text-stone-700 truncate">上高地旅行推薦</span>
+          <span className="text-sm font-semibold text-stone-700 truncate">上高地攻略</span>
         </div>
       </header>
 
@@ -112,19 +122,52 @@ export default function KamikochiPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          上高地＆奧飛騨旅行推薦4選｜<br />日本阿爾卑斯山絕景之旅🏔️
+          上高地攻略 2026｜交通、開山期間、<br />散策路線與奧飛騨溫泉🏔️
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07（交通票價為2026年度）</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">想遠離東京喧囂？到日本阿爾卑斯山看絕景吧</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3">日本上高地：海拔1,500m的阿爾卑斯山入口</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
-            <strong>上高地</strong>位於長野縣，海拔1,500公尺的高原度假勝地，被譽為<strong>「日本阿爾卑斯山」</strong>的入口🏔️ 是日本<strong>「特別名勝」＆「特別天然紀念物」</strong>雙重指定的珍貴自然景觀，每年吸引約120萬遊客造訪。鄰接岐阜縣的<strong>奧飛騨溫泉鄉</strong>，是日本最受歡迎的自然景觀＆溫泉旅遊地之一。
+            <strong>上高地</strong>位於長野縣松本市，海拔1,500公尺的高原度假勝地，被譽為<strong>「日本阿爾卑斯山」</strong>的入口🏔️ 是日本<strong>「特別名勝」＆「特別天然紀念物」</strong>雙重指定的珍貴自然景觀，每年吸引約120萬遊客造訪。<strong>2026年開放期間是4月17日〜11月15日</strong>，全年禁止私家車進入，只能搭巴士或計程車。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦（推介）的4個必去景點：<strong>河童橋</strong>的絕景、<strong>平湯大瀑布</strong>的震撼、<strong>新穂高纜車</strong>的2000公尺展望，以及<strong>奧飛騨花園飯店（酒店）燒岳</strong>的夢幻溫泉✨ 本篇同時整理了<strong>散策路線</strong>和<strong>四季景色</strong>，安排2〜3天的行程剛剛好！
+            這篇寫給<strong>第一次去上高地</strong>的台灣・香港旅人。<strong>你會知道</strong>：從高山・松本・新宿・名古屋各要多久、多少錢，河童橋出發的3條散策路線，幾月去最美，以及隔壁岐阜縣<strong>奧飛騨溫泉鄉</strong>的3個景點（平湯大瀑布、新穂高纜車、翡翠綠溫泉飯店）怎麼串成2〜3天✨
           </p>
+        </section>
+
+        {/* アクセス */}
+        <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3">上高地怎麼去？從高山、松本、東京、名古屋的交通與票價</h2>
+          <p className="text-sm text-stone-600 leading-relaxed mb-3">
+            上高地沒有電車，最後一段一定是巴士。台灣・香港旅人最常用的是<strong>「高山進」</strong>（順路玩飛騨高山、白川鄉）和<strong>「松本進」</strong>（從東京出發）兩條。
+          </p>
+          <div className="overflow-x-auto -mx-5 px-5">
+            <table className="w-full text-xs text-stone-600 border-collapse min-w-[560px]">
+              <thead>
+                <tr className="bg-amber-50">
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">出發地</th>
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">路線</th>
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">時間</th>
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">票價（大人單程）</th>
+                  <th className="border border-stone-200 px-2 py-2 text-left font-bold text-stone-700">備註</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td className="border border-stone-200 px-2 py-2 font-semibold">高山</td><td className="border border-stone-200 px-2 py-2">濃飛巴士 高山→平湯溫泉（轉車）→上高地</td><td className="border border-stone-200 px-2 py-2">約90分</td><td className="border border-stone-200 px-2 py-2">¥1,600＋¥1,500＝¥3,100</td><td className="border border-stone-200 px-2 py-2">不用預約。平湯→上高地來回¥2,800</td></tr>
+                <tr className="bg-stone-50/50"><td className="border border-stone-200 px-2 py-2 font-semibold">松本</td><td className="border border-stone-200 px-2 py-2">阿爾卑斯交通 電車到新島々（約30分）→巴士（約60分）</td><td className="border border-stone-200 px-2 py-2">約1.5小時</td><td className="border border-stone-200 px-2 py-2">依官網運賃表</td><td className="border border-stone-200 px-2 py-2">新島々→上高地的巴士2026年起<strong>需預約指定班次</strong>；另有松本直達巴士1日2班</td></tr>
+                <tr><td className="border border-stone-200 px-2 py-2 font-semibold">東京（新宿）</td><td className="border border-stone-200 px-2 py-2">直達巴士「さわやか信州号」</td><td className="border border-stone-200 px-2 py-2">日間 4小時47分／夜行 6小時55分</td><td className="border border-stone-200 px-2 py-2">依2026年度運賃表</td><td className="border border-stone-200 px-2 py-2">7:15發12:02到；夜行22:25發5:20到。要預約</td></tr>
+                <tr className="bg-stone-50/50"><td className="border border-stone-200 px-2 py-2 font-semibold">東京（電車）</td><td className="border border-stone-200 px-2 py-2">新宿→特急あずさ→松本，再接上面的松本路線</td><td className="border border-stone-200 px-2 py-2">約4小時</td><td className="border border-stone-200 px-2 py-2">あずさ約¥6,500＋松本段</td><td className="border border-stone-200 px-2 py-2">JR PASS 可搭あずさ</td></tr>
+                <tr><td className="border border-stone-200 px-2 py-2 font-semibold">名古屋</td><td className="border border-stone-200 px-2 py-2">名鐵夜行直達巴士 23:10發→5:15到</td><td className="border border-stone-200 px-2 py-2">約6小時</td><td className="border border-stone-200 px-2 py-2">網路¥8,800（窗口¥9,000）</td><td className="border border-stone-200 px-2 py-2">特定日運行、出發3天前截止。或搭特急ひだ到高山再轉巴士</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-3 bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 text-xs text-stone-600 leading-relaxed space-y-1">
+            <p>🚗 <strong>自駕的人</strong>：釜隧道以後全年禁止私家車。長野側停「沢渡」（¥800／日、接駁巴士¥1,600），岐阜側停「平湯・あかんだな」（¥600／24h、接駁巴士¥1,500）。買來回票省¥200</p>
+            <p>🕐 <strong>道路開放時間</strong>：5:00〜19:00（7〜8月到20:00），巴士也只在這個時間帶運行，晚上進不去</p>
+            <p>📍 <strong>終點都是「上高地巴士總站」</strong>：走5分鐘就是河童橋。往大正池的人可以提早在「大正池」站下車，再走回河童橋</p>
+          </div>
         </section>
 
         {/* Quick compare */}
@@ -474,11 +517,12 @@ export default function KamikochiPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">上高地＆奧飛騨旅行小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
-            <li>✅ 上高地為自然保護區，<strong>4/17〜11/15</strong>才開放，冬季封山</li>
-            <li>✅ 上高地禁止私家車進入，需<strong>轉乘專用巴士</strong>或計程車（的士）</li>
+            <li>✅ 上高地為自然保護區，<strong>2026年4/17〜11/15</strong>才開放，冬季封山</li>
+            <li>✅ 上高地全年禁止私家車，需在沢渡或平湯<strong>轉乘接駁巴士</strong>（¥1,500〜1,600）或計程車（的士）</li>
             <li>✅ 建議安排<strong>2〜3天行程</strong>，在奧飛騨溫泉住一晚最完美♨️</li>
             <li>✅ 山上氣溫比松本市區低5〜10°C，即使夏天也要帶<strong>薄外套</strong>🧥</li>
-            <li>✅ 從東京搭特急列車「あずさ」到松本約2.5小時，再轉巴士進上高地</li>
+            <li>✅ 從東京搭特急「あずさ」到松本約2.5小時再轉車，或新宿直達巴士約4小時47分</li>
+            <li>✅ 從高山搭濃飛巴士約90分（¥3,100），在平湯溫泉換一次車，不用預約</li>
             <li>✅ 出發前可查看<a href="https://www.kamikochi.or.jp/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">上高地官方網站</a>的即時天氣與開山資訊</li>
           </ul>
         </section>

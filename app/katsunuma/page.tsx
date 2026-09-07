@@ -110,7 +110,7 @@ const ichinomiyaPhotos = [
 ];
 
 const relatedLinks = [
-  { href: "/kamikochi", label: "🏔️ 上高地＆奧飛騨旅行推薦4選", desc: "日本阿爾卑斯絕景・河童橋・溫泉療癒之旅" },
+  { href: "/kamikochi", label: "🏔️ 上高地攻略2026｜交通、開山期間、散策路線", desc: "日本阿爾卑斯絕景・河童橋・溫泉療癒之旅" },
   { href: "/hikone", label: "🏯 彥根城觀光推薦", desc: "日本國寶城・吉祥物彥根貓・江戶城下町散步" },
   { href: "/utsunomiya", label: "🎋 宇都宮觀光推薦3選", desc: "夢幻竹林・餃子・神社，東京近郊一日遊隱藏寶地" },
 ];

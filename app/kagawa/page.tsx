@@ -81,7 +81,7 @@ const konpiraPhotos = ["/kagawa/konpira-1.jpg", "/kagawa/konpira-2.jpg", "/kagaw
 const relatedLinks = [
   { href: "/hikone", label: "🏯 彥根城觀光推薦｜滋賀必去國寶城・吉祥物彥根貓", desc: "日本國寶＋彥根貓＋江戶城下町" },
   { href: "/utsunomiya", label: "🎋 宇都宮觀光推薦3選｜栃木必去竹林・餃子・神社", desc: "若山農場・餃子通・二荒山神社" },
-  { href: "/kamikochi", label: "🏔️ 上高地＆奧飛騨旅行推薦4選", desc: "河童橋・新穂高纜車・奧飛騨溫泉" },
+  { href: "/kamikochi", label: "🏔️ 上高地攻略2026｜交通、開山期間、散策路線", desc: "河童橋・新穂高纜車・奧飛騨溫泉" },
 ];
 
 const faqs = [
