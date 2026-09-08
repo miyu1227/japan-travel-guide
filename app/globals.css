@@ -159,23 +159,40 @@ body:has(.biz-root) {
 .ib-clock { background-image: url("/icons/clock.svg"); }
 .ib-yen { background-image: url("/icons/yen.svg"); }
 
-/* 店カード。スマホは写真が上・本文が下のままだが、PCでは写真を左に回して
-   横幅を使う。写真ブロックと本文ブロックが section の直下に2つ並んでいる
-   構造なので、親を grid にするだけで組み替えられる。 */
-@media (min-width: 1280px) {
-  .card-split {
-    display: grid;
-    grid-template-columns: 38% 1fr;
-    align-items: stretch;
-  }
-  /* 写真は縦積みにして、カードの高さいっぱいに分け合う */
-  .card-split > div:first-child {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    grid-auto-rows: 1fr;
-    height: 100%;
-  }
+/* 店カードの写真。並べ方はスマホもPCも「上に横並び」のまま。
+   ただし本文が900pxに広がると aspect-square のぶん写真まで縦に伸びるので、
+   PCでは高さで止めて横長にトリミングする。 */
+@media (min-width: 1024px) {
   .card-split > div:first-child > * {
     aspect-ratio: auto;
+    height: 176px;
   }
+}
+
+/* 記事の右の空きに置く目次。本文（xl以上で820px）の右外に固定する。
+   余白が確実に残る1400px以上でだけ出す。 */
+.toc-rail { display: none; }
+
+@media (min-width: 1400px) {
+  .toc-rail {
+    display: block;
+    position: fixed;
+    top: 148px;
+    left: calc(50% + 428px);
+    width: 244px;
+    max-height: calc(100vh - 190px);
+    overflow-y: auto;
+    z-index: 20;
+  }
+}
+
+/* 記事の中の文字が小さすぎたので、PCでは一段上げる。
+   本文が820pxに広がったぶん、14px だと字面が痩せて見える。 */
+@media (min-width: 1024px) {
+  article .text-sm { font-size: 15px; line-height: 1.75; }
+  article .text-xs { font-size: 13px; line-height: 1.7; }
+  article .text-base { font-size: 17px; }
+  article .text-lg { font-size: 19px; }
+  /* 基本情報が詰まって見えたので行間を空ける */
+  article .space-y-1 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.4rem; }
 }
