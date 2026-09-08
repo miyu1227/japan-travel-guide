@@ -24,13 +24,15 @@ const CAT_LABEL: Record<string, string> = {
   prep: "出發前準備",
 };
 
+// 分類ごとのパステル。カード左上のラベルやトップの絞り込みボタンと同じ色系統にして、
+// ヘッダー → 絞り込み → カード が同じ色でつながって見えるようにする。
 const NAV = [
-  { href: "/#ramen", label: "美食" },
-  { href: "/#snacks", label: "零食伴手禮" },
-  { href: "/#cafe", label: "咖啡廳" },
-  { href: "/#spot", label: "景點" },
-  { href: "/#prep", label: "出發前準備" },
-  { href: "/#hubs", label: "主題總覽" },
+  { href: "/#ramen", label: "美食", tone: "bg-red-50 text-red-600 hover:bg-red-100" },
+  { href: "/#snacks", label: "零食伴手禮", tone: "bg-orange-50 text-orange-600 hover:bg-orange-100" },
+  { href: "/#cafe", label: "咖啡廳", tone: "bg-pink-50 text-pink-600 hover:bg-pink-100" },
+  { href: "/#spot", label: "景點", tone: "bg-blue-50 text-blue-600 hover:bg-blue-100" },
+  { href: "/#prep", label: "出發前準備", tone: "bg-amber-50 text-amber-700 hover:bg-amber-100" },
+  { href: "/#hubs", label: "主題總覽", tone: "bg-stone-100 text-stone-600 hover:bg-stone-200" },
 ];
 
 // 検索用に必要な4項目だけに削ってからクライアントへ渡す。
@@ -60,12 +62,12 @@ export default function SiteHeader() {
           <span className="font-brand text-[18px] font-bold tracking-tight text-stone-900">Japan Trip Picks</span>
         </Link>
 
-        <nav className="hidden items-center gap-0.5 lg:flex">
+        <nav className="hidden items-center gap-1.5 lg:flex">
           {NAV.map((n) => (
             <Link
               key={n.href}
               href={n.href}
-              className="rounded-full px-3.5 py-2 text-sm font-bold text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900"
+              className={`rounded-full px-3.5 py-1.5 text-sm font-bold transition-colors ${n.tone}`}
             >
               {n.label}
             </Link>

@@ -16,7 +16,7 @@ export type SearchItem = {
 
 type Props = {
   items: SearchItem[];
-  nav: { href: string; label: string }[];
+  nav: { href: string; label: string; tone: string }[];
   areas: { slug: string; label: string }[];
   areaCounts: Record<string, number>;
 };
@@ -154,13 +154,13 @@ export default function HeaderMenu({ items, nav, areas, areaCounts }: Props) {
         <div className="absolute inset-x-0 top-16 border-b border-stone-200 bg-white shadow-lg lg:hidden">
           <nav className="mx-auto w-full max-w-[1400px] px-5 py-3 sm:px-8">
             <p className="mb-1 text-[11px] font-black tracking-widest text-stone-400">分類</p>
-            <div className="flex flex-col">
+            <div className="flex flex-wrap gap-2">
               {nav.map((n) => (
                 <Link
                   key={n.href}
                   href={n.href}
                   onClick={() => setOpenMenu(false)}
-                  className="border-b border-stone-100 py-3 text-[15px] font-bold text-stone-700"
+                  className={`rounded-full px-4 py-2 text-sm font-bold ${n.tone}`}
                 >
                   {n.label}
                 </Link>

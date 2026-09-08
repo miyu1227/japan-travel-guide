@@ -376,7 +376,7 @@ export default function Home() {
         />
         <HeroPetals />
 
-        <div className={`${SHELL} relative grid items-center gap-8 py-8 sm:gap-12 sm:py-11 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)] lg:gap-12 lg:py-14`}>
+        <div className={`${SHELL} relative grid items-center gap-6 py-7 sm:gap-10 sm:py-9 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-12 lg:py-10`}>
           {/* Left: コピー */}
           <div>
             <p className="inline-flex items-center gap-2 rounded-full border-[2.5px] border-stone-900 bg-white px-4 py-1.5 text-xs font-bold tracking-wide text-stone-900">
@@ -463,7 +463,7 @@ export default function Home() {
       {/* エリアの絞り込みタブ（東京34件・北海道1件…）をやめて、
           すでにある主題ハブ7本を写真つきの入口として前に出した。 */}
       <section id="hubs" className="scroll-mt-24">
-        <div className={`${SHELL} py-12 lg:py-16`}>
+        <div className={`${SHELL} py-9 lg:py-11`}>
           <div className="mb-7 flex flex-wrap items-end justify-between gap-4 border-b border-stone-200 pb-4">
             <div>
               <h2 className="text-2xl font-black tracking-tight text-stone-900 sm:text-[28px]">想去哪裡？</h2>
@@ -476,20 +476,22 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {/* 7枚を3段に積むと1000px超えて記事一覧が2画面先になっていたので、
+              横1段にして画面からはみ出させる（はみ出しでスクロールできると伝わる）。 */}
+          <div className="scrollbar-hide -mx-5 flex gap-5 overflow-x-auto px-5 pb-1 sm:-mx-8 sm:px-8 lg:-mx-12 lg:px-12">
             {HUBS.map((hub) => {
               const slugs = hub.sections.flatMap((sec) => sec.slugs);
               const count = new Set(slugs).size;
               const thumb = hub.image ?? hubThumb(slugs);
               return (
-                <Link key={hub.slug} href={`/${hub.slug}`} className="group block">
+                <Link key={hub.slug} href={`/${hub.slug}`} className="group block w-[268px] shrink-0 sm:w-[320px]">
                   <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-amber-50 ring-1 ring-stone-900/5">
                     {thumb ? (
                       <Image
                         src={thumb}
                         alt=""
                         fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        sizes="320px"
                         className="object-cover transition-transform duration-500 group-hover:scale-[1.06]"
                       />
                     ) : (
@@ -497,11 +499,11 @@ export default function Home() {
                     )}
                     {/* 写真の上に見出しを重ねて、地域の入口だと一目でわかるようにする */}
                     <div className="absolute inset-0 bg-gradient-to-t from-stone-900/75 via-stone-900/10 to-transparent" />
-                    <div className="absolute inset-x-0 bottom-0 p-4">
-                      <p className="text-[17px] font-black leading-snug text-white drop-shadow-sm">
+                    <div className="absolute inset-x-0 bottom-0 p-3.5">
+                      <p className="text-[15px] font-black leading-snug text-white drop-shadow-sm">
                         {hub.emoji} {hub.h1}
                       </p>
-                      <p className="mt-1 text-xs font-bold text-white/80">{count} 篇整理</p>
+                      <p className="mt-0.5 text-[11px] font-bold text-white/80">{count} 篇整理</p>
                     </div>
                   </div>
                 </Link>
@@ -512,7 +514,7 @@ export default function Home() {
       </section>
 
       {/* ------------------------------------------------------- 記事一覧 */}
-      <main className={`${SHELL} pb-20`}>
+      <main className={`${SHELL} pb-16`}>
         <ArticleGrid />
       </main>
 
