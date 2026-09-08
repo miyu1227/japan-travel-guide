@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/takeout-cake";
 const OG_IMAGE = "/takeout-cake/cover.jpg";
@@ -133,8 +134,8 @@ export default function TakeoutCakePage() {
 
         {/* Spot 1: PARIYA */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-1 gap-0.5">
-            <div className="relative aspect-[4/3] bg-stone-100">
+          <div className="photo-strip">
+            <div className="relative bg-stone-100" style={photoStyle("/takeout-cake/pariya-1.jpg")}>
               <Image
                 src="/takeout-cake/pariya-1.jpg"
                 alt="PARIYA 澀谷SCRAMBLE SQUARE店 - 草莓與水蜜桃杯型鮮奶油蛋糕"

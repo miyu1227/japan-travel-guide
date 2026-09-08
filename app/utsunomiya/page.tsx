@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/utsunomiya";
 const OG_IMAGE = "/utsunomiya/wakayama-1.jpg";
@@ -163,9 +164,9 @@ export default function UtsunomiyaPage() {
 
         {/* Spot 1: 若竹の杜 若山農場 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {wakayamaPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="若竹の杜 若山農場 - 宇都宮觀光推薦" fill sizes="33vw" className="object-cover" priority={i === 0} />
               </div>
             ))}
@@ -214,9 +215,9 @@ export default function UtsunomiyaPage() {
 
         {/* Spot 2: 餃子通り */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {gyozaPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="宇都宮餃子通 - 宇都宮觀光推薦" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
@@ -269,9 +270,9 @@ export default function UtsunomiyaPage() {
 
         {/* Spot 3: 宇都宮二荒山神社 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {shrinePhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="宇都宮二荒山神社 - 宇都宮觀光推薦" fill sizes="33vw" className="object-cover" />
               </div>
             ))}

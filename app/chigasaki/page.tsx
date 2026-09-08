@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/chigasaki";
 const OG_IMAGE = "/chigasaki/cover.jpg";
@@ -161,9 +162,9 @@ export default function ChigasakiPage() {
 
         {/* Spot 1: ヘッドランドビーチ */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {headlandPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="茅崎公園 ヘッドランドビーチ - 湘南海灘野餐"
@@ -230,16 +231,16 @@ export default function ChigasakiPage() {
 
         {/* Spot 2: tuckshop */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {tuckshopPhotos.slice(0, 3).map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="tuckshop 茅崎 - 海邊咖啡站" fill sizes="33vw" className="object-cover" />
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {tuckshopPhotos.slice(3, 5).map((src, i) => (
-              <div key={i} className="relative aspect-[3/2] bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="tuckshop 茅崎 - 咖啡與司康" fill sizes="50vw" className="object-cover" />
               </div>
             ))}

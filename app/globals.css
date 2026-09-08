@@ -169,3 +169,30 @@ body:has(.biz-root) {
   /* 基本情報が詰まって見えたので行間を空ける */
   article .space-y-1 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.4rem; }
 }
+
+/* 店カードの写真。
+   スマホ: 従来どおり、等幅の正方形に切って並べる（幅が狭いので、
+   縦横比のまま並べると3枚で高さ88pxまで潰れてしまう）。
+   PC(640px〜): 1行の高さを揃えたまま、幅を写真の縦横比に比例して配る。
+   枠の縦横比＝写真の縦横比になるので、切り取りがゼロになる。
+   比率は lib/photoDims.json の実寸から photoStyle() が CSS変数で渡す。 */
+.photo-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 2px;
+}
+.photo-strip > * {
+  aspect-ratio: 1 / 1;
+}
+
+@media (min-width: 640px) {
+  .photo-strip {
+    display: flex;
+    align-items: stretch;
+  }
+  .photo-strip > * {
+    aspect-ratio: var(--ar);
+    flex: var(--grow) 1 0;
+    min-width: 0;
+  }
+}

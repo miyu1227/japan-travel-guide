@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const KLOOK_ROKKO_NIGHT =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339868&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F88299-mtrokko-night-view-day-tour-kobe-osaka";
@@ -139,9 +140,9 @@ export default function RokkoArimaPage() {
 
         {/* Spot 1: 六甲山 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {rokkoPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-[4/3] bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="六甲山健行 - 神戶觀光推薦" fill sizes="50vw" className="object-cover" priority={i === 0} />
               </div>
             ))}
@@ -179,8 +180,8 @@ export default function RokkoArimaPage() {
 
         {/* Spot 2: ロープウェイ */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-1 gap-0.5">
-            <div className="relative aspect-[4/3] bg-stone-100">
+          <div className="photo-strip">
+            <div className="relative bg-stone-100" style={photoStyle(ropewayPhotos[0])}>
               <Image src={ropewayPhotos[0]} alt="六甲有馬纜車 - 神戶觀光推薦" fill sizes="100vw" className="object-cover" />
             </div>
           </div>
@@ -211,8 +212,8 @@ export default function RokkoArimaPage() {
 
         {/* Spot 3: arima gelateria Stagione */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-1 gap-0.5">
-            <div className="relative aspect-[4/3] bg-stone-100">
+          <div className="photo-strip">
+            <div className="relative bg-stone-100" style={photoStyle(gelatoPhotos[0])}>
               <Image src={gelatoPhotos[0]} alt="arima gelateria Stagione - 有馬溫泉推薦" fill sizes="100vw" className="object-cover" />
             </div>
           </div>

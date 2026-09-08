@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/skytree";
 const OG_IMAGE = "/skytree/cover.png";
@@ -232,9 +233,9 @@ export default function SkytreePage() {
 
         {/* 訪問写真 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {["/skytree/view-1.jpg", "/skytree/view-2.jpg"].map((src, i) => (
-              <div key={src} className="relative aspect-square bg-stone-100">
+              <div key={src} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="東京晴空塔展望台夜景"
@@ -376,7 +377,7 @@ export default function SkytreePage() {
             rel="noopener noreferrer sponsored"
             className="block relative bg-gradient-to-br from-pink-100 via-amber-50 to-sky-100 border-2 border-pink-200/80 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all"
           >
-            <div className="relative aspect-[2/1] bg-stone-100">
+            <div className="relative bg-stone-100" style={photoStyle("/skytree/ticket.png")}>
               <Image
                 src="/skytree/ticket.png"
                 alt="東京晴空塔展望台門票（Klook）"

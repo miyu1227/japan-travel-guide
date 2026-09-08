@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const KLOOK_SHINHOTAKA =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339988&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F106936-alpine-splendor-shinhotaka-ropeway-kamikochi-join-day-bus-tour-takayama";
@@ -211,9 +212,9 @@ export default function KamikochiPage() {
 
         {/* Spot 1: 平湯大滝 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {hirayuPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-[4/3] bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="平湯大瀑布 - 上高地旅行推薦" fill sizes="50vw" className="object-cover" priority={i === 0} />
               </div>
             ))}
@@ -261,9 +262,9 @@ export default function KamikochiPage() {
 
         {/* Spot 2: 奥飛騨ガーデンホテル 焼岳 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {hotelPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="奧飛騨花園飯店燒岳 - 上高地旅行推薦" fill sizes="33vw" className="object-cover" />
               </div>
             ))}
@@ -311,9 +312,9 @@ export default function KamikochiPage() {
 
         {/* Spot 3: 新穂高ロープウェイ */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {ropewayPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="新穂高纜車 - 上高地旅行推薦" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
@@ -391,9 +392,9 @@ export default function KamikochiPage() {
 
         {/* Spot 4: 河童橋 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {kappaPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="河童橋 - 上高地旅行推薦" fill sizes="33vw" className="object-cover" />
               </div>
             ))}

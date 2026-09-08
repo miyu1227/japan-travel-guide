@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/noge";
 const OG_IMAGE = "/noge/cover.jpg";
@@ -166,9 +167,9 @@ export default function NogePage() {
 
         {/* Spot 1: AM:PM */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {ampmPhotos.slice(0, 3).map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="ネオ町中華 AM:PM 野毛・櫻木町 - 橫濱野毛續攤推薦"
@@ -180,9 +181,9 @@ export default function NogePage() {
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {ampmPhotos.slice(3, 5).map((src, i) => (
-              <div key={i} className="relative aspect-[3/2] bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="ネオ町中華 AM:PM - 空心菜與口水雞" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
@@ -243,9 +244,9 @@ export default function NogePage() {
 
         {/* Spot 2: スシマヅメ */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {madumePhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="大眾壽司酒場 スシマヅメ 野毛本店 - 橫濱野毛續攤推薦" fill sizes="33vw" className="object-cover" />
               </div>
             ))}

@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/artbar-tokyo";
 const OG_IMAGE = "/artbar-tokyo/artbar-1.jpg";
@@ -125,9 +126,9 @@ export default function ArtbarTokyoPage() {
         <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京畫畫體驗推薦（推介）・Artbar Tokyo</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {artbarPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="Artbar Tokyo - 東京畫畫體驗推薦"

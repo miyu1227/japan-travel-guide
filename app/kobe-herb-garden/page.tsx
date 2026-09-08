@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const KLOOK_HERB =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339728&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F37865-kobe-nunobiki-herb-gardens-ticket";
@@ -198,9 +199,9 @@ export default function KobeHerbGardenPage() {
         <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-stand">神戶布引香草園・纜車空中花園</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {herbPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="神戶布引香草園 - 神戶景點推薦"

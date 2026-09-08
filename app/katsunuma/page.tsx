@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const KLOOK_KOUSHIEN =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339963&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F491613-meitei-no-yado-hotel-koushien%2F";
@@ -165,7 +166,7 @@ export default function KatsunumaPage() {
 
         {/* 到着 station photo */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="relative aspect-[2/1] bg-stone-100">
+          <div className="relative bg-stone-100" style={photoStyle("/katsunuma/station-1.jpg")}>
             <Image
               src="/katsunuma/station-1.jpg"
               alt="抵達勝沼ぶどう郷駅 - 山梨勝沼一日遊"
@@ -208,16 +209,16 @@ export default function KatsunumaPage() {
 
         {/* Spot 1: 銀月食堂 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {gingetsuPhotos.slice(0, 3).map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="銀月食堂 - 勝沼在地食堂" fill sizes="33vw" className="object-cover" />
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {gingetsuPhotos.slice(3, 5).map((src, i) => (
-              <div key={i} className="relative aspect-[3/2] bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="銀月食堂 - 勝沼在地食堂料理" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
@@ -275,9 +276,9 @@ export default function KatsunumaPage() {
 
         {/* Spot 2: シャトー・メルシャン */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {mercianPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="シャトー・メルシャン勝沼酒莊 - 品酒導覽" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
@@ -335,23 +336,23 @@ export default function KatsunumaPage() {
 
         {/* Spot 3: 銘庭の宿 ホテル甲子園 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {koushienHotelPhotos.slice(0, 3).map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="銘庭の宿 ホテル甲子園 - 石和溫泉住宿" fill sizes="33vw" className="object-cover" />
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {koushienHotelPhotos.slice(3, 5).map((src, i) => (
-              <div key={i} className="relative aspect-[3/2] bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="ホテル甲子園 - 桑拿・室內" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {koushienMealPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="ホテル甲子園 - 會席料理晚餐" fill sizes="33vw" className="object-cover" />
               </div>
             ))}
@@ -434,9 +435,9 @@ export default function KatsunumaPage() {
 
         {/* Spot 4: あすなろ園 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {asunaroPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="あすなろ園 - 山梨採桃體驗" fill sizes="33vw" className="object-cover" />
               </div>
             ))}
@@ -489,9 +490,9 @@ export default function KatsunumaPage() {
 
         {/* Spot 5: 桔梗信玄餅工場 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {shingenPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-[4/3] bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="桔梗信玄餅 - 山梨伴手禮" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
@@ -544,9 +545,9 @@ export default function KatsunumaPage() {
 
         {/* Spot 6: 里の駅 いちのみや */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {ichinomiyaPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="里の駅 いちのみや - 鳥もつ煮＆葡萄汁" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
@@ -599,7 +600,7 @@ export default function KatsunumaPage() {
 
         {/* 帰路：石和溫泉駅 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="relative aspect-[21/9] bg-stone-100">
+          <div className="relative bg-stone-100" style={photoStyle("/katsunuma/isawa-station.jpg")}>
             <Image
               src="/katsunuma/isawa-station.jpg"
               alt="石和溫泉駅 - 山梨勝沼一泊二日回程"

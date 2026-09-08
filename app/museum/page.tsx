@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/museum";
 const OG_IMAGE = "/museum/nact-1.jpg";
@@ -161,9 +162,9 @@ export default function MuseumPage() {
 
         {/* Spot 1: 國立新美術館 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {nactPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="國立新美術館 - 東京美術館推薦"
@@ -228,9 +229,9 @@ export default function MuseumPage() {
 
         {/* Spot 2: 根津美術館 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {nezuPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="根津美術館 - 東京美術館推薦"

@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const KLOOK_CLEMENT_INN =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339930&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F691887-jr-clement-inn-kochi%2F";
@@ -139,9 +140,9 @@ export default function KochiPage() {
 
         {/* Spot 1: にこ淵 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {nikobuchiPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-[4/3] bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="にこ淵 - 高知觀光推薦" fill sizes="50vw" className="object-cover" priority={i === 0} />
               </div>
             ))}
@@ -178,9 +179,9 @@ export default function KochiPage() {
 
         {/* Spot 2: タタキ道場 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {tatakiPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="タタキ道場 - 高知觀光推薦" fill sizes="33vw" className="object-cover" />
               </div>
             ))}
@@ -214,9 +215,9 @@ export default function KochiPage() {
 
         {/* Spot 3: ひろめ市場 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {hiromePhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="ひろめ市場 - 高知觀光推薦" fill sizes="50vw" className="object-cover" />
               </div>
             ))}

@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const KLOOK_INE_TOUR =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339927&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F150458-amanohashidate-iegan-day-trip-iegan-boat-house-iegan-bay-cruise-aman";
@@ -138,9 +139,9 @@ export default function InePage() {
 
         {/* Spot 1: 伊根町 舟屋 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {townPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-[4/3] bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="伊根町舟屋村 - 京都觀光推薦" fill sizes="50vw" className="object-cover" priority={i === 0} />
               </div>
             ))}
@@ -227,9 +228,9 @@ export default function InePage() {
 
         {/* Spot 2: INE CAFE */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {cafePhotos.map((src, i) => (
-              <div key={i} className="relative aspect-[4/3] bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="INE CAFE - 伊根町咖啡推薦" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
@@ -262,8 +263,8 @@ export default function InePage() {
 
         {/* Spot 3: 仁風荘 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-1 gap-0.5">
-            <div className="relative aspect-[4/3] bg-stone-100">
+          <div className="photo-strip">
+            <div className="relative bg-stone-100" style={photoStyle(jinpusoPhotos[0])}>
               <Image src={jinpusoPhotos[0]} alt="仁風荘 - 伊根町住宿推薦" fill sizes="100vw" className="object-cover" />
             </div>
           </div>

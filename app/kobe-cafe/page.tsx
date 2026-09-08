@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/kobe-cafe";
 const OG_IMAGE = "/kobe-cafe/caffarel-3.jpg";
@@ -178,9 +179,9 @@ export default function KobeCafePage() {
 
         {/* Spot 1: フロインドリーブ */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {freundliebPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="フロインドリーブ 生田店 - 神戶咖啡推薦"
@@ -245,9 +246,9 @@ export default function KobeCafePage() {
 
         {/* Spot 2: パンとエスプレッソと異人館 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {panePhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="パンとエスプレッソと異人館 - 神戶咖啡推薦"
@@ -311,9 +312,9 @@ export default function KobeCafePage() {
 
         {/* Spot 3: ケーニヒスクローネ くまポチ邸 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {kumapochiPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="ケーニヒスクローネ くまポチ邸 - 神戶咖啡推薦"
@@ -377,9 +378,9 @@ export default function KobeCafePage() {
 
         {/* Spot 4: Caffarel 神戶北野本店 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {caffarelPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="Caffarel 神戶北野本店 - 神戶咖啡推薦"

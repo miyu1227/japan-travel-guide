@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/koyo";
 const OG_IMAGE = "/koyo/gaien-1.jpg";
@@ -171,9 +172,9 @@ export default function KoyoPage() {
 
         {/* Spot: 神宮外苑銀杏並木 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {gaienPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="神宮外苑銀杏並木 - 東京紅葉推薦"

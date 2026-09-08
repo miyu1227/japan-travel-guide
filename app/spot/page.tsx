@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/spot";
 const OG_IMAGE = "/spot/shinjuku-1.jpg";
@@ -168,9 +169,9 @@ export default function SpotPicnicPage() {
 
         {/* Spot 1: 新宿御苑 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {shinjukuPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="新宿御苑 - 東京野餐推薦"
@@ -234,9 +235,9 @@ export default function SpotPicnicPage() {
 
         {/* Spot 2: 代々木公園 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {yoyogiPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-[4/3] bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="代代木公園 - 東京野餐" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
@@ -288,9 +289,9 @@ export default function SpotPicnicPage() {
 
         {/* Spot 3: 日比谷公園 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {hibiyaPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="日比谷公園 - 東京野餐推薦" fill sizes="50vw" className="object-cover" />
               </div>
             ))}

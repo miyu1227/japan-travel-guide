@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/conrad-osaka";
 const OG_IMAGE = "/conrad-osaka/atmos-1.jpg";
@@ -186,9 +187,9 @@ export default function ConradOsakaPage() {
         <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-stand">康萊德大阪 Atmos Italian Dining</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {photos.map((p, i) => (
-              <div key={p.src} className="relative aspect-square bg-stone-100">
+              <div key={p.src} className="relative bg-stone-100" style={photoStyle(p.src)}>
                 <Image
                   src={p.src}
                   alt={p.alt}

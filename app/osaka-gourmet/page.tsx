@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/osaka-gourmet";
 const OG_IMAGE = "/osaka-gourmet/teppan-1.jpg";
@@ -140,9 +141,9 @@ export default function OsakaGourmetPage() {
 
         {/* Spot 1: 鉄板屋な。 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {teppanPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="鉄板屋な。 - 大阪美食推薦" fill sizes="50vw" className="object-cover" priority={i === 0} />
               </div>
             ))}
@@ -196,9 +197,9 @@ export default function OsakaGourmetPage() {
 
         {/* Spot 2: 酒場ビリー */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {billiePhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="酒場ビリー - 大阪美食推薦" fill sizes="50vw" className="object-cover" />
               </div>
             ))}

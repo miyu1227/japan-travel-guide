@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/shibuya-cafe";
 const OG_IMAGE = "/shibuya-cafe/recoco-1.jpg";
@@ -125,9 +126,9 @@ export default function ShibuyaCafePage() {
 
         {/* Spot 1: RECOCO */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {recocoPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="RECOCO レココ渋谷 - 澀谷黑膠唱片咖啡廳推薦"

@@ -4,6 +4,7 @@ import Link from "next/link";
 import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/sanda-soba";
 const OG_IMAGE = "/sanda-soba/soba1-1.jpg";
@@ -165,9 +166,9 @@ export default function SandaSobaPage() {
         <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">兵庫三田美食推薦</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {photos.map((src, i) => (
-              <div key={i} className="relative aspect-[4/3] bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="蕎麦いち - 兵庫三田蕎麥麵推薦"

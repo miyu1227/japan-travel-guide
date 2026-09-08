@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-yakiniku";
 const OG_IMAGE = "/tokyo-yakiniku/cover.jpg";
@@ -139,9 +140,9 @@ export default function TokyoYakinikuPage() {
 
         {/* Spot 1: 叙々苑 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {jojoenPhotos.map((photo, i) => (
-              <div key={photo.src} className="relative aspect-square bg-stone-100">
+              <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
                 <Image
                   src={photo.src}
                   alt={photo.alt}

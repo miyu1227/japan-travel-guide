@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/futakotamagawa";
 const OG_IMAGE = "/futakotamagawa/sesame-1.jpg";
@@ -193,9 +194,9 @@ export default function FutakotamagawaPage() {
 
         {/* Spot 1: SESAME STREET MARKET */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {sesamePhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="セサミストリートマーケット 玉川高島屋S.C店 - 二子玉川美食推薦"
@@ -270,8 +271,8 @@ export default function FutakotamagawaPage() {
 
         {/* Spot 2: STEAMAN */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-1 gap-0.5">
-            <div className="relative aspect-[4/3] bg-stone-100">
+          <div className="photo-strip">
+            <div className="relative bg-stone-100" style={photoStyle("/futakotamagawa/steaman-1.jpg")}>
               <Image src="/futakotamagawa/steaman-1.jpg" alt="中華ビストロ STEAMAN - 二子玉川美食推薦" fill sizes="100vw" className="object-cover" priority />
             </div>
           </div>
@@ -318,8 +319,8 @@ export default function FutakotamagawaPage() {
 
         {/* Spot 3: GRANNY SMITH */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-1 gap-0.5">
-            <div className="relative aspect-[4/3] bg-stone-100">
+          <div className="photo-strip">
+            <div className="relative bg-stone-100" style={photoStyle("/futakotamagawa/granny-1.jpg")}>
               <Image src="/futakotamagawa/granny-1.jpg" alt="GRANNY SMITH APPLE PIE & COFFEE - 二子玉川美食推薦" fill sizes="100vw" className="object-cover" />
             </div>
           </div>
@@ -366,8 +367,8 @@ export default function FutakotamagawaPage() {
 
         {/* Spot 4: ぶたこたまがわ */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-1 gap-0.5">
-            <div className="relative aspect-[4/3] bg-stone-100">
+          <div className="photo-strip">
+            <div className="relative bg-stone-100" style={photoStyle("/futakotamagawa/butako-1.jpg")}>
               <Image src="/futakotamagawa/butako-1.jpg" alt="コリアンキッチン ぶたこたまがわ - 二子玉川美食推薦" fill sizes="100vw" className="object-cover" />
             </div>
           </div>
@@ -414,9 +415,9 @@ export default function FutakotamagawaPage() {
 
         {/* Spot 5: WOODBERRY COFFEE */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {woodberryPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="WOODBERRY COFFEE 玉川高島屋S.C.店 - 二子玉川精品咖啡" fill sizes="50vw" className="object-cover" />
               </div>
             ))}

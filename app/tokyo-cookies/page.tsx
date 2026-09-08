@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-cookies";
 const OG_IMAGE = "/tokyo-cookies/kayanuma-1.jpg";
@@ -118,8 +119,8 @@ export default function TokyoCookiesPage() {
         <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京伴手禮推薦（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-1 gap-0.5">
-            <div className="relative aspect-[4/3] bg-stone-100">
+          <div className="photo-strip">
+            <div className="relative bg-stone-100" style={photoStyle("/tokyo-cookies/kayanuma-1.jpg")}>
               <Image
                 src="/tokyo-cookies/kayanuma-1.jpg"
                 alt="ツッカベッカライ カヤヌマ - 東京伴手禮推薦"

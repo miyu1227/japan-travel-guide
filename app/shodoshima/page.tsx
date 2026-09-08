@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/shodoshima";
 const OG_IMAGE = "/shodoshima/olive-1.jpg";
@@ -213,9 +214,9 @@ export default function ShodoshimaPage() {
 
         {/* Spot 1: ジャンボフェリー */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {ferryPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="小豆島渡輪（ジャンボフェリー）- 小豆島景點推薦"
@@ -293,16 +294,16 @@ export default function ShodoshimaPage() {
 
         {/* Spot 2: 二十四の瞳映画村 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {eigamuraPhotos.slice(0, 3).map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="二十四之瞳電影村 - 小豆島景點推薦" fill sizes="33vw" className="object-cover" />
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {eigamuraPhotos.slice(3, 5).map((src, i) => (
-              <div key={i} className="relative aspect-[3/2] bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="二十四之瞳電影村 - 小豆島景點推薦" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
@@ -370,9 +371,9 @@ export default function ShodoshimaPage() {
 
         {/* Spot 3: 手打うどん 三太郎 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {santaroPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="手打烏龍麵 三太郎 - 小豆島美食推薦" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
@@ -430,9 +431,9 @@ export default function ShodoshimaPage() {
 
         {/* Spot 4: MINORI GELATO */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {minoriPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="MINORI GELATO - 小豆島美食推薦" fill sizes="50vw" className="object-cover" />
               </div>
             ))}
@@ -491,9 +492,9 @@ export default function ShodoshimaPage() {
 
         {/* Spot 5: オリーブ公園 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {olivePhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="道之驛 小豆島橄欖公園 - 小豆島景點推薦" fill sizes="33vw" className="object-cover" />
               </div>
             ))}
@@ -551,9 +552,9 @@ export default function ShodoshimaPage() {
 
         {/* Spot 6: マルキン醤油記念館 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {marukinPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="丸金醬油紀念館 - 小豆島景點推薦" fill sizes="50vw" className="object-cover" />
               </div>
             ))}

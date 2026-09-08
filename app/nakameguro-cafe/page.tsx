@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/nakameguro-cafe";
 const OG_IMAGE = "/nakameguro-cafe/starbucks-1.jpg";
@@ -165,9 +166,9 @@ export default function NakameguroCafePage() {
         <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">中目黑咖啡廳推薦・2選（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {photos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="STARBUCKS RESERVE ROASTERY TOKYO - 中目黑咖啡廳推薦"
@@ -244,9 +245,9 @@ export default function NakameguroCafePage() {
 
         {/* Spot 2: STREAMER COFFEE COMPANY */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-3 gap-0.5">
+          <div className="photo-strip">
             {streamerPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="STREAMER COFFEE COMPANY NAKAMEGURO - 中目黑咖啡廳推薦"

@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/showa-kinen-park";
 const OG_IMAGE = "/showa-kinen-park/park-1.jpg";
@@ -141,9 +142,9 @@ export default function ShowaKinenParkPage() {
         <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京散步景點推薦（推介）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {photos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="昭和紀念公園 - 東京立川散步推薦"

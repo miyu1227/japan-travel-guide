@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/utsunomiya-gyoza";
 const OG_IMAGE = "/utsunomiya-gyoza/minmin-1.jpg";
@@ -146,9 +147,9 @@ export default function UtsunomiyaGyozaPage() {
 
         {/* Shop 1: みんみん */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {minminPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="宇都宮みんみん本店 - 宇都宮餃子推薦" fill sizes="50vw" className="object-cover" priority={i === 0} />
               </div>
             ))}
@@ -201,9 +202,9 @@ export default function UtsunomiyaGyozaPage() {
 
         {/* Shop 2: 正嗣 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {masashiPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image src={src} alt="餃子專門店 正嗣 宮島町本店 - 宇都宮餃子推薦" fill sizes="50vw" className="object-cover" />
               </div>
             ))}

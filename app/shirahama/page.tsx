@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
+import { photoStyle } from "@/lib/photoDims";
 
 const KLOOK_TORETORE =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339829&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F153493-conan-themed-niche-wakayama-one-day-tour-takashi-station-toretore";
@@ -186,9 +187,9 @@ export default function ShirahamaPage() {
 
         {/* Spot 1: Adventure World */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {adventurePhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="Adventure World 冒險大世界 - 和歌山白浜景點推薦"
@@ -253,9 +254,9 @@ export default function ShirahamaPage() {
 
         {/* Spot 2: In the Outdoor */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {outdoorPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="In the Outdoor 白浜志原海岸 - 和歌山白浜豪華露營"
@@ -319,9 +320,9 @@ export default function ShirahamaPage() {
 
         {/* Spot 3: Kagerou Café */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {kagerouPhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="Kagerou Café かげろうカフェ - 和歌山白浜海景咖啡"
@@ -395,9 +396,9 @@ export default function ShirahamaPage() {
 
         {/* Spot 4: とれとれ市場 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {toretorePhotos.map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="とれとれ市場 - 和歌山白浜海鮮BBQ"

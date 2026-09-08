@@ -243,7 +243,7 @@ export default function KiyosumiCafePage() {
         <div className="space-y-8 mb-8">
           {shops.map((shop) => (
             <section key={shop.id} className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden card-split">
-              <div className="grid grid-cols-2 gap-0.5">
+              <div className="photo-strip">
                 {shop.photos.map((p, i) => (
                   <div
                     key={p.src}

@@ -5,6 +5,7 @@ import PrepBanner from "../components/PrepBanner";
 import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
+import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/mister-donut";
 const OG_IMAGE = "/mister-donut/motchurin-1.jpg";
@@ -119,9 +120,9 @@ export default function MisterDonutPage() {
 
         {/* 秋：さつまいもド */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="grid grid-cols-2 gap-0.5">
+          <div className="photo-strip">
             {["/mister-donut/satsumaimo-1.jpg", "/mister-donut/satsumaimo-2.jpg"].map((src, i) => (
-              <div key={i} className="relative aspect-square bg-stone-100">
+              <div key={i} className="relative bg-stone-100" style={photoStyle(src)}>
                 <Image
                   src={src}
                   alt="Mister Donut さつまいもド - 秋季期間限定甜甜圈"
@@ -190,8 +191,8 @@ export default function MisterDonutPage() {
         </section>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="grid grid-cols-1 gap-0.5">
-            <div className="relative aspect-[4/3] bg-stone-100">
+          <div className="photo-strip">
+            <div className="relative bg-stone-100" style={photoStyle("/mister-donut/motchurin-1.jpg")}>
               <Image src="/mister-donut/motchurin-1.jpg" alt="Mister Donut もっちゅりん - 期間限定推薦" fill sizes="100vw" className="object-cover" />
             </div>
           </div>
