@@ -11,6 +11,9 @@ export type Hub = {
   /** パンくず用の短い名前 */
   crumb: string;
   emoji: string;
+  /** トップの「想去哪裡？」カードに使う代表写真。所属記事の1枚目だと
+      地味な写真や他ハブとの重複が出るので、ハブごとに明示する。 */
+  image?: string;
   badge: string;
   intro: string[];
   /** 選び方ガイド */
@@ -28,6 +31,7 @@ export const HUBS: Hub[] = [
     h1: "東京咖啡廳推薦8選",
     crumb: "東京咖啡廳推薦",
     emoji: "☕",
+    image: "/nakameguro-cafe/starbucks-1.jpg",
     badge: "☕ 咖啡廳總覽",
     intro: [
       "東京的咖啡廳多到會選擇障礙，但其實只要先決定「今天要走哪一區」，就會輕鬆很多☕ 因為東京的咖啡文化是<strong>依街區長出不同性格</strong>的——清澄白河是烘焙工廠聚集的咖啡聖地，代官山・中目黑走時尚甜點路線，下北澤則是二手衣店旁的個性小店。",
@@ -82,6 +86,7 @@ export const HUBS: Hub[] = [
     h1: "東京美食推薦總整理",
     crumb: "東京美食推薦",
     emoji: "🍜",
+    image: "/tokyo-yakiniku/cover.jpg",
     badge: "🍜 美食總覽",
     intro: [
       "東京的美食情報太多，反而不知道從哪吃起🍜 台灣朋友問「必吃」、香港朋友問「必食」，其實想知道的是同一件事：哪幾間值得排。這一頁把我們<strong>實際吃過</strong>的東京美食依「想吃什麼」分類整理，包含帶回飯店或帶回台灣・香港的伴手禮。",
@@ -132,6 +137,7 @@ export const HUBS: Hub[] = [
     h1: "東京景點推薦10選",
     crumb: "東京景點推薦",
     emoji: "🗼",
+    image: "/tokyo-tower/tower-1.jpg",
     badge: "🗼 景點總覽",
     intro: [
       "第一次來東京，行程通常是「地標＋公園＋一個體驗」的組合🗼 這一頁把東京的必去景點依<strong>類型</strong>整理，方便對照著排行程。",
@@ -194,6 +200,7 @@ export const HUBS: Hub[] = [
     h1: "東京近郊一日遊推薦",
     crumb: "東京近郊一日遊",
     emoji: "🚃",
+    image: "/chigasaki/cover.jpg",
     badge: "🚃 近郊小旅行",
     intro: [
       "在東京待5天以上的話，中間安排一天往郊外跑，整趟旅行的印象會完全不一樣🚃 從新宿或東京站出發，<strong>1〜2小時內</strong>就能到溫泉、海邊、酒莊和餃子之都。",
@@ -239,6 +246,7 @@ export const HUBS: Hub[] = [
     h1: "神戶一日遊推薦",
     crumb: "神戶一日遊",
     emoji: "⛲",
+    image: "/kobe-herb-garden/cover.jpg",
     badge: "⛲ 神戶總覽",
     intro: [
       "神戶是關西最好安排的城市之一⛲ <strong>大阪梅田到三宮只要約30分鐘</strong>，山、海、溫泉、洋菓子全都擠在同一個範圍裡，一天就能玩得很滿。",
@@ -293,6 +301,7 @@ export const HUBS: Hub[] = [
     h1: "大阪必食推介・美食推薦",
     crumb: "大阪必食",
     emoji: "🍻",
+    image: "/osaka-gourmet/teppan-1.jpg",
     badge: "🍻 大阪總覽",
     intro: [
       "大阪的觀光美食集中在道頓堀，但<strong>在地人自己吃的店多半在梅田・福島一帶</strong>🍻 這一頁整理我們實際吃過、不用排一小時也吃得到的大阪店。",
@@ -338,6 +347,7 @@ export const HUBS: Hub[] = [
     h1: "關西自由行推薦",
     crumb: "關西自由行",
     emoji: "🏯",
+    image: "/kansai-ramen/tsujita-2.jpg",
     badge: "🏯 關西總覽",
     intro: [
       "關西的優點是<strong>移動距離短</strong>🏯 大阪梅田到神戶三宮只要約30分鐘，所以「白天神戶、晚上大阪」這種排法完全可行。",

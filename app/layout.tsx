@@ -3,6 +3,7 @@ import { Fredoka, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import SiteFooter from "./components/SiteFooter";
+import SiteHeader from "./components/SiteHeader";
 import TravelOnly from "./components/TravelOnly";
 
 const geistSans = Geist({
@@ -162,6 +163,10 @@ export default function RootLayout({
   />
 </head>
       <body className="min-h-full flex flex-col">
+        {/* /business は独自ヘッダーを持つので、本体のヘッダーは出さない */}
+        <TravelOnly>
+          <SiteHeader />
+        </TravelOnly>
         <div className="flex-1">{children}</div>
         {/* /business は独自フッターを持つので、本体のフッターは出さない */}
         <TravelOnly>

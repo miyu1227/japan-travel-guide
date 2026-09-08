@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ARTICLE_BY_SLUG, picks, type PickItem } from "@/lib/articles";
+import { ARTICLE_BY_SLUG, ARTICLES, picks, type PickItem } from "@/lib/articles";
 import { HUBS } from "@/lib/hubs";
 import HeroArt, { HeroPetals } from "./components/HeroArt";
 
@@ -20,20 +20,26 @@ type Category = {
   labelZh: string;
   /** アイコンタイルの淡い面 */
   tint: string;
-  hasAreaFilter: boolean;
+  /** カード左上に置く分類ラベルの色 */
+  chip: string;
 };
 
 const categories: Category[] = [
-  { id: "ramen", icon: "🍽️", label: "Gourmet", labelZh: "美食", tint: "bg-red-50 text-red-500", hasAreaFilter: true },
-  { id: "snacks", icon: "🍘", label: "Snacks", labelZh: "零食伴手禮", tint: "bg-orange-50 text-orange-500", hasAreaFilter: false },
-  { id: "cafe", icon: "☕", label: "Cafés", labelZh: "咖啡廳", tint: "bg-pink-50 text-pink-500", hasAreaFilter: true },
-  { id: "spot", icon: "📍", label: "Spots", labelZh: "景點", tint: "bg-blue-50 text-blue-500", hasAreaFilter: true },
-  { id: "prep", icon: "🎒", label: "Travel Prep", labelZh: "出發前準備", tint: "bg-amber-50 text-amber-600", hasAreaFilter: false },
+  { id: "ramen", icon: "🍽️", label: "Gourmet", labelZh: "美食", tint: "bg-red-50 text-red-500", chip: "bg-red-500 text-white" },
+  { id: "snacks", icon: "🍘", label: "Snacks", labelZh: "零食伴手禮", tint: "bg-orange-50 text-orange-500", chip: "bg-orange-500 text-white" },
+  { id: "cafe", icon: "☕", label: "Cafés", labelZh: "咖啡廳", tint: "bg-pink-50 text-pink-500", chip: "bg-pink-500 text-white" },
+  { id: "spot", icon: "📍", label: "Spots", labelZh: "景點", tint: "bg-blue-50 text-blue-500", chip: "bg-blue-500 text-white" },
+  { id: "prep", icon: "🎒", label: "Travel Prep", labelZh: "出發前準備", tint: "bg-amber-50 text-amber-600", chip: "bg-amber-500 text-white" },
 ];
 
-const areas = ["全部", "東京", "大阪", "兵庫", "北海道", "四國", "其他"];
+const CAT_BY_ID: Record<string, Category> = Object.fromEntries(categories.map((c) => [c.id, c]));
 
-const INITIAL_VISIBLE = 8;
+/** 全記事を新しい順に1本の配列へ。トップは分類ごとの章立てをやめて、これを1グリッドで出す。 */
+const ALL_ARTICLES: PickItem[] = [...ARTICLES]
+  .sort((a, b) => (a.published < b.published ? 1 : a.published > b.published ? -1 : 0))
+  .map((a) => ({ ...a, href: `/${a.slug}` }));
+
+const INITIAL_VISIBLE = 12;
 
 const HOT_KEYWORDS = [
   { href: "/taiwan-japan-guide", label: "台灣飛日本" },
@@ -83,7 +89,8 @@ function hubThumb(slugs: string[]): string | undefined {
 
 /* ---------------------------------------------------------------- カード */
 
-function ArticleCard({ item, visible, tint }: { item: PickItem; visible: boolean; tint: string }) {
+function ArticleCard({ item, visible }: { item: PickItem; visible: boolean }) {
+  const cat = CAT_BY_ID[item.category];
   return (
     <Link href={item.href} className={`${visible ? "block" : "hidden"} group`}>
       <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-stone-100 ring-1 ring-stone-900/5">
@@ -96,13 +103,17 @@ function ArticleCard({ item, visible, tint }: { item: PickItem; visible: boolean
             className="object-cover transition-transform duration-500 group-hover:scale-[1.06]"
           />
         ) : (
-          <div className={`flex h-full w-full items-center justify-center text-5xl ${tint}`}>{item.emoji}</div>
+          <div className={`flex h-full w-full items-center justify-center text-5xl ${cat?.tint ?? ""}`}>{item.emoji}</div>
         )}
-        <span className="absolute left-2.5 top-2.5 rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-bold text-stone-600 shadow-sm">
+        {/* カテゴリで章立てせず1グリッドに混ぜるので、どの種類の記事かはカードで示す */}
+        <span className={`absolute left-2.5 top-2.5 rounded-full px-2.5 py-1 text-[11px] font-bold ${cat?.chip ?? "bg-white/95 text-stone-600"}`}>
+          {cat?.labelZh}
+        </span>
+        <span className="absolute right-2.5 top-2.5 rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-bold text-stone-600 shadow-sm">
           {item.tag}
         </span>
         {item.sponsored && (
-          <span className="absolute right-2.5 top-2.5 rounded-full bg-stone-900/85 px-2 py-1 text-[10px] font-bold tracking-wide text-white">
+          <span className="absolute bottom-2.5 right-2.5 rounded-full bg-stone-900/85 px-2 py-1 text-[10px] font-bold tracking-wide text-white">
             PR
           </span>
         )}
@@ -115,93 +126,100 @@ function ArticleCard({ item, visible, tint }: { item: PickItem; visible: boolean
   );
 }
 
-/* ------------------------------------------------------ カテゴリセクション */
-
-function CategorySection({ cat }: { cat: Category }) {
-  const items = picks[cat.id] ?? [];
-  const [selected, setSelected] = useState("全部");
+function ArticleGrid() {
+  const [cat, setCat] = useState<string>("all");
   const [expanded, setExpanded] = useState(false);
 
-  const filtered =
-    cat.hasAreaFilter && selected !== "全部" ? items.filter((item) => item.areas.includes(selected)) : items;
+  // ヘッダーの「美食」などから /#cafe で飛んできたとき、その分類を選んだ状態で開く。
+  useEffect(() => {
+    const apply = () => {
+      const id = window.location.hash.replace("#", "");
+      if (id && categories.some((c) => c.id === id)) {
+        setCat(id);
+        setExpanded(false);
+      }
+    };
+    apply();
+    window.addEventListener("hashchange", apply);
+    return () => window.removeEventListener("hashchange", apply);
+  }, []);
+
+  const filtered = cat === "all" ? ALL_ARTICLES : ALL_ARTICLES.filter((a) => a.category === cat);
   const hasMore = filtered.length > INITIAL_VISIBLE;
 
   // SEO: 折りたたみ分も初期HTMLに残す。表示だけ hidden で切る。
   const visibleHrefs = new Set(
-    filtered.slice(0, expanded ? filtered.length : INITIAL_VISIBLE).map((item) => item.href)
+    filtered.slice(0, expanded ? filtered.length : INITIAL_VISIBLE).map((a) => a.href)
   );
 
+  const tabs = [
+    { id: "all", label: "全部", count: ALL_ARTICLES.length },
+    ...categories.map((c) => ({ id: c.id, label: c.labelZh, count: (picks[c.id] ?? []).length })),
+  ];
+
   return (
-    <section id={cat.id} className="scroll-mt-24">
+    <section id="articles" className="scroll-mt-24">
+      {/* 分類ごとに章立てせず、1つのグリッドに新しい順で混ぜる。
+          章に分けると3件の「零食伴手禮」と24件の「景點」が同じ重みで並んで読みにくかった。 */}
       <div className="mb-7 flex flex-wrap items-end justify-between gap-x-8 gap-y-4 border-b border-stone-200 pb-4">
-        <div className="flex items-center gap-3.5">
-          <span className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl text-2xl ${cat.tint}`}>
-            {cat.icon}
-          </span>
-          <div>
-            <h2 className="text-2xl font-black tracking-tight text-stone-900 sm:text-[28px]">{cat.labelZh}</h2>
-            <p className="mt-0.5 text-[11px] font-bold uppercase tracking-[0.2em] text-stone-400">
-              {cat.label} ・ {items.length} 篇
-            </p>
-          </div>
+        <div>
+          <h2 className="text-2xl font-black tracking-tight text-stone-900 sm:text-[28px]">全部文章</h2>
+          <p className="mt-0.5 text-[11px] font-bold uppercase tracking-[0.2em] text-stone-400">
+            All articles ・ {ALL_ARTICLES.length} 篇・新的在前
+          </p>
         </div>
 
-        {cat.hasAreaFilter && (
-          <div className="scrollbar-hide -mb-4 flex max-w-full gap-1 overflow-x-auto">
-            {areas.map((area) => (
-              <button
-                key={area}
-                onClick={() => {
-                  setSelected(area);
-                  setExpanded(false);
-                }}
-                className={`shrink-0 border-b-2 px-3 pb-3.5 text-sm font-bold transition-colors ${
-                  selected === area
-                    ? "border-stone-900 text-stone-900"
-                    : "border-transparent text-stone-400 hover:text-stone-700"
-                }`}
-              >
-                {area}
-              </button>
-            ))}
-          </div>
-        )}
+        <div className="scrollbar-hide -mb-4 flex max-w-full gap-1 overflow-x-auto">
+          {tabs.map((t) => (
+            <button
+              key={t.id}
+              onClick={() => {
+                setCat(t.id);
+                setExpanded(false);
+              }}
+              className={`shrink-0 border-b-2 px-3 pb-3.5 text-sm font-bold transition-colors ${
+                cat === t.id
+                  ? "border-stone-900 text-stone-900"
+                  : "border-transparent text-stone-400 hover:text-stone-700"
+              }`}
+            >
+              {t.label}
+              <span className="ml-1 text-[11px] font-bold text-stone-300">{t.count}</span>
+            </button>
+          ))}
+        </div>
       </div>
 
-      {filtered.length === 0 ? (
-        <div className="rounded-2xl border border-dashed border-stone-200 bg-stone-50 p-10 text-center text-stone-400">
-          <div className="mb-2 text-3xl">🐣</div>
-          <p className="text-sm">近期更新中⋯</p>
-        </div>
-      ) : (
-        <>
-          <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-3 xl:grid-cols-4">
-            {items.map((item) => (
-              <ArticleCard key={item.href} item={item} visible={visibleHrefs.has(item.href)} tint={cat.tint} />
-            ))}
-          </div>
+      {/* ヘッダーのナビが /#ramen などで飛んでくる先。位置はグリッドの頭に揃える。 */}
+      {categories.map((c) => (
+        <span key={c.id} id={c.id} className="block h-0 scroll-mt-28" aria-hidden="true" />
+      ))}
 
-          {hasMore && (
-            <div className="mt-9 flex justify-center">
-              <button
-                onClick={() => setExpanded(!expanded)}
-                className="group inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white px-7 py-3 text-sm font-bold text-stone-700 transition-all hover:border-stone-900 hover:bg-stone-900 hover:text-white"
-              >
-                {expanded ? (
-                  <>
-                    <span>收起</span>
-                    <span className="transition-transform group-hover:-translate-y-0.5">▲</span>
-                  </>
-                ) : (
-                  <>
-                    <span>還有 {filtered.length - INITIAL_VISIBLE} 篇{cat.labelZh}</span>
-                    <span className="transition-transform group-hover:translate-y-0.5">▼</span>
-                  </>
-                )}
-              </button>
-            </div>
-          )}
-        </>
+      <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-3 xl:grid-cols-4">
+        {ALL_ARTICLES.map((item) => (
+          <ArticleCard key={item.href} item={item} visible={visibleHrefs.has(item.href)} />
+        ))}
+      </div>
+
+      {hasMore && (
+        <div className="mt-9 flex justify-center">
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="group inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white px-7 py-3 text-sm font-bold text-stone-700 transition-all hover:border-stone-900 hover:bg-stone-900 hover:text-white"
+          >
+            {expanded ? (
+              <>
+                <span>收起</span>
+                <span className="transition-transform group-hover:-translate-y-0.5">▲</span>
+              </>
+            ) : (
+              <>
+                <span>還有 {filtered.length - INITIAL_VISIBLE} 篇</span>
+                <span className="transition-transform group-hover:translate-y-0.5">▼</span>
+              </>
+            )}
+          </button>
+        </div>
       )}
     </section>
   );
@@ -212,58 +230,6 @@ function CategorySection({ cat }: { cat: Category }) {
 export default function Home() {
   return (
     <div className="min-h-screen bg-white font-sans text-stone-800">
-      {/* ------------------------------------------------------- Header */}
-      <header className="sticky top-0 z-50 border-b border-stone-200/80 bg-white/90 backdrop-blur-md">
-        <div className={`${SHELL} flex h-16 items-center justify-between gap-6`}>
-          <Link href="/" className="flex shrink-0 items-center gap-2.5">
-            <span className="relative block h-9 w-9 overflow-hidden rounded-full bg-amber-50 ring-1 ring-amber-100">
-              <Image src="/poyapiyo-flag.png" alt="" fill sizes="36px" className="object-contain p-0.5" />
-            </span>
-            <span className="font-brand text-[18px] font-bold tracking-tight text-stone-900">Japan Trip Picks</span>
-          </Link>
-
-          <nav className="hidden items-center gap-0.5 lg:flex">
-            {categories.map((cat) => (
-              <a
-                key={cat.id}
-                href={`#${cat.id}`}
-                className="rounded-full px-3.5 py-2 text-sm font-bold text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900"
-              >
-                {cat.labelZh}
-              </a>
-            ))}
-            <a
-              href="#hubs"
-              className="rounded-full px-3.5 py-2 text-sm font-bold text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900"
-            >
-              主題總覽
-            </a>
-          </nav>
-
-          <span className="hidden shrink-0 items-center gap-1.5 rounded-full border border-amber-200 bg-amber-50 px-3 py-1.5 text-xs font-bold text-amber-800 sm:flex">
-            🇯🇵 台灣・香港專屬
-          </span>
-        </div>
-
-        {/* スマホはヘッダーにナビが入らないので、下段にカテゴリを出す */}
-        <div className="border-t border-stone-100 lg:hidden">
-          <div className={`${SHELL} scrollbar-hide flex gap-2 overflow-x-auto py-2.5`}>
-            {categories.map((cat) => (
-              <a
-                key={cat.id}
-                href={`#${cat.id}`}
-                className={`shrink-0 rounded-full px-3.5 py-1.5 text-xs font-bold ${cat.tint}`}
-              >
-                {cat.icon} {cat.labelZh}
-              </a>
-            ))}
-            <a href="#hubs" className="shrink-0 rounded-full bg-stone-100 px-3.5 py-1.5 text-xs font-bold text-stone-600">
-              🧭 主題總覽
-            </a>
-          </div>
-        </div>
-      </header>
-
       {/* --------------------------------------------------------- Hero */}
       {/* 案A「スタンプ帳」。ぽやぴよ（公式画像）を日本モチーフのステッカーで囲む。 */}
       <section className="relative overflow-hidden border-b border-amber-100 bg-[#FFF8E8]">
@@ -360,43 +326,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ------------------------------------------------------- 主題總覽 */}
+      {/* ------------------------------------------------ 想去哪裡？（地域の入口） */}
+      {/* エリアの絞り込みタブ（東京34件・北海道1件…）をやめて、
+          すでにある主題ハブ7本を写真つきの入口として前に出した。 */}
       <section id="hubs" className="scroll-mt-24">
         <div className={`${SHELL} py-12 lg:py-16`}>
-          <div className="mb-7 border-b border-stone-200 pb-4">
-            <h2 className="text-2xl font-black tracking-tight text-stone-900 sm:text-[28px]">主題總覽</h2>
-            <p className="mt-0.5 text-[11px] font-bold uppercase tracking-[0.2em] text-stone-400">
-              Guides ・ 想好要玩哪一種了嗎？
-            </p>
+          <div className="mb-7 flex flex-wrap items-end justify-between gap-4 border-b border-stone-200 pb-4">
+            <div>
+              <h2 className="text-2xl font-black tracking-tight text-stone-900 sm:text-[28px]">想去哪裡？</h2>
+              <p className="mt-0.5 text-[11px] font-bold uppercase tracking-[0.2em] text-stone-400">
+                Guides ・ 依地區與主題整理好的懶人包
+              </p>
+            </div>
+            <a href="#articles" className="text-sm font-bold text-stone-500 transition-colors hover:text-stone-900">
+              直接看全部文章 →
+            </a>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {HUBS.map((hub) => {
-              const slugs = hub.sections.flatMap((s) => s.slugs);
+              const slugs = hub.sections.flatMap((sec) => sec.slugs);
               const count = new Set(slugs).size;
-              const thumb = hubThumb(slugs);
+              const thumb = hub.image ?? hubThumb(slugs);
               return (
-                <Link
-                  key={hub.slug}
-                  href={`/${hub.slug}`}
-                  className="group flex items-center gap-4 rounded-2xl border border-stone-200 bg-white p-3 pr-5 transition-all hover:-translate-y-0.5 hover:border-stone-900 hover:shadow-lg"
-                >
-                  <span className="relative block h-[72px] w-[72px] shrink-0 overflow-hidden rounded-xl bg-amber-50">
+                <Link key={hub.slug} href={`/${hub.slug}`} className="group block">
+                  <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-amber-50 ring-1 ring-stone-900/5">
                     {thumb ? (
-                      <Image src={thumb} alt="" fill sizes="72px" className="object-cover" />
+                      <Image
+                        src={thumb}
+                        alt=""
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-[1.06]"
+                      />
                     ) : (
-                      <span className="grid h-full w-full place-items-center text-2xl">{hub.emoji}</span>
+                      <span className="grid h-full w-full place-items-center text-4xl">{hub.emoji}</span>
                     )}
-                  </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="block text-[15px] font-bold leading-snug text-stone-900">
-                      {hub.emoji} {hub.h1}
-                    </span>
-                    <span className="mt-1.5 block text-xs text-stone-400">{count} 篇整理</span>
-                  </span>
-                  <span className="shrink-0 text-stone-300 transition-transform group-hover:translate-x-1 group-hover:text-stone-900">
-                    →
-                  </span>
+                    {/* 写真の上に見出しを重ねて、地域の入口だと一目でわかるようにする */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-stone-900/75 via-stone-900/10 to-transparent" />
+                    <div className="absolute inset-x-0 bottom-0 p-4">
+                      <p className="text-[17px] font-black leading-snug text-white drop-shadow-sm">
+                        {hub.emoji} {hub.h1}
+                      </p>
+                      <p className="mt-1 text-xs font-bold text-white/80">{count} 篇整理</p>
+                    </div>
+                  </div>
                 </Link>
               );
             })}
@@ -405,10 +379,8 @@ export default function Home() {
       </section>
 
       {/* ------------------------------------------------------- 記事一覧 */}
-      <main className={`${SHELL} space-y-16 pb-20 lg:space-y-20`}>
-        {categories.map((cat) => (
-          <CategorySection key={cat.id} cat={cat} />
-        ))}
+      <main className={`${SHELL} pb-20`}>
+        <ArticleGrid />
       </main>
 
       {/* --------------------------------------------------------- About */}
