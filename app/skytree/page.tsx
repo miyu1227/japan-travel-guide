@@ -120,14 +120,14 @@ export default function SkytreePage() {
 
       {/* Header */}
       <header className="sticky top-16 z-40 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
-        <div className="max-w-2xl mx-auto px-4 h-14 flex items-center gap-3">
+        <div className="max-w-2xl xl:max-w-[900px] mx-auto px-4 h-14 flex items-center gap-3">
           <Link href="/" className="text-stone-500 hover:text-stone-800 text-sm">← 返回</Link>
           <span className="text-stone-300">|</span>
           <span className="text-sm font-semibold text-stone-700 truncate">東京晴空塔攻略</span>
         </div>
       </header>
 
-      <article className="max-w-2xl mx-auto px-4 py-6">
+      <article className="max-w-2xl xl:max-w-[900px] mx-auto px-4 py-6">
 
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
@@ -231,7 +231,7 @@ export default function SkytreePage() {
         </section>
 
         {/* 訪問写真 */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           <div className="grid grid-cols-2 gap-0.5">
             {["/skytree/view-1.jpg", "/skytree/view-2.jpg"].map((src, i) => (
               <div key={src} className="relative aspect-square bg-stone-100">

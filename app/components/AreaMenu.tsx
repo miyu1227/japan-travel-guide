@@ -35,25 +35,27 @@ export default function AreaMenu({ counts }: { counts: Record<string, number> })
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        className={`inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-bold transition-colors ${
-          open ? "bg-stone-900 text-white" : "text-stone-600 hover:bg-stone-100 hover:text-stone-900"
+        className={`inline-flex items-center gap-1.5 rounded-full border-2 px-4 py-1.5 text-[15px] font-bold transition-colors ${
+          open
+            ? "border-stone-900 bg-stone-900 text-white"
+            : "border-stone-800 bg-white text-stone-800 hover:bg-stone-100"
         }`}
       >
         地區
-        <svg viewBox="0 0 24 24" className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+        <svg viewBox="0 0 24 24" className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
           <path d="M6 9 L12 15 L18 9" />
         </svg>
       </button>
 
       {open && (
-        <div className="absolute left-0 top-full z-50 mt-2 w-52 overflow-hidden rounded-2xl border border-stone-200 bg-white py-1.5 shadow-xl">
+        <div className="absolute left-0 top-full z-50 mt-2 w-60 overflow-hidden rounded-2xl border border-stone-200 bg-white py-2 shadow-xl">
           <Link
             href="/#articles"
             onClick={() => setOpen(false)}
-            className="flex items-center justify-between px-4 py-2.5 text-sm font-bold text-stone-700 transition-colors hover:bg-stone-50 hover:text-stone-900"
+            className="flex items-center justify-between px-4 py-3 text-[15px] font-bold text-stone-700 transition-colors hover:bg-stone-50 hover:text-stone-900"
           >
             全部
-            <span className="text-[11px] font-bold text-stone-400">{counts.all ?? 0}</span>
+            <span className="text-xs font-bold text-stone-400">{counts.all ?? 0}</span>
           </Link>
           <span className="my-1 block h-px bg-stone-100" />
           {AREA_DEFS.map((a) => (
@@ -61,10 +63,10 @@ export default function AreaMenu({ counts }: { counts: Record<string, number> })
               key={a.slug}
               href={`/#area-${a.slug}`}
               onClick={() => setOpen(false)}
-              className="flex items-center justify-between px-4 py-2.5 text-sm font-bold text-stone-700 transition-colors hover:bg-stone-50 hover:text-stone-900"
+              className="flex items-center justify-between px-4 py-3 text-[15px] font-bold text-stone-700 transition-colors hover:bg-stone-50 hover:text-stone-900"
             >
               {a.label}
-              <span className="text-[11px] font-bold text-stone-400">{counts[a.label] ?? 0}</span>
+              <span className="text-xs font-bold text-stone-400">{counts[a.label] ?? 0}</span>
             </Link>
           ))}
         </div>

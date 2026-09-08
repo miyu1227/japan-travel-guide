@@ -62,17 +62,17 @@ export default function SiteHeader() {
           <span className="font-brand text-[18px] font-bold tracking-tight text-stone-900">Japan Trip Picks</span>
         </Link>
 
-        <nav className="hidden items-center gap-1.5 lg:flex">
+        <nav className="hidden items-center gap-2 lg:flex">
           {NAV.map((n) => (
             <Link
               key={n.href}
               href={n.href}
-              className={`rounded-full px-3.5 py-1.5 text-sm font-bold transition-colors ${n.tone}`}
+              className={`rounded-full px-4 py-2 text-[15px] font-bold transition-colors ${n.tone}`}
             >
               {n.label}
             </Link>
           ))}
-          <span className="mx-1 h-5 w-px bg-stone-200" />
+          <span className="mx-1.5 h-6 w-px bg-stone-200" />
           <AreaMenu counts={AREA_COUNTS} />
         </nav>
 

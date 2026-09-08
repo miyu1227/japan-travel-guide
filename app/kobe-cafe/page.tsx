@@ -100,7 +100,7 @@ export default function KobeCafePage() {
 
       {/* Header */}
       <header className="sticky top-16 z-40 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
-        <div className="max-w-2xl mx-auto px-4 h-14 flex items-center gap-3">
+        <div className="max-w-2xl xl:max-w-[900px] mx-auto px-4 h-14 flex items-center gap-3">
           <Link href="/" className="text-stone-500 hover:text-stone-800 transition-colors text-sm flex items-center gap-1">
             ← 返回
           </Link>
@@ -109,7 +109,7 @@ export default function KobeCafePage() {
         </div>
       </header>
 
-      <article className="max-w-2xl mx-auto px-4 py-6">
+      <article className="max-w-2xl xl:max-w-[900px] mx-auto px-4 py-6">
 
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
@@ -177,7 +177,7 @@ export default function KobeCafePage() {
         <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">神戶咖啡推薦・4選</h2>
 
         {/* Spot 1: フロインドリーブ */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
           <div className="grid grid-cols-3 gap-0.5">
             {freundliebPhotos.map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
@@ -244,7 +244,7 @@ export default function KobeCafePage() {
         </section>
 
         {/* Spot 2: パンとエスプレッソと異人館 */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
           <div className="grid grid-cols-3 gap-0.5">
             {panePhotos.map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
@@ -310,7 +310,7 @@ export default function KobeCafePage() {
         </section>
 
         {/* Spot 3: ケーニヒスクローネ くまポチ邸 */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           <div className="grid grid-cols-2 gap-0.5">
             {kumapochiPhotos.map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
@@ -376,7 +376,7 @@ export default function KobeCafePage() {
         </section>
 
         {/* Spot 4: Caffarel 神戶北野本店 */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           <div className="grid grid-cols-3 gap-0.5">
             {caffarelPhotos.map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">

@@ -118,12 +118,13 @@ body:has(.biz-root) {
   background-size: 56px 97px;
 }
 
-@media (min-width: 1280px) {
+/* 本文はPCで900pxまで広がるので、帯は確実に余白が残る1440px以上でだけ出す */
+@media (min-width: 1440px) {
   .wagara {
     background-image: url("/motifs-left.svg"), url("/motifs-right.svg"), url("/wagara.svg");
     background-repeat: repeat-y, repeat-y, repeat;
-    background-position: left 32px top 40px, right 32px top 40px, left top;
-    background-size: 240px 1100px, 240px 1100px, 56px 97px;
+    background-position: left 24px top 40px, right 24px top 40px, left top;
+    background-size: 200px 1100px, 200px 1100px, 56px 97px;
   }
 }
 
@@ -157,3 +158,24 @@ body:has(.biz-root) {
 .ib-train { background-image: url("/icons/train.svg"); }
 .ib-clock { background-image: url("/icons/clock.svg"); }
 .ib-yen { background-image: url("/icons/yen.svg"); }
+
+/* 店カード。スマホは写真が上・本文が下のままだが、PCでは写真を左に回して
+   横幅を使う。写真ブロックと本文ブロックが section の直下に2つ並んでいる
+   構造なので、親を grid にするだけで組み替えられる。 */
+@media (min-width: 1280px) {
+  .card-split {
+    display: grid;
+    grid-template-columns: 38% 1fr;
+    align-items: stretch;
+  }
+  /* 写真は縦積みにして、カードの高さいっぱいに分け合う */
+  .card-split > div:first-child {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: 1fr;
+    height: 100%;
+  }
+  .card-split > div:first-child > * {
+    aspect-ratio: auto;
+  }
+}

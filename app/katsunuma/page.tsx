@@ -128,7 +128,7 @@ export default function KatsunumaPage() {
 
       {/* Header */}
       <header className="sticky top-16 z-40 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
-        <div className="max-w-2xl mx-auto px-4 h-14 flex items-center gap-3">
+        <div className="max-w-2xl xl:max-w-[900px] mx-auto px-4 h-14 flex items-center gap-3">
           <Link href="/" className="text-stone-500 hover:text-stone-800 transition-colors text-sm flex items-center gap-1">
             ← 返回
           </Link>
@@ -137,7 +137,7 @@ export default function KatsunumaPage() {
         </div>
       </header>
 
-      <article className="max-w-2xl mx-auto px-4 py-6">
+      <article className="max-w-2xl xl:max-w-[900px] mx-auto px-4 py-6">
 
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
@@ -164,7 +164,7 @@ export default function KatsunumaPage() {
         </section>
 
         {/* 到着 station photo */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           <div className="relative aspect-[2/1] bg-stone-100">
             <Image
               src="/katsunuma/station-1.jpg"
@@ -207,7 +207,7 @@ export default function KatsunumaPage() {
         <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-stand">勝沼＆石和一泊二日・造訪紀錄</h2>
 
         {/* Spot 1: 銀月食堂 */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
           <div className="grid grid-cols-3 gap-0.5">
             {gingetsuPhotos.slice(0, 3).map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
@@ -274,7 +274,7 @@ export default function KatsunumaPage() {
         </section>
 
         {/* Spot 2: シャトー・メルシャン */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           <div className="grid grid-cols-2 gap-0.5">
             {mercianPhotos.map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
@@ -334,7 +334,7 @@ export default function KatsunumaPage() {
         </section>
 
         {/* Spot 3: 銘庭の宿 ホテル甲子園 */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
           <div className="grid grid-cols-3 gap-0.5">
             {koushienHotelPhotos.slice(0, 3).map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
@@ -433,7 +433,7 @@ export default function KatsunumaPage() {
         </section>
 
         {/* Spot 4: あすなろ園 */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
           <div className="grid grid-cols-3 gap-0.5">
             {asunaroPhotos.map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
@@ -488,7 +488,7 @@ export default function KatsunumaPage() {
         </section>
 
         {/* Spot 5: 桔梗信玄餅工場 */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
           <div className="grid grid-cols-2 gap-0.5">
             {shingenPhotos.map((src, i) => (
               <div key={i} className="relative aspect-[4/3] bg-stone-100">
@@ -543,7 +543,7 @@ export default function KatsunumaPage() {
         </section>
 
         {/* Spot 6: 里の駅 いちのみや */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           <div className="grid grid-cols-2 gap-0.5">
             {ichinomiyaPhotos.map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
@@ -598,7 +598,7 @@ export default function KatsunumaPage() {
         </section>
 
         {/* 帰路：石和溫泉駅 */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           <div className="relative aspect-[21/9] bg-stone-100">
             <Image
               src="/katsunuma/isawa-station.jpg"

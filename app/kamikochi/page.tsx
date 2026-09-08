@@ -105,14 +105,14 @@ export default function KamikochiPage() {
 
       {/* Header */}
       <header className="sticky top-16 z-40 bg-white/90 backdrop-blur-md border-b border-yellow-100 shadow-sm">
-        <div className="max-w-2xl mx-auto px-4 h-14 flex items-center gap-3">
+        <div className="max-w-2xl xl:max-w-[900px] mx-auto px-4 h-14 flex items-center gap-3">
           <Link href="/" className="text-stone-500 hover:text-stone-800 text-sm">← 返回</Link>
           <span className="text-stone-300">|</span>
           <span className="text-sm font-semibold text-stone-700 truncate">上高地攻略</span>
         </div>
       </header>
 
-      <article className="max-w-2xl mx-auto px-4 py-6">
+      <article className="max-w-2xl xl:max-w-[900px] mx-auto px-4 py-6">
 
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
@@ -210,7 +210,7 @@ export default function KamikochiPage() {
         <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">上高地＆奧飛騨推薦・4選</h2>
 
         {/* Spot 1: 平湯大滝 */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
           <div className="grid grid-cols-2 gap-0.5">
             {hirayuPhotos.map((src, i) => (
               <div key={i} className="relative aspect-[4/3] bg-stone-100">
@@ -260,7 +260,7 @@ export default function KamikochiPage() {
         </section>
 
         {/* Spot 2: 奥飛騨ガーデンホテル 焼岳 */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
           <div className="grid grid-cols-3 gap-0.5">
             {hotelPhotos.map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
@@ -310,7 +310,7 @@ export default function KamikochiPage() {
         </section>
 
         {/* Spot 3: 新穂高ロープウェイ */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
           <div className="grid grid-cols-2 gap-0.5">
             {ropewayPhotos.map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
@@ -390,7 +390,7 @@ export default function KamikochiPage() {
         </section>
 
         {/* Spot 4: 河童橋 */}
-        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           <div className="grid grid-cols-3 gap-0.5">
             {kappaPhotos.map((src, i) => (
               <div key={i} className="relative aspect-square bg-stone-100">
