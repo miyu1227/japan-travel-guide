@@ -173,7 +173,7 @@ const relatedLinks = [
 
 export default function HakonePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -205,7 +205,7 @@ export default function HakonePage() {
 
         {/* Why Hakone */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-6">
-          <h2 className="text-base font-black text-stone-800 mb-3">為什麼選擇箱根一日遊？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">為什麼選擇箱根一日遊？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             想從東京出發輕鬆玩一天，<strong>箱根一日遊</strong>是最多人推薦（推介）的選擇✨ 從新宿搭浪漫特快只需約1.5小時，抵達後就能感受到截然不同的溫泉鄉氛圍。
           </p>
@@ -216,13 +216,13 @@ export default function HakonePage() {
 
         {/* 浪漫特快 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">🚃 怎麼從東京去箱根（浪漫特快）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">🚃 怎麼從東京去箱根（浪漫特快）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             從<strong>新宿站</strong>搭乘小田急「<strong>浪漫特快（ロマンスカー）</strong>」直達箱根湯本，約1.5小時，座位舒適，是旅行的美好開始🌄
           </p>
           <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
-            <p className="text-xs text-stone-600">🚉 新宿 → 箱根湯本：約1小時30分</p>
-            <p className="text-xs text-stone-600">💴 費用：約¥2,000〜¥2,500（含特急券）</p>
+            <p className="text-xs text-stone-600 ib ib-train">新宿 → 箱根湯本：約1小時30分</p>
+            <p className="text-xs text-stone-600 ib ib-yen">費用：約¥2,000〜¥2,500（含特急券）</p>
             <p className="text-xs text-stone-600">💺 指定席制，座位舒適</p>
           </div>
           <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 flex items-center gap-2">
@@ -232,7 +232,7 @@ export default function HakonePage() {
         </section>
 
         {/* H2: 景點推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">箱根一日遊景點推薦・5選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">箱根一日遊景點推薦・5選</h2>
 
         {/* Spots */}
         <div className="space-y-6 mb-10">
@@ -279,9 +279,9 @@ export default function HakonePage() {
 
                 <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
                   <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-                  <p className="text-xs text-stone-600">📍 {spot.basicInfo.address}</p>
-                  <p className="text-xs text-stone-600">🚃 {spot.basicInfo.access}</p>
-                  <p className="text-xs text-stone-600">💴 {spot.basicInfo.price}</p>
+                  <p className="text-xs text-stone-600 ib ib-pin">{spot.basicInfo.address}</p>
+                  <p className="text-xs text-stone-600 ib ib-train">{spot.basicInfo.access}</p>
+                  <p className="text-xs text-stone-600 ib ib-yen">{spot.basicInfo.price}</p>
                 </div>
 
                 <a href={spot.url} target="_blank" rel="noopener noreferrer"
@@ -326,7 +326,7 @@ export default function HakonePage() {
 
         {/* 行程總結 */}
         <section className="mb-8">
-          <h2 className="text-lg font-black text-stone-800 mb-4">🗓️ 一日行程總結</h2>
+          <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-stand">🗓️ 一日行程總結</h2>
           <div className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 space-y-3">
             {itinerary.map((item, i) => (
               <div key={i} className="flex items-center gap-3">
@@ -340,7 +340,7 @@ export default function HakonePage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">旅遊小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">旅遊小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 建議早一點出發，才有時間慢慢玩</li>
             <li>✅ 穿好走的鞋子，景點之間需要步行</li>
@@ -352,7 +352,7 @@ export default function HakonePage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">箱根一日遊 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">箱根一日遊 常見問題</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 一天真的玩得完嗎？</p>
@@ -418,7 +418,7 @@ export default function HakonePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

@@ -79,7 +79,7 @@ const relatedLinks = [
 
 export default function NishinomiyaGardensPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -111,7 +111,7 @@ export default function NishinomiyaGardensPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">大阪與神戶之間，剛好可以停一站的地方</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">大阪與神戶之間，剛好可以停一站的地方</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>阪急西宮花園（阪急西宮ガーデンズ）</strong>在「西宮北口」站旁邊，是關西很大的一間購物中心。從<strong>大阪梅田搭阪急神戶線大約15分鐘</strong>，往神戶三宮也差不多，剛好卡在兩大城市中間🚃
           </p>
@@ -124,7 +124,7 @@ export default function NishinomiyaGardensPage() {
         </section>
 
         {/* 店舗カード */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">TOOTH TOOTH PATISSERIE＆CAFE 阪急西宮花園店</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-stand">TOOTH TOOTH PATISSERIE＆CAFE 阪急西宮花園店</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-2 gap-0.5">
@@ -179,10 +179,10 @@ export default function NishinomiyaGardensPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 兵庫縣西宮市高松町14-2 阪急西宮ガーデンズ 2F</p>
-              <p className="text-xs text-stone-600">🚃 阪急神戶線・今津線「西宮北口」駅 東改札 徒歩約3分</p>
-              <p className="text-xs text-stone-600">⏰ 10:00〜20:00（餐點L.O. 19:00／咖啡L.O. 19:30）</p>
-              <p className="text-xs text-stone-600">💴 鹹食約¥950〜¥1,900／甜點約¥800〜¥1,700（2025年3月公布的菜單價格，實際以店頭為準）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">兵庫縣西宮市高松町14-2 阪急西宮ガーデンズ 2F</p>
+              <p className="text-xs text-stone-600 ib ib-train">阪急神戶線・今津線「西宮北口」駅 東改札 徒歩約3分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">10:00〜20:00（餐點L.O. 19:00／咖啡L.O. 19:30）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">鹹食約¥950〜¥1,900／甜點約¥800〜¥1,700（2025年3月公布的菜單價格，實際以店頭為準）</p>
               <p className="text-xs text-stone-600">🪑 約74席</p>
             </div>
 
@@ -204,7 +204,7 @@ export default function NishinomiyaGardensPage() {
 
         {/* 空間 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">店內氣氛：抬頭會看到一整片金色球燈</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">店內氣氛：抬頭會看到一整片金色球燈</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             進去之後很容易忽略、但一抬頭就會「哇」的地方——天花板上垂著<strong>大大小小的金色球型吊燈</strong>，每一顆都會把整間店的樣子倒映在球面上✨ 配上<strong>紫色牆面</strong>與植物圖案的壁紙，整體不是那種安全牌的咖啡廳裝潢，而是很有品牌個性的配色。
           </p>
@@ -215,7 +215,7 @@ export default function NishinomiyaGardensPage() {
 
         {/* 西宮ガーデンズ */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">順便逛：阪急西宮花園是什麼樣的地方？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">順便逛：阪急西宮花園是什麼樣的地方？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             阪急西宮花園是關西規模很大的購物中心，本館的專門店樓層是<strong>1F〜5F</strong>，服飾、雜貨、生活用品、超市都在裡面。因為是完全室內的設施，<strong>下雨天的行程備案</strong>很好用。
           </p>
@@ -229,7 +229,7 @@ export default function NishinomiyaGardensPage() {
 
         {/* 交通 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">怎麼去阪急西宮花園？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-walk">怎麼去阪急西宮花園？</h2>
           <div className="space-y-2 text-sm text-stone-600">
             <p>🚃 <strong>從大阪梅田</strong>：阪急神戶線 到「西宮北口」約15分鐘</p>
             <p>🚃 <strong>從神戶三宮</strong>：阪急神戶線 到「西宮北口」約15分鐘</p>
@@ -246,7 +246,7 @@ export default function NishinomiyaGardensPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">TOOTH TOOTH 西宮花園店 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">TOOTH TOOTH 西宮花園店 常見問題</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要訂位嗎？</p>
@@ -283,7 +283,7 @@ export default function NishinomiyaGardensPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">用餐小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">用餐小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 週末的<strong>12:00〜14:00最擠</strong>，下午3點以後最舒服</li>
             <li>✅ 一個人吃鹹的蕎麥薄餅份量剛好，<strong>想再吃甜點的話兩個人分著點</strong>比較不會撐</li>
@@ -313,7 +313,7 @@ export default function NishinomiyaGardensPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link

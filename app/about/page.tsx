@@ -55,7 +55,7 @@ const organizationJsonLd = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
 
@@ -94,7 +94,7 @@ export default function AboutPage() {
 
         {/* 執筆方針 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-6 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-4">📝 本網站的執筆方針</h2>
+          <h2 className="text-base font-black text-stone-800 mb-4 piyo-h piyo-wave">📝 本網站的執筆方針</h2>
           <div className="space-y-3">
             <div className="flex items-start gap-3">
               <span className="text-lg shrink-0">✅</span>
@@ -136,7 +136,7 @@ export default function AboutPage() {
 
         {/* 得意分野 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-6 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-4">✈️ 得意的地區・主題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-4 piyo-h piyo-stand">✈️ 得意的地區・主題</h2>
           <div className="grid grid-cols-2 gap-2 mb-3">
             {[
               { emoji: "🗼", label: "東京都心" },
@@ -159,7 +159,7 @@ export default function AboutPage() {
 
         {/* 網站資訊 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-6 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-4">🌐 網站資訊</h2>
+          <h2 className="text-base font-black text-stone-800 mb-4 piyo-h piyo-stand">🌐 網站資訊</h2>
           <div className="space-y-4 text-sm">
             <div>
               <p className="text-xs font-bold text-stone-500 mb-1">網站名稱</p>
@@ -190,7 +190,7 @@ export default function AboutPage() {
 
         {/* 聯絡・聯盟行銷 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-6 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-4">📮 聯絡方式・其他</h2>
+          <h2 className="text-base font-black text-stone-800 mb-4 piyo-h piyo-stand">📮 聯絡方式・其他</h2>
           <div className="space-y-4 text-sm">
             <div>
               <p className="text-xs font-bold text-stone-500 mb-1">Email</p>
@@ -223,7 +223,7 @@ export default function AboutPage() {
 
         {/* 相關頁面 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-6">
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 相關頁面</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 相關頁面</h2>
           <div className="space-y-2">
             <Link href="/privacy" className="block bg-amber-50 border border-yellow-100 rounded-xl px-4 py-3 hover:bg-amber-100 transition-colors">
               <p className="text-sm font-bold text-stone-700">🔒 隱私權政策</p>

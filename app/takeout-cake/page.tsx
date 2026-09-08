@@ -82,7 +82,7 @@ const faqItems = [
 
 export default function TakeoutCakePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -114,7 +114,7 @@ export default function TakeoutCakePage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">在日本，「外帶蛋糕回飯店（酒店）」是最被低估的旅行享受</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">在日本，「外帶蛋糕回飯店（酒店）」是最被低估的旅行享受</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             東京的甜點店幾乎都是<strong>排隊、限時、要等位</strong>，但其實有一個更輕鬆的玩法——<strong>買一個蛋糕帶回飯店</strong>🏨 洗完澡、脫掉走了一整天的鞋子，配一杯便利商店（便利店）的拿鐵，那一口的幸福感比在店裡排一小時還強。
           </p>
@@ -129,7 +129,7 @@ export default function TakeoutCakePage() {
         <PrepBannerCompact />
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京外帶蛋糕推薦（推介）・PARIYA</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京外帶蛋糕推薦（推介）・PARIYA</h2>
 
         {/* Spot 1: PARIYA */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
@@ -174,10 +174,10 @@ export default function TakeoutCakePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都澀谷區澀谷2-24-12 澀谷SCRAMBLE SQUARE B2F</p>
-              <p className="text-xs text-stone-600">🚃 JR・東急・東京METRO「澀谷」駅 直結（站內地下連通）</p>
-              <p className="text-xs text-stone-600">⏰ 10:00〜21:00（熟食區 11:00〜21:00）</p>
-              <p className="text-xs text-stone-600">💴 鮮奶油蛋糕 ¥1,058〜¥1,200前後／熟食便當 ¥1,632〜（價格以店頭為準）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區澀谷2-24-12 澀谷SCRAMBLE SQUARE B2F</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR・東急・東京METRO「澀谷」駅 直結（站內地下連通）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">10:00〜21:00（熟食區 11:00〜21:00）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">鮮奶油蛋糕 ¥1,058〜¥1,200前後／熟食便當 ¥1,632〜（價格以店頭為準）</p>
               <p className="text-xs text-stone-600">📞 03-6450-5405</p>
             </div>
 
@@ -208,7 +208,7 @@ export default function TakeoutCakePage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">在日本買外帶蛋糕的小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">在日本買外帶蛋糕的小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 結帳時店員常會問「<strong>お持ち歩き何分ですか？</strong>（要拿多久）」，回答大概幾分鐘，他們會依時間放<strong>保冷劑</strong>🧊</li>
             <li>✅ 想直接說的話：「<strong>保冷剤をください</strong>」＝請給我保冷劑，「<strong>30分くらいです</strong>」＝大約30分鐘</li>
@@ -242,7 +242,7 @@ export default function TakeoutCakePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

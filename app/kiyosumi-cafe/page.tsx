@@ -180,7 +180,7 @@ const faqItems = [
 
 export default function KiyosumiCafePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -210,7 +210,7 @@ export default function KiyosumiCafePage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">清澄白河——東京公認的「咖啡聖地」</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">清澄白河——東京公認的「咖啡聖地」</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>清澄白河</strong>位在東京東側的下町地區，原本是倉庫與工廠林立的老街，因為<strong>藍瓶咖啡（Blue Bottle Coffee）日本一號店</strong>在2015年選在這裡開幕，整個區域一口氣變成東京最熱鬧的<strong>咖啡烘焙聚落</strong>☕ 挑高的舊倉庫最適合擺放大型烘豆機，於是一間接一間的自家烘焙咖啡店在這裡落腳。
           </p>
@@ -223,7 +223,7 @@ export default function KiyosumiCafePage() {
 
         {/* 比較 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">🔍 兩間店怎麼選？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">🔍 兩間店怎麼選？</h2>
           <div className="space-y-3">
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3">
               <p className="text-sm font-bold text-pink-700 mb-1">① B²（B Squared）</p>
@@ -238,7 +238,7 @@ export default function KiyosumiCafePage() {
         </section>
 
         {/* Shops */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">清澄白河咖啡廳推薦（推介）2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">清澄白河咖啡廳推薦（推介）2選</h2>
 
         <div className="space-y-8 mb-8">
           {shops.map((shop) => (
@@ -326,7 +326,7 @@ export default function KiyosumiCafePage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">清澄白河咖啡散步小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">清澄白河咖啡散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 兩間都是<strong>早上就開門</strong>的店，安排成東京行程的「早晨場」CP值最高🌅</li>
             <li>✅ iki Roastery <strong>週三公休</strong>、B² 基本上全年無休，行程排在週三請留意</li>
@@ -358,7 +358,7 @@ export default function KiyosumiCafePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

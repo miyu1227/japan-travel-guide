@@ -73,7 +73,7 @@ const relatedLinks = [
 
 export default function MisterDonutPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -103,7 +103,7 @@ export default function MisterDonutPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">日本才吃得到的季節限定甜甜圈</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">日本才吃得到的季節限定甜甜圈</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             日本最大連鎖甜甜圈店<strong>Mister Donut（ミスタードーナツ／ミスド）</strong>最好玩的地方，是它<strong>一年到頭都在換季節限定</strong>🍩 每一季都有只在那幾個月買得到的口味，賣完就要等明年，所以日本人自己也會追。
           </p>
@@ -115,7 +115,7 @@ export default function MisterDonutPage() {
         <PrepBannerCompact />
 
         {/* Shop */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">日本期間限定甜點推薦（推介）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">日本期間限定甜點推薦（推介）</h2>
 
         {/* 秋：さつまいもド */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -235,10 +235,10 @@ export default function MisterDonutPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 日本全國Mister Donut各店舗</p>
-              <p className="text-xs text-stone-600">🚃 各車站・商業設施內多數有店舖</p>
-              <p className="text-xs text-stone-600">⏰ 各店不同（多數7:00〜21:00）</p>
-              <p className="text-xs text-stone-600">💴 ¥200〜¥260／個</p>
+              <p className="text-xs text-stone-600 ib ib-pin">日本全國Mister Donut各店舗</p>
+              <p className="text-xs text-stone-600 ib ib-train">各車站・商業設施內多數有店舖</p>
+              <p className="text-xs text-stone-600 ib ib-clock">各店不同（多數7:00〜21:00）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">¥200〜¥260／個</p>
               <p className="text-xs text-stone-600">📅 期間限定（售完即止）</p>
             </div>
 
@@ -260,7 +260,7 @@ export default function MisterDonutPage() {
 
         {/* Mister Donut 品牌背景 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">關於 Mister Donut（ミスド）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">關於 Mister Donut（ミスド）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             Mister Donut（ミスタードーナツ／ミスド）是<strong>日本最大的甜甜圈連鎖店</strong>🍩 起源於1955年的美國，1970年由日本Duskin引進，目前在日本已有超過<strong>950家分店</strong>。招牌商品「<strong>Pon de Ring（ポン・デ・リング）</strong>」是2003年推出的Q彈波堤造型甜甜圈，是ミスド的代表商品。
           </p>
@@ -271,7 +271,7 @@ export default function MisterDonutPage() {
 
         {/* もっちゅりん 詳細 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">波堤×布丁系列的細節</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">波堤×布丁系列的細節</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
@@ -299,7 +299,7 @@ export default function MisterDonutPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 這些限定商品是常態販售嗎？</p>
@@ -336,7 +336,7 @@ export default function MisterDonutPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">購買小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">購買小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ <strong>上午〜中午</strong>前去最容易買到，下午常常售完</li>
             <li>✅ <strong>都市中心人氣店</strong>競爭激烈，車站周邊或郊外店比較好買</li>
@@ -366,7 +366,7 @@ export default function MisterDonutPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

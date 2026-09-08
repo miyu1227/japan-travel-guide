@@ -105,3 +105,55 @@ body:has(.biz-root) {
 .biz-root .biz-phrase {
   display: inline-block;
 }
+
+/* ==========================================================================
+   記事ページの地。麻の葉の和柄と、本文の左右に流すモチーフの帯。
+   JSXは触らず background-image だけで敷けるようにしてある。
+   帯は本文（max-w-2xl=672px）の外側にしか出ないよう、広い画面でだけ出す。
+   ========================================================================== */
+.wagara {
+  background-image: url("/wagara.svg");
+  background-repeat: repeat;
+  background-position: left top;
+  background-size: 56px 97px;
+}
+
+@media (min-width: 1280px) {
+  .wagara {
+    background-image: url("/motifs-left.svg"), url("/motifs-right.svg"), url("/wagara.svg");
+    background-repeat: repeat-y, repeat-y, repeat;
+    background-position: left 32px top 40px, right 32px top 40px, left top;
+    background-size: 240px 1100px, 240px 1100px, 56px 97px;
+  }
+}
+
+/* 記事の見出しの左にぽやぴよ。JSXを組み替えず className を足すだけで済むよう、
+   背景画像で置いている。ポーズは見出しの役割で固定（挨拶=wave／推薦=jump／
+   交通=walk／FAQ=hatena／それ以外=stand）。 */
+.piyo-h {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding-left: 46px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 36px auto;
+}
+.piyo-stand { background-image: url("/piyo/stand.png"); }
+.piyo-wave { background-image: url("/piyo/wave.png"); }
+.piyo-jump { background-image: url("/piyo/jump.png"); }
+.piyo-walk { background-image: url("/piyo/walk.png"); }
+.piyo-hatena { background-image: url("/piyo/hatena.png"); }
+
+/* 店の基本情報の行。絵文字（📍🚉⏰💴）は端末ごとに絵柄も大きさも変わるので、
+   線画アイコンに置き換えている。行の高さは変えたくないので背景画像で置く。 */
+.ib {
+  padding-left: 21px;
+  background-repeat: no-repeat;
+  background-position: left 2px;
+  background-size: 15px 15px;
+}
+.ib-pin { background-image: url("/icons/pin.svg"); }
+.ib-train { background-image: url("/icons/train.svg"); }
+.ib-clock { background-image: url("/icons/clock.svg"); }
+.ib-yen { background-image: url("/icons/yen.svg"); }

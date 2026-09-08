@@ -90,7 +90,7 @@ const faqJsonLd = {
 
 export default function UtsunomiyaPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -121,7 +121,7 @@ export default function UtsunomiyaPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">從東京搭新幹線50分！栃木宇都宮一日遊</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">從東京搭新幹線50分！栃木宇都宮一日遊</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>宇都宮</strong>是栃木縣的縣廳所在地，從東京搭新幹線只要<strong>約50分</strong>就能抵達🚄 是日本知名的「<strong>餃子之都</strong>」，每年人均餃子消費量名列前茅。除了餃子之外，還有<strong>夢幻竹林</strong>和歷史悠久的<strong>能量景點</strong>。
           </p>
@@ -132,7 +132,7 @@ export default function UtsunomiyaPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-green-500 font-black text-sm shrink-0">▸</span>
@@ -159,7 +159,7 @@ export default function UtsunomiyaPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">宇都宮觀光推薦・3選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">宇都宮觀光推薦・3選</h2>
 
         {/* Spot 1: 若竹の杜 若山農場 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -199,10 +199,10 @@ export default function UtsunomiyaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 栃木縣宇都宮市新里町丙254</p>
-              <p className="text-xs text-stone-600">🚃 JR「宇都宮」駅搭計程車（的士）約25分（建議自駕）</p>
-              <p className="text-xs text-stone-600">⏰ 9:00〜17:00（季節變動）</p>
-              <p className="text-xs text-stone-600">💴 入園料 ¥1,000〜（依季節變動）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">栃木縣宇都宮市新里町丙254</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「宇都宮」駅搭計程車（的士）約25分（建議自駕）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">9:00〜17:00（季節變動）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">入園料 ¥1,000〜（依季節變動）</p>
               <p className="text-xs text-stone-600">🅿️ 免費停車場有</p>
             </div>
 
@@ -250,10 +250,10 @@ export default function UtsunomiyaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 栃木縣宇都宮市馬場通り3丁目〜大通り一帶</p>
-              <p className="text-xs text-stone-600">🚃 JR「宇都宮」駅 徒歩約10分</p>
-              <p className="text-xs text-stone-600">⏰ 各店不同（多數11:00〜21:00）</p>
-              <p className="text-xs text-stone-600">💴 一份餃子 ¥250〜¥400</p>
+              <p className="text-xs text-stone-600 ib ib-pin">栃木縣宇都宮市馬場通り3丁目〜大通り一帶</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「宇都宮」駅 徒歩約10分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">各店不同（多數11:00〜21:00）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">一份餃子 ¥250〜¥400</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -305,10 +305,10 @@ export default function UtsunomiyaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 栃木縣宇都宮市馬場通り1-1-1</p>
-              <p className="text-xs text-stone-600">🚃 JR「宇都宮」駅 徒歩約15分（從餃子通走過去很近）</p>
-              <p className="text-xs text-stone-600">⏰ 全日開放（御守授與所 9:00〜17:00）</p>
-              <p className="text-xs text-stone-600">💴 免費</p>
+              <p className="text-xs text-stone-600 ib ib-pin">栃木縣宇都宮市馬場通り1-1-1</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「宇都宮」駅 徒歩約15分（從餃子通走過去很近）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">全日開放（御守授與所 9:00〜17:00）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">免費</p>
             </div>
 
             <a href="http://futaarayamajinja.jp/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
@@ -319,7 +319,7 @@ export default function UtsunomiyaPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">宇都宮旅行小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">宇都宮旅行小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從東京搭新幹線「やまびこ」到宇都宮約<strong>50分</strong>，當天來回方便🚄</li>
             <li>✅ 若山農場離站較遠，建議<strong>自駕或計程車</strong>前往</li>
@@ -351,7 +351,7 @@ export default function UtsunomiyaPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

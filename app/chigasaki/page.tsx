@@ -88,7 +88,7 @@ const faqs = [
 
 export default function ChigasakiPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -120,7 +120,7 @@ export default function ChigasakiPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">從東京出發一小時，就能抵達的「湘南」海邊</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">從東京出發一小時，就能抵達的「湘南」海邊</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>茅崎（茅ヶ崎）</strong>位在神奈川縣的湘南海岸，從東京車站搭JR東海道線只要約1小時🚃 這裡是日本衝浪文化的發源地之一，整座城市都圍繞著大海生活——清晨5點就有人抱著衝浪板走向海邊，是和東京完全不同節奏的日本。
           </p>
@@ -134,7 +134,7 @@ export default function ChigasakiPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-green-400 font-black text-sm shrink-0">▸</span>
@@ -157,7 +157,7 @@ export default function ChigasakiPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">茅崎夏日推薦（推介）・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">茅崎夏日推薦（推介）・2選</h2>
 
         {/* Spot 1: ヘッドランドビーチ */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -204,9 +204,9 @@ export default function ChigasakiPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 神奈川縣茅ヶ崎市東海岸南（茅ヶ崎公園・ヘッドランド周邊）</p>
-              <p className="text-xs text-stone-600">🚉 JR「茅ヶ崎」駅南口搭巴士至「ヘッドランド入口」下車 徒歩約3分／從車站走路約23分</p>
-              <p className="text-xs text-stone-600">⏰ 全天開放（無入場費）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">神奈川縣茅ヶ崎市東海岸南（茅ヶ崎公園・ヘッドランド周邊）</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「茅ヶ崎」駅南口搭巴士至「ヘッドランド入口」下車 徒歩約3分／從車站走路約23分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">全天開放（無入場費）</p>
               <p className="text-xs text-stone-600">🅿️ 周邊有多個停車場，平日約¥700／日起（7〜8月旺季會漲價）</p>
             </div>
 
@@ -273,10 +273,10 @@ export default function ChigasakiPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 神奈川縣茅ヶ崎市東海岸南6-4-76（GERMER 1F）</p>
-              <p className="text-xs text-stone-600">🚉 JR「茅ヶ崎」駅 徒歩約23分／從ヘッドランドビーチ 徒歩約2分</p>
-              <p className="text-xs text-stone-600">⏰ 6:00〜19:00（不定休・營業日以官方IG為準）</p>
-              <p className="text-xs text-stone-600">💴 司康約¥380〜¥500、飲料約¥380〜（價格以店頭菜單為準）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">神奈川縣茅ヶ崎市東海岸南6-4-76（GERMER 1F）</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「茅ヶ崎」駅 徒歩約23分／從ヘッドランドビーチ 徒歩約2分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">6:00〜19:00（不定休・營業日以官方IG為準）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">司康約¥380〜¥500、飲料約¥380〜（價格以店頭菜單為準）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -299,7 +299,7 @@ export default function ChigasakiPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">茅崎海邊小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">茅崎海邊小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從東京車站搭<strong>JR東海道線</strong>到茅ヶ崎駅約1小時，不用轉車最輕鬆🚃</li>
             <li>✅ 車站到海邊走路約23分鐘，怕熱的話<strong>搭巴士或計程車（的士）</strong>比較舒服；夏天記得帶水與防曬</li>
@@ -333,7 +333,7 @@ export default function ChigasakiPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

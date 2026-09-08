@@ -138,7 +138,7 @@ const faqJsonLd = {
 
 export default function TokyoTowerPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -169,7 +169,7 @@ export default function TokyoTowerPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">來東京旅遊，一定要看的經典地標！</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">來東京旅遊，一定要看的經典地標！</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>東京鐵塔</strong>（Tokyo Tower）是東京最具代表性的地標之一，1958年完工至今已有60多年歷史🗼 高度333公尺，以艾菲爾鐵塔為藍本設計，紅白相間的身影已經成為東京的象徵。
           </p>
@@ -181,7 +181,7 @@ export default function TokyoTowerPage() {
         <PrepBannerCompact />
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京地標景點推薦（推介）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京地標景點推薦（推介）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-3 gap-0.5">
@@ -237,10 +237,10 @@ export default function TokyoTowerPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都港區芝公園4-2-8</p>
-              <p className="text-xs text-stone-600">🚃 大江戶線「赤羽橋」駅 徒歩約5分／日比谷線「神谷町」駅 徒歩約7分</p>
-              <p className="text-xs text-stone-600">⏰ 9:00〜23:00（Main Deck・最終入場22:30）</p>
-              <p className="text-xs text-stone-600">💴 Main Deck ¥1,500／Top Deck Tour ¥3,300〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都港區芝公園4-2-8</p>
+              <p className="text-xs text-stone-600 ib ib-train">大江戶線「赤羽橋」駅 徒歩約5分／日比谷線「神谷町」駅 徒歩約7分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">9:00〜23:00（Main Deck・最終入場22:30）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">Main Deck ¥1,500／Top Deck Tour ¥3,300〜</p>
               <p className="text-xs text-stone-600">🅿️ 停車場150台（¥600/時〜）</p>
             </div>
 
@@ -262,7 +262,7 @@ export default function TokyoTowerPage() {
 
         {/* 歷史・背景 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">東京鐵塔的歷史與背景</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">東京鐵塔的歷史與背景</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             東京鐵塔於<strong>1958年12月23日</strong>完工，設計者是「塔博士」<strong>內藤多仲</strong>。高度<strong>332.9公尺</strong>，比法國艾菲爾鐵塔（324m）還高，完工當時是世界最高的自立式鐵塔🗼 建造目的是為了統一東京圈的電視電波塔，最上部曾裝設NHK＆民營電視台的天線。
           </p>
@@ -273,7 +273,7 @@ export default function TokyoTowerPage() {
 
         {/* 順路推薦：附近景點 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">順路推薦：東京鐵塔附近景點</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">順路推薦：東京鐵塔附近景點</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-red-400 font-black text-sm shrink-0">▸</span>
@@ -308,7 +308,7 @@ export default function TokyoTowerPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京鐵塔門票多少錢？營業到幾點？</p>
@@ -351,7 +351,7 @@ export default function TokyoTowerPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">逛東京鐵塔小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">逛東京鐵塔小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 想拍最美的照片，推薦<strong>傍晚〜夜晚</strong>登塔，可看到東京從黃昏轉夜景</li>
             <li>✅ Top Deck Tour 強烈建議<strong>網路預約</strong>，比現場便宜¥200</li>
@@ -381,7 +381,7 @@ export default function TokyoTowerPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

@@ -93,7 +93,7 @@ const faqJsonLd = {
 
 export default function InePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -124,7 +124,7 @@ export default function InePage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">京都隱藏的秘境——「日本最美村落」伊根町</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">京都隱藏的秘境——「日本最美村落」伊根町</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>伊根町（伊根の舟屋）</strong>位於京都府北部，是<strong>日本最美村落聯盟</strong>認定的夢幻海邊聚落🌊 230棟<strong>舟屋（funaya）</strong>沿著伊根灣排列，1樓是船庫、2樓是住家，形成全世界都罕見的獨特街景。
           </p>
@@ -134,7 +134,7 @@ export default function InePage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">伊根町觀光推薦・3要素</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">伊根町觀光推薦・3要素</h2>
 
         {/* Spot 1: 伊根町 舟屋 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -162,8 +162,8 @@ export default function InePage() {
             <div className="flex flex-wrap gap-2 mb-4">{["🏘️ 230棟舟屋", "🌊 京都的小威尼斯", "🚤 遊覽船體驗", "📸 IG絕景"].map((t) => (<span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 京都府與謝郡伊根町</p>
-              <p className="text-xs text-stone-600">🚃 京都站搭特急到「天橋立」約2小時→巴士約60分到「伊根」</p>
+              <p className="text-xs text-stone-600 ib ib-pin">京都府與謝郡伊根町</p>
+              <p className="text-xs text-stone-600 ib ib-train">京都站搭特急到「天橋立」約2小時→巴士約60分到「伊根」</p>
               <p className="text-xs text-stone-600">🚤 伊根灣遊覽船：每30分一班・¥1,200（大人）</p>
               <p className="text-xs text-stone-600">🚲 電動腳踏車租借 ¥1,000〜／日</p>
             </div>
@@ -251,10 +251,10 @@ export default function InePage() {
             <div className="flex flex-wrap gap-2 mb-4">{["☕ 舟屋改建", "🌊 海景露台", "💙 伊根藍拿鐵", "🐟 鰤魚海鮮丼"].map((t) => (<span key={t} className="text-xs bg-pink-50 text-pink-700 border border-pink-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 京都府與謝郡伊根町平田593-1</p>
-              <p className="text-xs text-stone-600">🚃 伊根バス停 徒歩約3分</p>
-              <p className="text-xs text-stone-600">⏰ 11:00〜17:00（不定休）</p>
-              <p className="text-xs text-stone-600">💴 飲品 ¥600〜／海鮮丼 ¥1,800〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">京都府與謝郡伊根町平田593-1</p>
+              <p className="text-xs text-stone-600 ib ib-train">伊根バス停 徒歩約3分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:00〜17:00（不定休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">飲品 ¥600〜／海鮮丼 ¥1,800〜</p>
             </div>
             <a href="https://funayabiyori.com/food/#cafe" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">🔗 店家資訊</a>
           </div>
@@ -284,9 +284,9 @@ export default function InePage() {
             <div className="flex flex-wrap gap-2 mb-4">{["🏨 舟屋住宿體驗", "🐟 寒鰤しゃぶしゃぶ", "🌊 海景客房", "💑 浪漫推薦"].map((t) => (<span key={t} className="text-xs bg-amber-50 text-amber-700 border border-amber-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 京都府與謝郡伊根町平田151</p>
-              <p className="text-xs text-stone-600">🚃 伊根バス停 徒歩約5分</p>
-              <p className="text-xs text-stone-600">💴 一泊二食 ¥15,000〜（冬季寒鰤プラン ¥20,000〜）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">京都府與謝郡伊根町平田151</p>
+              <p className="text-xs text-stone-600 ib ib-train">伊根バス停 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-yen">一泊二食 ¥15,000〜（冬季寒鰤プラン ¥20,000〜）</p>
               <p className="text-xs text-stone-600">🛏️ 房間數有限，建議提前預約</p>
             </div>
             <a href="https://www.jinpuso.jp/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">🔗 官方網站</a>
@@ -295,7 +295,7 @@ export default function InePage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">伊根町旅行小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">伊根町旅行小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從<strong>京都市區</strong>到伊根町約<strong>3小時</strong>（搭特急＋巴士），建議<strong>住一晚</strong>慢遊</li>
             <li>✅ 可順遊<strong>「日本三景」天橋立</strong>（從伊根往南60分巴士）</li>
@@ -328,7 +328,7 @@ export default function InePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

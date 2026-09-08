@@ -132,7 +132,7 @@ const faqJsonLd = {
 
 export default function NaritaAirportAccessPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -174,7 +174,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* 出發前確認 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">成田機場到東京市區前，先確認這些</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">成田機場到東京市區前，先確認這些</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             成田機場到東京市區<strong>距離約60〜80公里</strong>，依交通方式不同，所要時間從<strong>約40分到2小時以上</strong>都有。出發前先確認以下幾點，選起來會比較順：
           </p>
@@ -189,7 +189,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* 比較表 */}
         <section id="compare" className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8 scroll-mt-20">
-          <h2 className="text-base font-black text-stone-800 mb-3">交通手段早見表</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-walk">交通手段早見表</h2>
           <div className="overflow-x-auto -mx-5 px-5">
             <table className="w-full text-xs text-stone-600 border-collapse min-w-[600px]">
               <thead>
@@ -253,7 +253,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* Skyliner */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">① Keisei Skyliner</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">① Keisei Skyliner</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             京成電鐵推出的<strong>機場特急列車</strong>🚄 是從成田機場到<strong>日暮里・上野</strong>的最快選項之一，約36〜40分鐘抵達日暮里，大人單程<strong>¥2,580</strong>（乘車券¥1,280＋特急券¥1,300），全車對號座。班次穩定、不太塞車，是<strong>住上野・淺草・日暮里</strong>附近的旅客的首選之一。
           </p>
@@ -274,7 +274,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* Narita Express */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">② Narita Express（N&apos;EX）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">② Narita Express（N&apos;EX）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             JR東日本的<strong>機場特急列車</strong>🚆 從成田機場直達<strong>東京・品川・新宿・澀谷・池袋・橫濱</strong>等主要車站，所要時間約60〜90分，到東京站<strong>約¥3,070〜3,140</strong>、新宿約¥3,250。JR PASS可搭。優點是直接連接 JR 山手線沿線，<strong>住新宿・澀谷・池袋</strong>的旅客可以一車到達。
           </p>
@@ -295,7 +295,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* 機場巴士 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">③ 機場巴士 / Limousine Bus</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">③ 機場巴士 / Limousine Bus</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             從成田機場直達<strong>主要飯店或車站</strong>的高速巴士🚌 包含 Airport Limousine Bus、京成バス、Tokyo Shuttle 等多家公司。最大魅力是<strong>「無需轉乘、直接到飯店附近」</strong>，行李可放在巴士底部行李艙，特別輕鬆。
           </p>
@@ -316,7 +316,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* 普通電車 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">④ 普通電車（京成本線・JR總武線）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">④ 普通電車（京成本線・JR總武線）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             <strong>京成本線</strong>或<strong>JR總武線快速</strong>等普通電車，是<strong>價格最親民</strong>的選項🚃 不過所要時間較長（約75〜100分以上）、可能需要<strong>轉乘1〜2次</strong>，行李多時會有點吃力。
           </p>
@@ -337,7 +337,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* 包車 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">⑤ 包車 / Private Transfer</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">⑤ 包車 / Private Transfer</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             事先<strong>預約專車</strong>從成田機場到飯店的方式🚙 雖然價格高於電車與巴士，但<strong>不用轉乘、不用排隊</strong>，司機會直接協助行李。特別適合<strong>家庭、深夜抵達、不熟悉日文</strong>的旅人。
           </p>
@@ -359,7 +359,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* 行李配送 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">⑥ 行李很多時：行李配送服務</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">⑥ 行李很多時：行李配送服務</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             想<strong>下飛機就直接觀光</strong>的話，可以考慮<strong>「成田機場 ↔ 東京飯店」之間的行李配送服務</strong>🧳 將大行李託運給配送公司，自己只帶輕便手提行李移動，能大幅減輕轉乘的負擔。
           </p>
@@ -402,7 +402,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* 成田前泊 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">⑦ 早班機・深夜便：成田機場前泊</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">⑦ 早班機・深夜便：成田機場前泊</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             如果<strong>清早班機</strong>需要趕飛機、或<strong>深夜抵達</strong>來不及搭電車回東京，可以考慮在<strong>成田機場附近住一晚</strong>。
           </p>
@@ -447,7 +447,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* エリア別おすすめ */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">飯店區域別推薦交通方式</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-walk">飯店區域別推薦交通方式</h2>
           <div className="space-y-3">
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
               <p className="text-xs font-bold text-amber-700 mb-1">📍 上野・淺草・日暮里</p>
@@ -474,7 +474,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* 第一次おすすめ */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">初次東京自由行該怎麼選？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">初次東京自由行該怎麼選？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             如果是第一次來東京、又不太熟悉日本電車，可以參考以下思考方式：
           </p>
@@ -489,7 +489,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">成田機場交通 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">成田機場交通 常見問題</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 成田機場到東京多少錢？最便宜和最快的是哪個？</p>
@@ -534,7 +534,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* まとめ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">小結</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">小結</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             成田機場到東京市區<strong>「最好的交通方式」並不是只有一種</strong>，會依<strong>飯店位置・行李・抵達時間・人數</strong>不同。
           </p>
@@ -569,7 +569,7 @@ export default function NaritaAirportAccessPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

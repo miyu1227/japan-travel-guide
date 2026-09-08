@@ -75,7 +75,7 @@ const relatedLinks = [
 
 export default function OsakaGourmetPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -105,7 +105,7 @@ export default function OsakaGourmetPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">「天下の台所」大阪——在地人最愛的隱藏美食</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">「天下の台所」大阪——在地人最愛的隱藏美食</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             大阪是日本知名的<strong>「美食之都」</strong>🏙️ 除了道頓堀的章魚燒、大阪燒、串炸這些觀光美食之外，當地人也有許多<strong>隱藏版居酒屋＆名店</strong>，是台灣・香港旅客最容易錯過的寶藏。
           </p>
@@ -116,7 +116,7 @@ export default function OsakaGourmetPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-red-400 font-black text-sm shrink-0">▸</span>
@@ -136,7 +136,7 @@ export default function OsakaGourmetPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">大阪鐵板燒＆居酒屋推薦（推介）・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">大阪鐵板燒＆居酒屋推薦（推介）・2選</h2>
 
         {/* Spot 1: 鉄板屋な。 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -176,10 +176,10 @@ export default function OsakaGourmetPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 大阪府大阪市福島區福島周邊</p>
-              <p className="text-xs text-stone-600">🚃 JR大阪環狀線「福島」駅 徒歩約5分／JR東西線「新福島」駅 徒歩約3分</p>
-              <p className="text-xs text-stone-600">⏰ 17:00〜23:00（依日變動）</p>
-              <p className="text-xs text-stone-600">💴 套餐 ¥5,000〜／單點 ¥3,000〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">大阪府大阪市福島區福島周邊</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR大阪環狀線「福島」駅 徒歩約5分／JR東西線「新福島」駅 徒歩約3分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">17:00〜23:00（依日變動）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">套餐 ¥5,000〜／單點 ¥3,000〜</p>
               <p className="text-xs text-stone-600">📞 建議事先預約</p>
             </div>
 
@@ -232,10 +232,10 @@ export default function OsakaGourmetPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 大阪府大阪市北區梅田周邊</p>
-              <p className="text-xs text-stone-600">🚃 JR・各線「大阪／梅田」駅 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 17:00〜24:00（依日變動）</p>
-              <p className="text-xs text-stone-600">💴 串燒 ¥150〜¥300／預算 ¥3,000〜¥5,000</p>
+              <p className="text-xs text-stone-600 ib ib-pin">大阪府大阪市北區梅田周邊</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR・各線「大阪／梅田」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">17:00〜24:00（依日變動）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">串燒 ¥150〜¥300／預算 ¥3,000〜¥5,000</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -251,7 +251,7 @@ export default function OsakaGourmetPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">大阪美食小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">大阪美食小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 兩間店都離<strong>梅田／大阪站</strong>很近，可以排同一晚行程</li>
             <li>✅ <strong>鐵板屋な。</strong>適合精緻晚餐約會（預約必要）</li>
@@ -263,7 +263,7 @@ export default function OsakaGourmetPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">大阪鐵板燒・居酒屋 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">大阪鐵板燒・居酒屋 常見問題</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 大阪鐵板燒一個人預算大概多少？</p>
@@ -325,7 +325,7 @@ export default function OsakaGourmetPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

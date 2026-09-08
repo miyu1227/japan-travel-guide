@@ -74,7 +74,7 @@ const relatedLinks = [
 
 export default function IseharaGelatoPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -104,7 +104,7 @@ export default function IseharaGelatoPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">從東京出發約1小時！隱藏版牧場ジェラート名店</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">從東京出發約1小時！隱藏版牧場ジェラート名店</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>伊勢原</strong>位於神奈川縣中部，從新宿搭小田急線約60分就能抵達🚃 是一個被大山環繞、保留豐富自然的小城鎮，當地人常來這裡享受悠閒散步和美食。
           </p>
@@ -114,7 +114,7 @@ export default function IseharaGelatoPage() {
         </section>
 
         {/* Shop */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">神奈川ジェラート推薦（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">神奈川ジェラート推薦（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-3 gap-0.5">
@@ -171,10 +171,10 @@ export default function IseharaGelatoPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 神奈川縣伊勢原市小稻葉2330</p>
-              <p className="text-xs text-stone-600">🚃 小田急線「伊勢原」駅搭計程車（的士）約15分／開車約20分</p>
-              <p className="text-xs text-stone-600">⏰ 11:00〜17:00（週一・週二公休／冬季變動）</p>
-              <p className="text-xs text-stone-600">💴 迷你 ¥360／單球 ¥450／雙球 ¥630／三球 ¥750</p>
+              <p className="text-xs text-stone-600 ib ib-pin">神奈川縣伊勢原市小稻葉2330</p>
+              <p className="text-xs text-stone-600 ib ib-train">小田急線「伊勢原」駅搭計程車（的士）約15分／開車約20分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:00〜17:00（週一・週二公休／冬季變動）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">迷你 ¥360／單球 ¥450／雙球 ¥630／三球 ¥750</p>
               <p className="text-xs text-stone-600">🅿️ 免費停車場有</p>
             </div>
 
@@ -196,7 +196,7 @@ export default function IseharaGelatoPage() {
 
         {/* 伊勢原地區背景 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">關於伊勢原（Isehara）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">關於伊勢原（Isehara）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             伊勢原市位於<strong>神奈川縣中央部</strong>，是東京近郊人氣的自然＆美食小旅行目的地🌾 從新宿搭小田急線約1小時就能抵達，交通方便卻能享受被丹澤山脈環抱的田園風光。
           </p>
@@ -207,7 +207,7 @@ export default function IseharaGelatoPage() {
 
         {/* 順路推薦 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">順路推薦：伊勢原附近景點</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">順路推薦：伊勢原附近景點</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
@@ -242,7 +242,7 @@ export default function IseharaGelatoPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 從新宿要怎麼去？</p>
@@ -273,7 +273,7 @@ export default function IseharaGelatoPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">伊勢原旅行小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">伊勢原旅行小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從新宿搭小田急線到伊勢原約<strong>60分鐘</strong>，當天來回剛剛好</li>
             <li>✅ 從伊勢原站到牧場較遠，建議<strong>計程車或自駕</strong>🚗</li>
@@ -303,7 +303,7 @@ export default function IseharaGelatoPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

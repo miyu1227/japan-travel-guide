@@ -136,7 +136,7 @@ const faqJsonLd = {
 
 export default function TokyoSubwayTicketPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -228,7 +228,7 @@ export default function TokyoSubwayTicketPage() {
 
         {/* 什麼是 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">什麼是 Tokyo Subway Ticket？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">什麼是 Tokyo Subway Ticket？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             Tokyo Subway Ticket 是<strong>專為訪日外國旅客設計</strong>的東京地鐵周遊券。在規定時間內（24／48／72小時）可以<strong>不限次數</strong>搭乘東京的兩大地下鐵系統：
           </p>
@@ -243,7 +243,7 @@ export default function TokyoSubwayTicketPage() {
 
         {/* 不能使用 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">哪些路線「不能使用」？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-walk">哪些路線「不能使用」？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             這部分是初次旅遊最容易誤會的地方，請特別注意：
           </p>
@@ -260,7 +260,7 @@ export default function TokyoSubwayTicketPage() {
 
         {/* 24/48/72 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">24 / 48 / 72 小時票要怎麼選？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">24 / 48 / 72 小時票要怎麼選？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             選擇的關鍵不是「天數」，而是<strong>「小時數」</strong>。從你<strong>第一次刷進閘口的那一刻</strong>開始計算。
           </p>
@@ -300,7 +300,7 @@ export default function TokyoSubwayTicketPage() {
 
         {/* おすすめ */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">推薦（推介）這樣使用 Tokyo Subway Ticket</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">推薦（推介）這樣使用 Tokyo Subway Ticket</h2>
 
           <div className="mb-4">
             <p className="text-sm font-bold text-stone-700 mb-2">🌸 經典 1 日行程範例</p>
@@ -326,7 +326,7 @@ export default function TokyoSubwayTicketPage() {
 
         {/* 出發前的小提醒 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">出發前的小提醒</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">出發前的小提醒</h2>
 
           <div className="space-y-4">
             <div>
@@ -363,7 +363,7 @@ export default function TokyoSubwayTicketPage() {
 
         {/* おすすめ対象 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">哪些人特別推薦？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">哪些人特別推薦？</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>🐥 第一次來東京、想專心觀光不想算車費的人</li>
             <li>👫 情侶、好友、家庭旅遊（一張票一個人，2人就買2張）</li>
@@ -378,7 +378,7 @@ export default function TokyoSubwayTicketPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">Tokyo Subway Ticket 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">Tokyo Subway Ticket 常見問題</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ Tokyo Subway Ticket多少錢？</p>
@@ -429,7 +429,7 @@ export default function TokyoSubwayTicketPage() {
 
         {/* 出發前再次確認 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">出發前再次確認</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">出發前再次確認</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
             票券的<strong>價格、對象路線、購買方式</strong>都可能不定期更新。出發前建議再次到 Klook 頁面確認最新資訊，避免使用上的誤會：
           </p>
@@ -469,7 +469,7 @@ export default function TokyoSubwayTicketPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

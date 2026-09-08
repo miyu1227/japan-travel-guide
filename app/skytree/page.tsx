@@ -113,7 +113,7 @@ const faqJsonLd = {
 
 export default function SkytreePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -155,7 +155,7 @@ export default function SkytreePage() {
 
         {/* 基本情報 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">東京晴空塔 基本資訊（2026年）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">東京晴空塔 基本資訊（2026年）</h2>
           <div className="overflow-x-auto -mx-5 px-5">
             <table className="w-full text-xs text-stone-600 border-collapse min-w-[420px]">
               <tbody>
@@ -221,7 +221,7 @@ export default function SkytreePage() {
 
         {/* 是什麼 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">東京晴空塔是什麼？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">東京晴空塔是什麼？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             東京晴空塔（東京スカイツリー）位於東京墨田區，是<strong>高度 634 公尺</strong>的電波塔，2012 年正式啟用，自此成為東京新的代表性地標。設有<strong>「天望デッキ（350m）」</strong>與<strong>「天望回廊（450m）」</strong>兩個展望樓層。
           </p>
@@ -247,7 +247,7 @@ export default function SkytreePage() {
             ))}
           </div>
           <div className="p-5">
-            <h2 className="text-base font-black text-stone-800 mb-3">實際去東京晴空塔的感想</h2>
+            <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">實際去東京晴空塔的感想</h2>
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
               實際從展望台看到的<strong>東京夜景非常壯觀</strong>✨ 夜晚可以看到東京市區的燈光一路延伸到遠方，連<strong>東京鐵塔</strong>都能小小地看到，是只有這個高度才能體驗的視角。
             </p>
@@ -259,7 +259,7 @@ export default function SkytreePage() {
 
         {/* アクセス */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">交通方式：品川、新橋、淺草、澀谷到晴空塔怎麼去</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-walk">交通方式：品川、新橋、淺草、澀谷到晴空塔怎麼去</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             東京晴空塔最近的車站有2個，從任一個都能直接連通至ソラマチ與晴空塔入口：
           </p>
@@ -295,7 +295,7 @@ export default function SkytreePage() {
 
         {/* 時間帯比較 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">展望台看點：白天、傍晚、夜景</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">展望台看點：白天、傍晚、夜景</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             根據造訪時間，景色感覺完全不同。可以參考下表選擇喜歡的時間帶：
           </p>
@@ -338,7 +338,7 @@ export default function SkytreePage() {
 
         {/* ガラス床と撮影 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">玻璃地板與拍照點</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">玻璃地板與拍照點</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             <strong>天望デッキ（350m）</strong>的一角有<strong>「玻璃地板」</strong>區域，可以直接看到下方街道📸 站在上面拍照很有趣，但<strong>怕高的人會有點刺激</strong>。
           </p>
@@ -356,7 +356,7 @@ export default function SkytreePage() {
 
         {/* 門票 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">門票怎麼買最划算？（價錢比較）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">門票怎麼買最划算？（價錢比較）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             2026年4月起門票改成<strong>依日期浮動</strong>：平日便宜、週末與連假貴。同一天內三種買法的差別是：
           </p>
@@ -398,7 +398,7 @@ export default function SkytreePage() {
 
         {/* 周辺 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">周邊景點：東京ソラマチ、淺草、隅田川</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">周邊景點：東京ソラマチ、淺草、隅田川</h2>
           <div className="space-y-3">
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
               <p className="text-xs font-bold text-amber-700 mb-1">🛍️ 東京ソラマチ</p>
@@ -417,7 +417,7 @@ export default function SkytreePage() {
 
         {/* 行程に組み込む */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">適合安排在什麼行程？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">適合安排在什麼行程？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             推薦（推介）這樣搭配：
           </p>
@@ -433,7 +433,7 @@ export default function SkytreePage() {
 
         {/* 注意 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">第一次去東京晴空塔的注意事項</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">第一次去東京晴空塔的注意事項</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ <strong>能見度</strong>會依天氣變化，雨天或霧霾日可能看不遠</li>
             <li>✅ <strong>怕高的人</strong>可避開玻璃地板區域</li>
@@ -447,7 +447,7 @@ export default function SkytreePage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">東京晴空塔 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">東京晴空塔 常見問題</h2>
           <div className="space-y-4">
             {faqItems.map((f) => (
               <div key={f.q}>
@@ -467,7 +467,7 @@ export default function SkytreePage() {
 
         {/* まとめ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">小結</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">小結</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             東京晴空塔是個能<strong>「一次看完整個東京」</strong>的展望景點🌃<br />
             搭配淺草、ソラマチ、隅田川一起逛，是東京自由行很值得排進去的半日行程。
@@ -500,7 +500,7 @@ export default function SkytreePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

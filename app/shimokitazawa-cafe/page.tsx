@@ -100,7 +100,7 @@ const faqJsonLd = {
 
 export default function ShimokitazawaCafePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -131,7 +131,7 @@ export default function ShimokitazawaCafePage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">下北澤是東京最有個性的咖啡散步街區</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">下北澤是東京最有個性的咖啡散步街區</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             下北澤是東京最受歡迎的文青散步區之一，除了古著和劇場，近年也聚集了許多風格獨特的<strong>咖啡廳</strong>☕ 街道巷弄裡藏著各種特色小店，非常適合邊走邊逛。
           </p>
@@ -144,7 +144,7 @@ export default function ShimokitazawaCafePage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
@@ -178,7 +178,7 @@ export default function ShimokitazawaCafePage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">下北澤美食・咖啡推薦・4選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">下北澤美食・咖啡推薦・4選</h2>
 
         {/* Spot 1: TOKYO VEGAN BAKES */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -225,10 +225,10 @@ export default function ShimokitazawaCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都世田谷區北澤3-19-20 reload 2F</p>
-              <p className="text-xs text-stone-600">🚃 小田急線・京王井之頭線「下北澤」駅 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 10:00〜18:00（週一・週二公休）</p>
-              <p className="text-xs text-stone-600">💴 ¥330〜¥880</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區北澤3-19-20 reload 2F</p>
+              <p className="text-xs text-stone-600 ib ib-train">小田急線・京王井之頭線「下北澤」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">10:00〜18:00（週一・週二公休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">¥330〜¥880</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -291,10 +291,10 @@ export default function ShimokitazawaCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都世田谷區北澤3-34-4</p>
-              <p className="text-xs text-stone-600">🚃 小田急線・京王井之頭線「下北澤」駅 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 12:00〜20:00（不定休）</p>
-              <p className="text-xs text-stone-600">💴 起司蛋糕 ¥500〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區北澤3-34-4</p>
+              <p className="text-xs text-stone-600 ib ib-train">小田急線・京王井之頭線「下北澤」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">12:00〜20:00（不定休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">起司蛋糕 ¥500〜</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -357,10 +357,10 @@ export default function ShimokitazawaCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都世田谷區代澤4-34-13 Daizawa Club 101</p>
-              <p className="text-xs text-stone-600">🚃 京王井之頭線「池ノ上」駅 徒歩約10分／「下北澤」駅 徒歩約12分</p>
-              <p className="text-xs text-stone-600">⏰ 8:00〜18:00（週二公休）</p>
-              <p className="text-xs text-stone-600">💴 派 ¥480〜¥630／飲品 ¥550〜¥700</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區代澤4-34-13 Daizawa Club 101</p>
+              <p className="text-xs text-stone-600 ib ib-train">京王井之頭線「池ノ上」駅 徒歩約10分／「下北澤」駅 徒歩約12分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">8:00〜18:00（週二公休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">派 ¥480〜¥630／飲品 ¥550〜¥700</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -423,10 +423,10 @@ export default function ShimokitazawaCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都世田谷區代田2-36-12〜15</p>
-              <p className="text-xs text-stone-600">🚃 小田急線「世田谷代田」駅 徒歩約1分／「下北澤」駅 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 各店舖營業時間不同（多數11:00〜20:00）</p>
-              <p className="text-xs text-stone-600">💴 因店而異</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區代田2-36-12〜15</p>
+              <p className="text-xs text-stone-600 ib ib-train">小田急線「世田谷代田」駅 徒歩約1分／「下北澤」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">各店舖營業時間不同（多數11:00〜20:00）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">因店而異</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -447,7 +447,7 @@ export default function ShimokitazawaCafePage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">下北澤咖啡散步小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">下北澤咖啡散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 兩間店距離很近，可以安排同一天順遊</li>
             <li>✅ TOKYO VEGAN BAKES 週一週二公休，出發前先確認</li>
@@ -479,7 +479,7 @@ export default function ShimokitazawaCafePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

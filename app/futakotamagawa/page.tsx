@@ -104,7 +104,7 @@ const faqJsonLd = {
 
 export default function FutakotamagawaPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -135,7 +135,7 @@ export default function FutakotamagawaPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">二子玉川——東京近郊的悠閒美食散步區</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">二子玉川——東京近郊的悠閒美食散步區</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>二子玉川</strong>位於東京世田谷區，是日本人心中的高級住宅區，擁有河岸公園、購物中心與許多特色餐廳🌿 從澀谷搭電車只要10分鐘，非常適合安排一個半天的散步美食行程。
           </p>
@@ -148,7 +148,7 @@ export default function FutakotamagawaPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-red-400 font-black text-sm shrink-0">▸</span>
@@ -189,7 +189,7 @@ export default function FutakotamagawaPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">二子玉川美食推薦・5選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">二子玉川美食推薦・5選</h2>
 
         {/* Spot 1: SESAME STREET MARKET */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -247,10 +247,10 @@ export default function FutakotamagawaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都世田谷區玉川2-27-5 玉川高島屋S・C 別館「マロニエコート」1F</p>
-              <p className="text-xs text-stone-600">🚃 東急「二子玉川」駅西口 徒步約5分</p>
-              <p className="text-xs text-stone-600">⏰ 10:00〜20:00（依玉川高島屋S.C.休館日）</p>
-              <p className="text-xs text-stone-600">💴 甜點約 ¥490〜¥590／飲品約 ¥260〜¥650</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區玉川2-27-5 玉川高島屋S・C 別館「マロニエコート」1F</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急「二子玉川」駅西口 徒步約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">10:00〜20:00（依玉川高島屋S.C.休館日）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">甜點約 ¥490〜¥590／飲品約 ¥260〜¥650</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -304,10 +304,10 @@ export default function FutakotamagawaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都世田谷區玉川3-14-8 A*G二子玉川 2F</p>
-              <p className="text-xs text-stone-600">🚃 東急田園都市線・大井町線「二子玉川」駅 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 11:30〜15:00 / 17:30〜22:00（週二公休）</p>
-              <p className="text-xs text-stone-600">💴 午餐 ¥1,500〜 / 晚餐 ¥5,000〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區玉川3-14-8 A*G二子玉川 2F</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急田園都市線・大井町線「二子玉川」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:30〜15:00 / 17:30〜22:00（週二公休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">午餐 ¥1,500〜 / 晚餐 ¥5,000〜</p>
             </div>
 
             <a href="https://www.hotpepper.jp/strJ003648788/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
@@ -352,10 +352,10 @@ export default function FutakotamagawaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都世田谷區玉川3-17-1 玉川高島屋S・C 本館 B1F</p>
-              <p className="text-xs text-stone-600">🚃 東急「二子玉川」駅西口 徒歩約2分</p>
-              <p className="text-xs text-stone-600">⏰ 10:00〜20:00（L.O. 19:30）</p>
-              <p className="text-xs text-stone-600">💴 蘋果派 ¥500〜¥700</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區玉川3-17-1 玉川高島屋S・C 本館 B1F</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急「二子玉川」駅西口 徒歩約2分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">10:00〜20:00（L.O. 19:30）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">蘋果派 ¥500〜¥700</p>
             </div>
 
             <a href="https://grannysmith-pie.com/shop-list/futakotamagawa/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
@@ -400,10 +400,10 @@ export default function FutakotamagawaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都世田谷區玉川3-14-8 A*G二子玉川 2F</p>
-              <p className="text-xs text-stone-600">🚃 東急「二子玉川」駅 徒歩約3分</p>
-              <p className="text-xs text-stone-600">⏰ 11:30〜翌3:00（週日・祝日〜23:00）</p>
-              <p className="text-xs text-stone-600">💴 午餐 ¥1,000〜 / 晚餐 ¥3,000〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區玉川3-14-8 A*G二子玉川 2F</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急「二子玉川」駅 徒歩約3分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:30〜翌3:00（週日・祝日〜23:00）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">午餐 ¥1,000〜 / 晚餐 ¥3,000〜</p>
             </div>
 
             <a href="https://www.hotpepper.jp/strJ003559141/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
@@ -450,10 +450,10 @@ export default function FutakotamagawaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都世田谷區玉川3-17-1 玉川高島屋S・C 南館 1F</p>
-              <p className="text-xs text-stone-600">🚃 東急「二子玉川」駅 徒歩約4分</p>
-              <p className="text-xs text-stone-600">⏰ 9:00〜20:00（L.O. 餐點19:00／飲料19:30）・依玉川高島屋S.C.休館日</p>
-              <p className="text-xs text-stone-600">💴 甜點約¥330〜¥770、咖啡約¥500〜（價格以店頭菜單為準）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區玉川3-17-1 玉川高島屋S・C 南館 1F</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急「二子玉川」駅 徒歩約4分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">9:00〜20:00（L.O. 餐點19:00／飲料19:30）・依玉川高島屋S.C.休館日</p>
+              <p className="text-xs text-stone-600 ib ib-yen">甜點約¥330〜¥770、咖啡約¥500〜（價格以店頭菜單為準）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -476,7 +476,7 @@ export default function FutakotamagawaPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">二子玉川美食散步小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">二子玉川美食散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從澀谷搭東急田園都市線只要10分鐘，交通方便</li>
             <li>✅ 芝麻街主題店在<strong>別館「マロニエコート」</strong>，和本館・南館不同棟，別走錯🧸</li>
@@ -513,7 +513,7 @@ export default function FutakotamagawaPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

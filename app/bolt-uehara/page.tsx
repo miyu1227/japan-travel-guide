@@ -75,7 +75,7 @@ const relatedLinks = [
 
 export default function BoltUeharaPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -105,7 +105,7 @@ export default function BoltUeharaPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">代代木上原・東京最有品味的住宅區散步</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">代代木上原・東京最有品味的住宅區散步</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>代代木上原</strong>是東京最具品味的住宅區之一🌿 距離澀谷、表參道只有一站，卻保有安靜悠閒的氛圍。街上散布著時尚咖啡店、麵包店、選物店，是當地人最愛的散步路線。
           </p>
@@ -117,7 +117,7 @@ export default function BoltUeharaPage() {
         <PrepBannerCompact />
 
         {/* Shop */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">代代木上原咖啡廳推薦</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">代代木上原咖啡廳推薦</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-3 gap-0.5">
@@ -163,10 +163,10 @@ export default function BoltUeharaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都渋谷区上原（代代木上原）</p>
-              <p className="text-xs text-stone-600">🚃 小田急線・地下鉄千代田線「代代木上原」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都渋谷区上原（代代木上原）</p>
+              <p className="text-xs text-stone-600 ib ib-train">小田急線・地下鉄千代田線「代代木上原」駅 徒歩約5分</p>
               <p className="text-xs text-stone-600">🐕 寵物友善（可帶狗入店）</p>
-              <p className="text-xs text-stone-600">⏰ 詳細營業時間請查官方Instagram</p>
+              <p className="text-xs text-stone-600 ib ib-clock">詳細營業時間請查官方Instagram</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -182,7 +182,7 @@ export default function BoltUeharaPage() {
 
         {/* 代代木上原地區介紹 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">關於代代木上原（Yoyogi-Uehara）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">關於代代木上原（Yoyogi-Uehara）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             代代木上原位於<strong>澀谷區</strong>西側，是東京都心少有的<strong>綠意豐富＆步調悠閒</strong>的高級住宅區🌿 從新宿搭東京メトロ千代田線約6分、澀谷約8分，交通便利卻不喧鬧，深受日本文青、藝人、外國僑民喜愛。
           </p>
@@ -193,7 +193,7 @@ export default function BoltUeharaPage() {
 
         {/* 順路推薦 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">順路推薦：代代木上原附近</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">順路推薦：代代木上原附近</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
@@ -221,7 +221,7 @@ export default function BoltUeharaPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 沒有預約可以直接進去嗎？</p>
@@ -246,7 +246,7 @@ export default function BoltUeharaPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">代代木上原旅遊小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">代代木上原旅遊小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ <strong>代代木上原</strong>距離澀谷只有1站，從新宿也很近，交通方便</li>
             <li>✅ 街上有許多時尚麵包店、選物店，<strong>適合慢慢散步</strong>逛半天</li>
@@ -276,7 +276,7 @@ export default function BoltUeharaPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

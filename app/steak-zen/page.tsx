@@ -81,7 +81,7 @@ const relatedLinks = [
 
 export default function SteakZenPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -113,7 +113,7 @@ export default function SteakZenPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">來神戶旅遊，必吃（必食）的當然是「神戶牛」</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">來神戶旅遊，必吃（必食）的當然是「神戶牛」</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             來日本關西旅遊，<strong>神戶牛</strong>絕對是必吃名單第一名🥩 油花細緻、入口即化，是世界知名的和牛代表。
           </p>
@@ -181,10 +181,10 @@ export default function SteakZenPage() {
             {/* 基本資訊 */}
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 兵庫縣神戶市中央區（三宮駅周邊）</p>
-              <p className="text-xs text-stone-600">🚉 JR・阪急・阪神「三宮」駅 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 午餐 11:30〜／晚餐 17:30〜（詳見官網）</p>
-              <p className="text-xs text-stone-600">💴 午餐 ¥5,000〜／晚餐 ¥10,000〜（依套餐）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市中央區（三宮駅周邊）</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR・阪急・阪神「三宮」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">午餐 11:30〜／晚餐 17:30〜（詳見官網）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">午餐 ¥5,000〜／晚餐 ¥10,000〜（依套餐）</p>
               <p className="text-xs text-stone-600">📞 建議事前預約</p>
             </div>
 
@@ -206,7 +206,7 @@ export default function SteakZenPage() {
 
         {/* 神戶牛小知識 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">什麼是「神戶牛」？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">什麼是「神戶牛」？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             神戶牛是兵庫縣產<strong>但馬牛</strong>中，符合嚴格等級標準的頂級和牛品牌。油花細緻、肉質柔軟，世界知名度非常高，常被列為人生必吃清單之一。
           </p>
@@ -217,7 +217,7 @@ export default function SteakZenPage() {
 
         {/* 神戶牛 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">關於神戶牛（Kobe Beef）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">關於神戶牛（Kobe Beef）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             神戶牛是<strong>「兵庫縣產但馬牛」</strong>中，經過嚴格認證的最高等級和牛🥩 與松阪牛、近江牛並稱<strong>「日本三大和牛」</strong>，2010年被英國米其林指南評為世界頂級牛肉，享譽國際。
           </p>
@@ -228,7 +228,7 @@ export default function SteakZenPage() {
 
         {/* 神戶牛料理方式 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">神戶牛的3種料理方式</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">神戶牛的3種料理方式</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-red-400 font-black text-sm shrink-0">▸</span>
@@ -256,7 +256,7 @@ export default function SteakZenPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 神戶牛跟松阪牛差在哪？</p>
@@ -293,7 +293,7 @@ export default function SteakZenPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">吃神戶牛小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">吃神戶牛小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 一定要<strong>事前預約</strong>，特別是假日與晚餐時段</li>
             <li>✅ 想CP值高就選<strong>午餐套餐</strong>，價格比晚餐親民很多</li>
@@ -323,7 +323,7 @@ export default function SteakZenPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

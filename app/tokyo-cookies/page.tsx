@@ -73,7 +73,7 @@ const relatedLinks = [
 
 export default function TokyoCookiesPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -103,7 +103,7 @@ export default function TokyoCookiesPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">來東京旅遊，帶什麼伴手禮回去最有面子？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">來東京旅遊，帶什麼伴手禮回去最有面子？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             來日本旅遊，<strong>伴手禮</strong>是行程中很重要的一環🎁 不想買到處都有的觀光零食？那就試試東京當地人才知道的<strong>高級手工餅乾（曲奇）</strong>。
           </p>
@@ -115,7 +115,7 @@ export default function TokyoCookiesPage() {
         <PrepBannerCompact />
 
         {/* Shop */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京伴手禮推薦（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京伴手禮推薦（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-1 gap-0.5">
@@ -172,10 +172,10 @@ export default function TokyoCookiesPage() {
             {/* 基本資訊 */}
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都港區赤坂1-4-5</p>
-              <p className="text-xs text-stone-600">🚇 東京メトロ銀座線・南北線「溜池山王」駅 徒歩約3分</p>
-              <p className="text-xs text-stone-600">⏰ 11:00〜16:00（週日・週一・國定假日公休）</p>
-              <p className="text-xs text-stone-600">💴 餅乾禮盒 約¥4,400〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都港區赤坂1-4-5</p>
+              <p className="text-xs text-stone-600 ib ib-train">東京メトロ銀座線・南北線「溜池山王」駅 徒歩約3分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:00〜16:00（週日・週一・國定假日公休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">餅乾禮盒 約¥4,400〜</p>
               <p className="text-xs text-stone-600">📞 03-3582-5689（可電話預約，最多5盒）</p>
               <p className="text-xs text-stone-600">💳 僅收現金</p>
             </div>
@@ -198,7 +198,7 @@ export default function TokyoCookiesPage() {
 
         {/* 東京伴手禮文化 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">關於日本的「手土產」文化</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">關於日本的「手土產」文化</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             在日本，帶回<strong>「手土產（てみやげ／お土産）」</strong>是重要的社交禮儀🎁 從商務拜訪到探親、旅行歸來送同事，都會挑選有地方特色＆包裝精美的甜點。因此日本的手工餅乾、和菓子、洋菓子文化發達，各地都有代表性的伴手禮品牌。
           </p>
@@ -209,7 +209,7 @@ export default function TokyoCookiesPage() {
 
         {/* 其他東京伴手禮推薦 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">其他東京人氣伴手禮</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">其他東京人氣伴手禮</h2>
           <div className="space-y-2 text-sm text-stone-600">
             <p>🍯 <strong>東京香蕉（東京ばな奈）</strong> — 東京車站限定，最經典的東京伴手禮</p>
             <p>🍪 <strong>NEW YORK PERFECT CHEESE</strong> — 東京車站高人氣起司（芝士）餅乾</p>
@@ -222,7 +222,7 @@ export default function TokyoCookiesPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 保存期限多久？</p>
@@ -253,7 +253,7 @@ export default function TokyoCookiesPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">買伴手禮小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">買伴手禮小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 一定要<strong>事先電話預約</strong>，直接去可能會撲空</li>
             <li>✅ 僅收現金，記得準備好日幣（日圓）💴</li>
@@ -283,7 +283,7 @@ export default function TokyoCookiesPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

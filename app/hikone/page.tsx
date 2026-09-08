@@ -94,7 +94,7 @@ const faqJsonLd = {
 
 export default function HikonePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -125,7 +125,7 @@ export default function HikonePage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">日本國寶之一！可以遇見超人氣吉祥物彥根貓</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">日本國寶之一！可以遇見超人氣吉祥物彥根貓</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>彥根城</strong>位於滋賀縣彥根市，是<strong>日本現存12天守之一</strong>，也是被指定為<strong>國寶</strong>的5座城之一🏯 從京都搭JR新快速約50分（¥1,170）、大阪約80分就能抵達，是關西旅遊不能錯過的歷史名勝。
           </p>
@@ -135,7 +135,7 @@ export default function HikonePage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">滋賀彥根觀光推薦（推介）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">滋賀彥根觀光推薦（推介）</h2>
 
         {/* Spot 1: 彥根城 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -186,10 +186,10 @@ export default function HikonePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 滋賀縣彥根市金龜町1-1</p>
-              <p className="text-xs text-stone-600">🚃 JR琵琶湖線「彥根」駅 徒歩約15分</p>
-              <p className="text-xs text-stone-600">⏰ 8:30〜17:00（入場至16:30）</p>
-              <p className="text-xs text-stone-600">💴 彥根城＋玄宮園 大人 ¥1,000／中小學生 ¥300・加彥根城博物館的套票 ¥1,500（2024年10月改定）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">滋賀縣彥根市金龜町1-1</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR琵琶湖線「彥根」駅 徒歩約15分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">8:30〜17:00（入場至16:30）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">彥根城＋玄宮園 大人 ¥1,000／中小學生 ¥300・加彥根城博物館的套票 ¥1,500（2024年10月改定）</p>
               <p className="text-xs text-stone-600">🅿️ 收費停車場有</p>
             </div>
 
@@ -242,10 +242,10 @@ export default function HikonePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 夢京橋城堡道・四番町廣場（彥根城周邊）</p>
-              <p className="text-xs text-stone-600">🚃 JR「彥根」駅 徒歩約10分</p>
-              <p className="text-xs text-stone-600">⏰ 各店不同（多數10:00〜17:00）</p>
-              <p className="text-xs text-stone-600">💴 布丁 ¥400〜／饅頭 ¥150〜／串燒 ¥500〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">夢京橋城堡道・四番町廣場（彥根城周邊）</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「彥根」駅 徒歩約10分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">各店不同（多數10:00〜17:00）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">布丁 ¥400〜／饅頭 ¥150〜／串燒 ¥500〜</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -257,7 +257,7 @@ export default function HikonePage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">彥根城旅行小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">彥根城旅行小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從京都搭JR琵琶湖線新快速約<strong>50分・¥1,170</strong>，從大阪約<strong>80分</strong>，不用轉車</li>
             <li>✅ 想看彥根貓的話<strong>13:30（天守前）／15:00（博物館）</strong>兩場別錯過，週末還有11:00四番町廣場</li>
@@ -322,7 +322,7 @@ export default function HikonePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

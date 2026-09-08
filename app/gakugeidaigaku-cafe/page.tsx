@@ -87,7 +87,7 @@ const faqItems = [
 
 export default function GakugeidaigakuCafePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -117,7 +117,7 @@ export default function GakugeidaigakuCafePage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">學藝大學——東急東橫線上的在地生活感小站</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">學藝大學——東急東橫線上的在地生活感小站</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>學藝大學</strong>（学芸大学）是東急東橫線上、位在澀谷與自由之丘中間的小站🚃 這裡沒有大型商場，取而代之的是一整條商店街、麵包店、二手書店和一間間個人經營的小咖啡廳，是東京人真正在過日子的街區。從澀谷搭急行只要6〜7分鐘，卻幾乎看不到觀光客。
           </p>
@@ -129,7 +129,7 @@ export default function GakugeidaigakuCafePage() {
         <PrepBannerCompact />
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">學藝大學咖啡廳推薦（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">學藝大學咖啡廳推薦（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-2 gap-0.5">
@@ -188,10 +188,10 @@ export default function GakugeidaigakuCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都目黑區中央町2-37-2 クーカイ・テラス学芸大学 1F</p>
-              <p className="text-xs text-stone-600">🚃 東急東橫線「學藝大學」駅 徒步約4分</p>
-              <p className="text-xs text-stone-600">⏰ 平日 8:00〜22:00／週末 9:00〜23:00（時間可能調整，請以官方IG為準）</p>
-              <p className="text-xs text-stone-600">💴 一人約 ¥1,000〜¥2,000</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都目黑區中央町2-37-2 クーカイ・テラス学芸大学 1F</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急東橫線「學藝大學」駅 徒步約4分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">平日 8:00〜22:00／週末 9:00〜23:00（時間可能調整，請以官方IG為準）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">一人約 ¥1,000〜¥2,000</p>
               <p className="text-xs text-stone-600">📞 03-6303-1824</p>
             </div>
 
@@ -213,7 +213,7 @@ export default function GakugeidaigakuCafePage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">學藝大學咖啡散步小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">學藝大學咖啡散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 東急東橫線<strong>急行有停</strong>學藝大學，從澀谷約6〜7分鐘</li>
             <li>✅ 平日8點開門，很適合當作一天的第一站，吃完再往澀谷或自由之丘</li>
@@ -245,7 +245,7 @@ export default function GakugeidaigakuCafePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

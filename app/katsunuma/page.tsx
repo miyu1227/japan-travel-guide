@@ -122,7 +122,7 @@ const faqs = [
 
 export default function KatsunumaPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -154,7 +154,7 @@ export default function KatsunumaPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">從東京出發！葡萄酒故鄉「勝沼」＆石和溫泉一泊二日</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">從東京出發！葡萄酒故鄉「勝沼」＆石和溫泉一泊二日</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             從新宿搭中央線特急約1個多小時，就能抵達山梨縣的<strong>「勝沼ぶどう郷」</strong>車站🍇 這裡是<strong>日本葡萄酒的發源地</strong>，四周被葡萄園與酒莊環繞，是東京近郊很適合安排一泊二日小旅行的地方。
           </p>
@@ -184,7 +184,7 @@ export default function KatsunumaPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">一泊二日行程快速看</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">一泊二日行程快速看</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-green-400 font-black text-sm shrink-0">▸</span>
@@ -204,7 +204,7 @@ export default function KatsunumaPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">勝沼＆石和一泊二日・造訪紀錄</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-stand">勝沼＆石和一泊二日・造訪紀錄</h2>
 
         {/* Spot 1: 銀月食堂 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -251,10 +251,10 @@ export default function KatsunumaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 山梨県甲州市勝沼町菱山2609</p>
-              <p className="text-xs text-stone-600">🚃 JR中央線「勝沼ぶどう郷」駅 徒歩約1分</p>
-              <p className="text-xs text-stone-600">⏰ 平日11:30〜14:00／17:00〜21:00・週六日假日11:30〜21:00（不定休）</p>
-              <p className="text-xs text-stone-600">💴 麵類・定食（銅板價位）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">山梨県甲州市勝沼町菱山2609</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR中央線「勝沼ぶどう郷」駅 徒歩約1分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">平日11:30〜14:00／17:00〜21:00・週六日假日11:30〜21:00（不定休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">麵類・定食（銅板價位）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -311,10 +311,10 @@ export default function KatsunumaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 山梨県甲州市勝沼町下岩崎1425-1</p>
-              <p className="text-xs text-stone-600">🚃 JR「勝沼ぶどう郷」駅搭計程車（的士）約8分</p>
-              <p className="text-xs text-stone-600">⏰ 葡萄酒藝廊・商店 10:00〜16:30（年末年始休）</p>
-              <p className="text-xs text-stone-600">💴 Discovery Tour ¥3,000（約90分・限額10名・需預約）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">山梨県甲州市勝沼町下岩崎1425-1</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「勝沼ぶどう郷」駅搭計程車（的士）約8分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">葡萄酒藝廊・商店 10:00〜16:30（年末年始休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">Discovery Tour ¥3,000（約90分・限額10名・需預約）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -385,10 +385,10 @@ export default function KatsunumaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 山梨県笛吹市石和町松本394</p>
-              <p className="text-xs text-stone-600">🚃 JR中央線「石和溫泉」駅 徒歩約10分／提供接駁</p>
-              <p className="text-xs text-stone-600">⏰ Check-in 15:00／Check-out 10:00</p>
-              <p className="text-xs text-stone-600">💴 一泊二食：官網確認</p>
+              <p className="text-xs text-stone-600 ib ib-pin">山梨県笛吹市石和町松本394</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR中央線「石和溫泉」駅 徒歩約10分／提供接駁</p>
+              <p className="text-xs text-stone-600 ib ib-clock">Check-in 15:00／Check-out 10:00</p>
+              <p className="text-xs text-stone-600 ib ib-yen">一泊二食：官網確認</p>
             </div>
 
             <a
@@ -470,10 +470,10 @@ export default function KatsunumaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 山梨県笛吹市一宮町坪井1622-1</p>
-              <p className="text-xs text-stone-600">🚃 JR中央線「石和溫泉」駅 車程約15分</p>
-              <p className="text-xs text-stone-600">⏰ 產季期間 9:00〜17:00左右（詳情官網確認）</p>
-              <p className="text-xs text-stone-600">💴 桃狩り 官網公告價／建議事先預約</p>
+              <p className="text-xs text-stone-600 ib ib-pin">山梨県笛吹市一宮町坪井1622-1</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR中央線「石和溫泉」駅 車程約15分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">產季期間 9:00〜17:00左右（詳情官網確認）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">桃狩り 官網公告價／建議事先預約</p>
             </div>
 
             <a
@@ -525,10 +525,10 @@ export default function KatsunumaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 山梨県笛吹市一宮町坪井1928</p>
-              <p className="text-xs text-stone-600">🚃 中央自動車道「一宮御坂IC」約5分／JR「石和溫泉」駅車程約20分</p>
-              <p className="text-xs text-stone-600">⏰ 賣店 9:00〜17:00左右（詳情官網確認）</p>
-              <p className="text-xs text-stone-600">💴 信玄餅 單顆銅板價</p>
+              <p className="text-xs text-stone-600 ib ib-pin">山梨県笛吹市一宮町坪井1928</p>
+              <p className="text-xs text-stone-600 ib ib-train">中央自動車道「一宮御坂IC」約5分／JR「石和溫泉」駅車程約20分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">賣店 9:00〜17:00左右（詳情官網確認）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">信玄餅 單顆銅板價</p>
             </div>
 
             <a
@@ -580,10 +580,10 @@ export default function KatsunumaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 山梨県笛吹市一宮町本都塚110</p>
-              <p className="text-xs text-stone-600">🚃 中央自動車道「一宮御坂IC」約3分</p>
-              <p className="text-xs text-stone-600">⏰ 物產館9:00〜18:00／和食コーナー 詳情官網確認</p>
-              <p className="text-xs text-stone-600">💴 鳥もつ煮＋葡萄汁 銅板價</p>
+              <p className="text-xs text-stone-600 ib ib-pin">山梨県笛吹市一宮町本都塚110</p>
+              <p className="text-xs text-stone-600 ib ib-train">中央自動車道「一宮御坂IC」約3分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">物產館9:00〜18:00／和食コーナー 詳情官網確認</p>
+              <p className="text-xs text-stone-600 ib ib-yen">鳥もつ煮＋葡萄汁 銅板價</p>
             </div>
 
             <a
@@ -617,7 +617,7 @@ export default function KatsunumaPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">勝沼小旅行小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">勝沼小旅行小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從新宿搭中央線特急（かいじ等）到「勝沼ぶどう郷」約1個多小時，當天來回沒問題</li>
             <li>✅ 車站到各酒莊有段距離，建議善用計程車或事先查好接駁方式🚕</li>
@@ -649,7 +649,7 @@ export default function KatsunumaPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

@@ -130,7 +130,7 @@ const faqJsonLd = {
 
 export default function UenoZooPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -161,7 +161,7 @@ export default function UenoZooPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">來東京旅遊，一定要去一次動物園！</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">來東京旅遊，一定要去一次動物園！</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>上野動物園</strong>是日本最古老的動物園，創立於1882年（明治15年），至今已有超過140年的歷史🏛️ 位於上野公園內，從上野車站走路只要5分鐘。
           </p>
@@ -173,7 +173,7 @@ export default function UenoZooPage() {
         <PrepBannerCompact />
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京動物園推薦・推介（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京動物園推薦・推介（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-2 gap-0.5">
@@ -230,10 +230,10 @@ export default function UenoZooPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都台東區上野公園9-83</p>
-              <p className="text-xs text-stone-600">🚃 JR・東京メトロ「上野」駅 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 9:30〜17:00（週一休園・國定假日順延翌日休）</p>
-              <p className="text-xs text-stone-600">💴 大人 ¥600／中學生 ¥200／小學以下 免費／65歲以上 ¥300</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都台東區上野公園9-83</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR・東京メトロ「上野」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">9:30〜17:00（週一休園・國定假日順延翌日休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">大人 ¥600／中學生 ¥200／小學以下 免費／65歲以上 ¥300</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -254,7 +254,7 @@ export default function UenoZooPage() {
 
         {/* 歷史 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">上野動物園的歷史</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">上野動物園的歷史</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             上野動物園（正式名稱：<strong>東京都恩賜上野動物園</strong>）於<strong>1882年3月20日</strong>開園，是<strong>日本最古老的動物園</strong>🐘 佔地約14.3公頃，飼育約<strong>350種、3000隻</strong>動物，是日本最具代表性的動物園之一。
           </p>
@@ -265,7 +265,7 @@ export default function UenoZooPage() {
 
         {/* 熊貓觀覽情報 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">大熊貓現在還看得到嗎？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">大熊貓現在還看得到嗎？</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
@@ -293,7 +293,7 @@ export default function UenoZooPage() {
 
         {/* 順路推薦 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">順路推薦：上野動物園附近景點</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">順路推薦：上野動物園附近景點</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
@@ -328,7 +328,7 @@ export default function UenoZooPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京動物園推薦哪一間？上野動物園值得去嗎？</p>
@@ -371,7 +371,7 @@ export default function UenoZooPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">逛動物園小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">逛動物園小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 建議<strong>平日上午</strong>前往，假日的人氣動物區會很擠</li>
             <li>✅ 園區走一圈約需2〜3小時，穿舒適的鞋子👟</li>
@@ -401,7 +401,7 @@ export default function UenoZooPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

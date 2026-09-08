@@ -161,7 +161,7 @@ const faqJsonLd = {
 
 export default function KansaiRamenArticle() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantJsonLd) }} />
@@ -195,7 +195,7 @@ export default function KansaiRamenArticle() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">在大阪，留一餐給沾麵</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">在大阪，留一餐給沾麵</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             說到<strong>大阪</strong>的美食，大家先想到的通常是章魚燒、大阪燒、串炸，<strong>沾麵（つけ麺）</strong>常常被排到後面。但大阪其實是全日本競爭最激烈的拉麵戰區之一，濃厚魚介、雞白湯、九州豚骨全部混戰在一起，而且<strong>來自東京的沾麵名店這幾年也陸續進駐</strong>🍜
           </p>
@@ -214,7 +214,7 @@ export default function KansaiRamenArticle() {
 
         {/* 沾麵とは */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">先搞懂：沾麵跟拉麵差在哪？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">先搞懂：沾麵跟拉麵差在哪？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             <strong>沾麵（つけ麺）</strong>是麵和湯分開上桌：麵條煮好後過冷水冰鎮，口感Q彈；湯則是把拉麵湯頭再濃縮成<strong>沾醬</strong>，鹹度和濃度都比拉麵高，所以是「一口麵沾一點醬」，不是把麵倒進去。
           </p>
@@ -227,7 +227,7 @@ export default function KansaiRamenArticle() {
         </section>
 
         {/* H2: 推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">大阪沾麵推薦・推介（實際吃過）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">大阪沾麵推薦・推介（實際吃過）</h2>
 
         {/* Shops */}
         <div className="space-y-8 mb-10">
@@ -274,10 +274,10 @@ export default function KansaiRamenArticle() {
 
                 <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
                   <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-                  <p className="text-xs text-stone-600">📍 {shop.basicInfo.address}</p>
-                  <p className="text-xs text-stone-600">🚃 {shop.basicInfo.access}</p>
-                  <p className="text-xs text-stone-600">⏰ {shop.basicInfo.hours}</p>
-                  <p className="text-xs text-stone-600">💴 {shop.basicInfo.price}</p>
+                  <p className="text-xs text-stone-600 ib ib-pin">{shop.basicInfo.address}</p>
+                  <p className="text-xs text-stone-600 ib ib-train">{shop.basicInfo.access}</p>
+                  <p className="text-xs text-stone-600 ib ib-clock">{shop.basicInfo.hours}</p>
+                  <p className="text-xs text-stone-600 ib ib-yen">{shop.basicInfo.price}</p>
                   <p className="text-xs text-stone-600">🎫 {shop.basicInfo.order}</p>
                   <p className="text-xs text-red-600 font-semibold">💡 推薦：{shop.recommend}</p>
                 </div>
@@ -297,7 +297,7 @@ export default function KansaiRamenArticle() {
 
         {/* 沾麵吃法 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">🍜 つじ田指定的沾麵吃法（三段式）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">🍜 つじ田指定的沾麵吃法（三段式）</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>1️⃣ <strong>前三分之一</strong>：什麼都不加，麵條一口份量沾進濃醬（不要整碗倒下去，會太鹹），先感受豚骨魚介的原味</li>
             <li>2️⃣ <strong>中間三分之一</strong>：把麵上那顆<strong>酢橘</strong>擠在麵條上拌勻再沾，酸香讓濃醬瞬間變清爽</li>
@@ -312,7 +312,7 @@ export default function KansaiRamenArticle() {
 
         {/* 交通・時段 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">從梅田・難波怎麼去？什麼時段不用排？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-walk">從梅田・難波怎麼去？什麼時段不用排？</h2>
           <ul className="space-y-2 text-sm text-stone-600 mb-3">
             <li>🚇 <strong>從梅田</strong>：Osaka Metro 四橋線「西梅田」站→「肥後橋」站，2站約3分，8號出口走1分</li>
             <li>🚇 <strong>從難波</strong>：四橋線「難波」站→「肥後橋」站，3站約5分</li>
@@ -327,7 +327,7 @@ export default function KansaiRamenArticle() {
 
         {/* 關西拉麵流派 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">延伸：關西各地的拉麵特色</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">延伸：關西各地的拉麵特色</h2>
           <p className="text-xs text-stone-500 leading-relaxed mb-3">吃完大阪的沾麵，如果行程還會去京都、神戶、和歌山，各地的拉麵風格差很多，順手記一下。</p>
           <div className="space-y-3">
             {kansaiStyles.map((s) => (
@@ -344,7 +344,7 @@ export default function KansaiRamenArticle() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">大阪吃沾麵・拉麵小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">大阪吃沾麵・拉麵小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 多數店採<strong>食券機（售票機）</strong>，先買餐券再入座，有圖片的機器不會日文也能點</li>
             <li>✅ 肥後橋・本町一帶是商辦區，<strong>週末部分店家會公休</strong>（つじ田沒有固定公休），出發前建議查官網</li>
@@ -376,7 +376,7 @@ export default function KansaiRamenArticle() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link

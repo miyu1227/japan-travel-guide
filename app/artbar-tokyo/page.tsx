@@ -80,7 +80,7 @@ const faqs = [
 
 export default function ArtbarTokyoPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -112,7 +112,7 @@ export default function ArtbarTokyoPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">在東京，來一場「喝著紅酒畫畫」的大人體驗</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">在東京，來一場「喝著紅酒畫畫」的大人體驗</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>Artbar Tokyo</strong>是日本第一間「<strong>Paint &amp; Sip</strong>（喝一杯・畫一幅）」藝術體驗工作室，2016年開業至今已有超過10萬人造訪🎨 概念很簡單——<strong>一手拿著紅酒、一手拿著畫筆</strong>，在現役藝術家的帶領下，輕鬆完成一幅屬於自己的作品。
           </p>
@@ -122,7 +122,7 @@ export default function ArtbarTokyoPage() {
         </section>
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京畫畫體驗推薦（推介）・Artbar Tokyo</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京畫畫體驗推薦（推介）・Artbar Tokyo</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-3 gap-0.5">
@@ -179,11 +179,11 @@ export default function ArtbarTokyoPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都渋谷區神宮前5-30-2 Takaraビル201（原宿・貓街店）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都渋谷區神宮前5-30-2 Takaraビル201（原宿・貓街店）</p>
               <p className="text-xs text-stone-600">🏬 另有代官山・銀座・橫濱元町・大阪等分店</p>
-              <p className="text-xs text-stone-600">🚉 JR「原宿」駅／「渋谷」駅 徒歩約10分</p>
-              <p className="text-xs text-stone-600">⏰ 一場約2小時（依課程時段，詳見官網）</p>
-              <p className="text-xs text-stone-600">💴 約¥4,620〜（畫具・飲料・點心全含・依課程而異）</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「原宿」駅／「渋谷」駅 徒歩約10分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">一場約2小時（依課程時段，詳見官網）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">約¥4,620〜（畫具・飲料・點心全含・依課程而異）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -204,7 +204,7 @@ export default function ArtbarTokyoPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">參加畫畫體驗小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">參加畫畫體驗小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 人氣時段容易額滿，建議<strong>提前在官網預約購票</strong>🎟️</li>
             <li>✅ 每天的主題不同，先查好想畫的名畫或課程再選時段</li>
@@ -236,7 +236,7 @@ export default function ArtbarTokyoPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

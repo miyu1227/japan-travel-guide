@@ -254,7 +254,7 @@ const faqJsonLd = {
 
 export default function RamenArticle() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -287,7 +287,7 @@ export default function RamenArticle() {
 
         {/* Why ramen */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">來東京一定要吃拉麵！</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">來東京一定要吃拉麵！</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>東京</strong>是全世界拉麵店密度最高的城市，光是市區就有<strong>數千間</strong>拉麵店，而且流派非常多元——醬油、鹽味、豚骨、煮干、沾麵⋯⋯每一間都有自己的個性🍜
           </p>
@@ -308,7 +308,7 @@ export default function RamenArticle() {
 
         {/* H2: 拉麵種類 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">東京拉麵種類簡單說明</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">東京拉麵種類簡單說明</h2>
           <div className="space-y-3">
             {ramenTypes.map((type) => (
               <div key={type.name} className="flex gap-3">
@@ -323,7 +323,7 @@ export default function RamenArticle() {
         </section>
 
         {/* H2: 推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京拉麵推薦（推介）・6間必吃（必食）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京拉麵推薦（推介）・6間必吃（必食）</h2>
 
         {/* Shops */}
         <div className="space-y-8 mb-10">
@@ -376,11 +376,11 @@ export default function RamenArticle() {
                 {/* 基本資訊 */}
                 <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
                   <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-                  <p className="text-xs text-stone-600">📍 {shop.basicInfo.address}</p>
-                  <p className="text-xs text-stone-600">🚃 {shop.basicInfo.access}</p>
-                  <p className="text-xs text-stone-600">💴 {shop.basicInfo.price}</p>
+                  <p className="text-xs text-stone-600 ib ib-pin">{shop.basicInfo.address}</p>
+                  <p className="text-xs text-stone-600 ib ib-train">{shop.basicInfo.access}</p>
+                  <p className="text-xs text-stone-600 ib ib-yen">{shop.basicInfo.price}</p>
                   {shop.id === "washo" && (
-                    <p className="text-xs text-stone-600">⏰ 11:30〜14:30／18:30〜22:00（週一公休）</p>
+                    <p className="text-xs text-stone-600 ib ib-clock">11:30〜14:30／18:30〜22:00（週一公休）</p>
                   )}
                   <p className="text-xs text-red-600 font-semibold">💡 推薦：{shop.recommend}</p>
                 </div>
@@ -400,7 +400,7 @@ export default function RamenArticle() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">東京吃拉麵小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">東京吃拉麵小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 熱門店通常需要排隊，建議<strong>平日、開店後不久</strong>前往</li>
             <li>✅ 很多店是<strong>食券機（售票機）先買餐券</strong>，也有像和正一樣後付現金的店</li>
@@ -413,7 +413,7 @@ export default function RamenArticle() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">東京必吃拉麵 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">東京必吃拉麵 常見問題</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京必吃拉麵有哪些？第一次來要選哪一間？</p>
@@ -481,7 +481,7 @@ export default function RamenArticle() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link

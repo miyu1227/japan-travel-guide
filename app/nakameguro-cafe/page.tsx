@@ -96,7 +96,7 @@ const faqItems = [
 
 export default function NakameguroCafePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -126,7 +126,7 @@ export default function NakameguroCafePage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">中目黑——東京最有氛圍的咖啡散步區</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">中目黑——東京最有氛圍的咖啡散步區</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>中目黑</strong>是東京最受歡迎的文青散步區之一，沿著<strong>目黑川</strong>延伸的街道充滿質感小店和特色咖啡廳☕ 春天兩岸800棵櫻花盛開的景象更是東京最著名的賞櫻景點之一🌸
           </p>
@@ -139,7 +139,7 @@ export default function NakameguroCafePage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
@@ -162,7 +162,7 @@ export default function NakameguroCafePage() {
         </section>
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">中目黑咖啡廳推薦・2選（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">中目黑咖啡廳推薦・2選（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-2 gap-0.5">
@@ -219,10 +219,10 @@ export default function NakameguroCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都目黑區青葉台2-19-23</p>
-              <p className="text-xs text-stone-600">🚃 東急東橫線・東京メトロ日比谷線「中目黑」駅 徒歩約13分（沿目黑川）</p>
-              <p className="text-xs text-stone-600">⏰ 7:00〜22:00（櫻花季 8:00〜21:30・不定休）</p>
-              <p className="text-xs text-stone-600">💴 飲品 ¥600〜¥1,500／調酒 ¥1,200〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都目黑區青葉台2-19-23</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急東橫線・東京メトロ日比谷線「中目黑」駅 徒歩約13分（沿目黑川）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">7:00〜22:00（櫻花季 8:00〜21:30・不定休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">飲品 ¥600〜¥1,500／調酒 ¥1,200〜</p>
               <p className="text-xs text-stone-600">📞 03-6417-0202</p>
             </div>
 
@@ -297,10 +297,10 @@ export default function NakameguroCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都目黑區青葉台2-16-6</p>
-              <p className="text-xs text-stone-600">🚃 東急東橫線・東京メトロ日比谷線「中目黑」駅 徒步約7分（沿目黑川）</p>
-              <p className="text-xs text-stone-600">⏰ 約 8:00〜19:00（各家資訊略有出入，請以官方IG公告為準）</p>
-              <p className="text-xs text-stone-600">💴 飲品約 ¥600〜¥900／甜點 ¥400〜¥600</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都目黑區青葉台2-16-6</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急東橫線・東京メトロ日比谷線「中目黑」駅 徒步約7分（沿目黑川）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">約 8:00〜19:00（各家資訊略有出入，請以官方IG公告為準）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">飲品約 ¥600〜¥900／甜點 ¥400〜¥600</p>
               <p className="text-xs text-stone-600">📞 03-6427-8302</p>
             </div>
 
@@ -332,7 +332,7 @@ export default function NakameguroCafePage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">中目黑咖啡散步小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">中目黑咖啡散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從中目黑站沿著<strong>目黑川</strong>散步，先到STREAMER（約7分）再往星巴克臻選（約13分），路線最順</li>
             <li>✅ 平日早上或傍晚比較不擠，週末午餐時段人最多</li>
@@ -365,7 +365,7 @@ export default function NakameguroCafePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

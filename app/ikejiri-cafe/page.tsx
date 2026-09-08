@@ -86,7 +86,7 @@ const faqs = [
 
 export default function IkejiriCafePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -116,7 +116,7 @@ export default function IkejiriCafePage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">池尻大橋——澀谷隔壁的大人系散步街區</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">池尻大橋——澀谷隔壁的大人系散步街區</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>池尻大橋</strong>位在東急田園都市線上，從<strong>澀谷搭車只要一站、約2分鐘</strong>就能抵達🚃 一走出車站，觀光客的喧鬧瞬間消失，取而代之的是住宅區的安靜街道、選品店與一間間個性咖啡廳，是東京人自己在假日散步的區域。
           </p>
@@ -128,7 +128,7 @@ export default function IkejiriCafePage() {
         <PrepBannerCompact />
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">池尻大橋咖啡廳推薦・推介（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">池尻大橋咖啡廳推薦・推介（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-3 gap-0.5">
@@ -186,10 +186,10 @@ export default function IkejiriCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都目黑區東山3-5-2 1F</p>
-              <p className="text-xs text-stone-600">🚃 東急田園都市線「池尻大橋」駅 東口 徒歩約3分（澀谷駅搭車1站）</p>
-              <p className="text-xs text-stone-600">⏰ 11:00〜19:00（週一公休）</p>
-              <p className="text-xs text-stone-600">💴 每人約 ¥1,000〜¥2,000</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都目黑區東山3-5-2 1F</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急田園都市線「池尻大橋」駅 東口 徒歩約3分（澀谷駅搭車1站）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:00〜19:00（週一公休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">每人約 ¥1,000〜¥2,000</p>
               <p className="text-xs text-stone-600">🪑 34席（室內20席／露台14席）</p>
               <p className="text-xs text-stone-600">📞 03-6712-2155</p>
             </div>
@@ -222,7 +222,7 @@ export default function IkejiriCafePage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">池尻大橋咖啡散步小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">池尻大橋咖啡散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從<strong>澀谷駅</strong>搭東急田園都市線只要1站約2分鐘，安排在澀谷行程的前後最順</li>
             <li>✅ <strong>週一公休</strong>，行程排在週一的話請避開，出發前建議再確認官方 Instagram</li>
@@ -254,7 +254,7 @@ export default function IkejiriCafePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

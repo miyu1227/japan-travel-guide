@@ -147,7 +147,7 @@ const faqJsonLd = {
 
 export default function JiyugaokaCafePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -180,7 +180,7 @@ export default function JiyugaokaCafePage() {
 
         {/* Why Jiyugaoka */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">為什麼要去自由之丘喝咖啡？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">為什麼要去自由之丘喝咖啡？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             說到東京咖啡推薦（推介），很多人第一個想到的是澀谷或表參道——但其實<strong>自由之丘</strong>才是真正適合慢慢享受的地方☕
           </p>
@@ -195,7 +195,7 @@ export default function JiyugaokaCafePage() {
         <PrepBannerCompact />
 
         {/* H2: 自由之丘咖啡推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">自由之丘咖啡推薦・3間必去</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">自由之丘咖啡推薦・3間必去</h2>
 
         {/* Shops */}
         <div className="space-y-8 mb-10">
@@ -257,9 +257,9 @@ export default function JiyugaokaCafePage() {
                 {/* 基本情報 */}
                 <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
                   <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-                  <p className="text-xs text-stone-600">📍 {shop.basicInfo.address}</p>
-                  <p className="text-xs text-stone-600">🚃 {shop.basicInfo.access}</p>
-                  <p className="text-xs text-stone-600">💴 {shop.basicInfo.price}</p>
+                  <p className="text-xs text-stone-600 ib ib-pin">{shop.basicInfo.address}</p>
+                  <p className="text-xs text-stone-600 ib ib-train">{shop.basicInfo.access}</p>
+                  <p className="text-xs text-stone-600 ib ib-yen">{shop.basicInfo.price}</p>
                 </div>
 
                 <a
@@ -277,7 +277,7 @@ export default function JiyugaokaCafePage() {
 
         {/* How to get there */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">怎麼去自由之丘？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-walk">怎麼去自由之丘？</h2>
           <div className="space-y-2 text-sm text-stone-600">
             <p>🚃 <strong>從澀谷出發</strong>：東急東横線 約15分鐘</p>
             <p>🚃 <strong>從新宿出發</strong>：轉乘約25〜30分鐘</p>
@@ -288,7 +288,7 @@ export default function JiyugaokaCafePage() {
 
         {/* Travel tips */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">旅遊小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">旅遊小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 建議安排半天，慢慢逛才能感受氛圍</li>
             <li>✅ 平日人少，拍照更方便</li>
@@ -319,7 +319,7 @@ export default function JiyugaokaCafePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link

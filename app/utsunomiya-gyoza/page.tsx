@@ -81,7 +81,7 @@ const faqs = [
 
 export default function UtsunomiyaGyozaPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -111,7 +111,7 @@ export default function UtsunomiyaGyozaPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">「餃子之都」宇都宮的兩大巨頭對決</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">「餃子之都」宇都宮的兩大巨頭對決</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>宇都宮</strong>是日本知名的「<strong>餃子之都</strong>」🥟 從東京搭新幹線只要<strong>約50分</strong>，每年人均餃子消費量名列前茅。在宇都宮數十間餃子店當中，最具代表性的就是<strong>「みんみん」</strong>與<strong>「正嗣」</strong>兩大巨頭。
           </p>
@@ -122,7 +122,7 @@ export default function UtsunomiyaGyozaPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">兩大名店快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">兩大名店快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-red-500 font-black text-sm shrink-0">▸</span>
@@ -142,7 +142,7 @@ export default function UtsunomiyaGyozaPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">宇都宮餃子推薦（推介）・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">宇都宮餃子推薦（推介）・2選</h2>
 
         {/* Shop 1: みんみん */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -182,10 +182,10 @@ export default function UtsunomiyaGyozaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 栃木縣宇都宮市馬場通り4-2-3</p>
-              <p className="text-xs text-stone-600">🚃 JR「宇都宮」駅西口 徒歩約10分</p>
-              <p className="text-xs text-stone-600">⏰ 11:00〜20:00（週三定休）</p>
-              <p className="text-xs text-stone-600">💴 焼餃子・水餃子・揚餃子 各 ¥330（一份6個）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">栃木縣宇都宮市馬場通り4-2-3</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「宇都宮」駅西口 徒歩約10分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:00〜20:00（週三定休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">焼餃子・水餃子・揚餃子 各 ¥330（一份6個）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -237,10 +237,10 @@ export default function UtsunomiyaGyozaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 栃木縣宇都宮市宮島町4-25</p>
-              <p className="text-xs text-stone-600">🚃 JR「宇都宮」駅西口 徒歩約15分</p>
-              <p className="text-xs text-stone-600">⏰ 11:30〜20:00（週二定休）</p>
-              <p className="text-xs text-stone-600">💴 焼餃子・水餃子 各 ¥270（一份6個）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">栃木縣宇都宮市宮島町4-25</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「宇都宮」駅西口 徒歩約15分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:30〜20:00（週二定休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">焼餃子・水餃子 各 ¥270（一份6個）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -256,7 +256,7 @@ export default function UtsunomiyaGyozaPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">宇都宮餃子巡禮小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">宇都宮餃子巡禮小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 想一次比較兩家：<strong>みんみん吃內用＋正嗣外帶</strong>是黃金組合</li>
             <li>✅ 兩家都<strong>1958年創業</strong>，且都位於宇都宮駅西口徒歩圈內</li>
@@ -288,7 +288,7 @@ export default function UtsunomiyaGyozaPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

@@ -95,7 +95,7 @@ const faqJsonLd = {
 
 export default function ShowaKinenParkPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -126,7 +126,7 @@ export default function ShowaKinenParkPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">東京最大級的國營公園！四季都有不同絕景</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">東京最大級的國營公園！四季都有不同絕景</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>昭和紀念公園</strong>（國營昭和紀念公園）位於東京都立川市，占地<strong>約165公頃</strong>，是<strong>日本最大級的國營公園</strong>之一🌳 為紀念昭和天皇即位50年而建，1983年開園。
           </p>
@@ -138,7 +138,7 @@ export default function ShowaKinenParkPage() {
         <PrepBannerCompact />
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京散步景點推薦（推介）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京散步景點推薦（推介）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-2 gap-0.5">
@@ -195,10 +195,10 @@ export default function ShowaKinenParkPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都立川市綠町3173</p>
-              <p className="text-xs text-stone-600">🚃 JR中央線「立川」駅 徒歩約10分／JR青梅線「西立川」駅 徒歩約2分</p>
-              <p className="text-xs text-stone-600">⏰ 9:30〜17:00（季節變動・冬季〜16:30）</p>
-              <p className="text-xs text-stone-600">💴 大人 ¥450／高校生以下 免費／65歲以上 ¥210</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都立川市綠町3173</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR中央線「立川」駅 徒歩約10分／JR青梅線「西立川」駅 徒歩約2分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">9:30〜17:00（季節變動・冬季〜16:30）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">大人 ¥450／高校生以下 免費／65歲以上 ¥210</p>
               <p className="text-xs text-stone-600">🚲 自行車租借 大人3小時 ¥520</p>
               <p className="text-xs text-stone-600">🅿️ 停車場有（普通車 ¥900/日）</p>
             </div>
@@ -221,7 +221,7 @@ export default function ShowaKinenParkPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">昭和紀念公園散步小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">昭和紀念公園散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從新宿搭JR中央線「快速」到立川約<strong>40分</strong>，當天來回方便</li>
             <li>✅ 入園口有多個，<strong>「あけぼの口」</strong>離立川站最近</li>
@@ -254,7 +254,7 @@ export default function ShowaKinenParkPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

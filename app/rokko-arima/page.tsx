@@ -85,7 +85,7 @@ const faqs = [
 
 export default function RokkoArimaPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -115,7 +115,7 @@ export default function RokkoArimaPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">關西最棒的一日遊：登山＋溫泉＋甜點（甜品）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">關西最棒的一日遊：登山＋溫泉＋甜點（甜品）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>六甲山</strong>位於兵庫縣神戶市，是<strong>關西人氣No.1的健行勝地</strong>🏔️ 最高峰標高931公尺，從神戶市區搭電車就能輕鬆抵達登山口。除了健行絕景外，下山後可以搭<strong>纜車到有馬溫泉</strong>，享受<strong>日本三大古湯</strong>之一的溫泉文化♨️
           </p>
@@ -126,7 +126,7 @@ export default function RokkoArimaPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">一日遊行程概覧</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">一日遊行程概覧</h2>
           <div className="space-y-3">
             <div className="flex gap-3"><span className="text-green-500 font-black text-sm shrink-0">①</span><div><p className="text-sm font-bold text-stone-700">早上：御影出發登六甲山</p><p className="text-xs text-stone-500 leading-relaxed">健行約3〜4小時、登頂後可看神戶港景觀</p></div></div>
             <div className="flex gap-3"><span className="text-green-500 font-black text-sm shrink-0">②</span><div><p className="text-sm font-bold text-stone-700">下午：六甲有馬纜車到有馬溫泉</p><p className="text-xs text-stone-500 leading-relaxed">12分鐘空中之旅、俯瞰六甲山絕景</p></div></div>
@@ -135,7 +135,7 @@ export default function RokkoArimaPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">行程推薦・3段體驗</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">行程推薦・3段體驗</h2>
 
         {/* Spot 1: 六甲山 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -163,10 +163,10 @@ export default function RokkoArimaPage() {
             <div className="flex flex-wrap gap-2 mb-4">{["🏔️ 標高931m", "🚶 全程3〜4小時", "🌊 神戶港絕景", "🍁 四季美景", "💪 初級〜中級"].map((t) => (<span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 兵庫縣神戶市（登山口：阪急「御影」駅 徒歩約20分）</p>
-              <p className="text-xs text-stone-600">🚃 阪急神戶線「御影」駅 / JR「住吉」駅</p>
-              <p className="text-xs text-stone-600">⏰ 全日（建議上午8〜9點出發）</p>
-              <p className="text-xs text-stone-600">💴 免費</p>
+              <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市（登山口：阪急「御影」駅 徒歩約20分）</p>
+              <p className="text-xs text-stone-600 ib ib-train">阪急神戶線「御影」駅 / JR「住吉」駅</p>
+              <p className="text-xs text-stone-600 ib ib-clock">全日（建議上午8〜9點出發）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">免費</p>
               <p className="text-xs text-stone-600">🥾 推薦：運動鞋・水（1L以上）・便當・防曬</p>
             </div>
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -201,9 +201,9 @@ export default function RokkoArimaPage() {
             <div className="flex flex-wrap gap-2 mb-4">{["🚠 12分鐘空中之旅", "🍁 秋季紅葉絕景", "♨️ 直達有馬溫泉", "📸 山景必拍"].map((t) => (<span key={t} className="text-xs bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 六甲山頂駅 ⇄ 有馬溫泉駅</p>
-              <p className="text-xs text-stone-600">⏰ 9:30〜17:10（每20分一班・季節變動）</p>
-              <p className="text-xs text-stone-600">💴 單程 大人 ¥1,030／往返 ¥1,820</p>
+              <p className="text-xs text-stone-600 ib ib-pin">六甲山頂駅 ⇄ 有馬溫泉駅</p>
+              <p className="text-xs text-stone-600 ib ib-clock">9:30〜17:10（每20分一班・季節變動）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">單程 大人 ¥1,030／往返 ¥1,820</p>
               <p className="text-xs text-stone-600">🕒 所要時間：約12分</p>
             </div>
           </div>
@@ -233,10 +233,10 @@ export default function RokkoArimaPage() {
             <div className="flex flex-wrap gap-2 mb-4">{["🍦 12種口味", "🌰 丹波黑大豆", "💧 炭酸せんべい", "♨️ 泡湯後完美"].map((t) => (<span key={t} className="text-xs bg-pink-50 text-pink-700 border border-pink-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 兵庫縣神戶市北區有馬町1163</p>
-              <p className="text-xs text-stone-600">🚃 神戶電鐵「有馬溫泉」駅 徒歩約7分</p>
-              <p className="text-xs text-stone-600">⏰ 10:00〜18:00（不定休）</p>
-              <p className="text-xs text-stone-600">💴 單球 ¥400／雙球 ¥500</p>
+              <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市北區有馬町1163</p>
+              <p className="text-xs text-stone-600 ib ib-train">神戶電鐵「有馬溫泉」駅 徒歩約7分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">10:00〜18:00（不定休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">單球 ¥400／雙球 ¥500</p>
             </div>
             <a href="https://arima-stagione.jp/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">🔗 官方網站</a>
           </div>
@@ -244,7 +244,7 @@ export default function RokkoArimaPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">六甲山＆有馬溫泉小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">六甲山＆有馬溫泉小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從<strong>神戶三宮</strong>到御影只要10分，登山口交通超便利🚃</li>
             <li>✅ <strong>春（3〜5月）</strong>新綠＆<strong>秋（10〜11月）</strong>紅葉是最佳季節</li>
@@ -333,7 +333,7 @@ export default function RokkoArimaPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

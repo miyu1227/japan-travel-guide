@@ -130,7 +130,7 @@ const relatedLinks = [
 
 export default function TokyoDisneyAroundPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -173,7 +173,7 @@ export default function TokyoDisneyAroundPage() {
 
         {/* Why this article */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">不進迪士尼樂園也能玩！</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">不進迪士尼樂園也能玩！</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             雖然來東京大家都想衝<strong>東京迪士尼樂園</strong>或<strong>迪士尼海洋</strong>，但門票越來越貴、人潮也不少。這篇整理的是<strong>「不進園」也能享受迪士尼氛圍的玩法</strong>——舞浜站周邊其實有一整片度假區可以散步，用半天的預算就能玩得很滿足✨
           </p>
@@ -185,7 +185,7 @@ export default function TokyoDisneyAroundPage() {
         <PrepBannerCompact />
 
         {/* H2: 推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">舞浜周邊玩法・2個推薦（推介）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">舞浜周邊玩法・2個推薦（推介）</h2>
 
         {/* Spots */}
         <div className="space-y-8 mb-10">
@@ -233,9 +233,9 @@ export default function TokyoDisneyAroundPage() {
 
                 <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
                   <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-                  <p className="text-xs text-stone-600">📍 {spot.basicInfo.address}</p>
-                  <p className="text-xs text-stone-600">🚃 {spot.basicInfo.access}</p>
-                  <p className="text-xs text-stone-600">💴 {spot.basicInfo.price}</p>
+                  <p className="text-xs text-stone-600 ib ib-pin">{spot.basicInfo.address}</p>
+                  <p className="text-xs text-stone-600 ib ib-train">{spot.basicInfo.access}</p>
+                  <p className="text-xs text-stone-600 ib ib-yen">{spot.basicInfo.price}</p>
                   <p className="text-xs text-blue-600 font-semibold">💡 推薦：{spot.recommend}</p>
                 </div>
 
@@ -254,7 +254,7 @@ export default function TokyoDisneyAroundPage() {
 
         {/* 半日行程範例 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">舞浜半日遊行程範例</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">舞浜半日遊行程範例</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>🕘 09:30｜到達舞浜站，先到イクスピアリ的<strong>CAFÉ AUX BACCHANALES</strong>吃早餐＆可頌</li>
             <li>🕚 11:00｜買一張<strong>迪士尼度假區線1日券</strong>，先繞一圈欣賞景色＆BGM</li>
@@ -265,7 +265,7 @@ export default function TokyoDisneyAroundPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">旅遊小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">旅遊小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 度假區線的票券可用IC卡（Suica/PASMO）或現場售票機購入</li>
             <li>✅ 1日券適合「不進園但想拍照＆逛周邊」的旅客，是最C/P值選擇</li>
@@ -277,7 +277,7 @@ export default function TokyoDisneyAroundPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">舞浜周邊 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">舞浜周邊 常見問題</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 不進園真的玩得起來嗎？</p>
@@ -366,7 +366,7 @@ export default function TokyoDisneyAroundPage() {
 
         {/* 延伸閱讀 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href} className="block bg-amber-50 border border-yellow-100 rounded-xl px-4 py-3 hover:bg-amber-100 transition-colors">

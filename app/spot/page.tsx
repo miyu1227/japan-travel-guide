@@ -112,7 +112,7 @@ const faqItems = [
 
 export default function SpotPicnicPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -144,7 +144,7 @@ export default function SpotPicnicPage() {
 
         {/* Why picnic in Tokyo */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">為什麼要在東京野餐？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">為什麼要在東京野餐？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             來東京旅遊，不只是逛街吃美食——其實<strong>東京野餐</strong>也是非常受歡迎的行程🌿 日本人很愛在公園鋪墊子、帶便當、慢慢放鬆。
           </p>
@@ -164,7 +164,7 @@ export default function SpotPicnicPage() {
         <PrepBannerCompact />
 
         {/* H2: 公園推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京野餐公園推薦（推介）・3選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京野餐公園推薦（推介）・3選</h2>
 
         {/* Spot 1: 新宿御苑 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -214,10 +214,10 @@ export default function SpotPicnicPage() {
             {/* 基本資訊 */}
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都新宿区内藤町11</p>
-              <p className="text-xs text-stone-600">🚃 地下鉄「新宿御苑前」駅 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 9:00〜16:30（週一休園）</p>
-              <p className="text-xs text-stone-600">💴 入場料：大人¥500・高中生¥250・中學以下免費</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都新宿区内藤町11</p>
+              <p className="text-xs text-stone-600 ib ib-train">地下鉄「新宿御苑前」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">9:00〜16:30（週一休園）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">入場料：大人¥500・高中生¥250・中學以下免費</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -273,10 +273,10 @@ export default function SpotPicnicPage() {
             {/* 基本資訊 */}
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都渋谷区代々木神園町2-1</p>
-              <p className="text-xs text-stone-600">🚃 JR「原宿」駅 徒歩約3分</p>
-              <p className="text-xs text-stone-600">⏰ 24小時開放</p>
-              <p className="text-xs text-stone-600">💴 入場免費</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都渋谷区代々木神園町2-1</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「原宿」駅 徒歩約3分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">24小時開放</p>
+              <p className="text-xs text-stone-600 ib ib-yen">入場免費</p>
             </div>
 
             <a href="https://www.tokyo-park.or.jp/park/yoyogi/" target="_blank" rel="noopener noreferrer"
@@ -327,10 +327,10 @@ export default function SpotPicnicPage() {
             {/* 基本資訊 */}
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都千代田区日比谷公園1</p>
-              <p className="text-xs text-stone-600">🚃 地下鉄「日比谷」「霞ヶ関」「内幸町」駅 徒歩約2分</p>
-              <p className="text-xs text-stone-600">⏰ 24小時開放</p>
-              <p className="text-xs text-stone-600">💴 入場免費</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都千代田区日比谷公園1</p>
+              <p className="text-xs text-stone-600 ib ib-train">地下鉄「日比谷」「霞ヶ関」「内幸町」駅 徒歩約2分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">24小時開放</p>
+              <p className="text-xs text-stone-600 ib ib-yen">入場免費</p>
             </div>
 
             <a href="https://www.tokyo-park.or.jp/park/hibiya/index.html" target="_blank" rel="noopener noreferrer"
@@ -392,7 +392,7 @@ export default function SpotPicnicPage() {
 
         {/* 野餐食物推薦 */}
         <section className="mb-8">
-          <h2 className="text-lg font-black text-stone-800 mb-1">🍱 野餐食物推薦</h2>
+          <h2 className="text-lg font-black text-stone-800 mb-1 piyo-h piyo-jump">🍱 野餐食物推薦</h2>
           <p className="text-xs text-stone-500 mb-4">👉 在便利商店或超市準備，方便又便宜</p>
           <div className="grid grid-cols-2 gap-3">
             {picnicFood.map((item) => (
@@ -410,7 +410,7 @@ export default function SpotPicnicPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">旅遊小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">旅遊小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 記得帶野餐墊，日本超市・百圓店都有賣</li>
             <li>✅ 天氣好的時候最適合，出發前查一下天氣☀️</li>
@@ -457,7 +457,7 @@ export default function SpotPicnicPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

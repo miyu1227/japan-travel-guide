@@ -115,7 +115,7 @@ const faqItems = [
 
 export default function ShodoshimaPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -145,7 +145,7 @@ export default function ShodoshimaPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">小豆島——瀨戶內海上的橄欖之島</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">小豆島——瀨戶內海上的橄欖之島</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>小豆島</strong>（しょうどしま）位在香川縣、瀨戶內海上，是這片海域第二大的島🫒 1908年日本第一次成功種出橄欖就是在這裡，整座島現在還種著滿山的橄欖樹。除了橄欖，小豆島也是<strong>醬油</strong>與<strong>素麵</strong>的產地，島的東側甚至有一整區叫做「醬之鄉」，空氣裡都是釀造的香味。
           </p>
@@ -158,7 +158,7 @@ export default function ShodoshimaPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-green-500 font-black text-sm shrink-0">▸</span>
@@ -209,7 +209,7 @@ export default function ShodoshimaPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">小豆島景點推薦・6選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">小豆島景點推薦・6選</h2>
 
         {/* Spot 1: ジャンボフェリー */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -269,8 +269,8 @@ export default function ShodoshimaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600">🚢 神戶乘船處 ↔ 小豆島・坂手港</p>
-              <p className="text-xs text-stone-600">⏰ 單程約 3小時25分〜4小時（依班次不同）</p>
-              <p className="text-xs text-stone-600">💴 大人單程 ¥1,990（網路購票 ¥1,890・另加燃油附加費）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">單程約 3小時25分〜4小時（依班次不同）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">大人單程 ¥1,990（網路購票 ¥1,890・另加燃油附加費）</p>
               <p className="text-xs text-stone-600">📅 平日 3班／週末假日 4班</p>
               <p className="text-xs text-stone-600">🪑 有「のびのび席」「單人包廂」「舒適斜躺席」等付費座位</p>
             </div>
@@ -345,9 +345,9 @@ export default function ShodoshimaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 香川縣小豆郡小豆島町田浦</p>
-              <p className="text-xs text-stone-600">⏰ 9:00〜17:00</p>
-              <p className="text-xs text-stone-600">💴 入村費依季節調整：大人 ¥850〜¥1,000／兒童 ¥430〜¥500（7/21〜11/30 最高）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">香川縣小豆郡小豆島町田浦</p>
+              <p className="text-xs text-stone-600 ib ib-clock">9:00〜17:00</p>
+              <p className="text-xs text-stone-600 ib ib-yen">入村費依季節調整：大人 ¥850〜¥1,000／兒童 ¥430〜¥500（7/21〜11/30 最高）</p>
               <p className="text-xs text-stone-600">🎬 村內電影院「松竹座」全天循環放映《二十四之瞳》</p>
               <p className="text-xs text-stone-600">👘 有絣和服租借體驗</p>
             </div>
@@ -406,8 +406,8 @@ export default function ShodoshimaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 香川縣小豆郡小豆島町草壁本町1053-11（草壁港前）</p>
-              <p className="text-xs text-stone-600">⏰ 10:30〜14:00</p>
+              <p className="text-xs text-stone-600 ib ib-pin">香川縣小豆郡小豆島町草壁本町1053-11（草壁港前）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">10:30〜14:00</p>
               <p className="text-xs text-stone-600">🚫 公休：週二、第一・第三個週三</p>
               <p className="text-xs text-stone-600">📞 0879-82-4719</p>
             </div>
@@ -466,9 +466,9 @@ export default function ShodoshimaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 香川縣小豆郡小豆島町草壁本町1055-2</p>
+              <p className="text-xs text-stone-600 ib ib-pin">香川縣小豆郡小豆島町草壁本町1055-2</p>
               <p className="text-xs text-stone-600">🚌 巴士站「草壁港」徒步約7分／池田港開車約15分</p>
-              <p className="text-xs text-stone-600">⏰ 12:00〜18:00（L.O. 17:45）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">12:00〜18:00（L.O. 17:45）</p>
               <p className="text-xs text-stone-600">🚫 公休：週三、週四</p>
               <p className="text-xs text-stone-600">📞 0879-62-8181</p>
             </div>
@@ -527,9 +527,9 @@ export default function ShodoshimaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 香川縣小豆郡小豆島町西村甲1941-1</p>
-              <p className="text-xs text-stone-600">⏰ 8:30〜17:00（全年無休）</p>
-              <p className="text-xs text-stone-600">💴 入園免費・魔法掃帚免費出借</p>
+              <p className="text-xs text-stone-600 ib ib-pin">香川縣小豆郡小豆島町西村甲1941-1</p>
+              <p className="text-xs text-stone-600 ib ib-clock">8:30〜17:00（全年無休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">入園免費・魔法掃帚免費出借</p>
               <p className="text-xs text-stone-600">📞 0879-82-2200</p>
             </div>
 
@@ -587,9 +587,9 @@ export default function ShodoshimaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 香川縣小豆郡小豆島町苗羽甲1850</p>
-              <p className="text-xs text-stone-600">⏰ 9:00〜16:00（夏季・秋季部分期間延長至16:30）</p>
-              <p className="text-xs text-stone-600">💴 大人（國中以上）¥500／小學生 ¥250／幼兒免費</p>
+              <p className="text-xs text-stone-600 ib ib-pin">香川縣小豆郡小豆島町苗羽甲1850</p>
+              <p className="text-xs text-stone-600 ib ib-clock">9:00〜16:00（夏季・秋季部分期間延長至16:30）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">大人（國中以上）¥500／小學生 ¥250／幼兒免費</p>
               <p className="text-xs text-stone-600">🚫 不定休（出發前請先查官網的休館日）</p>
               <p className="text-xs text-stone-600">📞 0879-82-0047（9:00〜17:00）</p>
             </div>
@@ -612,7 +612,7 @@ export default function ShodoshimaPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">小豆島旅遊小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">小豆島旅遊小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ <strong>強烈建議租車</strong>。景點分散在不同海灣，開車20〜40分鐘是常態，路線巴士班次不密</li>
             <li>✅ 想一天走完六個點會很趕。<strong>住一晚</strong>比較舒服，或分成「橄欖公園＋草壁港」與「醬之鄉＋電影村」兩天</li>
@@ -646,7 +646,7 @@ export default function ShodoshimaPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

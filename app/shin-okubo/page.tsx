@@ -181,7 +181,7 @@ const faqJsonLd = {
 
 export default function ShinOkuboPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -214,7 +214,7 @@ export default function ShinOkuboPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">為什麼要去新大久保？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">為什麼要去新大久保？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             這篇寫給<strong>第一次去新大久保、只有半天空檔</strong>的台灣・香港旅人。新大久保是東京最有韓國感的街區，從新宿搭JR只要一站，走幾步就能看到韓國料理店、可愛咖啡廳（咖啡店）和各種韓系甜點（甜品）🇰🇷
           </p>
@@ -229,7 +229,7 @@ export default function ShinOkuboPage() {
         <PrepBannerCompact />
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">新大久保美食推薦・3間必去</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">新大久保美食推薦・3間必去</h2>
 
         {/* Shops */}
         <div className="space-y-8 mb-10">
@@ -283,9 +283,9 @@ export default function ShinOkuboPage() {
 
                 <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
                   <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-                  <p className="text-xs text-stone-600">📍 {shop.basicInfo.address}</p>
-                  <p className="text-xs text-stone-600">🚃 {shop.basicInfo.access}</p>
-                  <p className="text-xs text-stone-600">💴 {shop.basicInfo.price}</p>
+                  <p className="text-xs text-stone-600 ib ib-pin">{shop.basicInfo.address}</p>
+                  <p className="text-xs text-stone-600 ib ib-train">{shop.basicInfo.access}</p>
+                  <p className="text-xs text-stone-600 ib ib-yen">{shop.basicInfo.price}</p>
                 </div>
 
                 <a
@@ -303,7 +303,7 @@ export default function ShinOkuboPage() {
 
         {/* How to get there */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">怎麼去新大久保？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-walk">怎麼去新大久保？</h2>
           <div className="space-y-2 text-sm text-stone-600">
             <p>🚃 <strong>從新宿出發</strong>：JR山手線 約2分鐘（一站）</p>
             <p>🚃 <strong>從澀谷出發</strong>：JR山手線 約15分鐘</p>
@@ -317,7 +317,7 @@ export default function ShinOkuboPage() {
 
         {/* Travel tips */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">旅遊小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">旅遊小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 週末人很多，建議平日或早上前往</li>
             <li>✅ 鍋物午餐→咖啡廳→甜點的順序最順暢</li>
@@ -328,7 +328,7 @@ export default function ShinOkuboPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">新大久保美食 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">新大久保美食 常見問題</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 新大久保美食推薦哪些？預算多少？</p>
@@ -383,7 +383,7 @@ export default function ShinOkuboPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link

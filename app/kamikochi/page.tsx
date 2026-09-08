@@ -98,7 +98,7 @@ const faqJsonLd = {
 
 export default function KamikochiPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -129,7 +129,7 @@ export default function KamikochiPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">日本上高地：海拔1,500m的阿爾卑斯山入口</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">日本上高地：海拔1,500m的阿爾卑斯山入口</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>上高地</strong>位於長野縣松本市，海拔1,500公尺的高原度假勝地，被譽為<strong>「日本阿爾卑斯山」</strong>的入口🏔️ 是日本<strong>「特別名勝」＆「特別天然紀念物」</strong>雙重指定的珍貴自然景觀，每年吸引約120萬遊客造訪。<strong>2026年開放期間是4月17日〜11月15日</strong>，全年禁止私家車進入，只能搭巴士或計程車。
           </p>
@@ -140,7 +140,7 @@ export default function KamikochiPage() {
 
         {/* アクセス */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">上高地怎麼去？從高山、松本、東京、名古屋的交通與票價</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-walk">上高地怎麼去？從高山、松本、東京、名古屋的交通與票價</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             上高地沒有電車，最後一段一定是巴士。台灣・香港旅人最常用的是<strong>「高山進」</strong>（順路玩飛騨高山、白川鄉）和<strong>「松本進」</strong>（從東京出發）兩條。
           </p>
@@ -173,7 +173,7 @@ export default function KamikochiPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-green-500 font-black text-sm shrink-0">▸</span>
@@ -207,7 +207,7 @@ export default function KamikochiPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">上高地＆奧飛騨推薦・4選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">上高地＆奧飛騨推薦・4選</h2>
 
         {/* Spot 1: 平湯大滝 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -247,10 +247,10 @@ export default function KamikochiPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 岐阜縣高山市奧飛騨溫泉鄉平湯</p>
-              <p className="text-xs text-stone-600">🚃 從高山駅搭巴士約52分→「大滝口／露營場」下車徒步20分</p>
-              <p className="text-xs text-stone-600">⏰ 全日開放（步道有時段限制）</p>
-              <p className="text-xs text-stone-600">💴 免費</p>
+              <p className="text-xs text-stone-600 ib ib-pin">岐阜縣高山市奧飛騨溫泉鄉平湯</p>
+              <p className="text-xs text-stone-600 ib ib-train">從高山駅搭巴士約52分→「大滝口／露營場」下車徒步20分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">全日開放（步道有時段限制）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">免費</p>
             </div>
 
             <a href="https://www.hidatakayama.or.jp/spot/detail_1730.html" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
@@ -297,9 +297,9 @@ export default function KamikochiPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 岐阜縣高山市奧飛騨溫泉鄉新平湯溫泉</p>
-              <p className="text-xs text-stone-600">🚃 高山駅搭巴士約60分（新穂高纜車方向・「ガーデンホテル焼岳前」下車）</p>
-              <p className="text-xs text-stone-600">💴 一泊二食 ¥20,900〜（含早晚餐・不含溫泉稅）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">岐阜縣高山市奧飛騨溫泉鄉新平湯溫泉</p>
+              <p className="text-xs text-stone-600 ib ib-train">高山駅搭巴士約60分（新穂高纜車方向・「ガーデンホテル焼岳前」下車）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">一泊二食 ¥20,900〜（含早晚餐・不含溫泉稅）</p>
               <p className="text-xs text-stone-600">🛏️ 全85間（和室68・洋室17）</p>
             </div>
 
@@ -347,10 +347,10 @@ export default function KamikochiPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 岐阜縣高山市奧飛騨溫泉鄉新穂高溫泉</p>
-              <p className="text-xs text-stone-600">🚃 高山駅搭巴士約90分→「新穂高纜車」下車</p>
-              <p className="text-xs text-stone-600">⏰ 全年營業（每30分鐘一班）</p>
-              <p className="text-xs text-stone-600">💴 往返大人 ¥3,800（網路購票有優惠）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">岐阜縣高山市奧飛騨溫泉鄉新穂高溫泉</p>
+              <p className="text-xs text-stone-600 ib ib-train">高山駅搭巴士約90分→「新穂高纜車」下車</p>
+              <p className="text-xs text-stone-600 ib ib-clock">全年營業（每30分鐘一班）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">往返大人 ¥3,800（網路購票有優惠）</p>
             </div>
 
             <a href="https://shinhotaka-ropeway.jp/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
@@ -427,10 +427,10 @@ export default function KamikochiPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 長野縣松本市安曇 上高地</p>
-              <p className="text-xs text-stone-600">🚃 上高地巴士總站 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 全日開放（上高地僅開放4/17〜11/15）</p>
-              <p className="text-xs text-stone-600">💴 免費</p>
+              <p className="text-xs text-stone-600 ib ib-pin">長野縣松本市安曇 上高地</p>
+              <p className="text-xs text-stone-600 ib ib-train">上高地巴士總站 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">全日開放（上高地僅開放4/17〜11/15）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">免費</p>
               <p className="text-xs text-stone-600">🍂 最佳季節：春（4〜5月）・夏（7〜8月）・秋（10月紅葉）</p>
             </div>
 
@@ -477,7 +477,7 @@ export default function KamikochiPage() {
 
         {/* 散策ルート */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">🥾 上高地推薦散策路線</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-walk">🥾 上高地推薦散策路線</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
             上高地擁有完善的木製步道，從河童橋出發可以選擇不同長度的路線散步。以下是最受歡迎的3條路線：
           </p>
@@ -505,7 +505,7 @@ export default function KamikochiPage() {
 
         {/* ベストシーズン */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">🌸 上高地四季景色</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">🌸 上高地四季景色</h2>
           <div className="space-y-2 text-sm text-stone-600">
             <p><strong>🌱 春（4月下旬〜6月）</strong>：開山祭（4/27）後萬物復甦，山頂殘雪與新綠的對比超美。4月下旬到黃金週是第一波熱門期。</p>
             <p><strong>☀️ 夏（7〜8月）</strong>：比松本市區低5〜10°C，是日本人的<strong>避暑聖地</strong>。7月中旬〜暑假期間人最多。</p>
@@ -516,7 +516,7 @@ export default function KamikochiPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">上高地＆奧飛騨旅行小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">上高地＆奧飛騨旅行小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 上高地為自然保護區，<strong>2026年4/17〜11/15</strong>才開放，冬季封山</li>
             <li>✅ 上高地全年禁止私家車，需在沢渡或平湯<strong>轉乘接駁巴士</strong>（¥1,500〜1,600）或計程車（的士）</li>
@@ -550,7 +550,7 @@ export default function KamikochiPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

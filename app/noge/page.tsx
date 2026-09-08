@@ -91,7 +91,7 @@ const faqItems = [
 
 export default function NogePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -123,7 +123,7 @@ export default function NogePage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">野毛——橫濱最大的居酒屋街，也是「續攤」的聖地</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">野毛——橫濱最大的居酒屋街，也是「續攤」的聖地</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             說到橫濱，大家想到的都是紅磚倉庫、摩天輪、港未來的夜景🎡 但只要從<strong>櫻木町站</strong>往反方向走3分鐘，就會進入完全不同的世界——<strong>野毛（Noge）</strong>。
           </p>
@@ -139,7 +139,7 @@ export default function NogePage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-red-400 font-black text-sm shrink-0">▸</span>
@@ -162,7 +162,7 @@ export default function NogePage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">橫濱野毛續攤推薦・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">橫濱野毛續攤推薦・2選</h2>
 
         {/* Spot 1: AM:PM */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -216,10 +216,10 @@ export default function NogePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 神奈川縣橫濱市中區花咲町1-40 叶家大樓1F</p>
-              <p className="text-xs text-stone-600">🚃 JR・市營地下鐵「櫻木町」駅 徒歩約3分</p>
-              <p className="text-xs text-stone-600">⏰ 週一〜四 17:00〜23:00／週五 16:00〜／週六 14:00〜／週日・假日 14:00〜22:00（無公休）</p>
-              <p className="text-xs text-stone-600">💴 一人約¥2,000〜¥3,000／口水雞¥890・手工羊肉煎餃¥580（價格以店頭菜單為準）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">神奈川縣橫濱市中區花咲町1-40 叶家大樓1F</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR・市營地下鐵「櫻木町」駅 徒歩約3分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">週一〜四 17:00〜23:00／週五 16:00〜／週六 14:00〜／週日・假日 14:00〜22:00（無公休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">一人約¥2,000〜¥3,000／口水雞¥890・手工羊肉煎餃¥580（價格以店頭菜單為準）</p>
               <p className="text-xs text-stone-600">🪑 56席（吧台20席・桌位26席）</p>
             </div>
 
@@ -279,11 +279,11 @@ export default function NogePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 神奈川縣橫濱市中區野毛町1-13-5</p>
-              <p className="text-xs text-stone-600">🚃 JR根岸線「櫻木町」駅 徒歩約3分</p>
-              <p className="text-xs text-stone-600">⏰ 週二〜五 17:00〜23:00／週六日・假日 12:00〜23:00（L.O. 餐點22:00・飲料22:30）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">神奈川縣橫濱市中區野毛町1-13-5</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR根岸線「櫻木町」駅 徒歩約3分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">週二〜五 17:00〜23:00／週六日・假日 12:00〜23:00（L.O. 餐點22:00・飲料22:30）</p>
               <p className="text-xs text-stone-600">📅 週一公休（遇假日順延至週二）</p>
-              <p className="text-xs text-stone-600">💴 一人約¥2,000〜¥3,000／壽司¥99〜・生魚片¥429〜（價格以店頭菜單為準）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">一人約¥2,000〜¥3,000／壽司¥99〜・生魚片¥429〜（價格以店頭菜單為準）</p>
               <p className="text-xs text-stone-600">🪑 59席</p>
             </div>
 
@@ -310,7 +310,7 @@ export default function NogePage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">野毛續攤（はしご酒）小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">野毛續攤（はしご酒）小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 野毛就在<strong>櫻木町站</strong>旁，從橫濱站搭JR只要3分鐘、從東京站約35分鐘🚃</li>
             <li>✅ 續攤的鐵則是<strong>「一間只點2〜3道＋一杯」</strong>，吃太飽就走不到第二間了😂</li>
@@ -345,7 +345,7 @@ export default function NogePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

@@ -111,7 +111,7 @@ const faqs = [
 
 export default function ShukugawaPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -141,7 +141,7 @@ export default function ShukugawaPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">夙川——關西隱藏版的咖啡廳散步好去處</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">夙川——關西隱藏版的咖啡廳散步好去處</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             兵庫・<strong>夙川</strong>是關西地區最受歡迎的悠閒住宅區之一，擁有靜謐的街道和美麗的河岸步道🌿 春天河畔的櫻花更是美不勝收，是關西人心中的賞櫻名所🌸
           </p>
@@ -152,7 +152,7 @@ export default function ShukugawaPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
@@ -172,7 +172,7 @@ export default function ShukugawaPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">夙川咖啡廳推薦・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">夙川咖啡廳推薦・2選</h2>
 
         {/* Shops */}
         <div className="space-y-6 mb-10">
@@ -238,7 +238,7 @@ export default function ShukugawaPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">夙川咖啡散步小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">夙川咖啡散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從大阪搭阪急電鐵約30分鐘即可抵達夙川</li>
             <li>✅ 春天（3〜4月）夙川河畔的<strong>櫻花</strong>非常美，推薦搭配咖啡散步🌸</li>
@@ -270,7 +270,7 @@ export default function ShukugawaPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

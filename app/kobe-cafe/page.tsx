@@ -93,7 +93,7 @@ const faqJsonLd = {
 
 export default function KobeCafePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -126,7 +126,7 @@ export default function KobeCafePage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">神戶是日本最適合咖啡散步的城市之一</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">神戶是日本最適合咖啡散步的城市之一</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             神戶從明治時代就深受西洋文化影響，是日本最早接觸咖啡與西式點心的地區之一☕ 整座城市充滿異國風情，街角隨處都能遇見有故事的咖啡廳。
           </p>
@@ -140,7 +140,7 @@ export default function KobeCafePage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
@@ -174,7 +174,7 @@ export default function KobeCafePage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">神戶咖啡推薦・4選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">神戶咖啡推薦・4選</h2>
 
         {/* Spot 1: フロインドリーブ */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -221,10 +221,10 @@ export default function KobeCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 兵庫縣神戶市中央區生田町4-6-15</p>
-              <p className="text-xs text-stone-600">🚉 JR・阪急「三宮」駅 徒歩約8分</p>
-              <p className="text-xs text-stone-600">⏰ 10:00〜18:00（依官網為準・週三休）</p>
-              <p className="text-xs text-stone-600">💴 ¥1,500〜¥2,500 / 人</p>
+              <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市中央區生田町4-6-15</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR・阪急「三宮」駅 徒歩約8分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">10:00〜18:00（依官網為準・週三休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">¥1,500〜¥2,500 / 人</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -287,10 +287,10 @@ export default function KobeCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 兵庫縣神戶市中央區北野町2-15-12</p>
-              <p className="text-xs text-stone-600">🚉 各線「三宮」駅 徒歩約15分／新神戶駅 徒歩約10分</p>
-              <p className="text-xs text-stone-600">⏰ 10:00〜18:00（依官網為準）</p>
-              <p className="text-xs text-stone-600">💴 ¥1,200〜¥2,000 / 人</p>
+              <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市中央區北野町2-15-12</p>
+              <p className="text-xs text-stone-600 ib ib-train">各線「三宮」駅 徒歩約15分／新神戶駅 徒歩約10分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">10:00〜18:00（依官網為準）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">¥1,200〜¥2,000 / 人</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -353,10 +353,10 @@ export default function KobeCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 兵庫縣神戶市中央區三宮町2-3-10（ホテルケーニヒスクローネ神戸内）</p>
-              <p className="text-xs text-stone-600">🚉 各線「三宮」駅 徒歩約7分／JR「元町」駅 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 依官網為準（麵包吃到飽・霜淇淋兌換至15:00左右）</p>
-              <p className="text-xs text-stone-600">💴 主餐約¥2,310〜（含麵包吃到飽・迷你甜點）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市中央區三宮町2-3-10（ホテルケーニヒスクローネ神戸内）</p>
+              <p className="text-xs text-stone-600 ib ib-train">各線「三宮」駅 徒歩約7分／JR「元町」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">依官網為準（麵包吃到飽・霜淇淋兌換至15:00左右）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">主餐約¥2,310〜（含麵包吃到飽・迷你甜點）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -419,10 +419,10 @@ export default function KobeCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 兵庫縣神戶市中央區山本通3-7-29 神戸トアロードビル1F</p>
-              <p className="text-xs text-stone-600">🚉 地下鐵西神・山手線「三宮」駅 徒歩約8分／JR・阪神「元町」駅 徒歩約12分</p>
-              <p className="text-xs text-stone-600">⏰ 11:00〜18:00（L.O. 17:00）／週二公休</p>
-              <p className="text-xs text-stone-600">💴 甜點盤約¥1,700〜、飲品約¥900〜（價格以店頭菜單為準）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市中央區山本通3-7-29 神戸トアロードビル1F</p>
+              <p className="text-xs text-stone-600 ib ib-train">地下鐵西神・山手線「三宮」駅 徒歩約8分／JR・阪神「元町」駅 徒歩約12分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:00〜18:00（L.O. 17:00）／週二公休</p>
+              <p className="text-xs text-stone-600 ib ib-yen">甜點盤約¥1,700〜、飲品約¥900〜（價格以店頭菜單為準）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -443,7 +443,7 @@ export default function KobeCafePage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">神戶咖啡散步小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">神戶咖啡散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 四間都是人氣店，建議<strong>平日上午</strong>造訪比較不用排隊</li>
             <li>✅ 三宮→生田神社→フロインドリーブ→托爾街的Caffarel→北野異人館街，路線剛剛好可以串成散步行程</li>
@@ -477,7 +477,7 @@ export default function KobeCafePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

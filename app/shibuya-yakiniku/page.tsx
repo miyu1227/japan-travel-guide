@@ -89,7 +89,7 @@ const faqItems = [
 
 export default function ShibuyaYakinikuPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -119,7 +119,7 @@ export default function ShibuyaYakinikuPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">澀谷吃肉，這間是「內行人的答案」</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">澀谷吃肉，這間是「內行人的答案」</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             澀谷的燒肉店多到數不完，但如果只能挑一間，很多日本人會直接說出<strong>「ホルモン千葉」</strong>這個名字。這是一間<strong>發跡於京都</strong>的內臟燒肉（ホルモン）名店，目前只有<strong>京都本店、大阪梅田、東京澀谷、東京新宿</strong>四間店🔥
           </p>
@@ -131,7 +131,7 @@ export default function ShibuyaYakinikuPage() {
         <PrepBannerCompact />
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">澀谷燒肉推薦・推介（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">澀谷燒肉推薦・推介（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-2 gap-0.5">
@@ -189,11 +189,11 @@ export default function ShibuyaYakinikuPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都澀谷區道玄坂2-14-17</p>
-              <p className="text-xs text-stone-600">🚃 京王井之頭線「神泉」駅 徒歩約4分／JR・地下鐵「澀谷」駅 徒歩約7分</p>
-              <p className="text-xs text-stone-600">⏰ 平日 17:00〜23:00／週末・假日 16:00〜23:00（L.O. 22:00）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區道玄坂2-14-17</p>
+              <p className="text-xs text-stone-600 ib ib-train">京王井之頭線「神泉」駅 徒歩約4分／JR・地下鐵「澀谷」駅 徒歩約7分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">平日 17:00〜23:00／週末・假日 16:00〜23:00（L.O. 22:00）</p>
               <p className="text-xs text-stone-600">🚫 週一公休（部分資訊來源不一致，建議出發前致電確認）</p>
-              <p className="text-xs text-stone-600">💴 每人約 ¥4,000〜¥6,000（套餐約 ¥2,800 前後）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">每人約 ¥4,000〜¥6,000（套餐約 ¥2,800 前後）</p>
               <p className="text-xs text-stone-600">🪑 僅 L型吧台座位・無包廂</p>
               <p className="text-xs text-stone-600">📞 03-3461-2933</p>
             </div>
@@ -226,7 +226,7 @@ export default function ShibuyaYakinikuPage() {
 
         {/* 其他分店 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">🚄 京都・大阪也吃得到！其他分店</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">🚄 京都・大阪也吃得到！其他分店</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             ホルモン千葉本來就是<strong>從京都起家</strong>的店，如果你的行程是關西進出，不用特地跑到東京也能吃到同樣的味道。
           </p>
@@ -240,7 +240,7 @@ export default function ShibuyaYakinikuPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">澀谷吃肉小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">澀谷吃肉小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 座位只有吧台，<strong>大人數（4人以上）不易入座</strong>，建議2〜3人前往</li>
             <li>✅ <strong>週末假日不接受預約</strong>，平日想確保有位子請提前打電話</li>
@@ -272,7 +272,7 @@ export default function ShibuyaYakinikuPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

@@ -113,7 +113,7 @@ const faqJsonLd = {
 
 export default function HanedaAirportAccessPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -155,7 +155,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* 航廈と乗り場 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">先確認你在哪個航廈：國際線幾乎都是第3航廈</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">先確認你在哪個航廈：國際線幾乎都是第3航廈</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             從台灣・香港飛羽田，<strong>絕大多數航班都停第3航廈（Terminal 3）</strong>。第1・第2航廈以日本國內線為主，只有少數國際線（如部分ANA航班）會用第2航廈。
           </p>
@@ -172,7 +172,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* 出發前確認 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">羽田機場到東京市區前，先確認這些</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">羽田機場到東京市區前，先確認這些</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             雖然羽田機場離市區近，但根據<strong>飯店位置、行李量、抵達時間</strong>不同，最適合的交通方式也會不一樣：
           </p>
@@ -187,7 +187,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* 比較表 */}
         <section id="compare" className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8 scroll-mt-20">
-          <h2 className="text-base font-black text-stone-800 mb-3">羽田機場到東京 交通方式比較表（票價・時間・首末班）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-walk">羽田機場到東京 交通方式比較表（票價・時間・首末班）</h2>
           <div className="overflow-x-auto -mx-5 px-5">
             <table className="w-full text-xs text-stone-600 border-collapse min-w-[640px]">
               <thead>
@@ -243,7 +243,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* 京急 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">① 京急線（Keikyu Line）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">① 京急線（Keikyu Line）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             京急電鐵直接連接<strong>羽田機場第1・第2・第3航廈</strong>，可直達<strong>品川</strong>，再透過都營淺草線直通到<strong>泉岳寺・新橋・淺草</strong>等地🚃 <strong>快特約15分到品川</strong>（急行約25分）、約35分到淺草，是羽田最便宜也最快的選擇。
           </p>
@@ -271,7 +271,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* 単軌電車 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">② 東京單軌電車（Tokyo Monorail）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">② 東京單軌電車（Tokyo Monorail）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             從羽田機場直達<strong>濱松町站</strong>的單軌電車🚝 從濱松町可以轉<strong>JR山手線</strong>到<strong>東京站（2站）、新橋（1站）、上野</strong>等地。<strong>空港快速約13分到濱松町</strong>，沿途可欣賞東京灣與跑道景色，第一次來東京很有感。
           </p>
@@ -299,7 +299,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* 機場巴士 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">③ 機場巴士 / Limousine Bus</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">③ 機場巴士 / Limousine Bus</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             從羽田機場直達<strong>新宿、池袋、東京站、銀座、台場、舞浜（迪士尼）、橫濱</strong>等主要區域的高速巴士🚌 行李可放在巴士底部行李艙，無需轉乘，<strong>直接停在飯店門口或飯店附近</strong>。
           </p>
@@ -327,7 +327,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* 計程車・包車 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">④ 計程車・包車 / Taxi & Private Transfer</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">④ 計程車・包車 / Taxi & Private Transfer</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             羽田機場到市區距離較近，<strong>計程車</strong>也是實用選擇🚕 東京23區有<strong>定額計程車（定額タクシー）</strong>制度：上車前跟司機說「定額」，到該區內任何地點都是固定價，不用怕繞路。<strong>包車</strong>則可事先預約專車，直接送到飯店門口。
           </p>
@@ -369,7 +369,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* 行李配送 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">⑤ 行李多的人：可以考慮行李配送服務</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">⑤ 行李多的人：可以考慮行李配送服務</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             想<strong>下飛機就直接觀光</strong>的話，可以考慮<strong>「羽田機場 ↔ 東京飯店」之間的行李配送服務</strong>🧳 將大行李託運給配送公司，自己只帶輕便手提行李移動，能大幅減輕轉乘的負擔。
           </p>
@@ -412,7 +412,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* 前泊 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">⑥ 早班機・深夜抵達：可以考慮羽田機場住宿</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">⑥ 早班機・深夜抵達：可以考慮羽田機場住宿</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             如果<strong>清早班機</strong>需要趕飛機、或<strong>深夜抵達</strong>來不及搭電車進市區，可以考慮在<strong>羽田機場周邊或航廈內住一晚</strong>，隔天行程會更輕鬆。
           </p>
@@ -474,7 +474,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* ICカード・2029 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">一張 Suica 全部搭得到：入境後先做這件事</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">一張 Suica 全部搭得到：入境後先做這件事</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             京急、單軌電車、JR、地下鐵、巴士都能用 <strong>Suica／PASMO</strong> 嗶卡付款，不用每次買票。iPhone 用戶可以直接在 Apple 錢包新增 Suica 並用信用卡儲值，<strong>還沒落地就能準備好</strong>；實體卡則在京急・單軌電車的售票機或 JR 綠色窗口買「Welcome Suica」。
           </p>
@@ -485,7 +485,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* エリア別おすすめ */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">飯店區域別：羽田機場到各區最佳路線與費用</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-walk">飯店區域別：羽田機場到各區最佳路線與費用</h2>
           <div className="space-y-3">
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
               <p className="text-xs font-bold text-amber-700 mb-1">📍 品川・泉岳寺・淺草</p>
@@ -520,7 +520,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* 初めて */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">初次東京自由行該怎麼選？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">初次東京自由行該怎麼選？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             第一次來東京、又不熟悉日本電車的話，可以參考以下思考方式：
           </p>
@@ -536,7 +536,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">羽田機場到東京 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">羽田機場到東京 常見問題</h2>
           <div className="space-y-4">
             {faqItems.map((f) => (
               <div key={f.q}>
@@ -552,7 +552,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* まとめ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">小結</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">小結</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             羽田機場到東京，<strong>京急 ¥330・單軌 ¥520・巴士 ¥1,300・定額計程車 ¥6,900 起</strong>，四種方式都在1小時內。「最適合的」會依<strong>飯店位置・行李・抵達時間・人數</strong>不同。
           </p>
@@ -587,7 +587,7 @@ export default function HanedaAirportAccessPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

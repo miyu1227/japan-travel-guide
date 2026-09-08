@@ -167,7 +167,7 @@ const faqJsonLd = {
 
 export default function HongKongJapanGuidePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -225,7 +225,7 @@ export default function HongKongJapanGuidePage() {
 
         {/* 航線 */}
         <section className="mb-8">
-          <h2 className="text-lg font-black text-stone-800 mb-1">✈️ 香港飛日本：直航航點同飛行時間</h2>
+          <h2 className="text-lg font-black text-stone-800 mb-1 piyo-h piyo-wave">✈️ 香港飛日本：直航航點同飛行時間</h2>
           <p className="text-xs text-stone-500 mb-4">飛行時間為一般參考值，實際以航空公司公布為準。</p>
           <div className="space-y-3">
             {routes.map((r) => (
@@ -252,7 +252,7 @@ export default function HongKongJapanGuidePage() {
 
         {/* 行前準備 */}
         <section className="mb-8">
-          <h2 className="text-lg font-black text-stone-800 mb-4">🎒 出發前一定要搞掂嘅5件事</h2>
+          <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-stand">🎒 出發前一定要搞掂嘅5件事</h2>
           <div className="space-y-3">
             {checklist.map((c) => (
               <div key={c.title} className="bg-white rounded-2xl border border-stone-100 shadow-sm p-4">
@@ -277,7 +277,7 @@ export default function HongKongJapanGuidePage() {
 
         {/* 退稅 */}
         <section className="mb-8">
-          <h2 className="text-lg font-black text-stone-800 mb-3">🧾 2026年11月起：日本退稅改用「離境退款」方式</h2>
+          <h2 className="text-lg font-black text-stone-800 mb-3 piyo-h piyo-stand">🧾 2026年11月起：日本退稅改用「離境退款」方式</h2>
           <div className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5">
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
               以前喺免稅店埋單即場就唔使畀消費稅，但由 <strong>2026年11月1日</strong> 開始改制：
@@ -297,7 +297,7 @@ export default function HongKongJapanGuidePage() {
 
         {/* 落地後 */}
         <section className="mb-8">
-          <h2 className="text-lg font-black text-stone-800 mb-3">🍜 落地之後：食咩、去邊度</h2>
+          <h2 className="text-lg font-black text-stone-800 mb-3 piyo-h piyo-stand">🍜 落地之後：食咩、去邊度</h2>
           <div className="grid sm:grid-cols-2 gap-2">
             {hubLinks.map((h) => (
               <Link
@@ -314,7 +314,7 @@ export default function HongKongJapanGuidePage() {
 
         {/* FAQ */}
         <section className="mb-8">
-          <h2 className="text-lg font-black text-stone-800 mb-3">❓ 常見問題</h2>
+          <h2 className="text-lg font-black text-stone-800 mb-3 piyo-h piyo-hatena">❓ 常見問題</h2>
           <div className="space-y-2">
             {faqs.map((f) => (
               <div key={f.q} className="bg-white rounded-2xl border border-stone-100 shadow-sm p-4">
@@ -328,7 +328,7 @@ export default function HongKongJapanGuidePage() {
         <AuthorCard />
 
         <section className="mt-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link

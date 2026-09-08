@@ -100,7 +100,7 @@ const faqJsonLd = {
 
 export default function KagawaPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -131,7 +131,7 @@ export default function KagawaPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">香川——「烏龍麵縣」的美食＆觀光天堂</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">香川——「烏龍麵縣」的美食＆觀光天堂</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>香川縣</strong>是日本四國地區的縣，自稱<strong>「烏龍麵縣」</strong>🍜 日本人均烏龍麵消費量No.1，全縣有約600家烏龍麵店，是名副其實的<strong>讚岐烏龍麵</strong>之鄉。從關西可搭新幹線＋瀨戶大橋線約3小時抵達。
           </p>
@@ -142,7 +142,7 @@ export default function KagawaPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3"><span className="text-green-500 font-black text-sm shrink-0">▸</span><div><p className="text-sm font-bold text-stone-700">山越うどん → 釜玉烏龍麵發祥店</p><p className="text-xs text-stone-500 leading-relaxed">綾川町、生蛋拌烏龍麵的元祖名店</p></div></div>
             <div className="flex gap-3"><span className="text-green-500 font-black text-sm shrink-0">▸</span><div><p className="text-sm font-bold text-stone-700">四國水族館 → 瀨戶內海主題水族館</p><p className="text-xs text-stone-500 leading-relaxed">宇多津、2020年開幕、海豚秀超棒</p></div></div>
@@ -153,7 +153,7 @@ export default function KagawaPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">香川觀光推薦・5選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">香川觀光推薦・5選</h2>
 
         {/* Spot 1: 山越うどん */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -179,10 +179,10 @@ export default function KagawaPage() {
             <div className="flex flex-wrap gap-2 mb-4">{["🥚 釜玉發祥店", "🍜 讚岐烏龍麵", "💰 ¥350〜", "🌿 庭園氛圍"].map((t) => (<span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 香川縣綾歌郡綾川町羽床下623</p>
-              <p className="text-xs text-stone-600">🚃 JR「滝宮」駅 開車約10分（建議自駕）</p>
-              <p className="text-xs text-stone-600">⏰ 9:00〜13:30（週日公休）</p>
-              <p className="text-xs text-stone-600">💴 釜玉 ¥350／釜揚 ¥250</p>
+              <p className="text-xs text-stone-600 ib ib-pin">香川縣綾歌郡綾川町羽床下623</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「滝宮」駅 開車約10分（建議自駕）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">9:00〜13:30（週日公休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">釜玉 ¥350／釜揚 ¥250</p>
             </div>
             <a href="https://yamagoeudon.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">🔗 官方網站</a>
           </div>
@@ -210,10 +210,10 @@ export default function KagawaPage() {
             <div className="flex flex-wrap gap-2 mb-4">{["🐬 海豚秀絕景", "🌅 Sunset Time", "👶 親子推薦", "🌊 四國水景"].map((t) => (<span key={t} className="text-xs bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 香川縣綾歌郡宇多津町浜一番丁4番地</p>
-              <p className="text-xs text-stone-600">🚃 JR予讚線「宇多津」駅 徒歩約12分</p>
-              <p className="text-xs text-stone-600">⏰ 9:00〜18:00（季節變動）</p>
-              <p className="text-xs text-stone-600">💴 大人 ¥2,400／中・高校生 ¥1,700／小學生 ¥1,000</p>
+              <p className="text-xs text-stone-600 ib ib-pin">香川縣綾歌郡宇多津町浜一番丁4番地</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR予讚線「宇多津」駅 徒歩約12分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">9:00〜18:00（季節變動）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">大人 ¥2,400／中・高校生 ¥1,700／小學生 ¥1,000</p>
             </div>
             <a href="https://shikoku-aquarium.jp/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">🔗 官方網站</a>
 
@@ -271,10 +271,10 @@ export default function KagawaPage() {
             <div className="flex flex-wrap gap-2 mb-4">{["🍜 ぶっかけ名店", "💰 ¥300〜", "🍤 自助式天婦羅", "🏃 翻桌率高"].map((t) => (<span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 香川縣善通寺市與北町284-1</p>
-              <p className="text-xs text-stone-600">🚃 JR「善通寺」駅 開車約10分（建議自駕）</p>
-              <p className="text-xs text-stone-600">⏰ 9:30〜15:00（週四公休）</p>
-              <p className="text-xs text-stone-600">💴 ぶっかけ ¥300〜／釜揚 ¥250〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">香川縣善通寺市與北町284-1</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「善通寺」駅 開車約10分（建議自駕）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">9:30〜15:00（週四公休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">ぶっかけ ¥300〜／釜揚 ¥250〜</p>
             </div>
             <a href="https://www.instagram.com/yamashitaudon/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">🔗 Instagram</a>
           </div>
@@ -302,9 +302,9 @@ export default function KagawaPage() {
             <div className="flex flex-wrap gap-2 mb-4">{["♨️ 大浴場＆露天風呂", "🍜 夜鳴拉麵免費", "🍳 烏龍麵早餐", "⛩️ 金刀比羅宮徒歩"].map((t) => (<span key={t} className="text-xs bg-amber-50 text-amber-700 border border-amber-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 香川縣仲多度郡琴平町713-1</p>
-              <p className="text-xs text-stone-600">🚃 JR土讚線「琴平」駅 徒歩約10分</p>
-              <p className="text-xs text-stone-600">💴 一泊朝食付 ¥10,000〜／一泊二食 ¥15,000〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">香川縣仲多度郡琴平町713-1</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR土讚線「琴平」駅 徒歩約10分</p>
+              <p className="text-xs text-stone-600 ib ib-yen">一泊朝食付 ¥10,000〜／一泊二食 ¥15,000〜</p>
               <p className="text-xs text-stone-600">🛏️ 全室和洋折衷風格</p>
             </div>
             <a href="https://dormy-hotels.com/resort/hotels/shikishimakan/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">🔗 官方網站</a>
@@ -363,10 +363,10 @@ export default function KagawaPage() {
             <div className="flex flex-wrap gap-2 mb-4">{["⛩️ 四國最大能量景點", "💪 785階挑戰", "🌊 瀨戶內海絕景", "🍡 參道商店街", "💛 幸福之黃御守"].map((t) => (<span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 香川縣仲多度郡琴平町892-1</p>
-              <p className="text-xs text-stone-600">🚃 JR土讚線「琴平」駅 徒歩約20分（到參道入口）</p>
-              <p className="text-xs text-stone-600">⏰ 6:00〜18:00（御守授與所）</p>
-              <p className="text-xs text-stone-600">💴 免費參拜／書院・寶物館 ¥800</p>
+              <p className="text-xs text-stone-600 ib ib-pin">香川縣仲多度郡琴平町892-1</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR土讚線「琴平」駅 徒歩約20分（到參道入口）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">6:00〜18:00（御守授與所）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">免費參拜／書院・寶物館 ¥800</p>
             </div>
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
               <span className="text-sm shrink-0">💡</span>
@@ -378,7 +378,7 @@ export default function KagawaPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">香川旅行小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">香川旅行小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從<strong>關西（新大阪）</strong>搭新幹線＋瀨戶大橋線到高松約<strong>3小時</strong></li>
             <li>✅ 烏龍麵店多在郊外，<strong>自駕</strong>最方便（也可參加烏龍麵巡禮巴士團）</li>
@@ -467,7 +467,7 @@ export default function KagawaPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

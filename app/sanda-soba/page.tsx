@@ -121,7 +121,7 @@ const faqJsonLd = {
 
 export default function SandaSobaPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -152,7 +152,7 @@ export default function SandaSobaPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">神戶近郊的隱藏蕎麥名店——三田「蕎麦いち」</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">神戶近郊的隱藏蕎麥名店——三田「蕎麦いち」</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>兵庫縣三田市</strong>位於神戶市北部、被自然環繞的小城市🌿 從大阪・神戶搭電車約40分鐘，是關西人氣的<strong>郊外蕎麥麵聖地</strong>。豐富的水源＆涼爽氣候，孕育出獨特的「<strong>三田蕎麥文化</strong>」。
           </p>
@@ -162,7 +162,7 @@ export default function SandaSobaPage() {
         </section>
 
         {/* Shop */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">兵庫三田美食推薦</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">兵庫三田美食推薦</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-2 gap-0.5">
@@ -220,10 +220,10 @@ export default function SandaSobaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 兵庫縣三田市（詳見官網）</p>
-              <p className="text-xs text-stone-600">🚃 JR寶塚線「三田」駅 開車或巴士前往</p>
-              <p className="text-xs text-stone-600">⏰ 11:00〜14:30 / 17:00〜20:00（依日變動・建議查官網）</p>
-              <p className="text-xs text-stone-600">💴 蕎麥 ¥900〜¥1,500／套餐 ¥1,800〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">兵庫縣三田市（詳見官網）</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR寶塚線「三田」駅 開車或巴士前往</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:00〜14:30 / 17:00〜20:00（依日變動・建議查官網）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">蕎麥 ¥900〜¥1,500／套餐 ¥1,800〜</p>
               <p className="text-xs text-stone-600">🅿️ 免費停車場有</p>
             </div>
 
@@ -245,7 +245,7 @@ export default function SandaSobaPage() {
 
         {/* 蕎麥麵文化 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">關於日本蕎麥麵（そば）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">關於日本蕎麥麵（そば）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             蕎麥麵是日本代表性的傳統麵食，江戶時代起就是庶民的日常美食🍃 依據蕎麥粉比例分為：<strong>「二八そば」（蕎麥粉8：麵粉2）</strong>是最常見比例、<strong>「十割そば」（100%蕎麥粉）</strong>是最高級也最難製作、<strong>「更科そば」</strong>則使用精製的白色蕎麥芯製作。
           </p>
@@ -256,7 +256,7 @@ export default function SandaSobaPage() {
 
         {/* 三田地區介紹 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">關於三田（Sanda）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">關於三田（Sanda）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             三田市位於<strong>兵庫縣中部</strong>，離神戶市中心約30分鐘車程🌾 這裡以<strong>「三田牛」「三田米」「三田蕎麥」</strong>等優質農產聞名，也是關西人熟悉的<strong>神戶近郊小旅行目的地</strong>。
           </p>
@@ -267,7 +267,7 @@ export default function SandaSobaPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 神戶附近哪裡吃得到好吃的蕎麥麵？</p>
@@ -304,7 +304,7 @@ export default function SandaSobaPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">三田蕎麥麵旅行小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">三田蕎麥麵旅行小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從<strong>大阪</strong>搭JR寶塚線到三田約<strong>40分</strong>、神戶約<strong>50分</strong>，當天來回方便</li>
             <li>✅ 手打蕎麥<strong>每日限量</strong>，建議11:30〜13:30的早午餐時段前往</li>
@@ -334,7 +334,7 @@ export default function SandaSobaPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

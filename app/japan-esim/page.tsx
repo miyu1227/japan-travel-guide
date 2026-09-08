@@ -73,7 +73,7 @@ const relatedLinks = [
 
 export default function JapanEsimPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -161,7 +161,7 @@ export default function JapanEsimPage() {
 
         {/* 為什麼 eSIM 便利 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">日本旅行為什麼 eSIM 很方便？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">日本旅行為什麼 eSIM 很方便？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             日本自由行幾乎每天都會用到網路：
           </p>
@@ -179,7 +179,7 @@ export default function JapanEsimPage() {
 
         {/* eSIM とは */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">eSIM 是什麼？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">eSIM 是什麼？</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             eSIM（embedded SIM）是<strong>內建在手機裡的數位 SIM 卡</strong>，不需要實體卡片就能啟用通訊方案。
           </p>
@@ -199,7 +199,7 @@ export default function JapanEsimPage() {
 
         {/* 比較 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">eSIM、實體 SIM、租借 Wi-Fi 比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">eSIM、實體 SIM、租借 Wi-Fi 比較</h2>
 
           <div className="overflow-x-auto -mx-5 px-5">
             <table className="w-full text-xs text-stone-600 border-collapse min-w-[480px]">
@@ -259,7 +259,7 @@ export default function JapanEsimPage() {
 
         {/* おすすめの人 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">eSIM 適合哪些人？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">eSIM 適合哪些人？</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>🐥 想<strong>「下飛機就能上網」</strong>的旅客</li>
             <li>🚶 行李越輕越好、不想多帶 Wi-Fi 機的人</li>
@@ -272,7 +272,7 @@ export default function JapanEsimPage() {
 
         {/* 購買前確認 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">購買前先確認這些</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">購買前先確認這些</h2>
           <div className="space-y-3 text-sm text-stone-600">
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3">
               <p className="text-xs font-bold text-amber-700 mb-1">📱 手機是否支援 eSIM？</p>
@@ -295,7 +295,7 @@ export default function JapanEsimPage() {
 
         {/* Klook 預約流程 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">在 Klook 預約 eSIM 的流程</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">在 Klook 預約 eSIM 的流程</h2>
           <ol className="space-y-3 text-sm text-stone-600">
             <li className="flex gap-3">
               <span className="shrink-0 w-7 h-7 rounded-full bg-pink-100 text-pink-700 font-bold flex items-center justify-center text-xs">1</span>
@@ -341,7 +341,7 @@ export default function JapanEsimPage() {
 
         {/* 日本到着後の使い方 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">抵達日本後的使用流程</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">抵達日本後的使用流程</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✈️ 飛機落地、收到入境後的訊號</li>
             <li>📱 開啟手機設定，切換到日本 eSIM 為主要數據</li>
@@ -356,7 +356,7 @@ export default function JapanEsimPage() {
 
         {/* 注意 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">常見注意點</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">常見注意點</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>⚠️ <strong>啟用時機</strong>：部分方案是<strong>第一次連線即開始計算</strong>，出發前不要先連上去</li>
             <li>⚠️ 與台灣・香港門號的<strong>切換設定</strong>建議出發前先測試</li>
@@ -369,7 +369,7 @@ export default function JapanEsimPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">日本 eSIM 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">日本 eSIM 常見問題</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 怎麼知道我的手機能不能用 eSIM？</p>
@@ -409,7 +409,7 @@ export default function JapanEsimPage() {
 
         {/* まとめ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">小結</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">小結</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             eSIM 並不是<strong>「絕對最好」</strong>的選項——而是「對某些旅人特別方便」的選擇。<br />
             獨自旅遊、想省下找 SIM 的時間、不想多帶 Wi-Fi 機的人，eSIM 通常是合適的方案。
@@ -439,7 +439,7 @@ export default function JapanEsimPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

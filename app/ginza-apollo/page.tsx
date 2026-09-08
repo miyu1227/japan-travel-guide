@@ -81,7 +81,7 @@ const faqs = [
 
 export default function GinzaApolloPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -111,7 +111,7 @@ export default function GinzaApolloPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">在銀座感受地中海陽光！話題希臘料理</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">在銀座感受地中海陽光！話題希臘料理</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             來東京旅遊，<strong>銀座</strong>是不可錯過的高級美食區🏙️ 從米其林星級壽司、和牛鐵板燒到世界各國料理應有盡有。
           </p>
@@ -123,7 +123,7 @@ export default function GinzaApolloPage() {
         <PrepBannerCompact />
 
         {/* Shop */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">銀座美食推薦（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">銀座美食推薦（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-3 gap-0.5">
@@ -181,10 +181,10 @@ export default function GinzaApolloPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都中央區銀座5-2-1 銀座Nouvo 11F</p>
-              <p className="text-xs text-stone-600">🚇 東京メトロ銀座線・丸之內線・日比谷線「銀座」駅 徒歩約2分</p>
-              <p className="text-xs text-stone-600">⏰ 11:00〜22:00（時期變動）</p>
-              <p className="text-xs text-stone-600">💴 午餐 ¥3,000〜／晚餐 ¥8,000〜／套餐 ¥15,000〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都中央區銀座5-2-1 銀座Nouvo 11F</p>
+              <p className="text-xs text-stone-600 ib ib-train">東京メトロ銀座線・丸之內線・日比谷線「銀座」駅 徒歩約2分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:00〜22:00（時期變動）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">午餐 ¥3,000〜／晚餐 ¥8,000〜／套餐 ¥15,000〜</p>
               <p className="text-xs text-stone-600">📞 03-3572-4200（建議預約）</p>
             </div>
 
@@ -216,7 +216,7 @@ export default function GinzaApolloPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">銀座美食小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">銀座美食小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ THE APOLLO 是<strong>分享盤式料理</strong>，2人以上前往最划算</li>
             <li>✅ 晚餐熱門時段（19:00〜21:00）建議<strong>提前1〜2週預約</strong></li>
@@ -248,7 +248,7 @@ export default function GinzaApolloPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

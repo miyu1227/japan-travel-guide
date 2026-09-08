@@ -98,7 +98,7 @@ const faqItems = [
 
 export default function DaikanyamaCafePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -128,7 +128,7 @@ export default function DaikanyamaCafePage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">代官山——東京最有格調的咖啡散步區</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">代官山——東京最有格調的咖啡散步區</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>代官山</strong>是東京最受歡迎的高級時尚街區之一，從澀谷搭電車只要1站就能抵達🏙️ 街道安靜優雅，聚集了許多設計精品店、選物店和特色咖啡廳，被譽為「東京的巴黎」。
           </p>
@@ -141,7 +141,7 @@ export default function DaikanyamaCafePage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
@@ -175,7 +175,7 @@ export default function DaikanyamaCafePage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">代官山咖啡廳推薦・4選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">代官山咖啡廳推薦・4選</h2>
 
         {/* Spot 1: PRINCI */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -213,10 +213,10 @@ export default function DaikanyamaCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都澀谷區猿樂町17-5 代官山T-SITE內</p>
-              <p className="text-xs text-stone-600">🚃 東急東橫線「代官山」駅 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 7:00〜20:00</p>
-              <p className="text-xs text-stone-600">💴 麵包 ¥300〜／套餐 ¥1,500〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區猿樂町17-5 代官山T-SITE內</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急東橫線「代官山」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">7:00〜20:00</p>
+              <p className="text-xs text-stone-600 ib ib-yen">麵包 ¥300〜／套餐 ¥1,500〜</p>
               <p className="text-xs text-stone-600">📞 03-6455-2470</p>
             </div>
 
@@ -269,10 +269,10 @@ export default function DaikanyamaCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都澀谷區惠比壽西2-15-9 Cellaza代官山1F</p>
-              <p className="text-xs text-stone-600">🚃 東急東橫線「代官山」駅 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 11:00〜19:00（不定休）</p>
-              <p className="text-xs text-stone-600">💴 費南雪 ¥350／泡芙 ¥550〜／布丁 ¥680〜</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區惠比壽西2-15-9 Cellaza代官山1F</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急東橫線「代官山」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:00〜19:00（不定休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">費南雪 ¥350／泡芙 ¥550〜／布丁 ¥680〜</p>
               <p className="text-xs text-stone-600">📞 03-6416-3940</p>
             </div>
 
@@ -332,10 +332,10 @@ export default function DaikanyamaCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都澀谷區惠比壽西1-35-14（Charles-Henry隔壁）</p>
-              <p className="text-xs text-stone-600">🚃 東急東橫線「代官山」駅 徒歩約2分</p>
-              <p className="text-xs text-stone-600">⏰ 9:00〜19:00</p>
-              <p className="text-xs text-stone-600">💴 可頌類約¥400〜、Bostock ¥790、Croque Madame ¥1,230（價格以店頭為準）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區惠比壽西1-35-14（Charles-Henry隔壁）</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急東橫線「代官山」駅 徒歩約2分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">9:00〜19:00</p>
+              <p className="text-xs text-stone-600 ib ib-yen">可頌類約¥400〜、Bostock ¥790、Croque Madame ¥1,230（價格以店頭為準）</p>
               <p className="text-xs text-stone-600">🪑 內用約10席（不接受訂位）</p>
             </div>
 
@@ -411,10 +411,10 @@ export default function DaikanyamaCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都澀谷區惠比壽西1-33-18 コート代官山101</p>
-              <p className="text-xs text-stone-600">🚃 東急東橫線「代官山」駅 徒步約5分（「中目黑」駅約8分／「惠比壽」駅約15分）</p>
-              <p className="text-xs text-stone-600">⏰ 10:00〜19:30（L.O. 19:00）・不定休</p>
-              <p className="text-xs text-stone-600">💴 飲品約 ¥400〜¥660／甜點約 ¥460〜¥500</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區惠比壽西1-33-18 コート代官山101</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急東橫線「代官山」駅 徒步約5分（「中目黑」駅約8分／「惠比壽」駅約15分）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">10:00〜19:30（L.O. 19:00）・不定休</p>
+              <p className="text-xs text-stone-600 ib ib-yen">飲品約 ¥400〜¥660／甜點約 ¥460〜¥500</p>
               <p className="text-xs text-stone-600">📞 03-6455-1204</p>
               <p className="text-xs text-stone-600">🪑 約30席</p>
             </div>
@@ -437,7 +437,7 @@ export default function DaikanyamaCafePage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">代官山咖啡散步小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">代官山咖啡散步小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從澀谷搭東急東橫線只要1站，交通非常方便</li>
             <li>✅ 四間店距離很近，可以安排同一天順遊</li>
@@ -472,7 +472,7 @@ export default function DaikanyamaCafePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

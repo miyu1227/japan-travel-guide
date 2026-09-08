@@ -88,7 +88,7 @@ const faqItems = [
 
 export default function TokyoYakinikuPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -120,7 +120,7 @@ export default function TokyoYakinikuPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">來東京，一定要吃一次「好一點的燒肉」</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">來東京，一定要吃一次「好一點的燒肉」</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             日本的燒肉分成很多層次——從一個人¥3,000的平價吃到飽，到一個人¥20,000的頂級和牛專門店都有🥩 而說到<strong>「高級燒肉」</strong>這個類別，日本人第一個想到的名字幾乎都是<strong>叙々苑（JOJOEN）</strong>。
           </p>
@@ -135,7 +135,7 @@ export default function TokyoYakinikuPage() {
         <PrepBannerCompact />
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京高級燒肉推薦（推介）・叙々苑 品川王子大飯店店</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京高級燒肉推薦（推介）・叙々苑 品川王子大飯店店</h2>
 
         {/* Spot 1: 叙々苑 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
@@ -182,10 +182,10 @@ export default function TokyoYakinikuPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都港區高輪4-10-30 品川王子大飯店 N Tower 1F</p>
-              <p className="text-xs text-stone-600">🚃 JR各線「品川」駅 高輪口 徒歩約2分／京急本線「品川」駅 西口 徒歩約2分</p>
-              <p className="text-xs text-stone-600">⏰ 11:30〜21:30（L.O.）／平日16:00〜17:00 休息・六日假日不休息</p>
-              <p className="text-xs text-stone-600">💴 午餐 ¥2,640〜¥4,000／晚餐 ¥15,000〜¥20,000（另加5%服務費・午餐與外帶除外）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都港區高輪4-10-30 品川王子大飯店 N Tower 1F</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR各線「品川」駅 高輪口 徒歩約2分／京急本線「品川」駅 西口 徒歩約2分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:30〜21:30（L.O.）／平日16:00〜17:00 休息・六日假日不休息</p>
+              <p className="text-xs text-stone-600 ib ib-yen">午餐 ¥2,640〜¥4,000／晚餐 ¥15,000〜¥20,000（另加5%服務費・午餐與外帶除外）</p>
               <p className="text-xs text-stone-600">🚭 全席禁菸（含電子菸）</p>
             </div>
 
@@ -216,7 +216,7 @@ export default function TokyoYakinikuPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">東京吃高級燒肉的小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">東京吃高級燒肉的小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ <strong>中午來最划算</strong>：同一間店、同樣的服務，午餐價格大約是晚餐的1/5💰</li>
             <li>✅ 叙々苑晚餐<strong>另加5%服務費</strong>（午餐與外帶不加），抓預算時記得算進去</li>
@@ -250,7 +250,7 @@ export default function TokyoYakinikuPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

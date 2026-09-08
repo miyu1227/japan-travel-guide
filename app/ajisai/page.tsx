@@ -140,7 +140,7 @@ const faqJsonLd = {
 
 export default function AjisaiPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -183,7 +183,7 @@ export default function AjisaiPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">6月的東京限定：紫陽花景色🌸</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">6月的東京限定：紫陽花景色🌸</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             提到日本的<strong>紫陽花（あじさい／Hydrangea）</strong>，大家會想到鎌倉的明月院或箱根登山電車，但其實<strong>東京都心也有免費且交通方便的紫陽花景點</strong>。這篇整理2個實際造訪過的地方——都免費入場、都靠地鐵徒步就能到。
           </p>
@@ -195,7 +195,7 @@ export default function AjisaiPage() {
         <PrepBannerCompact />
 
         {/* H2: 推薦 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京紫陽花景點・2選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京紫陽花景點・2選</h2>
 
         {/* Spots */}
         <div className="space-y-8 mb-10">
@@ -243,9 +243,9 @@ export default function AjisaiPage() {
 
                 <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
                   <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-                  <p className="text-xs text-stone-600">📍 {spot.basicInfo.address}</p>
-                  <p className="text-xs text-stone-600">🚃 {spot.basicInfo.access}</p>
-                  <p className="text-xs text-stone-600">💴 {spot.basicInfo.price}</p>
+                  <p className="text-xs text-stone-600 ib ib-pin">{spot.basicInfo.address}</p>
+                  <p className="text-xs text-stone-600 ib ib-train">{spot.basicInfo.access}</p>
+                  <p className="text-xs text-stone-600 ib ib-yen">{spot.basicInfo.price}</p>
                   <p className="text-xs text-stone-600">🌸 花期：{spot.basicInfo.season}</p>
                   <p className="text-xs text-purple-600 font-semibold">💡 推薦：{spot.recommend}</p>
                 </div>
@@ -265,7 +265,7 @@ export default function AjisaiPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">賞紫陽花小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">賞紫陽花小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 花期以<strong>6月中旬</strong>為顛峰，行程可以往這個時段靠近</li>
             <li>✅ 雨後花色會更飽和，帶把小傘反而是攝影加分項☔</li>
@@ -277,7 +277,7 @@ export default function AjisaiPage() {
 
         {/* 延伸閱讀 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href} className="block bg-amber-50 border border-yellow-100 rounded-xl px-4 py-3 hover:bg-amber-100 transition-colors">

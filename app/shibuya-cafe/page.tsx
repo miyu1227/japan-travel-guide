@@ -79,7 +79,7 @@ const relatedLinks = [
 
 export default function ShibuyaCafePage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -111,7 +111,7 @@ export default function ShibuyaCafePage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">在澀谷，找到一間「用耳朵享受」的咖啡廳</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">在澀谷，找到一間「用耳朵享受」的咖啡廳</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             澀谷的咖啡廳多到數不清，但這間<strong>「RECOCO（レココ）渋谷」</strong>非常特別——它是一間可以<strong>親手拿起黑膠唱片、放上唱盤試聽</strong>的音樂體驗型咖啡廳🎵 就算你從沒碰過黑膠唱片，也能在這裡輕鬆體驗那種類比音樂獨有的溫暖音色。
           </p>
@@ -121,7 +121,7 @@ export default function ShibuyaCafePage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">澀谷咖啡廳推薦（推介）・黑膠唱片咖啡</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">澀谷咖啡廳推薦（推介）・黑膠唱片咖啡</h2>
 
         {/* Spot 1: RECOCO */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
@@ -168,10 +168,10 @@ export default function ShibuyaCafePage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都渋谷區渋谷3-1-10 IRIE FIRST PLAZA 1F</p>
-              <p className="text-xs text-stone-600">🚉 澀谷駅 徒歩約6分（C1出口徒歩約4分）／表參道駅 徒歩約11分</p>
-              <p className="text-xs text-stone-600">⏰ 11:00〜21:00（L.O. 20:30・無定休，年末年始休）</p>
-              <p className="text-xs text-stone-600">💴 入場費＋1飲料制（唱片聽到飽方案 平日約¥1,320／假日約¥1,650）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都渋谷區渋谷3-1-10 IRIE FIRST PLAZA 1F</p>
+              <p className="text-xs text-stone-600 ib ib-train">澀谷駅 徒歩約6分（C1出口徒歩約4分）／表參道駅 徒歩約11分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:00〜21:00（L.O. 20:30・無定休，年末年始休）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">入場費＋1飲料制（唱片聽到飽方案 平日約¥1,320／假日約¥1,650）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -202,7 +202,7 @@ export default function ShibuyaCafePage() {
 
         {/* 澀谷地區 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">關於澀谷（Shibuya）</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">關於澀谷（Shibuya）</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             澀谷是東京最具代表性的年輕文化＆潮流發信地🚶‍♀️ 車站前的<strong>「澀谷スクランブル交差点」（澀谷十字路口）</strong>是世界最繁忙的路口之一，一次紅綠燈可以有3000人同時穿越，是東京的觀光地標。
           </p>
@@ -213,7 +213,7 @@ export default function ShibuyaCafePage() {
 
         {/* 順路推薦 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">順路推薦：澀谷附近景點</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">順路推薦：澀谷附近景點</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
@@ -248,7 +248,7 @@ export default function ShibuyaCafePage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">常見問題 FAQ</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 澀谷咖啡廳需要預約嗎？</p>
@@ -279,7 +279,7 @@ export default function ShibuyaCafePage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">澀谷咖啡廳造訪小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">澀谷咖啡廳造訪小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從澀谷駅走過來約6分鐘，位於<strong>金王八幡宮</strong>附近的八幡通沿線，逛街途中很好安排🚶</li>
             <li>✅ 店內<strong>只收電子支付</strong>，出發前確認信用卡或行動支付能正常使用💳</li>
@@ -309,7 +309,7 @@ export default function ShibuyaCafePage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

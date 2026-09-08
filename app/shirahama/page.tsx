@@ -104,7 +104,7 @@ const faqJsonLd = {
 
 export default function ShirahamaPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -137,7 +137,7 @@ export default function ShirahamaPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">白浜，是關西最療癒的海邊度假勝地</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">白浜，是關西最療癒的海邊度假勝地</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>白浜（Shirahama）</strong>位於和歌山縣南部，是關西人氣的海濱度假地🌊 這裡有雪白的沙灘、溫泉、超好吃（好食）的海鮮，還有能近距離看動物的大型主題樂園，從大阪開車約2小時就能抵達，非常適合安排一趟兩天一夜的小旅行。
           </p>
@@ -148,7 +148,7 @@ export default function ShirahamaPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-green-400 font-black text-sm shrink-0">▸</span>
@@ -182,7 +182,7 @@ export default function ShirahamaPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">和歌山白浜景點推薦・4選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">和歌山白浜景點推薦・4選</h2>
 
         {/* Spot 1: Adventure World */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -229,10 +229,10 @@ export default function ShirahamaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 和歌山縣西牟婁郡白浜町堅田2399</p>
-              <p className="text-xs text-stone-600">🚉 JR「白浜」駅 搭巴士約10分／南紀白浜IC 車程約5分</p>
-              <p className="text-xs text-stone-600">⏰ 10:00〜17:00（依季節變動・不定休，詳見官網）</p>
-              <p className="text-xs text-stone-600">💴 1日票 大人¥5,300／中人（12〜17歲）¥4,300／小人（4〜11歲）¥3,300</p>
+              <p className="text-xs text-stone-600 ib ib-pin">和歌山縣西牟婁郡白浜町堅田2399</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「白浜」駅 搭巴士約10分／南紀白浜IC 車程約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">10:00〜17:00（依季節變動・不定休，詳見官網）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">1日票 大人¥5,300／中人（12〜17歲）¥4,300／小人（4〜11歲）¥3,300</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -295,10 +295,10 @@ export default function ShirahamaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 和歌山縣白浜町日置1875</p>
-              <p className="text-xs text-stone-600">🚉 紀勢自動車道交流道 車程約5分</p>
-              <p className="text-xs text-stone-600">⏰ Check-in 16:00／Check-out 10:00（電話受理 9:00〜19:00）</p>
-              <p className="text-xs text-stone-600">💴 依房型與方案而異（詳見官網預約）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">和歌山縣白浜町日置1875</p>
+              <p className="text-xs text-stone-600 ib ib-train">紀勢自動車道交流道 車程約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">Check-in 16:00／Check-out 10:00（電話受理 9:00〜19:00）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">依房型與方案而異（詳見官網預約）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -361,10 +361,10 @@ export default function ShirahamaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 和歌山縣西牟婁郡白浜町1279-3</p>
-              <p className="text-xs text-stone-600">🚉 JR「白浜」駅 車程約10分／巴士「白浜桟橋」下車 徒歩約3分</p>
-              <p className="text-xs text-stone-600">⏰ 8:00〜18:00（Cafe &amp; Bar 18:00〜20:00・無休，臨時休業另計）</p>
-              <p className="text-xs text-stone-600">💴 生かげろう ¥120〜／午餐 ¥650〜¥1,200 左右</p>
+              <p className="text-xs text-stone-600 ib ib-pin">和歌山縣西牟婁郡白浜町1279-3</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「白浜」駅 車程約10分／巴士「白浜桟橋」下車 徒歩約3分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">8:00〜18:00（Cafe &amp; Bar 18:00〜20:00・無休，臨時休業另計）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">生かげろう ¥120〜／午餐 ¥650〜¥1,200 左右</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -437,10 +437,10 @@ export default function ShirahamaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 和歌山縣西牟婁郡白浜町堅田2521（とれとれパーク内）</p>
-              <p className="text-xs text-stone-600">🚉 JR「白浜」駅 車程約5分</p>
-              <p className="text-xs text-stone-600">⏰ BBQ 平日11:00〜16:30／假日10:00〜17:00 左右最終入場</p>
-              <p className="text-xs text-stone-600">💴 BBQ入場 大人¥1,000／兒童¥700／幼兒¥300（含飲料吧・另購食材）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">和歌山縣西牟婁郡白浜町堅田2521（とれとれパーク内）</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「白浜」駅 車程約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">BBQ 平日11:00〜16:30／假日10:00〜17:00 左右最終入場</p>
+              <p className="text-xs text-stone-600 ib ib-yen">BBQ入場 大人¥1,000／兒童¥700／幼兒¥300（含飲料吧・另購食材）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -505,7 +505,7 @@ export default function ShirahamaPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">白浜旅遊小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">白浜旅遊小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 白浜景點分散，<strong>自駕</strong>最方便，從大阪開車約2小時🚗</li>
             <li>✅ 很適合安排<strong>兩天一夜</strong>：白天玩Adventure World、晚上住海邊Glamping</li>
@@ -537,7 +537,7 @@ export default function ShirahamaPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

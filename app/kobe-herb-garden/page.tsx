@@ -96,7 +96,7 @@ const faqJsonLd = {
 
 export default function KobeHerbGardenPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -129,7 +129,7 @@ export default function KobeHerbGardenPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">搭纜車，登上神戶最療癒的山頂花園</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">搭纜車，登上神戶最療癒的山頂花園</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>神戶布引香草園</strong>是日本最大級的香草園，位於神戶市區後方、標高<strong>400公尺</strong>的山頂上🌿 最大的魅力是可以搭乘<strong>神戶布引纜車</strong>，從新神戶駅旁一路空中滑行到山頂，沿途還能俯瞰布引瀑布與神戶市街，光是纜車就值回票價。
           </p>
@@ -195,7 +195,7 @@ export default function KobeHerbGardenPage() {
         </section>
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">神戶布引香草園・纜車空中花園</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-stand">神戶布引香草園・纜車空中花園</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-2 gap-0.5">
@@ -252,10 +252,10 @@ export default function KobeHerbGardenPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 兵庫縣神戶市中央區北野町1-4-3</p>
-              <p className="text-xs text-stone-600">🚉 各線「新神戶」駅 徒歩約5分至纜車山麓駅，搭纜車約10分至山頂</p>
-              <p className="text-xs text-stone-600">⏰ 依季節而異（夏季夜間營業至21:00・詳見官網）</p>
-              <p className="text-xs text-stone-600">💴 纜車往復（含入園）約¥2,000 前後（依季節/時段，詳見官網）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市中央區北野町1-4-3</p>
+              <p className="text-xs text-stone-600 ib ib-train">各線「新神戶」駅 徒歩約5分至纜車山麓駅，搭纜車約10分至山頂</p>
+              <p className="text-xs text-stone-600 ib ib-clock">依季節而異（夏季夜間營業至21:00・詳見官網）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">纜車往復（含入園）約¥2,000 前後（依季節/時段，詳見官網）</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
@@ -276,7 +276,7 @@ export default function KobeHerbGardenPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">造訪香草園小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">造訪香草園小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從<strong>新神戶駅</strong>徒步就能到纜車站，安排在神戶行程中很順路🚶</li>
             <li>✅ 想看夜景的話<strong>傍晚上山</strong>最划算，一次收花海＋夕景＋夜景</li>
@@ -308,7 +308,7 @@ export default function KobeHerbGardenPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

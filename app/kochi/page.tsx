@@ -85,7 +85,7 @@ const faqs = [
 
 export default function KochiPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -115,7 +115,7 @@ export default function KochiPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">高知——日本最後的清流＆鰹魚之鄉</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">高知——日本最後的清流＆鰹魚之鄉</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             <strong>高知縣</strong>位於四國南部，擁有<strong>日本三大清流之一</strong>的<strong>仁淀川</strong>🌊 透明度極高的河水形成夢幻的「<strong>仁淀藍</strong>」絕景，是攝影愛好者必朝聖的隱藏景點。
           </p>
@@ -126,7 +126,7 @@ export default function KochiPage() {
 
         {/* Quick compare */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">快速比較</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">快速比較</h2>
           <div className="space-y-3">
             <div className="flex gap-3"><span className="text-green-500 font-black text-sm shrink-0">▸</span><div><p className="text-sm font-bold text-stone-700">にこ淵 → 仁淀藍夢幻秘境</p><p className="text-xs text-stone-500 leading-relaxed">透明度日本第一、夢幻藍色水池、攝影聖地</p></div></div>
             <div className="flex gap-3"><span className="text-green-500 font-black text-sm shrink-0">▸</span><div><p className="text-sm font-bold text-stone-700">タタキ道場 → 鰹魚炙烤體驗</p><p className="text-xs text-stone-500 leading-relaxed">親手炙烤鰹魚タタキ、稻草大火超震撼</p></div></div>
@@ -135,7 +135,7 @@ export default function KochiPage() {
         </section>
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">高知觀光推薦・3選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">高知觀光推薦・3選</h2>
 
         {/* Spot 1: にこ淵 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6">
@@ -163,10 +163,10 @@ export default function KochiPage() {
             <div className="flex flex-wrap gap-2 mb-4">{["💎 仁淀藍秘境", "📸 攝影聖地", "🌳 自然絕景", "🏞️ 日本三大清流"].map((t) => (<span key={t} className="text-xs bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 高知縣吾川郡伊野町清水上分</p>
-              <p className="text-xs text-stone-600">🚃 高知市中心開車約60分（建議自駕）</p>
-              <p className="text-xs text-stone-600">⏰ 全日（建議白天造訪，光線最美）</p>
-              <p className="text-xs text-stone-600">💴 免費</p>
+              <p className="text-xs text-stone-600 ib ib-pin">高知縣吾川郡伊野町清水上分</p>
+              <p className="text-xs text-stone-600 ib ib-train">高知市中心開車約60分（建議自駕）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">全日（建議白天造訪，光線最美）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">免費</p>
             </div>
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
               <span className="text-sm shrink-0">💡</span>
@@ -202,10 +202,10 @@ export default function KochiPage() {
             <div className="flex flex-wrap gap-2 mb-4">{["🔥 稻草大火炙烤", "🐟 鰹魚タタキ體驗", "👨‍🍳 親手料理", "📸 震撼畫面"].map((t) => (<span key={t} className="text-xs bg-red-50 text-red-700 border border-red-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 高知縣高知市中心（多店舗）／中土佐町黑潮工房（本店）</p>
-              <p className="text-xs text-stone-600">🚃 各店不同（市中心店徒歩可達）</p>
-              <p className="text-xs text-stone-600">⏰ 11:00〜21:00（依店舖）</p>
-              <p className="text-xs text-stone-600">💴 體驗 ¥2,500〜（含一份鰹魚タタキ＆白飯）</p>
+              <p className="text-xs text-stone-600 ib ib-pin">高知縣高知市中心（多店舗）／中土佐町黑潮工房（本店）</p>
+              <p className="text-xs text-stone-600 ib ib-train">各店不同（市中心店徒歩可達）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:00〜21:00（依店舖）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">體驗 ¥2,500〜（含一份鰹魚タタキ＆白飯）</p>
               <p className="text-xs text-stone-600">📞 建議事先預約</p>
             </div>
             <a href="https://www.tataki.co.jp/tenpo.htm" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">🔗 官方店舗資訊</a>
@@ -238,10 +238,10 @@ export default function KochiPage() {
             <div className="flex flex-wrap gap-2 mb-4">{["🐟 鰹魚タタキ", "🍶 高知地酒", "🥟 名物餃子", "🍻 熱鬧氛圍", "💰 ¥2,000〜"].map((t) => (<span key={t} className="text-xs bg-amber-50 text-amber-700 border border-amber-200 px-3 py-1 rounded-full">{t}</span>))}</div>
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 高知縣高知市帶屋町2-3-1</p>
-              <p className="text-xs text-stone-600">🚃 土佐電鐵「大橋通」駅 徒歩約2分／JR「高知」駅 徒歩約20分</p>
-              <p className="text-xs text-stone-600">⏰ 10:00〜23:00（週日 9:00〜・依店舖變動）</p>
-              <p className="text-xs text-stone-600">💴 預算 ¥2,000〜¥3,000</p>
+              <p className="text-xs text-stone-600 ib ib-pin">高知縣高知市帶屋町2-3-1</p>
+              <p className="text-xs text-stone-600 ib ib-train">土佐電鐵「大橋通」駅 徒歩約2分／JR「高知」駅 徒歩約20分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">10:00〜23:00（週日 9:00〜・依店舖變動）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">預算 ¥2,000〜¥3,000</p>
             </div>
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
               <span className="text-sm shrink-0">💡</span>
@@ -253,7 +253,7 @@ export default function KochiPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">高知旅行小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">高知旅行小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 從<strong>關西（新大阪）</strong>搭新幹線＋特急到高知約<strong>4小時</strong>，飛機更快（伊丹〜高知約45分）</li>
             <li>✅ 仁淀川秘境離市區較遠，<strong>自駕必要</strong>🚗</li>
@@ -341,7 +341,7 @@ export default function KochiPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

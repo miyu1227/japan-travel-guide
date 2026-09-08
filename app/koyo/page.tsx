@@ -122,7 +122,7 @@ const faqJsonLd = {
 
 export default function KoyoPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -155,7 +155,7 @@ export default function KoyoPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">秋天來東京，絕不能錯過的風景</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">秋天來東京，絕不能錯過的風景</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             每到11月下旬，東京就會換上最美的秋裝🍁 這次要推薦（推介）的是東京紅葉季最具代表性的景點——<strong>神宮外苑銀杏並木</strong>。
           </p>
@@ -167,7 +167,7 @@ export default function KoyoPage() {
         <PrepBannerCompact />
 
         {/* H2 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">東京紅葉景點・1選（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京紅葉景點・1選（持續更新中）</h2>
 
         {/* Spot: 神宮外苑銀杏並木 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
@@ -218,10 +218,10 @@ export default function KoyoPage() {
             {/* 基本資訊 */}
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 東京都港區北青山2丁目</p>
-              <p className="text-xs text-stone-600">🚇 東京メトロ銀座線「外苑前」駅 徒歩約5分</p>
-              <p className="text-xs text-stone-600">⏰ 全日開放（自由散策）</p>
-              <p className="text-xs text-stone-600">💴 免費</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都港區北青山2丁目</p>
+              <p className="text-xs text-stone-600 ib ib-train">東京メトロ銀座線「外苑前」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">全日開放（自由散策）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">免費</p>
               <p className="text-xs text-stone-600">🍁 最佳觀賞期：11月中旬〜12月上旬</p>
             </div>
 
@@ -253,7 +253,7 @@ export default function KoyoPage() {
 
         {/* 銀杏並木的歷史・背景 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">神宮外苑銀杏並木的歷史</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">神宮外苑銀杏並木的歷史</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             神宮外苑銀杏並木誕生於<strong>1923年（大正12年）</strong>，是為了配合1926年完成的「聖德紀念繪畫館」而規劃的參道🌳 這146棵銀杏樹的樹苗，其實是從<strong>新宿御苑</strong>培育的種子開始，由日本近代造園之父<strong>折下吉延</strong>親自設計，依照「越靠近繪畫館越矮」的視覺原理排列——這也是為什麼從青山通入口看過去，銀杏隧道會呈現完美的透視感📐
           </p>
@@ -264,7 +264,7 @@ export default function KoyoPage() {
 
         {/* 順路推薦：附近景點 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">順路推薦：附近景點</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-jump">順路推薦：附近景點</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
@@ -299,7 +299,7 @@ export default function KoyoPage() {
 
         {/* 東京其他賞紅葉地點 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">東京其他人氣賞紅葉地點</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">東京其他人氣賞紅葉地點</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
             如果時間允許，除了神宮外苑銀杏並木，東京其實還有很多值得一去的紅葉名所：
           </p>
@@ -314,7 +314,7 @@ export default function KoyoPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">東京紅葉 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">東京紅葉 常見問題</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京紅葉是幾月？2026年什麼時候去最好？</p>
@@ -363,7 +363,7 @@ export default function KoyoPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">賞銀杏小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">賞銀杏小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ 最佳觀賞期是11月中旬〜12月上旬，建議出發前查詢「紅葉情報」確認狀況</li>
             <li>✅ 清晨或平日人少，拍照會更順利📸</li>
@@ -389,7 +389,7 @@ export default function KoyoPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href}

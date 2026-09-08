@@ -137,7 +137,7 @@ const faqJsonLd = {
 
 export default function ConradOsakaPage() {
   return (
-    <div className="min-h-screen bg-amber-50 font-sans">
+    <div className="min-h-screen bg-amber-50 wagara font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -170,7 +170,7 @@ export default function ConradOsakaPage() {
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">在大阪，想吃一頓「有氣氛」的飯店料理</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">在大阪，想吃一頓「有氣氛」的飯店料理</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             大阪的美食很強，但幾乎都是熱鬧路邊的那一種。行程裡如果想安排<strong>一頓安靜、可以慢慢吃、拍起來也好看</strong>的餐，飯店的自助餐是最好用的選項🥂
           </p>
@@ -183,7 +183,7 @@ export default function ConradOsakaPage() {
         </section>
 
         {/* 餐廳卡片 */}
-        <h2 className="text-lg font-black text-stone-800 mb-4">康萊德大阪 Atmos Italian Dining</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-stand">康萊德大阪 Atmos Italian Dining</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8">
           <div className="grid grid-cols-2 gap-0.5">
@@ -240,11 +240,11 @@ export default function ConradOsakaPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600">📍 大阪市北區中之島3-2-4 康萊德大阪 40F</p>
-              <p className="text-xs text-stone-600">🚇 大阪Metro四橋線「肥後橋」駅 4號出口直結／京阪中之島線「渡邊橋」駅 13號出口直結</p>
+              <p className="text-xs text-stone-600 ib ib-pin">大阪市北區中之島3-2-4 康萊德大阪 40F</p>
+              <p className="text-xs text-stone-600 ib ib-train">大阪Metro四橋線「肥後橋」駅 4號出口直結／京阪中之島線「渡邊橋」駅 13號出口直結</p>
               <p className="text-xs text-stone-600">🚶 大阪Metro御堂筋線・京阪本線「淀屋橋」駅 7號出口 徒歩約6分</p>
-              <p className="text-xs text-stone-600">⏰ 早餐 6:30〜／午餐 11:30〜／甜點自助餐 14:30〜／晚餐 17:30〜（各時段有最後入店時間）</p>
-              <p className="text-xs text-stone-600">💴 價格依平日／假日與季節企劃不同，訂位時請以官網公告為準</p>
+              <p className="text-xs text-stone-600 ib ib-clock">早餐 6:30〜／午餐 11:30〜／甜點自助餐 14:30〜／晚餐 17:30〜（各時段有最後入店時間）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">價格依平日／假日與季節企劃不同，訂位時請以官網公告為準</p>
               <p className="text-xs text-stone-600">📞 建議事前訂位（官網或電話）</p>
             </div>
 
@@ -266,7 +266,7 @@ export default function ConradOsakaPage() {
 
         {/* 空間 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">最大的亮點：挑高10.5公尺的窗與水晶裝置</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">最大的亮點：挑高10.5公尺的窗與水晶裝置</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             一走進去先抬頭。天花板垂下來的是一圈一圈的<strong>金色螺旋吊燈</strong>，柱子上則掛著大大小小的玻璃圓盤，光線穿過的時候會慢慢晃動✨
           </p>
@@ -280,7 +280,7 @@ export default function ConradOsakaPage() {
 
         {/* 時段の選び方 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">早餐、午餐、甜點、晚餐——該挑哪個時段？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">早餐、午餐、甜點、晚餐——該挑哪個時段？</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-red-400 font-black text-sm shrink-0">▸</span>
@@ -318,7 +318,7 @@ export default function ConradOsakaPage() {
 
         {/* 交通 */}
         <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">怎麼去康萊德大阪？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-walk">怎麼去康萊德大阪？</h2>
           <div className="space-y-2 text-sm text-stone-600">
             <p>🚇 <strong>大阪Metro四橋線「肥後橋」駅</strong>：4號出口<strong>直結</strong>，下雨天也不用撐傘</p>
             <p>🚇 <strong>京阪中之島線「渡邊橋」駅</strong>：13號出口<strong>直結</strong></p>
@@ -336,7 +336,7 @@ export default function ConradOsakaPage() {
 
         {/* FAQ */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">康萊德大阪自助餐 常見問題</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">康萊德大阪自助餐 常見問題</h2>
           <div className="space-y-4">
             <div>
               <p className="text-sm font-bold text-stone-700 mb-1">❓ 大阪自助餐推薦哪一間？康萊德的價位大概多少？</p>
@@ -379,7 +379,7 @@ export default function ConradOsakaPage() {
 
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3">用餐小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">用餐小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ <strong>白天想拍照、晚上想看夜景</strong>，先決定要哪一種再選時段</li>
             <li>✅ 時間制大約90〜100分鐘，<strong>先繞一圈看有什麼再拿</strong>比較不會吃不完</li>
@@ -458,7 +458,7 @@ export default function ConradOsakaPage() {
 
         {/* 延伸閱讀 */}
         <section>
-          <h2 className="text-base font-black text-stone-800 mb-3">📚 延伸閱讀</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">📚 延伸閱讀</h2>
           <div className="space-y-3">
             {relatedLinks.map((link) => (
               <Link
