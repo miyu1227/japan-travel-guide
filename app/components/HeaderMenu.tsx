@@ -17,6 +17,8 @@ export type SearchItem = {
 type Props = {
   items: SearchItem[];
   nav: { href: string; label: string }[];
+  areas: { slug: string; label: string }[];
+  areaCounts: Record<string, number>;
 };
 
 /**
@@ -24,7 +26,7 @@ type Props = {
  * 記事データは SiteHeader（サーバ側）で最小限に削ってから props で受け取るので、
  * lib/articles.ts のまるごとがクライアントに載ることはない。
  */
-export default function HeaderMenu({ items, nav }: Props) {
+export default function HeaderMenu({ items, nav, areas, areaCounts }: Props) {
   const [openSearch, setOpenSearch] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
   const [q, setQ] = useState("");
@@ -150,17 +152,43 @@ export default function HeaderMenu({ items, nav }: Props) {
       {/* スマホのメニュー */}
       {openMenu && (
         <div className="absolute inset-x-0 top-16 border-b border-stone-200 bg-white shadow-lg lg:hidden">
-          <nav className="mx-auto flex w-full max-w-[1400px] flex-col px-5 py-2 sm:px-8">
-            {nav.map((n) => (
+          <nav className="mx-auto w-full max-w-[1400px] px-5 py-3 sm:px-8">
+            <p className="mb-1 text-[11px] font-black tracking-widest text-stone-400">分類</p>
+            <div className="flex flex-col">
+              {nav.map((n) => (
+                <Link
+                  key={n.href}
+                  href={n.href}
+                  onClick={() => setOpenMenu(false)}
+                  className="border-b border-stone-100 py-3 text-[15px] font-bold text-stone-700"
+                >
+                  {n.label}
+                </Link>
+              ))}
+            </div>
+
+            <p className="mb-2 mt-4 text-[11px] font-black tracking-widest text-stone-400">地區</p>
+            <div className="flex flex-wrap gap-2 pb-3">
               <Link
-                key={n.href}
-                href={n.href}
+                href="/#articles"
                 onClick={() => setOpenMenu(false)}
-                className="border-b border-stone-100 py-3.5 text-[15px] font-bold text-stone-700 last:border-0"
+                className="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-bold text-stone-700"
               >
-                {n.label}
+                全部
+                <span className="ml-1 text-[11px] text-stone-400">{areaCounts.all ?? 0}</span>
               </Link>
-            ))}
+              {areas.map((a) => (
+                <Link
+                  key={a.slug}
+                  href={`/#area-${a.slug}`}
+                  onClick={() => setOpenMenu(false)}
+                  className="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-bold text-stone-700"
+                >
+                  {a.label}
+                  <span className="ml-1 text-[11px] text-stone-400">{areaCounts[a.label] ?? 0}</span>
+                </Link>
+              ))}
+            </div>
           </nav>
         </div>
       )}

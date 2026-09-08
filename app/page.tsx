@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ARTICLE_BY_SLUG, ARTICLES, picks, type PickItem } from "@/lib/articles";
+import { AREA_DEFS, AREA_LABEL_BY_SLUG } from "@/lib/areas";
 import { HUBS } from "@/lib/hubs";
 import HeroArt, { HeroPetals } from "./components/HeroArt";
 
@@ -126,15 +127,64 @@ function ArticleCard({ item, visible }: { item: PickItem; visible: boolean }) {
   );
 }
 
+/** 地域タブの並び。「其他」は必ず最後。 */
+const AREA_ORDER = ["東京", "大阪", "兵庫", "北海道", "四國", "其他"];
+const AREAS = AREA_ORDER.filter((a) => ALL_ARTICLES.some((x) => x.areas.includes(a)));
+
+/** 絞り込みボタン1個。押せることが一目でわかるよう、面のあるボタンにする。 */
+function FilterPill({
+  label,
+  count,
+  active,
+  activeClass,
+  onClick,
+}: {
+  label: string;
+  count: number;
+  active: boolean;
+  activeClass: string;
+  onClick: () => void;
+}) {
+  const disabled = count === 0 && !active;
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      className={`inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-bold transition-all ${
+        active
+          ? `${activeClass} shadow-[0_3px_0_rgba(27,27,27,0.15)]`
+          : disabled
+            ? "cursor-not-allowed border border-stone-200 bg-white text-stone-300"
+            : "border border-stone-300 bg-white text-stone-700 hover:-translate-y-0.5 hover:border-stone-900 hover:text-stone-900"
+      }`}
+    >
+      {label}
+      <span className={`text-[11px] font-bold ${active ? "text-white/70" : "text-stone-400"}`}>{count}</span>
+    </button>
+  );
+}
+
 function ArticleGrid() {
   const [cat, setCat] = useState<string>("all");
+  const [area, setArea] = useState<string>("all");
   const [expanded, setExpanded] = useState(false);
 
   // ヘッダーの「美食」などから /#cafe で飛んできたとき、その分類を選んだ状態で開く。
   useEffect(() => {
     const apply = () => {
       const id = window.location.hash.replace("#", "");
-      if (id && categories.some((c) => c.id === id)) {
+      if (!id) return;
+      // ヘッダーの地區メニューは /#area-tokyo のかたちで飛んでくる
+      if (id.startsWith("area-")) {
+        const label = AREA_LABEL_BY_SLUG[id.slice(5)];
+        if (label) {
+          setArea(label);
+          setExpanded(false);
+        }
+        return;
+      }
+      if (categories.some((c) => c.id === id)) {
         setCat(id);
         setExpanded(false);
       }
@@ -144,62 +194,145 @@ function ArticleGrid() {
     return () => window.removeEventListener("hashchange", apply);
   }, []);
 
-  const filtered = cat === "all" ? ALL_ARTICLES : ALL_ARTICLES.filter((a) => a.category === cat);
+  const matchCat = (a: PickItem, id: string) => id === "all" || a.category === id;
+  const matchArea = (a: PickItem, id: string) => id === "all" || a.areas.includes(id);
+
+  const filtered = ALL_ARTICLES.filter((a) => matchCat(a, cat) && matchArea(a, area));
   const hasMore = filtered.length > INITIAL_VISIBLE;
+
+  // 件数はもう片方の絞り込みを効かせた状態で数える。0件の組み合わせは押せなくする。
+  const catCount = (id: string) => ALL_ARTICLES.filter((a) => matchCat(a, id) && matchArea(a, area)).length;
+  const areaCount = (id: string) => ALL_ARTICLES.filter((a) => matchCat(a, cat) && matchArea(a, id)).length;
 
   // SEO: 折りたたみ分も初期HTMLに残す。表示だけ hidden で切る。
   const visibleHrefs = new Set(
     filtered.slice(0, expanded ? filtered.length : INITIAL_VISIBLE).map((a) => a.href)
   );
 
-  const tabs = [
-    { id: "all", label: "全部", count: ALL_ARTICLES.length },
-    ...categories.map((c) => ({ id: c.id, label: c.labelZh, count: (picks[c.id] ?? []).length })),
-  ];
+  const isFiltered = cat !== "all" || area !== "all";
+  const reset = () => {
+    setCat("all");
+    setArea("all");
+    setExpanded(false);
+    if (window.location.hash) history.replaceState(null, "", window.location.pathname);
+  };
 
   return (
     <section id="articles" className="scroll-mt-24">
       {/* 分類ごとに章立てせず、1つのグリッドに新しい順で混ぜる。
           章に分けると3件の「零食伴手禮」と24件の「景點」が同じ重みで並んで読みにくかった。 */}
-      <div className="mb-7 flex flex-wrap items-end justify-between gap-x-8 gap-y-4 border-b border-stone-200 pb-4">
-        <div>
-          <h2 className="text-2xl font-black tracking-tight text-stone-900 sm:text-[28px]">全部文章</h2>
-          <p className="mt-0.5 text-[11px] font-bold uppercase tracking-[0.2em] text-stone-400">
-            All articles ・ {ALL_ARTICLES.length} 篇・新的在前
-          </p>
-        </div>
+      <div className="mb-6 border-b border-stone-200 pb-4">
+        <h2 className="text-2xl font-black tracking-tight text-stone-900 sm:text-[28px]">全部文章</h2>
+        <p className="mt-0.5 text-[11px] font-bold uppercase tracking-[0.2em] text-stone-400">
+          All articles ・ {ALL_ARTICLES.length} 篇・新的在前
+        </p>
+      </div>
 
-        <div className="scrollbar-hide -mb-4 flex max-w-full gap-1 overflow-x-auto">
-          {tabs.map((t) => (
-            <button
-              key={t.id}
+      {/* 絞り込み。下線タブだと押せることが伝わらなかったので面のあるボタンにした。
+          分類の選択中の色は、カード左上のラベルと同じ色を使って対応をわからせる。 */}
+      <div className="rounded-2xl border border-stone-200 bg-stone-50 p-4 sm:p-5">
+        <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center sm:gap-4">
+          <span className="shrink-0 text-xs font-black tracking-widest text-stone-400 sm:w-12">分類</span>
+          <div className="flex flex-wrap gap-2">
+            <FilterPill
+              label="全部"
+              count={catCount("all")}
+              active={cat === "all"}
+              activeClass="bg-stone-900 text-white"
               onClick={() => {
-                setCat(t.id);
+                setCat("all");
                 setExpanded(false);
               }}
-              className={`shrink-0 border-b-2 px-3 pb-3.5 text-sm font-bold transition-colors ${
-                cat === t.id
-                  ? "border-stone-900 text-stone-900"
-                  : "border-transparent text-stone-400 hover:text-stone-700"
-              }`}
-            >
-              {t.label}
-              <span className="ml-1 text-[11px] font-bold text-stone-300">{t.count}</span>
-            </button>
-          ))}
+            />
+            {categories.map((c) => (
+              <FilterPill
+                key={c.id}
+                label={c.labelZh}
+                count={catCount(c.id)}
+                active={cat === c.id}
+                activeClass={c.chip}
+                onClick={() => {
+                  setCat(c.id);
+                  setExpanded(false);
+                }}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-3.5 flex flex-col gap-2.5 border-t border-stone-200 pt-3.5 sm:flex-row sm:items-center sm:gap-4">
+          <span className="shrink-0 text-xs font-black tracking-widest text-stone-400 sm:w-12">地區</span>
+          <div className="flex flex-wrap gap-2">
+            <FilterPill
+              label="全部"
+              count={areaCount("all")}
+              active={area === "all"}
+              activeClass="bg-stone-900 text-white"
+              onClick={() => {
+                setArea("all");
+                setExpanded(false);
+              }}
+            />
+            {AREAS.map((a) => (
+              <FilterPill
+                key={a}
+                label={a}
+                count={areaCount(a)}
+                active={area === a}
+                activeClass="bg-stone-900 text-white"
+                onClick={() => {
+                  setArea(a);
+                  setExpanded(false);
+                }}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* ヘッダーのナビが /#ramen などで飛んでくる先。位置はグリッドの頭に揃える。 */}
+      <div className="mb-7 mt-4 flex items-center gap-3 text-sm">
+        <p className="font-bold text-stone-600">
+          {isFiltered ? (
+            <>
+              {cat === "all" ? "全部" : CAT_BY_ID[cat]?.labelZh}
+              {area !== "all" && <> ・ {area}</>}：<span className="text-stone-900">{filtered.length}</span> 篇
+            </>
+          ) : (
+            <>共 {filtered.length} 篇</>
+          )}
+        </p>
+        {isFiltered && (
+          <button
+            type="button"
+            onClick={reset}
+            className="rounded-full px-2.5 py-1 text-xs font-bold text-stone-400 underline underline-offset-2 transition-colors hover:text-stone-900"
+          >
+            清除篩選
+          </button>
+        )}
+      </div>
+
+      {/* ヘッダーのナビが /#ramen・/#area-tokyo で飛んでくる先。
+          実体のあるidを置いておくと、絞り込みの適用だけでなくスクロールもブラウザ任せにできる。 */}
       {categories.map((c) => (
         <span key={c.id} id={c.id} className="block h-0 scroll-mt-28" aria-hidden="true" />
       ))}
+      {AREA_DEFS.map((a) => (
+        <span key={a.slug} id={`area-${a.slug}`} className="block h-0 scroll-mt-28" aria-hidden="true" />
+      ))}
 
-      <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-3 xl:grid-cols-4">
-        {ALL_ARTICLES.map((item) => (
-          <ArticleCard key={item.href} item={item} visible={visibleHrefs.has(item.href)} />
-        ))}
-      </div>
+      {filtered.length === 0 ? (
+        <div className="rounded-2xl border border-dashed border-stone-200 bg-stone-50 p-12 text-center text-stone-400">
+          <div className="mb-2 text-3xl">🐣</div>
+          <p className="text-sm">這個組合還沒有文章</p>
+        </div>
+      ) : (
+        <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-3 xl:grid-cols-4">
+          {ALL_ARTICLES.map((item) => (
+            <ArticleCard key={item.href} item={item} visible={visibleHrefs.has(item.href)} />
+          ))}
+        </div>
+      )}
 
       {hasMore && (
         <div className="mt-9 flex justify-center">
