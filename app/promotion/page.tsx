@@ -45,7 +45,7 @@ export default function PromotionPage() {
 
       {/* Header */}
       <header className="sticky top-16 z-40 bg-white/90 backdrop-blur-md border-b border-stone-100 shadow-sm">
-        <div className="max-w-2xl xl:max-w-[760px] mx-auto px-4 h-14 flex items-center gap-3">
+        <div className="max-w-2xl xl:max-w-[920px] mx-auto px-4 h-14 flex items-center gap-3">
           <Link href="/" className="text-stone-500 hover:text-stone-800 transition-colors text-sm flex items-center gap-1">
             ← 返回
           </Link>
@@ -54,7 +54,7 @@ export default function PromotionPage() {
         </div>
       </header>
 
-      <article className="max-w-2xl xl:max-w-[760px] mx-auto px-4 py-8 space-y-6">
+      <article className="max-w-2xl xl:max-w-[920px] mx-auto px-4 py-8 space-y-6">
 
         {/* 事業者向けサイトへの導線。詳細はそちらに集約している。 */}
         <Link

@@ -118,7 +118,7 @@ body:has(.biz-root) {
   background-size: 56px 97px;
 }
 
-/* 本文はPCで900pxまで広がるので、帯は確実に余白が残る1440px以上でだけ出す */
+/* 本文はPCで920pxまで広がるので、帯は余白が確実に残る1440px以上でだけ出す */
 @media (min-width: 1440px) {
   .wagara {
     background-image: url("/motifs-left.svg"), url("/motifs-right.svg"), url("/wagara.svg");
@@ -159,25 +159,8 @@ body:has(.biz-root) {
 .ib-clock { background-image: url("/icons/clock.svg"); }
 .ib-yen { background-image: url("/icons/yen.svg"); }
 
-/* 記事の右の空きに置く目次。本文（xl以上で820px）の右外に固定する。
-   余白が確実に残る1400px以上でだけ出す。 */
-.toc-rail { display: none; }
-
-@media (min-width: 1400px) {
-  .toc-rail {
-    display: block;
-    position: fixed;
-    top: 148px;
-    left: calc(50% + 428px);
-    width: 244px;
-    max-height: calc(100vh - 190px);
-    overflow-y: auto;
-    z-index: 20;
-  }
-}
-
 /* 記事の中の文字が小さすぎたので、PCでは一段上げる。
-   本文が820pxに広がったぶん、14px だと字面が痩せて見える。 */
+   本文が920pxに広がったぶん、14px だと字面が痩せて見える。 */
 @media (min-width: 1024px) {
   article .text-sm { font-size: 15px; line-height: 1.75; }
   article .text-xs { font-size: 13px; line-height: 1.7; }
