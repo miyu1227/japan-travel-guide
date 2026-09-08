@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fredoka, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import SiteFooter from "./components/SiteFooter";
@@ -13,6 +13,15 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// 見出しの欧文だけ丸ゴシックにして、ぽやぴよの線に寄せる。
+// 繁体字は端末標準に任せるので、ここは latin サブセットだけで足りる。
+const fredoka = Fredoka({
+  variable: "--font-fredoka",
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -69,10 +78,11 @@ export const metadata: Metadata = {
       "台灣・香港旅客專屬！必吃必食・必買・必去的日本旅遊推薦推介。拉麵、咖啡廳、甜品、景點全收錄。",
     images: [
       {
-        url: "/poyapiyo-flag.png",
+        // 案Bの風景イラストを1200×630に組み直したシェア用画像
+        url: "/og-japantrippicks.png",
         width: 1200,
         height: 630,
-        alt: "Japan Trip Picks",
+        alt: "Japan Trip Picks｜台灣・香港旅客的日本旅遊指南",
       },
     ],
   },
@@ -80,7 +90,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Japan Trip Picks｜台灣・香港旅客的日本旅遊指南",
     description: "台灣・香港旅客專屬！日本旅遊必看・不踩雷指南",
-    images: ["/poyapiyo-flag.png"],
+    images: ["/og-japantrippicks.png"],
   },
   robots: {
     index: true,
@@ -121,7 +131,7 @@ export default function RootLayout({
   return (
     <html
       lang="zh-Hant"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${fredoka.variable} h-full antialiased`}
     >
  <head>
   <Script

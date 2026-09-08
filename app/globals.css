@@ -2,27 +2,55 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1c1917;
+  /* 本体サイトはライト固定。端末のダークモードで
+     オーバースクロール時に黒がのぞくのを防ぐ。 */
+  color-scheme: light;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* 欧文は Geist、繁体字は端末標準の高品質フォントに落とす。
+     CJK ウェブフォントは数MBになりLCPを壊すので読み込まない。 */
+  --font-sans: var(--font-geist-sans), "Helvetica Neue", Arial, "PingFang TC",
+    "Hiragino Sans TC", "Noto Sans TC", "Microsoft JhengHei", "PingFang SC",
+    "Hiragino Sans", "Noto Sans JP", Meiryo, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* 見出しの欧文だけ丸ゴシック（Fredoka）にして、ぽやぴよの線に寄せる。
+   @theme の --font-* に置いてもユーティリティが生成されなかったので素で定義する。
+   繁体字は Fredoka に無いので、そのまま端末標準へ落ちる。 */
+.font-brand {
+  font-family: var(--font-fredoka), var(--font-geist-sans), "PingFang TC",
+    "Hiragino Sans TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+
+/* 横スクロールするタブ列でスクロールバーを隠す。
+   これまで scrollbar-hide はどこにも定義がなく無効だった。 */
+@utility scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* ==========================================================================

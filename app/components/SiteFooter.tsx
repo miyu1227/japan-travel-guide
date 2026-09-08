@@ -6,7 +6,7 @@ import { HUBS } from "@/lib/hubs";
 export default function SiteFooter() {
   return (
     <footer className="bg-white border-t border-yellow-100 mt-12 pt-8 pb-6 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="mx-auto w-full max-w-[1400px] px-1 sm:px-4 lg:px-8">
         {/* サイト内リンク */}
         {/* 主題総覧（ハブ） */}
         <div className="mb-6">
@@ -66,6 +66,35 @@ export default function SiteFooter() {
             {/* 日本の事業者向けサイト（掲載・プロモーション） */}
             <Link href="/business" lang="ja" className="text-stone-500 hover:text-stone-800 hover:underline">For Business</Link>
           </nav>
+        </div>
+
+        {/* SNS。以前はトップページ専用フッターにだけ置いていたが、
+            そのフッターを廃止したので全ページ共通のここへ移した。 */}
+        <div className="mt-6 flex items-center justify-center gap-4">
+          <a
+            href="https://www.instagram.com/japantrippicks?igsh=aWlid2Z4M2tpengx&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 text-white shadow-sm transition-opacity hover:opacity-80"
+            aria-label="Instagram"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61579453230592&sk=directory_links"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1877F2] text-white shadow-sm transition-opacity hover:opacity-80"
+            aria-label="Facebook"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+          </a>
         </div>
 
         <p className="text-center text-xs text-stone-400 mt-4">© 2026 Japan Trip Picks. All rights reserved.</p>
