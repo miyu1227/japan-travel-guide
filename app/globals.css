@@ -160,13 +160,13 @@ body:has(.biz-root) {
 .ib-yen { background-image: url("/icons/yen.svg"); }
 
 /* 店カードの写真。並べ方はスマホもPCも「上に横並び」のまま。
-   ただし本文が900pxに広がると aspect-square のぶん写真まで縦に伸びるので、
-   PCでは高さで止めて横長にトリミングする。 */
+   ただし本文がPCで760pxに広がると、正方形のままだと写真が縦に伸びる。
+   高さをpxで固定すると2枚並びが 2.3:1 になって被写体が切れたので、
+   枚数ごとに写真として自然な比率にしてトリミングを浅くする。 */
 @media (min-width: 1024px) {
-  .card-split > div:first-child > * {
-    aspect-ratio: auto;
-    height: 176px;
-  }
+  .card-split > .grid-cols-3 > * { aspect-ratio: 4 / 3; }
+  .card-split > .grid-cols-2 > * { aspect-ratio: 3 / 2; }
+  .card-split > .grid-cols-1 > * { aspect-ratio: 16 / 9; }
 }
 
 /* 記事の右の空きに置く目次。本文（xl以上で820px）の右外に固定する。
