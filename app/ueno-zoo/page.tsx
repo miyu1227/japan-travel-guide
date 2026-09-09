@@ -332,37 +332,37 @@ export default function UenoZooPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京動物園推薦哪一間？上野動物園值得去嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 東京動物園推薦哪一間？上野動物園值得去嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 東京市區交通最方便、門票最便宜的是<strong>上野動物園</strong>（大人¥600、小學生以下免費），從上野站走5分就到，逛2〜3小時剛好。想看更大範圍的放養型展示可以考慮多摩動物公園，但離市區約1小時。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要多久才能逛完？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 需要多久才能逛完？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 想看重點動物約<strong>2〜3小時</strong>，慢慢逛全區約<strong>半天（4〜5小時）</strong>。有小朋友的話建議預留半天以上。園區廣，記得穿好走的鞋。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 門票能現場買嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 門票能現場買嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 可以，但假日與櫻花季會排隊。<strong>網路購票（東京都立公園網站）</strong>可以省去排隊時間。門票大人¥600，中學生¥200，65歲以上¥300，小學生以下免費——超佛心！
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 現在還看得到大熊貓嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 現在還看得到大熊貓嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 看不到了。雙胞胎「曉曉・蕾蕾」已於<strong>2026年1月</strong>返還中國，日本國內目前沒有任何動物園展示大熊貓。其他動物的展示狀況（健檢日、整備日等）則可以看官網「本日的動物」頁面確認。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 帶小朋友需要注意什麼？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 帶小朋友需要注意什麼？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 可租借嬰兒車（¥300/日）、園內有多個育兒室＆餵奶處。夏天特別要注意<strong>防曬＆水分補給</strong>，東園東邊有兒童動物園可以近距離接觸小動物。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 雨天可以去嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 雨天可以去嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 可以，室內展示館包含<strong>兩棲爬蟲類館、鳥館</strong>都能避雨。動物在雨天反而較活躍，人潮也少，是拍照的好時機📸
               </p>

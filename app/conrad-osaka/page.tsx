@@ -340,37 +340,37 @@ export default function ConradOsakaPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">康萊德大阪自助餐 常見問題</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 大阪自助餐推薦哪一間？康萊德的價位大概多少？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 大阪自助餐推薦哪一間？康萊德的價位大概多少？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 本站實際吃過、最推的是<strong>康萊德大阪40樓的Atmos</strong>：地上200公尺的落地窗配義式料理，早餐・午餐・甜點・晚餐四個時段價位不同，午餐與甜點自助餐是最好入手的價位帶，晚餐則往上抓。實際金額會隨季節活動變動，訂位頁面會顯示當天的價格。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 一定要事先訂位嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 一定要事先訂位嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 建議先訂。這裡是<strong>時間制的自助餐</strong>，座位數有限，週末與假日的午餐時段常常會滿。官網可以線上訂位，選好日期與時段比較安心。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 有服裝規定嗎？穿得太隨便會不會不好意思？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 有服裝規定嗎？穿得太隨便會不會不好意思？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 這裡是自助餐廳，不需要正式服裝，但畢竟是五星飯店的最上層，<strong>穿得整齊一點會比較自在</strong>。實際上不少人是觀光途中順道過來的，不用太緊張，只是別穿夾腳拖或運動短褲那種太休閒的裝扮。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 不會日文也能點餐嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 不會日文也能點餐嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 自助餐最大的好處就是<strong>幾乎不用開口</strong>，想吃什麼自己去拿就好。這裡是國際連鎖飯店，服務人員也習慣應對外國旅客，飲料點單用英文都通。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 可以帶小孩去嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 可以帶小孩去嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 自助餐本來就比較適合帶小孩——不用等上菜、想吃什麼自己選。多數飯店自助餐會有兒童價的設定，帶小小孩同行時，建議<strong>訂位時先告知人數與年齡</strong>，座位安排會比較順。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 一定看得到景色嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 一定看得到景色嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 窗邊座位不保證，人多的時候會被安排到內側。不過這間店的<strong>挑高空間與水晶裝置本身就很有看頭</strong>，就算不是窗邊也不會失望。真的很在意的話，可以在訂位時備註希望靠窗，但還是要看當天狀況。
               </p>

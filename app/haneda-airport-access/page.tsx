@@ -540,7 +540,7 @@ export default function HanedaAirportAccessPage() {
           <div className="space-y-4">
             {faqItems.map((f) => (
               <div key={f.q}>
-                <p className="text-sm font-bold text-stone-700 mb-1">❓ {f.q}</p>
+                <h3 className="text-sm font-bold text-stone-700 mb-1">❓ {f.q}</h3>
                 <p className="text-xs text-stone-600 leading-relaxed">{f.a}</p>
               </div>
             ))}

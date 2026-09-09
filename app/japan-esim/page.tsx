@@ -372,31 +372,31 @@ export default function JapanEsimPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">日本 eSIM 常見問題</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 怎麼知道我的手機能不能用 eSIM？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 怎麼知道我的手機能不能用 eSIM？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 近幾年的 iPhone 與多數中高階 Android 都有支援，但<strong>部分地區版本或較舊的機種不支援</strong>。最保險的做法是在手機設定裡找找看有沒有「加入 eSIM／行動方案」這個選項，出發前先確認過再購買。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 要提前幾天買？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 要提前幾天買？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 因為是線上開通，通常不需要太早買。不過<strong>安裝設定建議在出發前、還有 Wi-Fi 的環境下先做完</strong>，落地後只要把它切成主要方案就能用，會比在機場現場摸索輕鬆很多。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 到日本才設定來得及嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 到日本才設定來得及嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 機場多半有免費 Wi-Fi，理論上落地再設定也可以，但如果 Wi-Fi 不穩就會卡住。<strong>安裝在出發前、啟用在抵達後</strong>是最不容易出錯的順序。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 一個人一張，那家庭旅遊怎麼辦？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 一個人一張，那家庭旅遊怎麼辦？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 eSIM 基本上是<strong>一支手機一組</strong>，全家都要上網的話每支手機都要各自準備。如果是三、四個人一起行動、又不介意共用一台機器，租借 Wi-Fi 分享器反而可能比較單純。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 有網路之後，交通票券也要先準備嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 有網路之後，交通票券也要先準備嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 網路搞定之後，下一個要決定的通常是交通。行程集中在東京都心的話可以看
                 <Link href="/tokyo-subway-ticket" className="text-blue-600 underline underline-offset-2">Tokyo Subway Ticket 怎麼選</Link>，

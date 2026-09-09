@@ -11,7 +11,10 @@ export default function FaqSection({ items }: { items: FaqItem[] }) {
       <div className="space-y-2">
         {items.map((item) => (
           <div key={item.q} className="bg-white rounded-2xl border border-stone-100 shadow-sm p-4">
-            <p className="text-sm font-bold text-stone-800 mb-1">Q. {item.q}</p>
+            {/* 質問文は見出しにする。繁体字の長尾クエリ（下雨天／需要預約嗎／門票多少）は
+                ここにしか書いてないので、p のままやと見出しとして拾われへん。
+                Tailwind の preflight が h3 の既定サイズと余白を消すので、見た目は p のときと同じ。 */}
+            <h3 className="text-sm font-bold text-stone-800 mb-1">Q. {item.q}</h3>
             <p className="text-sm text-stone-600 leading-relaxed">
               {item.a}
               {item.href && (

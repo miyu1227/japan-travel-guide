@@ -381,37 +381,37 @@ export default function TokyoSubwayTicketPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">Tokyo Subway Ticket 常見問題</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ Tokyo Subway Ticket多少錢？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ Tokyo Subway Ticket多少錢？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 <strong>2026年3月14日起調漲</strong>：24小時券¥1,000、48小時券¥1,500、72小時券¥2,000（兒童半價）。東京メトロ單程最低¥180，一天搭6趟以上24小時券就回本。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 在哪裡買？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 在哪裡買？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 成田・羽田機場的巴士櫃台與旅客服務中心、東京メトロ主要站的旅客服務處（新橋、新宿西口、上野御徒町等）、BIC CAMERA等電器行，以及Klook・KKday等平台先買兌換券。購買需出示護照。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 可以搭 JR 山手線嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 可以搭 JR 山手線嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 <strong>不行</strong>。這是最多人搞錯的一點。這張票只能搭<strong>東京メトロ與都營地下鐵</strong>，JR（包含山手線）、京王、小田急、東急等私鐵都不在範圍內。行程如果大量繞山手線，買了反而用不太到。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 24小時是「當天到隔天同一個時間」嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 24小時是「當天到隔天同一個時間」嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 是的，計時方式是<strong>從第一次通過閘門開始算</strong>，不是以日期切換。所以下午2點開始用的24小時票，可以用到隔天下午2點——<strong>下午開始用反而比較不浪費</strong>。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 一張票兩個人可以輪流用嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 一張票兩個人可以輪流用嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 不行，這張票是<strong>一人一張</strong>，同行者要各自準備。小朋友則有兒童票的設定。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 從機場到市區的那一段也能用嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 從機場到市區的那一段也能用嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 不能。Skyliner、Narita Express、京急線、單軌電車都不在範圍內，機場往返要另外付。機場那段怎麼走，可以看
                 <Link href="/narita-airport-access" className="text-blue-600 underline underline-offset-2">成田機場交通攻略</Link>與
@@ -419,7 +419,7 @@ export default function TokyoSubwayTicketPage() {
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 到日本才買來得及嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 到日本才買來得及嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 這張票是<strong>給持短期停留簽證等外國旅客的專用票券</strong>，購買時通常需要出示護照，抵達日本後在機場或指定窗口購買也是常見做法。若想省下現場排隊時間，也可以出發前先在網路上訂好。實際的販售地點與條件可能調整，出發前再確認一次比較保險。
               </p>

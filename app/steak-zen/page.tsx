@@ -260,31 +260,31 @@ export default function SteakZenPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 神戶牛跟松阪牛差在哪？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 神戶牛跟松阪牛差在哪？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 都是最高等級和牛，但飼育地區不同：<strong>神戶牛</strong>是兵庫縣但馬地區、<strong>松阪牛</strong>是三重縣松阪地區。神戶牛脂肪細膩、香氣清爽；松阪牛脂肪更豐富、風味更濃郁。兩者都是世界頂級。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 為什麼一定要預約？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 為什麼一定要預約？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 神戶牛專門店多數是<strong>店主親自服務＆座位有限（10〜20席）</strong>。假日一週前就常客滿。特別鐵板燒需要預留主廚烹調時間。建議<strong>2週前預約</strong>最保險。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 客單價大約多少？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 客單價大約多少？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 <strong>鐵板燒晚餐 ¥15,000〜¥30,000／人</strong>、<strong>午餐套餐 ¥8,000〜¥15,000</strong>是常見價位。想體驗神戶牛又控制預算，<strong>午餐時段</strong>是最佳選擇。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 神戶牛可以帶回台灣・香港嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 神戶牛可以帶回台灣・香港嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 原則上<strong>生鮮牛肉入境是被限制的</strong>（台灣禁止、香港限量）。想帶伴手禮（手信）的話，可以買<strong>神戶牛咖哩包、牛肉乾、神戶牛餅乾（曲奇）</strong>等常溫加工品。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 素食者可以陪同嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 素食者可以陪同嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 多數店家會準備<strong>蔬菜料理＆海鮮</strong>作為替代方案。預約時提前告知，主廚可以彈性調整套餐。
               </p>

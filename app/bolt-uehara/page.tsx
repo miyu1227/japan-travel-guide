@@ -225,19 +225,19 @@ export default function BoltUeharaPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 沒有預約可以直接進去嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 沒有預約可以直接進去嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 獨立咖啡廳大多不接受預約，先到先得。假日的午餐時段常需排隊，推薦<strong>平日下午or週末早上</strong>比較容易入店。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 有Wi-Fi嗎？可以工作嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 有Wi-Fi嗎？可以工作嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 代代木上原的咖啡廳文化偏「享受咖啡」，不是筆電工作型。有些店禁止長時間佔位，短時間拍照＆放鬆最合適。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 交通最方便的路線？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 交通最方便的路線？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 最方便是<strong>東京メトロ千代田線「代々木上原」駅</strong>。JR新宿駅→搭千代田線約6分。<strong>小田急線</strong>也有代代木上原停靠。
               </p>

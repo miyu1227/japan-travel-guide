@@ -452,12 +452,12 @@ export default function SkytreePage() {
           <div className="space-y-4">
             {faqItems.map((f) => (
               <div key={f.q}>
-                <p className="text-sm font-bold text-stone-700 mb-1">❓ {f.q}</p>
+                <h3 className="text-sm font-bold text-stone-700 mb-1">❓ {f.q}</h3>
                 <p className="text-xs text-stone-600 leading-relaxed">{f.a}</p>
               </div>
             ))}
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 剛下飛機的那天可以直接來嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 剛下飛機的那天可以直接來嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 可以，走<strong>京成線</strong>的話從成田機場約60分直達押上站。時間怎麼抓可以參考
                 <Link href="/narita-airport-access" className="text-blue-600 underline underline-offset-2">成田機場到東京市區交通攻略</Link>。只是拖著行李上展望台不方便，建議先寄放或送到飯店再過來。想比較另一座地標可看<Link href="/tokyo-tower" className="text-blue-600 underline underline-offset-2">東京鐵塔</Link>。

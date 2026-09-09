@@ -252,25 +252,25 @@ export default function ShibuyaCafePage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 澀谷咖啡廳需要預約嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 澀谷咖啡廳需要預約嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 大多不接受預約，先到先得。體驗型咖啡廳（黑膠試聽等）建議<strong>平日下午</strong>比較空。假日下午常需排隊。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 澀谷駅怎麼走最不迷路？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 澀谷駅怎麼走最不迷路？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 澀谷駅結構複雜，出口眾多。目的地在<strong>スクランブル交差点方向</strong>就找<strong>「ハチ公口」</strong>出口最好認（忠犬八公像在門口）。手機開Google Maps＆看指標最保險。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 澀谷什麼時段人最多？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 澀谷什麼時段人最多？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 週五・週六<strong>晚上7〜11點</strong>是澀谷夜生活高峰，人潮爆炸。想拍到少人スクランブル交差点推薦<strong>清晨6〜8點</strong>或<strong>平日午前</strong>。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 交通最方便的路線？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 交通最方便的路線？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 澀谷駅是<strong>JR山手線・埼京線・湘南新宿線＋東京メトロ副都心線・銀座線・半藏門線＋京王井の頭線＋東急東橫線・田園都市線</strong>共9條路線的巨型轉乘站，來自哪都很方便。
               </p>

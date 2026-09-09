@@ -303,31 +303,31 @@ export default function MisterDonutPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 這些限定商品是常態販售嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 這些限定商品是常態販售嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 目前是<strong>期間限定＋話題商品</strong>，售完為止。想吃務必盡早去，都心店常常上午就售完。ミスド經常會再度推出人氣款式，關注官網＆Twitter最新情報。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 哪間店比較容易買到？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 哪間店比較容易買到？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 <strong>郊外店＆非車站型分店</strong>比都心大車站店更好買。東京都心的話推薦上野・池袋郊外店，關西則推薦大阪郊外店。避開澀谷・新宿等激戰區。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 可以外帶多久？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 可以外帶多久？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 甜甜圈類<strong>當天內</strong>食用最美味，冷藏保存約1〜2天但布丁餡口感會變化。飯店（酒店）冰箱冰過再吃反而別有一番風味，但建議當天吃完。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要事先預約嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 需要事先預約嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 部分分店可電話預約，但外國旅客要用日文較困難。實際上「早鳥策略」＝<strong>開店時間就到店</strong>最實際。或者一次買8顆以上有BOX包裝折扣。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 附近哪裡可以買到？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 附近哪裡可以買到？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 ミスド的分店查詢：<a href="https://misterdonut.jp/shop/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">官方分店檢索</a>。日本各都道府縣都有分店，特別是東京・大阪・京都・名古屋等大都市集中。
               </p>

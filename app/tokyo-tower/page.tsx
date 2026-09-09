@@ -312,37 +312,37 @@ export default function TokyoTowerPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京鐵塔門票多少錢？營業到幾點？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 東京鐵塔門票多少錢？營業到幾點？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 <strong>Main Deck（150m）大人¥1,500</strong>、高中生¥1,200、中小學生¥900，可自由入場；<strong>Top Deck Tour（250m）¥3,300</strong>（現場¥3,500）需預約時段。營業9:00〜23:00，Main Deck最後入場22:30。看夜景的話晚餐後再上去也來得及。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京鐵塔 vs 東京晴空塔，該選哪個？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 東京鐵塔 vs 東京晴空塔，該選哪個？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 東京鐵塔<strong>復古氛圍＆浪漫氣氛</strong>強，位在都心便於周邊行程串連；東京晴空塔<strong>高度更高（634m）＆展望更廣</strong>，但位置在墨田區。喜歡經典氛圍＆想拍地標本身選東京鐵塔，追求高度與新設施選晴空塔。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ Main Deck 和 Top Deck Tour 差在哪？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ Main Deck 和 Top Deck Tour 差在哪？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 <strong>Main Deck（150m）</strong>可自由參觀＆隨時入場，¥1,500。<strong>Top Deck Tour（250m）</strong>需事先預約時段、含導覽＋一杯飲品，¥3,300（網路）／¥3,500（現場）。想看更高更遠、有充裕時間的話推薦 Top Deck Tour。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 幾點去最好？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 幾點去最好？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 最推薦<strong>日落前1小時到達</strong>——可以一次看到白天景色、黃昏、以及夜景轉換的三段風景。網站可查各月份的日落時間，冬天16:30左右、夏天19:00左右。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 天氣不好還值得去嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 天氣不好還值得去嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 晴朗時可以看到富士山、天氣不佳時能見度會下降。但雨天有<strong>「雨天限定的雲海景色」</strong>，夜晚燈光穿透雨霧也別有一番風味。強風時Top Deck可能會停止營運，建議事先查詢官網。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 有中文語音導覽嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 有中文語音導覽嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 Top Deck Tour 提供<strong>13種語言</strong>的語音導覽，包含<strong>繁體中文與簡體中文</strong>。入場時可以拿導覽器材，跟著語音認識展望台看到的東京景色。
               </p>

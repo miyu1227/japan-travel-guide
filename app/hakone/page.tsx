@@ -355,25 +355,25 @@ export default function HakonePage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">箱根一日遊 常見問題</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 一天真的玩得完嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 一天真的玩得完嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 玩得完，但<strong>景點要挑</strong>。箱根的移動要一直換車（登山電車、纜車、巴士），光是移動就會吃掉不少時間。像這篇一樣鎖定<strong>4〜5個點</strong>剛剛好，想再加蘆之湖遊船或大涌谷的話，就要有一個行程得放掉的心理準備。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 浪漫特快一定要先訂位嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 浪漫特快一定要先訂位嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 浪漫特快是<strong>全車指定席</strong>，沒有座位就搭不了，<strong>週末與連假很容易客滿</strong>，建議先訂。如果訂不到也不用慌——搭小田急的普通・急行電車一樣到得了箱根湯本，只是要換車、時間會多一些。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要買箱根周遊券（箱根フリーパス）嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 需要買箱根周遊券（箱根フリーパス）嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 要看你會不會用到山上的交通。周遊券涵蓋<strong>登山電車、纜車、空中纜車、海賊觀光船與部分巴士</strong>，如果打算跑大涌谷、蘆之湖那一圈，通常會比一段一段買划算；但如果像這篇一樣以<strong>箱根湯本周邊＋幾個定點</strong>為主，其實不一定用得到。要注意<strong>浪漫特快的特急券是另外計費</strong>的。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 下雨天去箱根還值得嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 下雨天去箱根還值得嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 美術館、餐廳、足湯這類行程雨天完全不受影響，反而人比較少。要注意的是<strong>山上的纜車遇到強風或天候不佳可能停駛</strong>，湖上的展望也會被雲霧擋住，這種日子就把重點放在室內景點會比較不失望。
               </p>

@@ -331,31 +331,31 @@ export default function ShinOkuboPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">新大久保美食 常見問題</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 新大久保美食推薦哪些？預算多少？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 新大久保美食推薦哪些？預算多少？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 這篇3間都實際走訪過：<strong>サウィ食堂</strong>的ナッコプセ鍋（一人¥1,500〜2,500）、<strong>SHINCHON CAFE</strong>的韓系咖啡（¥600〜1,200）、<strong>MUJIGE</strong>的甜點（¥400〜800）。三間都在JR新大久保站走路5分內，一個下午吃得完。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要事先訂位嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 需要事先訂位嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 這3間都是走進去排隊的類型，基本上不需要訂位。不過週末的用餐時間（12:00〜14:00、18:00之後）鍋物店常常要等，想省時間的話<strong>避開週末、或是11點多就先去吃</strong>會順很多。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 半天真的逛得完嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 半天真的逛得完嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 可以。主要的店都集中在大久保通り沿線，<strong>店與店之間走路都在5分鐘內</strong>。照「鍋物午餐→咖啡廳休息→外帶甜點」的順序走，大約3〜4小時就很充實了。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 不太能吃辣也可以去嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 不太能吃辣也可以去嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 ナッコプセ鍋的辣度屬於中辣，實際吃起來是「夠味但不會痛」的程度。真的怕辣的話，可以先點<strong>飲料或白飯一起吃</strong>，或是把重點放在咖啡廳與甜點這兩間。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 逛完新大久保，附近還可以去哪裡？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 逛完新大久保，附近還可以去哪裡？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 新宿只有一站，走回新宿方向可以接<Link href="/spot" className="text-blue-600 underline underline-offset-2">新宿御苑散步</Link>；想再吃一輪的話，
                 <Link href="/ramen" className="text-blue-600 underline underline-offset-2">東京拉麵推薦</Link>裡也有幾間在山手線沿線，安排在同一天不會太趕。

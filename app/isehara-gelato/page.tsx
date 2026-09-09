@@ -246,25 +246,25 @@ export default function IseharaGelatoPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 從新宿要怎麼去？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 從新宿要怎麼去？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 從<strong>新宿駅</strong>搭小田急線（急行或快速急行）約1小時到「伊勢原」駅。單程約¥700。<strong>浪漫特快「Romancecar」</strong>約50分，比較快但需要指定席票。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 什麼季節去最好？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 什麼季節去最好？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 <strong>春（3〜5月）</strong>大山桜、<strong>夏（6〜8月）</strong>gelato最美味、<strong>秋（10〜11月）</strong>紅葉季、<strong>冬（12〜2月）</strong>草莓採收。全年都有魅力，看你偏好什麼。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 適合一日遊嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 適合一日遊嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 非常適合🎒 <strong>推薦行程</strong>：早上新宿出發→上午到伊勢原逛牧場gelato→中午大山豆腐料理→下午大山阿夫利神社參拜→傍晚回東京。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要租車嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 需要租車嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 伊勢原駅有<strong>公車（巴士）</strong>可到各景點，不強制需要租車。但如果想深入牧場、農場多處遊覽，租車會更彈性。伊勢原駅有Times Car等租車服務。
               </p>

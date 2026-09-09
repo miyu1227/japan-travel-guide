@@ -492,39 +492,39 @@ export default function NaritaAirportAccessPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">成田機場交通 常見問題</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 成田機場到東京多少錢？最便宜和最快的是哪個？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 成田機場到東京多少錢？最便宜和最快的是哪個？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 最快是<strong>Skyliner</strong>到日暮里・上野約40分、¥2,580；住新宿・澀谷選<strong>N&apos;EX</strong>約60〜90分、東京站約¥3,070；最便宜是京成本線＋JR約1.5小時、¥1,200〜1,410。利木津巴士直達飯店約1.5〜2小時，票價2026年10月起改定，以官網為準。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ Skyliner 需要事先訂位嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ Skyliner 需要事先訂位嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 Skyliner 是<strong>全車對號座</strong>，需要先取得座位。可以在機場的售票櫃檯或售票機當場買，網路預訂也可以。平常時段當天買通常沒問題，不過<strong>連假與過年期間</strong>比較容易客滿，行程固定的話先訂會比較安心。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 深夜才到成田，還有車進市區嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 深夜才到成田，還有車進市區嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 班機延誤或紅眼班機抵達時，<strong>電車可能已經沒有末班車</strong>，深夜巴士的班次也很有限。這種情況下，比較實際的做法是<strong>在成田機場周邊前泊一晚</strong>，隔天早上再輕鬆進市區。詳細請看上面「⑦ 成田機場前泊」的部分。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 可以從成田直接殺去東京迪士尼嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 可以從成田直接殺去東京迪士尼嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 可以，機場巴士有直接開往舞浜地區飯店的路線，不用拖著行李換車。想先了解舞浜周邊怎麼玩，可以參考
                 <Link href="/tokyo-disney-around" className="text-blue-600 underline underline-offset-2">東京迪士尼周邊玩法</Link>。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 有 Suica／PASMO 就不用買其他票券了嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 有 Suica／PASMO 就不用買其他票券了嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 機場到市區這一段用 IC 卡就能搭（Skyliner 等對號座另外需要特急券）。<strong>進市區之後</strong>如果每天都會搭好幾趟地下鐵，再看看
                 <Link href="/tokyo-subway-ticket" className="text-blue-600 underline underline-offset-2">Tokyo Subway Ticket</Link> 划不划算。要注意它只能搭東京メトロ與都營地下鐵，<strong>JR 山手線不能用</strong>。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 行李配送當天就會送到飯店嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 行李配送當天就會送到飯店嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 要看<strong>寄件時間與飯店位置</strong>，並不是每一件都能當天送達，有些情況會是隔天。想下飛機直接去觀光的話，建議把<strong>當晚要用的東西（換洗衣物、藥品、充電線）先拿出來</strong>隨身帶著，其餘再交給配送。
               </p>

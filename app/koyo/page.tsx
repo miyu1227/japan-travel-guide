@@ -318,43 +318,43 @@ export default function KoyoPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">東京紅葉 常見問題</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京紅葉是幾月？2026年什麼時候去最好？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 東京紅葉是幾月？2026年什麼時候去最好？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 東京的紅葉比京都晚，看頭在<strong>11月中旬〜12月上旬</strong>。神宮外苑銀杏並木通常11月中旬轉黃、11月下旬〜12月初達到高峰；六義園、小石川後樂園的楓葉也是11月下旬〜12月上旬。每年會因氣候差1〜2週，出發前查「紅葉見頃情報」。神宮外苑的いちょう祭り例年也在這段期間舉辦，2026年日程以官網公告為準。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 神宮外苑銀杏並木怎麼去？要門票嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 神宮外苑銀杏並木怎麼去？要門票嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 <strong>免費、全日開放</strong>。東京メトロ銀座線「外苑前」站走約3分，大江戶線「國立競技場」站、副都心線「北參道」站也走得到。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 最佳造訪時間是幾點？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 最佳造訪時間是幾點？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 拍照優先的話推薦<strong>早上7:00〜9:00</strong>或<strong>平日下午</strong>，人潮相對少。銀杏並木的順光是從南邊（青山通側），下午3點左右光線最柔和適合拍照。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 紅葉的最佳觀賞期會變動嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 紅葉的最佳觀賞期會變動嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 會。神宮外苑銀杏並木通常<strong>11月中旬開始轉黃、11月下旬〜12月上旬達到高峰</strong>，但每年因氣候而有1〜2週的差異。出發前建議在「日本紅葉情報」「ウェザーニュース紅葉見頃」等網站確認。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 銀杏會臭嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 銀杏會臭嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 銀杏果實掉落時會有特殊氣味，但神宮外苑並木的樹全部都是<strong>雄樹</strong>，不會結果，所以基本上沒有這個問題✨ 可以安心賞景拍照。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 附近有停車場嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 附近有停車場嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 銀杏祭期間人潮爆多、車位很難找。強烈推薦搭乘<strong>東京メトロ</strong>：銀座線「外苑前」駅、大江戶線「国立競技場」駅、副都心線「北参道」駅任何一個都能徒歩到達。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 下雨天還值得去嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 下雨天還值得去嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 下雨時銀杏葉會被打落，反而形成一整片<strong>金黃色地毯</strong>，別有一番風味🍂 而且人潮較少、拍照更容易。撐傘＆穿好防水鞋即可。
               </p>

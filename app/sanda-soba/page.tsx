@@ -271,31 +271,31 @@ export default function SandaSobaPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 神戶附近哪裡吃得到好吃的蕎麥麵？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 神戶附近哪裡吃得到好吃的蕎麥麵？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 神戶市區的蕎麥麵店不多，本站最推的是三宮搭JR約35分、位在三田的手打名店<strong>「蕎麦いち」</strong>。用嚴選國產蕎麥粉現打，第一次吃點ざるそば（冷沾麵）最能吃出香氣。可以和有馬溫泉、三田Outlet排成同一天。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 冷そば還是溫そば選哪個？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 冷そば還是溫そば選哪個？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 <strong>ざるそば（冷そば）</strong>是最能品嚐蕎麥本身風味的吃法，蕎麥的香氣與Q彈麵條最佳呈現。<strong>かけそば（溫湯そば）</strong>則是冬天的暖胃選擇。第一次吃推薦「<strong>ざるそば</strong>」。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 吃蕎麥麵有什麼禮儀？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 吃蕎麥麵有什麼禮儀？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 (1) 「啜麵發出聲音」是好禮，代表美味。 (2) 吃完後<strong>「そば湯（そば湯汁）」</strong>倒入沾醬容器裡當湯喝，是傳統作法。 (3) 沾醬<strong>只沾麵條前半段</strong>，感受麵條本身風味。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 蕎麥麵對麩質過敏者友善嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 蕎麥麵對麩質過敏者友善嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 <strong>十割そば（100%蕎麥粉）</strong>不含小麥麩質。但一般<strong>二八そば</strong>含20%小麥。有麩質不耐請確認店家的比例，並注意<strong>蕎麥本身可能引起過敏</strong>。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 從神戶要怎麼去？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 從神戶要怎麼去？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 從<strong>神戶三宮</strong>搭JR神戶線→尼崎轉福知山線約35分到「三田」駅。或者從<strong>大阪梅田</strong>搭JR福知山線約50分。租車自駕約1小時，方便串連其他景點。
               </p>

@@ -267,37 +267,37 @@ export default function OsakaGourmetPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">大阪鐵板燒・居酒屋 常見問題</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 大阪鐵板燒一個人預算大概多少？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 大阪鐵板燒一個人預算大概多少？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 在地型的鐵板燒店像鉄板屋な。，<strong>套餐約¥5,000起、單點¥3,000起</strong>，加飲料抓¥7,000〜8,000比較保險。這比道頓堀觀光區的神戶牛鐵板燒（動輒¥15,000以上）親民很多，也比較能吃到大阪本地的調味。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 梅田晚餐去哪裡好？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 梅田晚餐去哪裡好？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 從梅田站走路5〜10分或搭一站到<strong>福島</strong>，就是大阪人自己吃晚餐的區域。想吃精緻一點選鐵板燒，想熱鬧一點選居酒屋，兩間都在這一帶。吃完回梅田逛百貨或看夜景都順路，不用特地跑道頓堀。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要事先訂位嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 需要事先訂位嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 鐵板燒這類座位少的店<strong>建議先訂</strong>，臨時走進去常常會被婉拒。居酒屋則多半可以直接進去，但週五、週六的晚上7點前後最擠，想輕鬆一點就避開這個時段。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 不會日文點餐會不會很辛苦？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 不會日文點餐會不會很辛苦？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 居酒屋現在很多都有平板點餐或圖片菜單，指著點就可以。真的沒有菜單時，<strong>「おすすめ（推薦菜）」</strong>這句很好用。大阪的店家普遍很習慣招呼外國客人，不用太緊張。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 居酒屋的「お通し」是什麼？要付錢嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 居酒屋的「お通し」是什麼？要付錢嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 坐下後會先送上一小碟前菜，這是<strong>お通し</strong>，等同於座位費，帳單上會另外計算。這是日本居酒屋的常見做法，不是被多收錢，看到帳單時不用嚇一跳。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 這兩間可以排在同一晚嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 這兩間可以排在同一晚嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 可以，兩間都在梅田・福島一帶，走路或搭一站電車就到。<strong>先吃鐵板燒、再去居酒屋續攤</strong>是很順的順序。想再多吃一輪的話，
                 <Link href="/kansai-ramen" className="text-blue-600 underline underline-offset-2">大阪沾麵推薦</Link>裡的肥後橋也在同一個方向。

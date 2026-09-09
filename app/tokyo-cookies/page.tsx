@@ -226,25 +226,25 @@ export default function TokyoCookiesPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 保存期限多久？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 保存期限多久？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 手工餅乾類通常<strong>常溫可保存2〜4週</strong>。冬天可以稍長，夏天請避免高溫。開封後建議<strong>7〜10天內</strong>吃完口感最佳。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 帶回台灣・香港會壞嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 帶回台灣・香港會壞嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 只要是<strong>密封包裝的常溫食品</strong>基本上沒問題。飛機行李託運或手提都可以。避開<strong>生鮮＆奶油含量高</strong>的商品（如生chocolat）。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 東京車站有哪些伴手禮店？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 東京車站有哪些伴手禮店？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 東京車站的<strong>「Gransta（グランスタ）」＆「東京銘品館」</strong>集中販售東京代表伴手禮，回程前來一次採買最有效率。營業時間8:00〜22:00。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 預算大概多少？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 預算大概多少？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 單盒<strong>¥1,000〜¥3,000</strong>是常見範圍。高級品牌如Pierre Marcolini可達¥5,000以上。多人分享建議選<strong>小包裝＋多顆入</strong>的款式，方便分送。
               </p>

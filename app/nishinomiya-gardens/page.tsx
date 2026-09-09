@@ -250,31 +250,31 @@ export default function NishinomiyaGardensPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">TOOTH TOOTH 西宮花園店 常見問題</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 需要訂位嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 需要訂位嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 座位有70多席，平常時段直接走進去通常都有位子。<strong>週末的午餐時間與下午茶時段</strong>比較容易要等，想省時間的話避開12:00〜14:00，或是等到下午3點以後再過來會順很多。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 蕎麥薄餅（galette）是什麼？跟可麗餅差在哪？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 蕎麥薄餅（galette）是什麼？跟可麗餅差在哪？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 <strong>galette 是用蕎麥粉煎的鹹口味薄餅</strong>，法國布列塔尼的傳統吃法，通常包火腿、蛋和起司；而可麗餅是用小麥粉、走甜的路線。這間兩種都有，想吃正餐點前者、想吃甜點點後者。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 不會日文可以點餐嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 不會日文可以點餐嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 菜單有照片，用指的就可以。這裡是購物中心裡的店，店員也習慣應付各種客人，不用太緊張。真的擔心的話，先用手機把想吃的品項拍下來再進去最快。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 只吃甜點可以嗎？一定要點正餐嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 只吃甜點可以嗎？一定要點正餐嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 只點甜點跟飲料完全沒問題，這裡本來就是甜點店起家的。反過來說，只吃鹹的蕎麥薄餅當一頓正餐也可以，<strong>怎麼組合都自由</strong>。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 值得專程從大阪／神戶跑一趟嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 值得專程從大阪／神戶跑一趟嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 老實說，<strong>如果行程只有三、四天，不建議專程來</strong>。這裡最適合的用法是「順路」——例如要去甲子園、夙川，或是大阪與神戶之間移動時停一站吃頓飯。真的很喜歡 TOOTH TOOTH 的話，神戶三宮也有本店，行程上會更好排。
               </p>

@@ -280,19 +280,19 @@ export default function TokyoDisneyAroundPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">舞浜周邊 常見問題</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 不進園真的玩得起來嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 不進園真的玩得起來嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 如果你要的是遊樂設施，那還是得進園；但如果想要的是<strong>氛圍、拍照與買周邊</strong>，舞浜周邊就很夠。度假區線的米奇車窗、飯店群的外觀、イクスピアリ 裡的 Disney Store，都不需要門票。<strong>半天</strong>是最剛好的長度。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 度假區線一日券值得買嗎？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 度假區線一日券值得買嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 看你會搭幾趟。<strong>只搭一、兩趟的話用 IC 卡就好</strong>；如果打算繞圈欣賞景色、中途下車逛飯店再回來，一日券就會比較划算，也不用每次掏卡。
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 從東京市區怎麼過來？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 從東京市區怎麼過來？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 舞浜站在 <strong>JR 京葉線</strong>上，從東京站搭過來大約15分鐘左右。要注意<strong>地鐵周遊券不能搭 JR</strong>，這段要另外付；如果是剛下飛機直接過來，機場巴士有到舞浜地區飯店的路線，可以參考
                 <Link href="/narita-airport-access" className="text-blue-600 underline underline-offset-2">成田</Link>與
@@ -300,7 +300,7 @@ export default function TokyoDisneyAroundPage() {
               </p>
             </div>
             <div>
-              <p className="text-sm font-bold text-stone-700 mb-1">❓ 下雨天來會不會很掃興？</p>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 下雨天來會不會很掃興？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 這個行程本來就<strong>很適合雨天</strong>。度假區線是有屋頂的電車，イクスピアリ 是室內購物中心，幾乎不用淋到雨。反而是原本要進園的人遇到下雨時，把行程換成這樣會舒服很多。
               </p>
