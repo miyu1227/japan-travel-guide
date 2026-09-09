@@ -375,6 +375,18 @@ export default function ConradOsakaPage() {
                 窗邊座位不保證，人多的時候會被安排到內側。不過這間店的<strong>挑高空間與水晶裝置本身就很有看頭</strong>，就算不是窗邊也不會失望。真的很在意的話，可以在訂位時備註希望靠窗，但還是要看當天狀況。
               </p>
             </div>
+            <div>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 下雨天適合當室內備案嗎？</h3>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                很適合。大阪Metro四橋線「肥後橋」駅<strong>4號出口直結</strong>，京阪中之島線「渡邊橋」駅13號出口也直結，<strong>下雨天完全不用撐傘</strong>。用餐時段多是90〜100分鐘的時間制，剛好可以把雨最大的那段時間放進來。
+              </p>
+            </div>
+            <div>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 想看夜景要選哪個時段？</h3>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                選<strong>晚餐時段（17:30〜）</strong>。日落前後入座的話，可以一次看到夕陽與亮燈後的市區，適合紀念日。相反地，想拍水晶裝置折射的光就要選白天的時段——是完全不同的兩種畫面。
+              </p>
+            </div>
           </div>
         </section>
 

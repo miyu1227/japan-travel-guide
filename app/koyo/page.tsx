@@ -359,6 +359,12 @@ export default function KoyoPage() {
                 下雨時銀杏葉會被打落，反而形成一整片<strong>金黃色地毯</strong>，別有一番風味🍂 而且人潮較少、拍照更容易。撐傘＆穿好防水鞋即可。
               </p>
             </div>
+            <div>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 東京近郊還有哪裡可以賞紅葉？</h3>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                想離開都心的話，<strong>昭和記念公園</strong>（立川・11月上旬〜下旬）是東京最大級的紅葉隧道，<strong>高尾山</strong>（八王子・11月中旬〜下旬）可以登山＋賞楓一次體驗。留在都心的話，<strong>新宿御苑</strong>（11月中旬〜12月上旬）免費入場，<strong>小石川後樂園</strong>（水道橋・11月下旬〜12月上旬）是江戶回遊式庭園的代表。
+              </p>
+            </div>
           </div>
         </section>
 

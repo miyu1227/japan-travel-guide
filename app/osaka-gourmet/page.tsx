@@ -303,6 +303,12 @@ export default function OsakaGourmetPage() {
                 <Link href="/kansai-ramen" className="text-blue-600 underline underline-offset-2">大阪沾麵推薦</Link>裡的肥後橋也在同一個方向。
               </p>
             </div>
+            <div>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 吃完可以順路看大阪夜景嗎？</h3>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                可以。兩間都在<strong>梅田站徒步圈</strong>（福島也只有一站），吃完走回梅田逛百貨或看夜景都順路，<strong>不用特地跑到道頓堀</strong>。想體驗道地的大阪夜生活，居酒屋這一帶本身就是大阪人自己晚上會來的區域。
+              </p>
+            </div>
           </div>
         </section>
 

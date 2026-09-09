@@ -275,6 +275,12 @@ export default function ShibuyaCafePage() {
                 澀谷駅是<strong>JR山手線・埼京線・湘南新宿線＋東京メトロ副都心線・銀座線・半藏門線＋京王井の頭線＋東急東橫線・田園都市線</strong>共9條路線的巨型轉乘站，來自哪都很方便。
               </p>
             </div>
+            <div>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 附近可以看夜景嗎？</h3>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                走路約5分就到 <strong>SHIBUYA SKY</strong>（澀谷スクランブルスクエア的屋上展望台），360度俯瞰東京，夕陽與夜景都是絕景。想拍人少的スクランブル交差点則相反，<strong>清晨6〜8點或平日上午</strong>最好拍——週五・週六晚上7〜11點是澀谷夜生活的高峰，人潮會爆炸。
+              </p>
+            </div>
           </div>
         </section>
 
