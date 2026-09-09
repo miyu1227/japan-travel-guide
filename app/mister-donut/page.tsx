@@ -332,6 +332,14 @@ export default function MisterDonutPage() {
                 ミスド的分店查詢：<a href="https://misterdonut.jp/shop/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">官方分店檢索</a>。日本各都道府縣都有分店，特別是東京・大阪・京都・名古屋等大都市集中。
               </p>
             </div>
+            <div>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 可以當伴手禮（手信）帶回台灣・香港嗎？</h3>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                不建議。甜甜圈是<strong>當天內吃最好吃</strong>的類型，常溫大約只放半天，冷藏1〜2天布丁餡的口感就會變。這是「在日本當場吃的伴手禮」，不是帶回國的那種。真的要帶回去的話，看看
+                <Link href="/tokyo-cookies" className="text-blue-600 underline underline-offset-2">東京伴手禮推薦</Link>
+                的餅乾禮盒會比較合適。
+              </p>
+            </div>
           </div>
         </section>
 

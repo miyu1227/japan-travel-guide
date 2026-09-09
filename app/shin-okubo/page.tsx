@@ -361,6 +361,18 @@ export default function ShinOkuboPage() {
                 <Link href="/ramen" className="text-blue-600 underline underline-offset-2">東京拉麵推薦</Link>裡也有幾間在山手線沿線，安排在同一天不會太趕。
               </p>
             </div>
+            <div>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 新大久保可以買什麼伴手禮（手信）？</h3>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                大久保通り沿線有<strong>很多韓國食品超市</strong>，泡麵、零食、調味料都很好買，是這一帶最方便的伴手禮（手信）補給點。想要甜的話，<strong>MUJIGE</strong>的杜拜麻糬（¥400〜800）外帶方便、外觀也可愛，買來拍照或送人都合適。
+              </p>
+            </div>
+            <div>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 哪裡最好拍照打卡？晚上去也可以嗎？</h3>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                <strong>SHINCHON CAFE</strong> 的韓系外觀最好拍，<strong>晚上的氣氛燈光特別美</strong>，很適合情侶或女生旅遊。不過鍋物店在週末<strong>18:00之後常常要等</strong>，想吃飯又想拍夜景的話，先去吃鍋、再走去咖啡廳收尾會比較順。
+              </p>
+            </div>
           </div>
         </section>
 

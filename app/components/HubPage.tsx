@@ -124,7 +124,10 @@ export default function HubPage({ slug }: { slug: string }) {
           <div className="space-y-2">
             {hub.guide.map((g) => (
               <div key={g.q} className="bg-white rounded-2xl border border-stone-100 shadow-sm p-4">
-                <p className="text-sm font-bold text-stone-800 mb-1">Q. {g.q}</p>
+                {/* 記事側のFAQと同じく、質問文は見出しにする。
+                    p のままやと「東京哪一區的咖啡廳最好逛？」みたいな長尾クエリが
+                    見出しとして拾われへん。preflight があるので見た目は変わらへん。 */}
+                <h3 className="text-sm font-bold text-stone-800 mb-1">Q. {g.q}</h3>
                 <p className="text-sm text-stone-600 leading-relaxed">{g.a}</p>
               </div>
             ))}
