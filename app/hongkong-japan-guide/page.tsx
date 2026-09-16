@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import PrepBanner from "../components/PrepBanner";
 
 const PAGE_URL = "https://www.japantrippicks.com/hongkong-japan-guide";
 const OG_IMAGE = "/hongkong-japan-guide/cover.png";
@@ -222,6 +223,8 @@ export default function HongKongJapanGuidePage() {
             <Link href="/osaka" className="text-blue-500 font-semibold hover:underline">大阪必食推介</Link>。
           </p>
         </section>
+
+        <PrepBanner />
 
         {/* 航線 */}
         <section className="mb-8">

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
+import PrepBanner from "../components/PrepBanner";
 
 const PAGE_URL = "https://www.japantrippicks.com/taiwan-japan-guide";
 const OG_IMAGE = "/taiwan-japan-guide/cover.png";
@@ -222,6 +223,8 @@ export default function TaiwanJapanGuidePage() {
             <Link href="/osaka" className="text-blue-500 font-semibold hover:underline">大阪美食推薦</Link>。
           </p>
         </section>
+
+        <PrepBanner />
 
         {/* 航線 */}
         <section className="mb-8">
