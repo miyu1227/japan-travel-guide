@@ -54,7 +54,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-09-03T00:00:00+09:00",
+  dateModified: "2026-09-17T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -74,6 +74,13 @@ const photos = [
   "/nakameguro-cafe/starbucks-4.jpg",
 ];
 
+// 2回目の実訪（2026-09）で撮った写真
+const starbucksVisit2Photos = [
+  { src: "/nakameguro-cafe/starbucks-5.jpg", alt: "星巴克臻選東京烘焙工坊的拿鐵與Princi卡士達可頌" },
+  { src: "/nakameguro-cafe/starbucks-6.jpg", alt: "星巴克臻選東京烘焙工坊・三種咖啡豆的品飲比較" },
+  { src: "/nakameguro-cafe/starbucks-7.jpg", alt: "星巴克臻選東京烘焙工坊的焦糖脆殼咖啡與生火腿起司麵包" },
+];
+
 const streamerPhotos = [
   "/nakameguro-cafe/streamer-1.jpg",
   "/nakameguro-cafe/streamer-2.jpg",
@@ -91,6 +98,7 @@ const faqItems = [
   { q: "從中目黑站要走多久？", a: "都是從東急東橫線・東京メトロ日比谷線「中目黑」駅沿著目黑川走：STREAMER約7分、星巴克臻選約13分。沿路都是特色小店，走起來不會無聊。" },
   { q: "幾點去比較不擠？", a: "星巴克臻選是7:00〜22:00（櫻花季8:00〜21:30）；STREAMER約8:00〜19:00，但官網不公告固定時間，建議看店家IG。兩間都是平日早上或傍晚最鬆，週末的午餐時段人最多。" },
   { q: "一個人大概要花多少？", a: "星巴克臻選飲品¥600〜¥1,500、調酒¥1,200〜；STREAMER飲品約¥600〜¥900、甜點¥400〜¥600。限定周邊商品也很適合當伴手禮。" },
+  { q: "星巴克臻選除了咖啡還有什麼可以吃？", a: "1樓的Princi烘焙坊是現場烤的義式麵包與甜點。實訪時點到夾滿卡士達（吉士）醬的可頌，還有生火腿＋莫札瑞拉起司的布里歐麵包，鹹的甜的都有。飲品除了臻選咖啡，也有表面烤成焦糖脆殼的季節限定款，另外還能一次點幾種豆子喝比較。菜單會隨季節更換，以現場為準。" },
   { q: "兩間可以同一天一起去嗎？", a: "可以。兩間都在目黑區青葉台、走路約6分鐘就到，很適合排成一條目黑川散步路線。星巴克臻選慢慢逛要1〜2小時，STREAMER則是坐下來喝一杯的節奏。" },
   { q: "想要安靜工作的話選哪間？", a: "STREAMER COFFEE 中目黑店比較適合。店內有免費Wi-Fi、窗邊吧台有插座，天花板挑高、玻璃採光好，坐著待一陣子也不會悶。" },
 ];
@@ -123,7 +131,7 @@ export default function NakameguroCafePage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           中目黑星巴克臻選烘焙工坊＆<br />STREAMER｜中目黑咖啡廳推薦2選☕
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-03</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-17</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -202,7 +210,7 @@ export default function NakameguroCafePage() {
             </div>
 
             <div className="flex flex-wrap gap-2 mb-4">
-              {["🏛️ 隈研吾設計", "🌸 目黑川賞櫻", "🌍 全球6間之一", "🎁 限定商品", "📸 IG拍照聖地"].map((t) => (
+              {["🏛️ 隈研吾設計", "🌸 目黑川賞櫻", "🌍 全球6間之一", "🥐 Princi現烤麵包", "🎁 限定商品", "📸 IG拍照聖地"].map((t) => (
                 <span key={t} className="text-xs bg-pink-50 text-pink-700 border border-pink-200 px-3 py-1 rounded-full">{t}</span>
               ))}
             </div>
@@ -216,6 +224,28 @@ export default function NakameguroCafePage() {
                 <li><strong>3F ARRIVIAMO酒吧</strong>：濃縮咖啡馬丁尼・俯瞰目黑川</li>
                 <li><strong>4F AMU INSPIRATION LOUNGE</strong>：露台座位・最佳賞櫻位置</li>
               </ul>
+            </div>
+
+            {/* 2回目の実訪：実際に頼んだもの */}
+            <div className="rounded-xl border border-stone-100 overflow-hidden mb-3">
+              <div className="photo-strip">
+                {starbucksVisit2Photos.map((photo) => (
+                  <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                    <Image src={photo.src} alt={photo.alt} fill sizes="33vw" className="object-cover" />
+                  </div>
+                ))}
+              </div>
+              <div className="px-4 py-3">
+                <p className="text-xs font-bold text-stone-500 mb-2">🍽️ 第二次造訪實際點的（2026年9月）</p>
+                <ul className="text-xs text-stone-600 space-y-2">
+                  <li><strong>拿鐵＋Princi 可頌（牛角包）</strong>：1樓的Princi烘焙坊是現場烤的，可頌撒滿糖粉、裡面夾滿卡士達（吉士）醬，甜度比看起來收斂，配熱拿鐵剛好。連黑陶杯、木托盤、杯墊都是烘焙工坊專屬設計📸</li>
+                  <li><strong>三種咖啡豆一次喝比較</strong>：實訪時是RWANDA、TANZANIA MONDUL ESTATE，加上只有東京店才有的<strong>TOKYO ROASTERY BLEND</strong>。三杯都不加糖不加奶換著喝，酸味和厚度的差別馬上就喝得出來。豆單會換，想喝哪一支建議直接問吧台的咖啡師。</li>
+                  <li><strong>焦糖脆殼咖啡＋生火腿起司麵包</strong>：飲品表面烤出一層像焦糖布蕾的脆殼，用湯匙先敲破再喝；鹹的那邊是Princi的布里歐麵包夾生火腿、莫札瑞拉起司（芝士）和生菜，一鹹一甜剛好解膩。</li>
+                </ul>
+                <p className="text-xs text-stone-500 leading-relaxed mt-3 pt-3 border-t border-stone-100">
+                  💡 季節限定的飲品與麵包會換季，菜單以現場為準。人多的時候，先確認有沒有位子再點餐比較安心（實訪時是用木托盤端上桌）。
+                </p>
+              </div>
             </div>
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
