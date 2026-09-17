@@ -14,7 +14,7 @@ const PAGE_URL = "https://www.japantrippicks.com/hikone";
 const OG_IMAGE = "/hikone/castle-1.png";
 
 export const metadata: Metadata = {
-  title: "彥根貓＆彥根城攻略2026｜登場時間、門票、京都出發交通",
+  title: "彥根貓＆彥根城攻略2026｜表演時間、門票、京都出發交通",
   description:
     "日本國寶彥根城完整指南，還能遇見人氣吉祥物彥根貓（ひこにゃん）。城下町散步、必吃布丁、造型饅頭巡禮。附門票・交通・吉祥物見面時間。",
   alternates: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "彥根貓＆彥根城攻略2026｜登場時間、門票、京都出發交通",
+    title: "彥根貓＆彥根城攻略2026｜表演時間、門票、京都出發交通",
     description: "日本國寶彥根城！可以遇見彥根貓ひこにゃん，城下町散步、必吃布丁。附門票・交通・推薦。",
     url: PAGE_URL,
     type: "article",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "彥根貓＆彥根城攻略2026｜登場時間、門票、京都出發交通",
+    title: "彥根貓＆彥根城攻略2026｜表演時間、門票、京都出發交通",
     description: "日本國寶彥根城！可以遇見人氣吉祥物彥根貓ひこにゃん🐱",
     images: [OG_IMAGE],
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "彥根貓＆彥根城攻略2026｜登場時間、門票、京都出發交通【實際造訪】",
+  headline: "彥根貓＆彥根城攻略2026｜表演時間、門票、京都出發交通【實際造訪】",
   description: "滋賀「彥根城」完整指南。日本國寶之一、吉祥物彥根貓見面、城下町散步。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
@@ -122,7 +122,7 @@ export default function HikonePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          彥根貓＆彥根城攻略 2026｜<br />登場時間、門票、京都出發交通🏯
+          彥根貓＆彥根城攻略 2026｜<br />表演時間、門票、京都出發交通🏯
         </h1>
         <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
 

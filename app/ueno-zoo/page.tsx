@@ -11,7 +11,7 @@ const PAGE_URL = "https://www.japantrippicks.com/ueno-zoo";
 const OG_IMAGE = "/ueno-zoo/zoo-1.jpg";
 
 export const metadata: Metadata = {
-  title: "上野動物園推薦｜東京必去親子景點・門票¥600",
+  title: "上野動物園值得去嗎｜門票¥600、小熊貓與逛法【實際造訪】",
   description:
     "日本最古老的動物園，亞洲象・蘇門答臘虎・大猩猩・小熊貓等超人氣動物。門票只要¥600，親子旅行・情侶約會都推薦。大熊貓已於2026年1月返還中國。附交通方式・門票・營業時間。",
   alternates: {

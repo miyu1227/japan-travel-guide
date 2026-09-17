@@ -12,7 +12,7 @@ const PAGE_URL = "https://www.japantrippicks.com/ginza-apollo";
 const OG_IMAGE = "/ginza-apollo/apollo-1.jpg";
 
 export const metadata: Metadata = {
-  title: "銀座希臘料理｜THE APOLLO 話題餐廳✅實訪",
+  title: "THE APOLLO 銀座｜希臘料理話題餐廳的預約與menu✅實訪",
   description:
     "銀座Nouvo 11樓的希臘料理餐廳「THE APOLLO」。招牌起司料理與地中海風味分享盤，附交通方式・推薦菜單・價格。",
   alternates: {

@@ -11,7 +11,7 @@ const PAGE_URL = "https://www.japantrippicks.com/mister-donut";
 const OG_IMAGE = "/mister-donut/motchurin-1.jpg";
 
 export const metadata: Metadata = {
-  title: "Mister Donut期間限定推薦｜日本ミスド季節新品✅實購",
+  title: "もっちゅりん是什麼？Mister Donut日本限定甜甜圈✅實購",
   description:
     "日本Mister Donut（ミスド）期間限定甜甜圈整理。秋季「さつまいもド」全5款¥183起、話題「もっちゅりん」。附口味・價格・購買方式。",
   alternates: {
