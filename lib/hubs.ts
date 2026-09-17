@@ -122,6 +122,11 @@ export const HUBS: Hub[] = [
         slugs: ["shin-okubo", "futakotamagawa", "ginza-apollo"],
       },
       {
+        heading: "一個人的一餐・輕食",
+        note: "不用訂位、不用排很久，車站附近就能解決的一餐。",
+        slugs: ["shibuya-gohan"],
+      },
+      {
         heading: "甜點・伴手禮",
         note: "帶回飯店當宵夜，或帶回台灣・香港送人。",
         slugs: ["takeout-cake", "tokyo-cookies", "mister-donut"],

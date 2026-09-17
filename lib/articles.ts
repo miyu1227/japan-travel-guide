@@ -32,6 +32,19 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "shibuya-gohan",
+    category: "ramen",
+    name: "Soup Stock Tokyo 澀谷｜站直結的湯專賣店🍲",
+    shortLabel: "澀谷湯專賣店",
+    desc: "澀谷Mark City 4樓・井之頭線直結。早8點〜晚10點，一個人也能好好吃一餐",
+    tag: "東京",
+    emoji: "🍲",
+    image: "/shibuya-gohan/soupstock-1.jpg",
+    areas: ["東京"],
+    published: "2026-09-17",
+    updated: "2026-09-17",
+  },
+  {
     slug: "noge",
     category: "ramen",
     name: "橫濱野毛續攤推薦2選｜平價居酒屋・壽司一貫¥99起🍶",
