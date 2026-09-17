@@ -437,9 +437,9 @@ export const ARTICLES: Article[] = [
   {
     slug: "otaguro-park",
     category: "spot",
-    name: "大田黑公園｜荻窪的免費日本庭園・錦鯉🐟",
+    name: "大田黑公園｜荻窪可餵錦鯉的免費日本庭園🐟",
     shortLabel: "大田黑公園",
-    desc: "荻窪站走10分・免費入園。錦鯉游在腳邊的淺溪，秋天有百年銀杏並木",
+    desc: "荻窪站走10分・免費入園。飼料一份¥100，錦鯉就游在腳邊的淺溪裡",
     tag: "東京",
     emoji: "🐟",
     image: "/otaguro-park/otaguro-1.jpg",
