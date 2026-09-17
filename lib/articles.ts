@@ -307,15 +307,15 @@ export const ARTICLES: Article[] = [
   {
     slug: "shibuya-cafe",
     category: "cafe",
-    name: "澀谷咖啡廳推薦｜RECOCO レココ・黑膠唱片試聽咖啡🎵",
+    name: "澀谷咖啡廳推薦2選｜RECOCO 黑膠咖啡＆歐舒丹咖啡廳🎵",
     shortLabel: "澀谷咖啡",
-    desc: "澀谷必去！可親手試聽黑膠唱片的音樂體驗咖啡，約300張唱片聽到飽",
+    desc: "黑膠唱片聽到飽的RECOCO，加上澀谷站前3分、開到23點的歐舒丹咖啡廳",
     tag: "東京",
     emoji: "🎵",
     image: "/shibuya-cafe/recoco-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-09-17",
   },
   {
     slug: "bolt-uehara",
