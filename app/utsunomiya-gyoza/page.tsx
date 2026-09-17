@@ -11,7 +11,7 @@ const PAGE_URL = "https://www.japantrippicks.com/utsunomiya-gyoza";
 const OG_IMAGE = "/utsunomiya-gyoza/minmin-1.jpg";
 
 export const metadata: Metadata = {
-  title: "宇都宮餃子2選｜みんみん＆正嗣 兩大名店對決",
+  title: "宇都宮餃子推薦2選｜みんみん＆正嗣 兩大名店對決",
   description:
     "「宇都宮みんみん本店」與「餃子專門店 正嗣 宮島町本店」兩大巨頭完整介紹。煎餃・水餃・炸餃CP值超高，從東京搭新幹線50分即達。",
   alternates: {
