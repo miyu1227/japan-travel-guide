@@ -303,6 +303,18 @@ export default function MisterDonutPage() {
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-hatena">常見問題 FAQ</h2>
           <div className="space-y-4">
             <div>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓「もっちゅりん」是什麼？中文怎麼唸、怎麼點？</h3>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                「もっちゅりん」（羅馬拼音 <strong>mocchurin／mochurin</strong>）是 Mister Donut 把招牌的「ポン・デ・リング（波堤甜甜圈）」和布丁結合的話題商品。外層是Q彈的連珠麻糬狀，中央注入卡士達布丁醬，一口下去有<strong>麻糬＋布丁的雙重口感</strong>。菜單上只會寫日文，點餐時直接指著照片給店員看最快。
+              </p>
+            </div>
+            <div>
+              <h3 className="text-sm font-bold text-stone-700 mb-1">❓ もっちゅりん 的價錢多少？</h3>
+              <p className="text-xs text-stone-600 leading-relaxed">
+                單顆<strong>¥237左右（含稅）</strong>，內用有時稍貴，可搭配ミスド套餐折扣。同期的「さつまいもド」<strong>全5款¥183起</strong>。都是日本的期間限定商品，售完為止。
+              </p>
+            </div>
+            <div>
               <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 這些限定商品是常態販售嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
                 目前是<strong>期間限定＋話題商品</strong>，售完為止。想吃務必盡早去，都心店常常上午就售完。ミスド經常會再度推出人氣款式，關注官網＆Twitter最新情報。
