@@ -201,7 +201,7 @@ export default function ShowaKinenParkPage() {
               <p className="text-xs text-stone-600 ib ib-pin">東京都立川市綠町3173</p>
               <p className="text-xs text-stone-600 ib ib-train">JR中央線「立川」駅 徒歩約10分／JR青梅線「西立川」駅 徒歩約2分</p>
               <p className="text-xs text-stone-600 ib ib-clock">9:30〜17:00（季節變動・冬季〜16:30）</p>
-              <p className="text-xs text-stone-600 ib ib-yen">大人 ¥450／高校生以下 免費／65歲以上 ¥210</p>
+              <p className="text-xs text-stone-600 ib ib-yen">大人 ¥450／中學生以下 免費／65歲以上 ¥210</p>
               <p className="text-xs text-stone-600">🚲 自行車租借 大人3小時 ¥520</p>
               <p className="text-xs text-stone-600">🅿️ 停車場有（普通車 ¥900/日）</p>
             </div>

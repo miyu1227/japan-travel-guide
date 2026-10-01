@@ -16,7 +16,7 @@ const OG_IMAGE = "/hikone/castle-1.png";
 export const metadata: Metadata = {
   title: "彥根貓＆彥根城攻略2026｜表演時間、門票、京都出發交通",
   description:
-    "日本國寶彥根城完整指南，還能遇見人氣吉祥物彥根貓（ひこにゃん）。城下町散步、必吃布丁、造型饅頭巡禮。附門票・交通・吉祥物見面時間。",
+    "日本國寶彥根城完整指南，還能遇見人氣吉祥物彥根貓（ひこにゃん）。城下町散步、必吃布丁、造型銅鑼燒巡禮。附門票・交通・吉祥物見面時間。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -84,8 +84,8 @@ const faqs = [
   { q: "彥根貓的表演時間（登場時間）是幾點？", a: "每天13:30〜14:00在天守前廣場、15:00〜15:30在彥根城博物館冠木門前；週六日・假日11:00〜11:30另在四番町廣場加開一場。雨天改在博物館冠木門，夏季會縮短到10〜20分，出發前看官方出陣スケジュール。" },
   { q: "彥根貓（ひこにゃん）登場要排隊嗎？", a: "天守前那場人最多，提早15分到前排就拍得到。出發前先在官網確認當天的時間表，再把參觀城堡的時間排在前後最順。" },
   { q: "從京都或大阪過去方便嗎？", a: "搭JR琵琶湖線到「彥根」駅，出站後走一段就是城下町，是關西近郊很好排的一日遊。" },
-  { q: "彥根一日遊的行程可以怎麼排？", a: "從京都出發約50分、大阪約80分，當天來回很輕鬆。彥根站西口走15分到彥根城表門，先逛城堡與玄宮園（8:30〜17:00、最後入場16:30），13:30的天守前那場看彥根貓，之後沿城下町散步吃布丁與饅頭回車站，半天到一天剛剛好。" },
-  { q: "適合帶小朋友一起去嗎？（親子）", a: "很適合。彥根貓每天在固定時間出沒，可以近距離合照，是小朋友最有反應的部分。門票中小學生¥300，城下町還有布丁店與彥根貓造型饅頭，走的距離也不長。" },
+  { q: "彥根一日遊的行程可以怎麼排？", a: "從京都出發約50分、大阪約80分，當天來回很輕鬆。彥根站西口走15分到彥根城表門，先逛城堡與玄宮園（8:30〜17:00、最後入場16:30），13:30的天守前那場看彥根貓，之後沿城下町散步吃布丁與銅鑼燒回車站，半天到一天剛剛好。" },
+  { q: "適合帶小朋友一起去嗎？（親子）", a: "很適合。彥根貓每天在固定時間出沒，可以近距離合照，是小朋友最有反應的部分。門票中小學生¥300，城下町還有布丁店與彥根貓造型銅鑼燒，走的距離也不長。" },
 ];
 
 
@@ -133,7 +133,7 @@ export default function HikonePage() {
             <strong>彥根城</strong>位於滋賀縣彥根市，是<strong>日本現存12天守之一</strong>，也是被指定為<strong>國寶</strong>的5座城之一🏯 從京都搭JR新快速約50分（¥1,170）、大阪約80分就能抵達，是關西旅遊不能錯過的歷史名勝。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            彥根城最大的魅力——除了壯麗的城堡建築之外，當然就是超人氣吉祥物<strong>「彥根貓（ひこにゃん）」</strong>🐱 每天會在城內固定時間出沒，可以近距離合照！周邊城下町還有許多布丁店、彥根貓造型饅頭等美食，是親子・情侶旅遊的絕佳行程✨
+            彥根城最大的魅力——除了壯麗的城堡建築之外，當然就是超人氣吉祥物<strong>「彥根貓（ひこにゃん）」</strong>🐱 每天會在城內固定時間出沒，可以近距離合照！周邊城下町還有許多布丁店、彥根貓造型銅鑼燒等美食，是親子・情侶旅遊的絕佳行程✨
           </p>
         </section>
 
@@ -227,18 +227,18 @@ export default function HikonePage() {
             </div>
 
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
-              彥根城周邊的<strong>「夢京橋城堡道」</strong>和<strong>「四番町廣場」</strong>，是充滿江戶時代風情的城下町🏮 街道兩旁聚集了各種特色小店：<strong>布丁專賣店</strong>、<strong>彥根貓造型饅頭</strong>、近江牛串燒、甜點咖啡廳（咖啡店）等。逛城＋散步＋吃美食，半天行程剛剛好！
+              彥根城周邊的<strong>「夢京橋城堡道」</strong>和<strong>「四番町廣場」</strong>，是充滿江戶時代風情的城下町🏮 街道兩旁聚集了各種特色小店：<strong>布丁專賣店</strong>、<strong>彥根貓造型銅鑼燒</strong>、近江牛串燒、甜點咖啡廳（咖啡店）等。逛城＋散步＋吃美食，半天行程剛剛好！
             </p>
 
             <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-pink-600 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                城下町本身就像時光倒流到江戶時代，氛圍超棒📸 必吃（必食）的有：<strong>彦根プリン（彥根布丁）</strong>濃郁香醇、<strong>彥根貓饅頭・人形燒</strong>可愛到捨不得吃、<strong>近江牛肉包</strong>奢華美味🥩 邊走邊吃，是來彥根的最大樂趣之一！
+                城下町本身就像時光倒流到江戶時代，氛圍超棒📸 必吃（必食）的有：<strong>彦根プリン（彥根布丁）</strong>濃郁香醇、<strong>彥根貓銅鑼燒・人形燒</strong>可愛到捨不得吃、<strong>近江牛肉包</strong>奢華美味🥩 邊走邊吃，是來彥根的最大樂趣之一！
               </p>
             </div>
 
             <div className="flex flex-wrap gap-2 mb-4">
-              {["🍮 彥根布丁", "🐱 彥根貓饅頭", "🥩 近江牛串", "🏮 江戶街道", "📸 散步拍照"].map((t) => (
+              {["🍮 彥根布丁", "🐱 彥根貓銅鑼燒", "🥩 近江牛串", "🏮 江戶街道", "📸 散步拍照"].map((t) => (
                 <span key={t} className="text-xs bg-pink-50 text-pink-700 border border-pink-200 px-3 py-1 rounded-full">{t}</span>
               ))}
             </div>
@@ -248,7 +248,7 @@ export default function HikonePage() {
               <p className="text-xs text-stone-600 ib ib-pin">夢京橋城堡道・四番町廣場（彥根城周邊）</p>
               <p className="text-xs text-stone-600 ib ib-train">JR「彥根」駅 徒歩約10分</p>
               <p className="text-xs text-stone-600 ib ib-clock">各店不同（多數10:00〜17:00）</p>
-              <p className="text-xs text-stone-600 ib ib-yen">布丁 ¥400〜／饅頭 ¥150〜／串燒 ¥500〜</p>
+              <p className="text-xs text-stone-600 ib ib-yen">布丁 ¥400〜／銅鑼燒 ¥270〜／串燒 ¥500〜</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
