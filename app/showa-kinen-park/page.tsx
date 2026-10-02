@@ -12,9 +12,9 @@ const PAGE_URL = "https://www.japantrippicks.com/showa-kinen-park";
 const OG_IMAGE = "/showa-kinen-park/park-1.jpg";
 
 export const metadata: Metadata = {
-  title: "昭和紀念公園推薦｜東京立川散步必去・四季絕景【實際造訪】",
+  title: "昭和紀念公園門票¥450｜立川景點・秋銀杏與四季花海✅實訪",
   description:
-    "東京散步推薦！立川「昭和紀念公園」是日本最大級的國營公園，廣達165公頃。春櫻、夏向日葵、秋紅葉、冬燈光秀，四季都有不同的絕景。附門票・交通方式・推薦路線。台灣・香港旅客必看！",
+    "立川「國營昭和紀念公園」門票大人¥450、中學生以下免費，從新宿搭中央線約25分。廣達165公頃，春櫻、夏向日葵、秋銀杏紅葉、冬燈光秀。附交通方式・推薦路線，實際造訪整理。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）

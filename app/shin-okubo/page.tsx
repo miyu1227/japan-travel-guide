@@ -10,7 +10,7 @@ const PAGE_URL = "https://www.japantrippicks.com/shin-okubo";
 const OG_IMAGE = "/shin-okubo/sawee-1.jpg";
 
 export const metadata: Metadata = {
-  title: "新大久保美食推薦｜東京韓國街必吃散步指南",
+  title: "新大久保美食3選｜東京韓國街內臟鍋・杜拜麻糬✅實訪",
   description:
     "實際走訪整理3間必吃：章魚蝦內臟鍋「サウィ食堂」、韓系咖啡廳SHINCHON CAFE、話題杜拜麻糬MUJIGE。附新宿出發交通、價格、逛街順序與避開人潮的時段。",
   alternates: {
