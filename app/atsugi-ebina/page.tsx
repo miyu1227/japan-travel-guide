@@ -139,7 +139,10 @@ const spots: Spot[] = [
   {
     name: "Aloha Table LaLaport海老名",
     sub: "アロハテーブル ららぽーと海老名",
-    photos: [{ src: `${P}/aloha-1.jpg`, alt: "Aloha Table LaLaport海老名的店內 - 吊扇、椰子樹與整排窗戶" }],
+    photos: [
+      { src: `${P}/aloha-2.jpg`, alt: "Aloha Table LaLaport海老名的 Loco Moco - 漢堡排、荷包蛋與酪梨，淋滿肉汁醬" },
+      { src: `${P}/aloha-1.jpg`, alt: "Aloha Table LaLaport海老名的店內 - 吊扇、椰子樹與整排窗戶" },
+    ],
     body: (
       <>
         <p className="text-sm text-stone-600 leading-relaxed mb-3">
@@ -150,9 +153,10 @@ const spots: Spot[] = [
         </p>
       </>
     ),
-    reasonTitle: "✨ 推薦給旅客的理由",
+    reasonTitle: "✨ 實際點的（實吃）",
     reason: (
       <>
+        點了招牌的 <strong>Loco Moco</strong>：白飯上疊著漢堡排和一顆煎得邊緣焦香的<strong>荷包蛋</strong>，旁邊堆著切塊的<strong>酪梨</strong>，紅褐色的肉汁醬淋到整個盤子都是🍳 把蛋戳破、和醬汁一起拌著飯吃，就是夏威夷的味道。連濕紙巾上都印著「aloha」。<br />
         LaLaport 本身就是很好逛的商場，<strong>買完東西直接上4樓吃飯</strong>最省事。店內空間寬、桌距大，帶小孩或提著購物袋都坐得舒服；而且<strong>可以先在網路上訂位</strong>，週末不用在門口乾等。
       </>
     ),
