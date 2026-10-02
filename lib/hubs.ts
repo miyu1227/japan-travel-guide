@@ -75,6 +75,11 @@ export const HUBS: Hub[] = [
         note: "自家烘焙的濃度最高的兩區，適合安靜久坐。",
         slugs: ["kiyosumi-cafe", "cafe"],
       },
+      {
+        heading: "銀座（旗艦店・逛街中途）",
+        note: "百貨與精品之間的一站，適合排在逛街的前後。",
+        slugs: ["ginza-cafe"],
+      },
     ],
     relatedHubs: ["tokyo-gourmet", "tokyo-spot"],
   },
