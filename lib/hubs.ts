@@ -238,7 +238,7 @@ export const HUBS: Hub[] = [
       {
         heading: "神奈川方向（橫濱・湘南・箱根）",
         note: "最近、最好排，當天來回完全沒問題。",
-        slugs: ["hakone", "enoshima-kamakura", "noge", "chigasaki", "isehara-gelato"],
+        slugs: ["hakone", "enoshima-kamakura", "noge", "chigasaki", "isehara-gelato", "atsugi-ebina"],
       },
       {
         heading: "栃木・山梨方向（餃子與葡萄酒）",

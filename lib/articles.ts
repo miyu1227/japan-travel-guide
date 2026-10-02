@@ -32,6 +32,19 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "atsugi-ebina",
+    category: "ramen",
+    name: "本厚木・海老名美食3間｜ATSUGI COFFEE・楊國福麻辣燙🍮",
+    shortLabel: "本厚木・海老名",
+    desc: "小田急線上、新宿約50分。布丁¥600的咖啡廳、LaLaport的夏威夷料理、秤重100g¥400的麻辣燙",
+    tag: "神奈川",
+    emoji: "🍮",
+    image: "/atsugi-ebina/atsugicoffee-1.jpg",
+    areas: ["其他"],
+    published: "2026-10-02",
+    updated: "2026-10-02",
+  },
+  {
     slug: "shibuya-gohan",
     category: "ramen",
     name: "Soup Stock Tokyo 澀谷｜站直結的湯專賣店🍲",
