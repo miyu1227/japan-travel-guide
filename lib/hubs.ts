@@ -76,9 +76,9 @@ export const HUBS: Hub[] = [
         slugs: ["kiyosumi-cafe", "cafe"],
       },
       {
-        heading: "銀座（旗艦店・逛街中途）",
-        note: "百貨與精品之間的一站，適合排在逛街的前後。",
-        slugs: ["ginza-cafe"],
+        heading: "銀座・六本木（逛街與美術館中途）",
+        note: "百貨、精品與美術館之間的一站，適合排在行程的前後。",
+        slugs: ["ginza-cafe", "roppongi-cafe"],
       },
     ],
     relatedHubs: ["tokyo-gourmet", "tokyo-spot"],
