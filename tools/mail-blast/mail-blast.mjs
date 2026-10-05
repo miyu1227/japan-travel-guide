@@ -206,6 +206,10 @@ const DEFAULT_ATTACHMENTS = {
     file: `${MEDIA_KIT_DIR}/JapanTripPicks_媒体資料_代理店向け_2026-08.pdf`,
     label: "代理店向け（価格なし）",
   },
+  jichitai: {
+    file: `${MEDIA_KIT_DIR}/JapanTripPicks_媒体資料_自治体向け_2026-10.pdf`,
+    label: "自治体・DMO向け（価格あり）",
+  },
 };
 
 /**
