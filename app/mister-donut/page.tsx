@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Mister Donut期間限定推薦｜日本ミスド的季節限定甜甜圈",
-    description: "日本ミスド的期間限定甜甜圈整理！秋季地瓜系列全5款、話題的波堤×布丁新品。",
+    description: "日本ミスド的期間限定甜甜圈整理！秋季地瓜系列全5款、夏季話題的「もっちゅりん」。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Mister Donut期間限定推薦｜日本ミスド季節新品",
-    description: "秋季地瓜甜甜圈全5款¥183起＋話題的波堤×布丁新品🍩",
+    description: "秋季地瓜甜甜圈全5款¥183起＋夏季話題的「もっちゅりん」🍩",
     images: [OG_IMAGE],
   },
 };
@@ -53,7 +53,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-09-04T00:00:00+09:00",
+  dateModified: "2026-10-13T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -100,7 +100,7 @@ export default function MisterDonutPage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           Mister Donut期間限定推薦｜<br />日本ミスド的季節限定甜甜圈🍩
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-04</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-10-13</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -109,7 +109,7 @@ export default function MisterDonutPage() {
             日本最大連鎖甜甜圈店<strong>Mister Donut（ミスタードーナツ／ミスド）</strong>最好玩的地方，是它<strong>一年到頭都在換季節限定</strong>🍩 每一季都有只在那幾個月買得到的口味，賣完就要等明年，所以日本人自己也會追。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這一頁整理我們<strong>實際買來吃過</strong>的期間限定品項——目前主打的是每年秋天登場的<strong>「さつまいもド」地瓜甜甜圈全5款</strong>，以及波堤結合布丁的話題新品。從台灣・香港來日本旅遊，這是最好入手、又最有「當季感」的伴手禮（手信）與下午茶✨
+            這一頁整理我們<strong>實際買來吃過</strong>的期間限定品項——目前主打的是每年秋天登場的<strong>「さつまいもド」地瓜甜甜圈全5款</strong>，以及夏天掀起話題的<strong>「もっちゅりん」</strong>（2026年的販售已結束）。從台灣・香港來日本旅遊，這是最好入手、又最有「當季感」的伴手禮（手信）與下午茶✨
           </p>
         </section>
 
@@ -207,31 +207,31 @@ export default function MisterDonutPage() {
             </div>
 
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
-              「<strong>もっちゅりん</strong>」是把ミスド招牌的<strong>「ポン・デ・リング（波堤甜甜圈）」</strong>與<strong>布丁</strong>結合的話題商品🍮 波堤的8顆圓珠中央放入布丁醬，外層Q彈、內裡滑順，是那種一咬下去口感會分兩層的甜甜圈。推出時在日本社群上被討論很久。
+              「<strong>もっちゅりん</strong>」是ミスド在<strong>2025年（創業55週年）</strong>推出的限定甜甜圈，名字來自它主打的<strong>「もっちゅり」口感</strong>——比一般甜甜圈更有彈性、更有嚼勁的麵團，口味走黃豆粉、御手洗醬油這類<strong>日式和菓子路線</strong>。第一年就賣到到處缺貨，<strong>2026年6月3日再度登場</strong>，口味換成黃豆粉・御手洗・草莓3種。<strong>2026年的販售已在8月中旬前後結束</strong>，目前店裡買不到。
             </p>
 
             <div className="bg-orange-50 border border-orange-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-orange-600 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                這款限定甜甜圈只有<strong>日本Mister Donut</strong>才買得到🇯🇵 來日本旅遊一定要嘗試！口感超Q彈、不太甜膩，是適合配咖啡或紅茶的下午茶甜點。<strong>單價約¥200〜¥260</strong>就能享受高品質甜點，CP值超高💰 多種口味可選，每次去都能試新的。
+                這款限定甜甜圈只有<strong>日本Mister Donut</strong>才買得到🇯🇵 黃豆粉、御手洗這種和菓子口味做成甜甜圈，在台灣・香港的分店看不到。2026年<strong>一顆¥216〜¥237（外帶）</strong>，價格跟一般甜甜圈差不多💰 因為連續兩年都是初夏登場，如果明年同一時期來日本，可以先上官網看看有沒有再推出。
               </p>
             </div>
 
             <div className="flex flex-wrap gap-2 mb-4">
-              {["🍩 期間限定", "🍮 波堤×布丁", "💰 ¥200〜¥260", "🇯🇵 日本才有", "🍞 招牌波堤變化款"].map((t) => (
+              {["🍩 期間限定", "🍡 和菓子口味", "💰 ¥216〜¥237", "🇯🇵 日本才有", "📅 2026年已結束"].map((t) => (
                 <span key={t} className="text-xs bg-orange-50 text-orange-700 border border-orange-200 px-3 py-1 rounded-full">{t}</span>
               ))}
             </div>
 
             {/* 推薦菜單 */}
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
-              <p className="text-xs font-bold text-amber-700 mb-2">🍩 推薦口味</p>
+              <p className="text-xs font-bold text-amber-700 mb-2">🍩 2026年的3種口味（外帶／內用・含稅）</p>
               <ul className="text-xs text-stone-600 space-y-1">
-                <li>・<strong>もっちゅりん 卡士達</strong> — 經典款，布丁醬最招牌</li>
-                <li>・<strong>もっちゅりん 焦糖</strong> — 大人風味，焦糖香氣濃郁</li>
-                <li>・<strong>もっちゅりん 抹茶</strong> — 日本限定，宇治抹茶醇厚</li>
-                <li>・<strong>もっちゅりん 巧克力</strong> — 甜點控必試</li>
+                <li>・<strong>もっちゅりん 黃豆粉（きなこ）</strong>：¥216／¥220</li>
+                <li>・<strong>もっちゅりん 御手洗（みたらし）</strong>：¥226／¥231</li>
+                <li>・<strong>もっちゅりん 草莓（いちご）</strong>：¥237／¥242 — 2026年的新口味</li>
               </ul>
+              <p className="text-xs text-stone-500 mt-2">2025年第一次推出時是黃豆粉・御手洗・紅豆・黑糖＆蕨餅4種。</p>
             </div>
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
@@ -239,13 +239,13 @@ export default function MisterDonutPage() {
               <p className="text-xs text-stone-600 ib ib-pin">日本全國Mister Donut各店舗</p>
               <p className="text-xs text-stone-600 ib ib-train">各車站・商業設施內多數有店舖</p>
               <p className="text-xs text-stone-600 ib ib-clock">各店不同（多數7:00〜21:00）</p>
-              <p className="text-xs text-stone-600 ib ib-yen">¥200〜¥260／個</p>
-              <p className="text-xs text-stone-600">📅 期間限定（售完即止）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">¥216〜¥237／個（2026年・外帶價）</p>
+              <p className="text-xs text-stone-600">📅 2026年6月3日開賣，8月中旬前後結束</p>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
               <span className="text-sm shrink-0">💡</span>
-              <p className="text-xs text-stone-600">人氣超高，<strong>每天傍晚多數店舖就會售完</strong>！建議上午或中午前去最確實。可在Mister Donut官網查詢最近店舗</p>
+              <p className="text-xs text-stone-600"><strong>2026年的販售已經結束</strong>，現在去店裡買不到。之後會不會再推出官方還沒公布，出發前先看Mister Donut官網的新品頁</p>
             </div>
 
             <a
@@ -272,27 +272,27 @@ export default function MisterDonutPage() {
 
         {/* もっちゅりん 詳細 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">波堤×布丁系列的細節</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">もっちゅりん的細節</h2>
           <div className="space-y-3">
             <div className="flex gap-3">
               <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
               <div>
                 <p className="text-sm font-bold text-stone-700">口感特色</p>
-                <p className="text-xs text-stone-500 leading-relaxed">外層是Pon de Ring特有的<strong>Q彈連珠麻糬狀</strong>，內裡注入濃郁的<strong>卡士達布丁醬</strong>，一口下去有麻糬＋布丁的雙重口感。</p>
+                <p className="text-xs text-stone-500 leading-relaxed">官方主打的是<strong>「もっちゅり」</strong>——有彈性、有嚼勁的麵團口感，跟招牌的ポン・デ・リング（波堤）是不同的商品。</p>
               </div>
             </div>
             <div className="flex gap-3">
               <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
               <div>
                 <p className="text-sm font-bold text-stone-700">口味種類</p>
-                <p className="text-xs text-stone-500 leading-relaxed">卡士達布丁、抹茶布丁、焦糖布丁等季節限定口味交替推出。看官網最新資訊確認當前販售款式。</p>
+                <p className="text-xs text-stone-500 leading-relaxed">2025年是黃豆粉・御手洗・紅豆・黑糖＆蕨餅4種，2026年是黃豆粉・御手洗・草莓3種。每年的口味會換，以官網當期公告為準。</p>
               </div>
             </div>
             <div className="flex gap-3">
               <span className="text-orange-400 font-black text-sm shrink-0">▸</span>
               <div>
                 <p className="text-sm font-bold text-stone-700">價格參考</p>
-                <p className="text-xs text-stone-500 leading-relaxed">單顆<strong>¥237左右（含稅）</strong>，內用有時稍貴。可搭配ミスド套餐折扣。</p>
+                <p className="text-xs text-stone-500 leading-relaxed">2026年外帶<strong>¥216〜¥237（含稅）</strong>，內用貴幾円（日本內用外帶稅率不同）。</p>
               </div>
             </div>
           </div>
@@ -305,13 +305,13 @@ export default function MisterDonutPage() {
             <div>
               <h3 className="text-sm font-bold text-stone-700 mb-1">❓「もっちゅりん」是什麼？中文怎麼唸、怎麼點？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
-                「もっちゅりん」（羅馬拼音 <strong>mocchurin／mochurin</strong>）是 Mister Donut 把招牌的「ポン・デ・リング（波堤甜甜圈）」和布丁結合的話題商品。外層是Q彈的連珠麻糬狀，中央注入卡士達布丁醬，一口下去有<strong>麻糬＋布丁的雙重口感</strong>。菜單上只會寫日文，點餐時直接指著照片給店員看最快。
+                「もっちゅりん」（羅馬拼音 <strong>mocchurin／mochurin</strong>）是 Mister Donut 在2025年推出的限定甜甜圈，主打<strong>「もっちゅり」的彈牙口感</strong>，口味是黃豆粉、御手洗這類日式和菓子路線。2026年6月3日再度登場、8月中旬前後結束，<strong>目前沒有販售</strong>。菜單上只會寫日文，之後如果再推出，點餐時直接指著照片給店員看最快。
               </p>
             </div>
             <div>
               <h3 className="text-sm font-bold text-stone-700 mb-1">❓ もっちゅりん 的價錢多少？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
-                單顆<strong>¥237左右（含稅）</strong>，內用有時稍貴，可搭配ミスド套餐折扣。同期的「さつまいもド」<strong>全5款¥183起</strong>。都是日本的期間限定商品，售完為止。
+                2026年的外帶價是黃豆粉¥216、御手洗¥226、草莓¥237（含稅），內用貴幾円。現在買得到的秋季限定「さつまいもド」<strong>全5款¥183起</strong>。都是日本的期間限定商品，售完為止。
               </p>
             </div>
             <div>
@@ -329,7 +329,7 @@ export default function MisterDonutPage() {
             <div>
               <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 可以外帶多久？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
-                甜甜圈類<strong>當天內</strong>食用最美味，冷藏保存約1〜2天但布丁餡口感會變化。飯店（酒店）冰箱冰過再吃反而別有一番風味，但建議當天吃完。
+                甜甜圈類<strong>當天內</strong>食用最美味，冷藏保存約1〜2天但口感會變。飯店（酒店）冰箱冰過再吃反而別有一番風味，但建議當天吃完。
               </p>
             </div>
             <div>
@@ -347,7 +347,7 @@ export default function MisterDonutPage() {
             <div>
               <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 可以當伴手禮（手信）帶回台灣・香港嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
-                不建議。甜甜圈是<strong>當天內吃最好吃</strong>的類型，常溫大約只放半天，冷藏1〜2天布丁餡的口感就會變。這是「在日本當場吃的伴手禮」，不是帶回國的那種。真的要帶回去的話，看看
+                不建議。甜甜圈是<strong>當天內吃最好吃</strong>的類型，常溫大約只放半天，冷藏1〜2天口感就會變。這是「在日本當場吃的伴手禮」，不是帶回國的那種。真的要帶回去的話，看看
                 <Link href="/tokyo-cookies" className="text-blue-600 underline underline-offset-2">東京伴手禮推薦</Link>
                 的餅乾禮盒會比較合適。
               </p>
@@ -370,14 +370,14 @@ export default function MisterDonutPage() {
         {/* ぽやぴよ */}
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
-            波堤的Q彈口感＋滑順布丁，這種前所未見的組合真的太創新了✨<br />
+            秋天是地瓜、初夏是和菓子口味——ミスド的限定款每一季都不一樣✨<br />
             來日本旅遊的話，看到當季的限定款就直接買，錯過就要等明年了！
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
             <div className="text-3xl shrink-0">🐥</div>
             <div>
               <p className="text-sm font-semibold text-stone-700 mb-0.5">ぽやぴよ的話</p>
-              <p className="text-sm text-stone-600">「咬下去Q彈又有布丁醬，這口感真的會上癮！多買幾顆都吃得完🍩」</p>
+              <p className="text-sm text-stone-600">「限定款真的會賣完，在店裡看到就先買🍩」</p>
             </div>
           </div>
         </div>
