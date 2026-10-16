@@ -84,7 +84,7 @@ const gateTimes = [
 ];
 
 const relatedLinks = [
-  { href: "/yoyogi-park-cafe", label: "☕ VERVE COFFEE 代代木公園｜狗狗可進店・7點開門", desc: "明治神宮隔壁就是代代木公園，參拜完喝一杯" },
+  { href: "/yoyogi-park-cafe", label: "☕ 代代木公園咖啡廳2選｜VERVE COFFEE＆nephew", desc: "明治神宮隔壁就是代代木公園，參拜完喝一杯" },
   { href: "/spot", label: "🌿 東京野餐3選｜新宿御苑・代代木・日比谷", desc: "代代木公園和明治神宮相鄰，可以排在同一天" },
   { href: "/shibuya-cafe", label: "☕ 澀谷咖啡廳推薦2選｜RECOCO＆歐舒丹咖啡廳", desc: "原宿往南走就是澀谷" },
 ];

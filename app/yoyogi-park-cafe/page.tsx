@@ -9,12 +9,12 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 const PAGE_URL = "https://www.japantrippicks.com/yoyogi-park-cafe";
-const OG_IMAGE = "/yoyogi-park-cafe/verve-1.jpg";
+const OG_IMAGE = "/yoyogi-park-cafe/nephew-1.jpg";
 
 export const metadata: Metadata = {
-  title: "VERVE COFFEE 代代木公園｜狗狗可進店・7點開門✅實訪",
+  title: "VERVE COFFEE＆nephew｜代代木公園咖啡廳2選✅實訪",
   description:
-    "代代木公園站3號出口徒步3分的VERVE COFFEE ROASTERS。7:00〜21:00、狗狗店內與露台都OK、可刷卡・PayPay。磅蛋糕¥880，還有一保堂抹茶拿鐵。",
+    "代代木公園站徒步2〜3分的2間。VERVE COFFEE 7:00開門、狗狗可進店；nephew 8:00開門、秋季布丁芭菲與手作蛋糕¥600，只收電子支付。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -27,19 +27,19 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "VERVE COFFEE ROASTERS 代代木公園｜公園旁的加州精品咖啡",
-    description: "代代木公園站徒步3分。早上7點開門、狗狗可以一起進店，手沖咖啡配磅蛋糕。",
+    title: "代代木公園咖啡廳2選｜VERVE COFFEE＆nephew",
+    description: "代代木公園站徒步2〜3分。狗狗可進店的加州咖啡VERVE，和蛋糕擺滿吧台的nephew。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
     alternateLocale: ["zh_HK"],
     siteName: "Japan Trip Picks",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "VERVE COFFEE ROASTERS 代代木公園店的咖啡吧台" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "nephew 代代木公園的手作蛋糕吧台" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "VERVE COFFEE 代代木公園｜狗狗可進店・7點開門",
-    description: "代代木公園西門徒步3分・加州精品咖啡＋一保堂抹茶☕",
+    title: "VERVE COFFEE＆nephew｜代代木公園咖啡廳2選",
+    description: "代代木公園站徒步2〜3分・早上就開的2間咖啡廳☕",
     images: [OG_IMAGE],
   },
 };
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "VERVE COFFEE ROASTERS 代代木公園｜狗狗可進店・早上7點開門的公園旁咖啡廳【實際造訪】",
-  description: "VERVE COFFEE ROASTERS YOYOGI PARK 完整介紹。交通、營業時間、付款方式、寵物、插座、甜點價格與座位。",
+  headline: "代代木公園咖啡廳2選｜VERVE COFFEE ROASTERS＆nephew【實際造訪】",
+  description: "代代木公園站旁的VERVE COFFEE ROASTERS YOYOGI PARK與nephew。交通、營業時間、付款方式、寵物、甜點價格與座位。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
@@ -72,6 +72,14 @@ const vervePhotos = [
   { src: "/yoyogi-park-cafe/verve-2.jpg", alt: "VERVE COFFEE ROASTERS 代代木公園店的外觀 - 白牆上的VERVE標誌與玻璃門" },
   { src: "/yoyogi-park-cafe/verve-3.jpg", alt: "VERVE COFFEE ROASTERS 代代木公園店的熱咖啡與巧克力蛋糕，裝在灰綠色陶杯與陶盤" },
   { src: "/yoyogi-park-cafe/verve-4.jpg", alt: "VERVE COFFEE ROASTERS 代代木公園店的甜點櫃 - 柳橙蛋糕等磅蛋糕一片¥880，旁邊是咖啡豆貨架" },
+];
+
+const nephewPhotos = [
+  { src: "/yoyogi-park-cafe/nephew-1.jpg", alt: "nephew 代代木公園的吧台 - 南瓜焦糖蛋糕¥600、栗子莓果蛋糕等手作蛋糕擺滿一整桌，旁邊是AUTUMN DAYS秋季菜單" },
+  { src: "/yoyogi-park-cafe/nephew-2.jpg", alt: "nephew 的秋季芭菲 - 玻璃杯上放一整顆布丁和地瓜片，旁邊是冰拿鐵" },
+  { src: "/yoyogi-park-cafe/nephew-3.jpg", alt: "nephew 的熱拿鐵（深藍色杯子）、冰拿鐵和一片栗子蛋糕，放在白色磁磚桌上" },
+  { src: "/yoyogi-park-cafe/nephew-4.jpg", alt: "nephew 吧台上的整顆蛋糕、布朗尼和馬芬，背景是藍色磁磚牆" },
+  { src: "/yoyogi-park-cafe/nephew-5.jpg", alt: "nephew 的藍色店門與看板 - Cafe & Bistro bar，Morning 8am-11am、Cafe 11am-5pm、Bistro & Bar 7pm-0am" },
 ];
 
 const relatedLinks = [
@@ -103,11 +111,23 @@ const faqItems = [
   },
   {
     q: "價錢多少？",
-    a: "我們造訪當天，甜點櫃裡的柳橙蛋糕（ORANGE CAKE）等磅蛋糕標示一片¥880。咖啡的價格請以店內菜單為準。",
+    a: "我們造訪當天，VERVE 甜點櫃裡的柳橙蛋糕（ORANGE CAKE）等磅蛋糕標示一片¥880；nephew 的季節限定南瓜焦糖蛋糕（Pumpkin Caramel Cake）標示¥600。咖啡的價格請以店內菜單為準。",
+  },
+  {
+    q: "nephew 是什麼樣的店？",
+    a: "代代木公園站旁、富ヶ谷的「Cafe & Bistro bar」，讀作「ネフュー（nephew）」。池尻大橋的人氣酒吧「LOBBY」的2號店，2021年4月開幕，由兩層樓的獨棟房子改裝。白天是咖啡廳，吧台上擺滿手作蛋糕；晚上7點以後變成餐酒館。",
+  },
+  {
+    q: "nephew 幾點開？可以付現金嗎？",
+    a: "店門口的看板寫的是：Morning 8:00〜11:00、Cafe 11:00〜17:00、Bistro & Bar 19:00〜24:00（17〜19點中間休息）。店內標示「CASHLESS ONLY」，只收電子支付，不收現金，請帶信用卡或手機支付。",
+  },
+  {
+    q: "VERVE 和 nephew 要選哪一間？",
+    a: "帶狗、想喝手沖或一保堂抹茶、需要插座 → VERVE COFFEE（7點就開）。想吃蛋糕、芭菲等甜點，或晚上想喝一杯 → nephew。兩間走路只差幾分鐘，排在同一天也可以。",
   },
   {
     q: "不喝咖啡也可以去嗎？",
-    a: "可以。這間店也有京都老字號「一保堂茶舗」的抹茶拿鐵、煎茶和玄米茶。牛奶可以免費換成低脂牛奶、豆漿或杏仁奶。",
+    a: "可以。VERVE 有京都老字號「一保堂茶舗」的抹茶拿鐵、煎茶和玄米茶，牛奶可以免費換成低脂牛奶、豆漿或杏仁奶。nephew 造訪當天的季節飲料有焙茶拿鐵（Hojicha Latte）、焦糖栗子拿鐵、紫地瓜拿鐵。",
   },
 ];
 
@@ -137,7 +157,7 @@ export default function YoyogiParkCafePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          VERVE COFFEE ROASTERS 代代木公園<br />狗狗可以一起進店・早上7點開門的公園旁咖啡☕
+          代代木公園咖啡廳2選<br />VERVE COFFEE ＆ nephew・早上就開的公園旁咖啡☕
         </h1>
         <p className="text-xs text-stone-400 mb-6">最後更新：2026-10-16</p>
 
@@ -148,14 +168,37 @@ export default function YoyogiParkCafePage() {
             代代木公園是東京市中心最大的公園之一，<strong>免費入園</strong>、草皮很大，週末很多人來散步、遛狗🐕 可是公園周邊能好好坐下來的咖啡廳意外地不多。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這次推薦（推介）的<strong>「VERVE COFFEE ROASTERS YOYOGI PARK」</strong>，就在公園<strong>參宮橋門・西門走過來約3分鐘</strong>的地方。來自美國加州的精品咖啡品牌，<strong>每天早上7點開到晚上9點</strong>，<strong>狗狗店內和露台都可以進</strong>，也能刷卡和用PayPay——旅客和帶狗散步的在地人都很好用。
+            這次推薦（推介）兩間，都在千代田線<strong>「代々木公園」站走路2〜3分鐘</strong>的地方：狗狗店內也能進、早上7點開門的加州精品咖啡<strong>「VERVE COFFEE ROASTERS」</strong>，和吧台上擺滿手作蛋糕、晚上變成餐酒館的<strong>「nephew」</strong>。
           </p>
         </section>
 
         <PrepBannerCompact />
 
+        {/* 比較 */}
+        <section className="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">2間怎麼選？一眼比較</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs text-stone-600">
+              <thead>
+                <tr className="border-b border-stone-200 text-stone-500">
+                  <th className="text-left py-2 pr-2 font-bold"></th>
+                  <th className="text-left py-2 pr-2 font-bold">VERVE COFFEE</th>
+                  <th className="text-left py-2 font-bold">nephew</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-stone-100"><td className="py-2 pr-2 font-bold">開門</td><td className="py-2 pr-2">7:00〜21:00</td><td className="py-2">8:00〜17:00／19:00〜24:00</td></tr>
+                <tr className="border-b border-stone-100"><td className="py-2 pr-2 font-bold">強項</td><td className="py-2 pr-2">手沖咖啡・一保堂抹茶</td><td className="py-2">手作蛋糕・季節芭菲</td></tr>
+                <tr className="border-b border-stone-100"><td className="py-2 pr-2 font-bold">付款</td><td className="py-2 pr-2">現金・刷卡・PayPay</td><td className="py-2"><strong>只收電子支付</strong></td></tr>
+                <tr className="border-b border-stone-100"><td className="py-2 pr-2 font-bold">狗狗</td><td className="py-2 pr-2">店內・露台OK</td><td className="py-2">現場確認</td></tr>
+                <tr><td className="py-2 pr-2 font-bold">站前</td><td className="py-2 pr-2">3號出口 徒步3分</td><td className="py-2">徒步約2分</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">代代木公園咖啡廳推薦（咖啡店推介）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">代代木公園咖啡廳推薦（咖啡店推介）・2選</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           <div className="photo-strip">
@@ -257,6 +300,95 @@ export default function YoyogiParkCafePage() {
           </div>
         </section>
 
+        {/* nephew */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
+          <div className="photo-strip">
+            {nephewPhotos.map((photo) => (
+              <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                <Image src={photo.src} alt={photo.alt} fill sizes="20vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-pink-500 text-white flex items-center justify-center text-sm font-black shrink-0">2</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">nephew（Cafe &amp; Bistro bar）</h3>
+                <span className="text-xs text-stone-400">ネフュー 代々木公園・富ヶ谷</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              藍色的店門、白色看板上寫著 <strong>nephew Cafe &amp; Bistro bar</strong>🍰 池尻大橋人氣酒吧<strong>「LOBBY」的2號店</strong>，2021年4月開幕，把兩層樓的獨棟房子改裝成店面。白天是咖啡廳，<strong>晚上7點以後變成餐酒館</strong>，一間店從早餐用到宵夜。
+            </p>
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              一進門最先看到的是<strong>藍色磁磚吧台上擺滿的手作蛋糕</strong>：整顆的巧克力蛋糕、栗子莓果奶酥蛋糕、層層疊的鮮奶油蛋糕、布朗尼和馬芬，多到不知道從哪一個開始看。造訪當天是秋季菜單「<strong>AUTUMN DAYS!!</strong>」，季節限定的<strong>南瓜焦糖蛋糕（Pumpkin Caramel Cake）一片¥600</strong>。
+            </p>
+
+            <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-pink-600 mb-1">✨ 實際點的（實訪）</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                點了秋季的<strong>芭菲</strong>——玻璃杯最上面放了<strong>一整顆布丁</strong>，插著一片地瓜脆片和百里香🍮 下面一層一層疊著奶油和醬汁。另外還有一片<strong>放了整顆栗子的蛋糕</strong>，配上裝在深藍色大杯裡的<strong>熱拿鐵</strong>和<strong>冰拿鐵</strong>。白色磁磚的桌子，拍起來很好看。
+              </p>
+            </div>
+
+            <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-amber-700 mb-2">☕ 造訪當天門口黑板上的季節飲料</p>
+              <ul className="text-xs text-stone-600 space-y-1.5">
+                <li>・<strong>Hojicha Latte</strong>（焙茶拿鐵）</li>
+                <li>・<strong>Caramel Marron Latte</strong>（焦糖栗子拿鐵）</li>
+                <li>・<strong>Purple Sweet Potato Latte</strong>（紫地瓜拿鐵）</li>
+              </ul>
+              <p className="text-[11px] text-stone-500 leading-relaxed mt-2 pt-2 border-t border-amber-200">
+                ※ 飲料、甜點、三明治都可以外帶（Take Out OK）。牛奶可以加價換豆漿或燕麥奶。菜單是英文＋日文，蛋糕直接在吧台指著點就好。
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🍰 手作蛋糕擺滿吧台", "🍮 秋季布丁芭菲", "🌅 早上8點開門", "🍷 晚上是餐酒館", "📱 只收電子支付"].map((t) => (
+                <span key={t} className="text-xs bg-pink-50 text-pink-700 border border-pink-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區富ヶ谷1-7-2</p>
+              <p className="text-xs text-stone-600 ib ib-train">千代田線「代々木公園」站 徒步約2分（走進小巷裡）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">Morning 8:00〜11:00／Cafe 11:00〜17:00／Bistro &amp; Bar 19:00〜24:00（店門口看板）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">季節蛋糕一片¥600（店內標示）</p>
+              <p className="text-xs text-stone-600">💳 <strong>CASHLESS ONLY：只收電子支付，不收現金</strong></p>
+              <p className="text-xs text-stone-600">🥡 飲料・甜點・三明治可外帶</p>
+              <p className="text-xs text-stone-600">⏱️ 建議預留約45分〜1小時</p>
+              <p className="text-xs text-stone-600">📞 03-5738-8908</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600"><strong>17:00〜19:00 中間休息</strong>，傍晚去會撲空。晚上的餐酒館時段以酒和餐點為主，想吃蛋糕請白天去。另外黑板上寫著<strong>買T恤送1杯飲料</strong>（T-shirt 1 Buy 1 free drink），店裡也賣自家的周邊商品👕</p>
+            </div>
+
+            <div className="flex flex-wrap gap-x-4 gap-y-2">
+              <a
+                href="https://www.instagram.com/nephew_yoyogipark/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                📷 官方 Instagram
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=nephew+富ヶ谷1-7-2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🗺️ Google 地圖
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">代代木公園散步小建議</h2>
@@ -265,21 +397,23 @@ export default function YoyogiParkCafePage() {
             <li>✅ 店在公園的<strong>參宮橋門・西門</strong>這一側，不是原宿站那一側——從原宿過來的話要穿過整個公園</li>
             <li>✅ 搭千代田線坐到「<strong>代々木公園</strong>」駅最近；小田急線的「代々木八幡」駅也走得到</li>
             <li>✅ 帶狗旅行的人很少找得到<strong>店內也能進</strong>的咖啡廳，這裡是少數之一🐕</li>
-            <li>✅ 想用電腦的話記得坐<strong>店內</strong>，插座只有店內有，而且<strong>沒有Wi-Fi</strong></li>
+            <li>✅ 想用電腦的話記得坐 VERVE 的<strong>店內</strong>，插座只有店內有，而且<strong>沒有Wi-Fi</strong></li>
+            <li>✅ 去 nephew 前確認手機支付或信用卡能用——<strong>不收現金</strong>📱</li>
+            <li>✅ 早上 VERVE 喝咖啡→公園散步→中午到 nephew 吃蛋糕，兩間走路只差幾分鐘🍰</li>
           </ul>
         </section>
 
         {/* ぽやぴよ */}
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
-            大大的陶杯咖啡、一片磅蛋糕，旁邊還有散步回來的狗狗✨<br />
-            代代木公園的早晨，從這間店開始剛剛好。
+            早上在 VERVE 喝一杯大陶杯咖啡，散步完到 nephew 挑一塊蛋糕✨<br />
+            代代木公園的一天，用這兩間店串起來剛剛好。
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
             <div className="text-3xl shrink-0">🐥</div>
             <div>
               <p className="text-sm font-semibold text-stone-700 mb-0.5">ぽやぴよ的話</p>
-              <p className="text-sm text-stone-600">「狗狗也能一起進來，這樣誰都不用在外面等了🐕」</p>
+              <p className="text-sm text-stone-600">「nephew 的吧台蛋糕多到選不完，下次要空著肚子來🍰」</p>
             </div>
           </div>
         </div>
