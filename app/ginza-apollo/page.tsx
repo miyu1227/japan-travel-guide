@@ -12,9 +12,9 @@ const PAGE_URL = "https://www.japantrippicks.com/ginza-apollo";
 const OG_IMAGE = "/ginza-apollo/apollo-1.jpg";
 
 export const metadata: Metadata = {
-  title: "THE APOLLO 銀座｜希臘料理話題餐廳的預約與menu✅實訪",
+  title: "THE APOLLO 銀座＆Sophie｜希臘・義大利料理✅實訪",
   description:
-    "銀座Nouvo 11樓的希臘料理餐廳「THE APOLLO」。招牌起司料理與地中海風味分享盤，附交通方式・推薦菜單・價格。",
+    "銀座Nouvo 11樓的希臘料理「THE APOLLO」，和東京EDITION銀座14樓的義大利料理「Sophie」。晚餐5道菜¥10,500起，附交通・菜單・價格。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "銀座美食推薦｜THE APOLLO・希臘料理人氣餐廳",
-    description: "銀座必吃！東京話題希臘料理餐廳，分享盤＆招牌起司料理。附交通・菜單・推薦。",
+    title: "THE APOLLO 銀座＆Sophie at EDITION｜希臘・義大利料理2選",
+    description: "銀座的希臘料理THE APOLLO，和飯店14樓的義大利料理Sophie。附交通・菜單・價格。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "銀座美食推薦｜THE APOLLO・希臘料理",
-    description: "銀座必吃！東京話題希臘料理餐廳，地中海風味分享盤🇬🇷",
+    title: "THE APOLLO 銀座＆Sophie｜希臘・義大利料理2選",
+    description: "銀座的希臘料理分享盤，和東京EDITION銀座的義大利晚餐套餐🍝",
     images: [OG_IMAGE],
   },
 };
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "銀座美食推薦｜THE APOLLO・希臘料理人氣餐廳【實際造訪】",
-  description: "銀座必吃美食「THE APOLLO」。東京最具話題的希臘料理餐廳。",
+  headline: "THE APOLLO 銀座＆Sophie at EDITION｜希臘・義大利料理2選【實際造訪】",
+  description: "銀座的希臘料理「THE APOLLO」與東京EDITION銀座14樓的義大利料理「Sophie at EDITION」。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-07-21T00:00:00+09:00",
+  dateModified: "2026-10-16T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -69,6 +69,17 @@ const breadcrumbJsonLd = {
 
 const photos = ["/ginza-apollo/apollo-1.jpg", "/ginza-apollo/apollo-2.jpg", "/ginza-apollo/apollo-3.jpg"];
 
+const sophiePhotos = [
+  { src: "/ginza-apollo/sophie-1.jpg", alt: "Sophie at EDITION 的布拉塔起司（burrata）配番茄與芝麻葉" },
+  { src: "/ginza-apollo/sophie-2.jpg", alt: "Sophie at EDITION 的前菜，玻璃盤上放著紅心蘿蔔片與香草" },
+  { src: "/ginza-apollo/sophie-3.jpg", alt: "Sophie at EDITION 的麵包，法國麵包與佛卡夏放在木盤上，旁邊是白酒" },
+  { src: "/ginza-apollo/sophie-4.jpg", alt: "Sophie at EDITION 的魚料理，白肉魚配橄欖與馬鈴薯的湯汁" },
+  { src: "/ginza-apollo/sophie-5.jpg", alt: "Sophie at EDITION 的肉料理，表面裹著酥脆麵包粉，配紅酒醬汁" },
+  { src: "/ginza-apollo/sophie-6.jpg", alt: "Sophie at EDITION 的提拉米蘇，插著EDITION字樣的巧克力片" },
+  { src: "/ginza-apollo/sophie-7.jpg", alt: "Sophie at EDITION 的莓果塔，草莓與藍莓放在綠色盤子上" },
+  { src: "/ginza-apollo/sophie-8.jpg", alt: "Sophie at EDITION 的店內，淺綠色椅子與桌上的 DINNER MENU 5 COURSE 菜單" },
+];
+
 const relatedLinks = [
   { href: "/futakotamagawa", label: "🍽️ 二子玉川美食推薦3選｜中華・甜點・韓國料理", desc: "蒸籠中華・蘋果派・韓式屋台" },
   { href: "/ramen", label: "🍜 東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
@@ -80,6 +91,9 @@ const faqs = [
   { q: "適合幾個人去？", a: "菜色以地中海風的分享盤為主，2〜4人一起點最好分。招牌的起司（芝士）料理幾乎每桌都會點。" },
   { q: "預算大概要抓多少？", a: "午餐約¥3,000起、晚餐約¥8,000起，套餐¥15,000起。想用比較輕的預算吃到同一間店的味道，午餐時段最划算。" },
   { q: "從銀座站走幾分鐘？幾點營業？", a: "東京Metro銀座線・丸之內線・日比谷線「銀座」駅徒歩約2分，店在銀座Nouvo的11樓。營業11:00〜22:00（會依時期變動），晚餐時段強烈建議先訂位。" },
+  { q: "Sophie at EDITION 是什麼樣的餐廳？", a: "東京EDITION銀座（東京エディション銀座）飯店14樓的義大利料理餐廳，以都會風的Trattoria為概念，招牌是自家製義大利麵。2026年6月3日重新開幕，主廚是來自義大利普利亞（Puglia）的Marco Violano。" },
+  { q: "Sophie 的價格多少？要訂位嗎？", a: "官方公布的晚餐套餐：4道菜¥8,500起、5道菜¥10,500起（含稅與服務費），午餐3道菜¥5,500起。可以在TableCheck線上訂位，晚餐建議先訂。另外也有早餐、下午茶和咖啡吧時段。" },
+  { q: "Sophie at EDITION 怎麼去？", a: "地址是東京都中央區銀座2-8-13（東京EDITION銀座14F）。有樂町線「銀座一丁目」駅約190公尺、「銀座」駅約290公尺，走路都在5分鐘以內。" },
 ];
 
 export default function GinzaApolloPage() {
@@ -108,9 +122,9 @@ export default function GinzaApolloPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          銀座美食推薦｜THE APOLLO<br />・希臘料理人氣餐廳🍽️
+          THE APOLLO 銀座＆Sophie at EDITION<br />銀座的希臘料理・義大利料理2選🍽️
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-07-21</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-10-16</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -121,12 +135,15 @@ export default function GinzaApolloPage() {
           <p className="text-sm text-stone-600 leading-relaxed">
             這次推薦（推介）的<strong>「THE APOLLO」</strong>是來自<strong>澳洲雪梨的人氣希臘料理餐廳</strong>，2016年春天進駐銀座🇬🇷 位於銀座Nouvo大樓11樓的時尚空間，提供地中海風味的<strong>分享盤式料理</strong>，是銀座最具話題的多人聚餐勝地✨
           </p>
+          <p className="text-sm text-stone-600 leading-relaxed mt-2">
+            另一間是<strong>東京EDITION銀座</strong>飯店14樓的義大利料理<strong>「Sophie at EDITION」</strong>🍝 可以安安靜靜吃一套晚餐套餐，適合紀念日或想好好吃一頓的晚上。
+          </p>
         </section>
 
         <PrepBannerCompact />
 
         {/* Shop */}
-        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">銀座美食推薦（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">銀座美食推薦・2選（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           <div className="photo-strip">
@@ -146,7 +163,7 @@ export default function GinzaApolloPage() {
 
           <div className="p-5">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center text-sm font-black shrink-0">★</div>
+              <div className="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center text-sm font-black shrink-0">1</div>
               <div>
                 <h3 className="text-base font-black text-stone-800">THE APOLLO 銀座</h3>
                 <span className="text-xs text-stone-400">Modern Greek Restaurant</span>
@@ -217,6 +234,102 @@ export default function GinzaApolloPage() {
           </div>
         </section>
 
+        {/* Sophie at EDITION */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
+          <div className="photo-strip">
+            {sophiePhotos.map((photo) => (
+              <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                <Image src={photo.src} alt={photo.alt} fill sizes="25vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center text-sm font-black shrink-0">2</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">Sophie at EDITION（東京EDITION銀座）</h3>
+                <span className="text-xs text-stone-400">ソフィー アット エディション・Italian Trattoria</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              位在<strong>東京EDITION銀座</strong>（東京エディション銀座）飯店<strong>14樓</strong>的義大利料理餐廳。以都會風的<strong>Trattoria（義式小餐館）</strong>為概念，招牌是<strong>自家製義大利麵</strong>，用日本與義大利的食材做傳統義大利菜🇮🇹 2026年6月3日重新開幕，主廚是來自義大利南部普利亞（Puglia）的 Marco Violano。
+            </p>
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              店內是淺木色的大圓桌配<strong>淺綠色的椅子</strong>，桌上點著蠟燭、插著粉紅色的花，燈光偏暗很有氣氛。早餐、午餐、下午茶到晚餐都有營業，一整天都能來。
+            </p>
+
+            <div className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-red-500 mb-1">✨ 實際吃的（實訪）</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                我們點的是<strong>晚餐5道菜套餐</strong>（桌上的菜單寫著 DINNER MENU 5 COURSE）。先上<strong>法國麵包和佛卡夏</strong>，配白酒🥂 前菜是放在玻璃盤上的一小盤，配紅心蘿蔔片；接著是一整顆<strong>布拉塔起司（burrata）</strong>，底下鋪著番茄和芝麻葉。魚料理是煎得金黃的<strong>白肉魚</strong>，泡在加了橄欖和馬鈴薯的湯汁裡；肉料理表面<strong>裹了一層酥脆的麵包粉</strong>，切開是粉紅色，配上紅酒醬汁。甜點有<strong>提拉米蘇</strong>（上面插著 EDITION 字樣的巧克力片）和<strong>莓果塔</strong>。
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🇮🇹 義大利料理", "🏨 飯店14樓", "🍝 自家製義大利麵", "🍷 晚餐套餐", "💕 紀念日推薦"].map((t) => (
+                <span key={t} className="text-xs bg-red-50 text-red-700 border border-red-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-amber-700 mb-2">🍽️ 官方公布的價格（含稅・服務費／每人）</p>
+              <ul className="text-xs text-stone-600 space-y-1">
+                <li>・<strong>晚餐套餐</strong> 4道菜 ¥8,500〜／5道菜 ¥10,500〜</li>
+                <li>・<strong>午餐套餐</strong> 3道菜 ¥5,500〜／4道菜 ¥6,500〜</li>
+                <li>・<strong>葡萄酒搭配</strong> 3杯 ¥8,000／含香檳4杯 ¥10,000</li>
+                <li>・單點例：培根蛋汁麵（Carbonara）¥2,800、檸檬酒巴巴蛋糕 ¥2,000</li>
+              </ul>
+              <p className="text-[11px] text-stone-500 leading-relaxed mt-2 pt-2 border-t border-amber-200">
+                ※ 套餐內容會隨季節更換。TableCheck 上也有秋季5道菜套餐（¥10,500）和加葡萄酒搭配的方案。
+              </p>
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都中央區銀座2-8-13 東京EDITION銀座 14F</p>
+              <p className="text-xs text-stone-600 ib ib-train">有樂町線「銀座一丁目」駅 約190m／「銀座」駅 約290m（徒步5分以內）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">早餐 7:00〜10:30／午餐 12:00〜15:00／下午茶 12:00〜17:00／晚餐 17:30〜22:00（L.O. 21:00）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">晚餐 ¥8,500〜／午餐 ¥5,500〜</p>
+              <p className="text-xs text-stone-600">📅 可在 TableCheck 線上訂位（晚餐建議先訂）</p>
+              <p className="text-xs text-stone-600">⏱️ 晚餐套餐建議預留約2小時</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">想用比較輕的預算體驗，可以選<strong>午餐套餐</strong>或<strong>下午茶</strong>。TableCheck 上9月1日〜11月16日有和義大利品牌 Valextra 合作的下午茶（¥7,500起）</p>
+            </div>
+
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://www.sophietokyo.com/jp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🔗 官方網站
+              </a>
+              <a
+                href="https://www.tablecheck.com/ja/editionhotels-ginza-sophie"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                📅 TableCheck 訂位
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Sophie+at+EDITION+Tokyo+Ginza"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🗺️ Google 地圖
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">銀座美食小建議</h2>
@@ -225,6 +338,7 @@ export default function GinzaApolloPage() {
             <li>✅ 晚餐熱門時段（19:00〜21:00）建議<strong>提前1〜2週預約</strong></li>
             <li>✅ <strong>午餐套餐</strong>CP值較高，¥3,000左右就能體驗</li>
             <li>✅ 服裝建議smart casual（餐廳氛圍較高級）</li>
+            <li>✅ <strong>Sophie</strong>想吃得輕鬆一點就選午餐或下午茶，晚餐套餐從¥8,500起🍝</li>
             <li>✅ 銀座站徒步2分，吃完可以順遊GINZA SIX、和光等百貨🛍️</li>
           </ul>
         </section>
@@ -233,7 +347,7 @@ export default function GinzaApolloPage() {
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
             在銀座難得能吃到正宗希臘料理，氛圍時尚又有質感✨<br />
-            想找一間特別的銀座聚餐餐廳，THE APOLLO絕對是首選！
+            多人分享選THE APOLLO，兩個人好好吃一套晚餐就選Sophie 🍷
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
             <div className="text-3xl shrink-0">🐥</div>

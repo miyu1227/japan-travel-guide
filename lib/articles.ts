@@ -164,15 +164,15 @@ export const ARTICLES: Article[] = [
   {
     slug: "ginza-apollo",
     category: "ramen",
-    name: "銀座美食推薦｜THE APOLLO・希臘料理人氣餐廳🍽️",
+    name: "THE APOLLO 銀座＆Sophie｜希臘・義大利料理2選🍽️",
     shortLabel: "銀座THE APOLLO",
-    desc: "銀座必吃話題餐廳！地中海風味分享盤＆招牌烤起司料理",
+    desc: "銀座Nouvo的希臘料理分享盤，和東京EDITION銀座14樓的義大利晚餐套餐（¥10,500起）",
     tag: "東京",
     emoji: "🍽️",
     image: "/ginza-apollo/apollo-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-10-16",
   },
   {
     slug: "futakotamagawa",
