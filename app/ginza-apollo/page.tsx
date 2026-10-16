@@ -80,6 +80,14 @@ const sophiePhotos = [
   { src: "/ginza-apollo/sophie-8.jpg", alt: "Sophie at EDITION 的店內，淺綠色椅子與桌上的 DINNER MENU 5 COURSE 菜單" },
 ];
 
+// 段の組み方（sophiePhotos の添字）：コース順に、横長どうし・縦長どうしを並べる
+const sophieRows = [
+  [2, 1], // パン・前菜
+  [0, 7], // ブッラータ・店内
+  [3, 4], // 魚・肉
+  [5, 6], // デザート2品
+];
+
 const relatedLinks = [
   { href: "/futakotamagawa", label: "🍽️ 二子玉川美食推薦3選｜中華・甜點・韓國料理", desc: "蒸籠中華・蘋果派・韓式屋台" },
   { href: "/ramen", label: "🍜 東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
@@ -236,10 +244,18 @@ export default function GinzaApolloPage() {
 
         {/* Sophie at EDITION */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="photo-strip">
-            {sophiePhotos.map((photo) => (
-              <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
-                <Image src={photo.src} alt={photo.alt} fill sizes="25vw" className="object-cover" />
+          {/* 8枚を1列にすると1枚が小さすぎるので、2枚ずつの段に分ける */}
+          <div className="flex flex-col gap-[2px]">
+            {sophieRows.map((row) => (
+              <div key={row.join()} className="photo-strip">
+                {row.map((i) => {
+                  const photo = sophiePhotos[i];
+                  return (
+                    <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                      <Image src={photo.src} alt={photo.alt} fill sizes="(min-width: 640px) 460px, 50vw" className="object-cover" />
+                    </div>
+                  );
+                })}
               </div>
             ))}
           </div>
