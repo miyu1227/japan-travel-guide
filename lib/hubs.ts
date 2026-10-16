@@ -66,9 +66,9 @@ export const HUBS: Hub[] = [
         slugs: ["shibuya-cafe", "daikanyama-cafe", "nakameguro-cafe", "gakugeidaigaku-cafe", "ikejiri-cafe"],
       },
       {
-        heading: "下北澤・代代木上原（小田急沿線）",
+        heading: "下北澤・代代木上原・代代木公園（小田急沿線）",
         note: "個性小店密集，散步＋二手衣店＋咖啡的組合。",
-        slugs: ["shimokitazawa-cafe", "bolt-uehara"],
+        slugs: ["shimokitazawa-cafe", "bolt-uehara", "yoyogi-park-cafe"],
       },
       {
         heading: "清澄白河・自由之丘（咖啡聖地與甜點街）",
