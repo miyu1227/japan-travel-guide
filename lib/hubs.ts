@@ -185,9 +185,9 @@ export const HUBS: Hub[] = [
     ],
     sections: [
       {
-        heading: "地標・展望台",
+        heading: "地標・展望台・夜景",
         note: "第一次來東京的定番，先卡進行程裡。",
-        slugs: ["skytree", "tokyo-tower", "tokyo-disney-around"],
+        slugs: ["skytree", "tokyo-tower", "tocho-projection-mapping", "tokyo-disney-around"],
       },
       {
         heading: "公園・動物園（親子・放鬆）",
