@@ -12,9 +12,9 @@ const PAGE_URL = "https://www.japantrippicks.com/nakameguro-cafe";
 const OG_IMAGE = "/nakameguro-cafe/starbucks-1.jpg";
 
 export const metadata: Metadata = {
-  title: "中目黑星巴克臻選烘焙工坊＆STREAMER｜中目黑咖啡廳推薦2選",
+  title: "中目黑星巴克臻選＆STREAMER＆OPEN｜咖啡廳3選✅實訪",
   description:
-    "隈研吾設計的星巴克臻選烘焙工坊，加上拉花世界冠軍澤田洋史的STREAMER。兩間走路6分鐘，目黑川旁咖啡廳一次逛完。附交通・營業時間・價位。",
+    "隈研吾設計的星巴克臻選烘焙工坊、拉花世界冠軍的STREAMER，加上中目黑站東口5分、像藝廊的OPEN NAKAMEGURO（有插座）。附交通・營業時間・價位。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "中目黑星巴克臻選烘焙工坊＆STREAMER｜中目黑咖啡廳推薦2選",
-    description: "隈研吾建築的星巴克臻選，加上拉花世界冠軍的STREAMER。目黑川旁兩間必去咖啡廳。",
+    title: "中目黑星巴克臻選＆STREAMER＆OPEN｜中目黑咖啡廳推薦3選",
+    description: "隈研吾建築的星巴克臻選、拉花世界冠軍的STREAMER，和像藝廊一樣的OPEN NAKAMEGURO。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "中目黑星巴克臻選＆STREAMER｜中目黑咖啡廳推薦2選",
-    description: "隈研吾建築的星巴克臻選＋拉花世界冠軍的STREAMER，走路6分鐘串一條☕",
+    title: "中目黑星巴克臻選＆STREAMER＆OPEN｜中目黑咖啡廳推薦3選",
+    description: "隈研吾建築的星巴克臻選＋拉花世界冠軍的STREAMER＋藝廊般的OPEN☕",
     images: [OG_IMAGE],
   },
 };
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "中目黑星巴克臻選烘焙工坊＆STREAMER COFFEE｜中目黑咖啡廳推薦2選【實際造訪】",
-  description: "中目黑必去咖啡廳2間完整介紹。隈研吾設計的星巴克臻選烘焙工坊，與拉花世界冠軍澤田洋史的STREAMER COFFEE COMPANY。",
+  headline: "中目黑星巴克臻選烘焙工坊＆STREAMER COFFEE＆OPEN NAKAMEGURO｜中目黑咖啡廳推薦3選【實際造訪】",
+  description: "中目黑咖啡廳3間完整介紹。隈研吾設計的星巴克臻選烘焙工坊、拉花世界冠軍澤田洋史的STREAMER COFFEE COMPANY，以及兼作展演空間的OPEN NAKAMEGURO。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-09-17T00:00:00+09:00",
+  dateModified: "2026-10-16T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -63,7 +63,7 @@ const breadcrumbJsonLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "首頁", item: "https://www.japantrippicks.com" },
-    { "@type": "ListItem", position: 2, name: "中目黑咖啡廳推薦2選", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "中目黑咖啡廳推薦3選", item: PAGE_URL },
   ],
 };
 
@@ -87,6 +87,12 @@ const streamerPhotos = [
   "/nakameguro-cafe/streamer-3.jpg",
 ];
 
+const openPhotos = [
+  { src: "/nakameguro-cafe/open-1.jpg", alt: "OPEN NAKAMEGURO 的半戶外露台，屋簷下擺著長椅與摺疊桌，窗上寫著 The Story Starts with Coffee" },
+  { src: "/nakameguro-cafe/open-2.jpg", alt: "OPEN NAKAMEGURO 的店內，裸露天花板、軌道燈與木頭桌椅，像藝廊一樣的空間" },
+  { src: "/nakameguro-cafe/open-3.jpg", alt: "OPEN NAKAMEGURO 的巧克力餅乾與冰咖啡，牆上就有插座" },
+];
+
 const relatedLinks = [
   { href: "/shimokitazawa-cafe", label: "☕ 下北澤美食・咖啡廳推薦4選｜甜點、派、純素烘焙", desc: "純素烘焙・起司蛋糕・自家焙煎・BONUS TRACK" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩" },
@@ -100,7 +106,8 @@ const faqItems = [
   { q: "一個人大概要花多少？", a: "星巴克臻選飲品¥600〜¥1,500、調酒¥1,200〜；STREAMER飲品約¥600〜¥900、甜點¥400〜¥600。限定周邊商品也很適合當伴手禮。" },
   { q: "星巴克臻選除了咖啡還有什麼可以吃？", a: "1樓的Princi烘焙坊是現場烤的義式麵包與甜點。實訪時點到夾滿卡士達（吉士）醬的可頌，還有生火腿＋莫札瑞拉起司的布里歐麵包，鹹的甜的都有。飲品除了臻選咖啡，也有表面烤成焦糖脆殼的季節限定款，另外還能一次點幾種豆子喝比較。菜單會隨季節更換，以現場為準。" },
   { q: "兩間可以同一天一起去嗎？", a: "可以。兩間都在目黑區青葉台、走路約6分鐘就到，很適合排成一條目黑川散步路線。星巴克臻選慢慢逛要1〜2小時，STREAMER則是坐下來喝一杯的節奏。" },
-  { q: "想要安靜工作的話選哪間？", a: "STREAMER COFFEE 中目黑店比較適合。店內有免費Wi-Fi、窗邊吧台有插座，天花板挑高、玻璃採光好，坐著待一陣子也不會悶。" },
+  { q: "想要安靜工作的話選哪間？", a: "STREAMER COFFEE 中目黑店或 OPEN NAKAMEGURO。STREAMER 店內有免費Wi-Fi、窗邊吧台有插座；OPEN 空間寬敞、座位多，我們坐的靠牆長桌前面就有插座。" },
+  { q: "OPEN NAKAMEGURO 是什麼樣的店？", a: "中目黑站東口徒步約5分的咖啡站，地址是目黑區上目黑2-9-17 Nakameguro Crossover 1F。概念是「敞開的地方」，平常賣咖啡，也會當展覽會場、快閃活動和攝影棚使用。營業11:00〜18:00，美式咖啡與冷萃咖啡¥600、拿鐵¥670、抹茶拿鐵¥750。" },
 ];
 
 export default function NakameguroCafePage() {
@@ -129,9 +136,9 @@ export default function NakameguroCafePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          中目黑星巴克臻選烘焙工坊＆<br />STREAMER｜中目黑咖啡廳推薦2選☕
+          中目黑星巴克臻選烘焙工坊＆<br />STREAMER＆OPEN｜中目黑咖啡廳推薦3選☕
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-17</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-10-16</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -141,6 +148,9 @@ export default function NakameguroCafePage() {
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
             這次推薦（推介）兩間走路約6分鐘就能串起來的咖啡廳：中目黑的超級地標<strong>「STARBUCKS RESERVE ROASTERY TOKYO」</strong>，以及由<strong>拉花世界冠軍</strong>澤田洋史創立的<strong>「STREAMER COFFEE COMPANY」</strong>。一間看建築、一間喝咖啡，一個下午剛剛好✨
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed mt-2">
+            另外加上中目黑站東口走5分鐘、像藝廊一樣的咖啡站<strong>「OPEN NAKAMEGURO」</strong>，有插座、座位多，想一個人坐下來休息或滑手機時很好用🔌
           </p>
         </section>
 
@@ -164,6 +174,13 @@ export default function NakameguroCafePage() {
                 <p className="text-xs text-stone-500 leading-relaxed">玻璃屋般的明亮空間、有Wi-Fi與插座，適合坐下來喘口氣</p>
               </div>
             </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">OPEN NAKAMEGURO → 藝廊般的咖啡站</p>
+                <p className="text-xs text-stone-500 leading-relaxed">中目黑站東口5分、座位多有插座，11:00〜18:00</p>
+              </div>
+            </div>
           </div>
           <p className="text-xs text-stone-500 leading-relaxed mt-3 pt-3 border-t border-stone-100">
             💡 兩間都在<strong>目黑區青葉台</strong>，沿著目黑川走約6分鐘就能到，很推薦排在同一天。
@@ -171,7 +188,7 @@ export default function NakameguroCafePage() {
         </section>
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">中目黑咖啡廳推薦・2選（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">中目黑咖啡廳推薦・3選（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           <div className="photo-strip">
@@ -361,6 +378,103 @@ export default function NakameguroCafePage() {
           </div>
         </section>
 
+        {/* OPEN NAKAMEGURO */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
+          <div className="photo-strip">
+            {openPhotos.map((photo) => (
+              <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                <Image src={photo.src} alt={photo.alt} fill sizes="33vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-pink-500 text-white flex items-center justify-center text-sm font-black shrink-0">3</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">OPEN NAKAMEGURO</h3>
+                <span className="text-xs text-stone-400">オープン中目黒・咖啡站＆展演空間</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              店名就叫「OPEN」——概念是<strong>對中目黑這條街、也對想發表作品的人「敞開」的地方</strong>。平常是咖啡站，也會當作展覽會場、快閃活動和攝影棚使用。店內是挑高的<strong>裸露天花板</strong>、灰白色的牆面和一排軌道燈，還裝了投影機，比起咖啡廳更像一間<strong>藝廊</strong>🎨
+            </p>
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              座位很多，木頭桌配上不同款式的椅子，空間寬敞不擁擠。玻璃窗外是有屋頂的<strong>半戶外露台（騎樓）</strong>，擺著長椅和摺疊桌，看得到外面的行道樹。
+            </p>
+
+            <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-pink-600 mb-1">✨ 實際點的（實訪）</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                點了<strong>冰咖啡</strong>和一片<strong>巧克力餅乾</strong>🍪 餅乾很大一片、裡面的巧克力塊切得很粗；冰咖啡放在印著紅色 OPEN 字樣的杯墊上。我們坐的是靠牆的長桌，<strong>座位正前方的牆上就有插座</strong>，邊喝邊幫手機充電剛好。
+              </p>
+            </div>
+
+            <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-amber-700 mb-2">☕ 官方菜單（含稅）</p>
+              <ul className="text-xs text-stone-600 space-y-1">
+                <li>・<strong>冷萃咖啡（Cold Brew）</strong>¥600／<strong>美式咖啡</strong>（冰・熱）¥600</li>
+                <li>・<strong>拿鐵</strong>・卡布奇諾 ¥670／焦糖拿鐵・摩卡 ¥700</li>
+                <li>・燕麥奶拿鐵・豆漿拿鐵 ¥720</li>
+                <li>・<strong>抹茶拿鐵</strong> ¥750／印度奶茶拿鐵（Chai Latte）¥670</li>
+                <li>・自家製檸檬汁・自家製薑汁汽水 ¥670</li>
+              </ul>
+              <p className="text-[11px] text-stone-500 leading-relaxed mt-2 pt-2 border-t border-amber-200">
+                ※ 餅乾和開放式三明治等餐點，價格請看現場。季節限定飲品會更換。
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🎨 藝廊般的空間", "🔌 有插座", "🌿 半戶外露台", "🍪 大片巧克力餅乾", "💻 適合一個人坐"].map((t) => (
+                <span key={t} className="text-xs bg-pink-50 text-pink-700 border border-pink-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都目黑區上目黑2-9-17 Nakameguro Crossover 1F</p>
+              <p className="text-xs text-stone-600 ib ib-train">「中目黑」駅 東口 徒步約5分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">11:00〜18:00（官網）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">飲品 ¥600〜¥750</p>
+              <p className="text-xs text-stone-600">🔌 有插座（實際看到）</p>
+              <p className="text-xs text-stone-600">⏱️ 建議預留約30分〜1小時</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600"><strong>11點才開門、18點就關</strong>，比另外兩間短很多。有時會因為展覽或活動調整營業，出發前看一下官方IG比較保險</p>
+            </div>
+
+            <div className="flex flex-wrap gap-x-4 gap-y-2">
+              <a
+                href="https://open-nakameguro.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🔗 官方網站
+              </a>
+              <a
+                href="https://www.instagram.com/open_nakameguro/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                📷 官方 Instagram
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=OPEN+NAKAMEGURO"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🗺️ Google 地圖
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">中目黑咖啡散步小建議</h2>
@@ -370,6 +484,7 @@ export default function NakameguroCafePage() {
             <li>✅ 星巴克臻選<strong>3月下旬〜4月上旬櫻花季</strong>會採預約制，強烈建議提前預約</li>
             <li>✅ 限定周邊商品適合當伴手禮，送給星巴克迷的朋友很適合🎁</li>
             <li>✅ STREAMER的甜點份量偏大，兩個人分著吃比較剛好</li>
+            <li>✅ 想找有插座、能坐久一點的地方，可以去<strong>OPEN NAKAMEGURO</strong>（11:00〜18:00）🔌</li>
             <li>✅ 附近的中目黑・代官山區域也很好逛，可安排半日行程</li>
           </ul>
         </section>
@@ -378,7 +493,7 @@ export default function NakameguroCafePage() {
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
             星巴克臻選光是建築本身就值得專程造訪，裡面的咖啡體驗更是超乎想像✨<br />
-            再走6分鐘到STREAMER喝一杯冠軍拿鐵，中目黑的咖啡散步就完整了☕
+            再走6分鐘到STREAMER喝一杯冠軍拿鐵，累了就到OPEN找個位子坐下來☕
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
             <div className="text-3xl shrink-0">🐥</div>

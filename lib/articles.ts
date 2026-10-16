@@ -424,15 +424,15 @@ export const ARTICLES: Article[] = [
   {
     slug: "nakameguro-cafe",
     category: "cafe",
-    name: "中目黑星巴克臻選烘焙工坊＆STREAMER｜中目黑咖啡廳推薦2選☕",
+    name: "中目黑星巴克臻選＆STREAMER＆OPEN｜中目黑咖啡廳推薦3選☕",
     shortLabel: "中目黑咖啡",
-    desc: "隈研吾設計的星巴克臻選，加上拉花世界冠軍的STREAMER，走路6分鐘串一條",
+    desc: "隈研吾設計的星巴克臻選、拉花世界冠軍的STREAMER，和有插座的藝廊系咖啡站OPEN",
     tag: "東京",
     emoji: "☕",
     image: "/nakameguro-cafe/starbucks-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-09-03",
+    updated: "2026-10-16",
   },
   {
     slug: "shimokitazawa-cafe",
