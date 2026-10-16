@@ -320,15 +320,15 @@ export const ARTICLES: Article[] = [
   {
     slug: "ginza-cafe",
     category: "cafe",
-    name: "Bacha Coffee 銀座｜日本首間旗艦店・彩色可頌與整壺咖啡☕",
+    name: "Bacha Coffee 銀座＆喫茶室Renoir｜銀座咖啡廳2選☕",
     shortLabel: "銀座Bacha Coffee",
-    desc: "銀座站徒步約1分・三層樓的摩洛哥咖啡宮殿。可頌2個¥1,250，不接受訂位",
+    desc: "三層樓的摩洛哥咖啡宮殿Bacha（可頌2個¥1,250、不能訂位），和有水晶燈・72席的昭和喫茶Renoir",
     tag: "東京",
     emoji: "☕",
     image: "/ginza-cafe/bacha-1.jpg",
     areas: ["東京"],
     published: "2026-10-02",
-    updated: "2026-10-02",
+    updated: "2026-10-16",
   },
   {
     slug: "gakugeidaigaku-cafe",

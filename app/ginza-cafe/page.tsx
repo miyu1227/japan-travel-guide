@@ -12,9 +12,9 @@ const PAGE_URL = "https://www.japantrippicks.com/ginza-cafe";
 const OG_IMAGE = "/ginza-cafe/bacha-1.jpg";
 
 export const metadata: Metadata = {
-  title: "Bacha Coffee 銀座｜日本首間旗艦店要排隊嗎✅實訪",
+  title: "Bacha Coffee 銀座要排隊嗎＆喫茶室Renoir✅實訪",
   description:
-    "銀座站A1出口徒步約1分的Bacha Coffee（夿萐咖啡）日本首間旗艦店。可頌2個¥1,250、咖啡整壺¥1,800起，不接受訂位。附營業時間・排隊重點。",
+    "銀座站A1出口徒步約1分的Bacha Coffee（夿萐咖啡）日本首間旗艦店。可頌2個¥1,250、不接受訂位。排隊時的備案：8點開門、72席有Wi-Fi的喫茶室Renoir。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -54,7 +54,7 @@ const articleJsonLd = {
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-10-02T00:00:00+09:00",
-  dateModified: "2026-10-02T00:00:00+09:00",
+  dateModified: "2026-10-16T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -96,6 +96,11 @@ const relatedLinks = [
   { href: "/daikanyama-cafe", label: "☕ 代官山咖啡廳推薦3選｜義式烘焙・高級甜點・法式可頌", desc: "PRINCI・DOLCE TACUBO・Doré" },
 ];
 
+const renoirPhotos = [
+  { src: "/ginza-cafe/renoir-1.jpg", alt: "喫茶室ルノアール 銀座マロニエ通り店的冰淇淋漂浮咖啡，高腳玻璃杯上放著香草冰淇淋" },
+  { src: "/ginza-cafe/renoir-2.jpg", alt: "喫茶室ルノアール 銀座マロニエ通り店的店內，圓形天花板垂著水晶燈，深色木頭圓柱" },
+];
+
 const faqItems = [
   {
     q: "Bacha Coffee 是什麼？中文叫什麼？",
@@ -120,6 +125,14 @@ const faqItems = [
   {
     q: "可以刷卡嗎？不內用也可以只買咖啡豆嗎？",
     a: "可以刷卡，電子錢包與QR code支付也能用。1樓的咖啡精品店不用內用就能逛，咖啡罐我們去的時候標價是¥6,900與¥9,250，另有掛耳包禮盒，也有低咖啡因（Decaffeinated）的豆子。",
+  },
+  {
+    q: "喫茶室ルノアール（Renoir）是什麼樣的店？",
+    a: "東京的老牌喫茶店連鎖，座位寬敞、可以坐久。銀座マロニエ通り店在銀座2-8-12的大樓2樓，2017年開幕，主題是「昭和モダン」，天花板有水晶燈。每天8:00〜22:00，共72席（禁菸53席），有免費Wi-Fi與插座，可刷卡、電子錢包、QR碼支付，不接受訂位。",
+  },
+  {
+    q: "Bacha Coffee 排太久的話，附近有可以馬上坐的咖啡廳嗎？",
+    a: "可以去喫茶室ルノアール 銀座マロニエ通り店。從銀座站A13出口走約3分，座位有72席，早上8點開到晚上10點，有Wi-Fi和插座，適合先坐下來休息、充電。",
   },
 ];
 
@@ -151,7 +164,7 @@ export default function GinzaCafePage() {
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
           Bacha Coffee 銀座｜日本首間旗艦店<br />彩色可頌・提拉米蘇與整壺咖啡☕
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-10-02</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-10-16</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -161,6 +174,9 @@ export default function GinzaCafePage() {
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
             <strong>銀座店是日本第一間店</strong>，2025年12月11日開幕，整棟三層樓都是 Bacha Coffee。台北、香港也有分店，但這間是2・3樓整層都是 <strong>Coffee Room</strong> 的旗艦店，可以坐下來一壺一壺慢慢喝——從銀座站A1出口走過來約1分鐘，這次推薦（推介）的就是它的內用體驗，以及1樓可以直接買回家當伴手禮（手信）的咖啡罐。
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed mt-2">
+            另外加上一間排隊時的好備案：有水晶燈的昭和復古喫茶店<strong>「喫茶室ルノアール 銀座マロニエ通り店」</strong>，72席、有Wi-Fi和插座，早上8點就開☕
           </p>
         </section>
 
@@ -333,6 +349,91 @@ export default function GinzaCafePage() {
           </div>
         </section>
 
+        {/* 喫茶室ルノアール */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
+          <div className="photo-strip">
+            {renoirPhotos.map((photo) => (
+              <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                <Image src={photo.src} alt={photo.alt} fill sizes="50vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-pink-500 text-white flex items-center justify-center text-sm font-black shrink-0">2</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">喫茶室ルノアール 銀座マロニエ通り店</h3>
+                <span className="text-xs text-stone-400">喫茶室 Renoir・銀座七葉樹通店</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              <strong>喫茶室ルノアール（Renoir）</strong>是東京人從小熟悉的老牌喫茶店連鎖，座位寬、可以坐很久，常被拿來談事情或休息☕ 銀座マロニエ通り店在大樓<strong>2樓</strong>，2017年8月開幕，主題是<strong>「昭和モダン」</strong>：圓形的挑高天花板垂著<strong>水晶燈</strong>，深色木頭圓柱配上大片玻璃窗，比一般分店更有復古洋館的感覺。
+            </p>
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              共有<strong>72席</strong>（禁菸53席＋加熱菸專用19席），<strong>有Wi-Fi、有插座</strong>，早上8點開到晚上10點。Bacha Coffee 要排隊的時候，這裡是銀座少數可以馬上坐下來、慢慢休息的地方。
+            </p>
+
+            <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-pink-600 mb-1">✨ 實際點的（實訪）</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                點了兩杯<strong>冰淇淋漂浮</strong>：一杯是黑咖啡上面放一大球香草冰淇淋，另一杯是奶色的、杯底有深色的咖啡凍般的配料🍨 裝在高腳玻璃杯裡，旁邊附了一整盒奶精和糖漿，可以自己調甜度。桌上有印著「Renoir」的濕紙巾和店家的會員卡介紹。
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🏛️ 昭和モダン空間", "💡 水晶燈", "📶 Wi-Fi・插座", "🕗 8:00〜22:00", "💳 可刷卡・QR支付"].map((t) => (
+                <span key={t} className="text-xs bg-pink-50 text-pink-700 border border-pink-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都中央區銀座2-8-12 クローバー銀座ビル2F</p>
+              <p className="text-xs text-stone-600 ib ib-train">「東銀座」駅A8出口 徒步1分／「銀座一丁目」駅9號出口 徒步2分／「銀座」駅A13出口 徒步3分</p>
+              <p className="text-xs text-stone-600 ib ib-clock">每天 8:00〜22:00</p>
+              <p className="text-xs text-stone-600 ib ib-yen">價格請看店內菜單</p>
+              <p className="text-xs text-stone-600">💳 信用卡・電子錢包・QR碼支付</p>
+              <p className="text-xs text-stone-600">📶 免費Wi-Fi（Renoir Miyama Wi-Fi 等）・有插座</p>
+              <p className="text-xs text-stone-600">🪑 72席（禁菸53席／加熱菸專用19席）・不接受訂位</p>
+              <p className="text-xs text-stone-600">📞 03-6263-0784</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">店在<strong>2樓</strong>，從マロニエ通り（七葉樹通）上找招牌上樓。地址就在東京EDITION銀座旁邊的同一個街區，到<a href="/ginza-apollo" className="underline">Sophie at EDITION</a>吃飯前後也很順路</p>
+            </div>
+
+            <div className="flex flex-wrap gap-x-4 gap-y-2">
+              <a
+                href="https://www.ginza-renoir.co.jp/shopsearch/shops/tokyo/chuo-ku/ginza-marronnier-ave.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🔗 官方網站（店舗頁）
+              </a>
+              <a
+                href="https://www.instagram.com/ginza_renoir_official/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                📷 官方 Instagram
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=喫茶室ルノアール+銀座マロニエ通り店"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🗺️ Google 地圖
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">Bacha Coffee 銀座・去之前先知道</h2>
@@ -342,6 +443,7 @@ export default function GinzaCafePage() {
             <li>✅ 可頌是<strong>一盤2個</strong>¥1,250，想多吃幾種口味就兩個人分著點🥐</li>
             <li>✅ 內用<strong>另加10%服務費</strong>，結帳金額會比菜單價高一點</li>
             <li>✅ 咖啡罐很有份量，買伴手禮（手信）的話留到離開前再去1樓結帳，逛銀座比較輕鬆🎁</li>
+            <li>✅ Bacha 排太久的話，改去<strong>喫茶室ルノアール</strong>先坐下來，72席、有Wi-Fi和插座🔌</li>
           </ul>
         </section>
 
