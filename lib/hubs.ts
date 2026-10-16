@@ -195,9 +195,9 @@ export const HUBS: Hub[] = [
         slugs: ["ueno-zoo", "showa-kinen-park", "otaguro-park", "spot"],
       },
       {
-        heading: "季節限定・文化體驗",
+        heading: "神社・季節限定・文化體驗",
         note: "花期與展期有時間限制，出發前先確認。",
-        slugs: ["ajisai", "koyo", "museum", "artbar-tokyo"],
+        slugs: ["meiji-jingu", "ajisai", "koyo", "museum", "artbar-tokyo"],
       },
     ],
     relatedHubs: ["tokyo-cafe", "tokyo-day-trip"],
