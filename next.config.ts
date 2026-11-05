@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Vercel無料プランの画像変換（月5,000回）を使い切ると新しい画像が402で出なくなるため、
+  // 変換をやめて public の元画像をそのまま配信する（2026-11-06）。
+  images: { unoptimized: true },
   async headers() {
     return [
       {
