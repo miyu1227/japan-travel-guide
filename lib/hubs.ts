@@ -395,7 +395,7 @@ export const HUBS: Hub[] = [
       {
         heading: "京都・和歌山・滋賀（近郊絕景）",
         note: "從大阪或京都市區出發的一日〜兩日行程。",
-        slugs: ["ine", "shirahama", "hikone"],
+        slugs: ["kyoto-cafe", "ine", "shirahama", "hikone"],
       },
     ],
     relatedHubs: ["kobe", "osaka"],

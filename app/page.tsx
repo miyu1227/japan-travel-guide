@@ -128,7 +128,7 @@ function ArticleCard({ item, visible }: { item: PickItem; visible: boolean }) {
 }
 
 /** 地域タブの並び。「其他」は必ず最後。 */
-const AREA_ORDER = ["東京", "大阪", "兵庫", "北海道", "四國", "其他"];
+const AREA_ORDER = ["東京", "大阪", "京都", "兵庫", "北海道", "四國", "其他"];
 const AREAS = AREA_ORDER.filter((a) => ALL_ARTICLES.some((x) => x.areas.includes(a)));
 
 /** 絞り込みボタン1個。押せることが一目でわかるよう、面のあるボタンにする。 */

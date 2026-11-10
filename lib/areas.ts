@@ -9,6 +9,7 @@ export type AreaDef = { slug: string; label: string };
 export const AREA_DEFS: AreaDef[] = [
   { slug: "tokyo", label: "東京" },
   { slug: "osaka", label: "大阪" },
+  { slug: "kyoto", label: "京都" },
   { slug: "hyogo", label: "兵庫" },
   { slug: "hokkaido", label: "北海道" },
   { slug: "shikoku", label: "四國" },
