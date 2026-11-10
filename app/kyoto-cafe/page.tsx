@@ -174,17 +174,22 @@ export default function KyotoCafePage() {
         <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">京都咖啡廳推薦（咖啡店推介）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-6 card-split">
-          <div className="photo-strip">
-            {photos.map((photo, i) => (
-              <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  fill
-                  sizes="50vw"
-                  className="object-cover"
-                  {...(i === 0 ? { priority: true } : {})}
-                />
+          {/* 5枚を1列に並べると小さくなるので、3枚＋2枚の2段に分ける */}
+          <div className="flex flex-col gap-[2px]">
+            {[photos.slice(0, 3), photos.slice(3)].map((row, r) => (
+              <div key={r} className="photo-strip">
+                {row.map((photo, i) => (
+                  <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      fill
+                      sizes={row.length === 2 ? "50vw" : "33vw"}
+                      className="object-cover"
+                      {...(r === 0 && i === 0 ? { priority: true } : {})}
+                    />
+                  </div>
+                ))}
               </div>
             ))}
           </div>
