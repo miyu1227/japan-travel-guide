@@ -32,6 +32,19 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "shimokitazawa-gohan",
+    category: "ramen",
+    name: "下北澤美食2間｜CACCIA CACCIA・Vegetable base🥗",
+    shortLabel: "下北澤美食",
+    desc: "BONUS TRACK新開的佛卡夏＆葡萄酒店，和站前徒步2分的無麩質沙拉・巴西莓果碗¥1,500",
+    tag: "東京",
+    emoji: "🥗",
+    image: "/shimokitazawa-gohan/vegebase-1.jpg",
+    areas: ["東京"],
+    published: "2026-11-10",
+    updated: "2026-11-10",
+  },
+  {
     slug: "atsugi-ebina",
     category: "ramen",
     name: "本厚木・海老名美食3間｜ATSUGI COFFEE・楊國福麻辣燙🍮",

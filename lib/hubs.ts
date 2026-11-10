@@ -129,7 +129,7 @@ export const HUBS: Hub[] = [
       {
         heading: "一個人的一餐・輕食",
         note: "不用訂位、不用排很久，車站附近就能解決的一餐。",
-        slugs: ["shibuya-gohan"],
+        slugs: ["shibuya-gohan", "shimokitazawa-gohan"],
       },
       {
         heading: "甜點・伴手禮",
