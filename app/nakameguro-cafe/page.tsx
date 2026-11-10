@@ -498,10 +498,15 @@ export default function NakameguroCafePage() {
 
         {/* GOOD SOUND COFFEE */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="photo-strip">
-            {goodsoundPhotos.map((photo) => (
-              <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
-                <Image src={photo.src} alt={photo.alt} fill sizes="50vw" className="object-cover" />
+          {/* 5枚を1列に並べると小さくなるので、3枚＋2枚の2段に分ける */}
+          <div className="flex flex-col gap-[2px]">
+            {[goodsoundPhotos.slice(0, 3), goodsoundPhotos.slice(3)].map((row, r) => (
+              <div key={r} className="photo-strip">
+                {row.map((photo) => (
+                  <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                    <Image src={photo.src} alt={photo.alt} fill sizes={row.length === 2 ? "50vw" : "33vw"} className="object-cover" />
+                  </div>
+                ))}
               </div>
             ))}
           </div>
