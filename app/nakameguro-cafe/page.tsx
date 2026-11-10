@@ -12,9 +12,9 @@ const PAGE_URL = "https://www.japantrippicks.com/nakameguro-cafe";
 const OG_IMAGE = "/nakameguro-cafe/starbucks-1.jpg";
 
 export const metadata: Metadata = {
-  title: "中目黑星巴克臻選＆STREAMER＆OPEN｜咖啡廳3選✅實訪",
+  title: "中目黑星巴克臻選・STREAMER・GOOD SOUND｜咖啡廳4選✅實訪",
   description:
-    "隈研吾設計的星巴克臻選烘焙工坊、拉花世界冠軍的STREAMER，加上中目黑站東口5分、像藝廊的OPEN NAKAMEGURO（有插座）。附交通・營業時間・價位。",
+    "隈研吾設計的星巴克臻選、拉花世界冠軍的STREAMER、站3分・30個以上喇叭的GOOD SOUND COFFEE（8〜23點），和有插座的OPEN。附交通・營業時間・價位。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "中目黑星巴克臻選＆STREAMER＆OPEN｜中目黑咖啡廳推薦3選",
-    description: "隈研吾建築的星巴克臻選、拉花世界冠軍的STREAMER，和像藝廊一樣的OPEN NAKAMEGURO。",
+    title: "中目黑星巴克臻選・STREAMER・GOOD SOUND・OPEN｜中目黑咖啡廳推薦4選",
+    description: "隈研吾建築的星巴克臻選、拉花世界冠軍的STREAMER、被音樂包圍的GOOD SOUND COFFEE，和像藝廊一樣的OPEN NAKAMEGURO。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "中目黑星巴克臻選＆STREAMER＆OPEN｜中目黑咖啡廳推薦3選",
-    description: "隈研吾建築的星巴克臻選＋拉花世界冠軍的STREAMER＋藝廊般的OPEN☕",
+    title: "中目黑星巴克臻選・STREAMER・GOOD SOUND・OPEN｜中目黑咖啡廳推薦4選",
+    description: "隈研吾建築的星巴克臻選＋拉花世界冠軍的STREAMER＋音樂咖啡廳GOOD SOUND＋藝廊般的OPEN☕",
     images: [OG_IMAGE],
   },
 };
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "中目黑星巴克臻選烘焙工坊＆STREAMER COFFEE＆OPEN NAKAMEGURO｜中目黑咖啡廳推薦3選【實際造訪】",
-  description: "中目黑咖啡廳3間完整介紹。隈研吾設計的星巴克臻選烘焙工坊、拉花世界冠軍澤田洋史的STREAMER COFFEE COMPANY，以及兼作展演空間的OPEN NAKAMEGURO。",
+  headline: "中目黑星巴克臻選烘焙工坊＆STREAMER COFFEE＆GOOD SOUND COFFEE＆OPEN NAKAMEGURO｜中目黑咖啡廳推薦4選【實際造訪】",
+  description: "中目黑咖啡廳4間完整介紹。隈研吾設計的星巴克臻選烘焙工坊、拉花世界冠軍澤田洋史的STREAMER COFFEE COMPANY、店內有30個以上喇叭的GOOD SOUND COFFEE，以及兼作展演空間的OPEN NAKAMEGURO。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-10-16T00:00:00+09:00",
+  dateModified: "2026-11-10T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -63,7 +63,7 @@ const breadcrumbJsonLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "首頁", item: "https://www.japantrippicks.com" },
-    { "@type": "ListItem", position: 2, name: "中目黑咖啡廳推薦3選", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "中目黑咖啡廳推薦4選", item: PAGE_URL },
   ],
 };
 
@@ -93,6 +93,14 @@ const openPhotos = [
   { src: "/nakameguro-cafe/open-3.jpg", alt: "OPEN NAKAMEGURO 的巧克力餅乾與冰咖啡，牆上就有插座" },
 ];
 
+const goodsoundPhotos = [
+  { src: "/nakameguro-cafe/goodsound-5.jpg", alt: "GOOD SOUND COFFEE 中目黑店的粉紅色迷你甜甜圈、瑪德蓮與冰飲" },
+  { src: "/nakameguro-cafe/goodsound-2.jpg", alt: "GOOD SOUND COFFEE 中目黑店的甜甜圈展示櫃，五顏六色的甜甜圈掛成一整面" },
+  { src: "/nakameguro-cafe/goodsound-1.jpg", alt: "GOOD SOUND COFFEE 中目黑店的入口，黃色招牌與木門上的音符咖啡杯標誌" },
+  { src: "/nakameguro-cafe/goodsound-3.jpg", alt: "GOOD SOUND COFFEE 中目黑店的黃色義式咖啡機、天花板的方塊喇叭與茶飲菜單" },
+  { src: "/nakameguro-cafe/goodsound-4.jpg", alt: "GOOD SOUND COFFEE 中目黑店的窗邊座位與大型觀葉植物" },
+];
+
 const relatedLinks = [
   { href: "/shimokitazawa-cafe", label: "☕ 下北澤美食・咖啡廳推薦4選｜甜點、派、純素烘焙", desc: "純素烘焙・起司蛋糕・自家焙煎・BONUS TRACK" },
   { href: "/cafe", label: "☕ 自由之丘咖啡推薦｜東京必去咖啡散步地區", desc: "貝果・義式冰淇淋・起司披薩" },
@@ -100,6 +108,8 @@ const relatedLinks = [
 ];
 
 const faqItems = [
+  { q: "GOOD SOUND COFFEE 是什麼樣的店？", a: "中目黑站徒步約3分、過了目黑川的音樂咖啡廳。店內裝了30個以上的喇叭（天花板吊著訂製的方塊喇叭，連吧台桌面都是喇叭），播放專門製作的音樂，坐在不同位子聽到的聲音不一樣。有彩色甜甜圈、瑪德蓮、馬芬和沙拉。" },
+  { q: "GOOD SOUND COFFEE 幾點開？價錢多少？", a: "官方IG寫8:00〜23:00，不定休。店內菜單板上茶飲S ¥480〜L ¥780（國產抹茶無糖拿鐵 M ¥680），沙拉全部¥1,000。" },
   { q: "星巴克臻選需要預約嗎？", a: "平常可以直接進去，但3月下旬〜4月上旬的櫻花季會採預約制入場，那段期間出發前一定要先查官網。" },
   { q: "從中目黑站要走多久？", a: "都是從東急東橫線・東京メトロ日比谷線「中目黑」駅沿著目黑川走：STREAMER約7分、星巴克臻選約13分。沿路都是特色小店，走起來不會無聊。" },
   { q: "幾點去比較不擠？", a: "星巴克臻選是7:00〜22:00（櫻花季8:00〜21:30）；STREAMER約8:00〜19:00，但官網不公告固定時間，建議看店家IG。兩間都是平日早上或傍晚最鬆，週末的午餐時段人最多。" },
@@ -136,9 +146,9 @@ export default function NakameguroCafePage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          中目黑星巴克臻選烘焙工坊＆<br />STREAMER＆OPEN｜中目黑咖啡廳推薦3選☕
+          中目黑星巴克臻選烘焙工坊＆STREAMER＆<br />GOOD SOUND＆OPEN｜中目黑咖啡廳推薦4選☕
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-10-16</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-11-10</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -151,6 +161,9 @@ export default function NakameguroCafePage() {
           </p>
           <p className="text-sm text-stone-600 leading-relaxed mt-2">
             另外加上中目黑站東口走5分鐘、像藝廊一樣的咖啡站<strong>「OPEN NAKAMEGURO」</strong>，有插座、座位多，想一個人坐下來休息或滑手機時很好用🔌
+          </p>
+          <p className="text-sm text-stone-600 leading-relaxed mt-2">
+            還有中目黑站走3分鐘、<strong>店裡裝了30個以上喇叭</strong>的音樂咖啡廳<strong>「GOOD SOUND COFFEE」</strong>，早上8點開到晚上11點，晚上想找地方坐也很方便🎵
           </p>
         </section>
 
@@ -181,6 +194,13 @@ export default function NakameguroCafePage() {
                 <p className="text-xs text-stone-500 leading-relaxed">中目黑站東口5分、座位多有插座，11:00〜18:00</p>
               </div>
             </div>
+            <div className="flex gap-3">
+              <span className="text-pink-400 font-black text-sm shrink-0">▸</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700">GOOD SOUND COFFEE → 被音樂包圍的甜甜圈咖啡廳</p>
+                <p className="text-xs text-stone-500 leading-relaxed">中目黑站3分、8:00〜23:00營業，早餐到宵夜都能來</p>
+              </div>
+            </div>
           </div>
           <p className="text-xs text-stone-500 leading-relaxed mt-3 pt-3 border-t border-stone-100">
             💡 兩間都在<strong>目黑區青葉台</strong>，沿著目黑川走約6分鐘就能到，很推薦排在同一天。
@@ -188,7 +208,7 @@ export default function NakameguroCafePage() {
         </section>
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">中目黑咖啡廳推薦・3選（持續更新中）</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">中目黑咖啡廳推薦・4選（持續更新中）</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           <div className="photo-strip">
@@ -475,6 +495,98 @@ export default function NakameguroCafePage() {
           </div>
         </section>
 
+
+        {/* GOOD SOUND COFFEE */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
+          <div className="photo-strip">
+            {goodsoundPhotos.map((photo) => (
+              <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                <Image src={photo.src} alt={photo.alt} fill sizes="50vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-pink-500 text-white flex items-center justify-center text-sm font-black shrink-0">4</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">GOOD SOUND COFFEE 中目黑店</h3>
+                <span className="text-xs text-stone-400">グッドサウンドコーヒー 中目黒店・音樂咖啡廳</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              店名就是「好聲音的咖啡」🎵 黃色招牌和木門上，是<strong>音符和咖啡杯合在一起</strong>的標誌。店內的音響是和日本唱片公司 avex 的音響團隊一起做的：天花板吊著十幾個<strong>訂製的方塊喇叭</strong>，牆裡和窗邊也有，<strong>全店加起來30個以上</strong>，連吧台桌面本身都是會震動的喇叭。
+            </p>
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              播的音樂是專門為這間店做的——鋼琴、鼓、鳥叫聲、流水聲分別從不同的喇叭出來，<strong>坐在不同位子聽到的聲音都不一樣</strong>。店內挑高到2樓，木頭牆面配上大株的觀葉植物，窗邊座位看得到中目黑的街道。
+            </p>
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              點餐櫃檯前有一整面<strong>掛滿甜甜圈的玻璃櫃</strong>，紫色、黃色、粉紅色撒著彩色糖粒，光看就很開心🍩 另外還有瑪德蓮、馬芬，和沙拉（全部¥1,000）。
+            </p>
+
+            <div className="bg-pink-50 border border-pink-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-pink-600 mb-1">✨ 實際點的（實訪）</p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                點了<strong>粉紅色糖霜的迷你甜甜圈</strong>和一顆<strong>瑪德蓮</strong>，配一杯綿密的冰飲，插著店裡代表色的<strong>黃色吸管</strong>。甜甜圈小小一個、撒滿白色糖粒，配飲料剛好不會太膩。坐在窗邊的位子，頭上就有喇叭在放音樂。
+              </p>
+            </div>
+
+            <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-amber-700 mb-2">🍵 茶飲菜單（店內菜單板・含稅）</p>
+              <ul className="text-xs text-stone-600 space-y-1">
+                <li>・伯爵茶・大吉嶺・有機錫蘭・南非國寶茶・洋甘菊・靜岡綠茶：S ¥480／M ¥530／L ¥580（冰・熱）</li>
+                <li>・<strong>國產抹茶無糖拿鐵</strong>：S ¥580／M ¥680／L ¥780</li>
+                <li>・印度奶茶（Chai）・焙茶牛奶・皇家奶茶：S ¥530／M ¥620／L ¥700</li>
+                <li>・沙拉：全部 ¥1,000</li>
+              </ul>
+              <p className="text-[11px] text-stone-500 leading-relaxed mt-2 pt-2 border-t border-amber-200">
+                ※ 2026年造訪時店內菜單板的價格。咖啡與甜甜圈的價格請看現場，季節限定飲品會更換。
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🎵 30個以上喇叭", "🍩 彩色甜甜圈", "🌙 開到晚上11點", "🚃 中目黑站3分", "🪴 窗邊座位"].map((t) => (
+                <span key={t} className="text-xs bg-pink-50 text-pink-700 border border-pink-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都目黑區上目黑1-6-5 森ビル</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急東橫線・東京メトロ日比谷線「中目黑」駅 徒步約3分（過目黑川）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">8:00〜23:00（官方IG）／不定休</p>
+              <p className="text-xs text-stone-600 ib ib-yen">茶飲 ¥480〜¥780、沙拉 ¥1,000</p>
+              <p className="text-xs text-stone-600">⏱️ 建議預留約30分〜1小時</p>
+              <p className="text-xs text-stone-600">📞 03-6303-0869</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">這4間裡<strong>唯一開到晚上11點</strong>的店。晚餐後想找個地方坐、或是星巴克臻選太擠的時候，可以改來這裡</p>
+            </div>
+
+            <div className="flex flex-wrap gap-x-4 gap-y-2">
+              <a
+                href="https://www.instagram.com/goodsoundcoffee_nakameguro/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                📷 GOOD SOUND COFFEE 中目黑店 官方 Instagram
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=GOOD+SOUND+COFFEE+%E4%B8%AD%E7%9B%AE%E9%BB%92"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🗺️ Google 地圖
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">中目黑咖啡散步小建議</h2>
@@ -485,6 +597,7 @@ export default function NakameguroCafePage() {
             <li>✅ 限定周邊商品適合當伴手禮，送給星巴克迷的朋友很適合🎁</li>
             <li>✅ STREAMER的甜點份量偏大，兩個人分著吃比較剛好</li>
             <li>✅ 想找有插座、能坐久一點的地方，可以去<strong>OPEN NAKAMEGURO</strong>（11:00〜18:00）🔌</li>
+            <li>✅ 晚上想喝一杯或吃甜點，<strong>GOOD SOUND COFFEE 開到23:00</strong>🎵</li>
             <li>✅ 附近的中目黑・代官山區域也很好逛，可安排半日行程</li>
           </ul>
         </section>
@@ -493,7 +606,7 @@ export default function NakameguroCafePage() {
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
             星巴克臻選光是建築本身就值得專程造訪，裡面的咖啡體驗更是超乎想像✨<br />
-            再走6分鐘到STREAMER喝一杯冠軍拿鐵，累了就到OPEN找個位子坐下來☕
+            再走6分鐘到STREAMER喝一杯冠軍拿鐵，累了就到OPEN找個位子坐下來，晚上還有GOOD SOUND☕
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
             <div className="text-3xl shrink-0">🐥</div>
