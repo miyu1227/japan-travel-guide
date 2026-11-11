@@ -63,7 +63,7 @@ export const HUBS: Hub[] = [
       {
         heading: "澀谷・代官山・中目黑・學藝大學（東急沿線）",
         note: "全部在東急東橫線上、彼此幾站之內，最適合一天連走2〜3間。",
-        slugs: ["shibuya-cafe", "daikanyama-cafe", "nakameguro-cafe", "gakugeidaigaku-cafe", "ikejiri-cafe"],
+        slugs: ["shibuya-cafe", "gotcha-shibuya", "daikanyama-cafe", "nakameguro-cafe", "gakugeidaigaku-cafe", "ikejiri-cafe"],
       },
       {
         heading: "下北澤・代代木上原・代代木公園（小田急沿線）",
