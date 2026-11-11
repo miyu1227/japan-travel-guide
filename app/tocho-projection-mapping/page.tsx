@@ -84,7 +84,7 @@ const schedule = [
 ];
 
 const relatedLinks = [
-  { href: "/meiji-jingu", label: "⛩️ 明治神宮攻略｜台灣檜木大鳥居・御朱印", desc: "白天在原宿參拜，晚上到新宿看光雕" },
+  { href: "/meiji-jingu", label: "⛩️ 關東神社特集｜明治神宮・桜神宮", desc: "白天在原宿參拜，晚上到新宿看光雕" },
   { href: "/tokyo-tower", label: "🗼 東京鐵塔攻略｜門票、營業時間、夜景", desc: "另一個東京夜景的定番" },
   { href: "/skytree", label: "🌃 東京晴空塔攻略", desc: "從高處看東京夜景" },
 ];

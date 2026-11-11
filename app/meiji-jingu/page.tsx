@@ -12,9 +12,9 @@ const PAGE_URL = "https://www.japantrippicks.com/meiji-jingu";
 const OG_IMAGE = "/meiji-jingu/meiji-1.jpg";
 
 export const metadata: Metadata = {
-  title: "明治神宮攻略｜台灣檜木大鳥居・御朱印・開門時間✅實訪",
+  title: "明治神宮・桜神宮｜關東神社特集 御朱印・台灣檜木大鳥居✅實訪",
   description:
-    "原宿站旁的明治神宮，免費參拜。大鳥居用的是樹齡1500年的台灣檜木。開門時間每月不同（10月5:40〜16:40），御朱印9:00起，附逛法與交通。",
+    "原宿站旁的明治神宮（台灣檜木大鳥居）與桜新町站徒步2分的桜神宮（月替御朱印・櫻花形おみくじ），都免費參拜。開門時間、御朱印、交通一次整理。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "明治神宮攻略｜台灣檜木大鳥居・御朱印・酒樽牆",
-    description: "原宿站旁、70萬平方公尺的森林神社。免費參拜，御朱印、酒樽牆與每月不同的開門時間一次整理。",
+    title: "明治神宮・桜神宮｜關東神社特集 御朱印・台灣檜木大鳥居",
+    description: "原宿的森林神社明治神宮，加上世田谷桜新町的「世田谷のお伊勢さま」桜神宮。免費參拜，御朱印與交通一次整理。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "明治神宮攻略｜台灣檜木大鳥居・御朱印・開門時間",
-    description: "原宿站旁的森林神社・免費參拜⛩️",
+    title: "明治神宮・桜神宮｜關東神社特集",
+    description: "原宿的森林神社＋桜新町的月替御朱印⛩️",
     images: [OG_IMAGE],
   },
 };
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "明治神宮攻略｜台灣檜木大鳥居・御朱印・酒樽牆・開門時間【實際造訪】",
-  description: "明治神宮完整介紹。免費參拜、每月開閉門時間、御朱印、酒樽牆、台灣檜木大鳥居、參拜方式與交通。",
+  headline: "明治神宮・桜神宮｜關東神社特集 御朱印・台灣檜木大鳥居【實際造訪】",
+  description: "關東神社特集。明治神宮（免費參拜、每月開閉門時間、御朱印、酒樽牆、台灣檜木大鳥居）與世田谷桜新町的桜神宮（月替御朱印、櫻花形おみくじ結び所、火渡り神事）。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-10-16T00:00:00+09:00",
-  dateModified: "2026-10-16T00:00:00+09:00",
+  dateModified: "2026-11-11T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -63,7 +63,7 @@ const breadcrumbJsonLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "首頁", item: "https://www.japantrippicks.com" },
-    { "@type": "ListItem", position: 2, name: "明治神宮攻略", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "關東神社特集｜明治神宮・桜神宮", item: PAGE_URL },
   ],
 };
 
@@ -73,6 +73,15 @@ const meijiPhotos = [
   { src: "/meiji-jingu/meiji-3.jpg", alt: "明治神宮參道旁堆成一整面牆的酒樽，上面寫著各地酒藏的酒名" },
   { src: "/meiji-jingu/meiji-4.jpg", alt: "明治神宮森林裡的小溪，石頭與倒木之間有清水流過" },
   { src: "/meiji-jingu/meiji-5.jpg", alt: "明治神宮的御朱印，寫著奉拜 明治神宮、皇紀二千六百八十六年、令和八年十月十二日" },
+];
+
+const sakuraPhotos = [
+  { src: "/meiji-jingu/sakura-1.jpg", alt: "桜神宮的參道，兩側是石燈籠與松樹，盡頭是綠色屋頂的拜殿" },
+  { src: "/meiji-jingu/sakura-2.jpg", alt: "桜神宮拜殿的唐破風屋頂與雕刻，前面是轉黃的樹葉與藍天" },
+  { src: "/meiji-jingu/sakura-3.jpg", alt: "桜神宮的おみくじ結び所，深色木板上綁滿籤紙，排成一朵櫻花的形狀" },
+  { src: "/meiji-jingu/sakura-4.jpg", alt: "桜神宮11月的御朱印，紅色楓葉與小鳥圖案，寫著桜神宮、古式神道、令和八年十一月十一日" },
+  { src: "/meiji-jingu/sakura-5.jpg", alt: "桜神宮境內的大樹，枝上綁著粉紅色的緞帶，後面是紅色的社殿" },
+  { src: "/meiji-jingu/sakura-6.jpg", alt: "桜神宮入口的看板，寫著世田谷のお伊勢さま 桜神宮" },
 ];
 
 // 公式サイトの開閉門時間（毎月変わる）
@@ -85,8 +94,8 @@ const gateTimes = [
 
 const relatedLinks = [
   { href: "/yoyogi-park-cafe", label: "☕ 代代木公園咖啡廳2選｜VERVE COFFEE＆nephew", desc: "明治神宮隔壁就是代代木公園，參拜完喝一杯" },
-  { href: "/spot", label: "🌿 東京野餐3選｜新宿御苑・代代木・日比谷", desc: "代代木公園和明治神宮相鄰，可以排在同一天" },
-  { href: "/shibuya-cafe", label: "☕ 澀谷咖啡廳推薦2選｜RECOCO＆歐舒丹咖啡廳", desc: "原宿往南走就是澀谷" },
+  { href: "/futakotamagawa", label: "🍽️ 二子玉川美食5選｜芝麻街主題店・中華・甜點", desc: "桜新町搭田園都市線往郊外2站就到二子玉川" },
+  { href: "/enoshima-kamakura", label: "🌊 江之島・鎌倉一日遊｜江島神社・吻仔魚丼", desc: "關東神社再加一站：海邊的江島神社" },
 ];
 
 const faqItems = [
@@ -114,6 +123,18 @@ const faqItems = [
     q: "明治神宮值得去嗎？要逛多久？",
     a: "值得。就在原宿站旁、免費，走進參道馬上安靜下來，跟一出站就是人潮的竹下通完全是兩個世界。只參拜的話來回約30〜40分鐘，加上拍照、拿御朱印抓1小時剛好。",
   },
+  {
+    q: "桜神宮是什麼？在哪裡？",
+    a: "世田谷區桜新町的「古式神道 桜神宮（さくらじんぐう／Sakura Jingu）」，入口看板寫著「世田谷のお伊勢さま」。明治15年由曾任伊勢神宮禰宜的芳村正秉立教，大正8年遷到現在的世田谷。東急田園都市線「桜新町」站北口徒步2分，地址：東京都世田谷區新町3-21-3。",
+  },
+  {
+    q: "桜神宮的御朱印有什麼特別？",
+    a: "每個月都有不同圖案的月替御朱印（月替わり御朱印）。我們11月11日拿到的是紅楓葉加小鳥的秋天版本，右上蓋著「古式神道」。官方公告2026年11月的其中一種限定御朱印一天300張、一人最多2張，也有郵送頒布，詳細請看官方網站的公告。",
+  },
+  {
+    q: "明治神宮和桜神宮可以排在同一天嗎？",
+    a: "可以。原宿站到澀谷站搭JR山手線1站，澀谷轉東急田園都市線到桜新町約10分。上午先去明治神宮（早上人少），下午再到桜神宮，回程往郊外再坐2站就是二子玉川，可以接著吃晚餐。",
+  },
 ];
 
 export default function MeijiJinguPage() {
@@ -127,7 +148,7 @@ export default function MeijiJinguPage() {
         <div className="max-w-2xl xl:max-w-[920px] mx-auto px-4 h-14 flex items-center gap-3">
           <Link href="/" className="text-stone-500 hover:text-stone-800 text-sm">← 返回</Link>
           <span className="text-stone-300">|</span>
-          <span className="text-sm font-semibold text-stone-700 truncate">明治神宮攻略</span>
+          <span className="text-sm font-semibold text-stone-700 truncate">關東神社特集｜明治神宮・桜神宮</span>
         </div>
       </header>
 
@@ -136,37 +157,68 @@ export default function MeijiJinguPage() {
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
           <span className="bg-green-100 text-green-700 border border-green-300 text-xs font-semibold px-3 py-1 rounded-full">⛩️ 神社（景點・好去處）</span>
-          <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 東京・原宿</span>
+          <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 東京・原宿／世田谷</span>
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">✅ 實際造訪</span>
         </div>
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          明治神宮攻略<br />台灣檜木大鳥居・御朱印・酒樽牆⛩️
+          關東神社特集｜明治神宮・桜神宮<br />台灣檜木大鳥居・月替御朱印⛩️
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-10-16</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-11-11</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">原宿站出來走一分鐘，就是一整片森林</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-wave">東京的神社，從原宿的森林到世田谷的住宅街</h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-2">
             原宿＝竹下通、可麗餅、人潮……但車站的另一側，其實是東京最大片的<strong>森林神社</strong>🌳 一走進參道，路上的聲音一下子就消失了。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
             <strong>明治神宮（めいじじんぐう／Meiji Jingu）</strong>供奉明治天皇與昭憲皇太后，<strong>免費參拜</strong>。對台灣旅客來說還有一個特別的地方：參道上的<strong>大鳥居，是用台灣的檜木做的</strong>。這次我們在10月造訪，拿了御朱印，也把開門時間、交通和逛法整理成這一篇。
           </p>
+          <p className="text-sm text-stone-600 leading-relaxed mt-2">
+            11月再加上一間：世田谷桜新町的<strong>桜神宮（さくらじんぐう）</strong>🌸 被稱為「世田谷のお伊勢さま」，車站走2分鐘就到，<strong>每月換圖案的御朱印</strong>和<strong>櫻花形狀的おみくじ結び所</strong>都很可愛。這篇變成<strong>關東神社特集</strong>，之後也會繼續加。
+          </p>
         </section>
 
         <PrepBannerCompact />
 
+        {/* 比較 */}
+        <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">2間神社怎麼選？</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs text-stone-600">
+              <thead>
+                <tr className="text-left text-stone-500 border-b border-stone-100">
+                  <th className="py-2 pr-3"></th>
+                  <th className="py-2 pr-3">明治神宮</th>
+                  <th className="py-2">桜神宮</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">車站</td><td className="py-2 pr-3">JR原宿站旁，入口到本殿約10分</td><td className="py-2">東急桜新町站北口徒步2分</td></tr>
+                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">氣氛</td><td className="py-2 pr-3">70萬㎡的森林、大鳥居</td><td className="py-2">住宅街裡的小神社，安靜好拍</td></tr>
+                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">御朱印</td><td className="py-2 pr-3">寫「皇紀」紀年</td><td className="py-2">每月換圖案（月替御朱印）</td></tr>
+                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">看點</td><td className="py-2 pr-3">台灣檜木大鳥居・酒樽牆</td><td className="py-2">櫻花形おみくじ結び所・火渡り神事</td></tr>
+                <tr><td className="py-2 pr-3 font-bold whitespace-nowrap">停留</td><td className="py-2 pr-3">約1小時</td><td className="py-2">約20〜30分</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京神社推薦（好去處推介）・明治神宮</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">關東神社推薦（好去處推介）・2選</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          <div className="photo-strip">
-            {meijiPhotos.map((photo, i) => (
-              <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
-                <Image src={photo.src} alt={photo.alt} fill sizes="20vw" className="object-cover" {...(i === 0 ? { priority: true } : {})} />
+          {/* 1列に並べると小さくなるので、3枚＋残りの2段に分ける */}
+          <div className="flex flex-col gap-[2px]">
+            {[meijiPhotos.slice(0, 3), meijiPhotos.slice(3)].map((row, r) => (
+              <div key={r} className="photo-strip">
+                {row.map((photo, i) => (
+                  <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                    <Image src={photo.src} alt={photo.alt} fill sizes={row.length === 2 ? "50vw" : "33vw"} className="object-cover" {...(r === 0 && i === 0 ? { priority: true } : {})} />
+                  </div>
+                ))}
               </div>
             ))}
           </div>
@@ -263,15 +315,99 @@ export default function MeijiJinguPage() {
           </div>
         </section>
 
+        {/* 桜神宮 */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
+          <div className="flex flex-col gap-[2px]">
+            {[sakuraPhotos.slice(0, 3), sakuraPhotos.slice(3)].map((row, r) => (
+              <div key={r} className="photo-strip">
+                {row.map((photo) => (
+                  <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                    <Image src={photo.src} alt={photo.alt} fill sizes="33vw" className="object-cover" />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-green-500 text-white flex items-center justify-center text-sm font-black shrink-0">2</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">桜神宮</h3>
+                <span className="text-xs text-stone-400">さくらじんぐう／Sakura Jingu・古式神道 桜神宮</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              東急田園都市線<strong>桜新町站走2分鐘</strong>，住宅街裡突然出現松樹和石燈籠的參道⛩️ 入口看板寫著「<strong>世田谷のお伊勢さま</strong>」。明治15年由曾任<strong>伊勢神宮禰宜</strong>的芳村正秉立教，社殿最早建在東京神田，大正8年依神託「往西方遷移」搬到現在的世田谷；二戰時也沒有受到戰災，所以也有人來祈求「<strong>消災解厄</strong>」。
+            </p>
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              這裡傳承<strong>古式神道</strong>，官方說明是全國少數還在舉行<strong>火渡り（走火）</strong>、<strong>釜鳴り</strong>等神事的神社。每年4月的大祭（鎮火式）、9月的中祭（探湯式）都在週日舉行。
+            </p>
+
+            <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-green-700 mb-1">✨ 這次實際看到的（實訪・11月）</p>
+              <ul className="text-sm text-stone-600 leading-relaxed space-y-1.5">
+                <li>⛩️ <strong>參道與拜殿</strong>：短短的參道兩側是松樹、石燈籠，盡頭是綠色銅瓦屋頂的拜殿，屋簷下的雕刻很細</li>
+                <li>🌸 <strong>櫻花形おみくじ結び所</strong>：「おみくじを結んでください」的木板上，抽完的籤紙綁成<strong>一整朵櫻花</strong>，是這裡最好拍的地方</li>
+                <li>🎀 <strong>粉紅色緞帶的樹</strong>：境內的樹枝上綁滿粉紅色緞帶，配上紅色社殿很有氣氛</li>
+                <li>📿 <strong>月替御朱印</strong>：11月是<strong>紅楓葉＋小鳥</strong>的秋天圖案，右上蓋著「古式神道」</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🆓 免費參拜", "🚃 站前徒步2分", "📿 月替御朱印", "🌸 櫻花形おみくじ", "🔥 火渡り神事"].map((t) => (
+                <span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區新町3-21-3</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急田園都市線「桜新町」站北口 徒步2分（澀谷站搭田園都市線約10分）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">電話受理 9:00〜16:00（03-3429-0869）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">參拜免費（御朱印另付初穗料；御守約800〜1,500日圓）</p>
+              <p className="text-xs text-stone-600">📿 月替御朱印：有時有數量限制（例：2026年11月其中一種一天300張・一人2張），也有郵送頒布</p>
+              <p className="text-xs text-stone-600">⏱️ 建議預留約20〜30分（參拜＋拍照＋御朱印）</p>
+              <p className="text-xs text-stone-600">🔥 大祭（鎮火式・火渡り）4月／中祭（探湯式）9月，都在週日</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">每個月的御朱印圖案與頒布方式，官方網站和X（@Sakurajingu）會先公告，想拿特定圖案的話出發前先看一下。御守裡也有櫻花款的「肌守（桜）」「えんむすび（桜）」。</p>
+            </div>
+
+            <div className="flex flex-wrap gap-x-4 gap-y-2">
+              <a
+                href="https://www.sakura.jingu.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🔗 官方網站
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=桜神宮+世田谷区新町3-21-3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🗺️ Google 地圖
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">明治神宮參拜小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">關東神社參拜小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ <strong>早上去最安靜</strong>，開門時間很早（10月是5:40），竹下通的店開門前先來參拜剛好</li>
             <li>✅ 入口到本殿要走<strong>約10分鐘</strong>的碎石參道，穿好走的鞋👟</li>
             <li>✅ 經過大鳥居時抬頭看看——那是<strong>台灣檜木</strong>做的🇹🇼</li>
             <li>✅ 想收集御朱印的話，<strong>9:00以後</strong>才開始受理</li>
             <li>✅ 參拜完往旁邊走就是<strong>代代木公園</strong>，往南是表參道和澀谷，可以排成同一天的行程</li>
+            <li>✅ 下午從澀谷搭<strong>田園都市線約10分</strong>到桜新町，加碼桜神宮的<strong>月替御朱印</strong>🌸</li>
           </ul>
         </section>
 
@@ -279,13 +415,14 @@ export default function MeijiJinguPage() {
         <div className="bg-white rounded-3xl border border-yellow-200 shadow-sm p-6 mb-10">
           <p className="text-sm text-stone-600 leading-relaxed mb-4">
             一百年前種下的10萬棵樹、台灣來的檜木鳥居、寫著皇紀的御朱印✨<br />
-            原宿的熱鬧旁邊，藏著東京最安靜的一段路。
+            再加上住宅街裡綁成櫻花的おみくじ，和每個月都想回來拿的御朱印🌸<br />
+            東京的神社，大的小的各有味道。
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
             <div className="text-3xl shrink-0">🐥</div>
             <div>
               <p className="text-sm font-semibold text-stone-700 mb-0.5">ぽやぴよ的話</p>
-              <p className="text-sm text-stone-600">「出站才一分鐘，就從人潮走進森林了🌳」</p>
+              <p className="text-sm text-stone-600">「御朱印帳又多了一頁，下個月的圖案也好想要🌸」</p>
             </div>
           </div>
         </div>
@@ -312,7 +449,7 @@ export default function MeijiJinguPage() {
           </div>
         </section>
 
-        <RelatedArticles slug="meiji-jingu" exclude={["/yoyogi-park-cafe", "/spot", "/shibuya-cafe"]} />
+        <RelatedArticles slug="meiji-jingu" exclude={["/yoyogi-park-cafe", "/futakotamagawa", "/enoshima-kamakura"]} />
 
       </article>
 
