@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getRelatedArticles } from "@/lib/articles";
 import { HUB_OF_ARTICLE } from "@/lib/hubs";
+import BookPromo from "./BookPromo";
 
 /**
  * 同じ地域・同じカテゴリの記事を自動で並べる関連記事ブロック。
@@ -15,9 +16,11 @@ export default function RelatedArticles({
 }) {
   const related = getRelatedArticles(slug, { limit: 8, exclude });
   const hub = HUB_OF_ARTICLE[slug];
-  if (related.length === 0) return null;
+  if (related.length === 0) return <BookPromo slug={slug} />;
 
   return (
+    <>
+    <BookPromo slug={slug} />
     <section className="mt-8">
       <h2 className="text-base font-black text-stone-800 mb-3">🗾 更多同區・同類型的文章</h2>
       {hub && (
@@ -49,5 +52,6 @@ export default function RelatedArticles({
         ))}
       </div>
     </section>
+    </>
   );
 }
