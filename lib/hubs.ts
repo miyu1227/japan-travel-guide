@@ -192,7 +192,7 @@ export const HUBS: Hub[] = [
       {
         heading: "公園・動物園（親子・放鬆）",
         note: "走累的那一天安排這裡最剛好。",
-        slugs: ["ueno-zoo", "showa-kinen-park", "otaguro-park", "spot"],
+        slugs: ["ueno-zoo", "showa-kinen-park", "otaguro-park", "kyu-furukawa-garden", "spot"],
       },
       {
         heading: "神社・季節限定・文化體驗",
