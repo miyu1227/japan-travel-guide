@@ -124,7 +124,7 @@ export const HUBS: Hub[] = [
       {
         heading: "街區美食・異國料理",
         note: "整條街走起來最有旅行感的區域。",
-        slugs: ["shin-okubo", "futakotamagawa", "ginza-apollo"],
+        slugs: ["shin-okubo", "akasaka-chungsol", "futakotamagawa", "ginza-apollo"],
       },
       {
         heading: "一個人的一餐・輕食",

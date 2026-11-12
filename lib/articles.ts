@@ -32,6 +32,19 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "akasaka-chungsol",
+    category: "ramen",
+    name: "青松 赤坂｜24小時營業的韓國料理，小菜吃到飽🇰🇷",
+    shortLabel: "赤坂青松韓國料理",
+    desc: "赤坂站徒步3分、全年無休。泡菜小菜免費續，烤五花肉¥1,650、午餐¥1,100起，食べログ百名店2026",
+    tag: "東京",
+    emoji: "🇰🇷",
+    image: "/akasaka-chungsol/chungsol-1.jpg",
+    areas: ["東京"],
+    published: "2026-11-12",
+    updated: "2026-11-12",
+  },
+  {
     slug: "shimokitazawa-gohan",
     category: "ramen",
     name: "下北澤美食2間｜CACCIA CACCIA・Vegetable base🥗",
