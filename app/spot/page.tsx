@@ -74,15 +74,11 @@ const shinjukuPhotos = [
 ];
 
 const yoyogiPhotos = [
-  "/spot/yoyogi-1.jpg",
-  "/spot/yoyogi-2.jpg",
   "/spot/yoyogi-3.jpg",
   "/spot/yoyogi-4.jpg",
 ];
 
 const yoyogiAlts = [
-  "代代木公園 - 東京野餐",
-  "代代木公園 - 東京野餐",
   "代代木公園的草地上鋪著野餐墊，放著萬聖節造型的便當（南瓜、幽靈起司、黑貓飯糰）和一杯TULLY'S COFFEE",
   "晴天的代代木公園，大片草坪和高大的雪松，有人坐在草地上休息",
 ];
@@ -244,15 +240,10 @@ export default function SpotPicnicPage() {
 
         {/* Spot 2: 代々木公園 */}
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
-          {/* 縦長2枚＋横長2枚を2段に分けて大きく見せる */}
-          <div className="flex flex-col gap-[2px]">
-            {[yoyogiPhotos.slice(0, 2), yoyogiPhotos.slice(2)].map((row, r) => (
-              <div key={r} className="photo-strip">
-                {row.map((src, i) => (
-                  <div key={src} className="relative bg-stone-100" style={photoStyle(src)}>
-                    <Image src={src} alt={yoyogiAlts[r * 2 + i] ?? "代代木公園 - 東京野餐"} fill sizes="50vw" className="object-cover" />
-                  </div>
-                ))}
+          <div className="photo-strip">
+            {yoyogiPhotos.map((src, i) => (
+              <div key={src} className="relative bg-stone-100" style={photoStyle(src)}>
+                <Image src={src} alt={yoyogiAlts[i] ?? "代代木公園 - 東京野餐"} fill sizes="50vw" className="object-cover" />
               </div>
             ))}
           </div>
