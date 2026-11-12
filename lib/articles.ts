@@ -874,7 +874,7 @@ export const ARTICLES: Article[] = [
     image: "/spot/shinjuku-1.jpg",
     areas: ["東京"],
     published: "2026-07-01",
-    updated: "2026-07-21",
+    updated: "2026-11-12",
   },
   {
     slug: "hakone",
