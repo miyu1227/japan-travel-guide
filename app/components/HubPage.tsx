@@ -98,9 +98,15 @@ export default function HubPage({ slug }: { slug: string }) {
           <span className="bg-yellow-100 text-yellow-700 border border-yellow-300 text-xs font-semibold px-3 py-1 rounded-full">
             {hub.badge}
           </span>
+          {/* PR記事（sponsored）は行っていないので「實際造訪」の数に入れない */}
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">
-            ✅ {members.length} 篇實際造訪
+            ✅ {members.filter((a) => !a.sponsored).length} 篇實際造訪
           </span>
+          {members.some((a) => a.sponsored) && (
+            <span className="bg-stone-100 text-stone-600 border border-stone-200 text-xs font-semibold px-3 py-1 rounded-full">
+              📢 {members.filter((a) => a.sponsored).length} 篇廣告（PR）
+            </span>
+          )}
         </div>
 
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-4">

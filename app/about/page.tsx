@@ -6,7 +6,7 @@ const PAGE_URL = "https://www.japantrippicks.com/about";
 
 export const metadata: Metadata = {
   title: "關於我們・作者介紹｜Japan Trip Picks",
-  description: "Japan Trip Picks 是專為台灣・香港旅客打造的日本旅遊資訊網站。作者ぽやぴよ是東京在住日本人，實際造訪過所有介紹景點，用第一視角分享真實旅遊體驗。",
+  description: "Japan Trip Picks 是專為台灣・香港旅客打造的日本旅遊資訊網站。作者ぽやぴよ是東京在住日本人，自己撰寫的文章都實際造訪，用第一視角分享真實旅遊體驗；廣告（PR）文章會在開頭標示。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -100,14 +100,21 @@ export default function AboutPage() {
               <span className="text-lg shrink-0">✅</span>
               <div>
                 <p className="text-sm font-bold text-stone-700 mb-0.5">實際造訪</p>
-                <p className="text-xs text-stone-500">所有介紹的景點・餐廳・咖啡廳（咖啡店）・住宿都是本人親自造訪。從未去過的地方不會寫。</p>
+                <p className="text-xs text-stone-500">自己撰寫的文章中，介紹的景點・餐廳・咖啡廳（咖啡店）・住宿都是本人親自造訪。從未去過的地方不會寫成去過。</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-lg shrink-0">📸</span>
               <div>
                 <p className="text-sm font-bold text-stone-700 mb-0.5">照片全部原創</p>
-                <p className="text-xs text-stone-500">網站內幾乎所有照片都是本人拍攝，不使用免費圖庫或抓取他站圖片（極少數官方合作除外）。</p>
+                <p className="text-xs text-stone-500">網站內幾乎所有照片都是本人拍攝，不使用免費圖庫或抓取他站圖片（極少數官方合作與廣告文章除外）。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-lg shrink-0">📢</span>
+              <div>
+                <p className="text-sm font-bold text-stone-700 mb-0.5">廣告（PR）文章會清楚標示</p>
+                <p className="text-xs text-stone-500">接受店家付費委託製作的文章，會在文章開頭標示「廣告・贊助內容（PR）」。這類文章依店家提供的資訊與照片撰寫，並非實地造訪，刊登前會請店家確認內容。</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
