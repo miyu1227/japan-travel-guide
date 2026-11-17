@@ -134,7 +134,7 @@ export const HUBS: Hub[] = [
       {
         heading: "甜點・伴手禮",
         note: "帶回飯店當宵夜，或帶回台灣・香港送人。",
-        slugs: ["takeout-cake", "tokyo-cookies", "mister-donut"],
+        slugs: ["takeout-cake", "tokyo-cookies", "mister-donut", "gong-cha-japan"],
       },
     ],
     relatedHubs: ["tokyo-cafe", "tokyo-day-trip"],
