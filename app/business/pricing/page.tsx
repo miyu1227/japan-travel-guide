@@ -11,6 +11,7 @@ import {
 import FinalCta from "../components/FinalCta";
 import PageHero from "../components/PageHero";
 import PlanCards from "../components/PlanCards";
+import PublishRules from "../components/PublishRules";
 import { Card, CtaGroup, CtaLink, JsonLd, NoteList, Section, SectionHeading } from "../components/ui";
 
 export const metadata: Metadata = businessMetadata({
@@ -146,7 +147,7 @@ export default function PricingPage() {
       <Section tone="sand" id="notes">
         <SectionHeading
           eyebrow="NOTES"
-          title="ご確認事項・掲載基準・免責事項"
+          title="ご確認事項・掲載基準・制作のルール・免責事項"
           description="お申し込みの前に、以下をご確認ください。"
         />
 
@@ -173,6 +174,8 @@ export default function PricingPage() {
               ※掲載可否の判断理由については、原則として公開しておりません。
             </p>
           </div>
+
+          <PublishRules />
 
           <div className="rounded-2xl border border-biz-line bg-white p-5 sm:p-6">
             <h3 className="text-sm font-bold text-biz-ink">免責事項</h3>

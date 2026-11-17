@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { businessMetadata } from "@/lib/business/site";
 import PageHero from "../components/PageHero";
+import PublishRules from "../components/PublishRules";
 import { Card, CtaAnchor, CtaGroup, Section } from "../components/ui";
 
 /**
@@ -16,7 +17,7 @@ export const metadata: Metadata = businessMetadata({
   title: "店舗掲載のご案内｜Japan Trip Picks",
   ogTitle: "店舗掲載のご案内｜Japan Trip Picks",
   description:
-    "台湾・香港の旅行者に届く繁体字の日本旅行メディア Japan Trip Picks の店舗向け資料です。料金・掲載までの流れ・掲載基準をまとめています。",
+    "台湾・香港の旅行者に届く繁体字の日本旅行メディア Japan Trip Picks の店舗向け資料です。料金・掲載までの流れ・掲載基準・制作のルールをまとめています。",
   image: "/media/jtp-media-kit-shop-2026-11-cover.png",
   index: false,
 });
@@ -60,7 +61,11 @@ export default function ShopKitPage() {
           ))}
         </ul>
 
-        <p className="mt-8 text-sm leading-relaxed text-biz-muted">
+        <div className="mt-8">
+          <PublishRules />
+        </div>
+
+        <p className="mt-6 text-sm leading-relaxed text-biz-muted">
           掲載記事にはPR（広告）と表示します。集客効果・検索順位・売上は保証できません。ご不明な点は、DMにてお気軽にお問い合わせください。
         </p>
       </Section>
