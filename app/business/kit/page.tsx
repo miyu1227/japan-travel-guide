@@ -9,7 +9,7 @@ import { Card, CtaAnchor, CtaGroup, Section } from "../components/ui";
  * このページのURLを送り、OGには資料の表紙を出す。
  * どこからもリンクせず、検索にも出さない（index: false・sitemap対象外）。
  */
-const PDF_PATH = "/media/jtp-media-kit-shop-2026-11-hi3mm0.pdf";
+const PDF_PATH = "/media/jtp-media-kit-shop-2026-11b-507d03.pdf";
 
 export const metadata: Metadata = businessMetadata({
   path: "kit",
