@@ -102,6 +102,9 @@ export default function BizFooter() {
             <Link href="/business/contact#operator" className="inline-flex min-h-11 items-center text-biz-muted underline-offset-4 hover:text-biz-blue hover:underline">
               運営者情報
             </Link>
+            <Link href="/business/terms" className="inline-flex min-h-11 items-center text-biz-muted underline-offset-4 hover:text-biz-blue hover:underline">
+              掲載規約
+            </Link>
             <Link href="/business/pricing#notes" className="inline-flex min-h-11 items-center text-biz-muted underline-offset-4 hover:text-biz-blue hover:underline">
               掲載基準・免責事項
             </Link>

@@ -106,8 +106,12 @@ export const PRICING_NOTES: string[] = [
   "掲載記事には、広告であることが分かる表示を記事の冒頭に入れます（景品表示法にもとづく対応です）。",
 ];
 
+/** 掲載規約の版。文言を変えたらここを更新し、Driveに前の版のPDF控えを残す（民法548条の4の周知も兼ねる）。 */
+export const TERMS_VERSION = "2026年11月17日版";
+export const TERMS_PATH = "/business/terms";
+
 /**
- * 制作・掲載のルール。お申し込みフォームで「同意します」にチェックしてもらう対象。
+ * 制作・掲載のルール（掲載規約 第5条）。お申し込みフォームで「同意します」にチェックしてもらう対象。
  * /business/pricing#rules と /business/kit#rules に出す。媒体資料（PDF）とNotion仕様書も同じ文言。
  */
 export const PUBLISH_RULES: { label: string; body: string }[] = [

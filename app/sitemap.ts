@@ -93,6 +93,7 @@ const BUSINESS_ROUTES: { path: string; priority: number }[] = [
   { path: "/business/partner", priority: 0.7 },
   { path: "/business/works", priority: 0.6 },
   { path: "/business/faq", priority: 0.6 },
+  { path: "/business/terms", priority: 0.3 },
   { path: "/business/download", priority: 0.6 },
   { path: "/business/contact", priority: 0.6 },
 ];
