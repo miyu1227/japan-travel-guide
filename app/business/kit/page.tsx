@@ -10,7 +10,7 @@ import { Card, CtaAnchor, CtaGroup, Section } from "../components/ui";
  * このページのURLを送り、OGには資料の表紙を出す。
  * どこからもリンクせず、検索にも出さない（index: false・sitemap対象外）。
  */
-const PDF_PATH = "/media/jtp-media-kit-shop-2026-11c-8f1393.pdf";
+const PDF_PATH = "/media/jtp-media-kit-shop-2026-11d-e62522.pdf";
 
 export const metadata: Metadata = businessMetadata({
   path: "kit",
@@ -36,7 +36,7 @@ export default function ShopKitPage() {
       <PageHero
         eyebrow="MEDIA KIT"
         title="店舗掲載のご案内"
-        lead="料金・掲載までの流れ・掲載基準を資料（PDF・10ページ）にまとめました。下のボタンからご覧いただけます。"
+        lead="料金・掲載までの流れ・掲載基準・制作のルールを資料（PDF・11ページ）にまとめました。下のボタンからご覧いただけます。"
         crumbs={crumbs}
       >
         <CtaGroup>
