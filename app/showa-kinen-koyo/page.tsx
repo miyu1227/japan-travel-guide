@@ -196,11 +196,12 @@ export default function ShowaKinenKoyoPage() {
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           <div className="flex flex-col gap-[2px]">
-            {[photos.slice(0, 3), photos.slice(3, 5), photos.slice(5)].map((row, r) => (
-              <div key={r} className="photo-strip">
+            {/* 縦写真4枚は、PCは1行に並べて高さを抑え、スマホは2×2にして小さくしすぎない */}
+            {[photos.slice(0, 3), photos.slice(3)].map((row, r) => (
+              <div key={r} className="photo-strip" style={row.length === 4 ? { gridTemplateColumns: "repeat(2, minmax(0, 1fr))" } : undefined}>
                 {row.map((photo, i) => (
                   <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
-                    <Image src={photo.src} alt={photo.alt} fill sizes={row.length === 2 ? "50vw" : "33vw"} className="object-cover" {...(r === 0 && i === 0 ? { priority: true } : {})} />
+                    <Image src={photo.src} alt={photo.alt} fill sizes={row.length === 4 ? "(min-width: 640px) 25vw, 50vw" : "33vw"} className="object-cover" {...(r === 0 && i === 0 ? { priority: true } : {})} />
                   </div>
                 ))}
               </div>
