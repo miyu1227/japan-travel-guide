@@ -541,9 +541,9 @@ export const ARTICLES: Article[] = [
   {
     slug: "showa-kinen-koyo",
     category: "spot",
-    name: "昭和紀念公園紅葉2026｜銀杏並木點燈・最佳時期🍁",
-    shortLabel: "昭和紀念公園紅葉",
-    desc: "噴水池兩側106棵銀杏＋かたらいの銀杏並木，10/29〜11/29每天16:30點燈，只要入園費¥450",
+    name: "昭和紀念公園銀杏紅葉2026｜點燈時間・最佳時期🍁",
+    shortLabel: "昭和紀念公園銀杏",
+    desc: "噴水池兩側106棵銀杏＋300公尺銀杏大道，10/29〜11/29每天16:30點燈，只要入園費¥450",
     tag: "東京",
     emoji: "🍁",
     image: "/showa-kinen-koyo/koyo-1.jpg",

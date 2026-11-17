@@ -75,7 +75,7 @@ const photos = [
 ];
 
 const relatedLinks = [
-  { href: "/showa-kinen-koyo", label: "🍁 昭和紀念公園紅葉2026｜銀杏並木點燈・最佳時期", desc: "秋の夜散歩10/29〜11/29・點燈時間與票價" },
+  { href: "/showa-kinen-koyo", label: "🍁 昭和紀念公園銀杏紅葉2026｜點燈時間・最佳時期", desc: "秋夜點燈10/29〜11/29，時間與票價一次整理" },
   { href: "/koyo", label: "🍁 東京紅葉2026｜神宮外苑銀杏並木時期與交通", desc: "金黃銀杏大道・東京秋天必去景點" },
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "悠閒散步的人氣公園完全指南" },
   { href: "/ueno-zoo", label: "🐼 上野動物園推薦｜東京必去親子景點", desc: "日本最古老的動物園，門票¥600就能逛一整天" },
