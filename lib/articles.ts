@@ -567,15 +567,15 @@ export const ARTICLES: Article[] = [
   {
     slug: "meiji-jingu",
     category: "spot",
-    name: "關東神社特集｜明治神宮・桜神宮・乃木神社 御朱印＆台灣檜木大鳥居⛩️",
+    name: "關東神社特集｜明治神宮・桜神宮・乃木神社・松陰神社 御朱印＆台灣檜木大鳥居⛩️",
     shortLabel: "關東神社特集",
-    desc: "原宿的明治神宮（台灣檜木大鳥居）＋桜新町的桜神宮（月替御朱印）＋乃木坂站旁的乃木神社（紅鳥居・馬的御朱印），都免費參拜",
+    desc: "原宿的明治神宮（台灣檜木大鳥居）＋桜新町的桜神宮（月替御朱印）＋乃木坂站旁的乃木神社（紅鳥居）＋世田谷的松陰神社（吉田松陰・松下村塾），都免費參拜",
     tag: "東京",
     emoji: "⛩️",
     image: "/meiji-jingu/meiji-1.jpg",
     areas: ["東京"],
     published: "2026-10-16",
-    updated: "2026-11-11",
+    updated: "2026-11-17",
   },
   {
     slug: "enoshima-kamakura",

@@ -12,9 +12,9 @@ const PAGE_URL = "https://www.japantrippicks.com/meiji-jingu";
 const OG_IMAGE = "/meiji-jingu/meiji-1.jpg";
 
 export const metadata: Metadata = {
-  title: "明治神宮・桜神宮・乃木神社｜關東神社特集 御朱印✅實訪",
+  title: "明治神宮・桜神宮・乃木神社・松陰神社｜關東神社4選✅實訪",
   description:
-    "原宿站旁的明治神宮（台灣檜木大鳥居）、桜新町站徒步2分的桜神宮（月替御朱印）、乃木坂站1號出口15m的乃木神社（紅鳥居），都免費參拜。",
+    "原宿站旁的明治神宮（台灣檜木大鳥居）、桜新町的桜神宮（月替御朱印）、乃木坂站旁的乃木神社，加上松陰神社前站徒步3分的松陰神社，都免費參拜。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "明治神宮・桜神宮・乃木神社｜關東神社特集 御朱印・台灣檜木大鳥居",
-    description: "原宿的森林神社明治神宮、世田谷桜新町的「世田谷のお伊勢さま」桜神宮，加上赤坂乃木坂站旁的乃木神社。免費參拜，御朱印與交通一次整理。",
+    title: "明治神宮・桜神宮・乃木神社・松陰神社｜關東神社特集 御朱印・台灣檜木大鳥居",
+    description: "原宿的森林神社明治神宮、世田谷桜新町的「世田谷のお伊勢さま」桜神宮、赤坂乃木坂站旁的乃木神社，加上供奉吉田松陰的松陰神社。免費參拜，御朱印與交通一次整理。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "明治神宮・桜神宮・乃木神社｜關東神社特集",
-    description: "原宿的森林神社＋桜新町的月替御朱印＋乃木坂的紅鳥居⛩️",
+    title: "明治神宮・桜神宮・乃木神社・松陰神社｜關東神社特集",
+    description: "原宿的森林神社＋桜新町的月替御朱印＋乃木坂的紅鳥居＋世田谷的松陰神社⛩️",
     images: [OG_IMAGE],
   },
 };
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "明治神宮・桜神宮・乃木神社｜關東神社特集 御朱印・台灣檜木大鳥居【實際造訪】",
-  description: "關東神社特集。明治神宮（免費參拜、每月開閉門時間、御朱印、酒樽牆、台灣檜木大鳥居）、世田谷桜新町的桜神宮（月替御朱印、櫻花形おみくじ結び所、火渡り神事）與赤坂的乃木神社（乃木坂站旁、赤坂王子稲荷的紅鳥居、馬的御朱印、旧乃木邸）。",
+  headline: "明治神宮・桜神宮・乃木神社・松陰神社｜關東神社特集 御朱印・台灣檜木大鳥居【實際造訪】",
+  description: "關東神社特集。明治神宮（免費參拜、每月開閉門時間、御朱印、酒樽牆、台灣檜木大鳥居）、世田谷桜新町的桜神宮（月替御朱印、櫻花形おみくじ結び所、火渡り神事）、赤坂的乃木神社（乃木坂站旁、赤坂王子稲荷的紅鳥居、馬的御朱印、旧乃木邸）與世田谷若林的松陰神社（吉田松陰的墓所、松下村塾模築、合格祈願御守）。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-10-16T00:00:00+09:00",
-  dateModified: "2026-11-11T00:00:00+09:00",
+  dateModified: "2026-11-17T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -63,7 +63,7 @@ const breadcrumbJsonLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "首頁", item: "https://www.japantrippicks.com" },
-    { "@type": "ListItem", position: 2, name: "關東神社特集｜明治神宮・桜神宮・乃木神社", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "關東神社特集｜明治神宮・桜神宮・乃木神社・松陰神社", item: PAGE_URL },
   ],
 };
 
@@ -92,6 +92,14 @@ const nogiPhotos = [
   { src: "/meiji-jingu/nogi-4.jpg", alt: "赤坂王子稲荷神社的紅色鳥居隧道，石鳥居後面連著好幾座朱紅色的小鳥居" },
 ];
 
+const shoinPhotos = [
+  { src: "/meiji-jingu/shoin-1.jpg", alt: "松陰神社的拜殿，綠色銅瓦屋頂與金色裝飾的木門，右邊是一棵大樹，前面立著松陰神社的小看板" },
+  { src: "/meiji-jingu/shoin-2.jpg", alt: "松陰神社的大繪馬，畫著白馬與梅花，寫著令和八年、松陰神社、開運招福與「午」字" },
+  { src: "/meiji-jingu/shoin-3.jpg", alt: "松陰神社的手水舎，木造屋頂下的石造水盤刻著「洗心」，上面掛著注連繩" },
+  { src: "/meiji-jingu/shoin-4.jpg", alt: "松陰神社境內的深色木造社殿，屋頂往上翹，旁邊是轉紅的樹葉與藍天" },
+  { src: "/meiji-jingu/shoin-5.jpg", alt: "松陰神社的御朱印，墨書松陰神社，蓋著紅色神社印，日期是令和八年十一月十六日" },
+];
+
 // 公式サイトの開閉門時間（毎月変わる）
 const gateTimes = [
   ["1月", "6:40", "16:20"], ["2月", "6:20", "16:50"], ["3月", "5:40", "17:20"],
@@ -102,7 +110,7 @@ const gateTimes = [
 
 const relatedLinks = [
   { href: "/yoyogi-park-cafe", label: "☕ 代代木公園咖啡廳2選｜VERVE COFFEE＆nephew", desc: "明治神宮隔壁就是代代木公園，參拜完喝一杯" },
-  { href: "/futakotamagawa", label: "🍽️ 二子玉川美食5選｜芝麻街主題店・中華・甜點", desc: "桜新町搭田園都市線往郊外2站就到二子玉川" },
+  { href: "/futakotamagawa", label: "🍽️ 二子玉川美食5選｜芝麻街主題店・中華・甜點", desc: "桜新町搭田園都市線往郊外2站就到二子玉川（松陰神社也在同一條線上）" },
   { href: "/enoshima-kamakura", label: "🌊 江之島・鎌倉一日遊｜江島神社・吻仔魚丼", desc: "關東神社再加一站：海邊的江島神社" },
 ];
 
@@ -148,8 +156,16 @@ const faqItems = [
     a: "開門時間6:00〜17:00。御朱印在授與所受理，平日9:30〜17:00、週末與國定假日9:00〜17:00。勝守等御守1,000日圓起。我們11月7日拿到的御朱印畫著奔跑的馬、銀杏和楓葉，圖案可能隨季節改變，以現場為準。",
   },
   {
+    q: "松陰神社是什麼？供奉誰？",
+    a: "東京世田谷區若林的「松陰神社（しょういんじんじゃ／Shoin Jinja）」，供奉幕末思想家、明治維新的精神導師吉田松陰。松陰在安政之大獄中30歲去世，4年後門生高杉晉作、伊藤博文等人把他改葬到這裡；明治15年（1882）11月21日，門生們在墓旁建社祭祀。境內有松陰與烈士們的墓所、仿造山口縣萩市的「松下村塾」建築，也有合格祈願御守，很多考生來參拜。",
+  },
+  {
+    q: "松陰神社怎麼去？幾點開？",
+    a: "東急世田谷線「松陰神社前」站下車，沿松陰神社通商店街往北走約3分。從澀谷搭田園都市線到三軒茶屋（2站），轉世田谷線3站就到。開門時間7:00〜17:00，御守授與所9:00〜17:00（社務所休息日除外）。地址：東京都世田谷區若林4-35-1。",
+  },
+  {
     q: "明治神宮和桜神宮可以排在同一天嗎？",
-    a: "可以。原宿站到澀谷站搭JR山手線1站，澀谷轉東急田園都市線到桜新町約10分。上午先去明治神宮（早上人少），下午再到桜神宮，回程往郊外再坐2站就是二子玉川，可以接著吃晚餐。乃木神社則是從明治神宮前站搭千代田線2站就到乃木坂站，也很好串。",
+    a: "可以。原宿站到澀谷站搭JR山手線1站，澀谷轉東急田園都市線到桜新町約10分。上午先去明治神宮（早上人少），下午再到桜神宮，回程往郊外再坐2站就是二子玉川，可以接著吃晚餐。松陰神社則是在田園都市線三軒茶屋站轉世田谷線，可以跟桜神宮排在一起。乃木神社是從明治神宮前站搭千代田線2站就到乃木坂站，也很好串。",
   },
 ];
 
@@ -164,7 +180,7 @@ export default function MeijiJinguPage() {
         <div className="max-w-2xl xl:max-w-[920px] mx-auto px-4 h-14 flex items-center gap-3">
           <Link href="/" className="text-stone-500 hover:text-stone-800 text-sm">← 返回</Link>
           <span className="text-stone-300">|</span>
-          <span className="text-sm font-semibold text-stone-700 truncate">關東神社特集｜明治神宮・桜神宮・乃木神社</span>
+          <span className="text-sm font-semibold text-stone-700 truncate">關東神社特集｜明治神宮・桜神宮・乃木神社・松陰神社</span>
         </div>
       </header>
 
@@ -179,9 +195,9 @@ export default function MeijiJinguPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          關東神社特集｜明治神宮・桜神宮・乃木神社<br />台灣檜木大鳥居・月替御朱印・紅鳥居⛩️
+          關東神社特集｜明治神宮・桜神宮・乃木神社・松陰神社<br />台灣檜木大鳥居・月替御朱印・紅鳥居・吉田松陰⛩️
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-11-11</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-11-17</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -198,13 +214,16 @@ export default function MeijiJinguPage() {
           <p className="text-sm text-stone-600 leading-relaxed mt-2">
             第3間是赤坂的<strong>乃木神社（のぎじんじゃ）</strong>🐴 就在<strong>乃木坂站1號出口旁</strong>，境內的<strong>赤坂王子稲荷</strong>有一排紅色鳥居，傍晚打燈後特別好看。2026年是丙午（馬年），跟馬很有緣的乃木神社，連御朱印上都有馬在跑。
           </p>
+          <p className="text-sm text-stone-600 leading-relaxed mt-2">
+            第4間是世田谷若林的<strong>松陰神社（しょういんじんじゃ）</strong>📚 供奉幕末的思想家<strong>吉田松陰</strong>，境內就是他的<strong>墓所</strong>，還有仿造萩市的<strong>松下村塾</strong>。從<strong>松陰神社前站走3分鐘</strong>，搭可愛的路面電車「世田谷線」去，考生最愛的<strong>合格祈願御守</strong>也在這裡。
+          </p>
         </section>
 
         <PrepBannerCompact />
 
         {/* 比較 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">3間神社怎麼選？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">4間神社怎麼選？</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-xs text-stone-600">
               <thead>
@@ -212,22 +231,23 @@ export default function MeijiJinguPage() {
                   <th className="py-2 pr-3"></th>
                   <th className="py-2 pr-3">明治神宮</th>
                   <th className="py-2 pr-3">桜神宮</th>
-                  <th className="py-2">乃木神社</th>
+                  <th className="py-2 pr-3">乃木神社</th>
+                  <th className="py-2">松陰神社</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">車站</td><td className="py-2 pr-3">JR原宿站旁，入口到本殿約10分</td><td className="py-2 pr-3">東急桜新町站北口徒步2分</td><td className="py-2">千代田線乃木坂站1號出口15m</td></tr>
-                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">氣氛</td><td className="py-2 pr-3">70萬㎡的森林、大鳥居</td><td className="py-2 pr-3">住宅街裡的小神社，安靜好拍</td><td className="py-2">赤坂的都心神社，傍晚打燈</td></tr>
-                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">御朱印</td><td className="py-2 pr-3">寫「皇紀」紀年</td><td className="py-2 pr-3">每月換圖案（月替御朱印）</td><td className="py-2">11月拿到的有馬、銀杏、楓葉</td></tr>
-                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">看點</td><td className="py-2 pr-3">台灣檜木大鳥居・酒樽牆</td><td className="py-2 pr-3">櫻花形おみくじ結び所・火渡り神事</td><td className="py-2">赤坂王子稲荷的紅鳥居・旧乃木邸</td></tr>
-                <tr><td className="py-2 pr-3 font-bold whitespace-nowrap">停留</td><td className="py-2 pr-3">約1小時</td><td className="py-2 pr-3">約20〜30分</td><td className="py-2">約30分</td></tr>
+                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">車站</td><td className="py-2 pr-3">JR原宿站旁，入口到本殿約10分</td><td className="py-2 pr-3">東急桜新町站北口徒步2分</td><td className="py-2 pr-3">千代田線乃木坂站1號出口15m</td><td className="py-2">世田谷線松陰神社前站徒步3分</td></tr>
+                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">氣氛</td><td className="py-2 pr-3">70萬㎡的森林、大鳥居</td><td className="py-2 pr-3">住宅街裡的小神社，安靜好拍</td><td className="py-2 pr-3">赤坂的都心神社，傍晚打燈</td><td className="py-2">商店街盡頭的大樹與社殿，很安靜</td></tr>
+                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">御朱印</td><td className="py-2 pr-3">寫「皇紀」紀年</td><td className="py-2 pr-3">每月換圖案（月替御朱印）</td><td className="py-2 pr-3">11月拿到的有馬、銀杏、楓葉</td><td className="py-2">大大的墨書「松陰神社」</td></tr>
+                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">看點</td><td className="py-2 pr-3">台灣檜木大鳥居・酒樽牆</td><td className="py-2 pr-3">櫻花形おみくじ結び所・火渡り神事</td><td className="py-2 pr-3">赤坂王子稲荷的紅鳥居・旧乃木邸</td><td className="py-2">吉田松陰墓所・松下村塾模築・合格御守</td></tr>
+                <tr><td className="py-2 pr-3 font-bold whitespace-nowrap">停留</td><td className="py-2 pr-3">約1小時</td><td className="py-2 pr-3">約20〜30分</td><td className="py-2 pr-3">約30分</td><td className="py-2">約30〜40分</td></tr>
               </tbody>
             </table>
           </div>
         </section>
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">關東神社推薦（好去處推介）・3選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">關東神社推薦（好去處推介）・4選</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           {/* 1列に並べると小さくなるので、3枚＋残りの2段に分ける */}
@@ -510,6 +530,99 @@ export default function MeijiJinguPage() {
           </div>
         </section>
 
+        {/* 松陰神社 */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
+          <div className="flex flex-col gap-[2px]">
+            {[shoinPhotos.slice(0, 3), shoinPhotos.slice(3)].map((row, r) => (
+              <div key={r} className="photo-strip">
+                {row.map((photo) => (
+                  <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                    <Image src={photo.src} alt={photo.alt} fill sizes={row.length === 2 ? "50vw" : "33vw"} className="object-cover" />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-green-500 text-white flex items-center justify-center text-sm font-black shrink-0">4</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">松陰神社</h3>
+                <span className="text-xs text-stone-400">しょういんじんじゃ／Shoin Jinja・世田谷若林</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              供奉<strong>吉田松陰（吉田寅次郎）</strong>——幕末長州的思想家，在故鄉萩開設私塾「<strong>松下村塾</strong>」，教出了<strong>高杉晉作、伊藤博文</strong>等推動明治維新的人物📚 安政6年（1859）他在安政之大獄中30歲去世，4年後門生們把他<strong>改葬到世田谷若林</strong>，明治15年（1882）11月21日，門生們在墓旁建社祭祀，就是現在的松陰神社。
+            </p>
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              現在的社殿是昭和2〜3年（1927〜28）造的。境內有<strong>吉田松陰與烈士們的墓所</strong>、伊藤博文與山縣有朋等人奉獻的<strong>32座石燈籠</strong>，還有仿造萩市松陰神社的<strong>松下村塾（模築）</strong>。因為是「教育之神」，<strong>合格祈願御守</strong>很受考生歡迎。
+            </p>
+
+            <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-green-700 mb-1">✨ 這次實際看到的（實訪・11月）</p>
+              <ul className="text-sm text-stone-600 leading-relaxed space-y-1.5">
+                <li>⛩️ <strong>拜殿</strong>：綠色銅瓦的大屋頂，木門上有金色裝飾，旁邊的大樹把影子投在屋頂上</li>
+                <li>🐴 <strong>午年大繪馬</strong>：入口附近的大繪馬畫著<strong>白馬和梅花</strong>，寫著「開運招福」，晴天拍起來很鮮豔</li>
+                <li>💧 <strong>手水舎</strong>：石造水盤上刻著「<strong>洗心</strong>」兩個字，參拜前先在這裡洗手</li>
+                <li>🍁 <strong>深色木造社殿</strong>：往上翹的屋頂配上轉紅的樹葉，11月中來剛好是秋天的顏色</li>
+                <li>📿 <strong>御朱印</strong>：中間是大大的墨書「松陰神社」，蓋著紅色神社印，我們拿到的日期是令和八年十一月十六日</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🆓 免費參拜", "🚃 站前徒步3分", "📚 吉田松陰", "🏠 松下村塾模築", "🎓 合格祈願"].map((t) => (
+                <span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區若林4-35-1</p>
+              <p className="text-xs text-stone-600 ib ib-train">東急世田谷線「松陰神社前」站 沿松陰神社通商店街往北 徒步約3分（澀谷搭田園都市線到三軒茶屋，轉世田谷線3站）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">開門 7:00〜17:00／御守授與所 9:00〜17:00（社務所休息日除外）</p>
+              <p className="text-xs text-stone-600 ib ib-yen">參拜免費（合格祈願御守・勉學祈願御守1,000日圓，松陰神社御守500日圓起）</p>
+              <p className="text-xs text-stone-600">🏠 松下村塾（模築）：只有週六日・國定假日9:00〜16:00打開雨戶，可以看到裡面（風雨時不開）</p>
+              <p className="text-xs text-stone-600">⏱️ 建議預留約30〜40分（參拜＋墓所＋松下村塾＋御朱印）</p>
+              <p className="text-xs text-stone-600">🚗 有付費停車場20台（7:00〜17:00）</p>
+              <p className="text-xs text-stone-600">☎️ 03-3421-4834</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">想看<strong>松下村塾</strong>裡面的話，記得排在<strong>週末或假日</strong>。世田谷線是只有2節車廂的路面電車，車站到神社的<strong>松陰神社通商店街</strong>有咖啡廳和麵包店，可以邊走邊逛。秋天例大祭期間（2026年是10/27〜11/3）會有限定御朱印，詳細請看官方網站公告。</p>
+            </div>
+
+            <div className="flex flex-wrap gap-x-4 gap-y-2">
+              <a
+                href="https://www.shoinjinja.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🔗 官方網站
+              </a>
+              <a
+                href="https://www.instagram.com/shoinjinja_official/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                📷 Instagram
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=松陰神社+世田谷区若林4-35-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🗺️ Google 地圖
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">關東神社參拜小建議</h2>
@@ -521,6 +634,7 @@ export default function MeijiJinguPage() {
             <li>✅ 參拜完往旁邊走就是<strong>代代木公園</strong>，往南是表參道和澀谷，可以排成同一天的行程</li>
             <li>✅ 下午從澀谷搭<strong>田園都市線約10分</strong>到桜新町，加碼桜神宮的<strong>月替御朱印</strong>🌸</li>
             <li>✅ 從明治神宮前站搭<strong>千代田線2站</strong>就是乃木坂，傍晚到乃木神社看<strong>紅鳥居打燈</strong>🐴（17點關門）</li>
+            <li>✅ 想去松陰神社的話，在三軒茶屋轉<strong>世田谷線</strong>（路面電車）；<strong>週末去</strong>才看得到松下村塾裡面📚</li>
           </ul>
         </section>
 
@@ -530,6 +644,7 @@ export default function MeijiJinguPage() {
             一百年前種下的10萬棵樹、台灣來的檜木鳥居、寫著皇紀的御朱印✨<br />
             再加上住宅街裡綁成櫻花的おみくじ，和每個月都想回來拿的御朱印🌸<br />
             還有乃木坂站旁、馬年裡到處都是馬的乃木神社🐴<br />
+            和搭路面電車去、吉田松陰長眠的松陰神社📚<br />
             東京的神社，大的小的各有味道。
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
