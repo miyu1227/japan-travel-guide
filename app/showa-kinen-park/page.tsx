@@ -75,6 +75,7 @@ const photos = [
 ];
 
 const relatedLinks = [
+  { href: "/showa-kinen-koyo", label: "🍁 昭和紀念公園紅葉2026｜銀杏並木點燈・最佳時期", desc: "秋の夜散歩10/29〜11/29・點燈時間與票價" },
   { href: "/koyo", label: "🍁 東京紅葉2026｜神宮外苑銀杏並木時期與交通", desc: "金黃銀杏大道・東京秋天必去景點" },
   { href: "/spot", label: "🌿 東京野餐推薦｜新宿御苑＆代代木公園", desc: "悠閒散步的人氣公園完全指南" },
   { href: "/ueno-zoo", label: "🐼 上野動物園推薦｜東京必去親子景點", desc: "日本最古老的動物園，門票¥600就能逛一整天" },
@@ -202,7 +203,7 @@ export default function ShowaKinenParkPage() {
               <p className="text-xs text-stone-600 ib ib-train">JR中央線「立川」駅 徒歩約10分／JR青梅線「西立川」駅 徒歩約2分</p>
               <p className="text-xs text-stone-600 ib ib-clock">9:30〜17:00（季節變動・冬季〜16:30）</p>
               <p className="text-xs text-stone-600 ib ib-yen">大人 ¥450／中學生以下 免費／65歲以上 ¥210</p>
-              <p className="text-xs text-stone-600">🚲 自行車租借 大人3小時 ¥520</p>
+              <p className="text-xs text-stone-600">🚲 自行車租借 大人3小時 ¥600</p>
               <p className="text-xs text-stone-600">🅿️ 停車場有（普通車 ¥900/日）</p>
             </div>
 
@@ -272,7 +273,7 @@ export default function ShowaKinenParkPage() {
           </div>
         </section>
 
-        <RelatedArticles slug="showa-kinen-park" exclude={["/koyo", "/spot", "/ueno-zoo"]} />
+        <RelatedArticles slug="showa-kinen-park" exclude={["/showa-kinen-koyo", "/koyo", "/spot", "/ueno-zoo"]} />
 
       </article>
 

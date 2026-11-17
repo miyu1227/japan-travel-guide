@@ -197,7 +197,7 @@ export const HUBS: Hub[] = [
       {
         heading: "神社・季節限定・文化體驗",
         note: "花期與展期有時間限制，出發前先確認。",
-        slugs: ["meiji-jingu", "ajisai", "koyo", "museum", "artbar-tokyo"],
+        slugs: ["meiji-jingu", "ajisai", "koyo", "showa-kinen-koyo", "museum", "artbar-tokyo"],
       },
     ],
     relatedHubs: ["tokyo-cafe", "tokyo-day-trip"],
