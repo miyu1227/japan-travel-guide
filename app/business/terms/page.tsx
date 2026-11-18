@@ -100,6 +100,7 @@ const ARTICLES: Article[] = [
     items: [
       "掲載記事の公開後は、キャンセル・ご返金はできません。",
       "当方の責任により掲載記事を公開できなかった場合は、お支払いいただいた金額の全額をご返金します。",
+      "公開前に、次のいずれかにあたる場合、当方は契約を終了し、お支払いいただいた掲載料の全額をご返金することができます。この場合、ご返金をもって当方の責任は終了するものとします。（1）第5条の制作・掲載のルールに合わないご要望が続く場合　（2）その他、ご希望に沿った掲載が難しいと当方が判断した場合",
     ],
   },
   {
@@ -187,7 +188,7 @@ export default function TermsPage() {
 
         <div className="mt-10 rounded-2xl border border-biz-line bg-biz-sand p-5 text-sm leading-relaxed text-biz-muted">
           <p>2026年11月17日　制定</p>
-          <p>2026年11月18日　改定（第16条「個人情報の取り扱い」を追加）</p>
+          <p>2026年11月18日　改定（第10条3項「当方からの契約終了と全額返金」・第16条「個人情報の取り扱い」を追加）</p>
           <p className="mt-2">
             {CONTACT.operator}　〒{CONTACT.postalCode} {CONTACT.address}
             <br />
