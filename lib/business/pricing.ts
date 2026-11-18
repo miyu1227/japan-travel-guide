@@ -107,7 +107,7 @@ export const PRICING_NOTES: string[] = [
 ];
 
 /** 掲載規約の版。文言を変えたらここを更新し、Driveに前の版のPDF控えを残す（民法548条の4の周知も兼ねる）。 */
-export const TERMS_VERSION = "2026年11月17日版";
+export const TERMS_VERSION = "2026年11月18日版";
 export const TERMS_PATH = "/business/terms";
 
 /**

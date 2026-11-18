@@ -137,6 +137,14 @@ const ARTICLES: Article[] = [
     ],
   },
   {
+    title: "個人情報の取り扱い",
+    items: [
+      "当方は、申込フォームなどでいただいたご担当者のお名前・メールアドレス・電話番号などの個人情報を、本サービスの提供（記事の制作・ご連絡・ご請求・掲載後の修正のご対応）のためにだけ使います。",
+      "法令にもとづく場合を除き、ご本人の同意なく第三者に提供しません。",
+      "ご自身の個人情報の開示・訂正・削除をご希望の場合は、下記のお問い合わせ先までご連絡ください。",
+    ],
+  },
+  {
     title: "準拠法と裁判所",
     items: [
       "本規約は日本法に従って解釈されます。本サービスに関して争いが生じた場合は、東京地方裁判所を第一審の専属的合意管轄裁判所とします。",
@@ -178,7 +186,8 @@ export default function TermsPage() {
         </ol>
 
         <div className="mt-10 rounded-2xl border border-biz-line bg-biz-sand p-5 text-sm leading-relaxed text-biz-muted">
-          <p>{TERMS_VERSION}　制定</p>
+          <p>2026年11月17日　制定</p>
+          <p>2026年11月18日　改定（第16条「個人情報の取り扱い」を追加）</p>
           <p className="mt-2">
             {CONTACT.operator}　〒{CONTACT.postalCode} {CONTACT.address}
             <br />
