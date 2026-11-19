@@ -32,6 +32,19 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "sangenjaya-gourmet",
+    category: "ramen",
+    name: "萬豚記 三軒茶屋｜營業到凌晨4點的中華料理🥟",
+    shortLabel: "萬豚記三軒茶屋",
+    desc: "週二〜週日開到凌晨4點・全年無休。招牌豬五花青菜炒飯、50g手工大餃子，可刷卡・QR支付",
+    tag: "東京",
+    emoji: "🥟",
+    image: "/sangenjaya-gourmet/wanzhuji-1.jpg",
+    areas: ["東京"],
+    published: "2026-11-19",
+    updated: "2026-11-19",
+  },
+  {
     slug: "torikizoku",
     category: "ramen",
     name: "鳥貴族菜單怎麼點？全品¥410的日本燒鳥居酒屋🍢",
