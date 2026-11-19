@@ -32,6 +32,19 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "torikizoku",
+    category: "ramen",
+    name: "鳥貴族菜單怎麼點？全品¥410的日本燒鳥居酒屋🍢",
+    shortLabel: "鳥貴族燒鳥",
+    desc: "全品均一¥410含稅、烤雞肉串一份2串。貴族燒・山藥泥鐵板燒等必點、中文菜單與點餐順序",
+    tag: "日本",
+    emoji: "🍢",
+    image: "/torikizoku/torikizoku-1.jpg",
+    areas: ["東京", "大阪"],
+    published: "2026-11-19",
+    updated: "2026-11-19",
+  },
+  {
     slug: "akasaka-chungsol",
     category: "ramen",
     name: "青松 赤坂｜24小時營業的韓國料理，小菜吃到飽🇰🇷",

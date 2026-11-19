@@ -117,9 +117,9 @@ export const HUBS: Hub[] = [
     ],
     sections: [
       {
-        heading: "拉麵・燒肉（東京的主戰場）",
-        note: "先決定要濃厚系還是清爽系，再決定去哪一區。",
-        slugs: ["ramen", "tokyo-yakiniku", "shibuya-yakiniku"],
+        heading: "拉麵・燒肉・燒鳥（東京的主戰場）",
+        note: "先決定要濃厚系還是清爽系，再決定去哪一區。想輕鬆喝一杯就選燒鳥居酒屋。",
+        slugs: ["ramen", "tokyo-yakiniku", "shibuya-yakiniku", "torikizoku"],
       },
       {
         heading: "街區美食・異國料理",
