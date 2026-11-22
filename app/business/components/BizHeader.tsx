@@ -25,7 +25,8 @@ export default function BizHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-biz-line bg-white/95 backdrop-blur-sm">
-      <div className="mx-auto flex h-16 w-full max-w-5xl items-center gap-3 px-4 sm:px-6">
+      {/* ナビ6項目＋旅行者向けリンク＋CTAが1行に収まるよう、ヘッダーだけ本文より少し広くとる */}
+      <div className="mx-auto flex h-16 w-full max-w-6xl items-center gap-3 px-4 sm:px-6">
         {/* ロゴ */}
         {/* ブランド名は折り返しも省略もさせない。
             ナビ側に十分な余白があるので shrink-0 で固定する。 */}
@@ -50,13 +51,13 @@ export default function BizHeader() {
           {/* PCナビ */}
           <nav aria-label="メインメニュー" className="hidden lg:block">
             {/* TOPはロゴが担うのでPCナビからは外す（横幅がロゴを圧迫するため） */}
-            <ul className="flex items-center gap-1">
+            <ul className="flex items-center">
               {NAV.filter((item) => item.href !== "/business").map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
                     aria-current={isActive(item.href) ? "page" : undefined}
-                    className={`rounded-md px-3 py-2 text-sm font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-blue ${
+                    className={`rounded-md px-2 py-2 text-sm font-bold whitespace-nowrap transition-colors xl:px-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-blue ${
                       isActive(item.href)
                         ? "text-biz-blue"
                         : "text-biz-ink hover:text-biz-blue"
@@ -75,10 +76,13 @@ export default function BizHeader() {
             href={PARENT_SITE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden items-center gap-1 rounded-md px-3 py-2 text-sm font-bold text-biz-muted transition-colors hover:text-biz-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-blue lg:inline-flex"
+            aria-label="旅行者向けサイト（新しいタブで開く）"
+            title="旅行者向けサイト"
+            className="hidden shrink-0 items-center gap-1 rounded-md px-2 py-2 text-sm font-bold whitespace-nowrap text-biz-muted transition-colors hover:text-biz-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-biz-blue lg:inline-flex xl:px-3"
           >
             <span aria-hidden="true">🌏</span>
-            旅行者向けサイト
+            {/* 幅が足りない lg 帯ではアイコンだけにして文字の折り返しを防ぐ */}
+            <span aria-hidden="true" className="hidden xl:inline">旅行者向けサイト</span>
             <span aria-hidden="true">↗</span>
           </a>
 
