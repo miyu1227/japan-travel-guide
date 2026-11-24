@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/torikizoku";
 const OG_IMAGE = "/torikizoku/torikizoku-1.jpg";
 
@@ -316,6 +317,7 @@ export default function TorikizokuPage() {
           </div>
         </div>
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

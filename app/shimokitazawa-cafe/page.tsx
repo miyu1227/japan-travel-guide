@@ -9,6 +9,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/shimokitazawa-cafe";
 const OG_IMAGE = "/shimokitazawa-cafe/vegan-1.jpg";
 
@@ -480,6 +481,7 @@ export default function ShimokitazawaCafePage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

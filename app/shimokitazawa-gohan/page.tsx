@@ -9,6 +9,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/shimokitazawa-gohan";
 const OG_IMAGE = "/shimokitazawa-gohan/vegebase-1.jpg";
 
@@ -418,6 +419,7 @@ export default function ShimokitazawaGohanPage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

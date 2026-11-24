@@ -7,6 +7,7 @@ import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/koyo";
 const OG_IMAGE = "/koyo/gaien-1.jpg";
 
@@ -391,6 +392,7 @@ export default function KoyoPage() {
           </div>
         </div>
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

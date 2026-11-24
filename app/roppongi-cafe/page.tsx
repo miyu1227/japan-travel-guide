@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/roppongi-cafe";
 const OG_IMAGE = "/roppongi-cafe/verve-1.jpg";
 
@@ -322,6 +323,7 @@ export default function RoppongiCafePage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

@@ -17,6 +17,12 @@ export const MAP_LISTS = {
     count: 27,
     areas: "大阪・神戶・京都・白濱・彥根",
   },
+  tokyo: {
+    url: "https://maps.app.goo.gl/So1mJaXL7opfiqwi8",
+    title: "東京美食・咖啡・景點地圖清單",
+    count: 76,
+    areas: "澀谷・下北澤・中目黑・銀座・六本木等",
+  },
 } satisfies Record<string, MapList>;
 
 export type MapListId = keyof typeof MAP_LISTS;

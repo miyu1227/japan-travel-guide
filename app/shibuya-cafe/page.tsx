@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/shibuya-cafe";
 const OG_IMAGE = "/shibuya-cafe/recoco-1.jpg";
 
@@ -459,6 +460,7 @@ export default function ShibuyaCafePage() {
           </div>
         </div>
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

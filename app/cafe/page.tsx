@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/cafe";
 const OG_IMAGE = "/cafe/gelato-1.jpg";
 
@@ -316,6 +317,7 @@ export default function JiyugaokaCafePage() {
 
         <FaqSection items={faqs} />
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

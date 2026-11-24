@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/skytree";
 const OG_IMAGE = "/skytree/cover.png";
 
@@ -478,6 +479,7 @@ export default function SkytreePage() {
           </p>
         </section>
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

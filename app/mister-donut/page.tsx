@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/mister-donut";
 const OG_IMAGE = "/mister-donut/motchurin-1.jpg";
 
@@ -384,6 +385,7 @@ export default function MisterDonutPage() {
           </div>
         </div>
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

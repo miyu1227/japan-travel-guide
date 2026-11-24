@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/meiji-jingu";
 const OG_IMAGE = "/meiji-jingu/meiji-1.jpg";
 
@@ -658,6 +659,7 @@ export default function MeijiJinguPage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

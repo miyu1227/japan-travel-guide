@@ -9,6 +9,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-yakiniku";
 const OG_IMAGE = "/tokyo-yakiniku/cover.jpg";
 
@@ -248,6 +249,7 @@ export default function TokyoYakinikuPage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

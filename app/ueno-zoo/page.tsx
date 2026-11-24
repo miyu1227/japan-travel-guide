@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/ueno-zoo";
 const OG_IMAGE = "/ueno-zoo/zoo-1.jpg";
 
@@ -399,6 +400,7 @@ export default function UenoZooPage() {
           </div>
         </div>
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

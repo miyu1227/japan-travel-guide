@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/kyu-furukawa-garden";
 const OG_IMAGE = "/kyu-furukawa-garden/furukawa-1.jpg";
 
@@ -281,6 +282,7 @@ export default function KyuFurukawaGardenPage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

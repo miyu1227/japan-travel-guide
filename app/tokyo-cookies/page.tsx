@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-cookies";
 const OG_IMAGE = "/tokyo-cookies/kayanuma-1.jpg";
 
@@ -281,6 +282,7 @@ export default function TokyoCookiesPage() {
           </div>
         </div>
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

@@ -8,6 +8,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/artbar-tokyo";
 const OG_IMAGE = "/artbar-tokyo/artbar-1.jpg";
 
@@ -234,6 +235,7 @@ export default function ArtbarTokyoPage() {
 
         <FaqSection items={faqs} />
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

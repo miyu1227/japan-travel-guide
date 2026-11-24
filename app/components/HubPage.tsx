@@ -127,6 +127,7 @@ export default function HubPage({ slug }: { slug: string }) {
         <PrepBannerCompact />
 
         {["kansai", "osaka", "kobe"].includes(slug) && <MapListCard list="kansai" />}
+        {["tokyo-cafe", "tokyo-gourmet", "tokyo-spot"].includes(slug) && <MapListCard list="tokyo" />}
 
         <section className="mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">🤔 該怎麼挑？</h2>

@@ -9,6 +9,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/museum";
 const OG_IMAGE = "/museum/nact-1.jpg";
 
@@ -326,6 +327,7 @@ export default function MuseumPage() {
 
         <FaqSection items={faqs} />
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

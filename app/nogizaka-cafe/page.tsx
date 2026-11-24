@@ -7,6 +7,7 @@ import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/nogizaka-cafe";
 const OG_IMAGE = "/nogizaka-cafe/west-1.jpg";
 
@@ -317,6 +318,7 @@ export default function NogizakaCafePage() {
           </div>
         </div>
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

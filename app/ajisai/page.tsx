@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/ajisai";
 const OG_IMAGE = "/ajisai/cover.jpg";
 
@@ -292,6 +293,7 @@ export default function AjisaiPage() {
 
         <FaqSection items={faqs} />
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

@@ -9,6 +9,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/shibuya-yakiniku";
 const OG_IMAGE = "/shibuya-yakiniku/chiba-1.jpg";
 
@@ -270,6 +271,7 @@ export default function ShibuyaYakinikuPage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/bolt-uehara";
 const OG_IMAGE = "/bolt-uehara/bolt-1.jpg";
 
@@ -274,6 +275,7 @@ export default function BoltUeharaPage() {
           </div>
         </div>
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

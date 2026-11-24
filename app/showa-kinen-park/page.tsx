@@ -9,6 +9,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/showa-kinen-park";
 const OG_IMAGE = "/showa-kinen-park/park-1.jpg";
 
@@ -255,6 +256,7 @@ export default function ShowaKinenParkPage() {
 
         <FaqSection items={faqs} />
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 

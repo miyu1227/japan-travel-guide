@@ -7,6 +7,7 @@ import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/ramen";
 const OG_IMAGE = "/ramen/washo-1.jpg";
 
@@ -478,6 +479,7 @@ export default function RamenArticle() {
           </div>
         </div>
 
+        <MapListCard list="tokyo" />
         <AuthorCard />
         <PrepBanner />
 
