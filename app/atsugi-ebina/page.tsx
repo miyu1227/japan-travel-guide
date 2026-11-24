@@ -9,6 +9,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/atsugi-ebina";
 const OG_IMAGE = "/atsugi-ebina/atsugicoffee-1.jpg";
 
@@ -447,6 +448,7 @@ export default function AtsugiEbinaPage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="daytrip" />
         <AuthorCard />
         <PrepBanner />
 

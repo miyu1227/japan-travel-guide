@@ -23,6 +23,12 @@ export const MAP_LISTS = {
     count: 76,
     areas: "澀谷・下北澤・中目黑・銀座・六本木等",
   },
+  daytrip: {
+    url: "https://maps.app.goo.gl/ZtWwQ4DWdg5ADgpy6",
+    title: "東京近郊一日遊地圖清單",
+    count: 30,
+    areas: "箱根・江之島鎌倉・橫濱・湘南・宇都宮・山梨",
+  },
 } satisfies Record<string, MapList>;
 
 export type MapListId = keyof typeof MAP_LISTS;

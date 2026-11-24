@@ -9,6 +9,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/enoshima-kamakura";
 const OG_IMAGE = "/enoshima-kamakura/enoshima-1.jpg";
 
@@ -569,6 +570,7 @@ export default function EnoshimaKamakuraPage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="daytrip" />
         <AuthorCard />
         <PrepBanner />
 

@@ -8,6 +8,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const KLOOK_KOUSHIEN =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339963&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F491613-meitei-no-yado-hotel-koushien%2F";
 
@@ -654,6 +655,7 @@ export default function KatsunumaPage() {
 
         <FaqSection items={faqs} />
 
+        <MapListCard list="daytrip" />
         <AuthorCard />
         <PrepBanner />
 

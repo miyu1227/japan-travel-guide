@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/isehara-gelato";
 const OG_IMAGE = "/isehara-gelato/meguri-1.jpg";
 
@@ -301,6 +302,7 @@ export default function IseharaGelatoPage() {
           </div>
         </div>
 
+        <MapListCard list="daytrip" />
         <AuthorCard />
         <PrepBanner />
 

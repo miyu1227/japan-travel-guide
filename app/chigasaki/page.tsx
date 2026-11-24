@@ -8,6 +8,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/chigasaki";
 const OG_IMAGE = "/chigasaki/cover.jpg";
 
@@ -331,6 +332,7 @@ export default function ChigasakiPage() {
 
         <FaqSection items={faqs} />
 
+        <MapListCard list="daytrip" />
         <AuthorCard />
         <PrepBanner />
 

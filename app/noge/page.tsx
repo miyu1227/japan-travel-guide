@@ -9,6 +9,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/noge";
 const OG_IMAGE = "/noge/cover.jpg";
 
@@ -345,6 +346,7 @@ export default function NogePage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="daytrip" />
         <AuthorCard />
         <PrepBanner />
 
