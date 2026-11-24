@@ -13,9 +13,9 @@ const PAGE_URL = "https://www.japantrippicks.com/meiji-jingu";
 const OG_IMAGE = "/meiji-jingu/meiji-1.jpg";
 
 export const metadata: Metadata = {
-  title: "明治神宮・桜神宮・乃木神社・松陰神社｜關東神社4選✅實訪",
+  title: "明治神宮・桜神宮・乃木神社等｜東京神社6選 御朱印✅實訪",
   description:
-    "原宿站旁的明治神宮（台灣檜木大鳥居）、桜新町的桜神宮（月替御朱印）、乃木坂站旁的乃木神社，加上松陰神社前站徒步3分的松陰神社，都免費參拜。",
+    "原宿的明治神宮（台灣檜木大鳥居）、桜神宮的月替御朱印、乃木神社、松陰神社，加上澀谷站徒步5分的金王八幡宮與結緣的澀谷氷川神社，都免費參拜。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "明治神宮・桜神宮・乃木神社・松陰神社｜關東神社特集 御朱印・台灣檜木大鳥居",
-    description: "原宿的森林神社明治神宮、世田谷桜新町的「世田谷のお伊勢さま」桜神宮、赤坂乃木坂站旁的乃木神社，加上供奉吉田松陰的松陰神社。免費參拜，御朱印與交通一次整理。",
+    title: "明治神宮・桜神宮・乃木神社・松陰神社・金王八幡宮・澀谷氷川神社｜東京神社6選 御朱印",
+    description: "原宿的森林神社明治神宮、世田谷桜新町的桜神宮、赤坂的乃木神社、供奉吉田松陰的松陰神社，加上「澀谷」地名由來的金王八幡宮與澀谷最古的結緣神社澀谷氷川神社。免費參拜，御朱印與交通一次整理。",
     url: PAGE_URL,
     type: "article",
     locale: "zh_TW",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "明治神宮・桜神宮・乃木神社・松陰神社｜關東神社特集",
-    description: "原宿的森林神社＋桜新町的月替御朱印＋乃木坂的紅鳥居＋世田谷的松陰神社⛩️",
+    title: "明治神宮・桜神宮・乃木神社等｜東京神社6選",
+    description: "原宿的森林神社＋桜新町的月替御朱印＋乃木坂的紅鳥居＋松陰神社＋澀谷的金王八幡宮・澀谷氷川神社⛩️",
     images: [OG_IMAGE],
   },
 };
@@ -48,14 +48,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "明治神宮・桜神宮・乃木神社・松陰神社｜關東神社特集 御朱印・台灣檜木大鳥居【實際造訪】",
-  description: "關東神社特集。明治神宮（免費參拜、每月開閉門時間、御朱印、酒樽牆、台灣檜木大鳥居）、世田谷桜新町的桜神宮（月替御朱印、櫻花形おみくじ結び所、火渡り神事）、赤坂的乃木神社（乃木坂站旁、赤坂王子稲荷的紅鳥居、馬的御朱印、旧乃木邸）與世田谷若林的松陰神社（吉田松陰的墓所、松下村塾模築、合格祈願御守）。",
+  headline: "明治神宮・桜神宮・乃木神社・松陰神社・金王八幡宮・澀谷氷川神社｜東京神社6選 御朱印・台灣檜木大鳥居【實際造訪】",
+  description: "關東神社特集。明治神宮（免費參拜、每月開閉門時間、御朱印、酒樽牆、台灣檜木大鳥居）、世田谷桜新町的桜神宮（月替御朱印、櫻花形おみくじ結び所、火渡り神事）、赤坂的乃木神社（乃木坂站旁、赤坂王子稲荷的紅鳥居、馬的御朱印、旧乃木邸）、世田谷若林的松陰神社（吉田松陰的墓所、松下村塾模築、合格祈願御守），以及澀谷的金王八幡宮（「澀谷」地名由來、春日局奉納的社殿、金王桜）與澀谷氷川神社（澀谷最古、結緣、愛心繪馬、金王相撲的相撲場跡）。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-10-16T00:00:00+09:00",
-  dateModified: "2026-11-17T00:00:00+09:00",
+  dateModified: "2026-11-24T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -64,7 +64,7 @@ const breadcrumbJsonLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "首頁", item: "https://www.japantrippicks.com" },
-    { "@type": "ListItem", position: 2, name: "關東神社特集｜明治神宮・桜神宮・乃木神社・松陰神社", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "東京神社6選｜明治神宮・桜神宮・乃木神社・松陰神社・金王八幡宮・澀谷氷川神社", item: PAGE_URL },
   ],
 };
 
@@ -101,6 +101,23 @@ const shoinPhotos = [
   { src: "/meiji-jingu/shoin-5.jpg", alt: "松陰神社的御朱印，墨書松陰神社，蓋著紅色神社印，日期是令和八年十一月十六日" },
 ];
 
+const konnoPhotos = [
+  { src: "/meiji-jingu/konno-1.jpg", alt: "金王八幡宮的社殿，朱紅色的柱子與金色雕刻，綠色銅瓦屋頂，後面是澀谷的高樓" },
+  { src: "/meiji-jingu/konno-2.jpg", alt: "金王八幡宮的石鳥居，後面是轉黃的銀杏與大樹" },
+  { src: "/meiji-jingu/konno-3.jpg", alt: "金王八幡宮境內的深色木造建築旁，一棵整片金黃的大銀杏，地上鋪滿落葉" },
+  { src: "/meiji-jingu/konno-4.jpg", alt: "金王八幡宮的石鳥居與石燈籠，後面是銀杏和木造社殿" },
+  { src: "/meiji-jingu/konno-5.jpg", alt: "金王八幡宮的御朱印，墨書奉拜 金王八幡宮、令和八年十一月，旁邊是寫著御鎮座九百三十四年的金王八幡宮參拜の栞" },
+];
+
+const hikawaPhotos = [
+  { src: "/meiji-jingu/hikawa-1.jpg", alt: "澀谷氷川神社入口的石鳥居，後面是樹林中往裡延伸的石板參道" },
+  { src: "/meiji-jingu/hikawa-2.jpg", alt: "澀谷氷川神社的拜殿，弧形的唐破風屋頂，前面掛著黃色與紫色的旗幟，後面是藍天" },
+  { src: "/meiji-jingu/hikawa-3.jpg", alt: "澀谷氷川神社的繪馬架，上面掛滿粉紅色的愛心形繪馬" },
+  { src: "/meiji-jingu/hikawa-4.jpg", alt: "澀谷氷川神社的手水舎，綠色銅瓦屋頂，周圍是大樹與轉紅的樹葉" },
+  { src: "/meiji-jingu/hikawa-5.jpg", alt: "澀谷氷川神社11月的御朱印，寫著奉拜 澀谷氷川神社、霜月，畫著楓葉、銀杏與貓頭鷹，旁邊是粉紅色的參拜說明紙" },
+  { src: "/meiji-jingu/hikawa-6.jpg", alt: "地上用金黃色銀杏落葉堆成的愛心" },
+];
+
 // 公式サイトの開閉門時間（毎月変わる）
 const gateTimes = [
   ["1月", "6:40", "16:20"], ["2月", "6:20", "16:50"], ["3月", "5:40", "17:20"],
@@ -112,7 +129,7 @@ const gateTimes = [
 const relatedLinks = [
   { href: "/yoyogi-park-cafe", label: "☕ 代代木公園咖啡廳2選｜VERVE COFFEE＆nephew", desc: "明治神宮隔壁就是代代木公園，參拜完喝一杯" },
   { href: "/futakotamagawa", label: "🍽️ 二子玉川美食5選｜芝麻街主題店・中華・甜點", desc: "桜新町搭田園都市線往郊外2站就到二子玉川（松陰神社也在同一條線上）" },
-  { href: "/enoshima-kamakura", label: "🌊 江之島・鎌倉一日遊｜江島神社・吻仔魚丼", desc: "關東神社再加一站：海邊的江島神社" },
+  { href: "/enoshima-kamakura", label: "🌊 江之島・鎌倉一日遊｜江島神社・吻仔魚丼", desc: "東京神社再加一站：海邊的江島神社" },
 ];
 
 const faqItems = [
@@ -165,8 +182,28 @@ const faqItems = [
     a: "東急世田谷線「松陰神社前」站下車，沿松陰神社通商店街往北走約3分。從澀谷搭田園都市線到三軒茶屋（2站），轉世田谷線3站就到。開門時間7:00〜17:00，御守授與所9:00〜17:00（社務所休息日除外）。地址：東京都世田谷區若林4-35-1。",
   },
   {
+    q: "金王八幡宮是什麼？怎麼唸？",
+    a: "澀谷站附近的「金王八幡宮（こんのうはちまんぐう／Konnoh Hachimangu）」，供奉應神天皇，寬治6年（1092）鎮座。在這裡建館的武士一族獲賜「澀谷」的姓，所以被說是「澀谷」地名的由來。現在的社殿是春日局與青山忠俊在江戶初期奉納的權現造，是澀谷區指定有形文化財；境內的「金王桜」是澀谷區指定天然記念物。",
+  },
+  {
+    q: "金王八幡宮怎麼去？",
+    a: "官方網站寫的是澀谷站C1出口徒步5分（澀谷警察署後面），地址：東京都澀谷區澀谷3-5-12。社務所電話受理9:00〜17:00（03-3407-1811）。",
+  },
+  {
+    q: "澀谷氷川神社是什麼？有什麼保佑？",
+    a: "東京澀谷區東的「澀谷氷川神社（しぶやひかわじんじゃ／Shibuya Hikawa Jinja）」，境內約4,000坪，被稱為澀谷最古的神社。供奉素盞鳴尊、稲田姫命等神明，以結緣（縁結び）聞名，繪馬是粉紅色的愛心形。境內還有江戶郊外三大相撲之一「金王相撲」的相撲場跡。",
+  },
+  {
+    q: "澀谷氷川神社每月15日有什麼？",
+    a: "取「いいご縁（好緣分）」的諧音，每月15日15:00舉行縁結び祈願祭（結緣祈願祭），不用預約也不用費用。這天還有限定的御朱印與御守，例如平常是銀色的縁結び御守，15日限定有粉紅色。",
+  },
+  {
+    q: "澀谷氷川神社怎麼去？",
+    a: "JR恵比寿站西口或澀谷站新南口徒步約15分；也可以從澀谷站搭都營巴士往「日赤医療センター」方向，在「國學院大學前」下車徒步1分。地址：東京都澀谷區東2-5-6，電話03-3407-7534。",
+  },
+  {
     q: "明治神宮和桜神宮可以排在同一天嗎？",
-    a: "可以。原宿站到澀谷站搭JR山手線1站，澀谷轉東急田園都市線到桜新町約10分。上午先去明治神宮（早上人少），下午再到桜神宮，回程往郊外再坐2站就是二子玉川，可以接著吃晚餐。松陰神社則是在田園都市線三軒茶屋站轉世田谷線，可以跟桜神宮排在一起。乃木神社是從明治神宮前站搭千代田線2站就到乃木坂站，也很好串。",
+    a: "可以。原宿站到澀谷站搭JR山手線1站，澀谷轉東急田園都市線到桜新町約10分。上午先去明治神宮（早上人少），下午再到桜神宮，回程往郊外再坐2站就是二子玉川，可以接著吃晚餐。松陰神社則是在田園都市線三軒茶屋站轉世田谷線，可以跟桜神宮排在一起。乃木神社是從明治神宮前站搭千代田線2站就到乃木坂站，也很好串。金王八幡宮和澀谷氷川神社都在澀谷站東側，兩間走路約15分，可以一起排。",
   },
 ];
 
@@ -181,7 +218,7 @@ export default function MeijiJinguPage() {
         <div className="max-w-2xl xl:max-w-[920px] mx-auto px-4 h-14 flex items-center gap-3">
           <Link href="/" className="text-stone-500 hover:text-stone-800 text-sm">← 返回</Link>
           <span className="text-stone-300">|</span>
-          <span className="text-sm font-semibold text-stone-700 truncate">關東神社特集｜明治神宮・桜神宮・乃木神社・松陰神社</span>
+          <span className="text-sm font-semibold text-stone-700 truncate">東京神社6選｜明治神宮・桜神宮・乃木神社・松陰神社・金王八幡宮・澀谷氷川神社</span>
         </div>
       </header>
 
@@ -190,15 +227,15 @@ export default function MeijiJinguPage() {
         {/* Badge */}
         <div className="mb-4 flex items-center gap-2 flex-wrap">
           <span className="bg-green-100 text-green-700 border border-green-300 text-xs font-semibold px-3 py-1 rounded-full">⛩️ 神社（景點・好去處）</span>
-          <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 東京・原宿／世田谷／赤坂</span>
+          <span className="bg-blue-50 text-blue-600 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">📍 東京・原宿／世田谷／赤坂／澀谷</span>
           <span className="bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-3 py-1 rounded-full">✅ 實際造訪</span>
         </div>
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          關東神社特集｜明治神宮・桜神宮・乃木神社・松陰神社<br />台灣檜木大鳥居・月替御朱印・紅鳥居・吉田松陰⛩️
+          東京神社6選｜明治神宮・桜神宮・乃木神社・松陰神社・金王八幡宮・澀谷氷川神社<br />台灣檜木大鳥居・月替御朱印・紅鳥居・吉田松陰・結緣⛩️
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-11-17</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-11-24</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -218,13 +255,16 @@ export default function MeijiJinguPage() {
           <p className="text-sm text-stone-600 leading-relaxed mt-2">
             第4間是世田谷若林的<strong>松陰神社（しょういんじんじゃ）</strong>📚 供奉幕末的思想家<strong>吉田松陰</strong>，境內就是他的<strong>墓所</strong>，還有仿造萩市的<strong>松下村塾</strong>。從<strong>松陰神社前站走3分鐘</strong>，搭可愛的路面電車「世田谷線」去，考生最愛的<strong>合格祈願御守</strong>也在這裡。
           </p>
+          <p className="text-sm text-stone-600 leading-relaxed mt-2">
+            第5、6間在<strong>澀谷站東側</strong>：被說是「澀谷」地名由來的<strong>金王八幡宮（こんのうはちまんぐう）</strong>🍂，和澀谷最古的結緣神社<strong>澀谷氷川神社（しぶやひかわじんじゃ）</strong>💗 兩間走路約15分，離開人潮一下子就安靜下來，11月還有<strong>整片金黃的銀杏</strong>。
+          </p>
         </section>
 
         <PrepBannerCompact />
 
         {/* 比較 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">4間神社怎麼選？</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">6間神社怎麼選？</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-xs text-stone-600">
               <thead>
@@ -245,10 +285,28 @@ export default function MeijiJinguPage() {
               </tbody>
             </table>
           </div>
+          <div className="overflow-x-auto mt-4">
+            <table className="w-full text-xs text-stone-600">
+              <thead>
+                <tr className="text-left text-stone-500 border-b border-stone-100">
+                  <th className="py-2 pr-3"></th>
+                  <th className="py-2 pr-3">金王八幡宮</th>
+                  <th className="py-2">澀谷氷川神社</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">車站</td><td className="py-2 pr-3">澀谷站C1出口徒步5分</td><td className="py-2">恵比寿站西口・澀谷站新南口徒步約15分</td></tr>
+                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">氣氛</td><td className="py-2 pr-3">澀谷鬧區後面的朱紅色社殿與大銀杏</td><td className="py-2">約4,000坪的樹林，參道很長很安靜</td></tr>
+                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">御朱印</td><td className="py-2 pr-3">墨書「金王八幡宮」＋參拜の栞</td><td className="py-2">每月換圖案，11月是楓葉＋銀杏＋貓頭鷹</td></tr>
+                <tr className="border-b border-stone-50"><td className="py-2 pr-3 font-bold whitespace-nowrap">看點</td><td className="py-2 pr-3">「澀谷」地名由來・春日局奉納的社殿・金王桜</td><td className="py-2">愛心繪馬・每月15日縁結び祈願祭・相撲場跡</td></tr>
+                <tr><td className="py-2 pr-3 font-bold whitespace-nowrap">停留</td><td className="py-2 pr-3">約20〜30分</td><td className="py-2">約30分</td></tr>
+              </tbody>
+            </table>
+          </div>
         </section>
 
         {/* Spot */}
-        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">關東神社推薦（好去處推介）・4選</h2>
+        <h2 className="text-lg font-black text-stone-800 mb-4 piyo-h piyo-jump">東京神社推薦（好去處推介）・6選</h2>
 
         <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
           {/* 1列に並べると小さくなるので、3枚＋残りの2段に分ける */}
@@ -624,9 +682,193 @@ export default function MeijiJinguPage() {
           </div>
         </section>
 
+
+        {/* 金王八幡宮 */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
+          <div className="flex flex-col gap-[2px]">
+            {[konnoPhotos.slice(0, 3), konnoPhotos.slice(3)].map((row, r) => (
+              <div key={r} className="photo-strip">
+                {row.map((photo) => (
+                  <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                    <Image src={photo.src} alt={photo.alt} fill sizes={row.length === 2 ? "50vw" : "33vw"} className="object-cover" />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-green-500 text-white flex items-center justify-center text-sm font-black shrink-0">5</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">金王八幡宮</h3>
+                <span className="text-xs text-stone-400">こんのうはちまんぐう／Konnoh Hachimangu・澀谷</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              從<strong>澀谷站C1出口走5分鐘</strong>，在澀谷警察署後面⛩️ 寬治6年（1092）鎮座，供奉<strong>應神天皇（八幡大神）</strong>。當年在這裡建館的武士一族，從天皇那裡獲賜「<strong>澀谷</strong>」這個姓，所以金王八幡宮被說是<strong>「澀谷」地名的由來</strong>。今年剛好是<strong>鎮座934年</strong>。
+            </p>
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              「金王」這個名字來自平安時代末期的武將<strong>澀谷金王丸</strong>。現在的<strong>社殿</strong>是德川家光確定成為三代將軍後，由乳母<strong>春日局</strong>與守役青山忠俊奉納的<strong>權現造</strong>，保留江戶初期的樣式，和朱紅色的神門（赤門）都是<strong>澀谷區指定有形文化財</strong>。境內的「<strong>金王桜</strong>」是一枝上同時開單瓣與八重花的長州緋桜，是<strong>澀谷區指定天然記念物</strong>🌸
+            </p>
+
+            <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-green-700 mb-1">✨ 這次實際看到的（實訪・11月）</p>
+              <ul className="text-sm text-stone-600 leading-relaxed space-y-1.5">
+                <li>🏯 <strong>朱紅色的社殿</strong>：紅柱子配金色雕刻和綠色銅瓦屋頂，後面就是澀谷的高樓，新舊同框很有澀谷的感覺</li>
+                <li>🍂 <strong>金黃的大銀杏</strong>：境內的大銀杏整棵轉黃，落葉鋪滿碎石地，11月下旬來剛好</li>
+                <li>⛩️ <strong>石鳥居與石燈籠</strong>：從鳥居往裡看，銀杏的黃色和深色木造建築疊在一起</li>
+                <li>📿 <strong>御朱印</strong>：墨書「金王八幡宮」配紅色神社印，還附一張寫著「<strong>御鎮座九百三十四年</strong>」的<strong>參拜の栞</strong>（參拜小冊）</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🆓 免費參拜", "🚃 澀谷站徒步5分", "📜 澀谷地名由來", "🏯 區指定文化財社殿", "🌸 金王桜"].map((t) => (
+                <span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區澀谷3-5-12</p>
+              <p className="text-xs text-stone-600 ib ib-train">各線「澀谷」站C1出口 徒步5分（澀谷警察署後面）</p>
+              <p className="text-xs text-stone-600 ib ib-clock">社務所電話受理 9:00〜17:00</p>
+              <p className="text-xs text-stone-600 ib ib-yen">參拜免費（御朱印・御守另付初穗料）</p>
+              <p className="text-xs text-stone-600">⏱️ 建議預留約20〜30分（參拜＋拍照＋御朱印）</p>
+              <p className="text-xs text-stone-600">📅 例祭 9月14日（週日下午有神輿連合渡御）／金王丸祭・金王桜まつり 3月最後一個週六</p>
+              <p className="text-xs text-stone-600">☎️ 03-3407-1811</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">澀谷站人很多，C1出口出來往澀谷警察署方向走就對了。想看<strong>金王桜</strong>的話排在<strong>春天</strong>（3月最後一個週六有金王桜まつり）。從這裡往南走約15分就是下一間<strong>澀谷氷川神社</strong>，兩間可以一起排。</p>
+            </div>
+
+            <div className="flex flex-wrap gap-x-4 gap-y-2">
+              <a
+                href="https://www.konno-hachimangu.jp/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🔗 官方網站
+              </a>
+              <a
+                href="https://www.instagram.com/konnouhachimangu.official/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                📷 Instagram
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=金王八幡宮+渋谷区渋谷3-5-12"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🗺️ Google 地圖
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* 渋谷氷川神社 */}
+        <section className="bg-white rounded-3xl border border-stone-100 shadow-sm overflow-hidden mb-8 card-split">
+          <div className="flex flex-col gap-[2px]">
+            {[hikawaPhotos.slice(0, 3), hikawaPhotos.slice(3)].map((row, r) => (
+              <div key={r} className="photo-strip">
+                {row.map((photo) => (
+                  <div key={photo.src} className="relative bg-stone-100" style={photoStyle(photo.src)}>
+                    <Image src={photo.src} alt={photo.alt} fill sizes={row.length === 2 ? "50vw" : "33vw"} className="object-cover" />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+
+          <div className="p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-green-500 text-white flex items-center justify-center text-sm font-black shrink-0">6</div>
+              <div>
+                <h3 className="text-base font-black text-stone-800">澀谷氷川神社</h3>
+                <span className="text-xs text-stone-400">しぶやひかわじんじゃ／Shibuya Hikawa Jinja・澀谷東</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              境內約<strong>4,000坪</strong>，被稱為<strong>澀谷最古的神社</strong>🌳 據慶長10年的緣起記載，日本武尊東征時在這裡勸請素盞鳴尊，是這間神社的開始。供奉<strong>素盞鳴尊・稲田姫命</strong>等神明——這對夫妻神被視為開啟結緣之道的神，所以這裡以<strong>結緣（縁結び）</strong>聞名💗
+            </p>
+            <p className="text-sm text-stone-600 leading-relaxed mb-3">
+              現在的社殿是昭和13年（1938）建的，躲過了戰火。境內還留著「<strong>江戶郊外三大相撲</strong>」之一<strong>金王相撲</strong>的相撲場跡，《江戶名所圖會》裡也有畫到。取「いいご縁（好緣分）」的諧音，<strong>每月15日15:00</strong>舉行<strong>縁結び祈願祭（結緣祈願祭）</strong>，不用預約、免費參加，這天還有限定的御朱印與御守。
+            </p>
+
+            <div className="bg-green-50 border border-green-100 rounded-xl px-4 py-3 mb-3">
+              <p className="text-xs font-bold text-green-700 mb-1">✨ 這次實際看到的（實訪・11月）</p>
+              <ul className="text-sm text-stone-600 leading-relaxed space-y-1.5">
+                <li>⛩️ <strong>樹林裡的參道</strong>：石鳥居後面是一條被大樹包圍的石板參道，走進去就聽不到馬路的聲音</li>
+                <li>💗 <strong>愛心繪馬</strong>：繪馬架上掛滿<strong>粉紅色的愛心形繪馬</strong>，是境內最好拍的地方</li>
+                <li>🏯 <strong>拜殿</strong>：弧形的唐破風屋頂，晴天配上藍天很漂亮</li>
+                <li>🍂 <strong>銀杏落葉的愛心</strong>：地上有人用金黃色的銀杏葉堆成愛心，很有結緣神社的感覺</li>
+                <li>📿 <strong>月替御朱印</strong>：11月（霜月）是<strong>楓葉＋銀杏＋貓頭鷹</strong>的秋天圖案，還附一張粉紅色、畫著蝴蝶結的參拜說明紙</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["🆓 免費參拜", "💗 結緣・愛心繪馬", "📿 月替御朱印", "📅 每月15日祈願祭", "🌳 澀谷最古"].map((t) => (
+                <span key={t} className="text-xs bg-green-50 text-green-700 border border-green-200 px-3 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+
+            <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
+              <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
+              <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區東2-5-6</p>
+              <p className="text-xs text-stone-600 ib ib-train">JR「恵比寿」站西口・「澀谷」站新南口 徒步約15分／澀谷站搭都營巴士（往日赤医療センター）「國學院大學前」下車 徒步1分</p>
+              <p className="text-xs text-stone-600 ib ib-yen">參拜免費（縁結び御守500日圓：平常銀色，15日限定粉紅色）</p>
+              <p className="text-xs text-stone-600">💗 縁結び祈願祭：每月15日15:00（免預約・免費）</p>
+              <p className="text-xs text-stone-600">⏱️ 建議預留約30分（參拜＋繪馬＋御朱印）</p>
+              <p className="text-xs text-stone-600">📅 例祭 9月16日</p>
+              <p className="text-xs text-stone-600">☎️ 03-3407-7534</p>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2 mb-3 flex items-start gap-2">
+              <span className="text-sm shrink-0">💡</span>
+              <p className="text-xs text-stone-600">想拿<strong>限定御朱印</strong>或粉紅色縁結び御守，排在<strong>每月15日</strong>。每個月的御朱印圖案會在官方Instagram公告，出發前先看一下。神社就在<strong>國學院大學</strong>旁邊，從恵比寿或澀谷走過來都是住宅區，路上很安靜。</p>
+            </div>
+
+            <div className="flex flex-wrap gap-x-4 gap-y-2">
+              <a
+                href="http://www.tokyo-jinjacho.or.jp/shibuya/3272"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🔗 東京都神社廳介紹頁
+              </a>
+              <a
+                href="https://www.instagram.com/shibuyahikawa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                📷 Instagram
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=渋谷氷川神社+渋谷区東2-5-6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2"
+              >
+                🗺️ Google 地圖
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* 旅遊小建議 */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
-          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">關東神社參拜小建議</h2>
+          <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">東京神社參拜小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
             <li>✅ <strong>早上去最安靜</strong>，開門時間很早（10月是5:40），竹下通的店開門前先來參拜剛好</li>
             <li>✅ 入口到本殿要走<strong>約10分鐘</strong>的碎石參道，穿好走的鞋👟</li>
@@ -636,6 +878,7 @@ export default function MeijiJinguPage() {
             <li>✅ 下午從澀谷搭<strong>田園都市線約10分</strong>到桜新町，加碼桜神宮的<strong>月替御朱印</strong>🌸</li>
             <li>✅ 從明治神宮前站搭<strong>千代田線2站</strong>就是乃木坂，傍晚到乃木神社看<strong>紅鳥居打燈</strong>🐴（17點關門）</li>
             <li>✅ 想去松陰神社的話，在三軒茶屋轉<strong>世田谷線</strong>（路面電車）；<strong>週末去</strong>才看得到松下村塾裡面📚</li>
+            <li>✅ 在澀谷逛街的空檔，<strong>金王八幡宮→澀谷氷川神社</strong>走路約15分；想要粉紅色縁結び御守就排在<strong>每月15日</strong>💗</li>
           </ul>
         </section>
 
@@ -646,6 +889,7 @@ export default function MeijiJinguPage() {
             再加上住宅街裡綁成櫻花的おみくじ，和每個月都想回來拿的御朱印🌸<br />
             還有乃木坂站旁、馬年裡到處都是馬的乃木神社🐴<br />
             和搭路面電車去、吉田松陰長眠的松陰神社📚<br />
+            最後是澀谷鬧區後面，金王八幡宮的大銀杏和澀谷氷川神社的愛心繪馬💗<br />
             東京的神社，大的小的各有味道。
           </p>
           <div className="flex items-start gap-3 bg-yellow-50 border border-yellow-200 rounded-2xl p-4">
