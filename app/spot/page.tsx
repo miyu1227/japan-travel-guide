@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/spot";
 const OG_IMAGE = "/spot/shinjuku-1.jpg";
 
@@ -221,6 +222,7 @@ export default function SpotPicnicPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都新宿区内藤町11</p>
+              <MapButton name="新宿御苑" address="東京都新宿区内藤町11" />
               <p className="text-xs text-stone-600 ib ib-train">地下鉄「新宿御苑前」駅 徒歩約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">9:00〜16:30（週一休園）</p>
               <p className="text-xs text-stone-600 ib ib-yen">入場料：大人¥500・高中生¥250・中學以下免費</p>
@@ -280,6 +282,7 @@ export default function SpotPicnicPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都渋谷区代々木神園町2-1</p>
+              <MapButton q="代々木公園" />
               <p className="text-xs text-stone-600 ib ib-train">JR「原宿」駅 徒歩約3分</p>
               <p className="text-xs text-stone-600 ib ib-clock">24小時開放</p>
               <p className="text-xs text-stone-600 ib ib-yen">入場免費</p>
@@ -334,6 +337,7 @@ export default function SpotPicnicPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都千代田区日比谷公園1</p>
+              <MapButton name="日比谷公園" address="東京都千代田区日比谷公園1" />
               <p className="text-xs text-stone-600 ib ib-train">地下鉄「日比谷」「霞ヶ関」「内幸町」駅 徒歩約2分</p>
               <p className="text-xs text-stone-600 ib ib-clock">24小時開放</p>
               <p className="text-xs text-stone-600 ib ib-yen">入場免費</p>

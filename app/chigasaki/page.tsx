@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/chigasaki";
 const OG_IMAGE = "/chigasaki/cover.jpg";
 
@@ -275,6 +276,7 @@ export default function ChigasakiPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">神奈川縣茅ヶ崎市東海岸南6-4-76（GERMER 1F）</p>
+              <MapButton name="tuckshop" address="神奈川縣茅ヶ崎市東海岸南6-4-76（GERMER 1F）" />
               <p className="text-xs text-stone-600 ib ib-train">JR「茅ヶ崎」駅 徒歩約23分／從ヘッドランドビーチ 徒歩約2分</p>
               <p className="text-xs text-stone-600 ib ib-clock">6:00〜19:00（不定休・營業日以官方IG為準）</p>
               <p className="text-xs text-stone-600 ib ib-yen">司康約¥380〜¥500、飲料約¥380〜（價格以店頭菜單為準）</p>

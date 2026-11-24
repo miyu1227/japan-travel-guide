@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/daikanyama-cafe";
 const OG_IMAGE = "/daikanyama-cafe/princi-1.jpg";
 
@@ -215,6 +216,7 @@ export default function DaikanyamaCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區猿樂町17-5 代官山T-SITE內</p>
+              <MapButton name="PRINCI 代官山T-SITE" address="東京都澀谷區猿樂町17-5 代官山T-SITE內" />
               <p className="text-xs text-stone-600 ib ib-train">東急東橫線「代官山」駅 徒歩約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">7:00〜20:00</p>
               <p className="text-xs text-stone-600 ib ib-yen">麵包 ¥300〜／套餐 ¥1,500〜</p>
@@ -271,6 +273,7 @@ export default function DaikanyamaCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區惠比壽西2-15-9 Cellaza代官山1F</p>
+              <MapButton name="DOLCE TACUBO 代官山" address="東京都澀谷區惠比壽西2-15-9 Cellaza代官山1F" />
               <p className="text-xs text-stone-600 ib ib-train">東急東橫線「代官山」駅 徒歩約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">11:00〜19:00（不定休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">費南雪 ¥350／泡芙 ¥550〜／布丁 ¥680〜</p>
@@ -334,6 +337,7 @@ export default function DaikanyamaCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區惠比壽西1-35-14（Charles-Henry隔壁）</p>
+              <MapButton name="Doré by Charles-Henry" address="東京都澀谷區惠比壽西1-35-14（Charles-Henry隔壁）" />
               <p className="text-xs text-stone-600 ib ib-train">東急東橫線「代官山」駅 徒歩約2分</p>
               <p className="text-xs text-stone-600 ib ib-clock">9:00〜19:00</p>
               <p className="text-xs text-stone-600 ib ib-yen">可頌類約¥400〜、Bostock ¥790、Croque Madame ¥1,230（價格以店頭為準）</p>
@@ -413,6 +417,7 @@ export default function DaikanyamaCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區惠比壽西1-33-18 コート代官山101</p>
+              <MapButton name="DUCT COFFEE LAB" address="東京都澀谷區惠比壽西1-33-18 コート代官山101" />
               <p className="text-xs text-stone-600 ib ib-train">東急東橫線「代官山」駅 徒步約5分（「中目黑」駅約8分／「惠比壽」駅約15分）</p>
               <p className="text-xs text-stone-600 ib ib-clock">10:00〜19:30（L.O. 19:00）・不定休</p>
               <p className="text-xs text-stone-600 ib ib-yen">飲品約 ¥400〜¥660／甜點約 ¥460〜¥500</p>

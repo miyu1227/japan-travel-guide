@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const KLOOK_ROKKO_NIGHT =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339868&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F88299-mtrokko-night-view-day-tour-kobe-osaka";
 
@@ -165,6 +166,7 @@ export default function RokkoArimaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市（登山口：阪急「御影」駅 徒歩約20分）</p>
+              <MapButton q="阪急御影駅" />
               <p className="text-xs text-stone-600 ib ib-train">阪急神戶線「御影」駅 / JR「住吉」駅</p>
               <p className="text-xs text-stone-600 ib ib-clock">全日（建議上午8〜9點出發）</p>
               <p className="text-xs text-stone-600 ib ib-yen">免費</p>
@@ -203,6 +205,7 @@ export default function RokkoArimaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">六甲山頂駅 ⇄ 有馬溫泉駅</p>
+              <MapButton q="六甲有馬ロープウェー 六甲山頂駅" />
               <p className="text-xs text-stone-600 ib ib-clock">9:30〜17:10（每20分一班・季節變動）</p>
               <p className="text-xs text-stone-600 ib ib-yen">單程 大人 ¥1,030／往返 ¥1,820</p>
               <p className="text-xs text-stone-600">🕒 所要時間：約12分</p>
@@ -235,6 +238,7 @@ export default function RokkoArimaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市北區有馬町1163</p>
+              <MapButton name="arima gelateria Stagione" address="兵庫縣神戶市北區有馬町1163" />
               <p className="text-xs text-stone-600 ib ib-train">神戶電鐵「有馬溫泉」駅 徒歩約7分</p>
               <p className="text-xs text-stone-600 ib ib-clock">10:00〜18:00（不定休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">單球 ¥400／雙球 ¥500</p>

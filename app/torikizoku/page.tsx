@@ -7,6 +7,7 @@ import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/torikizoku";
 const OG_IMAGE = "/torikizoku/torikizoku-1.jpg";
 
@@ -242,6 +243,7 @@ export default function TorikizokuPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">日本全國各地（東京・大阪等大城市車站周邊很多）</p>
+              <MapButton q="鳥貴族" nearby />
               <p className="text-xs text-stone-600 ib ib-train">最近的分店用官方「店舗檢索」查，多數在車站步行範圍內</p>
               <p className="text-xs text-stone-600 ib ib-clock">營業時間・公休日依店舖不同（官網各店頁面確認）</p>
               <p className="text-xs text-stone-600 ib ib-yen">全品均一¥410（含稅，2026年10月1日起）</p>

@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const KLOOK_TORETORE =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339829&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F153493-conan-themed-niche-wakayama-one-day-tour-takashi-station-toretore";
 
@@ -231,6 +232,7 @@ export default function ShirahamaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">和歌山縣西牟婁郡白浜町堅田2399</p>
+              <MapButton name="Adventure World（冒險大世界）" address="和歌山縣西牟婁郡白浜町堅田2399" />
               <p className="text-xs text-stone-600 ib ib-train">JR「白浜」駅 搭巴士約10分／南紀白浜IC 車程約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">10:00〜17:00（依季節變動・不定休，詳見官網）</p>
               <p className="text-xs text-stone-600 ib ib-yen">1日票 大人¥5,300／中人（12〜17歲）¥4,300／小人（4〜11歲）¥3,300</p>
@@ -297,6 +299,7 @@ export default function ShirahamaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">和歌山縣白浜町日置1875</p>
+              <MapButton name="In the Outdoor 白浜志原海岸" address="和歌山縣白浜町日置1875" />
               <p className="text-xs text-stone-600 ib ib-train">紀勢自動車道交流道 車程約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">Check-in 16:00／Check-out 10:00（電話受理 9:00〜19:00）</p>
               <p className="text-xs text-stone-600 ib ib-yen">依房型與方案而異（詳見官網預約）</p>
@@ -363,6 +366,7 @@ export default function ShirahamaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">和歌山縣西牟婁郡白浜町1279-3</p>
+              <MapButton name="Kagerou Café（かげろうカフェ）" address="和歌山縣西牟婁郡白浜町1279-3" />
               <p className="text-xs text-stone-600 ib ib-train">JR「白浜」駅 車程約10分／巴士「白浜桟橋」下車 徒歩約3分</p>
               <p className="text-xs text-stone-600 ib ib-clock">8:00〜18:00（Cafe &amp; Bar 18:00〜20:00・無休，臨時休業另計）</p>
               <p className="text-xs text-stone-600 ib ib-yen">生かげろう ¥120〜／午餐 ¥650〜¥1,200 左右</p>
@@ -439,6 +443,7 @@ export default function ShirahamaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">和歌山縣西牟婁郡白浜町堅田2521（とれとれパーク内）</p>
+              <MapButton name="とれとれ市場（Toretore Market）" address="和歌山縣西牟婁郡白浜町堅田2521（とれとれパーク内）" />
               <p className="text-xs text-stone-600 ib ib-train">JR「白浜」駅 車程約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">BBQ 平日11:00〜16:30／假日10:00〜17:00 左右最終入場</p>
               <p className="text-xs text-stone-600 ib ib-yen">BBQ入場 大人¥1,000／兒童¥700／幼兒¥300（含飲料吧・另購食材）</p>

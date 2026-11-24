@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const KLOOK_CLEMENT_INN =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339930&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F691887-jr-clement-inn-kochi%2F";
 
@@ -165,6 +166,7 @@ export default function KochiPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">高知縣吾川郡伊野町清水上分</p>
+              <MapButton name="にこ淵" address="高知縣吾川郡伊野町清水上分" />
               <p className="text-xs text-stone-600 ib ib-train">高知市中心開車約60分（建議自駕）</p>
               <p className="text-xs text-stone-600 ib ib-clock">全日（建議白天造訪，光線最美）</p>
               <p className="text-xs text-stone-600 ib ib-yen">免費</p>
@@ -204,6 +206,7 @@ export default function KochiPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">高知縣高知市中心（多店舗）／中土佐町黑潮工房（本店）</p>
+              <MapButton q="明神丸 ひろめ市場店" />
               <p className="text-xs text-stone-600 ib ib-train">各店不同（市中心店徒歩可達）</p>
               <p className="text-xs text-stone-600 ib ib-clock">11:00〜21:00（依店舖）</p>
               <p className="text-xs text-stone-600 ib ib-yen">體驗 ¥2,500〜（含一份鰹魚タタキ＆白飯）</p>
@@ -240,6 +243,7 @@ export default function KochiPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">高知縣高知市帶屋町2-3-1</p>
+              <MapButton name="ひろめ市場" address="高知縣高知市帶屋町2-3-1" />
               <p className="text-xs text-stone-600 ib ib-train">土佐電鐵「大橋通」駅 徒歩約2分／JR「高知」駅 徒歩約20分</p>
               <p className="text-xs text-stone-600 ib ib-clock">10:00〜23:00（週日 9:00〜・依店舖變動）</p>
               <p className="text-xs text-stone-600 ib ib-yen">預算 ¥2,000〜¥3,000</p>

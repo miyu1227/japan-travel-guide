@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/showa-kinen-park";
 const OG_IMAGE = "/showa-kinen-park/park-1.jpg";
 
@@ -200,6 +201,7 @@ export default function ShowaKinenParkPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都立川市綠町3173</p>
+              <MapButton q="国営昭和記念公園" />
               <p className="text-xs text-stone-600 ib ib-train">JR中央線「立川」駅 徒歩約10分／JR青梅線「西立川」駅 徒歩約2分</p>
               <p className="text-xs text-stone-600 ib ib-clock">9:30〜17:00（季節變動・冬季〜16:30）</p>
               <p className="text-xs text-stone-600 ib ib-yen">大人 ¥450／中學生以下 免費／65歲以上 ¥210</p>

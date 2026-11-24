@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/osaka-gourmet";
 const OG_IMAGE = "/osaka-gourmet/teppan-1.jpg";
 
@@ -178,6 +179,7 @@ export default function OsakaGourmetPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">大阪府大阪市福島區福島周邊</p>
+              <MapButton q="鉄板屋な。 福島" />
               <p className="text-xs text-stone-600 ib ib-train">JR大阪環狀線「福島」駅 徒歩約5分／JR東西線「新福島」駅 徒歩約3分</p>
               <p className="text-xs text-stone-600 ib ib-clock">17:00〜23:00（依日變動）</p>
               <p className="text-xs text-stone-600 ib ib-yen">套餐 ¥5,000〜／單點 ¥3,000〜</p>
@@ -234,6 +236,7 @@ export default function OsakaGourmetPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">大阪府大阪市北區梅田周邊</p>
+              <MapButton q="酒場ビリー 梅田" />
               <p className="text-xs text-stone-600 ib ib-train">JR・各線「大阪／梅田」駅 徒歩約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">17:00〜24:00（依日變動）</p>
               <p className="text-xs text-stone-600 ib ib-yen">串燒 ¥150〜¥300／預算 ¥3,000〜¥5,000</p>

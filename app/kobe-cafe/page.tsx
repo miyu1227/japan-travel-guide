@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/kobe-cafe";
 const OG_IMAGE = "/kobe-cafe/caffarel-3.jpg";
 
@@ -224,6 +225,7 @@ export default function KobeCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市中央區生田町4-6-15</p>
+              <MapButton name="フロインドリーブ 生田店" address="兵庫縣神戶市中央區生田町4-6-15" />
               <p className="text-xs text-stone-600 ib ib-train">JR・阪急「三宮」駅 徒歩約8分</p>
               <p className="text-xs text-stone-600 ib ib-clock">10:00〜18:00（依官網為準・週三休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">¥1,500〜¥2,500 / 人</p>
@@ -290,6 +292,7 @@ export default function KobeCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市中央區北野町2-15-12</p>
+              <MapButton name="パンとエスプレッソと異人館" address="兵庫縣神戶市中央區北野町2-15-12" />
               <p className="text-xs text-stone-600 ib ib-train">各線「三宮」駅 徒歩約15分／新神戶駅 徒歩約10分</p>
               <p className="text-xs text-stone-600 ib ib-clock">10:00〜18:00（依官網為準）</p>
               <p className="text-xs text-stone-600 ib ib-yen">¥1,200〜¥2,000 / 人</p>
@@ -356,6 +359,7 @@ export default function KobeCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市中央區三宮町2-3-10（ホテルケーニヒスクローネ神戸内）</p>
+              <MapButton name="ケーニヒスクローネ くまポチ邸" address="兵庫縣神戶市中央區三宮町2-3-10（ホテルケーニヒスクローネ神戸内）" />
               <p className="text-xs text-stone-600 ib ib-train">各線「三宮」駅 徒歩約7分／JR「元町」駅 徒歩約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">依官網為準（麵包吃到飽・霜淇淋兌換至15:00左右）</p>
               <p className="text-xs text-stone-600 ib ib-yen">主餐約¥2,310〜（含麵包吃到飽・迷你甜點）</p>
@@ -422,6 +426,7 @@ export default function KobeCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市中央區山本通3-7-29 神戸トアロードビル1F</p>
+              <MapButton name="Caffarel 神戶北野本店" address="兵庫縣神戶市中央區山本通3-7-29 神戸トアロードビル1F" />
               <p className="text-xs text-stone-600 ib ib-train">地下鐵西神・山手線「三宮」駅 徒歩約8分／JR・阪神「元町」駅 徒歩約12分</p>
               <p className="text-xs text-stone-600 ib ib-clock">11:00〜18:00（L.O. 17:00）／週二公休</p>
               <p className="text-xs text-stone-600 ib ib-yen">甜點盤約¥1,700〜、飲品約¥900〜（價格以店頭菜單為準）</p>

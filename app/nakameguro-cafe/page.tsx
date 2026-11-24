@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/nakameguro-cafe";
 const OG_IMAGE = "/nakameguro-cafe/starbucks-1.jpg";
 
@@ -288,6 +289,7 @@ export default function NakameguroCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都目黑區青葉台2-19-23</p>
+              <MapButton name="STARBUCKS RESERVE® ROASTERY TOKYO" address="東京都目黑區青葉台2-19-23" />
               <p className="text-xs text-stone-600 ib ib-train">東急東橫線・東京メトロ日比谷線「中目黑」駅 徒歩約13分（沿目黑川）</p>
               <p className="text-xs text-stone-600 ib ib-clock">7:00〜22:00（櫻花季 8:00〜21:30・不定休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">飲品 ¥600〜¥1,500／調酒 ¥1,200〜</p>
@@ -366,6 +368,7 @@ export default function NakameguroCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都目黑區青葉台2-16-6</p>
+              <MapButton name="STREAMER COFFEE COMPANY NAKAMEGURO" address="東京都目黑區青葉台2-16-6" />
               <p className="text-xs text-stone-600 ib ib-train">東急東橫線・東京メトロ日比谷線「中目黑」駅 徒步約7分（沿目黑川）</p>
               <p className="text-xs text-stone-600 ib ib-clock">約 8:00〜19:00（各家資訊略有出入，請以官方IG公告為準）</p>
               <p className="text-xs text-stone-600 ib ib-yen">飲品約 ¥600〜¥900／甜點 ¥400〜¥600</p>

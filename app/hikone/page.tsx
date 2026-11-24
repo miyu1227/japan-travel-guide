@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const KLOOK_KAMENOI_HIKONE =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339986&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F416852-kamenoi-hotel-hikone%2F";
 
@@ -190,6 +191,7 @@ export default function HikonePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">滋賀縣彥根市金龜町1-1</p>
+              <MapButton q="彦根城" />
               <p className="text-xs text-stone-600 ib ib-train">JR琵琶湖線「彥根」駅 徒歩約15分</p>
               <p className="text-xs text-stone-600 ib ib-clock">8:30〜17:00（入場至16:30）</p>
               <p className="text-xs text-stone-600 ib ib-yen">彥根城＋玄宮園 大人 ¥1,000／中小學生 ¥300・加彥根城博物館的套票 ¥1,500（2024年10月改定）</p>
@@ -246,6 +248,7 @@ export default function HikonePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">夢京橋城堡道・四番町廣場（彥根城周邊）</p>
+              <MapButton q="夢京橋キャッスルロード 彦根" />
               <p className="text-xs text-stone-600 ib ib-train">JR「彥根」駅 徒歩約10分</p>
               <p className="text-xs text-stone-600 ib ib-clock">各店不同（多數10:00〜17:00）</p>
               <p className="text-xs text-stone-600 ib ib-yen">布丁 ¥400〜／銅鑼燒 ¥270〜／串燒 ¥500〜</p>

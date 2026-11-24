@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/gong-cha-japan";
 const OG_IMAGE = "/gong-cha-japan/gongcha-1.jpg";
 
@@ -273,6 +274,7 @@ export default function GongChaJapanPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">日本全國200間以上（2025年時點），東京的車站周邊與購物中心很常見</p>
+              <MapButton q="ゴンチャ" nearby />
               <p className="text-xs text-stone-600 ib ib-clock">營業時間依各店而定，出發前用官方網站的「店舗検索」查</p>
               <p className="text-xs text-stone-600 ib ib-yen">奶茶冰的S杯¥450起（內用外帶同價・含稅）</p>
               <p className="text-xs text-stone-600">💳 現金・信用卡・電子錢包（依店而定）</p>

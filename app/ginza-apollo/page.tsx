@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/ginza-apollo";
 const OG_IMAGE = "/ginza-apollo/apollo-1.jpg";
 
@@ -210,6 +211,7 @@ export default function GinzaApolloPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都中央區銀座5-2-1 銀座Nouvo 11F</p>
+              <MapButton name="THE APOLLO 銀座" address="東京都中央區銀座5-2-1 銀座Nouvo 11F" />
               <p className="text-xs text-stone-600 ib ib-train">東京メトロ銀座線・丸之內線・日比谷線「銀座」駅 徒歩約2分</p>
               <p className="text-xs text-stone-600 ib ib-clock">11:00〜22:00（時期變動）</p>
               <p className="text-xs text-stone-600 ib ib-yen">午餐 ¥3,000〜／晚餐 ¥8,000〜／套餐 ¥15,000〜</p>

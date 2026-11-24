@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/utsunomiya-gyoza";
 const OG_IMAGE = "/utsunomiya-gyoza/minmin-1.jpg";
 
@@ -186,6 +187,7 @@ export default function UtsunomiyaGyozaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">栃木縣宇都宮市馬場通り4-2-3</p>
+              <MapButton name="宇都宮みんみん本店" address="栃木縣宇都宮市馬場通り4-2-3" />
               <p className="text-xs text-stone-600 ib ib-train">JR「宇都宮」駅西口 徒歩約10分</p>
               <p className="text-xs text-stone-600 ib ib-clock">11:00〜20:00（週三定休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">焼餃子・水餃子・揚餃子 各 ¥330（一份6個）</p>
@@ -241,6 +243,7 @@ export default function UtsunomiyaGyozaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">栃木縣宇都宮市宮島町4-25</p>
+              <MapButton q="正嗣 宮島町本店" />
               <p className="text-xs text-stone-600 ib ib-train">JR「宇都宮」駅西口 徒歩約15分</p>
               <p className="text-xs text-stone-600 ib ib-clock">11:30〜20:00（週二定休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">焼餃子・水餃子 各 ¥270（一份6個）</p>

@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const KLOOK_HERB =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339728&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F37865-kobe-nunobiki-herb-gardens-ticket";
 
@@ -254,6 +255,7 @@ export default function KobeHerbGardenPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市中央區北野町1-4-3</p>
+              <MapButton q="神戸布引ハーブ園" />
               <p className="text-xs text-stone-600 ib ib-train">各線「新神戶」駅 徒歩約5分至纜車山麓駅，搭纜車約10分至山頂</p>
               <p className="text-xs text-stone-600 ib ib-clock">依季節而異（夏季夜間營業至21:00・詳見官網）</p>
               <p className="text-xs text-stone-600 ib ib-yen">纜車往復（含入園）約¥2,000 前後（依季節/時段，詳見官網）</p>

@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/futakotamagawa";
 const OG_IMAGE = "/futakotamagawa/sesame-1.jpg";
 
@@ -249,6 +250,7 @@ export default function FutakotamagawaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區玉川2-27-5 玉川高島屋S・C 別館「マロニエコート」1F</p>
+              <MapButton name="SESAME STREET MARKET 玉川高島屋S.C店" address="東京都世田谷區玉川2-27-5 玉川高島屋S・C 別館「マロニエコート」1F" />
               <p className="text-xs text-stone-600 ib ib-train">東急「二子玉川」駅西口 徒步約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">10:00〜20:00（依玉川高島屋S.C.休館日）</p>
               <p className="text-xs text-stone-600 ib ib-yen">甜點約 ¥490〜¥590／飲品約 ¥260〜¥650</p>
@@ -306,6 +308,7 @@ export default function FutakotamagawaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區玉川3-14-8 A*G二子玉川 2F</p>
+              <MapButton name="中華ビストロ STEAMAN" address="東京都世田谷區玉川3-14-8 A*G二子玉川 2F" />
               <p className="text-xs text-stone-600 ib ib-train">東急田園都市線・大井町線「二子玉川」駅 徒歩約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">11:30〜15:00 / 17:30〜22:00（週二公休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">午餐 ¥1,500〜 / 晚餐 ¥5,000〜</p>
@@ -354,6 +357,7 @@ export default function FutakotamagawaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區玉川3-17-1 玉川高島屋S・C 本館 B1F</p>
+              <MapButton name="GRANNY SMITH APPLE PIE & COFFEE" address="東京都世田谷區玉川3-17-1 玉川高島屋S・C 本館 B1F" />
               <p className="text-xs text-stone-600 ib ib-train">東急「二子玉川」駅西口 徒歩約2分</p>
               <p className="text-xs text-stone-600 ib ib-clock">10:00〜20:00（L.O. 19:30）</p>
               <p className="text-xs text-stone-600 ib ib-yen">蘋果派 ¥500〜¥700</p>
@@ -402,6 +406,7 @@ export default function FutakotamagawaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區玉川3-14-8 A*G二子玉川 2F</p>
+              <MapButton name="コリアンキッチン ぶたこたまがわ" address="東京都世田谷區玉川3-14-8 A*G二子玉川 2F" />
               <p className="text-xs text-stone-600 ib ib-train">東急「二子玉川」駅 徒歩約3分</p>
               <p className="text-xs text-stone-600 ib ib-clock">11:30〜翌3:00（週日・祝日〜23:00）</p>
               <p className="text-xs text-stone-600 ib ib-yen">午餐 ¥1,000〜 / 晚餐 ¥3,000〜</p>
@@ -452,6 +457,7 @@ export default function FutakotamagawaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區玉川3-17-1 玉川高島屋S・C 南館 1F</p>
+              <MapButton name="WOODBERRY COFFEE 玉川高島屋S.C.店" address="東京都世田谷區玉川3-17-1 玉川高島屋S・C 南館 1F" />
               <p className="text-xs text-stone-600 ib ib-train">東急「二子玉川」駅 徒歩約4分</p>
               <p className="text-xs text-stone-600 ib ib-clock">9:00〜20:00（L.O. 餐點19:00／飲料19:30）・依玉川高島屋S.C.休館日</p>
               <p className="text-xs text-stone-600 ib ib-yen">甜點約¥330〜¥770、咖啡約¥500〜（價格以店頭菜單為準）</p>

@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/steak-zen";
 const OG_IMAGE = "/steak-zen/zen-1.jpg";
 
@@ -183,6 +184,7 @@ export default function SteakZenPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市中央區（三宮駅周邊）</p>
+              <MapButton q="ステーキハウスZEN 三宮店" />
               <p className="text-xs text-stone-600 ib ib-train">JR・阪急・阪神「三宮」駅 徒歩約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">午餐 11:30〜／晚餐 17:30〜（詳見官網）</p>
               <p className="text-xs text-stone-600 ib ib-yen">午餐 ¥5,000〜／晚餐 ¥10,000〜（依套餐）</p>

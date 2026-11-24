@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/shimokitazawa-cafe";
 const OG_IMAGE = "/shimokitazawa-cafe/vegan-1.jpg";
 
@@ -227,6 +228,7 @@ export default function ShimokitazawaCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區北澤3-19-20 reload 2F</p>
+              <MapButton name="TOKYO VEGAN BAKES" address="東京都世田谷區北澤3-19-20 reload 2F" />
               <p className="text-xs text-stone-600 ib ib-train">小田急線・京王井之頭線「下北澤」駅 徒歩約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">10:00〜18:00（週一・週二公休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">¥330〜¥880</p>
@@ -293,6 +295,7 @@ export default function ShimokitazawaCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區北澤3-34-4</p>
+              <MapButton name="La Piña（ラ・ピーニャ）" address="東京都世田谷區北澤3-34-4" />
               <p className="text-xs text-stone-600 ib ib-train">小田急線・京王井之頭線「下北澤」駅 徒歩約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">12:00〜20:00（不定休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">起司蛋糕 ¥500〜</p>
@@ -359,6 +362,7 @@ export default function ShimokitazawaCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區代澤4-34-13 Daizawa Club 101</p>
+              <MapButton name="Pati coffee&plants" address="東京都世田谷區代澤4-34-13 Daizawa Club 101" />
               <p className="text-xs text-stone-600 ib ib-train">京王井之頭線「池ノ上」駅 徒歩約10分／「下北澤」駅 徒歩約12分</p>
               <p className="text-xs text-stone-600 ib ib-clock">8:00〜18:00（週二公休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">派 ¥480〜¥630／飲品 ¥550〜¥700</p>
@@ -425,6 +429,7 @@ export default function ShimokitazawaCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都世田谷區代田2-36-12〜15</p>
+              <MapButton name="BONUS TRACK" address="東京都世田谷區代田2-36-12〜15" />
               <p className="text-xs text-stone-600 ib ib-train">小田急線「世田谷代田」駅 徒歩約1分／「下北澤」駅 徒歩約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">各店舖營業時間不同（多數11:00〜20:00）</p>
               <p className="text-xs text-stone-600 ib ib-yen">因店而異</p>

@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/otaguro-park";
 const OG_IMAGE = "/otaguro-park/otaguro-1.jpg";
 
@@ -245,6 +246,7 @@ export default function OtaguroParkPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都杉並區荻窪3-33-12（〒167-0051）</p>
+              <MapButton name="大田黑公園（大田黒公園）" address="東京都杉並區荻窪3-33-12（〒167-0051）" />
               <p className="text-xs text-stone-600 ib ib-train">JR中央線・總武線／東京Metro丸之內線「荻窪」駅 徒步約10分（新宿搭JR中央線快速約11分到荻窪）</p>
               <p className="text-xs text-stone-600 ib ib-clock">9:00〜17:00（最後入園16:30）／公休：每週三・年末年始12/29〜1/1</p>
               <p className="text-xs text-stone-600 ib ib-yen">入園免費</p>

@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/museum";
 const OG_IMAGE = "/museum/nact-1.jpg";
 
@@ -208,6 +209,7 @@ export default function MuseumPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都港區六本木7-22-2</p>
+              <MapButton name="國立新美術館" address="東京都港區六本木7-22-2" />
               <p className="text-xs text-stone-600 ib ib-train">東京メトロ千代田線「乃木坂」駅 徒歩約0分／日比谷線・大江戸線「六本木」駅 徒歩約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">10:00〜18:00（展期中週五到20:00・週二休館）</p>
               <p className="text-xs text-stone-600 ib ib-yen">入館免費（特展需另購票）</p>
@@ -274,6 +276,7 @@ export default function MuseumPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都港區南青山6-5-1</p>
+              <MapButton name="根津美術館" address="東京都港區南青山6-5-1" />
               <p className="text-xs text-stone-600 ib ib-train">東京メトロ「表參道」駅A5出口 徒歩約8分</p>
               <p className="text-xs text-stone-600 ib ib-clock">10:00〜17:00（週一休館）</p>
               <p className="text-xs text-stone-600 ib ib-yen">企劃展 一般¥1,300／特別展 ¥1,500（中學生以下免費・需事先網路預約）</p>

@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/artbar-tokyo";
 const OG_IMAGE = "/artbar-tokyo/artbar-1.jpg";
 
@@ -181,6 +182,7 @@ export default function ArtbarTokyoPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都渋谷區神宮前5-30-2 Takaraビル201（原宿・貓街店）</p>
+              <MapButton name="Artbar Tokyo" address="東京都渋谷區神宮前5-30-2 Takaraビル201（原宿・貓街店）" />
               <p className="text-xs text-stone-600">🏬 另有代官山・銀座・橫濱元町・大阪等分店</p>
               <p className="text-xs text-stone-600 ib ib-train">JR「原宿」駅／「渋谷」駅 徒歩約10分</p>
               <p className="text-xs text-stone-600 ib ib-clock">一場約2小時（依課程時段，詳見官網）</p>

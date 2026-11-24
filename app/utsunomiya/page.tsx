@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/utsunomiya";
 const OG_IMAGE = "/utsunomiya/wakayama-1.jpg";
 
@@ -201,6 +202,7 @@ export default function UtsunomiyaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">栃木縣宇都宮市新里町丙254</p>
+              <MapButton name="若竹の杜 若山農場" address="栃木縣宇都宮市新里町丙254" />
               <p className="text-xs text-stone-600 ib ib-train">JR「宇都宮」駅搭計程車（的士）約25分（建議自駕）</p>
               <p className="text-xs text-stone-600 ib ib-clock">9:00〜17:00（季節變動）</p>
               <p className="text-xs text-stone-600 ib ib-yen">入園料 ¥1,000〜（依季節變動）</p>
@@ -252,6 +254,7 @@ export default function UtsunomiyaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">栃木縣宇都宮市馬場通り3丁目〜大通り一帶</p>
+              <MapButton q="宇都宮 餃子通り" />
               <p className="text-xs text-stone-600 ib ib-train">JR「宇都宮」駅 徒歩約10分</p>
               <p className="text-xs text-stone-600 ib ib-clock">各店不同（多數11:00〜21:00）</p>
               <p className="text-xs text-stone-600 ib ib-yen">一份餃子 ¥250〜¥400</p>
@@ -307,6 +310,7 @@ export default function UtsunomiyaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">栃木縣宇都宮市馬場通り1-1-1</p>
+              <MapButton name="宇都宮二荒山神社" address="栃木縣宇都宮市馬場通り1-1-1" />
               <p className="text-xs text-stone-600 ib ib-train">JR「宇都宮」駅 徒歩約15分（從餃子通走過去很近）</p>
               <p className="text-xs text-stone-600 ib ib-clock">全日開放（御守授與所 9:00〜17:00）</p>
               <p className="text-xs text-stone-600 ib ib-yen">免費</p>

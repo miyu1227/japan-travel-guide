@@ -7,6 +7,7 @@ import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/bolt-uehara";
 const OG_IMAGE = "/bolt-uehara/bolt-1.jpg";
 
@@ -165,6 +166,7 @@ export default function BoltUeharaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都渋谷区上原（代代木上原）</p>
+              <MapButton q="BOLT 代々木上原" />
               <p className="text-xs text-stone-600 ib ib-train">小田急線・地下鉄千代田線「代代木上原」駅 徒歩約5分</p>
               <p className="text-xs text-stone-600">🐕 寵物友善（可帶狗入店）</p>
               <p className="text-xs text-stone-600 ib ib-clock">詳細營業時間請查官方Instagram</p>

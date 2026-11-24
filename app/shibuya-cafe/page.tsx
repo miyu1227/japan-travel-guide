@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/shibuya-cafe";
 const OG_IMAGE = "/shibuya-cafe/recoco-1.jpg";
 
@@ -203,6 +204,7 @@ export default function ShibuyaCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都渋谷區渋谷3-1-10 IRIE FIRST PLAZA 1F</p>
+              <MapButton name="RECOCO（レココ）渋谷" address="東京都渋谷區渋谷3-1-10 IRIE FIRST PLAZA 1F" />
               <p className="text-xs text-stone-600 ib ib-train">澀谷駅 徒歩約6分（C1出口徒歩約4分）／表參道駅 徒歩約11分</p>
               <p className="text-xs text-stone-600 ib ib-clock">11:00〜21:00（L.O. 20:30・無定休，年末年始休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">入場費＋1飲料制（唱片聽到飽方案 平日約¥1,320／假日約¥1,650）</p>
@@ -285,6 +287,7 @@ export default function ShibuyaCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都渋谷區道玄坂2-3-1 渋谷駅前大樓 2・3F</p>
+              <MapButton name="歐舒丹咖啡廳 澀谷（ロクシタンカフェ SHIBUYA TOKYO）" address="東京都渋谷區道玄坂2-3-1 渋谷駅前大樓 2・3F" />
               <p className="text-xs text-stone-600 ib ib-train">各線澀谷駅 5（井之頭口）出口出來即到／徒步約3分</p>
               <p className="text-xs text-stone-600 ib ib-clock">10:00〜23:00（L.O. 22:00・不定休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">輕食・沙拉 ¥1,880／甜點 ¥980〜¥1,980／飲品 ¥830〜¥1,080（一人約¥1,500〜¥2,500）</p>

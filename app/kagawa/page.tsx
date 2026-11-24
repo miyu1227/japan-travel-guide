@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const KLOOK_AQUARIUM =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339931&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F74358-shikoku-aquarium";
 const KLOOK_SHIKISHIMA =
@@ -182,6 +183,7 @@ export default function KagawaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">香川縣綾歌郡綾川町羽床下623</p>
+              <MapButton name="山越うどん" address="香川縣綾歌郡綾川町羽床下623" />
               <p className="text-xs text-stone-600 ib ib-train">JR「滝宮」駅 開車約10分（建議自駕）</p>
               <p className="text-xs text-stone-600 ib ib-clock">9:00〜13:30（週日公休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">釜玉 ¥350／釜揚 ¥250</p>
@@ -213,6 +215,7 @@ export default function KagawaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">香川縣綾歌郡宇多津町浜一番丁4番地</p>
+              <MapButton name="四國水族館" address="香川縣綾歌郡宇多津町浜一番丁4番地" />
               <p className="text-xs text-stone-600 ib ib-train">JR予讚線「宇多津」駅 徒歩約12分</p>
               <p className="text-xs text-stone-600 ib ib-clock">9:00〜18:00（季節變動）</p>
               <p className="text-xs text-stone-600 ib ib-yen">大人 ¥2,400／中・高校生 ¥1,700／小學生 ¥1,000</p>
@@ -274,6 +277,7 @@ export default function KagawaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">香川縣善通寺市與北町284-1</p>
+              <MapButton name="山下うどん" address="香川縣善通寺市與北町284-1" />
               <p className="text-xs text-stone-600 ib ib-train">JR「善通寺」駅 開車約10分（建議自駕）</p>
               <p className="text-xs text-stone-600 ib ib-clock">9:30〜15:00（週四公休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">ぶっかけ ¥300〜／釜揚 ¥250〜</p>
@@ -305,6 +309,7 @@ export default function KagawaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">香川縣仲多度郡琴平町713-1</p>
+              <MapButton name="御宿 敷島館" address="香川縣仲多度郡琴平町713-1" />
               <p className="text-xs text-stone-600 ib ib-train">JR土讚線「琴平」駅 徒歩約10分</p>
               <p className="text-xs text-stone-600 ib ib-yen">一泊朝食付 ¥10,000〜／一泊二食 ¥15,000〜</p>
               <p className="text-xs text-stone-600">🛏️ 全室和洋折衷風格</p>
@@ -366,6 +371,7 @@ export default function KagawaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">香川縣仲多度郡琴平町892-1</p>
+              <MapButton name="金刀比羅宮" address="香川縣仲多度郡琴平町892-1" />
               <p className="text-xs text-stone-600 ib ib-train">JR土讚線「琴平」駅 徒歩約20分（到參道入口）</p>
               <p className="text-xs text-stone-600 ib ib-clock">6:00〜18:00（御守授與所）</p>
               <p className="text-xs text-stone-600 ib ib-yen">免費參拜／書院・寶物館 ¥800</p>

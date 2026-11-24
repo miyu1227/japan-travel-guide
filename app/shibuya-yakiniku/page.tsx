@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/shibuya-yakiniku";
 const OG_IMAGE = "/shibuya-yakiniku/chiba-1.jpg";
 
@@ -191,6 +192,7 @@ export default function ShibuyaYakinikuPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都澀谷區道玄坂2-14-17</p>
+              <MapButton name="ホルモン千葉 澀谷店" address="東京都澀谷區道玄坂2-14-17" />
               <p className="text-xs text-stone-600 ib ib-train">京王井之頭線「神泉」駅 徒歩約4分／JR・地下鐵「澀谷」駅 徒歩約7分</p>
               <p className="text-xs text-stone-600 ib ib-clock">平日 17:00〜23:00／週末・假日 16:00〜23:00（L.O. 22:00）</p>
               <p className="text-xs text-stone-600">🚫 週一公休（部分資訊來源不一致，建議出發前致電確認）</p>

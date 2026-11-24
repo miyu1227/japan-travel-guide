@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-yakiniku";
 const OG_IMAGE = "/tokyo-yakiniku/cover.jpg";
 
@@ -184,6 +185,7 @@ export default function TokyoYakinikuPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都港區高輪4-10-30 品川王子大飯店 N Tower 1F</p>
+              <MapButton q="叙々苑 品川プリンスホテル" />
               <p className="text-xs text-stone-600 ib ib-train">JR各線「品川」駅 高輪口 徒歩約2分／京急本線「品川」駅 西口 徒歩約2分</p>
               <p className="text-xs text-stone-600 ib ib-clock">11:30〜21:30（L.O.）／平日16:00〜17:00 休息・六日假日不休息</p>
               <p className="text-xs text-stone-600 ib ib-yen">午餐 ¥2,640〜¥4,000／晚餐 ¥15,000〜¥20,000（另加5%服務費・午餐與外帶除外）</p>

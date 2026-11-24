@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const KLOOK_INE_TOUR =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339927&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F150458-amanohashidate-iegan-day-trip-iegan-boat-house-iegan-bay-cruise-aman";
 
@@ -164,6 +165,7 @@ export default function InePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">京都府與謝郡伊根町</p>
+              <MapButton q="伊根の舟屋" />
               <p className="text-xs text-stone-600 ib ib-train">京都站搭特急到「天橋立」約2小時→巴士約60分到「伊根」</p>
               <p className="text-xs text-stone-600">🚤 伊根灣遊覽船：每30分一班・¥1,200（大人）</p>
               <p className="text-xs text-stone-600">🚲 電動腳踏車租借 ¥1,000〜／日</p>
@@ -253,6 +255,7 @@ export default function InePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">京都府與謝郡伊根町平田593-1</p>
+              <MapButton name="INE CAFE" address="京都府與謝郡伊根町平田593-1" />
               <p className="text-xs text-stone-600 ib ib-train">伊根バス停 徒歩約3分</p>
               <p className="text-xs text-stone-600 ib ib-clock">11:00〜17:00（不定休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">飲品 ¥600〜／海鮮丼 ¥1,800〜</p>
@@ -286,6 +289,7 @@ export default function InePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">京都府與謝郡伊根町平田151</p>
+              <MapButton name="仁風荘（Jinpuso）" address="京都府與謝郡伊根町平田151" />
               <p className="text-xs text-stone-600 ib ib-train">伊根バス停 徒歩約5分</p>
               <p className="text-xs text-stone-600 ib ib-yen">一泊二食 ¥15,000〜（冬季寒鰤プラン ¥20,000〜）</p>
               <p className="text-xs text-stone-600">🛏️ 房間數有限，建議提前預約</p>

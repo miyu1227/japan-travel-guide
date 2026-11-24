@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/shibuya-gohan";
 const OG_IMAGE = "/shibuya-gohan/soupstock-1.jpg";
 
@@ -253,6 +254,7 @@ export default function ShibuyaGohanPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都渋谷區道玄坂1-12-1 澀谷Mark City East 4F</p>
+              <MapButton name="Soup Stock Tokyo 澀谷Mark City店" address="東京都渋谷區道玄坂1-12-1 澀谷Mark City East 4F" />
               <p className="text-xs text-stone-600 ib ib-train">京王井之頭線「澀谷」駅直結／JR・東京Metro「澀谷」駅</p>
               <p className="text-xs text-stone-600 ib ib-clock">08:00〜22:00（最後點餐 21:30）／公休：澀谷Mark City休館日</p>
               <p className="text-xs text-stone-600 ib ib-yen">湯＋飯（或麵包）＋飲料的套餐制，價格依湯的種類而不同（以店頭與手機點餐畫面為準）</p>

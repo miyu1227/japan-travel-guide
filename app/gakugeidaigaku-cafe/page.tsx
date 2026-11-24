@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/gakugeidaigaku-cafe";
 const OG_IMAGE = "/gakugeidaigaku-cafe/bubbles-1.jpg";
 
@@ -190,6 +191,7 @@ export default function GakugeidaigakuCafePage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都目黑區中央町2-37-2 クーカイ・テラス学芸大学 1F</p>
+              <MapButton name="Bubbles Chill" address="東京都目黑區中央町2-37-2 クーカイ・テラス学芸大学 1F" />
               <p className="text-xs text-stone-600 ib ib-train">東急東橫線「學藝大學」駅 徒步約4分</p>
               <p className="text-xs text-stone-600 ib ib-clock">平日 8:00〜22:00／週末 9:00〜23:00（時間可能調整，請以官方IG為準）</p>
               <p className="text-xs text-stone-600 ib ib-yen">一人約 ¥1,000〜¥2,000</p>

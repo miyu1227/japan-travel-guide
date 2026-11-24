@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/kansai-ramen";
 const OG_IMAGE = "/kansai-ramen/tsujita-2.jpg";
 
@@ -275,6 +276,7 @@ export default function KansaiRamenArticle() {
                 <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
                   <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
                   <p className="text-xs text-stone-600 ib ib-pin">{shop.basicInfo.address}</p>
+                  <MapButton name={shop.name} address={shop.basicInfo.address} />
                   <p className="text-xs text-stone-600 ib ib-train">{shop.basicInfo.access}</p>
                   <p className="text-xs text-stone-600 ib ib-clock">{shop.basicInfo.hours}</p>
                   <p className="text-xs text-stone-600 ib ib-yen">{shop.basicInfo.price}</p>

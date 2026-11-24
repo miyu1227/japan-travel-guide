@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/conrad-osaka";
 const OG_IMAGE = "/conrad-osaka/atmos-1.jpg";
 
@@ -242,6 +243,7 @@ export default function ConradOsakaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">大阪市北區中之島3-2-4 康萊德大阪 40F</p>
+              <MapButton q="コンラッド大阪 アトモス ダイニング" />
               <p className="text-xs text-stone-600 ib ib-train">大阪Metro四橋線「肥後橋」駅 4號出口直結／京阪中之島線「渡邊橋」駅 13號出口直結</p>
               <p className="text-xs text-stone-600">🚶 大阪Metro御堂筋線・京阪本線「淀屋橋」駅 7號出口 徒歩約6分</p>
               <p className="text-xs text-stone-600 ib ib-clock">早餐 6:30〜／午餐 11:30〜／甜點自助餐 14:30〜／晚餐 17:30〜（各時段有最後入店時間）</p>

@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/kobe-gourmet";
 const OG_IMAGE = "/kobe-gourmet/famiglia-1.jpg";
 
@@ -200,6 +201,7 @@ export default function KobeGourmetPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">兵庫縣神戶市中央區下山手通3-2-8-101 ドミール下山手</p>
+              <MapButton name="La Famiglia（LA FAMIGLIA）" address="兵庫縣神戶市中央區下山手通3-2-8-101 ドミール下山手" />
               <p className="text-xs text-stone-600 ib ib-train">JR・阪神「元町」駅 徒步約3分／各線「三宮」駅 徒步約7分</p>
               <p className="text-xs text-stone-600 ib ib-clock">午餐 12:00〜15:00（L.O. 14:30）／晚餐 18:00〜21:00（料理L.O. 20:00・飲料L.O. 20:30）</p>
               <p className="text-xs text-stone-600">🚫 公休：週三</p>

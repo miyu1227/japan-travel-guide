@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/shodoshima";
 const OG_IMAGE = "/shodoshima/olive-1.jpg";
 
@@ -347,6 +348,7 @@ export default function ShodoshimaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">香川縣小豆郡小豆島町田浦</p>
+              <MapButton q="二十四の瞳映画村" />
               <p className="text-xs text-stone-600 ib ib-clock">9:00〜17:00</p>
               <p className="text-xs text-stone-600 ib ib-yen">入村費依季節調整：大人 ¥850〜¥1,000／兒童 ¥430〜¥500（7/21〜11/30 最高）</p>
               <p className="text-xs text-stone-600">🎬 村內電影院「松竹座」全天循環放映《二十四之瞳》</p>
@@ -408,6 +410,7 @@ export default function ShodoshimaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">香川縣小豆郡小豆島町草壁本町1053-11（草壁港前）</p>
+              <MapButton name="手打烏龍麵 三太郎" address="香川縣小豆郡小豆島町草壁本町1053-11（草壁港前）" />
               <p className="text-xs text-stone-600 ib ib-clock">10:30〜14:00</p>
               <p className="text-xs text-stone-600">🚫 公休：週二、第一・第三個週三</p>
               <p className="text-xs text-stone-600">📞 0879-82-4719</p>
@@ -468,6 +471,7 @@ export default function ShodoshimaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">香川縣小豆郡小豆島町草壁本町1055-2</p>
+              <MapButton name="MINORI GELATO" address="香川縣小豆郡小豆島町草壁本町1055-2" />
               <p className="text-xs text-stone-600">🚌 巴士站「草壁港」徒步約7分／池田港開車約15分</p>
               <p className="text-xs text-stone-600 ib ib-clock">12:00〜18:00（L.O. 17:45）</p>
               <p className="text-xs text-stone-600">🚫 公休：週三、週四</p>
@@ -529,6 +533,7 @@ export default function ShodoshimaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">香川縣小豆郡小豆島町西村甲1941-1</p>
+              <MapButton q="道の駅 小豆島オリーブ公園" />
               <p className="text-xs text-stone-600 ib ib-clock">8:30〜17:00（全年無休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">入園免費・魔法掃帚免費出借</p>
               <p className="text-xs text-stone-600">📞 0879-82-2200</p>
@@ -589,6 +594,7 @@ export default function ShodoshimaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">香川縣小豆郡小豆島町苗羽甲1850</p>
+              <MapButton q="マルキン醤油記念館" />
               <p className="text-xs text-stone-600 ib ib-clock">9:00〜16:00（夏季・秋季部分期間延長至16:30）</p>
               <p className="text-xs text-stone-600 ib ib-yen">大人（國中以上）¥500／小學生 ¥250／幼兒免費</p>
               <p className="text-xs text-stone-600">🚫 不定休（出發前請先查官網的休館日）</p>

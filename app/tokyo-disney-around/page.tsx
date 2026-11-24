@@ -6,6 +6,7 @@ import AuthorCard from "../components/AuthorCard";
 import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 
+import MapButton from "../components/MapButton";
 const KLOOK_SHUTTLE =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339860&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F127556-tokyo-disneyland-disneysea-shared-transfer-city";
 
@@ -234,6 +235,7 @@ export default function TokyoDisneyAroundPage() {
                 <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
                   <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
                   <p className="text-xs text-stone-600 ib ib-pin">{spot.basicInfo.address}</p>
+                  <MapButton name={spot.name} address={spot.basicInfo.address} />
                   <p className="text-xs text-stone-600 ib ib-train">{spot.basicInfo.access}</p>
                   <p className="text-xs text-stone-600 ib ib-yen">{spot.basicInfo.price}</p>
                   <p className="text-xs text-blue-600 font-semibold">💡 推薦：{spot.recommend}</p>

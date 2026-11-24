@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const KLOOK_KOUSHIEN =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339963&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fhotels%2Fdetail%2F491613-meitei-no-yado-hotel-koushien%2F";
 
@@ -255,6 +256,7 @@ export default function KatsunumaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">山梨県甲州市勝沼町菱山2609</p>
+              <MapButton name="銀月食堂" address="山梨県甲州市勝沼町菱山2609" />
               <p className="text-xs text-stone-600 ib ib-train">JR中央線「勝沼ぶどう郷」駅 徒歩約1分</p>
               <p className="text-xs text-stone-600 ib ib-clock">平日11:30〜14:00／17:00〜21:00・週六日假日11:30〜21:00（不定休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">麵類・定食（銅板價位）</p>
@@ -315,6 +317,7 @@ export default function KatsunumaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">山梨県甲州市勝沼町下岩崎1425-1</p>
+              <MapButton name="シャトー・メルシャン（勝沼酒莊）" address="山梨県甲州市勝沼町下岩崎1425-1" />
               <p className="text-xs text-stone-600 ib ib-train">JR「勝沼ぶどう郷」駅搭計程車（的士）約8分</p>
               <p className="text-xs text-stone-600 ib ib-clock">葡萄酒藝廊・商店 10:00〜16:30（年末年始休）</p>
               <p className="text-xs text-stone-600 ib ib-yen">Discovery Tour ¥3,000（約90分・限額10名・需預約）</p>
@@ -389,6 +392,7 @@ export default function KatsunumaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">山梨県笛吹市石和町松本394</p>
+              <MapButton name="銘庭の宿 ホテル甲子園" address="山梨県笛吹市石和町松本394" />
               <p className="text-xs text-stone-600 ib ib-train">JR中央線「石和溫泉」駅 徒歩約10分／提供接駁</p>
               <p className="text-xs text-stone-600 ib ib-clock">Check-in 15:00／Check-out 10:00</p>
               <p className="text-xs text-stone-600 ib ib-yen">一泊二食：官網確認</p>
@@ -474,6 +478,7 @@ export default function KatsunumaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">山梨県笛吹市一宮町坪井1622-1</p>
+              <MapButton name="あすなろ園（採桃體驗）" address="山梨県笛吹市一宮町坪井1622-1" />
               <p className="text-xs text-stone-600 ib ib-train">JR中央線「石和溫泉」駅 車程約15分</p>
               <p className="text-xs text-stone-600 ib ib-clock">產季期間 9:00〜17:00左右（詳情官網確認）</p>
               <p className="text-xs text-stone-600 ib ib-yen">桃狩り 官網公告價／建議事先預約</p>
@@ -529,6 +534,7 @@ export default function KatsunumaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">山梨県笛吹市一宮町坪井1928</p>
+              <MapButton name="桔梗信玄餅 工場テーマパーク" address="山梨県笛吹市一宮町坪井1928" />
               <p className="text-xs text-stone-600 ib ib-train">中央自動車道「一宮御坂IC」約5分／JR「石和溫泉」駅車程約20分</p>
               <p className="text-xs text-stone-600 ib ib-clock">賣店 9:00〜17:00左右（詳情官網確認）</p>
               <p className="text-xs text-stone-600 ib ib-yen">信玄餅 單顆銅板價</p>
@@ -584,6 +590,7 @@ export default function KatsunumaPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">山梨県笛吹市一宮町本都塚110</p>
+              <MapButton name="里の駅 いちのみや" address="山梨県笛吹市一宮町本都塚110" />
               <p className="text-xs text-stone-600 ib ib-train">中央自動車道「一宮御坂IC」約3分</p>
               <p className="text-xs text-stone-600 ib ib-clock">物產館9:00〜18:00／和食コーナー 詳情官網確認</p>
               <p className="text-xs text-stone-600 ib ib-yen">鳥もつ煮＋葡萄汁 銅板價</p>

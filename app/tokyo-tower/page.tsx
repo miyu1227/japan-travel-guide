@@ -7,6 +7,7 @@ import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/tokyo-tower";
 const OG_IMAGE = "/tokyo-tower/tower-1.jpg";
 
@@ -239,6 +240,7 @@ export default function TokyoTowerPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">東京都港區芝公園4-2-8</p>
+              <MapButton q="東京タワー" />
               <p className="text-xs text-stone-600 ib ib-train">大江戶線「赤羽橋」駅 徒歩約5分／日比谷線「神谷町」駅 徒歩約7分</p>
               <p className="text-xs text-stone-600 ib ib-clock">9:00〜23:00（Main Deck・最終入場22:30）</p>
               <p className="text-xs text-stone-600 ib ib-yen">Main Deck ¥1,500／Top Deck Tour ¥3,300〜</p>

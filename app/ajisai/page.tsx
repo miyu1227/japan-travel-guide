@@ -7,6 +7,7 @@ import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/ajisai";
 const OG_IMAGE = "/ajisai/cover.jpg";
 
@@ -244,6 +245,7 @@ export default function AjisaiPage() {
                 <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
                   <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
                   <p className="text-xs text-stone-600 ib ib-pin">{spot.basicInfo.address}</p>
+                  <MapButton name={spot.name} address={spot.basicInfo.address} />
                   <p className="text-xs text-stone-600 ib ib-train">{spot.basicInfo.access}</p>
                   <p className="text-xs text-stone-600 ib ib-yen">{spot.basicInfo.price}</p>
                   <p className="text-xs text-stone-600">🌸 花期：{spot.basicInfo.season}</p>

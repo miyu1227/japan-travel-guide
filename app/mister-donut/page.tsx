@@ -7,6 +7,7 @@ import PrepBannerCompact from "../components/PrepBannerCompact";
 import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/mister-donut";
 const OG_IMAGE = "/mister-donut/motchurin-1.jpg";
 
@@ -237,6 +238,7 @@ export default function MisterDonutPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">日本全國Mister Donut各店舗</p>
+              <MapButton q="ミスタードーナツ" nearby />
               <p className="text-xs text-stone-600 ib ib-train">各車站・商業設施內多數有店舖</p>
               <p className="text-xs text-stone-600 ib ib-clock">各店不同（多數7:00〜21:00）</p>
               <p className="text-xs text-stone-600 ib ib-yen">¥216〜¥237／個（2026年・外帶價）</p>

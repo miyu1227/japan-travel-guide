@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapButton from "../components/MapButton";
 const KLOOK_SHINHOTAKA =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339988&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F106936-alpine-splendor-shinhotaka-ropeway-kamikochi-join-day-bus-tour-takayama";
 const KLOOK_KAMIKOCHI_TOUR =
@@ -249,6 +250,7 @@ export default function KamikochiPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">岐阜縣高山市奧飛騨溫泉鄉平湯</p>
+              <MapButton q="平湯大滝" />
               <p className="text-xs text-stone-600 ib ib-train">從高山駅搭巴士約52分→「大滝口／露營場」下車徒步20分</p>
               <p className="text-xs text-stone-600 ib ib-clock">全日開放（步道有時段限制）</p>
               <p className="text-xs text-stone-600 ib ib-yen">免費</p>
@@ -299,6 +301,7 @@ export default function KamikochiPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">岐阜縣高山市奧飛騨溫泉鄉新平湯溫泉</p>
+              <MapButton q="奥飛騨ガーデンホテル焼岳" />
               <p className="text-xs text-stone-600 ib ib-train">高山駅搭巴士約60分（新穂高纜車方向・「ガーデンホテル焼岳前」下車）</p>
               <p className="text-xs text-stone-600 ib ib-yen">一泊二食 ¥20,900〜（含早晚餐・不含溫泉稅）</p>
               <p className="text-xs text-stone-600">🛏️ 全85間（和室68・洋室17）</p>
@@ -349,6 +352,7 @@ export default function KamikochiPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">岐阜縣高山市奧飛騨溫泉鄉新穂高溫泉</p>
+              <MapButton q="新穂高ロープウェイ" />
               <p className="text-xs text-stone-600 ib ib-train">高山駅搭巴士約90分→「新穂高纜車」下車</p>
               <p className="text-xs text-stone-600 ib ib-clock">全年營業（每30分鐘一班）</p>
               <p className="text-xs text-stone-600 ib ib-yen">往返大人 ¥3,800（網路購票有優惠）</p>
@@ -429,6 +433,7 @@ export default function KamikochiPage() {
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
               <p className="text-xs text-stone-600 ib ib-pin">長野縣松本市安曇 上高地</p>
+              <MapButton q="河童橋 上高地" />
               <p className="text-xs text-stone-600 ib ib-train">上高地巴士總站 徒歩約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">全日開放（上高地僅開放4/17〜11/15）</p>
               <p className="text-xs text-stone-600 ib ib-yen">免費</p>
