@@ -12,9 +12,9 @@ const PAGE_URL = "https://www.japantrippicks.com/osaka-gourmet";
 const OG_IMAGE = "/osaka-gourmet/teppan-1.jpg";
 
 export const metadata: Metadata = {
-  title: "大阪鐵板燒・居酒屋推薦｜梅田福島在地人氣2店",
+  title: "大阪鐵板燒・居酒屋推薦｜梅田出發10分的在地2店",
   description:
-    "大阪鐵板燒與大阪居酒屋推薦：福島的主廚現煎鐵板燒「鉄板屋な。」（套餐¥5,000〜）與梅田的炭火串燒居酒屋「酒場ビリー」（一串¥150〜）。梅田晚餐怎麼排、要不要訂位、幾點去好進，實際造訪整理。",
+    "大阪鐵板燒與大阪居酒屋推薦：新大阪旁西中島南方的主廚現煎鐵板燒「鉄板屋な。」（套餐¥5,000〜）與肥後橋的炭火串燒居酒屋「酒場ビリー」（一串¥150〜）。從梅田搭地鐵都在10分鐘內，晚餐怎麼排、要不要訂位、幾點去好進，實際造訪整理。",
   alternates: {
     canonical: PAGE_URL,
     // 台湾・香港の両方を対象にする（同一URLで両地域を明示）
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "大阪鐵板燒・居酒屋推薦｜梅田福島在地人氣2店",
+    title: "大阪鐵板燒・居酒屋推薦｜梅田出發10分的在地2店",
     description: "大阪鐵板燒「鉄板屋な。」＆大阪居酒屋「酒場ビリー」。梅田晚餐這樣排，附交通・預算・訂位重點。",
     url: PAGE_URL,
     type: "article",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "大阪鐵板燒・居酒屋推薦｜梅田福島在地人氣2店",
+    title: "大阪鐵板燒・居酒屋推薦｜梅田出發10分的在地2店",
     description: "大阪鐵板燒＆大阪居酒屋，梅田晚餐這樣排🍻",
     images: [OG_IMAGE],
   },
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "大阪鐵板燒・居酒屋推薦｜梅田福島在地人氣2店",
+  headline: "大阪鐵板燒・居酒屋推薦｜梅田出發10分的在地2店",
   description: "大阪鐵板燒「鉄板屋な。」與大阪居酒屋「酒場ビリー」，梅田晚餐的排法、預算與訂位重點。",
   url: PAGE_URL,
   inLanguage: ["zh-TW", "zh-HK"],
   author: { "@type": "Person", name: "ぽやぴよ", url: "https://www.japantrippicks.com/about" },
   publisher: { "@type": "Organization", name: "Japan Trip Picks", url: "https://www.japantrippicks.com" },
   datePublished: "2026-07-01T00:00:00+09:00",
-  dateModified: "2026-09-07T00:00:00+09:00",
+  dateModified: "2026-11-24T00:00:00+09:00",
   image: `https://www.japantrippicks.com${OG_IMAGE}`,
 };
 
@@ -102,9 +102,9 @@ export default function OsakaGourmetPage() {
 
         {/* H1 */}
         <h1 className="text-2xl font-black text-stone-800 leading-tight mb-2">
-          大阪鐵板燒・居酒屋推薦｜<br />梅田・福島在地人氣2店🍻
+          大阪鐵板燒・居酒屋推薦｜<br />梅田出發10分・在地人氣2店🍻
         </h1>
-        <p className="text-xs text-stone-400 mb-6">最後更新：2026-09-07</p>
+        <p className="text-xs text-stone-400 mb-6">最後更新：2026-11-24</p>
 
         {/* Intro */}
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
@@ -113,7 +113,7 @@ export default function OsakaGourmetPage() {
             大阪是日本知名的<strong>「美食之都」</strong>🏙️ 除了道頓堀的章魚燒、大阪燒、串炸這些觀光美食之外，當地人也有許多<strong>隱藏版居酒屋＆名店</strong>，是台灣・香港旅客最容易錯過的寶藏。
           </p>
           <p className="text-sm text-stone-600 leading-relaxed">
-            這篇寫給<strong>想在大阪吃一次鐵板燒、或找一間在地居酒屋</strong>的台灣・香港旅人。<strong>你會知道</strong>：兩間店的位置與預算帶（鐵板燒套餐¥5,000〜、居酒屋¥3,000〜5,000）、要不要事先訂位、幾點去比較好進，以及<strong>梅田晚餐怎麼排成一晚</strong>。福島區的<strong>「鉄板屋な。」</strong>是主廚現煎的精緻鐵板燒，梅田周邊的<strong>「酒場ビリー」</strong>則是炭火串燒的話題居酒屋，兩間都離梅田很近✨
+            這篇寫給<strong>想在大阪吃一次鐵板燒、或找一間在地居酒屋</strong>的台灣・香港旅人。<strong>你會知道</strong>：兩間店的位置與預算帶（鐵板燒套餐¥5,000〜、居酒屋¥3,000〜5,000）、要不要事先訂位、幾點去比較好進，以及<strong>梅田晚餐怎麼排成一晚</strong>。新大阪旁西中島南方的<strong>「鉄板屋な。」</strong>是主廚現煎的精緻鐵板燒，肥後橋的<strong>「酒場ビリー」</strong>則是炭火串燒的話題居酒屋，兩間從梅田搭地鐵都在10分鐘內✨
           </p>
         </section>
 
@@ -124,14 +124,14 @@ export default function OsakaGourmetPage() {
             <div className="flex gap-3">
               <span className="text-red-400 font-black text-sm shrink-0">▸</span>
               <div>
-                <p className="text-sm font-bold text-stone-700">鉄板屋な。 → 福島區精緻鐵板燒</p>
+                <p className="text-sm font-bold text-stone-700">鉄板屋な。 → 西中島南方（新大阪旁）精緻鐵板燒</p>
                 <p className="text-xs text-stone-500 leading-relaxed">主廚眼前現煎、神戶牛＆海鮮、適合約會</p>
               </div>
             </div>
             <div className="flex gap-3">
               <span className="text-red-400 font-black text-sm shrink-0">▸</span>
               <div>
-                <p className="text-sm font-bold text-stone-700">酒場ビリー → 梅田話題居酒屋</p>
+                <p className="text-sm font-bold text-stone-700">酒場ビリー → 肥後橋話題居酒屋</p>
                 <p className="text-xs text-stone-500 leading-relaxed">時尚居酒屋、招牌串燒、適合朋友聚餐</p>
               </div>
             </div>
@@ -161,7 +161,7 @@ export default function OsakaGourmetPage() {
             </div>
 
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
-              位於大阪福島區的<strong>精緻鐵板燒餐廳</strong>🔥 由主廚在眼前現煎，從食材選擇到火候控制都看得到。提供<strong>神戶牛・和牛・新鮮海鮮</strong>等高品質食材，搭配大阪當地的特色調味，氛圍精緻又輕鬆。
+              位於新大阪旁西中島南方的<strong>精緻鐵板燒餐廳</strong>🔥 由主廚在眼前現煎，從食材選擇到火候控制都看得到。提供<strong>神戶牛・和牛・新鮮海鮮</strong>等高品質食材，搭配大阪當地的特色調味，氛圍精緻又輕鬆。
             </p>
 
             <div className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 mb-3">
@@ -179,9 +179,9 @@ export default function OsakaGourmetPage() {
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600 ib ib-pin">大阪府大阪市福島區福島周邊</p>
-              <MapButton q="鉄板屋な。 福島" />
-              <p className="text-xs text-stone-600 ib ib-train">JR大阪環狀線「福島」駅 徒歩約5分／JR東西線「新福島」駅 徒歩約3分</p>
+              <p className="text-xs text-stone-600 ib ib-pin">大阪府大阪市淀川區西中島4-9-34</p>
+              <MapButton q="鉄板屋な。 大阪市淀川区西中島4-9-34" />
+              <p className="text-xs text-stone-600 ib ib-train">大阪Metro御堂筋線「西中島南方」站2號出口 步行約3分／JR新大阪站西口 步行約15分</p>
               <p className="text-xs text-stone-600 ib ib-clock">17:00〜23:00（依日變動）</p>
               <p className="text-xs text-stone-600 ib ib-yen">套餐 ¥5,000〜／單點 ¥3,000〜</p>
               <p className="text-xs text-stone-600">📞 建議事先預約</p>
@@ -218,27 +218,27 @@ export default function OsakaGourmetPage() {
             </div>
 
             <p className="text-sm text-stone-600 leading-relaxed mb-3">
-              梅田周邊話題的<strong>時尚日式居酒屋</strong>🍻 店內氛圍復古又現代，是大阪在地年輕人最愛的聚會地點。招牌料理是<strong>炭火串燒</strong>，搭配豐富的日本酒、燒酎、生啤等酒類，氛圍熱鬧又輕鬆。
+              肥後橋（從梅田搭四つ橋線一站）話題的<strong>時尚日式居酒屋</strong>🍻 店內氛圍復古又現代，是大阪在地年輕人最愛的聚會地點。招牌料理是<strong>炭火串燒</strong>，搭配豐富的日本酒、燒酎、生啤等酒類，氛圍熱鬧又輕鬆。
             </p>
 
             <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 mb-3">
               <p className="text-xs font-bold text-amber-700 mb-1">✨ 推薦給旅客的理由</p>
               <p className="text-sm text-stone-600 leading-relaxed">
-                想體驗<strong>道地的大阪夜生活</strong>，這間絕對推薦🍻 炭火串燒一串<strong>¥150〜¥300</strong>，CP值超高💰 還有大阪人氣的「土手煮」、「明太子玉子燒」等下酒菜。<strong>2〜4人前往</strong>最棒，可以多點幾道分食！梅田站徒步圈，吃完還能順遊大阪夜景。
+                想體驗<strong>道地的大阪夜生活</strong>，這間絕對推薦🍻 炭火串燒一串<strong>¥150〜¥300</strong>，CP值超高💰 還有大阪人氣的「土手煮」、「明太子玉子燒」等下酒菜。<strong>2〜4人前往</strong>最棒，可以多點幾道分食！旁邊就是中之島，吃完沿著河邊散步看夜景也很舒服。
               </p>
             </div>
 
             <div className="flex flex-wrap gap-2 mb-4">
-              {["🍻 炭火串燒", "🍶 日本酒豐富", "💰 CP值超高", "🌃 大阪夜生活", "🚃 梅田徒步"].map((t) => (
+              {["🍻 炭火串燒", "🍶 日本酒豐富", "💰 CP值超高", "🌃 大阪夜生活", "🚃 肥後橋站近"].map((t) => (
                 <span key={t} className="text-xs bg-amber-50 text-amber-700 border border-amber-200 px-3 py-1 rounded-full">{t}</span>
               ))}
             </div>
 
             <div className="bg-stone-50 border border-stone-100 rounded-xl px-4 py-3 mb-3 space-y-1">
               <p className="text-xs font-bold text-stone-500 mb-1">📋 基本資訊</p>
-              <p className="text-xs text-stone-600 ib ib-pin">大阪府大阪市北區梅田周邊</p>
-              <MapButton q="酒場ビリー 梅田" />
-              <p className="text-xs text-stone-600 ib ib-train">JR・各線「大阪／梅田」駅 徒歩約5分</p>
+              <p className="text-xs text-stone-600 ib ib-pin">大阪府大阪市西區江戶堀1-20-16</p>
+              <MapButton q="酒場ビリー 大阪市西区江戸堀1-20-16" />
+              <p className="text-xs text-stone-600 ib ib-train">大阪Metro四つ橋線「肥後橋」站 步行約5分</p>
               <p className="text-xs text-stone-600 ib ib-clock">17:00〜24:00（依日變動）</p>
               <p className="text-xs text-stone-600 ib ib-yen">串燒 ¥150〜¥300／預算 ¥3,000〜¥5,000</p>
             </div>
@@ -258,7 +258,7 @@ export default function OsakaGourmetPage() {
         <section className="bg-white rounded-2xl border border-yellow-100 shadow-sm p-5 mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3 piyo-h piyo-stand">大阪美食小建議</h2>
           <ul className="space-y-2 text-sm text-stone-600">
-            <li>✅ 兩間店都離<strong>梅田／大阪站</strong>很近，可以排同一晚行程</li>
+            <li>✅ 兩間從<strong>梅田</strong>搭地鐵都在10分鐘內（鐵板燒在北邊的西中島南方、居酒屋在南邊的肥後橋），排同一晚的話經梅田轉車就好</li>
             <li>✅ <strong>鐵板屋な。</strong>適合精緻晚餐約會（預約必要）</li>
             <li>✅ <strong>酒場ビリー</strong>適合朋友2〜4人聚餐</li>
             <li>✅ 大阪美食「邊吃邊喝」是文化，建議多人前往分享更多料理🍻</li>
@@ -279,7 +279,7 @@ export default function OsakaGourmetPage() {
             <div>
               <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 梅田晚餐去哪裡好？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
-                從梅田站走路5〜10分或搭一站到<strong>福島</strong>，就是大阪人自己吃晚餐的區域。想吃精緻一點選鐵板燒，想熱鬧一點選居酒屋，兩間都在這一帶。吃完回梅田逛百貨或看夜景都順路，不用特地跑道頓堀。
+                從梅田搭御堂筋線往北2站是<strong>西中島南方</strong>（新大阪旁），搭四つ橋線往南1站是<strong>肥後橋</strong>，都是大阪人自己吃晚餐的區域。想吃精緻一點選北邊的鐵板燒，想熱鬧一點選南邊的居酒屋。吃完回梅田逛百貨或看夜景都順路，不用特地跑道頓堀。
               </p>
             </div>
             <div>
@@ -303,14 +303,14 @@ export default function OsakaGourmetPage() {
             <div>
               <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 這兩間可以排在同一晚嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
-                可以，兩間都在梅田・福島一帶，走路或搭一站電車就到。<strong>先吃鐵板燒、再去居酒屋續攤</strong>是很順的順序。想再多吃一輪的話，
+                可以，兩間分別在梅田的北邊和南邊，經梅田轉車大約20〜30分鐘。<strong>先吃鐵板燒、再去居酒屋續攤</strong>是很順的順序。想再多吃一輪的話，
                 <Link href="/kansai-ramen" className="text-blue-600 underline underline-offset-2">大阪沾麵推薦</Link>裡的肥後橋也在同一個方向。
               </p>
             </div>
             <div>
               <h3 className="text-sm font-bold text-stone-700 mb-1">❓ 吃完可以順路看大阪夜景嗎？</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
-                可以。兩間都在<strong>梅田站徒步圈</strong>（福島也只有一站），吃完走回梅田逛百貨或看夜景都順路，<strong>不用特地跑到道頓堀</strong>。想體驗道地的大阪夜生活，居酒屋這一帶本身就是大阪人自己晚上會來的區域。
+                可以。兩間從梅田搭地鐵都只要幾站，吃完回梅田逛百貨或看夜景都順路，<strong>不用特地跑到道頓堀</strong>。想體驗道地的大阪夜生活，居酒屋這一帶本身就是大阪人自己晚上會來的區域。
               </p>
             </div>
           </div>

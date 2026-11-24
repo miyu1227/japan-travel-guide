@@ -78,7 +78,7 @@ const photos = [
 ];
 
 const relatedLinks = [
-  { href: "/osaka-gourmet", label: "🍻 大阪鐵板燒・居酒屋推薦｜梅田・福島在地人氣2店", desc: "想吃在地一點的店，可以接這篇" },
+  { href: "/osaka-gourmet", label: "🍻 大阪鐵板燒・居酒屋推薦｜梅田出發10分的在地2店", desc: "想吃在地一點的店，可以接這篇" },
   { href: "/kansai-ramen", label: "🍜 大阪沾麵推薦｜肥後橋つじ田的濃厚豚骨魚介沾麵", desc: "肥後橋站附近，走過去就到" },
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "從大阪當天來回，關西的另一頓大餐" },
 ];

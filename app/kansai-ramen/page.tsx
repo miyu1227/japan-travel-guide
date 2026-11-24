@@ -151,7 +151,7 @@ const kansaiStyles = [
 
 const relatedLinks = [
   { href: "/ramen", label: "🍜 東京必吃拉麵推薦6選｜排隊名店・柚子鹽・家系", desc: "三軒茶屋無招牌名店・台場豚骨・六本木柚子鹽" },
-  { href: "/osaka-gourmet", label: "🍻 大阪鐵板燒・居酒屋推薦｜梅田・福島在地人氣2店", desc: "鉄板屋な。＆酒場ビリー" },
+  { href: "/osaka-gourmet", label: "🍻 大阪鐵板燒・居酒屋推薦｜梅田出發10分的在地2店", desc: "鉄板屋な。＆酒場ビリー" },
   { href: "/steak-zen", label: "🥩 神戶牛推薦｜ステーキハウスZEN 三宮店", desc: "A5鐵板燒名店・主廚現煎" },
 ];
 

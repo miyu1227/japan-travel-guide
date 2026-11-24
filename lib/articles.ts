@@ -190,7 +190,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "osaka-gourmet",
     category: "ramen",
-    name: "大阪鐵板燒・居酒屋推薦｜梅田・福島在地人氣2店🍻",
+    name: "大阪鐵板燒・居酒屋推薦｜梅田出發10分的在地2店🍻",
     shortLabel: "大阪鐵板燒・居酒屋",
     desc: "鉄板屋な。（套餐¥5,000〜）＆酒場ビリー（串燒¥150〜），梅田晚餐這樣排",
     tag: "大阪",
@@ -198,7 +198,7 @@ export const ARTICLES: Article[] = [
     image: "/osaka-gourmet/teppan-1.jpg",
     areas: ["大阪"],
     published: "2026-07-01",
-    updated: "2026-09-07",
+    updated: "2026-11-24",
   },
   {
     slug: "utsunomiya-gyoza",
@@ -809,7 +809,7 @@ export const ARTICLES: Article[] = [
     image: "/ine/town-1.jpg",
     areas: ["京都"],
     published: "2026-07-01",
-    updated: "2026-09-07",
+    updated: "2026-11-24",
   },
   {
     slug: "shodoshima",
