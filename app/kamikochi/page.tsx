@@ -8,6 +8,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const KLOOK_SHINHOTAKA =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339988&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F106936-alpine-splendor-shinhotaka-ropeway-kamikochi-join-day-bus-tour-takayama";
 const KLOOK_KAMIKOCHI_TOUR =
@@ -551,6 +552,7 @@ export default function KamikochiPage() {
 
         <FaqSection items={faqs} />
 
+        <MapListCard list="kamikochi" />
         <AuthorCard />
         <PrepBanner />
 

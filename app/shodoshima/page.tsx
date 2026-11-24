@@ -9,6 +9,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/shodoshima";
 const OG_IMAGE = "/shodoshima/olive-1.jpg";
 
@@ -648,6 +649,7 @@ export default function ShodoshimaPage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="shikoku" />
         <AuthorCard />
         <PrepBanner />
 

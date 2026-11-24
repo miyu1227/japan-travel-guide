@@ -8,6 +8,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const KLOOK_AQUARIUM =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339931&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F74358-shikoku-aquarium";
 const KLOOK_SHIKISHIMA =
@@ -470,6 +471,7 @@ export default function KagawaPage() {
 
         <FaqSection items={faqs} />
 
+        <MapListCard list="shikoku" />
         <AuthorCard />
         <PrepBanner />
 

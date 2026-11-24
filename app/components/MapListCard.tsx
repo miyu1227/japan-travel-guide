@@ -8,7 +8,7 @@
  * リストの中身を変えたら count も直すこと。
  */
 
-type MapList = { url: string; title: string; count: number; areas: string };
+type MapList = { url: string; title: string; count: number; areas: string; visited?: boolean };
 
 export const MAP_LISTS = {
   kansai: {
@@ -29,6 +29,26 @@ export const MAP_LISTS = {
     count: 30,
     areas: "箱根・江之島鎌倉・橫濱・湘南・宇都宮・山梨",
   },
+  shikoku: {
+    url: "https://maps.app.goo.gl/W26ojnZwwA7UR4fT6",
+    title: "四國美食・景點地圖清單",
+    count: 13,
+    areas: "香川・小豆島・高知",
+  },
+  hokkaido: {
+    url: "https://maps.app.goo.gl/txtGb8hPEwUHixAt6",
+    title: "北海道景點・美食地圖清單",
+    count: 6,
+    areas: "小樽・札幌・美瑛・富良野",
+    // 北海道の記事は実地取材の記事ではないので「實地造訪」とは書かない
+    visited: false,
+  },
+  kamikochi: {
+    url: "https://maps.app.goo.gl/dBKSxCsUfMKhMCvo7",
+    title: "上高地・奧飛驒地圖清單",
+    count: 4,
+    areas: "上高地・奧飛驒",
+  },
 } satisfies Record<string, MapList>;
 
 export type MapListId = keyof typeof MAP_LISTS;
@@ -46,7 +66,7 @@ export default function MapListCard({ list, className = "mb-8" }: { list: MapLis
       <span className="min-w-0">
         <span className="block text-sm font-black text-emerald-800">一鍵收藏｜{l.title}</span>
         <span className="block text-xs text-stone-600 leading-relaxed mt-0.5">
-          本站實地造訪的{l.areas}共{l.count}個地點，打開Google地圖清單按「追蹤」就能全部存起來，旅行時直接導航。
+          本站{l.visited === false ? "介紹" : "實地造訪"}的{l.areas}共{l.count}個地點，打開Google地圖清單按「追蹤」就能全部存起來，旅行時直接導航。
         </span>
       </span>
       <span className="ml-auto shrink-0 text-emerald-700 text-lg" aria-hidden="true">›</span>
