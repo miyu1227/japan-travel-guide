@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AuthorCard from "./AuthorCard";
 import PrepBannerCompact from "./PrepBannerCompact";
+import MapListCard from "./MapListCard";
 import { ARTICLE_BY_SLUG } from "@/lib/articles";
 import { HUB_BY_SLUG, hubMembers, type Hub } from "@/lib/hubs";
 
@@ -124,6 +125,8 @@ export default function HubPage({ slug }: { slug: string }) {
         </section>
 
         <PrepBannerCompact />
+
+        {["kansai", "osaka", "kobe"].includes(slug) && <MapListCard list="kansai" />}
 
         <section className="mb-8">
           <h2 className="text-base font-black text-stone-800 mb-3">🤔 該怎麼挑？</h2>

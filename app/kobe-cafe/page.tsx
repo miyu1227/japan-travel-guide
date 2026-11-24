@@ -8,6 +8,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/kobe-cafe";
 const OG_IMAGE = "/kobe-cafe/caffarel-3.jpg";
 
@@ -479,6 +480,7 @@ export default function KobeCafePage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="kansai" />
         <AuthorCard />
         <PrepBanner />
 

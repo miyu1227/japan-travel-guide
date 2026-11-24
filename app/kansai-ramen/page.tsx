@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/kansai-ramen";
 const OG_IMAGE = "/kansai-ramen/tsujita-2.jpg";
 
@@ -373,6 +374,7 @@ export default function KansaiRamenArticle() {
 
         <FaqSection items={faqs} />
 
+        <MapListCard list="kansai" />
         <AuthorCard />
         <PrepBanner />
 

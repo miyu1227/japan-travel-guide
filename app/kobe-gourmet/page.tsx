@@ -9,6 +9,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/kobe-gourmet";
 const OG_IMAGE = "/kobe-gourmet/famiglia-1.jpg";
 
@@ -267,6 +268,7 @@ export default function KobeGourmetPage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="kansai" />
         <AuthorCard />
         <PrepBanner />
 

@@ -6,6 +6,8 @@ import AuthorCard from "../components/AuthorCard";
 import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 
+import MapListCard from "../components/MapListCard";
+import MapButton from "../components/MapButton";
 const PAGE_URL = "https://www.japantrippicks.com/shukugawa";
 const OG_IMAGE = "/shukugawa/crepe-1.jpg";
 
@@ -75,6 +77,7 @@ const shops = [
     subtitle: "正宗法式可麗餅午餐的人氣店",
     url: "https://www.hotpepper.jp/strJ001053495/",
     urlLabel: "店家資訊",
+    mapQ: "クレープリー・ルポ 西宮市相生町7-12",
     images: ["/shukugawa/crepe-1.jpg", "/shukugawa/crepe-2.jpg", "/shukugawa/crepe-3.jpg"],
     desc: "在夙川想吃可麗餅，這間絕對不能錯過🥞 法式風格的外觀和沉穩的店內空間令人印象深刻。午餐的蕎麥粉鹹可麗餅（galette）口感Q彈又香氣十足，份量也非常滿足！",
     reason: "正宗法式鹹可麗餅在關西很少見，這間的品質讓人驚艷✨ 蕎麥粉香氣迷人，搭配火腿和蛋的經典組合完美無缺。店內氛圍沉穩放鬆，非常適合約會或女生聚餐💑",
@@ -90,6 +93,7 @@ const shops = [
     subtitle: "靜謐氛圍的自家焙煎咖啡廳",
     url: "https://yuge-roaster.stores.jp/",
     urlLabel: "官方網站",
+    mapQ: "ゆげ焙煎所 夙川店 西宮市寿町5-26",
     images: ["/shukugawa/coffee-1.jpg", "/shukugawa/coffee-2.jpg"],
     desc: "喜歡咖啡的人一定要來這間「ゆげ焙煎所」☕ 店內設計簡約洗練，非常安靜舒適。咖啡品質很高，一口喝下去香氣立刻蔓延。也可以外帶，搭配夙川河畔散步最完美！",
     reason: "精品咖啡品質出色，每一杯都能感受到用心☕ 一個人也能輕鬆入座，適合獨自閱讀或作業。可外帶搭配夙川河畔散步，春天的櫻花季來更是絕配🌸",
@@ -231,6 +235,7 @@ export default function ShukugawaPage() {
                   className="inline-flex items-center gap-1 text-xs text-blue-600 underline underline-offset-2">
                   🔗 {shop.urlLabel}
                 </a>
+                <div><MapButton q={shop.mapQ} /></div>
               </div>
             </section>
           ))}
@@ -265,6 +270,7 @@ export default function ShukugawaPage() {
 
         <FaqSection items={faqs} />
 
+        <MapListCard list="kansai" />
         <AuthorCard />
         <PrepBanner />
 

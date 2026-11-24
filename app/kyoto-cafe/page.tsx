@@ -8,6 +8,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/kyoto-cafe";
 const OG_IMAGE = "/kyoto-cafe/rokkaku-4.jpg";
 
@@ -307,6 +308,7 @@ export default function KyotoCafePage() {
 
         <FaqSection items={faqItems} />
 
+        <MapListCard list="kansai" />
         <AuthorCard />
         <PrepBanner />
 

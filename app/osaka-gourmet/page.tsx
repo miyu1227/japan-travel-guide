@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/osaka-gourmet";
 const OG_IMAGE = "/osaka-gourmet/teppan-1.jpg";
 
@@ -330,6 +331,7 @@ export default function OsakaGourmetPage() {
           </div>
         </div>
 
+        <MapListCard list="kansai" />
         <AuthorCard />
         <PrepBanner />
 

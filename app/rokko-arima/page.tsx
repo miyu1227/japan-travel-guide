@@ -8,6 +8,7 @@ import FaqSection from "../components/FaqSection";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const KLOOK_ROKKO_NIGHT =
   "https://affiliate.klook.com/redirect?aid=124502&aff_adid=1339868&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F88299-mtrokko-night-view-day-tour-kobe-osaka";
 
@@ -333,6 +334,7 @@ export default function RokkoArimaPage() {
 
         <FaqSection items={faqs} />
 
+        <MapListCard list="kansai" />
         <AuthorCard />
         <PrepBanner />
 

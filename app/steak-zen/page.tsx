@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/steak-zen";
 const OG_IMAGE = "/steak-zen/zen-1.jpg";
 
@@ -321,6 +322,7 @@ export default function SteakZenPage() {
           </div>
         </div>
 
+        <MapListCard list="kansai" />
         <AuthorCard />
         <PrepBanner />
 

@@ -7,6 +7,7 @@ import RelatedArticles from "../components/RelatedArticles";
 import { photoStyle } from "@/lib/photoDims";
 
 import MapButton from "../components/MapButton";
+import MapListCard from "../components/MapListCard";
 const PAGE_URL = "https://www.japantrippicks.com/sanda-soba";
 const OG_IMAGE = "/sanda-soba/soba1-1.jpg";
 
@@ -332,6 +333,7 @@ export default function SandaSobaPage() {
           </div>
         </div>
 
+        <MapListCard list="kansai" />
         <AuthorCard />
         <PrepBanner />
 
